@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Artela Testnet',
+  chainType: 'cosmos',
   chainId: 'artela_11820-1',
   bech32Prefix: 'art',
   daemonName: 'artelad',
@@ -25,7 +26,60 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.47'
+    gitRepo: 'https://github.com/artela-network/artela',
+    recommendedVersion: 'v0.4.2-beta',
+    compatibleVersions: ['v0.4.2-beta'],
+    cosmosSdkVersion: '0.47',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    genesis: {
+      genesisUrl: 'https://docs.artela.network/assets/files/genesis-697a2db4ef7e20dbdb8bdc1cd9d1633a.json'
+    },
+    versions: [{
+        name: 'v0.4.2-beta',
+        recommendedVersion: 'v0.4.2-beta',
+        compatibleVersions: ['v0.4.2-beta'],
+        cosmosSdkVersion: '0.47',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.47'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.1.0'
+        }
+      }, {
+        name: 'v0.4.1-beta',
+        recommendedVersion: 'v0.4.1-beta',
+        compatibleVersions: ['v0.4.1-beta'],
+        cosmosSdkVersion: '0.47',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.47'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.1.0'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.1.0'
+    }
   },
   apis: {
     rpc: [{

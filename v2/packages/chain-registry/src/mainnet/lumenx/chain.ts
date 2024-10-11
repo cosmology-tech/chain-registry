@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   networkType: 'mainnet',
   prettyName: 'LumenX',
+  chainType: 'cosmos',
   chainId: 'LumenX',
   bech32Prefix: 'lumen',
   daemonName: 'lumenxd',
@@ -26,7 +27,18 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/cryptonetD/lumenx',
+    recommendedVersion: 'v1.4.0',
+    compatibleVersions: ['v1.4.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/cryptonetD/lumenx/main/config/genesis.json'
+    },
+    versions: [{
+        name: 'v1.4.0',
+        tag: 'v1.4.0',
+        recommendedVersion: 'v1.4.0',
+        compatibleVersions: ['v1.4.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
@@ -104,7 +116,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg',
+      theme: {
+        primaryColorHex: '#cb8b40'
+      }
     }]
 };
 export default info;

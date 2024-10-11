@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://arkhadian.com/',
   prettyName: 'Arkhadian',
+  chainType: 'cosmos',
   chainId: 'arkh',
   bech32Prefix: 'arkh',
   daemonName: 'arkhd',
@@ -27,7 +28,25 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/vincadian/arkh-blockchain',
+    recommendedVersion: 'v2.0.0',
+    compatibleVersions: ['v2.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/vincadian/arkh-blockchain/releases/download/latest/arkh-blockchain_latest_linux_amd64.tar.gz',
+      "darwin/amd64": 'https://github.com/vincadian/arkh-blockchain/releases/download/latest/arkh-blockchain_latest_darwin_amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/vincadian/arkh-blockchain/master/genesis/genesis.json'
+    },
+    versions: [{
+        name: 'v2.0.0',
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/vincadian/arkh-blockchain/releases/download/latest/arkh-blockchain_latest_linux_amd64.tar.gz',
+          "darwin/amd64": 'https://github.com/vincadian/arkh-blockchain/releases/download/latest/arkh-blockchain_latest_darwin_amd64.tar.gz'
+        }
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
@@ -81,7 +100,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg',
+      theme: {
+        primaryColorHex: '#bdbb82'
+      }
     }]
 };
 export default info;

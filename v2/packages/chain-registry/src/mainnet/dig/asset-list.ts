@@ -20,8 +20,12 @@ const info: AssetList = {
       },
       coingeckoId: 'dig-chain',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
+          theme: {
+            primaryColorHex: '#1b1433'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -22,12 +22,16 @@ const info: AssetList = {
       coingeckoId: 'assetmantle',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
+          theme: {
+            primaryColorHex: '#edb548'
+          }
         }],
       socials: {
         website: 'https://www.assetmantle.one/',
         twitter: 'https://twitter.com/AssetMantle'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

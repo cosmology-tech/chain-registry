@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.fury.black/',
   prettyName: 'Highbury',
+  chainType: 'cosmos',
   chainId: 'highbury_710-1',
   bech32Prefix: 'fury',
   daemonName: 'fury',
@@ -26,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Four4Two/fury/',
+    recommendedVersion: 'v0.4.1',
+    compatibleVersions: ['v0.4.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Four4Two/fury/mainnet/networks/genesis.json'
+    },
+    versions: [{
+        name: 'v0.4.1',
+        recommendedVersion: 'v0.4.1',
+        compatibleVersions: ['v0.4.1']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
@@ -58,7 +69,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

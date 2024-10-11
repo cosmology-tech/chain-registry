@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'mars',
   assets: [{
-      description: 'Mars protocol token',
+      description: 'Mars Protocol token (pre-migration)',
       denomUnits: [{
           denom: 'umars',
           exponent: 0
@@ -14,20 +14,31 @@ const info: AssetList = {
       base: 'umars',
       name: 'Mars',
       display: 'mars',
-      symbol: 'MARS',
+      symbol: 'MARS.old',
+      traces: [{
+          type: 'legacy-mintage',
+          counterparty: {
+            chainName: 'neutron',
+            baseDenom: 'factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS'
+          },
+          provider: 'Mars Hub'
+        }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.svg'
       },
-      coingeckoId: 'mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token-ibc.svg',
+          theme: {
+            primaryColorHex: '#000000'
+          }
         }],
       socials: {
         website: 'https://www.marsprotocol.io/',
         twitter: 'https://twitter.com/mars_protocol'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

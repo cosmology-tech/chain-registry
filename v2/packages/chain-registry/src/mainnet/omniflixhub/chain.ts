@@ -6,14 +6,212 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://omniflix.network/',
   prettyName: 'OmniFlix',
+  chainType: 'cosmos',
   chainId: 'omniflixhub-1',
   daemonName: 'omniflixhubd',
   nodeHome: '$HOME/.omniflixhub',
   bech32Prefix: 'omniflix',
   slip44: 118,
   codebase: {
+    gitRepo: 'https://github.com/OmniFlix/omniflixhub',
+    recommendedVersion: 'v4.1.1',
+    compatibleVersions: ['v4.1.1'],
     cosmosSdkVersion: 'v0.47.10',
-    cosmwasmVersion: 'v0.45.0'
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    cosmwasmVersion: 'v0.45.0',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/OmniFlix/mainnet/main/omniflixhub-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v0.8.0',
+        recommendedVersion: 'v0.8.0',
+        compatibleVersions: ['v0.8.0'],
+        cosmosSdkVersion: 'v0.45.10',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.22'
+        },
+        nextVersionName: 'v0.10.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.10'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.3.1'
+        }
+      },
+      {
+        name: 'v0.10.0',
+        proposal: 6,
+        height: 6262420,
+        recommendedVersion: 'v0.10.0',
+        compatibleVersions: ['v0.10.0'],
+        cosmosSdkVersion: 'v0.45.15',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        nextVersionName: 'v0.11.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.15'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.4.0'
+        }
+      },
+      {
+        name: 'v0.11.0',
+        proposal: 12,
+        height: 7339200,
+        recommendedVersion: 'v0.11.1',
+        compatibleVersions: ['v0.11.1'],
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v0.12.x',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.4.2'
+        }
+      },
+      {
+        name: 'v0.12.x',
+        proposal: 15,
+        height: 8054200,
+        recommendedVersion: 'v0.12.1',
+        compatibleVersions: ['v0.12.1'],
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v2.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.4.2'
+        }
+      },
+      {
+        name: 'v2.0.0',
+        proposal: 28,
+        height: 10428200,
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        nextVersionName: 'v2.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'v2.1',
+        proposal: 29,
+        height: 10678600,
+        recommendedVersion: 'v2.1.0',
+        compatibleVersions: ['v2.1.0'],
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        nextVersionName: 'v3',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'v3',
+        proposal: 31,
+        height: 10872800,
+        recommendedVersion: 'v3.3.0',
+        compatibleVersions: ['v3.3.0'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        nextVersionName: 'v4',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.45.0'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v4',
+        proposal: 36,
+        height: 11914000,
+        recommendedVersion: 'v4.1.1',
+        compatibleVersions: ['v4.1.1'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.45.0'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
@@ -53,7 +251,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://omniflixhub-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/omniflixhub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -111,7 +309,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://omniflixhub-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/omniflixhub',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -143,8 +341,8 @@ const info: Chain = {
         provider: 'Daksha Validator'
       },
       {
-        address: 'http://omniflix.api.staking-explorer.com',
-        provider: 'Daily DROP'
+        address: 'https://omniflix.api.staking-explorer.com',
+        provider: 'Daily DROP | 3% Fee'
       },
       {
         address: 'https://api.omniflix.stakeup.tech',
@@ -177,7 +375,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'omniflixhub-grpc.lavenderfive.com:443',
+        address: 'omniflixhub.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -246,7 +444,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg',
+      theme: {
+        primaryColorHex: '#c33635'
+      }
     }]
 };
 export default info;

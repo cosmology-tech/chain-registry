@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://sentinel.co/',
   prettyName: 'Sentinel',
+  chainType: 'cosmos',
   chainId: 'sentinelhub-2',
   bech32Prefix: 'sent',
   daemonName: 'sentinelhub',
@@ -26,7 +27,39 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/sentinel-official/hub',
+    recommendedVersion: 'v0.11.3',
+    compatibleVersions: ['v0.11.2', 'v0.11.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/sentinel-official/networks/main/sentinelhub-2/genesis.zip'
+    },
+    versions: [
+      {
+        name: 'upgrade-1',
+        recommendedVersion: 'v0.7.0',
+        compatibleVersions: ['v0.7.0']
+      },
+      {
+        name: 'upgrade-2',
+        recommendedVersion: 'v0.8.3',
+        compatibleVersions: ['v0.8.3']
+      },
+      {
+        name: 'upgrade-3',
+        recommendedVersion: 'v0.9.3',
+        compatibleVersions: ['v0.9.3']
+      },
+      {
+        name: 'upgrade-4',
+        recommendedVersion: 'v0.10.1',
+        compatibleVersions: ['v0.10.1']
+      },
+      {
+        name: 'v11',
+        recommendedVersion: 'v0.11.3',
+        compatibleVersions: ['v0.11.2', 'v0.11.1']
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
@@ -44,10 +77,6 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://rpc-sentinel.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://rpc.sentinel.chaintools.tech/',
         provider: 'ChainTools'
       },
@@ -57,7 +86,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.dvpn.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://sentinel-rpc.badgerbite.io/',
@@ -72,11 +101,11 @@ const info: Chain = {
         provider: 'ValidatorNode'
       },
       {
-        address: 'https://rpc.trinityvalidator.com',
-        provider: 'Trinity Validator'
+        address: 'https://rpc.trinitystake.io',
+        provider: 'Trinity Stake'
       },
       {
-        address: 'https://rpc.sentinelgrowthdao.com',
+        address: 'https://rpc.sentineldao.com',
         provider: 'Sentinel Growth DAO'
       },
       {
@@ -94,6 +123,26 @@ const info: Chain = {
       {
         address: 'https://sentinel.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://rpc.dvpn.me:443',
+        provider: 'MathNodes China'
+      },
+      {
+        address: 'https://rpc.ro.mathnodes.com:443',
+        provider: 'MathNodes Romania'
+      },
+      {
+        address: 'https://rpc.noncompliant.network:443',
+        provider: 'Noncompliant Network'
+      },
+      {
+        address: 'https://rpc-sentinel.chainvibes.com:443',
+        provider: 'chainvibes'
+      },
+      {
+        address: 'https://sentinel-rpc.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -106,16 +155,12 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://lcd-sentinel.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://api.sentinel.quokkastake.io',
         provider: '🐹 Quokka Stake'
       },
       {
         address: 'https://api.dvpn.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://sentinel-rest.publicnode.com',
@@ -126,11 +171,11 @@ const info: Chain = {
         provider: 'ValidatorNode'
       },
       {
-        address: 'https://api.trinityvalidator.com',
-        provider: 'Trinity Validator'
+        address: 'https://api.trinitystake.io',
+        provider: 'Trinity Stake'
       },
       {
-        address: 'https://api.sentinelgrowthdao.com',
+        address: 'https://api.sentineldao.com',
         provider: 'Sentinel Growth DAO'
       },
       {
@@ -148,6 +193,26 @@ const info: Chain = {
       {
         address: 'https://sentinel.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://api.dvpn.me:443',
+        provider: 'MathNodes China'
+      },
+      {
+        address: 'https://api.ro.mathnodes.com:443',
+        provider: 'MathNodes Romania'
+      },
+      {
+        address: 'https://api.noncompliant.network:443',
+        provider: 'Noncompliant Network'
+      },
+      {
+        address: 'https://api-sentinel.chainvibes.com:443',
+        provider: 'chainvibes'
+      },
+      {
+        address: 'https://sentinel-api.ibs.team:443',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [
@@ -165,7 +230,7 @@ const info: Chain = {
       },
       {
         address: 'grpc.dvpn.roomit.xyz:8443',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'sentinel-rpc.publicnode.com:443',
@@ -178,6 +243,30 @@ const info: Chain = {
       {
         address: 'https://sentinel.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'https://grpc.dvpn.me:443',
+        provider: 'MathNodes China'
+      },
+      {
+        address: 'https://grc.mathnodes.com:443',
+        provider: 'MathNodes Romania'
+      },
+      {
+        address: 'https://grpc.noncompliant.network:443',
+        provider: 'Noncompliant Network'
+      },
+      {
+        address: 'https://grpc.dvpn.me:9090',
+        provider: 'MathNodes China (Insecure)'
+      },
+      {
+        address: 'https://grc.mathnodes.com:9000',
+        provider: 'MathNodes Romania (Insecure)'
+      },
+      {
+        address: 'https://grpc.noncompliant.network:9090',
+        provider: 'Noncompliant Network (Insecure)'
       }
     ]
   },
@@ -201,7 +290,7 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/sentinel/accounts/${accountAddress}'
     },
     {
-      kind: 'RoomIT',
+      kind: 'Roomit',
       url: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet',
       txPage: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/transactions/${txHash}',
       accountPage: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/accounts/${accountAddress}'
@@ -221,11 +310,20 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/sentinel/',
       txPage: 'https://explorer.nodeshub.online/sentinel/tx/${txHash}',
       accountPage: 'https://explorer.nodeshub.online/sentinel/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/sentinel',
+      txPage: 'https://mainnet.whispernode.com/sentinel/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/sentinel/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg',
+      theme: {
+        primaryColorHex: '#10a7ef'
+      }
     }]
 };
 export default info;

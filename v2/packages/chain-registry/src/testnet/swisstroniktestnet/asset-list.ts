@@ -5,23 +5,23 @@ const info: AssetList = {
   assets: [{
       description: 'The native currency of Swisstronik.',
       denomUnits: [{
-          denom: 'uswtr',
+          denom: 'aswtr',
           exponent: 0
         }, {
           denom: 'swtr',
           exponent: 18
         }],
-      base: 'uswtr',
+      base: 'aswtr',
       name: 'Swisstronik Testnet',
       display: 'swtr',
       symbol: 'SWTR',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/swisstroniktestnet/images/swisstronik.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.marsprotocol.io/',
   prettyName: 'Mars Hub',
+  chainType: 'cosmos',
   chainId: 'mars-1',
   bech32Prefix: 'mars',
   daemonName: 'marsd',
@@ -28,9 +29,59 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/mars-protocol/hub',
+    recommendedVersion: 'v1.0.2',
+    compatibleVersions: ['v1.0.0', 'v1.0.2'],
     cosmosSdkVersion: '0.46.7',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34.24'
+    },
+    cosmwasmVersion: '0.30.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30.0'
+    genesis: {
+      genesisUrl: 'https://github.com/mars-protocol/networks/raw/main/mars-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1',
+        tag: 'v1.0.0',
+        height: 0,
+        recommendedVersion: 'v1.0.2',
+        compatibleVersions: ['v1.0.0', 'v1.0.2'],
+        cosmosSdkVersion: '0.46.7',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.24'
+        },
+        cosmwasmVersion: '0.30.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.7'
+        },
+        cosmwasm: {
+          version: '0.30.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.0',
+          icsEnabled: ['ics20-1']
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.7'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.1.0',
+      icsEnabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: '0.30.0',
+      enabled: true
+    }
   },
   description: 'Lend, borrow and earn with an autonomous credit protocol in the Cosmos universe. Open to all, closed to none.',
   apis: {
@@ -40,7 +91,7 @@ const info: Chain = {
         provider: 'Delphi Labs'
       },
       {
-        address: 'https://mars-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/mars',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -78,7 +129,7 @@ const info: Chain = {
         provider: 'Delphi Labs'
       },
       {
-        address: 'https://mars-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/mars',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -116,7 +167,7 @@ const info: Chain = {
         provider: 'Delphi Labs'
       },
       {
-        address: 'mars-grpc.lavenderfive.com:443',
+        address: 'mars.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -152,9 +203,9 @@ const info: Chain = {
   explorers: [
     {
       kind: 'ezstaking',
-      url: 'https://ezstaking.app/mars',
-      txPage: 'https://ezstaking.app/mars/txs/${txHash}',
-      accountPage: 'https://ezstaking.app/mars/account/${accountAddress}'
+      url: 'https://ezstaking.app/mars-protocol',
+      txPage: 'https://ezstaking.app/mars-protocol/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/mars-protocol/account/${accountAddress}'
     },
     {
       kind: 'BigDipper',
@@ -193,7 +244,10 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-protocol.svg',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

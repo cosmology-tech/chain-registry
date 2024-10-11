@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'hedgetestnet',
   assets: [{
       description: 'The native staking token of the Hedge blockchain.',
@@ -22,7 +22,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hedgetestnet/images/hedge.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hedgetestnet/images/hedge.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

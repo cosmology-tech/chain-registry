@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'saga',
   assets: [{
-      description: 'The native staking and governance token of Saga.',
+      description: 'Saga is a blockchain platform focused on providing customizable blockchain solutions with a strong emphasis on security and scalability.',
       extendedDescription: 'Saga is a Layer 1 protocol that allows developers to automatically spin up VM-agnostic, parallelized and interoperable dedicated chains, or “Chainlets,” that provide applications with infinite horizontal scalability. Each Chainlet is a replica of the Saga Mainnet, with the same validator set and security model.\n\nSaga’s mission is to enable the next 1000 chains in gaming and entertainment as part of the growing Saga Multiverse.',
       denomUnits: [{
           denom: 'usaga',
@@ -39,7 +39,8 @@ const info: AssetList = {
       socials: {
         website: 'https://www.saga.xyz/',
         twitter: 'https://twitter.com/Sagaxyz__'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://comdex.one/',
   prettyName: 'Comdex',
+  chainType: 'cosmos',
   chainId: 'comdex-1',
   bech32Prefix: 'comdex',
   slip44: 118,
@@ -24,9 +25,126 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.47.5',
+    gitRepo: 'https://github.com/comdex-official/comdex',
+    recommendedVersion: 'v14.1.0',
+    compatibleVersions: ['v14.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-linux-amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-darwin-arm64.tar.gz'
+    },
+    cosmosSdkVersion: 'v0.47.9',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.5'
+    },
+    cosmwasmVersion: 'v0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.41.0'
+    genesis: {
+      genesisUrl: 'https://comdex-mainnet-genesis.s3.ap-southeast-1.amazonaws.com/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v9.0.0',
+        recommendedVersion: 'v9.0.0',
+        compatibleVersions: ['v9.0.0'],
+        cosmwasmEnabled: true,
+        nextVersionName: 'v10.0.0',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v10.0.0',
+        recommendedVersion: 'v10.0.0',
+        compatibleVersions: ['v10.0.0'],
+        cosmwasmEnabled: true,
+        nextVersionName: 'v11.5.0',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v11.5.0',
+        height: 8184000,
+        proposal: 154,
+        recommendedVersion: 'v11.5.2',
+        compatibleVersions: ['v11.5.2'],
+        cosmwasmEnabled: true,
+        nextVersionName: 'v13.3.0',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v13.3.0',
+        proposal: 216,
+        height: 10981900,
+        recommendedVersion: 'v13.4.0',
+        compatibleVersions: ['v13.4.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/comdex-official/comdex/releases/download/v13.4.0/comdex-linux-amd64.tar.gz'
+        },
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        cosmwasmVersion: 'v0.41.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v14.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        },
+        cosmwasm: {
+          version: 'v0.41.0',
+          enabled: true
+        }
+      },
+      {
+        name: 'v14.1.0',
+        proposal: 234,
+        height: 13730000,
+        recommendedVersion: 'v14.1.0',
+        compatibleVersions: ['v14.1.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-linux-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-darwin-arm64.tar.gz'
+        },
+        cosmosSdkVersion: 'v0.47.9',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.5'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.9'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.9'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   daemonName: 'comdex',
   nodeHome: '$HOME/.comdex',
@@ -54,16 +172,12 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://comdex-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/comdex',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://rpc-comdex.cosmos-spaces.cloud',
         provider: 'Cosmos Spaces'
-      },
-      {
-        address: 'https://rpc-comdex.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://comdex-mainnet-rpc.autostake.com:443',
@@ -88,6 +202,14 @@ const info: Chain = {
       {
         address: 'https://comdex-rpc.validatornode.com',
         provider: 'ValidatorNode'
+      },
+      {
+        address: 'https://rpc-comdex.blockval.io',
+        provider: 'Blockval'
+      },
+      {
+        address: 'https://comdex-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -108,7 +230,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://comdex-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/comdex',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -118,10 +240,6 @@ const info: Chain = {
       {
         address: 'https://comdex-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://lcd-comdex.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://comdex-api.w3coins.io',
@@ -142,6 +260,14 @@ const info: Chain = {
       {
         address: 'https://comdex-api.validatornode.com',
         provider: 'ValidatorNode'
+      },
+      {
+        address: 'https://api-comdex.blockval.io',
+        provider: 'Blockval'
+      },
+      {
+        address: 'https://comdex-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [
@@ -166,7 +292,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'comdex-grpc.lavenderfive.com:443',
+        address: 'comdex.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -188,6 +314,10 @@ const info: Chain = {
       {
         address: 'comdex-grpc.stakerhouse.com:443',
         provider: 'StakerHouse'
+      },
+      {
+        address: 'https://grpc-comdex.blockval.io:443',
+        provider: 'Blockval'
       }
     ]
   },
@@ -235,11 +365,20 @@ const info: Chain = {
       kind: 'ValidatorNode',
       url: 'https://explorer.validatornode.com/comdex',
       txPage: 'https://explorer.validatornode.com/comdex/tx/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/comdex',
+      txPage: 'https://mainnet.whispernode.com/comdex/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/comdex/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg',
+      theme: {
+        primaryColorHex: '#fc4454'
+      }
     }]
 };
 export default info;

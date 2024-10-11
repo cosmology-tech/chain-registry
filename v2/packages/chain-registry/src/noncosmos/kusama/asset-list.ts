@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'kusama',
   assets: [{
       description: 'The native fee, governance, staking, and bonding token of the Polkadot platform.',

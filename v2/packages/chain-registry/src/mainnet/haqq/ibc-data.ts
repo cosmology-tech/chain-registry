@@ -174,6 +174,35 @@ const info: IBCData[] = [
           dex: 'osmosis'
         }
       }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'haqq',
+      clientId: '07-tendermint-6',
+      connectionId: 'connection-8'
+    },
+    chain2: {
+      chainName: 'stride',
+      clientId: '07-tendermint-143',
+      connectionId: 'connection-143'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-7',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-240',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
   }
 ];
 export default info;

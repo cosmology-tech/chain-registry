@@ -4,8 +4,9 @@ const info: Chain = {
   chainName: 'uniontestnet',
   status: 'live',
   networkType: 'testnet',
-  prettyName: 'Union',
-  chainId: 'union-testnet-6',
+  prettyName: 'Union Testnet',
+  chainType: 'cosmos',
+  chainId: 'union-testnet-8',
   bech32Prefix: 'union',
   daemonName: 'uniond',
   nodeHome: '$HOME/.uniond',
@@ -28,6 +29,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc.testnet-8.union.build',
+        provider: 'union'
+      },
+      {
         address: 'https://union-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -36,15 +41,15 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://rpc.testnet.bonlulu.uno',
-        provider: 'bonlulu'
-      },
-      {
         address: 'https://union-testnet-rpc.itrocket.net',
         provider: 'ITRocket'
       }
     ],
     rest: [
+      {
+        address: 'https://rest.testnet-8.union.build',
+        provider: 'union'
+      },
       {
         address: 'https://union-testnet-api.polkachu.com',
         provider: 'Polkachu'
@@ -54,15 +59,15 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://api.testnet.bonlulu.uno',
-        provider: 'bonlulu'
-      },
-      {
         address: 'https://union-testnet-api.itrocket.net',
         provider: 'ITRocket'
       }
     ],
     grpc: [
+      {
+        address: 'grpc.testnet-8.union.build',
+        provider: 'union'
+      },
       {
         address: 'http://union-testnet-grpc.polkachu.com:24690',
         provider: 'Polkachu'
@@ -70,10 +75,6 @@ const info: Chain = {
       {
         address: 'https://grpc-testnet-union.nodeist.net',
         provider: 'Nodeist'
-      },
-      {
-        address: 'https://grpc.testnet.bonlulu.uno',
-        provider: 'bonlulu'
       },
       {
         address: 'http://union-testnet-grpc.itrocket.net:23090',
@@ -86,9 +87,9 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'ping.pub',
-      url: 'https://testnet.bonlulu.uno/union',
-      txPage: 'https://testnet.bonlulu.uno/union/tx/${txHash}',
-      accountPage: 'https://testnet.bonlulu.uno/union/account/${accountAddress}'
+      url: 'https://explorer.testnet-8.union.build/union',
+      txPage: 'https://explorer.testnet-8.union.build/union/tx/${txHash}',
+      accountPage: 'https://explorer.testnet-8.union.build/union/account/${accountAddress}'
     }, {
       kind: 'explorers.guru',
       url: 'https://testnet.union.explorers.guru',

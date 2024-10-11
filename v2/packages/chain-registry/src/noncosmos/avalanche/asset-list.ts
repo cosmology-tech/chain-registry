@@ -1,10 +1,11 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'avalanche',
   assets: [
     {
-      description: 'AVAX is the native token of Avalanche. It is a hard-capped, scarce asset that is used to pay for fees, secure the platform through staking, and provide a basic unit of account between the multiple subnets created on Avalanche.',
+      description: 'Avalanche is a high-performance blockchain platform known for its fast transaction speeds, low costs, and scalability, ideal for decentralized applications and custom blockchain networks.',
+      extendedDescription: 'Avalanche is a blockchain platform developed by Ava Labs that aims to provide a highly scalable and efficient environment for decentralized applications (dApps) and custom blockchain networks. Launched in 2020, Avalanche uses a novel consensus protocol called Avalanche Consensus, which allows it to process thousands of transactions per second with near-instant finality. The platform\'s architecture includes three built-in blockchains: the Exchange Chain (X-Chain), the Contract Chain (C-Chain), and the Platform Chain (P-Chain), each serving different purposes such as asset creation, smart contracts, and coordination of validators and subnets. Avalanche supports interoperability with Ethereum and other blockchains through its Avalanche Bridge and other cross-chain bridges. The native token, AVAX, is used for transaction fees, staking, and governance, making it an integral part of the Avalanche ecosystem.',
       denomUnits: [{
           denom: 'wei',
           exponent: 0
@@ -24,7 +25,10 @@ const info: AssetList = {
       coingeckoId: 'avalanche-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg',
+          theme: {
+            primaryColorHex: '#eb4444'
+          }
         }]
     },
     {
@@ -60,7 +64,7 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      description: 'USDC issued on Avalanche.',
       typeAsset: 'erc20',
       address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
       denomUnits: [{
@@ -72,7 +76,7 @@ const info: AssetList = {
           exponent: 6
         }],
       base: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
-      name: 'USD Coin',
+      name: 'USDC',
       display: 'usdc',
       symbol: 'USDC',
       traces: [{
@@ -84,11 +88,59 @@ const info: AssetList = {
           provider: 'Circle'
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       coingeckoId: 'usd-coin',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
+        }]
+    },
+    {
+      description: 'USDC Bridged from Ethereum via Avalanche Bridge.',
+      typeAsset: 'erc20',
+      address: '0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664',
+      denomUnits: [{
+          denom: '0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664',
+          exponent: 0,
+          aliases: ['uusdc']
+        }, {
+          denom: 'usdc',
+          exponent: 6
+        }],
+      base: '0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664',
+      name: 'Bridged USDC',
+      display: 'usdc',
+      symbol: 'USDC.e',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          provider: 'Avalanche Bridge'
+        }],
+      coingeckoId: 'usd-coin-avalanche-bridged-usdc-e',
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
         }]
     },
     {
@@ -150,6 +202,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'axelar',
+            baseDenom: 'frax-wei'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }]
     },
@@ -213,6 +269,44 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        }]
+    },
+    {
+      description: 'USDT issued on Avalanche.',
+      typeAsset: 'erc20',
+      address: '0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7',
+      denomUnits: [{
+          denom: '0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7',
+          exponent: 0
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      base: '0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7',
+      name: 'Tether USD',
+      display: 'usdt',
+      symbol: 'USDT',
+      traces: [{
+          type: 'additional-mintage',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          provider: 'Tether'
+        }],
+      coingeckoId: 'tether',
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }]
     }
   ]

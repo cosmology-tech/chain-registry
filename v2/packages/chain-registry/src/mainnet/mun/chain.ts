@@ -6,6 +6,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Mun',
+  chainType: 'cosmos',
   chainId: 'mun-1',
   bech32Prefix: 'mun',
   daemonName: 'mund',
@@ -24,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/munblockchain/mun-node',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://mainnet1rpc.mun.money/genesis'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.png',
@@ -43,6 +54,10 @@ const info: Chain = {
       {
         address: 'https://rpc.mun.tcnetwork.io',
         provider: 'TC Network'
+      },
+      {
+        address: 'https://mun_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -57,6 +72,10 @@ const info: Chain = {
       {
         address: 'https://rest.mun.tcnetwork.io',
         provider: 'TC Network'
+      },
+      {
+        address: 'https://mun_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: []
@@ -83,11 +102,20 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/mun',
       txPage: 'https://explorer.tcnetwork.io/mun/transaction/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/mun',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/mun/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/mun/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.svg',
+      theme: {
+        primaryColorHex: '#f6ba32'
+      }
     }]
 };
 export default info;

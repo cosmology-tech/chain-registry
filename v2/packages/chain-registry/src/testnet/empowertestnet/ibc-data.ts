@@ -1,7 +1,7 @@
 import { IBCData } from '@chain-registry/v2-types';
 const info: IBCData[] = [
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshubtestnet',
       clientId: '07-tendermint-2073',
@@ -30,7 +30,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'empowertestnet',
       clientId: '07-tendermint-1',
@@ -59,7 +59,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'empowertestnet',
       clientId: '07-tendermint-2',

@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'jackaltestnet',
+  chainType: 'cosmos',
   chainId: 'canine-1',
   website: 'https://jackalprotocol.com',
   prettyName: 'Jackal',
@@ -19,7 +20,25 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/JackalLabs/canine-chain',
+    recommendedVersion: 'v1.2.2-alpha.1',
+    compatibleVersions: ['v1.2.2-alpha.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/JackalLabs/woof/master/genesis/woof-final.json'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-Linux',
+      "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-macOS'
+    },
+    versions: [{
+        name: 'v1.2.2-alpha.1',
+        recommendedVersion: 'v1.2.2-alpha.1',
+        compatibleVersions: ['v1.2.2-alpha.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-macOS'
+        }
+      }]
   },
   apis: {
     rpc: [{
@@ -51,8 +70,8 @@ const info: Chain = {
       accountPage: 'https://explorer.stavr.tech/Jackal-Testnet/account/${accountAddress}'
     }, {
       kind: 'ping.pub',
-      url: 'https://ping.pub/jackal',
-      txPage: 'https://ping.pub/jackal/tx/${txHash}'
+      url: 'https://testnet.ping.pub/jackal',
+      txPage: 'https://testnet.ping.pub/jackal/tx/${txHash}'
     }]
 };
 export default info;

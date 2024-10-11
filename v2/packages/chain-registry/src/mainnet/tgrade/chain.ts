@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://tgrade.finance/',
   prettyName: 'Tgrade',
+  chainType: 'cosmos',
   chainId: 'tgrade-mainnet-1',
   bech32Prefix: 'tgrade',
   daemonName: 'tgrade',
@@ -27,7 +28,25 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasmEnabled: true
+    gitRepo: 'https://github.com/confio/tgrade',
+    recommendedVersion: 'v2.0.4',
+    compatibleVersions: ['v2.0.4'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/confio/tgrade-networks/main/mainnet-1/config/genesis.json'
+    },
+    cosmwasmEnabled: true,
+    versions: [{
+        name: 'v2.0.4',
+        recommendedVersion: 'v2.0.4',
+        compatibleVersions: ['v2.0.4'],
+        cosmwasmEnabled: true,
+        cosmwasm: {
+          enabled: true
+        }
+      }],
+    cosmwasm: {
+      enabled: true
+    }
   },
   apis: {
     rpc: [{
@@ -58,7 +77,10 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg',
+      theme: {
+        primaryColorHex: '#c9167b'
+      }
     }]
 };
 export default info;

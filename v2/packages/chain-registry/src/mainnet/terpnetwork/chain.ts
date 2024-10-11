@@ -5,12 +5,134 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Terp-Network',
+  chainType: 'cosmos',
   chainId: 'morocco-1',
   bech32Prefix: 'terp',
   daemonName: 'terp',
   nodeHome: '$HOME/.terp',
   codebase: {
-
+    gitRepo: 'https://github.com/terpnetwork/terp-core.git',
+    recommendedVersion: 'v4.2.2',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.2'
+    },
+    compatibleVersions: ['v4.2.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/terpnetwork/networks/main/mainnet/morocco-1/genesis.json'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.2/terpd-linux-amd64',
+      "linux/arm64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.2/terpd-linux-arm64'
+    },
+    versions: [
+      {
+        name: 'v1.0.0-stable',
+        recommendedVersion: 'v1.0.0-stable',
+        compatibleVersions: ['v1.0.0', 'v1.0.0-stable'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.0'
+        }
+      },
+      {
+        name: 'huckleberry',
+        recommendedVersion: 'huckleberry',
+        compatibleVersions: ['huckleberry'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.0'
+        }
+      },
+      {
+        name: 'barberry',
+        recommendedVersion: 'barberry',
+        compatibleVersions: ['barberry'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.1'
+        }
+      },
+      {
+        name: 'v2.0.0',
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        }
+      },
+      {
+        name: 'v3.0.0',
+        recommendedVersion: 'v3.0.0',
+        compatibleVersions: ['v3.0.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        }
+      },
+      {
+        name: 'v2-pigeonfall',
+        recommendedVersion: 'v2-pigeonfall',
+        compatibleVersions: ['v2-pigeonfall'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        }
+      },
+      {
+        name: 'v3-pigeonfall',
+        recommendedVersion: 'v3-pigeonfall',
+        compatibleVersions: ['v3-pigeonfall'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v4.1.0'
+      },
+      {
+        name: 'v4.1.0',
+        proposal: 30,
+        height: 3698609,
+        recommendedVersion: 'v4.1.0',
+        compatibleVersions: ['v4.1.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v4.2.0'
+      },
+      {
+        name: 'v4.2.0',
+        recommendedVersion: 'v4.2.0',
+        compatibleVersions: [],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v4.2.1'
+      },
+      {
+        name: 'v4.2.1',
+        recommendedVersion: 'v4.2.1',
+        compatibleVersions: ['v4.2.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v4.2.2'
+      },
+      {
+        name: 'v4.2.2',
+        recommendedVersion: 'v4.2.2',
+        compatibleVersions: ['v4.2.1'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: ''
+      }
+    ]
   },
   fees: {
     feeTokens: [{
@@ -37,7 +159,7 @@ const info: Chain = {
         provider: 'itrocket.net'
       },
       {
-        address: ' https://terp.rpc.nodex.one:443',
+        address: 'https://terp.rpc.nodex.one:443',
         provider: 'nodex.one'
       }
     ],
@@ -51,7 +173,7 @@ const info: Chain = {
         provider: 'itrocket.net'
       },
       {
-        address: ' https://terp.api.nodex.one:443',
+        address: 'https://terp.api.nodex.one:443',
         provider: 'nodex.one'
       },
       {
@@ -69,7 +191,7 @@ const info: Chain = {
         provider: 'itrocket.net'
       },
       {
-        address: ' https://terp.grpc.nodex.one:443',
+        address: 'https://terp.grpc.nodex.one:443',
         provider: 'nodex.one'
       }
     ]
@@ -101,7 +223,10 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/logo.png',
+      theme: {
+        primaryColorHex: '#a2cd9a'
+      }
     }],
   slip44: 118
 };

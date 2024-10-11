@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Osmosis Testnet',
+  chainType: 'cosmos',
   chainId: 'osmo-test-4',
   bech32Prefix: 'osmo',
   daemonName: 'osmosisd',
@@ -26,9 +27,66 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/osmosis-labs/osmosis',
+    recommendedVersion: 'v15.0.0-rc3',
+    compatibleVersions: ['v15.0.0-rc3'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.29',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.29'
+    genesis: {
+      genesisUrl: 'https://github.com/osmosis-labs/networks/raw/main/osmo-test-4/genesis.tar.bz2'
+    },
+    versions: [{
+        name: 'v14.0.0-rc1',
+        recommendedVersion: 'v14.0.0-rc1',
+        compatibleVersions: ['v14.0.0-rc1'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.29',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.29',
+          enabled: true
+        }
+      }, {
+        name: 'v15.0.0-rc3',
+        recommendedVersion: 'v15.0.0-rc3',
+        compatibleVersions: ['v15.0.0-rc3'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.29',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.29',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.29',
+      enabled: true
+    }
   },
   apis: {
     rpc: [
@@ -55,8 +113,7 @@ const info: Chain = {
         provider: 'ChainLayer'
       },
       {
-        address: 'https://testnet-rest.osmosis.zone/',
-        provider: ''
+        address: 'https://testnet-rest.osmosis.zone/'
       }
     ],
     grpc: [{

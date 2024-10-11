@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'andromeda1',
+  chainType: 'cosmos',
   chainId: 'andromeda-1',
   prettyName: 'Andromeda',
   status: 'killed',
@@ -25,7 +26,10 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    gitRepo: 'https://github.com/andromedaprotocol/andromedad',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/andromedaprotocol/mainnet/release/genesis.json'
+    }
   },
   apis: {
     rpc: [
@@ -46,7 +50,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://andromeda-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/andromeda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -92,7 +96,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://andromeda-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/andromeda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -122,7 +126,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'andromeda-grpc.lavenderfive.com:443',
+        address: 'andromeda.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -192,7 +196,10 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png'
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

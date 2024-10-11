@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Source Testnet',
+  chainType: 'cosmos',
   chainId: 'sourcetest-1',
   bech32Prefix: 'source',
   daemonName: 'sourced',
@@ -26,12 +27,77 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/Source-Protocol-Cosmos/source',
+    recommendedVersion: 'v3.0.1',
+    compatibleVersions: ['v3.0.1'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.30',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Source-Protocol-Cosmos/testnets/master/sourcetest-1/genesis.json'
+    },
+    versions: [{
+        name: 'v3.0.0',
+        recommendedVersion: 'v3.0.0',
+        compatibleVersions: ['v3.0.0'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        }
+      }, {
+        name: 'v3.0.1',
+        recommendedVersion: 'v3.0.1',
+        compatibleVersions: ['v3.0.1'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   apis: {
     rpc: [
+      {
+        address: 'https://source-testnet-rpc.itrocket.net/',
+        provider: 'ITRocket'
+      },
+      {
+        address: 'https://source-test.rpc.moonbridge.team/',
+        provider: 'MoonBridge'
+      },
       {
         address: 'https://source-testnet-rpc.stake-town.com:443',
         provider: 'StakeTown'
@@ -43,9 +109,21 @@ const info: Chain = {
       {
         address: 'https://source-testnet.rpc.kjnodes.com',
         provider: 'kjnodes'
+      },
+      {
+        address: 'https://source_testnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
+      {
+        address: 'https://source-testnet-api.itrocket.net/',
+        provider: 'ITRocket'
+      },
+      {
+        address: 'https://source-test.api.moonbridge.team/',
+        provider: 'MoonBridge'
+      },
       {
         address: 'https://source-testnet-api.stake-town.com:443',
         provider: 'StakeTown'
@@ -57,6 +135,10 @@ const info: Chain = {
       {
         address: 'https://source.api.t.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://source_testnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [{
@@ -82,6 +164,12 @@ const info: Chain = {
       kind: 'SR20DE',
       url: 'https://explorer.sr20de.xyz/Source-testnet',
       txPage: 'https://explorer.sr20de.xyz/Source-testnet/txs/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/source-testnet',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/source-testnet/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/source-testnet/account/${accountAddress}'
     }
   ]
 };

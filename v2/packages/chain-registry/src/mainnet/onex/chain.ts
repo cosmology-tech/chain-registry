@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://app.onomy.io/',
   networkType: 'mainnet',
   prettyName: 'ONEX',
+  chainType: 'cosmos',
   chainId: 'onex-mainnet-1',
   bech32Prefix: 'onomy',
   daemonName: 'onexd',
@@ -27,7 +28,39 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.45.16'
+    gitRepo: 'https://github.com/onomyprotocol/onex',
+    recommendedVersion: 'v1.1.0',
+    compatibleVersions: ['v1.1.0'],
+    cosmosSdkVersion: '0.45.16',
+    consensus: {
+      type: 'cometbft',
+      version: '0.34.28'
+    },
+    genesis: {
+      name: 'v1',
+      genesisUrl: 'https://raw.githubusercontent.com/onomyprotocol/onex/main/chain/onex-mainnet-1/genesis-with-ccv.json'
+    },
+    versions: [{
+        name: 'v1.1.0',
+        tag: 'v1.1.0',
+        recommendedVersion: 'v1.1.0',
+        compatibleVersions: ['v1.1.0'],
+        cosmosSdkVersion: '0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.28'
+        },
+        height: 0,
+        nextVersionName: 'v1.2.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45.16'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45.16'
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',
@@ -55,6 +88,9 @@ const info: Chain = {
       txPage: 'https://dexplorer.cakralabs.site/txs/${txHash}',
       accountPage: 'https://dexplorer.cakralabs.site/${accountAddress}'
     }],
-  keywords: ['dex']
+  keywords: ['dex'],
+  logoURIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png'
+  }
 };
 export default info;

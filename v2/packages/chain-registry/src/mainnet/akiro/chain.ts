@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   networkType: 'mainnet',
   prettyName: 'Akiro',
+  chainType: 'cosmos',
   chainId: 'akiro-1',
   bech32Prefix: 'akiro',
   daemonName: 'akirod',
@@ -26,7 +27,30 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/akiroinu/akiro/',
+    recommendedVersion: 'v0.2',
+    compatibleVersions: ['v0.2'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/akiroinu/akiro/main/mainnet/genesis.json'
+    },
+    versions: [{
+        name: 'v0.2',
+        recommendedVersion: 'v0.2',
+        compatibleVersions: ['v0.2'],
+        cosmosSdkVersion: 'v0.45.4',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.19'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.4'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.0.0'
+        }
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
@@ -62,7 +86,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg',
+      theme: {
+        primaryColorHex: '#f7f0e1'
+      }
     }]
 };
 export default info;

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://akash.network/',
   prettyName: 'Akash',
+  chainType: 'cosmos',
   chainId: 'akashnet-2',
   bech32Prefix: 'akash',
   daemonName: 'akash',
@@ -14,7 +15,7 @@ const info: Chain = {
   fees: {
     feeTokens: [{
         denom: 'uakt',
-        fixedMinGasPrice: 0,
+        fixedMinGasPrice: 0.00025,
         lowGasPrice: 0.00025,
         averageGasPrice: 0.0025,
         highGasPrice: 0.025
@@ -26,7 +27,169 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.45.16'
+    gitRepo: 'https://github.com/akash-network/node/',
+    recommendedVersion: 'v0.36.0',
+    compatibleVersions: ['v0.36.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_amd64.zip',
+      "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_arm64.zip'
+    },
+    cosmosSdkVersion: 'v0.45.16',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.27',
+      repo: 'https://github.com/akash-network/cometbft',
+      tag: 'v0.34.27-akash'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/akash-network/net/master/mainnet/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v0.22.0',
+        recommendedVersion: 'v0.22.7',
+        compatibleVersions: ['v0.22.7'],
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.22.7/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.22.7/akash_linux_arm64.zip'
+        },
+        nextVersionName: 'v0.24.0'
+      },
+      {
+        name: 'v0.24.0',
+        recommendedVersion: 'v0.24.0',
+        compatibleVersions: ['v0.24.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.24.0/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.24.0/akash_linux_arm64.zip'
+        },
+        nextVersionName: 'v0.26.0'
+      },
+      {
+        name: 'v0.26.0',
+        recommendedVersion: 'v0.26.2',
+        compatibleVersions: ['v0.26.1', 'v0.26.2'],
+        proposal: 231,
+        height: 12992204,
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.26.2/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.26.2/akash_linux_arm64.zip'
+        },
+        nextVersionName: 'v0.28.0'
+      },
+      {
+        name: 'v0.28.0',
+        recommendedVersion: 'v0.28.2',
+        compatibleVersions: ['v0.28.2'],
+        proposal: 237,
+        height: 13759618,
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.28.2/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.28.2/akash_linux_arm64.zip'
+        },
+        nextVersionName: 'v0.30.0'
+      },
+      {
+        name: 'v0.30.0',
+        recommendedVersion: 'v0.30.0',
+        compatibleVersions: ['v0.30.0'],
+        proposal: 238,
+        height: 1388074,
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.30.0/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.30.0/akash_linux_arm64.zip'
+        },
+        nextVersionName: 'v0.32.0'
+      },
+      {
+        name: 'v0.32.0',
+        recommendedVersion: 'v0.32.1',
+        compatibleVersions: ['v0.32.1'],
+        proposal: 249,
+        height: 15414427,
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.32.1/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.32.1238/akash_linux_arm64.zip'
+        },
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27',
+          repo: 'https://github.com/akash-network/cometbft',
+          tag: 'v0.34.27-akash'
+        },
+        nextVersionName: 'v0.34.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.4.2'
+        }
+      },
+      {
+        name: 'v0.34.0',
+        recommendedVersion: 'v0.34.1',
+        compatibleVersions: ['v0.34.1'],
+        proposal: 256,
+        height: 16133283,
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.34.1/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.34.1/akash_linux_arm64.zip'
+        },
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27',
+          repo: 'https://github.com/akash-network/cometbft',
+          tag: 'v0.34.27-akash'
+        },
+        nextVersionName: 'v0.36.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.6.0'
+        }
+      },
+      {
+        name: 'v0.36.0',
+        recommendedVersion: 'v0.36.0',
+        compatibleVersions: ['v0.36.0'],
+        proposal: 257,
+        height: 16708237,
+        binaries: {
+          "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_arm64.zip'
+        },
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27',
+          repo: 'https://github.com/akash-network/cometbft',
+          tag: 'v0.34.27-akash'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.6.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.6.0'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
@@ -44,7 +207,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://akash-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/akash',
         provider: 'Lavender.Five Nodes'
       },
       {
@@ -114,7 +277,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://akash-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/akash',
         provider: 'Lavender.Five Nodes'
       },
       {
@@ -162,7 +325,7 @@ const info: Chain = {
         provider: 'ValidatorNode'
       },
       {
-        address: 'https://lcd-akash.whispernode.com:443',
+        address: 'https://api-akash.whispernode.com:443',
         provider: 'WhisperNode 🤐'
       },
       {
@@ -180,7 +343,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'akash-grpc.lavenderfive.com:443',
+        address: 'akash.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -210,6 +373,10 @@ const info: Chain = {
       {
         address: 'https://akash.declab.pro:9001',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'grpc-akash.whispernode.com:443',
+        provider: 'WhisperNode 🤐'
       }
     ]
   },
@@ -256,11 +423,20 @@ const info: Chain = {
       kind: 'Decloud Nodes Lab',
       url: 'https://explorer.declab.pro/Akash',
       txPage: 'https://explorer.declab.pro/Akash/tx/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/akash',
+      txPage: 'https://mainnet.whispernode.com/akash/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/akash/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg',
+      theme: {
+        primaryColorHex: '#bc342c'
+      }
     }]
 };
 export default info;

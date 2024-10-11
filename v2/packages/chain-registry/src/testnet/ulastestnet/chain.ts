@@ -5,12 +5,23 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'ULAS',
+  chainType: 'cosmos',
   chainId: 'ulas',
   bech32Prefix: 'ulas',
   daemonName: 'ulasd',
   nodeHome: '$HOME/.ulas',
   codebase: {
-
+    gitRepo: 'https://github.com/ulasnetwork/ulas',
+    recommendedVersion: 'v0.0.1',
+    compatibleVersions: ['v0.0.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/ulasnetwork/chain-config/main/ulas/genesis.json'
+    },
+    versions: [{
+        name: 'v0.0.1',
+        recommendedVersion: 'v0.0.1',
+        compatibleVersions: ['v0.0.1']
+      }]
   },
   apis: {
     rpc: [{

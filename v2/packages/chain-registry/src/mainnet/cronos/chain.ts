@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://cronos.org',
   prettyName: 'Cronos',
+  chainType: 'cosmos',
   chainId: 'cronosmainnet_25-1',
   bech32Prefix: 'crc',
   daemonName: 'cronosd',
@@ -19,20 +20,61 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/crypto-org-chain/cronos',
+    recommendedVersion: 'v1.3.0',
+    compatibleVersions: [
+      'v1.2.0',
+      'v1.2.1',
+      'v1.2.2',
+      'v1.3.0'
+    ],
+    binaries: {
+      "linux/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Linux_x86_64.tar.gz',
+      "linux/arm64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Darwin_x86_64.tar.gz',
+      "darwin/arm64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Windows_x86_64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.3.0',
+        recommendedVersion: 'v1.3.0',
+        compatibleVersions: [
+          'v1.2.0',
+          'v1.2.1',
+          'v1.2.2',
+          'v1.3.0'
+        ],
+        binaries: {
+          "linux/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Windows_x86_64.tar.gz'
+        }
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc.cronos.org/',
         provider: 'cronos.org'
-      }, {
+      },
+      {
         address: 'https://cronos-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      }],
+      },
+      {
+        address: 'https://cronos.drpc.org',
+        provider: 'dRPC'
+      }
+    ],
     rest: [{
         address: 'https://rest.cronos.org/',
         provider: 'cronos.org'
@@ -67,15 +109,17 @@ const info: Chain = {
       txPage: 'https://cronos.org/explorer/tx/${txHash}'
     },
     {
-      kind: 'ezstaking',
-      url: 'https://ezstaking.app/cronos',
-      txPage: 'https://ezstaking.app/cronos/txs/${txHash}',
-      accountPage: 'https://ezstaking.app/cronos/account/${accountAddress}'
+      kind: 'ping.pub',
+      url: 'https://ping.pub/cronos',
+      txPage: 'https://ping.pub/cronos/tx/${txHash}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg',
+      theme: {
+        primaryColorHex: '#0c2c71'
+      }
     }]
 };
 export default info;

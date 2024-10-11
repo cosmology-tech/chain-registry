@@ -6,10 +6,12 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://aura.network/',
   prettyName: 'Aura Network',
-  chainId: 'xstaxy-1',
+  chainType: 'cosmos',
+  chainId: 'aura_6322-2',
   bech32Prefix: 'aura',
   daemonName: 'aurad',
   nodeHome: '$HOME/.aura',
+  preForkChainName: 'aura1',
   keyAlgos: ['secp256k1'],
   slip44: 118,
   fees: {
@@ -30,9 +32,120 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: '0.47.5',
+    gitRepo: 'https://github.com/aura-nw/aura',
+    recommendedVersion: 'v0.9.3',
+    compatibleVersions: ['v0.9.3'],
+    cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4',
+      repo: 'https://github.com/aura-nw/cometbft',
+      tag: 'v0.37.4-aura.2'
+    },
+    cosmwasmVersion: 'v0.42.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.42.0'
+    genesis: {
+      genesisUrl: 'https://images.aura.network/aura_6322-2-genesis.tar.gz'
+    },
+    versions: [
+      {
+        name: 'v0.8.2',
+        recommendedVersion: 'v0.8.2',
+        compatibleVersions: ['v0.8.2'],
+        cosmosSdkVersion: 'v0.47.8',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.4'
+        },
+        cosmwasmVersion: '0.42.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'ibcupgrade',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.8'
+        },
+        cosmwasm: {
+          version: '0.42.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'ibcupgrade',
+        recommendedVersion: 'v0.8.3',
+        compatibleVersions: ['v0.8.3'],
+        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.8-evmos',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4',
+          repo: 'https://github.com/aura-nw/cometbft',
+          tag: 'v0.37.4-aura.2'
+        },
+        cosmwasmVersion: 'v0.42.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.9.3',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/evmos/cosmos-sdk',
+          version: 'v0.47.8',
+          tag: 'v0.47.8-evmos'
+        },
+        cosmwasm: {
+          version: 'v0.42.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'v0.9.3',
+        recommendedVersion: 'v0.9.3',
+        compatibleVersions: ['v0.9.3'],
+        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4',
+          repo: 'https://github.com/aura-nw/cometbft',
+          tag: 'v0.37.4-aura.2'
+        },
+        cosmwasmVersion: 'v0.42.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/evmos/cosmos-sdk',
+          version: 'v0.47.12',
+          tag: 'v0.47.12-evmos'
+        },
+        cosmwasm: {
+          version: 'v0.42.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.6.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/evmos/cosmos-sdk',
+      version: 'v0.47.12',
+      tag: 'v0.47.12-evmos'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.6.0'
+    },
+    cosmwasm: {
+      version: 'v0.42.0',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
@@ -65,11 +178,7 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'https://aura-rpc.tienthuattoan.ventures',
-        provider: 'TienThuatToan'
-      },
-      {
-        address: 'https://aura-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/aura',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -139,7 +248,7 @@ const info: Chain = {
         provider: 'TienThuatToan'
       },
       {
-        address: 'https://aura-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/aura',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -213,7 +322,7 @@ const info: Chain = {
         provider: 'TienThuatToan'
       },
       {
-        address: 'aura-grpc.lavenderfive.com:443',
+        address: 'aura.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -254,8 +363,8 @@ const info: Chain = {
     {
       kind: 'aurascan',
       url: 'https://aurascan.io',
-      txPage: 'https://aurascan.io/transaction/${txHash}',
-      accountPage: 'https://aurascan.io/account/${accountAddress}'
+      txPage: 'https://aurascan.io/tx/${txHash}',
+      accountPage: 'https://aurascan.io/address/${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',
@@ -302,7 +411,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg',
+      theme: {
+        primaryColorHex: '#a7c8d4'
+      }
     }]
 };
 export default info;

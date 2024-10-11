@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://mises.site',
   prettyName: 'Mises',
+  chainType: 'cosmos',
   chainId: 'mainnet',
   bech32Prefix: 'mises',
   nodeHome: '$HOME/.misestm',
@@ -24,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/mises-id/mises-tm',
+    recommendedVersion: 'v1.0.4',
+    compatibleVersions: ['v1.0.4'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/mises-id/mainnet/master/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.4',
+        recommendedVersion: 'v1.0.4',
+        compatibleVersions: ['v1.0.4']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
@@ -50,7 +61,10 @@ const info: Chain = {
       txPage: 'https://explorer.jambulmerah.dev/mises/tx/${txHash}'
     }],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png',
+      theme: {
+        primaryColorHex: '#f5f5f8'
+      }
     }]
 };
 export default info;

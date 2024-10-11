@@ -4,21 +4,21 @@ const info: IBCData[] = [
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'axelartestnet',
-      clientId: '07-tendermint-858',
-      connectionId: 'connection-663'
+      clientId: '07-tendermint-1001',
+      connectionId: 'connection-780'
     },
     chain2: {
       chainName: 'titantestnet',
-      clientId: '07-tendermint-1',
-      connectionId: 'connection-1'
+      clientId: '07-tendermint-6',
+      connectionId: 'connection-4'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-448',
+          channelId: 'channel-537',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-1',
+          channelId: 'channel-5',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -53,6 +53,35 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
+          status: 'killed',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'nobletestnet',
+      clientId: '07-tendermint-293',
+      connectionId: 'connection-246'
+    },
+    chain2: {
+      chainName: 'titantestnet',
+      clientId: '07-tendermint-9',
+      connectionId: 'connection-7'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-208',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-7',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
           status: 'live',
           preferred: true
         }
@@ -82,7 +111,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true
         }
       }]
@@ -111,7 +140,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true
         }
       }]

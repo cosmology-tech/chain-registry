@@ -24,7 +24,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true,
           dex: 'osmosis'
         }
@@ -34,21 +34,21 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'archway',
-      clientId: '07-tendermint-66',
-      connectionId: 'connection-72'
+      clientId: '07-tendermint-113',
+      connectionId: 'connection-106'
     },
     chain2: {
       chainName: 'doravota',
-      clientId: '07-tendermint-20',
-      connectionId: 'connection-24'
+      clientId: '07-tendermint-22',
+      connectionId: 'connection-28'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-101',
+          channelId: 'channel-146',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-10',
+          channelId: 'channel-13',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -84,7 +84,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true,
           dex: 'osmosis'
         }
@@ -144,7 +144,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true,
           dex: 'osmosis'
         }
@@ -174,9 +174,38 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true,
           dex: 'osmosis'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'doravota',
+      clientId: '07-tendermint-23',
+      connectionId: 'connection-29'
+    },
+    chain2: {
+      chainName: 'noble',
+      clientId: '07-tendermint-111',
+      connectionId: 'connection-106'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-14',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-94',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },
@@ -204,7 +233,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true,
           dex: 'osmosis'
         }
@@ -259,6 +288,35 @@ const info: IBCData[] = [
         },
         chain2: {
           channelId: 'channel-64',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'killed',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'doravota',
+      clientId: '07-tendermint-24',
+      connectionId: 'connection-30'
+    },
+    chain2: {
+      chainName: 'stargaze',
+      clientId: '07-tendermint-368',
+      connectionId: 'connection-318'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-15',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-394',
           portId: 'transfer'
         },
         ordering: 'unordered',

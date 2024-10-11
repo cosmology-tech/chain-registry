@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://stride.zone/',
   prettyName: 'Stride',
+  chainType: 'cosmos',
   chainId: 'stride-1',
   bech32Prefix: 'stride',
   daemonName: 'strided',
@@ -17,9 +18,9 @@ const info: Chain = {
       {
         denom: 'ustrd',
         fixedMinGasPrice: 0.0005,
-        lowGasPrice: 0.0005,
-        averageGasPrice: 0.001,
-        highGasPrice: 0.002
+        lowGasPrice: 0.005,
+        averageGasPrice: 0.005,
+        highGasPrice: 0.05
       },
       {
         denom: 'stuatom',
@@ -111,6 +112,13 @@ const info: Chain = {
         lowGasPrice: 0.01,
         averageGasPrice: 0.015,
         highGasPrice: 0.03
+      },
+      {
+        denom: 'ibc/BF3B4F53F3694B66E13C23107C84B6485BD2B96296BB7EC680EA77BBA75B4801',
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.01,
+        averageGasPrice: 0.02,
+        highGasPrice: 0.1
       }
     ]
   },
@@ -120,7 +128,363 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0'
+    gitRepo: 'https://github.com/Stride-Labs/stride',
+    recommendedVersion: 'v24.0.0',
+    compatibleVersions: ['v24.0.0'],
+    cosmosSdkVersion: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Stride-Labs/mainnet/main/mainnet/genesis.json',
+      icsCcvUrl: 'https://raw.githubusercontent.com/Stride-Labs/mainnet/main/ics-instructions/ccv.json'
+    },
+    versions: [
+      {
+        name: 'v8',
+        recommendedVersion: 'v8.0.0',
+        compatibleVersions: ['v8.0.0'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        nextVersionName: 'v9',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.1.0'
+        }
+      },
+      {
+        name: 'v9',
+        height: 3396933,
+        recommendedVersion: 'v9.2.1',
+        compatibleVersions: ['v9.0.0', 'v9.2.1'],
+        proposal: 202,
+        nextVersionName: 'v10'
+      },
+      {
+        name: 'v10',
+        height: 4191914,
+        proposal: 206,
+        recommendedVersion: 'v10.0.0',
+        compatibleVersions: ['v10.0.0'],
+        cosmosSdkVersion: '0.47.3',
+        nextVersionName: 'v11',
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.3'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.1.0'
+        }
+      },
+      {
+        name: 'v11',
+        tag: 'v11.0.0',
+        height: 4291924,
+        proposal: 207,
+        recommendedVersion: 'v11.0.0',
+        compatibleVersions: ['v11.0.0'],
+        nextVersionName: 'v12',
+        ibc: {
+          type: 'go',
+          version: '7.2.0'
+        }
+      },
+      {
+        name: 'v12',
+        tag: 'v12.1.0',
+        height: 4616678,
+        proposal: 208,
+        recommendedVersion: 'v12.1.0',
+        compatibleVersions: ['v12.1.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v13',
+        ibc: {
+          type: 'go',
+          version: '7.2.0'
+        }
+      },
+      {
+        name: 'v13',
+        tag: 'v13.1.0',
+        height: 5044405,
+        proposal: 211,
+        recommendedVersion: 'v13.1.0',
+        compatibleVersions: ['v13.1.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v14',
+        ibc: {
+          type: 'go',
+          version: '7.2.0'
+        }
+      },
+      {
+        name: 'v14',
+        tag: 'v14.0.0',
+        height: 5223225,
+        proposal: 214,
+        recommendedVersion: 'v14.0.0',
+        compatibleVersions: ['v14.0.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v15',
+        ibc: {
+          type: 'go',
+          version: '7.2.0'
+        }
+      },
+      {
+        name: 'v15',
+        tag: 'v15.0.0',
+        height: 5532355,
+        proposal: 217,
+        recommendedVersion: 'v15.0.0',
+        compatibleVersions: ['v15.0.0'],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v16',
+        ibc: {
+          type: 'go',
+          version: '7.2.0'
+        }
+      },
+      {
+        name: 'v16',
+        tag: 'v16.0.0',
+        recommendedVersion: 'v16.0.0',
+        compatibleVersions: ['v16.0.0'],
+        proposal: 220,
+        height: 5932395,
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        nextVersionName: 'v17',
+        ibc: {
+          type: 'go',
+          version: '7.2.0'
+        }
+      },
+      {
+        name: 'v17',
+        tag: 'v17.0.0',
+        recommendedVersion: 'v17.0.0',
+        compatibleVersions: ['v17.0.0'],
+        proposal: 226,
+        height: 7244427,
+        cosmosSdkVersion: 'v0.47.5-stride-distribution-fix-0',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        nextVersionName: 'v18',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5',
+          tag: 'v0.47.5-stride-distribution-fix-0'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1'
+        }
+      },
+      {
+        name: 'v18',
+        tag: 'v18.0.0',
+        recommendedVersion: 'v18.0.0',
+        compatibleVersions: ['v18.0.0'],
+        proposal: 229,
+        height: 7464647,
+        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.5-stride-distribution-fix-0',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        nextVersionName: 'v19',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+          version: 'v0.47.5',
+          tag: 'v0.47.5-stride-distribution-fix-0'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1'
+        }
+      },
+      {
+        name: 'v19',
+        tag: 'v19.0.0',
+        recommendedVersion: 'v19.0.0',
+        compatibleVersions: ['v19.0.0'],
+        proposal: 233,
+        height: 8064608,
+        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.5-stride-distribution-fix-0',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        nextVersionName: 'v20',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+          version: 'v0.47.5',
+          tag: 'v0.47.5-stride-distribution-fix-0'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1'
+        }
+      },
+      {
+        name: 'v20',
+        tag: 'v20.0.0',
+        recommendedVersion: 'v20.0.0',
+        compatibleVersions: ['v20.0.0'],
+        proposal: 235,
+        height: 8269628,
+        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: 'v21',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+          version: 'v0.47.10',
+          tag: 'v0.47.10-stride-distribution-fix-0'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1'
+        }
+      },
+      {
+        name: 'v21',
+        tag: 'v21.0.0',
+        recommendedVersion: 'v21.0.0',
+        compatibleVersions: ['v21.0.0'],
+        proposal: 236,
+        height: 8370738,
+        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: 'v22',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+          version: 'v0.47.10',
+          tag: 'v0.47.10-stride-distribution-fix-0'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1'
+        }
+      },
+      {
+        name: 'v22',
+        tag: 'v22.0.0',
+        recommendedVersion: 'v22.0.0',
+        compatibleVersions: ['v22.0.0'],
+        proposal: 237,
+        height: 8681868,
+        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: 'v23',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+          version: 'v0.47.10',
+          tag: 'v0.47.10-stride-distribution-fix-0'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.4.0'
+        }
+      },
+      {
+        name: 'v23',
+        tag: 'v23.0.0',
+        recommendedVersion: 'v23.0.0',
+        compatibleVersions: ['v23.0.0'],
+        proposal: 247,
+        height: 10077001,
+        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+          version: 'v0.47.10',
+          tag: 'v0.47.10-stride-distribution-fix-0'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.4.0'
+        }
+      },
+      {
+        name: 'v24',
+        tag: 'v24.0.0',
+        recommendedVersion: 'v24.0.0',
+        compatibleVersions: ['v24.0.0'],
+        proposal: 249,
+        height: 10755701,
+        cosmosSdkVersion: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+          version: 'v0.47.10',
+          tag: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+      version: 'v0.47.10',
+      tag: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.4.0'
+    }
   },
   description: 'Stride is a blockchain that provides liquidity for staked tokens. Using Stride, you can earn both taking and DeFi yields across the Cosmos IBC ecosystem.',
   apis: {
@@ -134,7 +498,7 @@ const info: Chain = {
         provider: 'Oni Validator ⛩️'
       },
       {
-        address: 'https://stride-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/stride',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -204,7 +568,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'https://stride-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/stride',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -270,7 +634,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'stride-grpc.lavenderfive.com:443',
+        address: 'stride.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -364,15 +728,28 @@ const info: Chain = {
       url: 'https://explorer.stake-take.com/stride',
       txPage: 'https://explorer.stake-take.com/stride/tx/${txHash}',
       accountPage: 'https://explorer.stake-take.com/stride/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/stride',
+      txPage: 'https://mainnet.whispernode.com/stride/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/stride/account/${accountAddress}'
     }
   ],
   logoURIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png',
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stride-chain-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      imageSync: {
+        chainName: 'stride',
+        baseDenom: 'ustrd'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
+      theme: {
+        primaryColorHex: '#e4047c'
+      }
     }]
 };
 export default info;

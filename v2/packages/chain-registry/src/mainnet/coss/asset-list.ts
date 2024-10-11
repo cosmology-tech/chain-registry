@@ -20,11 +20,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.svg'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cgas.svg',
+          theme: {
+            primaryColorHex: '#7c7c7c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The inscription token of the COSS.',
@@ -46,8 +49,12 @@ const info: AssetList = {
       coingeckoId: 'coss-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg',
+          theme: {
+            primaryColorHex: '#876317'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The inscription token of the CIAS.',
@@ -69,8 +76,12 @@ const info: AssetList = {
       coingeckoId: 'cias',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/cias.svg',
+          theme: {
+            primaryColorHex: '#4f3280'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

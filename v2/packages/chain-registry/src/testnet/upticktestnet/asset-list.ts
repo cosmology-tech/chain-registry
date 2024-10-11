@@ -18,10 +18,10 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/upticktestnet/images/uptick.png'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/upticktestnet/images/uptick.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

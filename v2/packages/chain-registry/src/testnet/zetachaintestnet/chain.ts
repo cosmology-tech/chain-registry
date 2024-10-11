@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'ZetaChain Testnet',
+  chainType: 'cosmos',
   chainId: 'athens_7001-1',
   bech32Prefix: 'zeta',
   daemonName: 'zetacored',
@@ -26,7 +27,41 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.46'
+    gitRepo: 'https://github.com/zeta-chain/node',
+    recommendedVersion: 'v8.3.3',
+    cosmosSdkVersion: '0.46',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesisUrl: 'https://zetachain-athens.blockpi.network/rpc/v1/public/genesis'
+    },
+    versions: [{
+        name: 'v8.3.3',
+        recommendedVersion: 'v8.3.3',
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.1.0'
+    }
   },
   apis: {
     rpc: [{
@@ -42,8 +77,7 @@ const info: Chain = {
       }, {
         address: 'https://zetachain-testnet-archive.allthatnode.com:1317',
         provider: 'All That Node'
-      }],
-    grpc: []
+      }]
   },
   explorers: [{
       kind: 'ZetaScan',

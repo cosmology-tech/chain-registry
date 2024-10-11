@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'BeeZee',
+  chainType: 'cosmos',
   chainId: 'beezee-1',
   bech32Prefix: 'bze',
   daemonName: 'bzed',
@@ -26,7 +27,189 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/bze-alphateam/bze',
+    recommendedVersion: 'v7.0.0',
+    compatibleVersions: ['v7.0.0'],
+    binaries: {
+      "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-darwin-amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-darwin-arm64.tar.gz',
+      "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-linux-arm64.tar.gz',
+      "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-win64.zip'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/bze-alphateam/bze/main/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v5.0.1',
+        recommendedVersion: 'v5.0.1',
+        tag: 'v5.0.1',
+        compatibleVersions: ['v5.0.1'],
+        cosmosSdkVersion: 'v0.44.3',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.14'
+        },
+        height: 0,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.0.1/bze-5.0.1-win64.zip'
+        },
+        nextVersionName: 'v5.1.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.44.3'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v1.2.2'
+        }
+      },
+      {
+        name: 'v5.1.1',
+        recommendedVersion: 'v5.1.1',
+        tag: 'v5.1.1',
+        compatibleVersions: ['v5.1.1'],
+        cosmosSdkVersion: 'v0.45.9',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.22'
+        },
+        height: 3303144,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.1/bze-5.1.1-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.1/bze-5.1.1-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.1/bze-5.1.1-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.1/bze-5.1.1-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.1/bze-5.1.1-win64.zip'
+        },
+        nextVersionName: 'v5.1.2',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.9'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v1.2.2'
+        }
+      },
+      {
+        name: 'v5.1.2',
+        recommendedVersion: 'v5.1.2',
+        tag: 'v5.1.2',
+        compatibleVersions: ['v5.1.2'],
+        cosmosSdkVersion: 'v0.45.9',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.22'
+        },
+        height: 3646700,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v5.1.2/bze-5.1.2-win64.zip'
+        },
+        nextVersionName: 'v6.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.9'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v1.2.2'
+        }
+      },
+      {
+        name: 'v6.0.0',
+        recommendedVersion: 'v6.0.0',
+        tag: 'v6.0.0',
+        compatibleVersions: ['v6.0.0'],
+        cosmosSdkVersion: 'v0.45.10',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.22'
+        },
+        height: 4875460,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v6.0.0/bze-6.0.0-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v6.0.0/bze-6.0.0-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v6.0.0/bze-6.0.0-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v6.0.0/bze-6.0.0-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v6.0.0/bze-6.0.0-win64.zip'
+        },
+        nextVersionName: 'v6.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.10'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v2.4.2'
+        }
+      },
+      {
+        name: 'v6.1.0',
+        recommendedVersion: 'v6.1.0',
+        tag: 'v6.1.0',
+        compatibleVersions: ['v6.1.0'],
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        height: 9079079,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v6.1.0/bze-6.1.0-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v6.1.0/bze-6.1.0-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v6.1.0/bze-6.1.0-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v6.1.0/bze-6.1.0-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v6.1.0/bze-6.1.0-win64.zip'
+        },
+        nextVersionName: 'v7.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.5.1'
+        }
+      },
+      {
+        name: 'v7.0.0',
+        recommendedVersion: 'v7.0.0',
+        tag: 'v7.0.0',
+        compatibleVersions: ['v7.0.0'],
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        height: 12723000,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-win64.zip'
+        },
+        nextVersionName: 'v7.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.5.1'
+        }
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
@@ -112,7 +295,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+      theme: {
+        primaryColorHex: '#079fd7'
+      }
     }]
 };
 export default info;

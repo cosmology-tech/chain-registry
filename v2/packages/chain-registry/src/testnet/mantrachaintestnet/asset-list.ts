@@ -6,22 +6,15 @@ const info: AssetList = {
       description: 'The native token of MANTRA',
       denomUnits: [{
           denom: 'uom',
-          exponent: 0,
-          aliases: []
+          exponent: 0
         }, {
           denom: 'om',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       base: 'uom',
       name: 'MANTRA Chain',
       display: 'om',
       symbol: 'OM',
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-      },
-      coingeckoId: '',
       keywords: [
         'mantra',
         'staking',
@@ -30,10 +23,27 @@ const info: AssetList = {
         'regulation',
         'defi'
       ],
+      traces: [{
+          type: 'test-mintage',
+          counterparty: {
+            chainName: 'mantrachain',
+            baseDenom: 'uom'
+          },
+          provider: 'MANTRA Chain'
+        }],
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
-        }]
+          imageSync: {
+            chainName: 'mantrachain',
+            baseDenom: 'uom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#fba0c1'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

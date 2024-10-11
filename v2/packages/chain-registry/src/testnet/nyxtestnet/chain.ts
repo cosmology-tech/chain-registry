@@ -1,11 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'nyxtestnet',
   status: 'live',
   networkType: 'testnet',
   website: 'https://nymtech.net/',
   prettyName: 'Nym',
+  chainType: 'cosmos',
   chainId: 'sandbox',
   bech32Prefix: 'n',
   daemonName: 'nyxd',
@@ -35,7 +36,33 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmwasmEnabled: true
+    gitRepo: 'https://github.com/nymtech/nyxd',
+    recommendedVersion: 'v0.43.0',
+    compatibleVersions: ['v0.43.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
+    },
+    genesis: {
+      genesisUrl: 'https://rpc.sandbox.nymtech.net/genesis'
+    },
+    cosmwasmEnabled: true,
+    versions: [{
+        name: 'v0.43.0',
+        tag: 'v0.43.0',
+        height: 1933203,
+        recommendedVersion: 'v0.43.0',
+        compatibleVersions: ['v0.43.0'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
+        },
+        cosmwasm: {
+          enabled: true
+        }
+      }],
+    cosmwasm: {
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_light.png',

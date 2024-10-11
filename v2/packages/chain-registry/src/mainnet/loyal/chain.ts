@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.joinloyal.com/',
   prettyName: 'Loyal',
+  chainType: 'cosmos',
   chainId: 'loyal-main-02',
   bech32Prefix: 'loyal',
   daemonName: 'loyald',
@@ -24,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/LoyalLabs/loyal',
+    recommendedVersion: 'v0.25.3',
+    compatibleVersions: ['v0.25.3'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/LoyalLabs/net/main/mainnet/genesis.json'
+    },
+    versions: [{
+        name: 'v0.25.3',
+        recommendedVersion: 'v0.25.3',
+        compatibleVersions: ['v0.25.3']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',
@@ -67,7 +78,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.svg',
+      theme: {
+        primaryColorHex: '#5445fb'
+      }
     }]
 };
 export default info;

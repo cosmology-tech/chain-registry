@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'provenance-blockchain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg',
+          theme: {
+            primaryColorHex: '#4c7cdc'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

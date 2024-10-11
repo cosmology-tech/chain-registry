@@ -23,11 +23,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
-          denom: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+          denom: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
           exponent: 0,
           aliases: ['uaxl']
         }, {
@@ -35,7 +36,7 @@ const info: AssetList = {
           exponent: 6
         }],
       typeAsset: 'ics20',
-      base: 'ibc/05007A23A23D8B3D286EC4A541189D86C0B76FD769008E4C85EBE977DDA437D3',
+      base: 'ibc/33517D439F5E545A1AAB148FAE43AAE17CF68FFB9BC97AE0048A3E3B64518C58',
       name: 'Axelar AXL Token',
       display: 'axl',
       symbol: 'AXL',
@@ -44,11 +45,11 @@ const info: AssetList = {
           counterparty: {
             chainName: 'axelartestnet',
             baseDenom: 'uaxl',
-            channelId: 'channel-462'
+            channelId: 'channel-521'
           },
           chain: {
-            channelId: 'channel-486',
-            path: 'transfer/channel-486/uaxl'
+            channelId: 'channel-225057',
+            path: 'transfer/channel-225057/uaxl'
           }
         }],
       images: [{
@@ -134,9 +135,15 @@ const info: AssetList = {
             chainName: 'nobletestnet',
             baseDenom: 'uusdc'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     },

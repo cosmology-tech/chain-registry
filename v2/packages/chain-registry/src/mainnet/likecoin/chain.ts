@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://like.co/',
   networkType: 'mainnet',
   prettyName: 'LikeCoin',
+  chainType: 'cosmos',
   chainId: 'likecoin-mainnet-2',
   bech32Prefix: 'like',
   daemonName: 'liked',
@@ -30,8 +31,212 @@ const info: Chain = {
     }
   },
   codebase: {
+    gitRepo: 'https://github.com/likecoin/likecoin-chain',
+    recommendedVersion: 'v4.2.0',
+    compatibleVersions: ['v4.2.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_x86_64.tar.gz',
+      "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Darwin_x86_64.tar.gz',
+      "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Windows_x86_64.zip'
+    },
     cosmosSdkVersion: '0.46',
-    cosmwasmEnabled: false
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmEnabled: false,
+    genesis: {
+      name: 'fotan-1.0',
+      genesisUrl: 'https://raw.githubusercontent.com/likecoin/mainnet/master/genesis.json'
+    },
+    versions: [
+      {
+        name: 'fotan-1.0',
+        tag: 'v1.2.0',
+        height: 0,
+        recommendedVersion: 'v1.2.0',
+        compatibleVersions: ['v1.2.0', 'fotan-1.2'],
+        cosmosSdkVersion: '0.42',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v1.2.0/likecoin-chain_1.2.0_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v1.2.0/likecoin-chain_1.2.0_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v1.2.0/likecoin-chain_1.2.0_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v1.2.0/likecoin-chain_1.2.0_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v1.2.0/likecoin-chain_1.2.0_Windows_x86_64.zip'
+        },
+        nextVersionName: 'v2.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.42'
+        }
+      },
+      {
+        name: 'v2.0.0',
+        tag: 'v2.0.2',
+        height: 3692800,
+        recommendedVersion: 'v2.0.2',
+        compatibleVersions: [
+          'v2.0.0',
+          'v2.0.1',
+          'v2.0.2'
+        ],
+        cosmosSdkVersion: '0.44',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v2.0.2/likecoin-chain_2.0.2_Windows_x86_64.zip'
+        },
+        nextVersionName: 'v3.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.44'
+        },
+        ibc: {
+          type: 'go',
+          version: '2.1.0'
+        }
+      },
+      {
+        name: 'v3.0.0',
+        tag: 'v3.1.0',
+        height: 4810000,
+        recommendedVersion: 'v3.1.0',
+        compatibleVersions: ['v3.1.0'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v3.1.0/likecoin-chain_3.1.0_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v3.1.0/likecoin-chain_3.1.0_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v3.1.0/likecoin-chain_3.1.0_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v3.1.0/likecoin-chain_3.1.0_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v3.1.0/likecoin-chain_3.1.0_Windows_x86_64.zip'
+        },
+        nextVersionName: 'v4.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        ibc: {
+          type: 'go',
+          version: '2.3.0'
+        }
+      },
+      {
+        name: 'v4.0.0',
+        tag: 'v4.0.1',
+        height: 9419200,
+        recommendedVersion: 'v4.0.1',
+        compatibleVersions: [
+          'v4.0.0',
+          'v4.0.1',
+          'v4.0.2'
+        ],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.0.1/likecoin-chain_4.0.1_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.0.1/likecoin-chain_4.0.1_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.0.1/likecoin-chain_4.0.1_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.0.1/likecoin-chain_4.0.1_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.0.1/likecoin-chain_4.0.1_Windows_x86_64.zip'
+        },
+        nextVersionName: 'v4.1.1',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.3.1'
+        }
+      },
+      {
+        name: 'v4.1.1',
+        tag: 'v4.1.1',
+        height: 12102100,
+        recommendedVersion: 'v4.1.1',
+        compatibleVersions: ['v4.1.1'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.1.1/likecoin-chain_4.1.1_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.1.1/likecoin-chain_4.1.1_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.1.1/likecoin-chain_4.1.1_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.1.1/likecoin-chain_4.1.1_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.1.1/likecoin-chain_4.1.1_Windows_x86_64.zip'
+        },
+        nextVersionName: 'v4.2.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.2.1'
+        }
+      },
+      {
+        name: 'v4.2.0',
+        tag: 'v4.2.0',
+        height: 14103500,
+        recommendedVersion: 'v4.2.0',
+        compatibleVersions: ['v4.2.0'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Windows_x86_64.zip'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.3.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.3.0',
+      icsEnabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [
@@ -95,12 +300,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/likecoin',
-      txPage: 'https://www.mintscan.io/likecoin/transactions/${txHash}',
-      accountPage: 'https://www.mintscan.io/likecoin/accounts/${accountAddress}'
-    },
-    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/likecoin',
       txPage: 'https://ezstaking.app/likecoin/txs/${txHash}',
@@ -132,6 +331,7 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
   },
   keywords: [
+    'ebook',
     'depub',
     'publishing',
     'like',
@@ -141,7 +341,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/likecoin-chain-logo.svg',
+      theme: {
+        primaryColorHex: '#2e656d'
+      }
     }]
 };
 export default info;

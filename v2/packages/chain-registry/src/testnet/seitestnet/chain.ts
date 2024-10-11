@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'seitestnet',
+  chainType: 'cosmos',
   chainId: 'atlantic-1',
   prettyName: 'Sei Atlantic',
   status: 'live',
@@ -19,7 +20,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/sei-protocol/sei-chain',
+    recommendedVersion: '1.0.6beta',
+    compatibleVersions: ['1.0.6beta'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/sei-protocol/testnet/main/sei-incentivized-testnet/genesis.json'
+    },
+    versions: [{
+        name: '1.0.6beta',
+        recommendedVersion: '1.0.6beta',
+        compatibleVersions: ['1.0.6beta']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',

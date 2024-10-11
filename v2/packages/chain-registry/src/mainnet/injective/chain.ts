@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://injective.com/',
   prettyName: 'Injective',
+  chainType: 'cosmos',
   chainId: 'injective-1',
   bech32Prefix: 'inj',
   extraCodecs: ['injective'],
@@ -27,7 +28,78 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/InjectiveFoundation/injective-core/',
+    recommendedVersion: 'v1.13.2',
+    compatibleVersions: ['v1.13.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.13.2-1723753267/linux-amd64.zip'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/InjectiveLabs/mainnet-config/master/10001/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v1.10',
+        recommendedVersion: 'v1.10',
+        compatibleVersions: ['v1.10'],
+        binaries: {
+          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.10.0-1679065799/linux-amd64.zip',
+          "darwin/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.10.0-1679065799/darwin-amd64.zip'
+        },
+        nextVersionName: 'v1.11'
+      },
+      {
+        name: 'v1.11',
+        proposal: 231,
+        height: 34775000,
+        recommendedVersion: 'v1.11.5-1687535916',
+        compatibleVersions: [
+          'v1.11',
+          'v1.11.3-1686246472',
+          'v1.11.4-1686608669',
+          'v1.11.5-1687535916'
+        ],
+        binaries: {
+          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/linux-amd64.zip',
+          "darwin/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/darwin-amd64.zip'
+        },
+        nextVersionName: 'v1.12.0'
+      },
+      {
+        name: 'v1.12.0',
+        proposal: 314,
+        height: 57076000,
+        recommendedVersion: 'v1.12.1-1705909076',
+        compatibleVersions: ['v1.12.0-1704530206', 'v1.12.1-1705909076'],
+        binaries: {
+          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.12.1-1705909076/linux-amd64.zip',
+          "darwin/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.12.1-1705909076/darwin-amd64.zip'
+        },
+        nextVersionName: 'v1.13.0'
+      },
+      {
+        name: 'v1.13.0',
+        proposal: 420,
+        height: 80319200,
+        recommendedVersion: 'v1.13.0-1722157491',
+        compatibleVersions: ['v1.13.0-1722157491'],
+        binaries: {
+          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.13.0-1722157491/linux-amd64.zip'
+        },
+        nextVersionName: 'v1.13.2'
+      },
+      {
+        name: 'v1.13.2',
+        proposal: 424,
+        height: 82830000,
+        recommendedVersion: 'v1.13.2',
+        compatibleVersions: ['v1.13.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.13.2-1723753267/linux-amd64.zip'
+        },
+        nextVersionName: ''
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
@@ -37,11 +109,11 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://injective-1-public-rpc.mesa.ec1-prod.newmetric.xyz',
+        address: 'https://6d0ff611-9009-4bd1-a7a7-acec7c70d454.injective-1.mesa-rpc.newmetric.xyz',
         provider: 'NewMetric'
       },
       {
-        address: 'https://rpc-injective.goldenratiostaking.net',
+        address: 'https://rpc.injective.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
       {
@@ -49,7 +121,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://injective-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/injective',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -87,11 +159,19 @@ const info: Chain = {
       {
         address: 'https://injective-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc-injective.ecostake.com',
+        provider: 'ecostake'
+      },
+      {
+        address: 'https://rpc-injective.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     rest: [
       {
-        address: 'https://injective-1-public-rest.mesa.ec1-prod.newmetric.xyz',
+        address: 'https://6d0ff611-9009-4bd1-a7a7-acec7c70d454.injective-1.mesa-rest.newmetric.xyz',
         provider: 'NewMetric'
       },
       {
@@ -103,7 +183,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://injective-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/injective',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -115,7 +195,7 @@ const info: Chain = {
         provider: 'Stakeflow'
       },
       {
-        address: 'https://rest-injective.goldenratiostaking.net',
+        address: 'https://rest.injective.goldenratiostaking.net',
         provider: 'Golden Ratio Staking'
       },
       {
@@ -141,11 +221,19 @@ const info: Chain = {
       {
         address: 'https://injective-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rest-injective.ecostake.com',
+        provider: 'ecostake'
+      },
+      {
+        address: 'https://rest-injective.kewrnode.com',
+        provider: 'Kewr Node'
       }
     ],
     grpc: [
       {
-        address: 'k8s-injectiv-publicin-731c880328-0f3d7889b57e31a3.elb.eu-central-1.amazonaws.com:80',
+        address: '6d0ff611-9009-4bd1-a7a7-acec7c70d454.injective-1.mesa-grpc.newmetric.xyz:80',
         provider: 'NewMetric'
       },
       {
@@ -153,7 +241,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'injective-grpc.lavenderfive.com:443',
+        address: 'injective.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -235,11 +323,20 @@ const info: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/injective',
       accountPage: 'https://stakeflow.io/injective/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/injective',
+      txPage: 'https://mainnet.whispernode.com/injective/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/injective/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg',
+      theme: {
+        primaryColorHex: '#04a2fc'
+      }
     }]
 };
 export default info;

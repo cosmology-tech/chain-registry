@@ -5,8 +5,9 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'MANTRA Hongbai Testnet',
+  chainType: 'cosmos',
   chainId: 'mantra-hongbai-1',
-  bech32Prefix: 'uom',
+  bech32Prefix: 'mantra',
   daemonName: 'mantrachaind',
   nodeHome: '$HOME/.mantrachain',
   keyAlgos: ['secp256k1'],
@@ -26,32 +27,80 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/MANTRA-Finance',
+    recommendedVersion: '1.0.0',
+    compatibleVersions: ['1.0.0'],
     cosmosSdkVersion: '0.47.3',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    cosmwasmVersion: '0.41',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.41'
+    versions: [{
+        name: '1.0.0',
+        recommendedVersion: '1.0.0',
+        compatibleVersions: ['1.0.0'],
+        cosmosSdkVersion: '0.47.3',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37'
+        },
+        cosmwasmVersion: '0.41',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.3'
+        },
+        cosmwasm: {
+          version: '0.41',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.3'
+    },
+    cosmwasm: {
+      version: '0.41',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{
         address: 'https://rpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
+      }, {
+        address: 'https://mantra-testnet-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }],
     rest: [{
         address: 'https://api.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
+      }, {
+        address: 'https://mantra-testnet-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }],
     grpc: [{
         address: 'https://grpc.hongbai.mantrachain.io',
         provider: 'MANTRACHAIN'
+      }, {
+        address: 'mantra-testnet-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }]
-  },
-  logoURIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
   },
   keywords: ['dex', 'testnet'],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/mantrachaintestnet/images/mantra.svg'
+      imageSync: {
+        chainName: 'mantrachain',
+        baseDenom: 'uom'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+      theme: {
+        circle: true,
+        primaryColorHex: '#fba0c1'
+      }
     }]
 };
 export default info;

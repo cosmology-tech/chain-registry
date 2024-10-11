@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Cronos POS Chain',
+  chainType: 'cosmos',
   chainId: 'crypto-org-chain-mainnet-1',
   bech32Prefix: 'cro',
   website: 'https://cronos-pos.org/',
@@ -26,7 +27,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/crypto-org-chain/chain-main',
+    recommendedVersion: 'v4.2.9',
+    compatibleVersions: ['v4.2.9'],
+    binaries: {
+      "linux/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Linux_x86_64.tar.gz',
+      "linux/arm64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Darwin_x86_64.tar.gz',
+      "darwin/arm64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Windows_x86_64.zip'
+    },
+    genesis: {
+      genesisUrl: 'https://github.com/crypto-org-chain/mainnet/raw/main/crypto-org-chain-mainnet-1/genesis.json'
+    },
+    versions: [{
+        name: 'v4.2.9',
+        recommendedVersion: 'v4.2.9',
+        compatibleVersions: ['v4.2.9'],
+        binaries: {
+          "linux/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Windows_x86_64.zip'
+        }
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cryptoorgchain/images/cronos.png'
@@ -129,9 +154,9 @@ const info: Chain = {
     },
     {
       kind: 'ezstaking',
-      url: 'https://ezstaking.app/cronos',
-      txPage: 'https://ezstaking.app/cronos/txs/${txHash}',
-      accountPage: 'https://ezstaking.app/cronos/account/${accountAddress}'
+      url: 'https://ezstaking.app/crypto-org',
+      txPage: 'https://ezstaking.app/crypto-org/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/crypto-org/account/${accountAddress}'
     },
     {
       kind: 'cronos.org',
@@ -142,23 +167,24 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/crypto-com-chain',
       txPage: 'https://ping.pub/crypto-com-chain/tx/${txHash}'
-    },
-    {
-      kind: 'yummy-explorer',
-      url: 'https://explorer.yummy.capital',
-      txPage: 'https://explorer.yummy.capital/txs/${txHash}'
     }
   ],
   images: [
     {
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cryptoorgchain/images/cronos.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cryptoorgchain/images/cronos.png',
+      theme: {
+        primaryColorHex: '#0c2c71'
+      }
     },
     {
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cryptoorgchain/images/Cronos_POS_Chain_Colour.svg'
     },
     {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg',
+      theme: {
+        primaryColorHex: '#0c2c71'
+      }
     }
   ]
 };

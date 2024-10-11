@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'neutron',
   assets: [
     {
-      description: 'The native token of Neutron chain.',
+      description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
+      extendedDescription: 'Neutron is a blockchain network designed to bring smart contracts to the Cosmos ecosystem using CosmWasm. It leverages Interchain Security to rely on the Cosmos Hub\'s validator set, enhancing its security without needing its own validators. This allows Neutron to provide robust, cross-chain smart contract applications across more than 50 interconnected blockchains. Neutron\'s focus on interchain queries and transactions enables secure data retrieval and transaction execution across multiple chains, fostering the development of complex and decentralized applications within the Cosmos network.',
       denomUnits: [{
           denom: 'untrn',
           exponent: 0
@@ -23,12 +24,18 @@ const info: AssetList = {
       coingeckoId: 'neutron-3',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ntrn.svg',
+          theme: {
+            primaryColorHex: '#040404',
+            backgroundColorHex: '#000000',
+            circle: true
+          }
         }],
       socials: {
         website: 'https://neutron.org/',
         twitter: 'https://twitter.com/Neutron_org'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'IBC uatom through cosmoshub-4 transfer/channel-1',
@@ -63,7 +70,10 @@ const info: AssetList = {
             baseDenom: 'uatom'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primaryColorHex: '#272d45'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
@@ -103,7 +113,10 @@ const info: AssetList = {
             baseDenom: 'uusdc'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+          theme: {
+            primaryColorHex: '#2474cc'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
@@ -134,7 +147,7 @@ const info: AssetList = {
           },
           chain: {
             channelId: 'channel-35',
-            path: 'transfer/channel-35'
+            path: 'transfer/channel-35/utia'
           }
         }],
       images: [{
@@ -143,7 +156,10 @@ const info: AssetList = {
             baseDenom: 'utia'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+          theme: {
+            primaryColorHex: '#7c2cfb'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
@@ -167,8 +183,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astropepe.png',
+          theme: {
+            primaryColorHex: '#47391d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'wstETH on Neutron',
@@ -184,12 +204,12 @@ const info: AssetList = {
       display: 'wstETH',
       symbol: 'wstETH',
       traces: [{
-          type: 'additional-mintage',
+          type: 'bridge',
           counterparty: {
             chainName: 'ethereum',
             baseDenom: '0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0'
           },
-          provider: 'Lido'
+          provider: 'Lido wstETH Cosmos Bridge'
         }],
       images: [{
           imageSync: {
@@ -200,7 +220,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wsteth.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'NBTC on Neutron',
@@ -235,7 +256,10 @@ const info: AssetList = {
             baseDenom: 'usat'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg',
+          theme: {
+            primaryColorHex: '#8436e6'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
@@ -275,7 +299,10 @@ const info: AssetList = {
             baseDenom: 'adydx'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+          theme: {
+            primaryColorHex: '#21212f'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
@@ -301,8 +328,12 @@ const info: AssetList = {
       },
       coingeckoId: 'newt',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newt.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newt.png',
+          theme: {
+            primaryColorHex: '#16233d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
@@ -321,7 +352,10 @@ const info: AssetList = {
       coingeckoId: 'astroport-fi',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primaryColorHex: '#4056e9'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
@@ -330,7 +364,8 @@ const info: AssetList = {
       socials: {
         website: 'https://astroport.fi/',
         twitter: 'https://twitter.com/astroport_fi'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
@@ -363,7 +398,8 @@ const info: AssetList = {
       socials: {
         website: 'https://astroport.fi/',
         twitter: 'https://twitter.com/astroport_fi'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ASTRO.cw20 on Neutron',
@@ -423,8 +459,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/babycorgi.png',
+          theme: {
+            primaryColorHex: '#fab442'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'clownmaxxed store of value',
@@ -444,8 +484,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/circus.png',
+          theme: {
+            primaryColorHex: '#242033'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Jimmy Neutron Finance',
@@ -465,8 +509,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jimmy.png',
+          theme: {
+            primaryColorHex: '#7d3c20'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Baddest coin on Cosmos',
@@ -486,8 +534,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bad.png',
+          theme: {
+            primaryColorHex: '#211a0d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'BITCOSMOS',
@@ -507,8 +559,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bitcosmos.png',
+          theme: {
+            primaryColorHex: '#1b0847'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'What the Fuck',
@@ -528,8 +584,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WTF.png',
+          theme: {
+            primaryColorHex: '#dcd5ab'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'NLS on Neutron',
@@ -564,7 +624,10 @@ const info: AssetList = {
             baseDenom: 'unls'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
+          theme: {
+            primaryColorHex: '#fc542c'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
@@ -589,8 +652,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddardntrn.png',
+          theme: {
+            primaryColorHex: '#516b80'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The deflationary utility token of the Apollo DAO project',
@@ -615,7 +682,8 @@ const info: AssetList = {
       socials: {
         website: 'https://apollo.farm/',
         twitter: 'https://twitter.com/ApolloDAO'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'NEWTROLL',
@@ -636,7 +704,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/newtroll.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Retro Game',
@@ -657,7 +726,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/retro.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'THE FIRST NATIVE GODDARD MEMECOIN ON NEUTRON',
@@ -678,7 +748,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/goddard.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The first memecoin on osmosis.',
@@ -711,7 +782,10 @@ const info: AssetList = {
             chainName: 'osmosis',
             baseDenom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png',
+          theme: {
+            primaryColorHex: '#edd5ee'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
@@ -735,8 +809,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/boy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/boy.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/boy.png',
+          theme: {
+            primaryColorHex: '#333333'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'A clan of 11y bad kids crafting chaos on the Cosmos eco. One bad memecoin to rule them all  $BADKID. Airdropped to Badkids NFT holders and $STARS stakers. It\'s so bad, your wallet\'s throwing a tantrum for it.',
@@ -769,7 +847,10 @@ const info: AssetList = {
             chainName: 'osmosis',
             baseDenom: 'factory/osmo10n8rv8npx870l69248hnp6djy6pll2yuzzn9x8/BADKID'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png',
+          theme: {
+            primaryColorHex: '#57443f'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/badkid.png'
@@ -793,8 +874,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/cartel.png',
+          theme: {
+            primaryColorHex: '#8c9098'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: '$ATOM to $1,000 LFG!!',
@@ -814,8 +899,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/ATOM1KLFGc.png',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       typeAsset: 'ics20',
@@ -834,16 +923,20 @@ const info: AssetList = {
       symbol: 'USDC',
       coingeckoId: 'usd-coin',
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
           imageSync: {
             chainName: 'noble',
             baseDenom: 'uusdc'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
         }],
       traces: [{
           type: 'ibc',
@@ -857,6 +950,227 @@ const info: AssetList = {
             path: 'transfer/channel-30/uusdc'
           }
         }]
+    },
+    {
+      description: 'WEIRD FRIENDS token',
+      denomUnits: [{
+          denom: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/WEIRD',
+          exponent: 0,
+          aliases: ['uWEIRD']
+        }, {
+          denom: 'WEIRD',
+          exponent: 6
+        }],
+      base: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/WEIRD',
+      name: 'WEIRD',
+      display: 'WEIRD',
+      symbol: 'WEIRD',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WEIRD.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/WEIRD.png',
+          theme: {
+            primaryColorHex: '#ebf0f4'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      denomUnits: [{
+          denom: 'factory/neutron19tynwawkm2rgefqxy7weupu4hdamyhg890zep2/TAKUMI',
+          exponent: 0,
+          aliases: ['utakumi']
+        }, {
+          denom: 'takumi',
+          exponent: 6
+        }],
+      base: 'factory/neutron19tynwawkm2rgefqxy7weupu4hdamyhg890zep2/TAKUMI',
+      name: 'Takumi Asano',
+      display: 'takumi',
+      symbol: 'TAKUMI',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/TAKUMI.png',
+          theme: {
+            primaryColorHex: '#556867'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      name: 'Ninja Blaze Token',
+      description: 'Ninja Blaze Token',
+      denomUnits: [{
+          denom: 'factory/neutron1a6ydq8urdj0gkvjw9e9e5y9r5ce2qegm9m4xufpt96kcm60kmuass0mqq4/nbz',
+          exponent: 0,
+          aliases: ['uNBZ']
+        }, {
+          denom: 'NBZ',
+          exponent: 6
+        }],
+      base: 'factory/neutron1a6ydq8urdj0gkvjw9e9e5y9r5ce2qegm9m4xufpt96kcm60kmuass0mqq4/nbz',
+      display: 'NBZ',
+      symbol: 'NBZ',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png',
+          theme: {
+            primaryColorHex: '#9890f9'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Mars Protocol is a cross-collateralized Money Market Protocol on Neutron and Osmosis.',
+      extendedDescription: 'Lend, borrow and earn with an autonomous credit protocol in the Cosmos universe. Open to all, closed to none.',
+      denomUnits: [{
+          denom: 'factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS',
+          exponent: 0,
+          aliases: ['umars']
+        }, {
+          denom: 'MARS',
+          exponent: 6
+        }],
+      base: 'factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS',
+      name: 'Mars Protocol token',
+      display: 'MARS',
+      symbol: 'MARS',
+      coingeckoId: 'mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg',
+          theme: {
+            primaryColorHex: '#ef4136'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg'
+      },
+      socials: {
+        website: 'https://marsprotocol.io/',
+        twitter: 'https://x.com/mars_protocol'
+      },
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Drop staked ATOM',
+      extendedDescription: 'Drop protocol token for the interchain liquidity',
+      denomUnits: [{
+          denom: 'factory/neutron1k6hr0f83e7un2wjf29cspk7j69jrnskk65k3ek2nj9dztrlzpj6q00rtsa/udatom',
+          exponent: 0
+        }, {
+          denom: 'dATOM',
+          exponent: 6
+        }],
+      base: 'factory/neutron1k6hr0f83e7un2wjf29cspk7j69jrnskk65k3ek2nj9dztrlzpj6q00rtsa/udatom',
+      name: 'dATOM',
+      display: 'dATOM',
+      symbol: 'dATOM',
+      coingeckoId: 'drop-staked-atom',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'cosmoshub',
+            baseDenom: 'uatom'
+          },
+          provider: 'Drop Protocol'
+        }],
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dATOM.svg'
+        }],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dATOM.svg'
+      },
+      socials: {
+        website: 'https://www.drop.money/',
+        twitter: 'https://x.com/Dropdotmoney'
+      },
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'SinGarden token',
+      denomUnits: [{
+          denom: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/sin',
+          exponent: 0,
+          aliases: ['uSIN']
+        }, {
+          denom: 'SIN',
+          exponent: 6
+        }],
+      base: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/sin',
+      name: 'SIN',
+      display: 'SIN',
+      symbol: 'SIN',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/sin.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/sin.png',
+          theme: {
+            primaryColorHex: '#ebf0f4'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'CryptoGopniks token',
+      denomUnits: [{
+          denom: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/GOP',
+          exponent: 0,
+          aliases: ['uGOP']
+        }, {
+          denom: 'GOP',
+          exponent: 6
+        }],
+      base: 'factory/neutron133xakkrfksq39wxy575unve2nyehg5npx75nph/GOP',
+      name: 'GOP',
+      display: 'GOP',
+      symbol: 'GOP',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/gop.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/gop.png',
+          theme: {
+            primaryColorHex: '#000000'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      typeAsset: 'sdk.coin',
+      denomUnits: [{
+          denom: 'factory/neutron129ukd5cwahcjkccujz87rjemjukff7jf6sau72qrhva677xgz9gs4m4jeq/uarena',
+          exponent: 0,
+          aliases: ['uarena']
+        }, {
+          denom: 'arena',
+          exponent: 6
+        }],
+      base: 'factory/neutron129ukd5cwahcjkccujz87rjemjukff7jf6sau72qrhva677xgz9gs4m4jeq/uarena',
+      name: 'Arena Token',
+      display: 'arena',
+      symbol: 'ARENA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena_dao.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena_dao.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena_dao.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena_dao.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#FF8000'
+          }
+        }],
+      description: 'The governance token of the Arena DAO',
+      socials: {
+        twitter: 'https://x.com/ArenaDAO',
+        website: 'https://arenadao.org/'
+      }
     }
   ]
 };

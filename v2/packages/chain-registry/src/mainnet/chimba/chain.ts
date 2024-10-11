@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://chimba.ooo/',
   prettyName: 'Chimba',
+  chainType: 'cosmos',
   chainId: 'chimba',
   bech32Prefix: 'chimba',
   daemonName: 'chimbad',
@@ -25,7 +26,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/ChimbaBlockchain/chimba',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://rpc.mainnet.chimba.ooo/genesis'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
@@ -48,7 +59,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.svg',
+      theme: {
+        primaryColorHex: '#5454a4'
+      }
     }],
   slip44: 118
 };

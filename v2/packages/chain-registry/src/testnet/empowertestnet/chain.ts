@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'empowertestnet',
+  chainType: 'cosmos',
   chainId: 'circulus-1',
   prettyName: 'Empower Testnet',
   status: 'live',
@@ -18,7 +19,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/empowerchain/empowerchain',
+    recommendedVersion: 'v1.0.0-rc1',
+    compatibleVersions: ['v1.0.0-rc1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/empowerchain/empowerchain/main/testnets/circulus-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.0-rc1',
+        recommendedVersion: 'v1.0.0-rc1',
+        compatibleVersions: ['v1.0.0-rc1']
+      }]
   },
   apis: {
     rpc: [

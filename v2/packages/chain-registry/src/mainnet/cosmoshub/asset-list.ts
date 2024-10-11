@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'cosmoshub',
   assets: [
     {
-      description: 'The native staking and governance token of the Cosmos Hub.',
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
+      extendedDescription: 'ATOM, the native cryptocurrency of the Cosmos network, is essential for achieving the project\'s goal of creating an \'Internet of Blockchains.\' Launched in 2019, Cosmos aims to solve the scalability, usability, and interoperability issues prevalent in existing blockchain ecosystems. The Cosmos Hub, the central blockchain of the network, uses ATOM for transaction fees, staking, and governance. By staking ATOM, users can earn rewards and participate in governance, influencing decisions on network upgrades and changes.\n\nCosmos leverages the Tendermint consensus algorithm to achieve high transaction throughput and fast finality. Its Inter-Blockchain Communication (IBC) protocol enables seamless data and value transfer between different blockchains, fostering a highly interconnected and collaborative ecosystem. The flexibility and scalability offered by Cosmos have attracted numerous projects, enhancing its utility and adoption. ATOM\'s role in securing the network and facilitating governance underscores its importance in the broader blockchain landscape.',
       denomUnits: [{
           denom: 'uatom',
           exponent: 0
@@ -23,12 +24,16 @@ const info: AssetList = {
       coingeckoId: 'cosmos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primaryColorHex: '#272d45'
+          }
         }],
       socials: {
         website: 'https://cosmos.network',
         twitter: 'https://twitter.com/cosmoshub'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on the Cosmos Hub',
@@ -61,9 +66,16 @@ const info: AssetList = {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       }
     },
@@ -97,7 +109,10 @@ const info: AssetList = {
             baseDenom: 'FX'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg',
+          theme: {
+            primaryColorHex: '#1c1c1c'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'testnet',
   website: 'https://www.ixo.world/',
   prettyName: 'ixo',
+  chainType: 'cosmos',
   chainId: 'pandora-8',
   bech32Prefix: 'ixo',
   daemonName: 'ixod',
@@ -27,7 +28,25 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/ixofoundation/ixo-blockchain',
+    recommendedVersion: 'v2.0.0',
+    compatibleVersions: ['v2.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/ixofoundation/genesis/main/pandora-8/genesis.json'
+    },
+    versions: [{
+        name: 'v0.20.0',
+        recommendedVersion: 'v0.20.1',
+        compatibleVersions: ['v0.20.0', 'v0.20.1'],
+        nextVersionName: 'v2'
+      }, {
+        name: 'v2',
+        proposal: 61,
+        height: 2193200,
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        nextVersionName: ''
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',

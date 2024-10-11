@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.regen.network/',
   prettyName: 'Regen',
+  chainType: 'cosmos',
   chainId: 'regen-1',
   bech32Prefix: 'regen',
   daemonName: 'regen',
@@ -26,7 +27,57 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.46'
+    gitRepo: 'https://github.com/regen-network/regen-ledger',
+    recommendedVersion: 'v5.0.0',
+    compatibleVersions: ['v5.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_amd64.zip',
+      "linux/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_arm64.zip',
+      "darwin/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_amd64.zip',
+      "darwin/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_arm64.zip'
+    },
+    cosmosSdkVersion: '0.46',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/regen-network/mainnet/main/regen-1/genesis.json'
+    },
+    versions: [{
+        name: 'v5.0.0',
+        recommendedVersion: 'v5.0.0',
+        compatibleVersions: ['v5.0.0'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_amd64.zip',
+          "linux/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_arm64.zip',
+          "darwin/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_amd64.zip',
+          "darwin/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_arm64.zip'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.2',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.2',
+      icsEnabled: ['ics20-1', 'ics27-1']
+    }
   },
   description: 'Regen Network, a platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects.',
   apis: {
@@ -143,12 +194,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/regen',
-      txPage: 'https://www.mintscan.io/regen/transactions/${txHash}',
-      accountPage: 'https://www.mintscan.io/regen/accounts/${accountAddress}'
-    },
-    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/regen',
       txPage: 'https://ezstaking.app/regen/txs/${txHash}',
@@ -177,7 +222,10 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.svg',
+      theme: {
+        primaryColorHex: '#56b790'
+      }
     }]
 };
 export default info;

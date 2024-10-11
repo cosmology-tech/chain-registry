@@ -2,9 +2,10 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'doravotatestnet2',
+  chainType: 'cosmos',
   chainId: 'vota-vk',
   prettyName: 'Dora Vota Incentive Testnet',
-  status: 'live',
+  status: 'killed',
   networkType: 'testnet',
   bech32Prefix: 'dora',
   daemonName: 'dorad',
@@ -23,7 +24,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/dorafactory/doravota',
+    recommendedVersion: 'v11.0.0',
+    compatibleVersions: ['v11.0.0'],
+    genesis: {
+      genesisUrl: 'https://github.com/DoraFactory/doravota/blob/main/config/incentive/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v9.0.1',
+        recommendedVersion: 'v9.0.1',
+        compatibleVersions: ['v9.0.1']
+      },
+      {
+        name: 'v10.0.1',
+        recommendedVersion: 'v10.0.1',
+        compatibleVersions: ['v10.0.1']
+      },
+      {
+        name: 'v11',
+        recommendedVersion: 'v11.0.0',
+        compatibleVersions: ['v11.0.0']
+      }
+    ]
   },
   apis: {
     rpc: [{

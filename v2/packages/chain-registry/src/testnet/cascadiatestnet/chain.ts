@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'testnet',
   website: 'https://cascadia.foundation/',
   prettyName: 'Cascadia',
+  chainType: 'cosmos',
   chainId: 'cascadia_6102-1',
   bech32Prefix: 'cascadia',
   daemonName: 'cascadiad',
@@ -30,9 +31,29 @@ const info: Chain = {
     }
   },
   codebase: {
+    gitRepo: 'https://github.com/CascadiaFoundation/cascadia',
+    recommendedVersion: 'v0.1.2',
+    compatibleVersions: ['v0.1.1'],
     cosmosSdkVersion: '0.46.10',
+    consensus: {
+      type: 'tendermint',
+      version: 'v0.34.26'
+    },
+    cosmwasmVersion: '0.30',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30'
+    genesis: {
+      name: 'v1',
+      genesisUrl: 'https://raw.githubusercontent.com/CascadiaFoundation/chain-configuration/master/testnet/genesis.json'
+    },
+    versions: [],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.10'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png',

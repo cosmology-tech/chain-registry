@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'kyvetestnet',
+  chainType: 'cosmos',
   chainId: 'kaon-1',
   prettyName: 'KYVE Kaon',
   status: 'live',
@@ -26,7 +27,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/KYVENetwork/chain',
+    recommendedVersion: 'v1.0.0-rc0',
+    compatibleVersions: ['v1.0.0-rc0'],
+    binaries: {
+      "linux/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_amd64.tar.gz',
+      "linux/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_arm64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/KYVENetwork/networks/main/kaon-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.0-rc0',
+        recommendedVersion: 'v1.0.0-rc0',
+        compatibleVersions: ['v1.0.0-rc0'],
+        binaries: {
+          "linux/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_amd64.tar.gz',
+          "linux/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_arm64.tar.gz'
+        }
+      }]
   },
   apis: {
     rpc: [
@@ -60,9 +83,9 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/kyve-testnet',
-      txPage: 'https://testnet.mintscan.io/kyve-testnet/txs/${txHash}',
-      accountPage: 'https://testnet.mintscan.io/kyve-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/kyve-testnet',
+      txPage: 'https://mintscan.io/kyve-testnet/txs/${txHash}',
+      accountPage: 'https://mintscan.io/kyve-testnet/account/${accountAddress}'
     }]
 };
 export default info;

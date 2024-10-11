@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Saga Testnet',
+  chainType: 'cosmos',
   chainId: 'ssc-testnet-1',
   bech32Prefix: 'saga',
   daemonName: 'sscd',
@@ -26,8 +27,53 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/sagaxyz/ssc',
+    recommendedVersion: 'v0.1.3',
+    compatibleVersions: [
+      'v0.1.0',
+      'v0.1.1',
+      'v0.1.2',
+      'v0.1.3'
+    ],
     cosmosSdkVersion: '0.47',
-    cosmwasmEnabled: false
+    consensus: {
+      type: 'tendermint',
+      version: '0.37'
+    },
+    cosmwasmEnabled: false,
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/sagaxyz/ssc-public-testnet/main/genesis.json'
+    },
+    versions: [{
+        name: 'v0.1.3',
+        recommendedVersion: 'v0.1.3',
+        compatibleVersions: [
+          'v0.1.0',
+          'v0.1.1',
+          'v0.1.2',
+          'v0.1.3'
+        ],
+        cosmosSdkVersion: '0.47',
+        consensus: {
+          type: 'tendermint',
+          version: '0.37'
+        },
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: '0.47'
+        },
+        cosmwasm: {
+          enabled: false
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

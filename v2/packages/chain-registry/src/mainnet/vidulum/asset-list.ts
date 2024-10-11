@@ -16,14 +16,33 @@ const info: AssetList = {
       display: 'vdl',
       symbol: 'VDL',
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.svg'
       },
       coingeckoId: 'vidulum',
       images: [{
+          imageSync: {
+            chainName: 'beezee',
+            baseDenom: 'factory/bze13gzq40che93tgfm9kzmkpjamah5nj0j73pyhqk/uvdl'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.svg',
+          theme: {
+            primaryColorHex: '#3454bc'
+          }
+        }, {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
-        }]
+        }],
+      traces: [{
+          type: 'legacy-mintage',
+          counterparty: {
+            chainName: 'beezee',
+            baseDenom: 'factory/bze13gzq40che93tgfm9kzmkpjamah5nj0j73pyhqk/uvdl'
+          },
+          provider: 'Vidulum'
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

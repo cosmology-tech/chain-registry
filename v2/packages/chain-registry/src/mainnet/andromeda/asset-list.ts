@@ -20,8 +20,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

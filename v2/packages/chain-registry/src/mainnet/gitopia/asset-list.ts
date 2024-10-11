@@ -21,15 +21,22 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/lore.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/lore.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/lore.svg',
+          theme: {
+            primaryColorHex: '#2c173c'
+          }
         }, {
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png',
+          theme: {
+            primaryColorHex: '#2e154d'
+          }
         }],
       coingeckoId: 'gitopia',
       socials: {
         website: 'https://gitopia.com/',
         twitter: 'https://twitter.com/gitopiaDAO'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

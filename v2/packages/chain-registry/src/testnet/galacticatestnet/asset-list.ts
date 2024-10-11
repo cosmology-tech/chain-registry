@@ -22,7 +22,8 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.png'
         }, {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galactica/images/galactica.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -1,7 +1,7 @@
 import { IBCData } from '@chain-registry/v2-types';
 const info: IBCData[] = [
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'akashtestnet',
       clientId: '07-tendermint-6',
@@ -31,24 +31,25 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'archwaytestnet',
-      clientId: '07-tendermint-77',
-      connectionId: 'connection-73'
+      clientId: '07-tendermint-121',
+      connectionId: 'connection-120'
     },
     chain2: {
       chainName: 'osmosistestnet',
-      clientId: '07-tendermint-1195',
-      connectionId: 'connection-1101'
+      clientId: '07-tendermint-3459',
+      connectionId: 'connection-3027'
     },
-    channels: [{
+    channels: [
+      {
         chain1: {
-          channelId: 'channel-58',
+          channelId: 'channel-225',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-3938',
+          channelId: 'channel-7779',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -56,10 +57,41 @@ const info: IBCData[] = [
         tags: {
           status: 'live'
         }
-      }]
+      },
+      {
+        chain1: {
+          channelId: '*',
+          portId: 'wasm.*'
+        },
+        chain2: {
+          channelId: '*',
+          portId: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live'
+        }
+      },
+      {
+        chain1: {
+          channelId: '*',
+          portId: 'wasm.*'
+        },
+        chain2: {
+          channelId: '*',
+          portId: 'icqhost'
+        },
+        ordering: 'unordered',
+        version: 'icq-1',
+        tags: {
+          status: 'live'
+        }
+      }
+    ]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'axelartestnet',
       clientId: '07-tendermint-685',
@@ -89,7 +121,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'celestiatestnet3',
       clientId: '07-tendermint-118',
@@ -118,7 +150,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'chain4energytestnet',
       clientId: '07-tendermint-18',
@@ -148,7 +180,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'composabletestnet',
       clientId: '07-tendermint-23',
@@ -177,7 +209,36 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'coreumtestnet',
+      clientId: '07-tendermint-104',
+      connectionId: 'connection-69'
+    },
+    chain2: {
+      chainName: 'osmosistestnet',
+      clientId: '07-tendermint-3529',
+      connectionId: 'connection-3094'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-47',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-7894',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshubtestnet',
       clientId: '07-tendermint-2528',
@@ -207,7 +268,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'doravotatestnet',
       clientId: '07-tendermint-2',
@@ -237,7 +298,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'empowertestnet',
       clientId: '07-tendermint-1',
@@ -266,7 +327,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'entrypointtestnet',
       clientId: '07-tendermint-0',
@@ -296,7 +357,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'impacthubtestnet',
       clientId: '07-tendermint-53',
@@ -326,7 +387,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'injectivetestnet',
       clientId: '07-tendermint-189',
@@ -356,7 +417,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'junotestnet',
       clientId: '07-tendermint-743',
@@ -386,7 +447,37 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'kimanetworktestnet',
+      clientId: '07-tendermint-1',
+      connectionId: 'connection-1'
+    },
+    chain2: {
+      chainName: 'osmosistestnet',
+      clientId: '07-tendermint-1',
+      connectionId: 'connection-3450'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-1',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-8867',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'kyvetestnet',
       clientId: '07-tendermint-2',
@@ -445,7 +536,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'likecointestnet',
       clientId: '07-tendermint-5',
@@ -475,7 +566,36 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'mantrachaintestnet',
+      clientId: '07-tendermint-5',
+      connectionId: 'connection-5'
+    },
+    chain2: {
+      chainName: 'osmosistestnet',
+      clientId: '07-tendermint-3930',
+      connectionId: 'connection-3411'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-5',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-8734',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'marstestnet',
       clientId: '07-tendermint-33',
@@ -505,7 +625,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'neutrontestnet',
       clientId: '07-tendermint-133',
@@ -535,7 +655,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'nobletestnet',
       clientId: '07-tendermint-42',
@@ -623,7 +743,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'osmosistestnet',
       clientId: '07-tendermint-19',
@@ -653,7 +773,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'osmosistestnet',
       clientId: '07-tendermint-1448',
@@ -683,7 +803,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'osmosistestnet',
       clientId: '07-tendermint-965',
@@ -713,7 +833,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'osmosistestnet',
       clientId: '07-tendermint-1274',
@@ -731,6 +851,66 @@ const info: IBCData[] = [
         },
         chain2: {
           channelId: 'channel-638',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'osmosistestnet',
+      clientId: '07-tendermint-3714',
+      connectionId: 'connection-3238'
+    },
+    chain2: {
+      chainName: 'swisstroniktestnet',
+      clientId: '07-tendermint-31',
+      connectionId: 'connection-18'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-8295',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-2',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'osmosistestnet',
+      clientId: '07-tendermint-3946',
+      connectionId: 'connection-3419'
+    },
+    chain2: {
+      chainName: 'symphonytestnet',
+      clientId: '07-tendermint-0',
+      connectionId: 'connection-0'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-8743',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-0',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -766,7 +946,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true
         }
       }]

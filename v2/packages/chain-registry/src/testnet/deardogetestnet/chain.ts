@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'deardogetestnet',
+  chainType: 'cosmos',
   chainId: 'deardoge-testnet',
   prettyName: 'Dear Doge Testnet',
   status: 'live',
@@ -23,7 +24,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/DoraFactory/Dear-Doge',
+    recommendedVersion: 'v11.0.0',
+    compatibleVersions: ['v11.0.0'],
+    genesis: {
+      genesisUrl: 'https://github.com/DoraFactory/Dear-Doge/blob/main/config/testnet/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v9.0.1',
+        recommendedVersion: 'v9.0.1',
+        compatibleVersions: ['v9.0.1']
+      },
+      {
+        name: 'v10.0.1',
+        recommendedVersion: 'v10.0.1',
+        compatibleVersions: ['v10.0.1']
+      },
+      {
+        name: 'v11',
+        recommendedVersion: 'v11.0.0',
+        compatibleVersions: ['v11.0.0']
+      }
+    ]
   },
   apis: {
     rpc: [{

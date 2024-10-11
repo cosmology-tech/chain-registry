@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'empowerchain',
+  chainType: 'cosmos',
   chainId: 'empowerchain-1',
   prettyName: 'EmpowerChain',
   status: 'live',
@@ -26,8 +27,23 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/EmpowerPlastic/empowerchain',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    cosmwasmVersion: '0.45',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.45'
+    genesis: {
+      genesisUrl: 'https://github.com/EmpowerPlastic/empowerchain/raw/main/mainnet/empowerchain-1/genesis.tar.gz'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }],
+    cosmwasm: {
+      version: '0.45',
+      enabled: true
+    }
   },
   apis: {
     rpc: [
@@ -46,10 +62,6 @@ const info: Chain = {
       {
         address: 'http://empw.rpc.m.stavr.tech:22057',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://rpc-empower.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://rpc-empowerchain.mzonder.com:443',
@@ -86,6 +98,10 @@ const info: Chain = {
       {
         address: 'https://empower-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://empower-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -108,10 +124,6 @@ const info: Chain = {
       {
         address: 'https://empower-api.w3coins.io',
         provider: 'w3coins'
-      },
-      {
-        address: 'https://lcd-empower.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://api-empower.vinjan.xyz:443',
@@ -140,6 +152,10 @@ const info: Chain = {
       {
         address: 'https://empower-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://empower-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [
@@ -213,7 +229,32 @@ const info: Chain = {
       url: 'https://explorer.declab.pro/Empower',
       txPage: 'https://explorer.declab.pro/Empower/tx/${txHash}',
       accountPage: 'https://explorer.declab.pro/Empower/account/{$accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/empowerchain',
+      txPage: 'https://mainnet.whispernode.com/empowerchain/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/empowerchain/account/${accountAddress}'
     }
-  ]
+  ],
+  images: [{
+      imageSync: {
+        chainName: 'empowerchain',
+        baseDenom: 'umpwr'
+      },
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.svg',
+      theme: {
+        primaryColorHex: '#00e33a',
+        backgroundColorHex: '#00e33a',
+        circle: true
+      }
+    }, {
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/empowerchain/images/mpwr.png',
+      theme: {
+        primaryColorHex: '#00e33a',
+        backgroundColorHex: '#00e33a',
+        circle: false
+      }
+    }]
 };
 export default info;

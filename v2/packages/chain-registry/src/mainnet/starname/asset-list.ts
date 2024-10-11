@@ -22,12 +22,16 @@ const info: AssetList = {
       coingeckoId: 'starname',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg',
+          theme: {
+            primaryColorHex: '#5c64b4'
+          }
         }],
       socials: {
         website: 'https://app.starname.me/',
         twitter: 'https://twitter.com/starname_me'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

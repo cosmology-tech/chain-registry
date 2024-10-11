@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'OKExChain',
+  chainType: 'cosmos',
   chainId: 'exchain-66',
   bech32Prefix: 'ex',
   daemonName: 'exchaind',
@@ -19,7 +20,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/okex/exchain',
+    recommendedVersion: 'v1.6.1.1',
+    compatibleVersions: ['v1.2.2', 'v1.6.1.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/okx/mainnet/main/genesis.json'
+    },
+    versions: [{
+        name: 'v1.6.1.1',
+        recommendedVersion: 'v1.6.1.1',
+        compatibleVersions: ['v1.2.2', 'v1.6.1.1']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
@@ -38,7 +49,10 @@ const info: Chain = {
       accountPage: 'https://www.oklink.com/en/okc/address/${accountAddress}'
     }],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png',
+      theme: {
+        primaryColorHex: '#bbbbbb'
+      }
     }]
 };
 export default info;

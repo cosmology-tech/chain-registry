@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://c4e.io/',
   prettyName: 'C4E',
+  chainType: 'cosmos',
   chainId: 'perun-1',
   bech32Prefix: 'c4e',
   daemonName: 'c4ed',
@@ -27,7 +28,172 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/chain4energy/c4e-chain',
+    recommendedVersion: 'v1.3.1',
+    compatibleVersions: ['v1.3.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/chain4energy/c4e-chains/main/perun-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.1',
+        compatibleVersions: ['v1.0.0', 'v1.0.1'],
+        cosmosSdkVersion: 'v0.45.5',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.19'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.0.0/c4ed_v1.0.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.0.0/c4ed_v1.0.0_darwin_amd64.tar.gz',
+          "darwin/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.0.0/c4ed_v1.0.0_darwin_amd64.tar.gz'
+        },
+        nextVersionName: 'v1.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.5'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.0.1'
+        }
+      },
+      {
+        name: 'v1.1.0',
+        tag: 'v1.1.0',
+        proposal: 1,
+        height: 1952250,
+        recommendedVersion: 'v1.1.0',
+        compatibleVersions: ['v1.1.0'],
+        cosmosSdkVersion: 'v0.45.9',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.21'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.1.0/c4ed_v1.1.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.1.0/c4ed_v1.1.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.1.0/c4ed_v1.1.0_darwin_amd64.tar.gz'
+        },
+        nextVersionName: 'v1.2.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.9'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.0.1'
+        }
+      },
+      {
+        name: 'v1.2.0',
+        tag: 'v1.2.0',
+        proposal: 4,
+        height: 2826500,
+        recommendedVersion: 'v1.2.0',
+        compatibleVersions: ['v1.2.0'],
+        cosmosSdkVersion: 'v0.46.10',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.26'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.2.0/c4ed_v1.2.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.2.0/c4ed_v1.2.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.2.0/c4ed_v1.2.0_darwin_amd64.tar.gz'
+        },
+        nextVersionName: 'v1.2.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.10'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v5.2.0'
+        }
+      },
+      {
+        name: 'v1.2.1',
+        tag: 'v1.2.1',
+        height: 3767300,
+        recommendedVersion: 'v1.2.1',
+        compatibleVersions: ['v1.2.1'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.2.1/c4ed_v1.2.1_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.2.1/c4ed_v1.2.1_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.2.1/c4ed_v1.2.1_darwin_amd64.tar.gz'
+        },
+        nextVersionName: 'v1.3.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v5.2.0'
+        }
+      },
+      {
+        name: 'v1.3.0',
+        tag: 'v1.3.0',
+        proposal: 7,
+        height: 6283905,
+        recommendedVersion: 'v1.3.0',
+        compatibleVersions: ['v1.3.0'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.3.0/c4ed_v1.3.0_darwin_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.3.0/c4ed_v1.3.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.3.0/c4ed_v1.3.0_darwin_amd64.tar.gz'
+        },
+        nextVersionName: 'v1.3.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v5.2.1'
+        }
+      },
+      {
+        name: 'v1.3.1',
+        tag: 'v1.3.1',
+        proposal: 8,
+        height: 7372232,
+        recommendedVersion: 'v1.3.1',
+        compatibleVersions: ['v1.3.1'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.3.1/c4ed_v1.3.1_darwin_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.3.1/c4ed_v1.3.1_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/chain4energy/c4e-chain/releases/download/v1.3.1/c4ed_v1.3.1_darwin_amd64.tar.gz'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v5.2.1'
+        }
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
@@ -37,6 +203,10 @@ const info: Chain = {
       {
         address: 'https://rpc.c4e.io/',
         provider: 'C4E'
+      },
+      {
+        address: 'https://rpc.c4e.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       },
       {
         address: 'https://rpc.c4e.nodestake.top',
@@ -145,12 +315,24 @@ const info: Chain = {
       {
         address: 'http://rpc-c4e.cryptech.com.ua:443',
         provider: 'Cryptech'
+      },
+      {
+        address: 'http://37.60.240.43:46657',
+        provider: 'NakoTurk'
+      },
+      {
+        address: 'https://chain4energy_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
       {
         address: 'https://lcd.c4e.io/',
         provider: 'C4E'
+      },
+      {
+        address: 'https://api.c4e.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       },
       {
         address: 'https://api.c4e.nodestake.top',
@@ -247,12 +429,20 @@ const info: Chain = {
       {
         address: 'https://lcd-m-c4e.apeironnodes.com',
         provider: 'Apeiron Nodes'
+      },
+      {
+        address: 'https://chain4energy_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
       {
         address: 'grpc.c4e.nodestake.top:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'grpc.c4e.mainnet.dteam.tech:30090',
+        provider: 'DTEAM'
       },
       {
         address: 'c4e.grpc.bccnodes.com:443',
@@ -345,6 +535,10 @@ const info: Chain = {
       {
         address: 'https://grpc-c4e.cryptech.com.ua:443',
         provider: 'Cryptech'
+      },
+      {
+        address: 'http://207.180.208.47:46657',
+        provider: 'NakoTurk'
       }
     ]
   },
@@ -353,6 +547,11 @@ const info: Chain = {
       kind: 'explorer',
       url: 'https://explorer.apeironnodes.com/chain4energy',
       txPage: 'https://explorer.apeironnodes.com/chain4energy/transactions/${txHash}'
+    },
+    {
+      kind: 'DTEAM | Explorer',
+      url: 'https://explorer.mainnet.dteam.tech/chain4energy',
+      txPage: 'https://explorer.mainnet.dteam.tech/chain4energytransactions/${txHash}'
     },
     {
       kind: 'explorer',
@@ -414,10 +613,19 @@ const info: Chain = {
       kind: 'Cryptech',
       url: 'https://explorers.cryptech.com.ua/chain4energy',
       txPage: 'https://explorers.cryptech.com.ua/chain4energy/tx/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/chain4energy',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/chain4energy/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/chain4energy/account/${accountAddress}'
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png',
+      theme: {
+        primaryColorHex: '#24344c'
+      }
     }]
 };
 export default info;

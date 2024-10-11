@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Ki',
+  chainType: 'cosmos',
   chainId: 'kichain-t-4',
   bech32Prefix: 'tki',
   daemonName: 'kid',
@@ -18,7 +19,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/KiFoundation/ki-tools',
+    recommendedVersion: 'Testnet-3.0.0-beta',
+    compatibleVersions: ['Testnet-3.0.0-beta'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json'
+    },
+    versions: [{
+        name: 'Testnet-3.0.0-beta',
+        recommendedVersion: 'Testnet-3.0.0-beta',
+        compatibleVersions: ['Testnet-3.0.0-beta']
+      }]
   },
   apis: {
     rpc: [{

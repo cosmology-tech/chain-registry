@@ -3,6 +3,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'agoric',
+      clientId: '07-tendermint-78',
+      connectionId: 'connection-73'
+    },
+    chain2: {
+      chainName: 'kava',
+      clientId: '07-tendermint-147',
+      connectionId: 'connection-182'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-63',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-133',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'aura',
       clientId: '07-tendermint-26',
       connectionId: 'connection-15'
@@ -367,6 +396,64 @@ const info: IBCData[] = [
         },
         chain2: {
           channelId: 'channel-36',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'kava',
+      clientId: '07-tendermint-172',
+      connectionId: 'connection-214'
+    },
+    chain2: {
+      chainName: 'noble',
+      clientId: '07-tendermint-107',
+      connectionId: 'connection-102'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-151',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-88',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'kava',
+      clientId: '07-tendermint-163',
+      connectionId: 'connection-204'
+    },
+    chain2: {
+      chainName: 'onex',
+      clientId: '07-tendermint-1',
+      connectionId: 'connection-13'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-145',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-4',
           portId: 'transfer'
         },
         ordering: 'unordered',

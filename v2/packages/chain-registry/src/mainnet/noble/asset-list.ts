@@ -13,6 +13,7 @@ const info: AssetList = {
           denom: 'stake',
           exponent: 6
         }],
+      typeAsset: 'sdk.coin',
       base: 'ustake',
       name: 'Stake',
       display: 'stake',
@@ -23,7 +24,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
+          theme: {
+            primaryColorHex: '#a8bbfb'
+          }
         }]
     },
     {
@@ -36,6 +40,7 @@ const info: AssetList = {
           denom: 'frienzies',
           exponent: 6
         }],
+      typeAsset: 'sdk.coin',
       base: 'ufrienzies',
       display: 'frienzies',
       name: 'Frienzies',
@@ -46,7 +51,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg',
+          theme: {
+            primaryColorHex: '#04041c'
+          }
         }]
     },
     {
@@ -81,8 +89,15 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'cosmoshub',
+            baseDenom: 'uatom'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primaryColorHex: '#272d45'
+          }
         }]
     },
     {
@@ -95,9 +110,10 @@ const info: AssetList = {
           denom: 'usdc',
           exponent: 6
         }],
+      typeAsset: 'sdk.coin',
       base: 'uusdc',
       display: 'usdc',
-      name: 'USD Coin',
+      name: 'USDC',
       symbol: 'USDC',
       coingeckoId: 'usd-coin',
       traces: [{
@@ -109,12 +125,89 @@ const info: AssetList = {
           provider: 'Circle'
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
+        }]
+    },
+    {
+      description: 'Ondo US Dollar Yield',
+      extendedDescription: 'USDY is a tokenized note secured by short-term US Treasuries and bank demand deposits. USDY is accessible to non-US individual and institutional investors and is transferable onchain 40-50 days after purchase.',
+      denomUnits: [{
+          denom: 'ausdy',
+          exponent: 0,
+          aliases: ['attousdy']
+        }, {
+          denom: 'usdy',
+          exponent: 18
+        }],
+      base: 'ausdy',
+      display: 'usdy',
+      name: 'Ondo US Dollar Yield',
+      symbol: 'USDY',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg',
+          theme: {
+            primaryColorHex: '#142c5c'
+          }
+        }],
+      coingeckoId: 'ondo-us-dollar-yield',
+      socials: {
+        website: 'https://ondo.finance/usdy',
+        twitter: 'https://x.com/OndoFinance'
+      },
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'EURe is a Euro-backed stablecoin issued by Monerium on Noble.',
+      denomUnits: [{
+          denom: 'ueure',
+          exponent: 0
+        }, {
+          denom: 'eure',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'ueure',
+      name: 'Monerium EUR emoney',
+      display: 'eure',
+      symbol: 'EURe',
+      traces: [{
+          type: 'additional-mintage',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0x3231Cb76718CDeF2155FC47b5286d82e6eDA273f'
+          },
+          provider: 'Monerium'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0x3231Cb76718CDeF2155FC47b5286d82e6eDA273f'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eure.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eure.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#0095D7',
+            backgroundColorHex: '#FFFFFF'
+          }
         }]
     }
   ]

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   networkType: 'mainnet',
   prettyName: 'Microtick',
+  chainType: 'cosmos',
   chainId: 'microtick-1',
   bech32Prefix: 'micro',
   daemonName: 'mtm',
@@ -23,7 +24,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/microtick/mtzone',
+    recommendedVersion: 'mtm-v2.0.4',
+    compatibleVersions: ['mtm-v2.0.4'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/microtick/stargate-genesis/master/genesis.json'
+    },
+    versions: [{
+        name: 'mtm-v2.0.4',
+        recommendedVersion: 'mtm-v2.0.4',
+        compatibleVersions: ['mtm-v2.0.4']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
@@ -36,7 +47,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg',
+      theme: {
+        primaryColorHex: '#6bab14'
+      }
     }]
 };
 export default info;

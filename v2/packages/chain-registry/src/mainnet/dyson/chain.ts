@@ -6,6 +6,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Dyson Protocol',
+  chainType: 'cosmos',
   chainId: 'dyson-mainnet-01',
   bech32Prefix: 'dys',
   nodeHome: '$HOME/.dyson',
@@ -25,7 +26,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://gitlab.com/dysonproject/dyson',
+    recommendedVersion: 'v0.0.2-bebf2e98',
+    compatibleVersions: ['v0.0.2-bebf2e98'],
+    genesis: {
+      genesisUrl: 'https://gitlab.com/dysonproject/dyson-deploy/-/raw/develop/genesis.json'
+    },
+    versions: [{
+        name: 'v0.0.2-bebf2e98',
+        recommendedVersion: 'v0.0.2-bebf2e98',
+        compatibleVersions: ['v0.0.2-bebf2e98']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dyson.png',

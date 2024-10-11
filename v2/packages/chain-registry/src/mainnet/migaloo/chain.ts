@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.whitewhale.money/',
   prettyName: 'Migaloo',
+  chainType: 'cosmos',
   chainId: 'migaloo-1',
   bech32Prefix: 'migaloo',
   daemonName: 'migalood',
@@ -31,19 +32,180 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
   },
   codebase: {
+    gitRepo: 'https://github.com/White-Whale-Defi-Platform/migaloo-chain',
+    recommendedVersion: 'v4.1.3',
+    compatibleVersions: ['v4.1.3'],
     cosmosSdkVersion: 'v0.47.7',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    cosmwasmVersion: 'v0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.45.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/White-Whale-Defi-Platform/migaloo-chain/release/v2.0.x/networks/mainnet/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v2.0.0',
+        recommendedVersion: 'v2.0.5',
+        compatibleVersions: [
+          'v2.0.0',
+          'v2.0.4',
+          'v2.0.5'
+        ],
+        cosmosSdkVersion: '0.46.11',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.27'
+        },
+        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v2.2.5',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.11'
+        },
+        cosmwasm: {
+          version: 'v0.30.1',
+          enabled: true,
+          tag: 'v0.30.1-0.20230320091624-f5072b9b04a6'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.0'
+        }
+      },
+      {
+        name: 'v2.2.5',
+        proposal: 10,
+        height: 2342302,
+        recommendedVersion: 'v2.2.7-hotfix',
+        compatibleVersions: ['v2.2.7-hotfix'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.29'
+        },
+        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v3.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        cosmwasm: {
+          version: 'v0.30.1',
+          enabled: true,
+          tag: 'v0.30.1-0.20230320091624-f5072b9b04a6'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.2.0'
+        }
+      },
+      {
+        name: 'v3.0.0',
+        proposal: 13,
+        height: 3574316,
+        recommendedVersion: 'v3.0.1-hotfix',
+        compatibleVersions: ['v3.0.1-hotfix'],
+        cosmosSdkVersion: '0.46.15',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.29'
+        },
+        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v3.0.2',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.15'
+        },
+        cosmwasm: {
+          version: 'v0.30.1',
+          enabled: true,
+          tag: 'v0.30.1-0.20230320091624-f5072b9b04a6'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.2.0'
+        }
+      },
+      {
+        name: 'v3.0.2',
+        proposal: 19,
+        height: 4128108,
+        recommendedVersion: 'v3.0.4',
+        compatibleVersions: ['v3.0.4'],
+        cosmosSdkVersion: '0.46.15',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.29'
+        },
+        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v4.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.15'
+        },
+        cosmwasm: {
+          version: 'v0.30.1',
+          enabled: true,
+          tag: 'v0.30.1-0.20230320091624-f5072b9b04a6'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.2.0'
+        }
+      },
+      {
+        name: 'v4.1.2',
+        proposal: 31,
+        height: 5962700,
+        recommendedVersion: 'v4.1.3',
+        compatibleVersions: ['v4.1.3'],
+        cosmosSdkVersion: 'v0.47.7',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.7'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.7'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   apis: {
     rpc: [
       {
         address: 'https://migaloo-rpc.polkachu.com:443',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://migaloo-rpc.lavenderfive.com',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://rpc-migaloo.cosmos-spaces.cloud',
@@ -58,26 +220,18 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://migaloo.rpc.kjnodes.com',
-        provider: 'kjnodes'
-      },
-      {
-        address: 'https://migaloo-rpc.cosmosrescue.com',
-        provider: 'cosmosrescue'
-      },
-      {
         address: 'https://migaloo-rpc.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://migaloo-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
       {
         address: 'https://migaloo-api.polkachu.com:443',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://migaloo-api.lavenderfive.com',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://api-migaloo.cosmos-spaces.cloud',
@@ -92,26 +246,18 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://migaloo.api.kjnodes.com',
-        provider: 'kjnodes'
-      },
-      {
-        address: 'https://migaloo-api.cosmosrescue.com',
-        provider: 'cosmosrescue'
-      },
-      {
         address: 'https://migaloo-api.highstakes.ch',
         provider: 'High Stakes 🇨🇭'
+      },
+      {
+        address: 'https://migaloo-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
       {
         address: 'migaloo-grpc.polkachu.com:20790',
         provider: 'Polkachu'
-      },
-      {
-        address: 'migaloo-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'whitewhale-mainnet-grpc.autostake.com:443',
@@ -126,14 +272,14 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'migaloo.grpc.kjnodes.com:14990',
-        provider: 'kjnodes'
-      },
-      {
-        address: 'migaloo-grpc.cosmosrescue.com:9090',
-        provider: 'cosmosrescue'
+        address: 'migaloo-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
-    ]
+    ],
+    grpcWeb: [{
+        address: 'https://migaloo-grpc-web.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      }]
   },
   explorers: [
     {
@@ -162,7 +308,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg',
+      theme: {
+        primaryColorHex: '#3ccc64'
+      }
     }]
 };
 export default info;

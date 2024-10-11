@@ -23,8 +23,12 @@ const info: AssetList = {
       coingeckoId: 'e-money',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg',
+          theme: {
+            primaryColorHex: '#caf2ea'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'e-Money EUR stablecoin. Audited and backed by fiat EUR deposits and government bonds.',
@@ -46,8 +50,12 @@ const info: AssetList = {
       coingeckoId: 'e-money-eur',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.svg',
+          theme: {
+            primaryColorHex: '#f4c808'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'e-Money CHF stablecoin. Audited and backed by fiat CHF deposits and government bonds.',
@@ -66,11 +74,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.svg',
+          theme: {
+            primaryColorHex: '#db2b1c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'e-Money NOK stablecoin. Audited and backed by fiat NOK deposits and government bonds.',
@@ -89,11 +100,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.svg',
+          theme: {
+            primaryColorHex: '#cb142d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'e-Money DKK stablecoin. Audited and backed by fiat DKK deposits and government bonds.',
@@ -112,11 +126,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.svg',
+          theme: {
+            primaryColorHex: '#ac0c34'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'e-Money SEK stablecoin. Audited and backed by fiat SEK deposits and government bonds.',
@@ -135,11 +152,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.svg',
+          theme: {
+            primaryColorHex: '#045493'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

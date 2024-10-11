@@ -29,8 +29,12 @@ const info: AssetList = {
       coingeckoId: 'stratos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg',
+          theme: {
+            primaryColorHex: '#04847c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

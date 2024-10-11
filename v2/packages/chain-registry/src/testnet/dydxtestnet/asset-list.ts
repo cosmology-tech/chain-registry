@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'dydxtestnet',
   assets: [{
       description: 'The native staking token of dYdX Protocol.',
@@ -24,8 +24,15 @@ const info: AssetList = {
           provider: 'Dydx'
         }],
       images: [{
+          imageSync: {
+            chainName: 'dydx',
+            baseDenom: 'adydx'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+          theme: {
+            primaryColorHex: '#21212f'
+          }
         }, {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx-circle.svg',
           theme: {
@@ -35,7 +42,8 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

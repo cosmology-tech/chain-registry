@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://www.babylonchain.io',
   networkType: 'testnet',
   prettyName: 'Babylon Testnet',
+  chainType: 'cosmos',
   chainId: 'bbn-test1',
   bech32Prefix: 'bbn',
   daemonName: 'babylond',
@@ -22,7 +23,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/babylonchain/babylon',
+    recommendedVersion: 'v0.5.0',
+    compatibleVersions: ['v0.5.0'],
+    genesis: {
+      genesisUrl: 'https://github.com/babylonchain/networks/raw/main/bbn-test1/genesis.tar.bz2'
+    },
+    versions: [{
+        name: 'v0.5.0',
+        recommendedVersion: 'v0.5.0',
+        compatibleVersions: ['v0.5.0']
+      }]
   },
   logoURIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'

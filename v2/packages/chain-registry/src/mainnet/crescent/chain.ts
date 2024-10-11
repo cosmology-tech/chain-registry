@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Crescent',
+  chainType: 'cosmos',
   chainId: 'crescent-1',
   bech32Prefix: 'cre',
   daemonName: 'crescentd',
@@ -26,7 +27,81 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/crescent-network/crescent',
+    recommendedVersion: 'v4.2.0',
+    compatibleVersions: ['v4.2.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/crescent-network/crescent/releases/download/v4.2.0/crescentd-v4.2.0-linux-amd64',
+      "darwin/arm64": 'https://github.com/crescent-network/crescent/releases/download/v4.2.0/crescentd-v4.2.0-darwin-arm64'
+    },
+    genesis: {
+      genesisUrl: 'https://github.com/crescent-network/launch/raw/main/mainnet/crescent-1/genesis.json.tar.gz'
+    },
+    versions: [
+      {
+        name: 'v1',
+        tag: 'v1.0.0',
+        height: 0,
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      },
+      {
+        name: 'v1.1',
+        tag: 'v1.1.0',
+        height: 48000,
+        recommendedVersion: '1.1.0',
+        compatibleVersions: ['v1.1.0']
+      },
+      {
+        name: 'v2',
+        tag: 'v2.3.0',
+        height: 1384100,
+        proposal: 12,
+        recommendedVersion: 'v2.3.0',
+        compatibleVersions: [
+          'v2.3.0',
+          'v2.2.0',
+          'v2.1.1',
+          'v2.1.0'
+        ]
+      },
+      {
+        name: 'v3',
+        tag: 'v3.0.0',
+        height: 3932000,
+        proposal: 29,
+        recommendedVersion: 'v3.0.0',
+        compatibleVersions: ['v3.0.0']
+      },
+      {
+        name: 'v4',
+        tag: 'v4.0.0',
+        height: 4415902,
+        proposal: 35,
+        recommendedVersion: 'v4.0.0',
+        compatibleVersions: ['v4.0.0'],
+        nextVersionName: 'v4.1'
+      },
+      {
+        name: 'v4.1',
+        tag: 'v4.1.1',
+        height: 6500000,
+        recommendedVersion: 'v4.1.1',
+        compatibleVersions: ['v4.1.1', 'v4.1.0'],
+        nextVersionName: 'v4.2'
+      },
+      {
+        name: 'v4.2',
+        tag: 'v4.2.0',
+        height: 6915000,
+        recommendedVersion: 'v4.2.0',
+        compatibleVersions: ['v4.2.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/crescent-network/crescent/releases/download/v4.2.0/crescentd-v4.2.0-linux-amd64',
+          "darwin/arm64": 'https://github.com/crescent-network/crescent/releases/download/v4.2.0/crescentd-v4.2.0-darwin-arm64'
+        }
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
@@ -142,12 +217,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/crescent',
-      txPage: 'https://www.mintscan.io/crescent/transactions/${txHash}',
-      accountPage: 'https://www.mintscan.io/crescent/accounts/${accountAddress}'
-    },
-    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/crescent',
       txPage: 'https://ezstaking.app/crescent/txs/${txHash}',
@@ -177,7 +246,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg',
+      theme: {
+        primaryColorHex: '#3c2832'
+      }
     }]
 };
 export default info;

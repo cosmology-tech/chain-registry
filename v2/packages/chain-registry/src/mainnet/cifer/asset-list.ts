@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'cifer',
   assets: [{
-      description: 'Decentralized Machine Learning',
+      description: 'Cifer Blockchain Network Built for Decentralized Machine Learning.',
       denomUnits: [{
           denom: 'ucif',
           exponent: 0
@@ -19,15 +19,18 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg',
+          theme: {
+            primaryColorHex: '#af49b7'
+          }
         }],
       socials: {
         website: 'http://cifer.ai/',
         twitter: 'https://twitter.com/cifer_ai'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

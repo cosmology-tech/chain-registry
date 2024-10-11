@@ -20,7 +20,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/seitestnet2/images/sei.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

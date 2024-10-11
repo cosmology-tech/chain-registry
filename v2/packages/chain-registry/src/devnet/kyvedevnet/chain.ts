@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'kyvedevnet',
+  chainType: 'cosmos',
   chainId: 'korellia-2',
   prettyName: 'KYVE Korellia',
   status: 'live',
@@ -18,7 +19,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/KYVENetwork/chain',
+    recommendedVersion: 'v0.6.3',
+    compatibleVersions: ['v0.6.3'],
+    binaries: {
+      "linux/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v0.6.3/chain_linux_amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://github.com/KYVENetwork/chain/releases/download/v0.0.1/genesis.json'
+    },
+    versions: [{
+        name: 'v0.6.3',
+        recommendedVersion: 'v0.6.3',
+        compatibleVersions: ['v0.6.3'],
+        binaries: {
+          "linux/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v0.6.3/chain_linux_amd64.tar.gz'
+        }
+      }]
   },
   apis: {
     rpc: [{

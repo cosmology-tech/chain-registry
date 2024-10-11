@@ -6,15 +6,80 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://bitsong.io/',
   prettyName: 'BitSong',
+  chainType: 'cosmos',
   chainId: 'bitsong-2b',
   bech32Prefix: 'bitsong',
   slip44: 639,
   daemonName: 'bitsongd',
   nodeHome: '$HOME/.bitsongd',
   codebase: {
+    gitRepo: 'https://github.com/bitsongofficial/go-bitsong',
+    recommendedVersion: 'v0.15.0',
+    compatibleVersions: ['v0.15.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/bitsongofficial/go-bitsong/releases/download/v0.15.0/bitsongd'
+    },
     cosmosSdkVersion: 'v0.45.16',
+    cosmwasmVersion: 'v0.33.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.33.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-2b/genesis.json'
+    },
+    versions: [{
+        name: 'v0.14.0',
+        recommendedVersion: 'v0.14.0',
+        compatibleVersions: ['v0.14.0'],
+        cosmosSdkVersion: '0.45.11',
+        cosmwasmVersion: '0.29.2',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.15.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45.11'
+        },
+        cosmwasm: {
+          version: '0.29.2',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.3.1'
+        }
+      }, {
+        name: 'v0.15.0',
+        proposal: 34,
+        height: 15947000,
+        recommendedVersion: 'v0.15.0',
+        compatibleVersions: ['v0.15.0'],
+        cosmosSdkVersion: '0.45.16',
+        cosmwasmVersion: '0.33.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45.16'
+        },
+        cosmwasm: {
+          version: '0.33.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.4.2'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.4.2'
+    },
+    cosmwasm: {
+      version: 'v0.33.0',
+      enabled: true
+    }
   },
   fees: {
     feeTokens: [{
@@ -58,10 +123,6 @@ const info: Chain = {
         provider: '🐹 Quokka Stake'
       },
       {
-        address: 'https://bitsong-rpc.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://rpc-bitsong.starsquid.io',
         provider: 'Starsquid'
       },
@@ -92,6 +153,14 @@ const info: Chain = {
       {
         address: 'https://bitsong-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://bitsong-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://bitsong.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -114,10 +183,6 @@ const info: Chain = {
       {
         address: 'http://bitsong.api.nodersteam.com:11017',
         provider: '[NODERS]TEAM'
-      },
-      {
-        address: 'https://bitsong-api.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://api-bitsong.starsquid.io',
@@ -150,16 +215,16 @@ const info: Chain = {
       {
         address: 'https://bitsong.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://bitsong-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [
       {
         address: 'grpc-bitsong-ia.cosmosia.notional.ventures:443',
         provider: 'Notional'
-      },
-      {
-        address: 'bitsong-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'bitsong.grpc.nodersteam.com:9111/',
@@ -180,6 +245,10 @@ const info: Chain = {
       {
         address: 'bitsong-grpc.noders.services:20090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'bitsong.grpc.m.stavr.tech:9988',
+        provider: '🔥STAVR🔥'
       }
     ]
   },
@@ -222,7 +291,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg',
+      theme: {
+        primaryColorHex: '#c8307f'
+      }
     }]
 };
 export default info;

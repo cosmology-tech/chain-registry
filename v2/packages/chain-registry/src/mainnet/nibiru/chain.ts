@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://nibiru.fi/',
   prettyName: 'Nibiru',
+  chainType: 'cosmos',
   chainId: 'cataclysm-1',
   bech32Prefix: 'nibi',
   daemonName: 'nibid',
@@ -30,9 +31,344 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: 'v0.47.10',
+    gitRepo: 'https://github.com/NibiruChain/nibiru',
+    recommendedVersion: 'v1.5.0',
+    compatibleVersions: ['v1.5.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_darwin_arm64.tar.gz'
+    },
+    cosmosSdkVersion: 'v0.47.11',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    cosmwasmVersion: 'v0.44.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.44.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/NibiruChain/Networks/main/Mainnet/cataclysm-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0'],
+        tag: 'v1.0.0',
+        height: 1,
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmosSdkVersion: 'v0.45.5',
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.nibid/data/wasm',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_arm64.tar.gz'
+        },
+        nextVersionName: 'v1.0.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.5'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          path: '$HOME/.nibid/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'v1.0.1',
+        recommendedVersion: 'v1.0.1',
+        compatibleVersions: ['v1.0.1'],
+        tag: 'v1.0.1',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_arm64.tar.gz'
+        },
+        proposal: 2,
+        height: 2753803,
+        cosmosSdkVersion: 'v0.47.7',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.0.2',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.7'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'v1.0.2',
+        recommendedVersion: 'v1.0.2',
+        compatibleVersions: ['v1.0.2'],
+        tag: 'v1.0.2',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.2/nibid_1.0.2_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.2/nibid_1.0.2_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.2/nibid_1.0.2_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.2/nibid_1.0.2_darwin_arm64.tar.gz'
+        },
+        proposal: 6,
+        height: 3539699,
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.0.3',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'v1.0.3',
+        recommendedVersion: 'v1.0.3',
+        compatibleVersions: ['v1.0.3'],
+        tag: 'v1.0.3',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.3/nibid_1.0.3_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.3/nibid_1.0.3_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.3/nibid_1.0.3_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.3/nibid_1.0.3_darwin_arm64.tar.gz'
+        },
+        proposal: 8,
+        height: 4088799,
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v1.1.0',
+        recommendedVersion: 'v1.1.0',
+        compatibleVersions: ['v1.1.0'],
+        tag: 'v1.1.0',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.1.0/nibid_1.1.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.1.0/nibid_1.1.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.1.0/nibid_1.1.0_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.1.0/nibid_1.1.0_darwin_arm64.tar.gz'
+        },
+        proposal: 9,
+        height: 4447094,
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.2.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v1.2.0',
+        recommendedVersion: 'v1.2.0',
+        compatibleVersions: ['v1.2.0'],
+        tag: 'v1.2.0',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.2.0/nibid_1.2.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.2.0/nibid_1.2.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.2.0/nibid_1.2.0_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.2.0/nibid_1.2.0_darwin_arm64.tar.gz'
+        },
+        proposal: 10,
+        height: 4804662,
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.3.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v1.3.0',
+        recommendedVersion: 'v1.3.0',
+        compatibleVersions: ['v1.3.0'],
+        tag: 'v1.3.0',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.3.0/nibid_1.3.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.3.0/nibid_1.3.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.3.0/nibid_1.3.0_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.3.0/nibid_1.3.0_darwin_arm64.tar.gz'
+        },
+        proposal: 12,
+        height: 6281429,
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.4.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v1.4.0',
+        proposal: 13,
+        height: 7457147,
+        recommendedVersion: 'v1.4.0',
+        compatibleVersions: ['v1.4.0'],
+        tag: 'v1.4.0',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.4.0/nibid_1.4.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.4.0/nibid_1.4.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.4.0/nibid_1.4.0_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.4.0/nibid_1.4.0_darwin_arm64.tar.gz'
+        },
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.5.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v1.5.0',
+        proposal: 14,
+        height: 8375044,
+        recommendedVersion: 'v1.5.0',
+        compatibleVersions: ['v1.5.0'],
+        tag: 'v1.5.0',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.5.0/nibid_1.5.0_darwin_arm64.tar.gz'
+        },
+        cosmosSdkVersion: 'v0.47.11',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.5'
+        },
+        cosmwasmVersion: 'v0.44.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.11'
+        },
+        cosmwasm: {
+          version: 'v0.44.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.2'
+    },
+    cosmwasm: {
+      version: 'v0.44.0',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
@@ -40,6 +376,10 @@ const info: Chain = {
   },
   description: 'A Web3 hub ushering in the next era of money',
   apis: {
+    wss: [{
+        address: 'wss://rpc.nibiru.fi/websocket',
+        provider: 'Nibiru Foundation'
+      }],
     rpc: [
       {
         address: 'https://rpc.nibiru.fi',
@@ -54,7 +394,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://nibiru-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/nibiru',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -84,6 +424,18 @@ const info: Chain = {
       {
         address: 'https://nibiru-mainnet.rpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'https://nibiru-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://rpc.nibiru.roomit.xyz',
+        provider: 'Roomit'
+      },
+      {
+        address: 'https://nibiru_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -104,7 +456,7 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://nibiru-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/nibiru',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -125,7 +477,7 @@ const info: Chain = {
       },
       {
         address: 'https://nibiru.api.staking-explorer.com',
-        provider: 'Daily DROP'
+        provider: 'Daily DROP | 2% Fee'
       },
       {
         address: 'https://nibiru-api.noders.services',
@@ -134,6 +486,18 @@ const info: Chain = {
       {
         address: 'https://nibiru-mainnet.api.stakevillage.net',
         provider: 'Stake Village'
+      },
+      {
+        address: 'https://nibiru-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://api.nibiru.roomit.xyz',
+        provider: 'Roomit'
+      },
+      {
+        address: 'https://nibiru_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -154,7 +518,7 @@ const info: Chain = {
         provider: 'silent'
       },
       {
-        address: 'https://nibiru-grpc.lavenderfive.com:443',
+        address: 'nibiru.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -180,6 +544,14 @@ const info: Chain = {
       {
         address: 'nibiru-mainnet.grpc.stakevillage.net:443',
         provider: 'Stake Village'
+      },
+      {
+        address: 'nibiru-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'grpc.nibiru.roomit.xyz:8443',
+        provider: 'Roomit'
       }
     ]
   },
@@ -219,11 +591,26 @@ const info: Chain = {
       url: 'https://exp.stakevillage.net/nibiru-mainnet',
       txPage: 'https://exp.stakevillage.net/nibiru-mainnet/tx/${txHash}',
       accountPage: 'https://exp.stakevillage.net/nibiru-mainnet/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Roomit',
+      url: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet',
+      txPage: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.tendermint.roomit.xyz/nibiru-mainnet/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/nibiru',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/nibiru/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/nibiru/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg',
+      theme: {
+        primaryColorHex: '#14c0ce'
+      }
     }]
 };
 export default info;

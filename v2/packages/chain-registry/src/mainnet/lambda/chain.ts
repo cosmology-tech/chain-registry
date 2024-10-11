@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Lambda',
+  chainType: 'cosmos',
   chainId: 'lambda_92000-1',
   bech32Prefix: 'lamb',
   nodeHome: '$HOME/.lambdavm',
@@ -24,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/LambdaIM/lambdavm',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/LambdaIM/mainnet/main/lambda_92000-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',
@@ -47,6 +58,10 @@ const info: Chain = {
       {
         address: 'https://lambda-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://lambda_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -65,6 +80,10 @@ const info: Chain = {
       {
         address: 'https://lambda-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://lambda_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -81,13 +100,20 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       }
     ],
-    evmHttpJsonrpc: [{
+    evmHttpJsonrpc: [
+      {
         address: 'https://jsonrpc-lambda.d-stake.xyz',
         provider: 'D-stake'
-      }, {
+      },
+      {
         address: 'https://lambda-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
-      }]
+      },
+      {
+        address: 'https://lambda_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ]
   },
   explorers: [
     {
@@ -110,11 +136,20 @@ const info: Chain = {
       url: 'https://atomscan.com/lambda',
       txPage: 'https://atomscan.com/lambda/transactions/${txHash}',
       accountPage: 'https://atomscan.com/lambda/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/lambda',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/lambda/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/lambda/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.svg',
+      theme: {
+        primaryColorHex: '#e41c54'
+      }
     }]
 };
 export default info;

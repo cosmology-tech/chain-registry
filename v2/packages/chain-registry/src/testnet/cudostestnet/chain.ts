@@ -5,12 +5,23 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Cudos Testnet',
+  chainType: 'cosmos',
   chainId: 'cudos-testnet-public-3',
   bech32Prefix: 'cudos',
   keyAlgos: ['secp256k1'],
   slip44: 118,
   codebase: {
-
+    gitRepo: 'https://github.com/CudoVentures/cudos-node',
+    recommendedVersion: 'v1.1.0',
+    compatibleVersions: ['v1.1.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/CudoVentures/cudos-builders/cudos-master/docker/config/genesis.testnet.public.json'
+    },
+    versions: [{
+        name: 'v1.1.0',
+        recommendedVersion: 'v1.1.0',
+        compatibleVersions: ['v1.1.0']
+      }]
   },
   apis: {
     rpc: [

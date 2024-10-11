@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../../assetlist.schema.json',
   chainName: 'fantomtestnet',
   assets: [{
       description: 'Fantom\'s native utility token — FTM — powers the entire Fantom blockchain ecosystem. FTM tokens are used for staking, governance, payments, and fees on the network.',
@@ -11,6 +11,7 @@ const info: AssetList = {
           denom: 'ftm',
           exponent: 18
         }],
+      typeAsset: 'evm-base',
       base: 'wei',
       name: 'Fantom',
       display: 'ftm',

@@ -90,6 +90,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'bandchain',
+      clientId: '07-tendermint-169',
+      connectionId: 'connection-150'
+    },
+    chain2: {
+      chainName: 'stride',
+      clientId: '07-tendermint-146',
+      connectionId: 'connection-146'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-161',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-258',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'carbon',
       clientId: '07-tendermint-13',
       connectionId: 'connection-12'
@@ -353,6 +382,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'haqq',
+      clientId: '07-tendermint-6',
+      connectionId: 'connection-8'
+    },
+    chain2: {
+      chainName: 'stride',
+      clientId: '07-tendermint-143',
+      connectionId: 'connection-143'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-7',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-240',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'injective',
       clientId: '07-tendermint-131',
       connectionId: 'connection-103'
@@ -590,6 +648,35 @@ const info: IBCData[] = [
         version: 'ics20-1',
         tags: {
 
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'pryzm',
+      clientId: '07-tendermint-8',
+      connectionId: 'connection-8'
+    },
+    chain2: {
+      chainName: 'stride',
+      clientId: '07-tendermint-145',
+      connectionId: 'connection-145'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-23',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-257',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },

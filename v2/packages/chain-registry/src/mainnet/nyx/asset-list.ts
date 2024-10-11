@@ -18,10 +18,13 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
       },
-      coingeckoId: '',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png',
+          theme: {
+            primaryColorHex: '#f45135'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }, {
       description: 'NYM Token (NYM) is the Nym Network\'s native utility token, used as the primary means to incentivize mixnet node operators.',
       denomUnits: [{
@@ -45,16 +48,19 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg',
           theme: {
             darkMode: false,
-            circle: true
+            circle: true,
+            primaryColorHex: '#151525'
           }
         }, {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.svg',
           theme: {
             darkMode: true,
-            circle: true
+            circle: true,
+            primaryColorHex: '#141424'
           }
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

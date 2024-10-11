@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'passage1',
+  chainType: 'cosmos',
   chainId: 'passage-1',
   prettyName: 'Passage',
   status: 'killed',
@@ -24,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/envadiv/Passage3D',
+    recommendedVersion: 'v1.1.0',
+    compatibleVersions: ['v1.1.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/envadiv/mainnet/main/passage-1/genesis.json'
+    }
   },
   explorers: [
     {
@@ -56,7 +62,10 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png',
+      theme: {
+        primaryColorHex: '#05050c'
+      }
     }]
 };
 export default info;

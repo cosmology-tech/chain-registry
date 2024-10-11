@@ -1,23 +1,24 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'polygon',
   assets: [
     {
-      description: 'Polygon (formerly Matic) Network brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains. Polygon is a well-structured, easy-to-use platform for Ethereum scaling and infrastructure development.',
+      description: 'Polygon, previously known as Matic Network, is a Layer 2 scaling solution for Ethereum that aims to provide faster and cheaper transactions.',
+      extendedDescription: 'Polygon is a Layer 2 scaling solution for Ethereum, designed to improve the scalability and usability of the Ethereum blockchain. It achieves this by using sidechains for off-chain computation while ensuring asset security using the Plasma framework and a decentralized network of Proof-of-Stake (PoS) validators. Polygon supports various DeFi and NFT projects by providing a faster, more efficient, and low-cost environment for transactions. Its native token, MATIC, is used for staking, governance, and paying transaction fees on the network. The platform aims to transform Ethereum into a multi-chain system, similar to Polkadot, but with the benefits of Ethereum\'s security and vibrant ecosystem.',
       denomUnits: [{
           denom: 'wei',
           exponent: 0
         }, {
-          denom: 'matic',
+          denom: 'pol',
           exponent: 18,
-          aliases: ['polygon']
+          aliases: ['polygon', 'matic']
         }],
       typeAsset: 'evm-base',
       base: 'wei',
-      name: 'Matic',
-      display: 'matic',
-      symbol: 'MATIC',
+      name: 'Polygon',
+      display: 'pol',
+      symbol: 'POL',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'
@@ -25,7 +26,10 @@ const info: AssetList = {
       coingeckoId: 'matic-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic-purple.svg',
+          theme: {
+            primaryColorHex: '#8444e4'
+          }
         }]
     },
     {
@@ -54,15 +58,58 @@ const info: AssetList = {
           provider: 'Polygon'
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
       },
       coingeckoId: 'wmatic',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg',
+          theme: {
+            primaryColorHex: '#2b93fb'
+          }
         }]
     },
     {
-      description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      description: 'USDC issued on Polygon.',
+      typeAsset: 'erc20',
+      address: '0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359',
+      denomUnits: [{
+          denom: '0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359',
+          exponent: 0,
+          aliases: ['uusdc']
+        }, {
+          denom: 'usdc',
+          exponent: 6
+        }],
+      base: '0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359',
+      name: 'USDC',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [{
+          type: 'additional-mintage',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          provider: 'Circle'
+        }],
+      coingeckoId: 'usd-coin',
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
+        }]
+    },
+    {
+      description: 'USDC Bridged from Ethereum via Polygon PoS Bridge.',
       typeAsset: 'erc20',
       address: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
       denomUnits: [{
@@ -74,23 +121,29 @@ const info: AssetList = {
           exponent: 6
         }],
       base: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
-      name: 'USD Coin',
+      name: 'Bridged USDC',
       display: 'usdc',
-      symbol: 'USDC',
+      symbol: 'USDC.e',
       traces: [{
-          type: 'additional-mintage',
+          type: 'bridge',
           counterparty: {
             chainName: 'ethereum',
             baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
           },
-          provider: 'Circle'
+          provider: 'Polygon PoS Bridge'
         }],
-      logoURIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      },
-      coingeckoId: 'usd-coin',
+      coingeckoId: 'bridged-usdc-polygon-pos-bridge',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
         }]
     },
     {
@@ -152,6 +205,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'axelar',
+            baseDenom: 'frax-wei'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg'
         }]
     },
@@ -251,7 +308,79 @@ const info: AssetList = {
             baseDenom: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg',
+          theme: {
+            primaryColorHex: '#ebb324'
+          }
+        }]
+    },
+    {
+      description: 'wETH is \'wrapped ETH\'',
+      typeAsset: 'erc20',
+      denomUnits: [{
+          denom: '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
+          exponent: 0
+        }, {
+          denom: 'weth',
+          exponent: 18
+        }],
+      address: '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
+      base: '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
+      display: 'weth',
+      name: 'Wrapped Ether',
+      symbol: 'WETH',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+          },
+          provider: 'Polygon PoS Bridge'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
+        }]
+    },
+    {
+      description: 'USDT from Ethereum bridged to Polygon via Polygon PoS Bridge.',
+      typeAsset: 'erc20',
+      address: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F',
+      denomUnits: [{
+          denom: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F',
+          exponent: 0
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      base: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F',
+      name: 'Polygon Bridged USDT',
+      display: 'usdt',
+      symbol: 'USDT',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          provider: 'Polygon PoS Bridge'
+        }],
+      coingeckoId: 'polygon-bridged-usdt-polygon',
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }]
     }
   ]

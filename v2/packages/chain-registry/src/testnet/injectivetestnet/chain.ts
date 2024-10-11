@@ -1,11 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'injectivetestnet',
   status: 'live',
   networkType: 'testnet',
   website: 'https://injective.com',
   prettyName: 'Injective',
+  chainType: 'cosmos',
   chainId: 'injective-888',
   bech32Prefix: 'inj',
   extraCodecs: ['injective'],
@@ -15,7 +16,7 @@ const info: Chain = {
   fees: {
     feeTokens: [{
         denom: 'inj',
-        fixedMinGasPrice: 500000000,
+        fixedMinGasPrice: 160000000,
         lowGasPrice: 500000000,
         averageGasPrice: 700000000,
         highGasPrice: 900000000
@@ -27,7 +28,34 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/InjectiveLabs/testnet',
+    recommendedVersion: 'v1.11.1',
+    compatibleVersions: ['v1.11.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/linux-amd64.zip',
+      "darwin/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/darwin-amd64.zip'
+    },
+    genesis: {
+      genesisUrl: 'https://injective-snapshots.s3.amazonaws.com/testnet/genesis.json'
+    },
+    versions: [{
+        name: 'v1.10.2',
+        recommendedVersion: 'v1.10.2',
+        compatibleVersions: ['v1.10.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.10.2-1678712142/linux-amd64.zip',
+          "darwin/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.10.2-1678712142/darwin-amd64.zip'
+        },
+        nextVersionName: 'v1.11.1'
+      }, {
+        name: 'v1.11.1',
+        recommendedVersion: 'v1.11.1',
+        compatibleVersions: ['v1.11.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/linux-amd64.zip',
+          "darwin/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/darwin-amd64.zip'
+        }
+      }]
   },
   apis: {
     rpc: [

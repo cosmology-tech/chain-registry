@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'bostrom',
+  chainType: 'cosmos',
   chainId: 'bostrom',
   bech32Prefix: 'bostrom',
   daemonName: 'cyber',
@@ -24,7 +25,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasmEnabled: true
+    gitRepo: 'https://github.com/cybercongress/go-cyber',
+    recommendedVersion: 'v0.3.0',
+    compatibleVersions: ['v0.3.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_linux-amd64.tar.gz',
+      "darwin/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_darwin-amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://cloudflare-ipfs.com/ipfs/QmYubyVNfghD4xCrTFj26zBwrF9s5GJhi1TmxvrwmJCipr'
+    },
+    cosmwasmEnabled: true,
+    versions: [{
+        name: 'v0.3.0',
+        recommendedVersion: 'v0.3.0',
+        compatibleVersions: ['v0.3.0'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_linux-amd64.tar.gz',
+          "darwin/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_darwin-amd64.tar.gz'
+        },
+        cosmwasm: {
+          enabled: true
+        }
+      }],
+    cosmwasm: {
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
@@ -87,7 +114,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg',
+      theme: {
+        primaryColorHex: '#4cea4e'
+      }
     }]
 };
 export default info;

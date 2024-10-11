@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'kujira',
   assets: [
     {
-      description: 'The native staking and governance token of the Kujira chain.',
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
+      extendedDescription: 'Kujira provides a comprehensive DeFi platform that includes tools for lending, borrowing, and yield farming, leveraging blockchain technology to offer a transparent, secure, and efficient user experience. The native token, KUJI, is central to the ecosystem, used for transaction fees, staking, and governance. Kujira\'s user-centric design and innovative features make it a popular choice in the DeFi space, enabling users to maximize their returns and effectively manage their digital assets.',
       denomUnits: [{
           denom: 'ukuji',
           exponent: 0
@@ -23,12 +24,16 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg',
+          theme: {
+            primaryColorHex: '#e33b34'
+          }
         }],
       socials: {
         website: 'https://kujira.network/',
         twitter: 'https://twitter.com/TeamKujira'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The native over-collateralized stablecoin from the Kujira chain.',
@@ -50,8 +55,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.svg',
+          theme: {
+            primaryColorHex: '#2e363f'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Quark\'s auto-compounding KUJI derivative',
@@ -71,7 +80,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qckuji.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ampKUJI',
@@ -92,8 +102,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampkuji.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampkuji.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampkuji.svg',
+          theme: {
+            primaryColorHex: '#4b7bbb'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'MantaDAO Governance Token',
@@ -115,8 +129,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.svg',
+          theme: {
+            primaryColorHex: '#0c141c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Quark\'s auto-compounding MNTA derivative',
@@ -136,7 +154,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcmnta.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ERIS Liquid Staked MNTA',
@@ -155,8 +174,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampmnta.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampmnta.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/ampmnta.png',
+          theme: {
+            primaryColorHex: '#618bc8'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The content house of Kujira',
@@ -177,8 +200,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.svg',
+          theme: {
+            primaryColorHex: '#fc7991'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Blend Token',
@@ -198,7 +225,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/blend.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on Kujira',
@@ -231,9 +259,16 @@ const info: AssetList = {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       }
     },
@@ -250,14 +285,19 @@ const info: AssetList = {
       name: 'Fuzion',
       display: 'fuzn',
       symbol: 'FUZN',
+      coingeckoId: 'fuzion',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.svg'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzion.svg',
+          theme: {
+            primaryColorHex: '#f05d8d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The receipt token of Fuzion',
@@ -276,8 +316,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzionr.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzionr.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuzionr.png',
+          theme: {
+            primaryColorHex: '#949494'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The yield token of Fuzion',
@@ -297,7 +341,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/fuziony.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Quark\'s auto-compounding FUZN derivative',
@@ -317,7 +362,62 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcfuzn.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Quark\'s auto-compounding AQLA derivative',
+      denomUnits: [{
+          denom: 'factory/kujira1d9fmsgvu3yvvppvqech2s3dhrqdm5ukngcf82ghcl70edfpwcrlsu6yr0u/urcpt',
+          exponent: 0
+        }, {
+          denom: 'qcAQLA',
+          exponent: 6
+        }],
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            baseDenom: 'factory/kujira1xe0awk5planmtsmjel5xtx2hzhqdw5p8z66yqd/uaqla',
+            chainName: 'kujira'
+          },
+          provider: 'Quark Protocol',
+          chain: {
+            contract: 'kujira1d9fmsgvu3yvvppvqech2s3dhrqdm5ukngcf82ghcl70edfpwcrlsu6yr0u'
+          }
+        }],
+      base: 'factory/kujira1d9fmsgvu3yvvppvqech2s3dhrqdm5ukngcf82ghcl70edfpwcrlsu6yr0u/urcpt',
+      name: 'qcAQLA',
+      display: 'qcAQLA',
+      symbol: 'qcAQLA',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcaqla.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcaqla.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The Aqualibre project\'s token',
+      denomUnits: [{
+          denom: 'factory/kujira1xe0awk5planmtsmjel5xtx2hzhqdw5p8z66yqd/uaqla',
+          exponent: 0
+        }, {
+          denom: 'AQLA',
+          exponent: 6
+        }],
+      base: 'factory/kujira1xe0awk5planmtsmjel5xtx2hzhqdw5p8z66yqd/uaqla',
+      name: 'AQLA',
+      display: 'AQLA',
+      symbol: 'AQLA',
+      coingeckoId: 'aqualibre',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/aqla.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/aqla.svg'
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The Revenue & Governance token of Unstake.fi',
@@ -338,7 +438,8 @@ const info: AssetList = {
       coingeckoId: 'unstake-fi',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nstk.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Local Money',
@@ -357,8 +458,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/local.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/local.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/local.png',
+          theme: {
+            primaryColorHex: '#242424'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Food for whales',
@@ -377,8 +482,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/PLNK_drk.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/PLNK_drk.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/PLNK_drk.png',
+          theme: {
+            primaryColorHex: '#c87ae9'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -388,10 +497,11 @@ const info: AssetList = {
           denom: 'sol',
           exponent: 8
         }],
+      typeAsset: 'ics20',
       base: 'ibc/E5CA126979E2FFB4C70C072F8094D07ECF27773B37623AD2BF7582AD0726F0F3',
       name: 'Wormhole Solana',
       display: 'sol',
-      symbol: 'whSOL',
+      symbol: 'SOL.wh',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -409,10 +519,16 @@ const info: AssetList = {
             chainName: 'gateway',
             baseDenom: 'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol_circle.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol_circle.png',
+          theme: {
+            circle: true,
+            backgroundColorHex: '#000000'
+          }
         }],
       logoURIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol_circle.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol_circle.svg'
       }
     },
     {
@@ -423,6 +539,7 @@ const info: AssetList = {
           denom: 'evmos',
           exponent: 18
         }],
+      typeAsset: 'ics20',
       base: 'ibc/F3AA7EF362EC5E791FE78A0F4CCC69FEE1F9A7485EB1A8CAB3F6601C00522F10',
       name: 'Evmos',
       display: 'evmos',
@@ -445,7 +562,10 @@ const info: AssetList = {
             baseDenom: 'aevmos'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg',
+          theme: {
+            primaryColorHex: '#ec4c34'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
@@ -469,7 +589,7 @@ const info: AssetList = {
           type: 'ibc',
           counterparty: {
             chainName: 'axelar',
-            baseDenom: 'wawax-wei',
+            baseDenom: 'wavax-wei',
             channelId: 'channel-14'
           },
           chain: {
@@ -478,6 +598,10 @@ const info: AssetList = {
           }
         }],
       images: [{
+          imageSync: {
+            chainName: 'axelar',
+            baseDenom: 'wavax-wei'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
         }],
       logoURIs: {
@@ -514,12 +638,16 @@ const info: AssetList = {
             chainName: 'noble',
             baseDenom: 'uusdc'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     },
     {
@@ -553,7 +681,10 @@ const info: AssetList = {
             baseDenom: 'uosmo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+          theme: {
+            primaryColorHex: '#760dbb'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
@@ -591,7 +722,10 @@ const info: AssetList = {
             baseDenom: 'uusdc'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg',
+          theme: {
+            primaryColorHex: '#2474cc'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png',
@@ -629,7 +763,10 @@ const info: AssetList = {
             baseDenom: 'ucmdx'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg',
+          theme: {
+            primaryColorHex: '#fc4454'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
@@ -644,6 +781,7 @@ const info: AssetList = {
           denom: 'juno',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/EFF323CC632EC4F747C61BCE238A758EFDB7699C3226565F7C20DA06509D59A5',
       name: 'Juno',
       display: 'juno',
@@ -666,7 +804,10 @@ const info: AssetList = {
             baseDenom: 'ujuno'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg',
+          theme: {
+            primaryColorHex: '#fa7b7b'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
@@ -685,7 +826,7 @@ const info: AssetList = {
       base: 'ibc/1B38805B1C75352B28169284F96DF56BDEBD9E8FAC005BDCC8CF0378C82AA8E7',
       name: 'Axelar Wrapped Ether',
       display: 'weth',
-      symbol: 'wETH',
+      symbol: 'wETH.axl',
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -699,7 +840,14 @@ const info: AssetList = {
           }
         }],
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
+          imageSync: {
+            chainName: 'axelar',
+            baseDenom: 'weth-wei'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png',
+          theme: {
+            primaryColorHex: '#3a3444'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png'
@@ -736,7 +884,10 @@ const info: AssetList = {
             baseDenom: 'uatom'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primaryColorHex: '#272d45'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
@@ -751,6 +902,7 @@ const info: AssetList = {
           denom: 'luna',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/DA59C009A0B3B95E0549E6BF7B075C8239285989FF457A8EDDBB56F10B2A6986',
       name: 'Luna',
       display: 'luna',
@@ -769,11 +921,14 @@ const info: AssetList = {
         }],
       images: [{
           imageSync: {
-            chainName: 'luna',
+            chainName: 'terra2',
             baseDenom: 'uluna'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
+          theme: {
+            primaryColorHex: '#f4de6f'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
@@ -811,7 +966,10 @@ const info: AssetList = {
             baseDenom: 'ustars'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
+          theme: {
+            primaryColorHex: '#db2777'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
@@ -826,6 +984,7 @@ const info: AssetList = {
           denom: 'scrt',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
       name: 'Secret Network',
       display: 'scrt',
@@ -844,11 +1003,14 @@ const info: AssetList = {
         }],
       images: [{
           imageSync: {
-            chainName: 'scrt',
+            chainName: 'secretnetwork',
             baseDenom: 'uscrt'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
@@ -888,7 +1050,10 @@ const info: AssetList = {
             baseDenom: 'stk/uatom'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg',
+          theme: {
+            primaryColorHex: '#c4444c'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
@@ -912,8 +1077,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png',
+          theme: {
+            primaryColorHex: '#cc3533'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -947,7 +1116,10 @@ const info: AssetList = {
             baseDenom: 'factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg',
+          theme: {
+            primaryColorHex: '#3ccc64'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
@@ -971,8 +1143,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/xusk.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/xusk.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/xusk.png',
+          theme: {
+            primaryColorHex: '#303741'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Ghost Vault MNTA',
@@ -991,8 +1167,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/xmnta.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/xmnta.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/xmnta.png',
+          theme: {
+            primaryColorHex: '#0f151f'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Stride staked ATOM',
@@ -1003,6 +1183,7 @@ const info: AssetList = {
           denom: 'statom',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/0306D6B66EAA2EDBB7EAD23C0EC9DDFC69BB43E80B398035E90FBCFEF3FD1A87',
       name: 'stATOM',
       display: 'statom',
@@ -1016,7 +1197,7 @@ const info: AssetList = {
           },
           chain: {
             channelId: 'channel-32',
-            path: 'transfer/channel-32/uatom'
+            path: 'transfer/channel-32/stuatom'
           }
         }],
       logoURIs: {
@@ -1026,10 +1207,13 @@ const info: AssetList = {
       images: [{
           imageSync: {
             chainName: 'stride',
-            baseDenom: 'statom'
+            baseDenom: 'stuatom'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
         }]
     },
     {
@@ -1041,6 +1225,7 @@ const info: AssetList = {
           denom: 'wbtc.axl',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/301DAF9CB0A9E247CD478533EF0E21F48FF8118C4A51F77C8BC3EB70E5566DBC',
       name: 'Axelar Bridged wBTC',
       display: 'wbtc.axl',
@@ -1065,7 +1250,10 @@ const info: AssetList = {
             chainName: 'axelar',
             baseDenom: 'wbtc-satoshi'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png',
+          theme: {
+            primaryColorHex: '#41394d'
+          }
         }]
     },
     {
@@ -1077,6 +1265,7 @@ const info: AssetList = {
           denom: 'stosmo',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/F97BDCE220CCB52139C73066E36C45EC7EDCEEF1DAFF891A34F4FBA195A2E6E8',
       name: 'Stride staked OSMO',
       display: 'stosmo',
@@ -1090,7 +1279,7 @@ const info: AssetList = {
           },
           chain: {
             channelId: 'channel-32',
-            path: 'transfer/channel-32/uosmo'
+            path: 'transfer/channel-32/stuosmo'
           }
         }],
       logoURIs: {
@@ -1098,8 +1287,15 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'stride',
+            baseDenom: 'stuosmo'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
         }]
     },
     {
@@ -1120,7 +1316,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: SHD-MNTA',
@@ -1140,7 +1337,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: DYDX-MNTA',
@@ -1160,7 +1358,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wAVAX.axl-MNTA',
@@ -1180,7 +1379,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: CHEQ-MNTA',
@@ -1200,7 +1400,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: FUZN-MNTA',
@@ -1220,7 +1421,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: SOMM-MNTA',
@@ -1240,7 +1442,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wETH.axl-MNTA',
@@ -1260,7 +1463,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: NTRN-MNTA',
@@ -1280,7 +1484,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wFTM.axl-MNTA',
@@ -1300,7 +1505,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: STARS-MNTA',
@@ -1320,7 +1526,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: TIA-MNTA',
@@ -1340,7 +1547,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: SOL.wh-MNTA',
@@ -1360,7 +1568,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: DYM-MNTA',
@@ -1380,7 +1589,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: AKT-MNTA',
@@ -1400,7 +1610,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: LINK.axl-MNTA',
@@ -1420,7 +1631,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wTAO.grv-MNTA',
@@ -1440,7 +1652,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: MNTA-KUJI',
@@ -1460,7 +1673,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: AXL-MNTA',
@@ -1480,7 +1694,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: ATOM-MNTA',
@@ -1500,7 +1715,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: ARB-MNTA',
@@ -1520,7 +1736,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: WHALE-MNTA',
@@ -1540,7 +1757,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: SCRT-MNTA',
@@ -1560,7 +1778,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wstETH.axl-MNTA',
@@ -1580,7 +1799,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wMATIC.axl-MNTA',
@@ -1600,7 +1820,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: UNI.axl-MNTA',
@@ -1620,7 +1841,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: yieldETH.axl-MNTA',
@@ -1640,7 +1862,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wBTC.axl-MNTA',
@@ -1660,7 +1883,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: PAXG.grv-MNTA',
@@ -1680,7 +1904,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wBNB.axl-MNTA',
@@ -1700,7 +1925,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: OSMO-MNTA',
@@ -1720,7 +1946,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: INJ-MNTA',
@@ -1740,7 +1967,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: stOSMO-OSMO',
@@ -1760,7 +1988,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wstETH.axl-wETH.axl',
@@ -1780,7 +2009,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: qcMNTA-MNTA',
@@ -1800,7 +2030,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: ampMNTA-MNTA',
@@ -1820,7 +2051,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'LP Bow: wETH.axl-USK',
@@ -1840,7 +2072,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The token of NAMI',
@@ -1855,14 +2088,409 @@ const info: AssetList = {
       name: 'NAMI',
       display: 'nami',
       symbol: 'NAMI',
+      coingeckoId: 'nami-protocol',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nami.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nami.svg'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nami.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nami.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nami.svg',
+          theme: {
+            primaryColorHex: '#1a1b1b'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The receipt token of NAMI Protocol',
+      denomUnits: [{
+          denom: 'factory/kujira18thffdpuz8tm3mwwun4uhks8a2v7ye0jmw3fllqhklma82lqkpms20gh9c/unausd',
+          exponent: 0
+        }, {
+          denom: 'nausd',
+          exponent: 6
+        }],
+      base: 'factory/kujira18thffdpuz8tm3mwwun4uhks8a2v7ye0jmw3fllqhklma82lqkpms20gh9c/unausd',
+      name: 'NAUSD',
+      display: 'nausd',
+      symbol: 'NAUSD',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nausd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nausd.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nausd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/nausd.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The token of MCTest',
+      denomUnits: [{
+          denom: 'factory/kujira1mn2pgkggquqm2m44zqlaq29jxwtad53qkv4xy4/MCTest',
+          exponent: 0
+        }, {
+          denom: 'mctest',
+          exponent: 6
+        }],
+      base: 'factory/kujira1mn2pgkggquqm2m44zqlaq29jxwtad53qkv4xy4/MCTest',
+      name: 'MCTEST',
+      display: 'mctest',
+      symbol: 'MC01',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mctest.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mctest.png',
+          theme: {
+            primaryColorHex: '#1a1b1b'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The token of AUTO',
+      denomUnits: [{
+          denom: 'factory/kujira13x2l25mpkhwnwcwdzzd34cr8fyht9jlj7xu9g4uffe36g3fmln8qkvm3qn/uauto',
+          exponent: 0
+        }, {
+          denom: 'auto',
+          exponent: 6
+        }],
+      base: 'factory/kujira13x2l25mpkhwnwcwdzzd34cr8fyht9jlj7xu9g4uffe36g3fmln8qkvm3qn/uauto',
+      name: 'AUTO',
+      display: 'auto',
+      symbol: 'AUTO',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/auto.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/auto.png',
+          theme: {
+            primaryColorHex: '#1a1b1b'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Quark\'s auto-compounding DYDX derivative',
+      denomUnits: [{
+          denom: 'factory/kujira1seqq2ekz47uqayshqkg5wqx5vcyrmtwcl9vscnwy2gjh7mz5aapsdfxsd5/urcpt',
+          exponent: 0
+        }, {
+          denom: 'qcDYDX',
+          exponent: 18
+        }],
+      base: 'factory/kujira1seqq2ekz47uqayshqkg5wqx5vcyrmtwcl9vscnwy2gjh7mz5aapsdfxsd5/urcpt',
+      name: 'qcDYDX',
+      display: 'qcDYDX',
+      symbol: 'qcDYDX',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcdydx.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/qcdydx.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The Kujira Recovery Token',
+      denomUnits: [{
+          denom: 'factory/kujira1tsekaqv9vmem0zwskmf90gpf0twl6k57e8vdnq/urkuji',
+          exponent: 0
+        }, {
+          denom: 'rkuji',
+          exponent: 6
+        }],
+      base: 'factory/kujira1tsekaqv9vmem0zwskmf90gpf0twl6k57e8vdnq/urkuji',
+      name: 'rKUJI',
+      display: 'rkuji',
+      symbol: 'rKUJI',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/rkuji.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/rkuji.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/rkuji.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/rkuji.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: ATOM-USK',
+      denomUnits: [{
+          denom: 'factory/kujira1yncutssgh2vj9scaymtteg949hwcft07c6qmgarxnaf04yesq3jsn6g2uv/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-atom-usk',
+          exponent: 6
+        }],
+      base: 'factory/kujira1yncutssgh2vj9scaymtteg949hwcft07c6qmgarxnaf04yesq3jsn6g2uv/ulp',
+      name: 'LP Bow: ATOM-USK',
+      display: 'lp-atom-usk',
+      symbol: 'LP ATOM-USK',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: wETH.axl-USK',
+      denomUnits: [{
+          denom: 'factory/kujira1xwvvjq5w0887v2vz4e83kcu38s0jq8q8lqa3z5hxm295q7y4uejqp24la7/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-weth-usk',
+          exponent: 6
+        }],
+      base: 'factory/kujira1xwvvjq5w0887v2vz4e83kcu38s0jq8q8lqa3z5hxm295q7y4uejqp24la7/ulp',
+      name: 'LP Bow: wETH.axl-USK',
+      display: 'lp-weth-usk',
+      symbol: 'LP wETH.axl-USK',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: SOL.wh-USK',
+      denomUnits: [{
+          denom: 'factory/kujira1vcmh95lje5dln782pxckma65eujs4sv960w22whgsp7a2ajsc6lsvnlhgd/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-sol-usk',
+          exponent: 6
+        }],
+      base: 'factory/kujira1vcmh95lje5dln782pxckma65eujs4sv960w22whgsp7a2ajsc6lsvnlhgd/ulp',
+      name: 'LP Bow: SOL.wh-USK',
+      display: 'lp-sol-usk',
+      symbol: 'LP SOL.wh-USK',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: wETH.axl-USDC',
+      denomUnits: [{
+          denom: 'factory/kujira1n4jfv39hzv2dtshzv6gj4hp8rkdy5rrsr7l84lc3x9cahz4v0umq24q3lu/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-weth-usdc',
+          exponent: 6
+        }],
+      base: 'factory/kujira1n4jfv39hzv2dtshzv6gj4hp8rkdy5rrsr7l84lc3x9cahz4v0umq24q3lu/ulp',
+      name: 'LP Bow: wETH.axl-USDC',
+      display: 'lp-weth-usdc',
+      symbol: 'LP wETH.axl-USDC',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: DYDX-USK',
+      denomUnits: [{
+          denom: 'factory/kujira1lctu7hy65466fxw3tcqf8w45zwrpwgd9chvjqpgyfgcr73k774nsv4ya6t/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-dydx-usk',
+          exponent: 6
+        }],
+      base: 'factory/kujira1lctu7hy65466fxw3tcqf8w45zwrpwgd9chvjqpgyfgcr73k774nsv4ya6t/ulp',
+      name: 'LP Bow: DYDX-USK',
+      display: 'lp-dydx-usk',
+      symbol: 'LP DYDX-USK',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: AKT-USDC',
+      denomUnits: [{
+          denom: 'factory/kujira1g5st8p6qdyf23zzerjcxgpr2r7a9wzdyaymu79ngg6ve3m9v3n4sdetv4e/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-akt-usdc',
+          exponent: 6
+        }],
+      base: 'factory/kujira1g5st8p6qdyf23zzerjcxgpr2r7a9wzdyaymu79ngg6ve3m9v3n4sdetv4e/ulp',
+      name: 'LP Bow: AKT-USDC',
+      display: 'lp-akt-usdc',
+      symbol: 'LP AKT-USDC',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: wBTC-USK',
+      denomUnits: [{
+          denom: 'factory/kujira1d7jt9zwlnpvf7sskfm57c77pm9mtwczqre75t9k80ees0v523kasss9htj/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-wbtc-usk',
+          exponent: 6
+        }],
+      base: 'factory/kujira1d7jt9zwlnpvf7sskfm57c77pm9mtwczqre75t9k80ees0v523kasss9htj/ulp',
+      name: 'LP Bow: wBTC-USK',
+      display: 'lp-wbtc-usk',
+      symbol: 'LP wBTC-USK',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: wBTC.axl-wBTC',
+      denomUnits: [{
+          denom: 'factory/kujira1c4e2zk4z0anrufjh64gxtse6e4s5g52fe2ja8ke3r9e0pvpd0z0qws8zsp/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-wbtc-wbtc',
+          exponent: 8
+        }],
+      base: 'factory/kujira1c4e2zk4z0anrufjh64gxtse6e4s5g52fe2ja8ke3r9e0pvpd0z0qws8zsp/ulp',
+      name: 'LP Bow: wBTC.axl-wBTC',
+      display: 'lp-wbtc-wbtc',
+      symbol: 'LP wBTC.axl-wBTC',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: INJ-USDC',
+      denomUnits: [{
+          denom: 'factory/kujira14jwhlsg3az20f7keav2axxj205fyv5j8mp6rv5svqwwll3ls9slq6zwleg/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-inj-usdc',
+          exponent: 6
+        }],
+      base: 'factory/kujira14jwhlsg3az20f7keav2axxj205fyv5j8mp6rv5svqwwll3ls9slq6zwleg/ulp',
+      name: 'LP Bow: INJ-USDC',
+      display: 'lp-inj-usdc',
+      symbol: 'LP INJ-USDC',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: ATOM-USDC',
+      denomUnits: [{
+          denom: 'factory/kujira13my0qtm2a8jp0wg8uzg49tyn4zcea8scy3dc7ghn8z9eys08yzls49ymdm/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-atom-usdc',
+          exponent: 6
+        }],
+      base: 'factory/kujira13my0qtm2a8jp0wg8uzg49tyn4zcea8scy3dc7ghn8z9eys08yzls49ymdm/ulp',
+      name: 'LP Bow: ATOM-USDC',
+      display: 'lp-atom-usdc',
+      symbol: 'LP ATOM-USDC',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: MNTA-USDC',
+      denomUnits: [{
+          denom: 'factory/kujira1742pe93mxm0cwqjxgxh6th9sspdrluqvw9pha9q69eeatue4x5xs0wdq2d/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-mnta-usdc',
+          exponent: 6
+        }],
+      base: 'factory/kujira1742pe93mxm0cwqjxgxh6th9sspdrluqvw9pha9q69eeatue4x5xs0wdq2d/ulp',
+      name: 'LP Bow: MNTA-USDC',
+      display: 'lp-mnta-usdc',
+      symbol: 'LP MNTA-USDC',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LP Bow: MNTA-USK',
+      denomUnits: [{
+          denom: 'factory/kujira1xtaadmh06s8u3z5mypp8qayhrnxgga5wr88s7raram4rz8zu37hquf82wk/ulp',
+          exponent: 0
+        }, {
+          denom: 'lp-mnta-usk',
+          exponent: 6
+        }],
+      base: 'factory/kujira1xtaadmh06s8u3z5mypp8qayhrnxgga5wr88s7raram4rz8zu37hquf82wk/ulp',
+      name: 'LP Bow: MNTA-USK',
+      display: 'lp-mnta-usk',
+      symbol: 'LP MNTA-USK',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bow.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The token that fuels the Boon app',
+      denomUnits: [{
+          denom: 'factory/kujira1gewwffxhaygxe8tacd3z9h4uyvpd2h7v9qtfmaw8jjhwalxxpd7qlqld4m/boon',
+          exponent: 0
+        }, {
+          denom: 'boon',
+          exponent: 6
+        }],
+      base: 'factory/kujira1gewwffxhaygxe8tacd3z9h4uyvpd2h7v9qtfmaw8jjhwalxxpd7qlqld4m/boon',
+      name: 'Boon',
+      display: 'boon',
+      symbol: 'BOON',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/boon.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/boon.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/boon.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/boon.svg'
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

@@ -16,7 +16,8 @@ const info: AssetList = {
       base: 'ustake',
       name: 'Stake',
       display: 'stake',
-      symbol: 'STAKE'
+      symbol: 'STAKE',
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Love is a test tokenfactory asset controlled by the Strangelove Team',
@@ -31,7 +32,8 @@ const info: AssetList = {
       base: 'ulove',
       display: 'love',
       name: 'Love',
-      symbol: 'LOVE'
+      symbol: 'LOVE',
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'USD Coin',
@@ -56,42 +58,46 @@ const info: AssetList = {
           provider: 'Circle'
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-        }]
+          imageSync: {
+            chainName: 'noble',
+            baseDenom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
-      description: 'USDLR is a fiat-backed stablecoin issued by Stable. Stable pays DeFi protocols who distribute USDLR.',
+      description: 'Ondo US Dollar Yield',
       denomUnits: [{
-          denom: 'uusdlr',
+          denom: 'ausdy',
           exponent: 0,
-          aliases: ['microusdlr']
+          aliases: ['attousdy']
         }, {
-          denom: 'usdlr',
-          exponent: 6
+          denom: 'usdy',
+          exponent: 18
         }],
-      base: 'uusdlr',
-      display: 'usdlr',
-      name: 'USDLR by Stable',
-      symbol: 'USDLR',
-      traces: [{
-          type: 'test-mintage',
-          counterparty: {
-            chainName: 'noble',
-            baseDenom: 'uusdlr'
-          },
-          provider: 'Stable'
-        }],
+      base: 'ausdy',
+      display: 'usdy',
+      name: 'Ondo US Dollar Yield',
+      symbol: 'USDY',
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdlr.svg'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nobletestnet/images/usdy.svg'
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

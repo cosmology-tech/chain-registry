@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://odinprotocol.io/',
   prettyName: 'Odin Protocol',
+  chainType: 'cosmos',
   chainId: 'odin-mainnet-freya',
   bech32Prefix: 'odin',
   daemonName: 'odind',
@@ -27,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/ODIN-PROTOCOL/odin-core',
+    recommendedVersion: 'v0.6.2',
+    compatibleVersions: ['v0.6.2'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/ODIN-PROTOCOL/networks/master/mainnets/odin-mainnet-freya/genesis.json'
+    },
+    versions: [{
+        name: 'v0.6.2',
+        recommendedVersion: 'v0.6.2',
+        compatibleVersions: ['v0.6.2']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
@@ -40,7 +51,7 @@ const info: Chain = {
         provider: 'Odin Protocol'
       },
       {
-        address: 'https://odin-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/odin',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -54,7 +65,7 @@ const info: Chain = {
         provider: 'Odin Protocol'
       },
       {
-        address: 'https://odin-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/odin',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -63,7 +74,7 @@ const info: Chain = {
       }
     ],
     grpc: [{
-        address: 'odin-grpc.lavenderfive.com:443',
+        address: 'odin.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }, {
         address: 'odin-mainnet-grpc.autostake.com:443',

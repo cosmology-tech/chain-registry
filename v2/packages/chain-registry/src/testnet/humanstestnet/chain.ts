@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'humanstestnet',
+  chainType: 'cosmos',
   chainId: 'testnet-1',
   prettyName: 'Humans AI Testnet',
   status: 'live',
@@ -18,7 +19,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/humansdotai/humans',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://rpc-testnet.humans.zone/genesis'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   apis: {
     rpc: [{

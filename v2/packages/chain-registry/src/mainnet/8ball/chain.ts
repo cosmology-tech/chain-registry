@@ -2,10 +2,11 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: '8ball',
-  status: 'live',
+  status: 'killed',
   website: 'https://8ball.info/',
   networkType: 'mainnet',
   prettyName: '8ball',
+  chainType: 'cosmos',
   chainId: 'eightball-1',
   bech32Prefix: '8ball',
   daemonName: '8ball',
@@ -27,8 +28,41 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://secp256k1.net/8ball.git',
+    recommendedVersion: 'v1',
+    compatibleVersions: ['v1'],
     cosmosSdkVersion: '0.46.7',
-    cosmwasmEnabled: true
+    cosmwasmEnabled: true,
+    binaries: {
+      "linux/amd64": 'https://8ball.info/8ball.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://8ball.info/8ball-genesis.json'
+    },
+    versions: [{
+        name: 'v1',
+        recommendedVersion: 'v1',
+        compatibleVersions: ['v1'],
+        cosmosSdkVersion: '0.46.7',
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://8ball.info/8ball.tar.gz'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.7'
+        },
+        cosmwasm: {
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.7'
+    },
+    cosmwasm: {
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
@@ -97,7 +131,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg',
+      theme: {
+        primaryColorHex: '#dbdbdb'
+      }
     }]
 };
 export default info;

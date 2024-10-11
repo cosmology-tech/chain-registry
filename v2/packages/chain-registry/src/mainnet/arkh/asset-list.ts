@@ -21,12 +21,16 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.svg',
+          theme: {
+            primaryColorHex: '#bdbb82'
+          }
         }],
       socials: {
         website: 'https://arkhadian.io/',
         twitter: 'https://twitter.com/ArkhadianSas'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

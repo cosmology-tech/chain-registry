@@ -33,8 +33,14 @@ const info: AssetList = {
             baseDenom: 'usge'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg',
+          theme: {
+            primaryColorHex: '#C0A15B',
+            backgroundColorHex: '#00000000',
+            circle: false
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

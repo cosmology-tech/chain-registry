@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'migaloo',
   assets: [
     {
-      description: 'The native token of Migaloo Chain',
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
+      extendedDescription: 'Migaloo originated as part of the Terra ecosystem but has since transitioned to the Cosmos ecosystem, focusing on creating a decentralized platform that balances and distributes liquidity across various zones. Key features include its permissionless nature and the Alliance module, which facilitates cross-chain staking and enhances blockchain security. Migaloo\'s flagship application is the White Whale Protocol, an interchain liquidity protocol that uses trading and flash loans to generate yield for stakers. The platform emphasizes interoperability, scalability, and community engagement, aiming to be a pivotal player in the Cosmos ecosystem.',
       denomUnits: [{
           denom: 'uwhale',
           exponent: 0
@@ -23,8 +24,12 @@ const info: AssetList = {
       coingeckoId: 'white-whale',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+          theme: {
+            primaryColorHex: '#1c1c1c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ampWHALE',
@@ -44,7 +49,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampwhale.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'BackBone Labs Liquid Staked WHALE',
@@ -63,9 +69,13 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
+          theme: {
+            primaryColorHex: '#d8d8d8'
+          }
         }],
-      coingeckoId: 'backbone-labs-staked-whale'
+      coingeckoId: 'backbone-labs-staked-whale',
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'FABLE',
@@ -85,7 +95,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/fable.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'boneLUNA are autocompounding LUNA tokens',
@@ -117,10 +128,17 @@ const info: AssetList = {
           }
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/boneluna.png'
+          imageSync: {
+            chainName: 'terra2',
+            baseDenom: 'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primaryColorHex: '#070707'
+          }
         }]
     },
     {
@@ -133,7 +151,7 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/urac',
-      name: 'RAC',
+      name: 'Racoon',
       display: 'RAC',
       symbol: 'RAC',
       logoURIs: {
@@ -142,8 +160,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.svg',
+          theme: {
+            primaryColorHex: '#2b2434'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ASH',
@@ -163,7 +185,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ash.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on Migaloo',
@@ -196,9 +219,16 @@ const info: AssetList = {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       }
     },
@@ -220,7 +250,6 @@ const info: AssetList = {
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
       },
-      coingeckoId: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/mUSDC.svg'
         }]
@@ -242,8 +271,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png',
+          theme: {
+            primaryColorHex: '#d9966e'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'OPHIR is a Cosmos Treasury DAO established on Migaloo.',
@@ -262,8 +295,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ophir.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ophir.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ophir.png',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'SHARK is the apex price prediction market within Cosmos.',
@@ -282,8 +319,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/shark.png',
+          theme: {
+            primaryColorHex: '#062d54'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'lsdSHARK is the liquid staking derivative of SHARK.',
@@ -310,8 +351,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/lsdshark.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/lsdshark.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/lsdshark.png',
+          theme: {
+            primaryColorHex: '#0d739c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The native staking token of Terra.',
@@ -322,6 +367,7 @@ const info: AssetList = {
           denom: 'luna',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/4627AD2524E3E0523047E35BB76CC90E37D9D57ACF14F0FCBCEB2480705F3CB8',
       name: 'Luna',
       display: 'luna',
@@ -344,8 +390,15 @@ const info: AssetList = {
       },
       coingeckoId: 'terra-luna-2',
       images: [{
+          imageSync: {
+            chainName: 'terra2',
+            baseDenom: 'uluna'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
+          theme: {
+            primaryColorHex: '#f4de6f'
+          }
         }],
       socials: {
         website: 'https://www.terra.money/',
@@ -381,14 +434,14 @@ const info: AssetList = {
           }
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
       },
       images: [{
           imageSync: {
             chainName: 'terra',
             baseDenom: 'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rakoff.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
         }]
     },
     {
@@ -408,8 +461,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/gash.png',
+          theme: {
+            primaryColorHex: '#1d0918'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Restake DAO Token',
@@ -430,8 +487,234 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg',
+          theme: {
+            primaryColorHex: '#3ccc64'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Frogztrik NFT Token',
+      denomUnits: [{
+          denom: 'ibc/B1BD4EF49A2E051EFC85E8C6A932B559CE62F9519E0E83BE29A8F0BDF89BD1D3',
+          exponent: 0
+        }, {
+          denom: 'frog',
+          exponent: 6
+        }],
+      base: 'ibc/B1BD4EF49A2E051EFC85E8C6A932B559CE62F9519E0E83BE29A8F0BDF89BD1D3',
+      typeAsset: 'ics20',
+      name: 'Frogztrik NFT Token',
+      display: 'frog',
+      symbol: 'FROG',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            chainName: 'terra',
+            baseDenom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channelId: 'channel-87'
+          },
+          chain: {
+            port: 'transfer',
+            channelId: 'channel-114',
+            path: 'transfer/channel-114/cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'terra',
+            baseDenom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png',
+          theme: {
+            primaryColorHex: '#182615'
+          }
         }]
+    },
+    {
+      description: 'GRAC is the official token of Racoon.Bet\'s gaming platform.',
+      denomUnits: [{
+          denom: 'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/ugrac',
+          exponent: 0
+        }, {
+          denom: 'GRAC',
+          exponent: 6
+        }],
+      base: 'factory/migaloo1eqntnl6tzcj9h86psg4y4h6hh05g2h9nj8e09l/ugrac',
+      name: 'Gaming RAC Token',
+      display: 'GRAC',
+      symbol: 'GRAC',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/grac.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/grac.png',
+          theme: {
+            primaryColorHex: '#f5bf09'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      denomUnits: [{
+          denom: 'ibc/721B42229246EEDA7A656DB17E494127F91E84AD63E21852737628321892A928',
+          exponent: 0,
+          aliases: ['factory/juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq/uwind']
+        }, {
+          denom: 'wind',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/721B42229246EEDA7A656DB17E494127F91E84AD63E21852737628321892A928',
+      name: 'Wind Token',
+      display: 'wind',
+      symbol: 'WIND',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'juno',
+            baseDenom: 'factory/juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq/uwind',
+            channelId: 'channel-210'
+          },
+          chain: {
+            channelId: 'channel-1',
+            path: 'transfer/channel-1/factory/juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq/uwind'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'juno',
+            baseDenom: 'factory/juno1h6y8tkceau4d8zyv5aa0fwdj2pa2y0gz2hx0tq/uwind'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wind.png',
+          theme: {
+            primaryColorHex: '#122b4d'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/wind.png'
+      }
+    },
+    {
+      denomUnits: [{
+          denom: 'ibc/0E1B883A15D5FCA533332CBAB1A672934C3936920399F2A3EB4F438E3EBAD0E9',
+          exponent: 0,
+          aliases: ['factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos']
+        }, {
+          denom: 'shitmos',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/0E1B883A15D5FCA533332CBAB1A672934C3936920399F2A3EB4F438E3EBAD0E9',
+      name: 'Shitmos',
+      display: 'shitmos',
+      symbol: 'SHITMOS',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos',
+            channelId: 'channel-642'
+          },
+          chain: {
+            channelId: 'channel-5',
+            path: 'transfer/channel-5/factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg',
+          theme: {
+            primaryColorHex: '#639BFF',
+            circle: true
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
+      }
+    },
+    {
+      description: 'ERIS Liquid Alliance Staked GASH',
+      denomUnits: [{
+          denom: 'factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH',
+          exponent: 0
+        }, {
+          denom: 'ampGASH',
+          exponent: 6
+        }],
+      base: 'factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH',
+      name: 'ampGASH',
+      display: 'ampGASH',
+      symbol: 'ampGASH',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png',
+          theme: {
+            primaryColorHex: '#374455'
+          }
+        }],
+      traces: [{
+          type: 'liquid-stake',
+          chain: {
+            contract: 'migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl'
+          },
+          provider: 'ERIS Protocol',
+          counterparty: {
+            chainName: 'migaloo',
+            baseDenom: 'factory/migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg/gash',
+            contract: 'migaloo1r9x8fz4alekzr78k42rpmr9unpa7egsldpqeynmwl2nfvzexue9sn8l5rg'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      denomUnits: [{
+          denom: 'ibc/33E97105B5C1F48CB7D6400F4673F9B3699AC59EDB621CCCD57D5D480E0C83B6',
+          exponent: 0,
+          aliases: ['factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN']
+        }, {
+          denom: 'SYN',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/33E97105B5C1F48CB7D6400F4673F9B3699AC59EDB621CCCD57D5D480E0C83B6',
+      name: 'SYN',
+      display: 'SYN',
+      symbol: 'SYN',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN',
+            channelId: 'channel-102'
+          },
+          chain: {
+            channelId: 'channel-3',
+            path: 'transfer/channel-3/factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.png',
+          theme: {
+            primaryColorHex: '#04a2fc'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/syn.png'
+      }
     }
   ]
 };

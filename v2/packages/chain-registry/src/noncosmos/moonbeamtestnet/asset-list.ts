@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../../assetlist.schema.json',
   chainName: 'moonbeamtestnet',
   assets: [
     {
@@ -14,6 +14,7 @@ const info: AssetList = {
           exponent: 18,
           aliases: ['glmr']
         }],
+      typeAsset: 'substrate',
       base: 'Wei',
       name: 'Glimmer',
       display: 'GLMR',
@@ -55,6 +56,10 @@ const info: AssetList = {
       },
       coingeckoId: 'wrapped-moonbeam',
       images: [{
+          imageSync: {
+            chainName: 'moonbeamtestnet',
+            baseDenom: 'Wei'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
         }]
     },
@@ -65,7 +70,7 @@ const info: AssetList = {
       denomUnits: [{
           denom: '0xD1633F7Fb3d716643125d6415d4177bC36b7186b',
           exponent: 0,
-          aliases: ['uusdc']
+          aliases: ['uausdc']
         }, {
           denom: 'axlusdc',
           exponent: 6
@@ -78,7 +83,7 @@ const info: AssetList = {
           type: 'bridge',
           counterparty: {
             chainName: 'axelartestnet',
-            baseDenom: 'uusdc'
+            baseDenom: 'uausdc'
           },
           provider: 'Axelar'
         }],
@@ -86,6 +91,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'axelartestnet',
+            baseDenom: 'uausdc'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
     }

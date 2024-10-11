@@ -3,7 +3,8 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'pundix',
   assets: [{
-      description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS. PUNDIX has several core use cases, including:\n- Payment for goods and services from merchants through XPOS\n- Gas Fee on PundiX Chain\n- Listing tokens in the XPOS\n- Merchant payments for loyalty programs and ads',
+      description: 'PUNDIX token is the native token that functions within the Pundi X ecosystem.',
+      extendedDescription: 'PUNDIX token is the native token that functions within the Pundi X ecosystem, including PundiX Chain and XPOS. PUNDIX has several core use cases, including:\n- Payment for goods and services from merchants through XPOS\n- Gas Fee on PundiX Chain\n- Listing tokens in the XPOS\n- Merchant payments for loyalty programs and ads',
       denomUnits: [{
           denom: 'ibc/55367B7B6572631B78A93C66EF9FDFCE87CDE372CC4ED7848DA78C1EB1DCDD78',
           exponent: 0
@@ -16,10 +17,6 @@ const info: AssetList = {
       name: 'Pundi X Token',
       display: 'PUNDIX',
       symbol: 'PUNDIX',
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
-      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -38,9 +35,11 @@ const info: AssetList = {
             baseDenom: 'eth0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/pundi-x-token-logo.svg',
+          theme: {
+            primaryColorHex: '#f1d20c'
+          }
         }],
-      coingeckoId: 'pundi-x-2',
       socials: {
         website: 'https://pundix.com',
         twitter: 'https://twitter.com/PundiXLabs'
@@ -59,10 +58,6 @@ const info: AssetList = {
       name: 'PURSE Token',
       display: 'PURSE',
       symbol: 'PURSE',
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg'
-      },
       traces: [{
           type: 'bridge',
           counterparty: {
@@ -78,9 +73,11 @@ const info: AssetList = {
             baseDenom: '0x29a63F4B209C29B4DC47f06FFA896F32667DAD2C'
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pundix/images/purse-token-logo.png',
+          theme: {
+            primaryColorHex: '#1c1c1b'
+          }
         }],
-      coingeckoId: 'pundi-x-purse',
       socials: {
         website: 'https://purse.land',
         twitter: 'https://twitter.com/Purse_Land'

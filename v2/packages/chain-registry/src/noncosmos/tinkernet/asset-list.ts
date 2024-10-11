@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'tinkernet',
   assets: [{
       description: 'The native fee, governance and staking token of the Tinkernet Parachain.',
@@ -16,6 +16,7 @@ const info: AssetList = {
           denom: 'TNKR',
           exponent: 12
         }],
+      typeAsset: 'substrate',
       base: 'Planck',
       name: 'Tinkernet',
       display: 'TNKR',

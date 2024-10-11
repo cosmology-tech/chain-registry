@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'persistence',
   assets: [
     {
-      description: 'The XPRT token is primarily a governance token for the Persistence chain.',
+      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      extendedDescription: 'Persistence aims to bridge traditional finance and decentralized finance (DeFi) by enabling the tokenization of real-world assets. The platform supports various financial products, including staking-as-a-service, commodity trading, and debt financing. Persistence leverages the Cosmos SDK for interoperability and scalability, ensuring seamless integration with other blockchain networks. The native token, XPRT, is used for staking, governance, and securing the network. Persistence\'s mission is to create a decentralized financial ecosystem that brings institutional-grade solutions to the blockchain space.',
       denomUnits: [{
           denom: 'uxprt',
           exponent: 0
@@ -23,12 +24,18 @@ const info: AssetList = {
       coingeckoId: 'persistence',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#E59636',
+            backgroundColorHex: '#000000'
+          }
         }],
       socials: {
         website: 'https://persistence.one/',
         twitter: 'https://twitter.com/PersistenceOne'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked ATOM',
@@ -60,11 +67,16 @@ const info: AssetList = {
       coingeckoId: 'stkatom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg',
+          theme: {
+            primaryColorHex: '#c4444c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
-      description: 'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
+      description: 'pSTAKE Finance is a Bitcoin Yield and Liquid Staking protocol, backed by Binance Labs.',
+      extendedDescription: 'With pSTAKE Finance, users can liquid stake BTC to get rewards from Babylon\'s Trustless BTC staking for securing other app chains while maintaining their liquidity, powered by institutional custody providers like Cobo. Accessing Bitcoin yields should not be complex, risky, or unsafe. With four years of liquid staking expertise and expert-curated yield strategies, pSTAKE Finance helps individuals and institutions put their BTC to work in BTCfi. pSTAKE Finance has partnered with leading blockchain security firms, such as Halborn, Hexens, Oak Security, Immunefi, Forta, and more, to offer a secure liquid staking product suite. PSTAKE is the governance and incentivization token of the pSTAKE Finance protocol. It has some of the most prominent investors, including Binance Labs, DeFiance Capital, Spartan Group, Coinbase Ventures, and Kraken Ventures.',
       denomUnits: [{
           denom: 'ibc/A6E3AF63B3C906416A9AF7A556C59EA4BD50E617EFFE6299B99700CCB780E444',
           exponent: 0,
@@ -119,7 +131,10 @@ const info: AssetList = {
             baseDenom: '0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg',
+          theme: {
+            primaryColorHex: '#050505'
+          }
         }]
     },
     {
@@ -154,7 +169,10 @@ const info: AssetList = {
             baseDenom: 'uatom'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primaryColorHex: '#272d45'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
@@ -192,9 +210,16 @@ const info: AssetList = {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       }
     },
@@ -229,12 +254,16 @@ const info: AssetList = {
             chainName: 'noble',
             baseDenom: 'uusdc'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
     },
     {
@@ -270,7 +299,10 @@ const info: AssetList = {
             baseDenom: 'adydx'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+          theme: {
+            primaryColorHex: '#21212f'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
@@ -307,8 +339,12 @@ const info: AssetList = {
       coingeckoId: 'pstake-staked-osmo',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg',
+          theme: {
+            primaryColorHex: '#c3343d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked DYDX',
@@ -339,8 +375,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdydx.svg',
+          theme: {
+            primaryColorHex: '#c4474e'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked STARS',
@@ -371,8 +411,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkstars.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkstars.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkstars.svg',
+          theme: {
+            primaryColorHex: '#070e0e'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -406,7 +450,10 @@ const info: AssetList = {
             baseDenom: 'ustars'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
+          theme: {
+            primaryColorHex: '#db2777'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
@@ -452,7 +499,10 @@ const info: AssetList = {
             baseDenom: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg',
+          theme: {
+            primaryColorHex: '#342c52'
+          }
         }]
     },
     {
@@ -484,8 +534,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkhuahua.svg',
+          theme: {
+            primaryColorHex: '#f2cc2f'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -519,7 +573,10 @@ const info: AssetList = {
             baseDenom: 'uhuahua'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+          theme: {
+            primaryColorHex: '#343434'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
@@ -555,7 +612,54 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkxprt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkxprt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkxprt.svg',
+          theme: {
+            primaryColorHex: '#c3343b'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Wrapped Bitcoin on Persistence',
+      denomUnits: [{
+          denom: 'ibc/CCA9F9B22D39884C09975D45E1869B73A12B87080EE53CB44905CE2C422CA228',
+          exponent: 0,
+          aliases: ['factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc']
+        }, {
+          denom: 'wbtc',
+          exponent: 8
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/CCA9F9B22D39884C09975D45E1869B73A12B87080EE53CB44905CE2C422CA228',
+      name: 'Wrapped Bitcoin',
+      display: 'wbtc',
+      symbol: 'WBTC',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc',
+            channelId: 'channel-4'
+          },
+          chain: {
+            channelId: 'channel-6',
+            path: 'transfer/channel-6/factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg',
+          theme: {
+            primaryColorHex: '#f39444'
+          }
         }]
     }
   ]

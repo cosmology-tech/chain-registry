@@ -1,11 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'dydxtestnet',
   status: 'live',
   website: 'https://dydx.trade/',
   networkType: 'testnet',
   prettyName: 'dYdX Protocol',
+  chainType: 'cosmos',
   chainId: 'dydx-testnet-4',
   bech32Prefix: 'dydx',
   daemonName: 'dydxprotocold',
@@ -27,8 +28,31 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/dydxprotocol/v4-chain/',
+    recommendedVersion: 'v2.0.0',
+    compatibleVersions: ['v2.0.0'],
     cosmosSdkVersion: 'v0.47.4',
-    cosmwasmEnabled: false
+    cosmwasmEnabled: false,
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/dydxprotocol/v4-testnets/main/dydx-testnet-4/genesis.json'
+    },
+    versions: [{
+        name: 'v2',
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        cosmosSdkVersion: 'v0.47.4',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.4'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.4'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   description: 'Our goal is to build open source code that can power a first class product and trading experience.',
   apis: {
@@ -102,7 +126,10 @@ const info: Chain = {
         chainName: 'dydx'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg',
+      theme: {
+        primaryColorHex: '#21212f'
+      }
     }]
 };
 export default info;

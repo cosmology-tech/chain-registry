@@ -1,10 +1,11 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'quicksilvertestnet',
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Quicksilver Testnet',
+  chainType: 'cosmos',
   chainId: 'rhye-2',
   bech32Prefix: 'quick',
   daemonName: 'quicksilverd',
@@ -25,9 +26,55 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/ingenuity-build/quicksilver',
+    recommendedVersion: 'v1.4.5-rc2',
+    compatibleVersions: ['v1.4.5-rc2'],
     cosmosSdkVersion: '0.46',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.29',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.29'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhye-2/genesis.json'
+    },
+    versions: [{
+        name: 'v1.4.5-rc2',
+        recommendedVersion: 'v1.4.5-rc2',
+        compatibleVersions: ['v1.4.5-rc2'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.29',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        cosmwasm: {
+          version: '0.29',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '5.3.2'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.3.2'
+    },
+    cosmwasm: {
+      version: '0.29',
+      enabled: true
+    }
   },
   logoURIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'

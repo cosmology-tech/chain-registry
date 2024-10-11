@@ -4,8 +4,9 @@ const info: Chain = {
   chainName: 'shentu',
   status: 'live',
   networkType: 'mainnet',
-  website: 'https://www.shentu.technology/',
+  website: 'https://www.shentu.org/',
   prettyName: 'Shentu',
+  chainType: 'cosmos',
   chainId: 'shentu-2.2',
   bech32Prefix: 'shentu',
   daemonName: 'shentud',
@@ -26,7 +27,156 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/ShentuChain/shentu',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/ShentuChain/mainnet/main/shentu-2.2/genesis.json'
+    },
+    recommendedVersion: 'v2.11.0',
+    compatibleVersions: ['v2.11.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_linux_amd64',
+      "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_arm64_macos',
+      "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_win_x86_64.exe'
+    },
+    versions: [
+      {
+        name: 'v2.6.0',
+        height: 10485430,
+        proposal: 14,
+        tag: 'v2.6.0',
+        recommendedVersion: 'v2.6.0',
+        compatibleVersions: ['v2.6.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.6.0/shentud_2.6.0_linux_amd64',
+          "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.6.0/shentud_2.6.0_arm64_macos',
+          "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.6.0/shentud_2.6.0_win_x86_64.exe'
+        },
+        nextVersionName: 'v2.7.0',
+        ibc: {
+          type: 'go',
+          version: 'v4.2.0'
+        }
+      },
+      {
+        name: 'v2.7.0',
+        height: 12926000,
+        proposal: 17,
+        tag: 'v2.7.0',
+        recommendedVersion: 'v2.7.0',
+        compatibleVersions: ['v2.7.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.7.1/shentud_2.7.1_linux_amd64',
+          "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.7.1/shentud_2.7.1_arm64_macos',
+          "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.7.1/shentud_2.7.1_win_x86_64.exe'
+        },
+        nextVersionName: 'v2.7.2',
+        ibc: {
+          type: 'go',
+          version: 'v4.2.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v2.7.2',
+        height: 14875800,
+        proposal: 21,
+        tag: 'v2.7.2',
+        recommendedVersion: 'v2.7.2',
+        compatibleVersions: ['v2.7.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.7.2/shentud_2.7.2_linux_amd64',
+          "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.7.2/shentud_2.7.2_arm64_macos',
+          "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.7.2/shentud_2.7.2_win_x86_64.exe'
+        },
+        nextVersionName: 'v2.8.0',
+        ibc: {
+          type: 'go',
+          version: 'v4.2.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v2.8.0',
+        height: 15094300,
+        proposal: 23,
+        tag: 'v2.8.0',
+        recommendedVersion: 'v2.8.0',
+        compatibleVersions: ['v2.8.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.8.0/shentud_2.8.0_linux_amd64',
+          "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.8.0/shentud_2.8.0_arm64_macos',
+          "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.8.0/shentud_2.8.0_win_x86_64.exe'
+        },
+        nextVersionName: '',
+        ibc: {
+          type: 'go',
+          version: 'v4.2.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v2.9.0',
+        height: 16084500,
+        proposal: 23,
+        tag: 'v2.9.0',
+        recommendedVersion: 'v2.9.0',
+        compatibleVersions: ['v2.9.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.9.0/shentud_2.9.0_linux_amd64',
+          "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.9.0/shentud_2.9.0_arm64_macos',
+          "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.9.0/shentud_2.9.0_win_x86_64.exe'
+        },
+        nextVersionName: '',
+        ibc: {
+          type: 'go',
+          version: 'v4.2.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v2.10.0',
+        height: 18737000,
+        proposal: 23,
+        tag: 'v2.10.0',
+        recommendedVersion: 'v2.10.0',
+        compatibleVersions: ['v2.10.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.10.0/shentud_2.10.0_linux_amd64',
+          "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.10.0/shentud_2.10.0_arm64_macos',
+          "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.10.0/shentud_2.10.0_win_x86_64.exe'
+        },
+        nextVersionName: '',
+        ibc: {
+          type: 'go',
+          version: 'v6.3.0',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v2.11.0',
+        height: 19525000,
+        proposal: 23,
+        tag: 'v2.11.0',
+        recommendedVersion: 'v2.11.0',
+        compatibleVersions: ['v2.11.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_linux_amd64',
+          "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_arm64_macos',
+          "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_win_x86_64.exe'
+        },
+        nextVersionName: '',
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0',
+          icsEnabled: ['ics20-1']
+        }
+      }
+    ],
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0',
+      icsEnabled: ['ics20-1']
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',
@@ -35,7 +185,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://shenturpc.noopsbycertik.com/',
+        address: 'https://rpc.shentu.org:443',
         provider: 'Shentu'
       },
       {
@@ -53,10 +203,6 @@ const info: Chain = {
       {
         address: 'https://rpc-shentu-01.stakeflow.io',
         provider: 'Stakeflow'
-      },
-      {
-        address: 'https://shentu-rpc.tienthuattoan.ventures',
-        provider: 'TienThuatToan'
       },
       {
         address: 'https://shentu-rpc.publicnode.com:443',
@@ -77,7 +223,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://rest.noopsbycertik.com/',
+        address: 'https://rest.shentu.org/',
         provider: 'Shentu'
       },
       {
@@ -118,6 +264,10 @@ const info: Chain = {
       }
     ],
     grpc: [
+      {
+        address: 'grpc.shentu.org:443',
+        provider: 'Shentu'
+      },
       {
         address: 'shentu-grpc.polkachu.com:14090',
         provider: 'Polkachu'
@@ -169,8 +319,8 @@ const info: Chain = {
     },
     {
       kind: 'Shentu Explorer',
-      url: 'https://explorer.shentu.technology/?net=shentu-2.2',
-      txPage: 'https://explorer.shentu.technology/transactions/${txHash}?net=shentu-2.2'
+      url: 'https://explorer.shentu.org/?chain=shentu-2.2',
+      txPage: 'https://explorer.shentu.org/transactions/${txHash}?chain=shentu-2.2'
     },
     {
       kind: 'ping.pub',
@@ -197,7 +347,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.svg',
+      theme: {
+        primaryColorHex: '#e4ac4c'
+      }
     }]
 };
 export default info;

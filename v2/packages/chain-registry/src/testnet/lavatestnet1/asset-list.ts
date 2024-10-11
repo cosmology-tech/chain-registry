@@ -21,7 +21,8 @@ const info: AssetList = {
       keywords: ['rpc', 'api'],
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

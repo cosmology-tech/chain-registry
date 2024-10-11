@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://imversed.network/',
   prettyName: 'Imversed',
+  chainType: 'cosmos',
   chainId: 'imversed_5555555-1',
   bech32Prefix: 'imv',
   daemonName: 'imversed',
@@ -28,7 +29,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/imversed/imversed',
+    recommendedVersion: 'v3.11',
+    compatibleVersions: ['v3.11'],
+    binaries: {
+      "linux/amd64": 'https://github.com/imversed/imversed/releases/download/v3.11/imversed_3.11_Linux_amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://static.imversed.com/mainnet/genesis.json'
+    },
+    versions: [{
+        name: 'v3.11',
+        recommendedVersion: 'v3.11',
+        compatibleVersions: ['v3.11'],
+        binaries: {
+          "linux/amd64": 'https://github.com/imversed/imversed/releases/download/v3.11/imversed_3.11_Linux_amd64.tar.gz'
+        }
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
@@ -53,7 +70,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg',
+      theme: {
+        primaryColorHex: '#4c54e4'
+      }
     }]
 };
 export default info;

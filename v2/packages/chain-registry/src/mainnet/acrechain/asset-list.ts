@@ -23,12 +23,16 @@ const info: AssetList = {
       coingeckoId: 'arable-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg',
+          theme: {
+            primaryColorHex: '#4aa29e'
+          }
         }],
       socials: {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Overcollateralized stable coin for Arable derivatives v1',
@@ -50,12 +54,16 @@ const info: AssetList = {
       coingeckoId: 'arable-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg',
+          theme: {
+            primaryColorHex: '#77b64f'
+          }
         }],
       socials: {
         website: 'https://arable.finance/',
         twitter: 'https://twitter.com/ArableProtocol'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Ciento Exchange Token',
@@ -76,8 +84,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg',
+          theme: {
+            primaryColorHex: '#ecc53b'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

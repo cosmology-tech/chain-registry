@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'stafihub',
+  chainType: 'cosmos',
   chainId: 'stafihub-1',
   website: 'https://stafihub.io/',
   prettyName: 'StaFi Hub',
@@ -30,7 +31,71 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: '0.46'
+    gitRepo: 'https://github.com/stafihub/stafihub',
+    recommendedVersion: 'v0.5.0',
+    compatibleVersions: ['v0.5.0'],
+    cosmosSdkVersion: '0.46',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/stafihub/network/main/mainnets/stafihub-1(dragonberry)/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v020',
+        tag: 'v0.2.3',
+        height: 0,
+        nextVersionName: 'v030'
+      },
+      {
+        name: 'v030',
+        tag: 'v0.3.0',
+        height: 2626590,
+        proposal: 1,
+        nextVersionName: 'v040'
+      },
+      {
+        name: 'v040',
+        tag: 'v0.4.0',
+        height: 3766566,
+        proposal: 2,
+        nextVersionName: 'v050'
+      },
+      {
+        name: 'v050',
+        tag: 'v0.5.0',
+        height: 5868372,
+        proposal: 4,
+        recommendedVersion: 'v0.5.0',
+        compatibleVersions: ['v0.5.0'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        nextVersionName: 'v060',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.2.1',
+          icsEnabled: ['ics20-1']
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.2.1',
+      icsEnabled: ['ics20-1']
+    }
   },
   apis: {
     rpc: [
@@ -110,7 +175,10 @@ const info: Chain = {
   },
   keywords: ['liquid staking'],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/stafihub-chain-logo.png',
+      theme: {
+        primaryColorHex: '#100d10'
+      }
     }]
 };
 export default info;

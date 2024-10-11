@@ -117,6 +117,34 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'archway',
+      clientId: '07-tendermint-114',
+      connectionId: 'connection-107'
+    },
+    chain2: {
+      chainName: 'beezee',
+      clientId: '07-tendermint-8',
+      connectionId: 'connection-2'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-147',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-2',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'archway',
       clientId: '07-tendermint-37',
       connectionId: 'connection-40'
     },
@@ -161,6 +189,34 @@ const info: IBCData[] = [
         },
         chain2: {
           channelId: 'channel-29',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'archway',
+      clientId: '07-tendermint-75',
+      connectionId: 'connection-79'
+    },
+    chain2: {
+      chainName: 'composable',
+      clientId: '07-tendermint-143',
+      connectionId: 'connection-63'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-108',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-50',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -230,21 +286,21 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'archway',
-      clientId: '07-tendermint-66',
-      connectionId: 'connection-72'
+      clientId: '07-tendermint-113',
+      connectionId: 'connection-106'
     },
     chain2: {
       chainName: 'doravota',
-      clientId: '07-tendermint-20',
-      connectionId: 'connection-24'
+      clientId: '07-tendermint-22',
+      connectionId: 'connection-28'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-101',
+          channelId: 'channel-146',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-10',
+          channelId: 'channel-13',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -559,7 +615,8 @@ const info: IBCData[] = [
       clientId: '07-tendermint-2850',
       connectionId: 'connection-2362'
     },
-    channels: [{
+    channels: [
+      {
         chain1: {
           channelId: 'channel-1',
           portId: 'transfer'
@@ -573,7 +630,38 @@ const info: IBCData[] = [
         tags: {
           status: 'live'
         }
-      }]
+      },
+      {
+        chain1: {
+          channelId: '*',
+          portId: 'wasm.*'
+        },
+        chain2: {
+          channelId: '*',
+          portId: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live'
+        }
+      },
+      {
+        chain1: {
+          channelId: '*',
+          portId: 'wasm.*'
+        },
+        chain2: {
+          channelId: '*',
+          portId: 'icqhost'
+        },
+        ordering: 'unordered',
+        version: 'icq-1',
+        tags: {
+          status: 'live'
+        }
+      }
+    ]
   },
   {
     $schema: '../ibc_data.schema.json',

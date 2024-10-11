@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Arkeo Network',
+  chainType: 'cosmos',
   chainId: 'arkeo',
   bech32Prefix: 'tarkeo',
   daemonName: 'arkeod',
@@ -22,7 +23,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/arkeonetwork/arkeo'
   },
   apis: {
     rpc: [

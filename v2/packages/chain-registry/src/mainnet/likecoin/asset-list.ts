@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'likecoin',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg',
+          theme: {
+            primaryColorHex: '#2d656c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

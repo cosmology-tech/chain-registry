@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Point Network',
+  chainType: 'cosmos',
   chainId: 'point_10687-1',
   bech32Prefix: 'point',
   nodeHome: '$HOME/.pointd',
@@ -24,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/pointnetwork/point-chain',
+    recommendedVersion: 'v8.0.0',
+    compatibleVersions: ['v8.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/pointnetwork/point-chain-config/main/mainnet-1/genesis.json'
+    },
+    versions: [{
+        name: 'v8.0.0',
+        recommendedVersion: 'v8.0.0',
+        compatibleVersions: ['v8.0.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
@@ -123,7 +134,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

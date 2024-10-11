@@ -25,16 +25,21 @@ const info: AssetList = {
         'staking',
         'wasm',
         'assets',
-        'nft'
+        'nft',
+        'XRPL'
       ],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.svg',
+          theme: {
+            primaryColorHex: '#24d494'
+          }
         }],
       socials: {
         website: 'https://www.coreum.com/',
         twitter: 'https://twitter.com/CoreumOfficial'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }, {
       description: 'XRP bridged from XRPL',
       denomUnits: [{
@@ -63,12 +68,16 @@ const info: AssetList = {
             baseDenom: 'drop'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

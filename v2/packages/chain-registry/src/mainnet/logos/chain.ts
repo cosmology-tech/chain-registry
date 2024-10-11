@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Logos',
+  chainType: 'cosmos',
   chainId: 'logos_7002-1',
   bech32Prefix: 'logos',
   daemonName: 'logosd',
@@ -45,7 +46,10 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg',
+      theme: {
+        primaryColorHex: '#848484'
+      }
     }]
 };
 export default info;

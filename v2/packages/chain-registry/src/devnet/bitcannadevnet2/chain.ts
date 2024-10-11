@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'devnet',
   prettyName: 'BitCanna Devnet-6 SDK v0.46.x',
+  chainType: 'cosmos',
   chainId: 'bitcanna-dev-6',
   bech32Prefix: 'bcna',
   daemonName: 'bcnad',
@@ -18,7 +19,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/BitCannaGlobal/bcna',
+    recommendedVersion: 'v2.0.0-beta',
+    compatibleVersions: ['v2.0.0-beta'],
+    binaries: {
+      "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.0-beta/bcna_linux_amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/BitCannaGlobal/testnet-bcna-cosmos/main/instructions/bitcanna-dev-6/genesis.json'
+    },
+    versions: [{
+        name: 'v2.0.0-beta',
+        recommendedVersion: 'v2.0.0-beta',
+        compatibleVersions: ['v2.0.0-beta'],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.0-beta/bcna_linux_amd64.tar.gz'
+        }
+      }]
   },
   apis: {
     rpc: [{

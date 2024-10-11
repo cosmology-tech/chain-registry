@@ -3,7 +3,8 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'cronos',
   assets: [{
-      description: 'Cronos Chain - Get Instant DApp Portability with EVM Support',
+      description: 'Cronos is a blockchain platform developed by Crypto.com, designed to support DeFi, NFTs, and decentralized applications with fast and low-cost transactions.',
+      extendedDescription: 'Cronos is a blockchain platform developed by Crypto.com to facilitate the creation and operation of decentralized applications (dApps), decentralized finance (DeFi) protocols, and non-fungible tokens (NFTs). By utilizing the Tendermint consensus engine and the Cosmos SDK, Cronos offers fast and low-cost transactions while ensuring high security and scalability. The platform is EVM-compatible, allowing developers to easily port their Ethereum-based dApps to Cronos. The native token, CRO, is used for transaction fees, staking, and governance, providing incentives for users to contribute to the network\'s security and participate in its governance. Cronos aims to accelerate the adoption of DeFi and NFTs by providing a robust and efficient blockchain infrastructure.',
       denomUnits: [{
           denom: 'basecro',
           exponent: 0
@@ -32,7 +33,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cro.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }, {
       description: 'Tether USDt on Cronos',
       denomUnits: [{
@@ -64,9 +66,16 @@ const info: AssetList = {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       }
     }]

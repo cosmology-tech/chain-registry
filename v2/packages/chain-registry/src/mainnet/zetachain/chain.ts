@@ -1,10 +1,11 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../../chain.schema.json',
+  $schema: '../chain.schema.json',
   chainName: 'zetachain',
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'ZetaChain',
+  chainType: 'cosmos',
   chainId: 'zetachain_7000-1',
   bech32Prefix: 'zeta',
   daemonName: 'zetacored',
@@ -26,7 +27,208 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.46.13'
+    gitRepo: 'https://github.com/zeta-chain/node',
+    recommendedVersion: 'v20.0.0',
+    compatibleVersions: ['v20.0.0'],
+    cosmosSdkVersion: 'v0.47.10',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/zeta-chain/network-config/main/mainnet/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v11',
+        recommendedVersion: 'v11.0.0',
+        compatibleVersions: ['v11.0.0'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v12',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      },
+      {
+        name: 'v12',
+        recommendedVersion: 'v12.0.0',
+        compatibleVersions: ['v12.0.0'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v12.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      },
+      {
+        name: 'v12.1.0',
+        recommendedVersion: 'v12.1.0',
+        compatibleVersions: ['v12.1.0'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v12.2.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      },
+      {
+        name: 'v12.2.0',
+        recommendedVersion: 'v12.2.5',
+        compatibleVersions: ['v12.2.5'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v14.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      },
+      {
+        name: 'v14.0.1',
+        recommendedVersion: 'v14.0.1',
+        compatibleVersions: ['v14.0.1'],
+        proposal: 21,
+        height: 2074730,
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v17',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      },
+      {
+        name: 'v17',
+        proposal: 23,
+        height: 3388200,
+        recommendedVersion: 'v17.0.0',
+        compatibleVersions: ['v17.0.0'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v18',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      },
+      {
+        name: 'v18',
+        proposal: 24,
+        height: 4071400,
+        recommendedVersion: 'v18.0.0',
+        compatibleVersions: ['v18.0.0'],
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v19',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.0'
+        }
+      },
+      {
+        name: 'v19',
+        proposal: 33,
+        height: 4696150,
+        recommendedVersion: 'v19.1.7',
+        compatibleVersions: ['v19.1.1', 'v19.1.7'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: 'v20',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      },
+      {
+        name: '20',
+        proposal: 37,
+        height: 5089400,
+        recommendedVersion: 'v20.0.0',
+        compatibleVersions: ['v20.0.0'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    }
   },
   apis: {
     rpc: [
@@ -39,7 +241,7 @@ const info: Chain = {
         provider: 'All That Node'
       },
       {
-        address: 'https://zetachain-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/zetachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -53,6 +255,10 @@ const info: Chain = {
       {
         address: 'https://zetachain.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://zeta-chain.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -65,7 +271,7 @@ const info: Chain = {
         provider: 'All That Node'
       },
       {
-        address: 'https://zetachain-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/zetachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -83,7 +289,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://zetachain-grpc.lavenderfive.com:443',
+        address: 'zetachain.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {

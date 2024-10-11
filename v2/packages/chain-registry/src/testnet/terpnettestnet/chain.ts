@@ -1,10 +1,11 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'terpnettestnet',
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Terp-Network',
+  chainType: 'cosmos',
   chainId: '90u-4',
   bech32Prefix: 'terp',
   daemonName: 'terpd',
@@ -26,7 +27,49 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/terpnetwork/terp-core',
+    recommendedVersion: 'v4.2.2',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.2'
+    },
+    compatibleVersions: [],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/terpnetwork/networks/main/testnet/90u-4/genesis.json'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-amd64',
+      "linux/arm64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-arm64'
+    },
+    versions: [
+      {
+        name: 'v4.2.0',
+        recommendedVersion: 'v4.2.0',
+        compatibleVersions: [],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        }
+      },
+      {
+        name: 'v4.2.1',
+        recommendedVersion: 'v4.2.1',
+        compatibleVersions: [],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        }
+      },
+      {
+        name: 'v4.2.2',
+        recommendedVersion: 'v4.2.2',
+        compatibleVersions: [],
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        }
+      }
+    ]
   },
   apis: {
     rpc: [{

@@ -29,12 +29,16 @@ const info: AssetList = {
       coingeckoId: 'aioz-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg',
+          theme: {
+            primaryColorHex: '#24241c'
+          }
         }],
       socials: {
         website: 'https://aioz.network/',
         twitter: 'https://twitter.com/AIOZNetwork'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

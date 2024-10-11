@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Decentr',
+  chainType: 'cosmos',
   chainId: 'mainnet-3',
   bech32Prefix: 'decentr',
   daemonName: 'decentrd',
@@ -26,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Decentr-net/decentr',
+    recommendedVersion: 'v1.5.7',
+    compatibleVersions: ['v1.5.7'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Decentr-net/mainnets/master/3.0/genesis.json'
+    },
+    versions: [{
+        name: 'v1.5.7',
+        recommendedVersion: 'v1.5.7',
+        compatibleVersions: ['v1.5.7']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
@@ -150,7 +161,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg',
+      theme: {
+        primaryColorHex: '#4678e9'
+      }
     }]
 };
 export default info;

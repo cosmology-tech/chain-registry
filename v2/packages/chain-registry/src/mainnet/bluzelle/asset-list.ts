@@ -25,12 +25,16 @@ const info: AssetList = {
       keywords: ['bluzelle', 'game'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg',
+          theme: {
+            primaryColorHex: '#708ffc'
+          }
         }],
       socials: {
         website: 'http://bluzelle.com/',
         twitter: 'https://twitter.com/BluzelleHQ'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The ELT token of Bluzelle\'s Gamma 4 Gaming Ecosystem',
@@ -48,11 +52,14 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png'
       },
-      coingeckoId: '',
       keywords: ['elt'],
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/elt.png',
+          theme: {
+            primaryColorHex: '#0c3ab5'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The game token of Bluzelle\'s Gamma 4 Gaming Ecosystem',
@@ -70,11 +77,14 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png'
       },
-      coingeckoId: '',
       keywords: ['g4'],
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/g4.png',
+          theme: {
+            primaryColorHex: '#ee8828'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

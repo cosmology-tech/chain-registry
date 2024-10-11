@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://arable.finance/',
   prettyName: 'Acrechain',
+  chainType: 'cosmos',
   chainId: 'acre_9052-1',
   bech32Prefix: 'acre',
   nodeHome: '$HOME/.acred',
@@ -27,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/ArableProtocol/acrechain',
+    recommendedVersion: 'v1.1.1',
+    compatibleVersions: ['v1.1.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/ArableProtocol/acrechain/main/networks/mainnet/acre_9052-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.1.1',
+        recommendedVersion: 'v1.1.1',
+        compatibleVersions: ['v1.1.1']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
@@ -169,7 +180,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg',
+      theme: {
+        primaryColorHex: '#4aa29e'
+      }
     }]
 };
 export default info;

@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'point-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

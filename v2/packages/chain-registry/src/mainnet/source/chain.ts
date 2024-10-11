@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.sourceprotocol.io/',
   prettyName: 'Source',
+  chainType: 'cosmos',
   chainId: 'source-1',
   bech32Prefix: 'source',
   daemonName: 'sourced',
@@ -27,15 +28,57 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/Source-Protocol-Cosmos/source',
+    recommendedVersion: 'v3.0.3',
+    compatibleVersions: ['v3.0.3'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.30',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Source-Protocol-Cosmos/mainnet/master/source-1/genesis.json'
+    },
+    versions: [{
+        name: 'v3.0.0',
+        recommendedVersion: 'v3.0.3',
+        compatibleVersions: ['v3.0.3'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   apis: {
     rpc: [
       {
         address: 'https://rpc.source.nodestake.top',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://source.rpc.bccnodes.com/',
+        provider: 'BccNodes'
       },
       {
         address: 'https://source.rpc.moonbridge.team/',
@@ -83,7 +126,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.source.roomit.xyz/',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://rpc.source.posthuman.digital',
@@ -100,12 +143,20 @@ const info: Chain = {
       {
         address: 'https://source_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://source-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
       {
         address: 'https://api.source.nodestake.top',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://source.lcd.bccnodes.com/',
+        provider: 'BccNodes'
       },
       {
         address: 'https://api-source.nodeist.net',
@@ -153,15 +204,15 @@ const info: Chain = {
       },
       {
         address: 'https://api.source.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://rest.source.posthuman.digital',
         provider: 'posthuman'
       },
       {
-        address: 'http://source.api.staking-explorer.com',
-        provider: 'Daily DROP'
+        address: 'https://source.api.staking-explorer.com',
+        provider: 'Daily DROP | 3% Fee'
       },
       {
         address: 'https://source.declab.pro:443',
@@ -174,12 +225,20 @@ const info: Chain = {
       {
         address: 'https://source_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://source-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [
       {
         address: 'source-mainnet-grpc.itrocket.net:32090',
         provider: 'ITRocket'
+      },
+      {
+        address: 'source.grpc.bccnodes.com:443',
+        provider: 'BccNodes'
       },
       {
         address: 'http://source.grpc.m.stavr.tech:9590',
@@ -219,7 +278,7 @@ const info: Chain = {
       },
       {
         address: 'grpc.source.roomit.xyz:8443',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://source.declab.pro:9003',
@@ -269,7 +328,7 @@ const info: Chain = {
       txPage: 'https://explorer.indonode.net/source/tx/${txHash}'
     },
     {
-      kind: 'RoomIT',
+      kind: 'Roomit',
       url: 'https://explorer.tendermint.roomit.xyz/source-mainnet/',
       txPage: 'https://explorer.tendermint.roomit.xyz/source-mainnet/tx/${txHash}'
     },
@@ -300,7 +359,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg',
+      theme: {
+        primaryColorHex: '#39a5fc'
+      }
     }],
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',

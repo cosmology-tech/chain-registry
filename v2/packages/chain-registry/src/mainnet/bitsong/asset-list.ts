@@ -24,7 +24,10 @@ const info: AssetList = {
       coingeckoId: 'bitsong',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg',
+          theme: {
+            primaryColorHex: '#c8307f'
+          }
         }],
       socials: {
         website: 'https://bitsong.io/',
@@ -48,8 +51,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png',
+          theme: {
+            primaryColorHex: '#e8e5e7'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Nicola Fasano a BitSong Music FanToken',
@@ -68,8 +75,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png',
+          theme: {
+            primaryColorHex: '#c3a59e'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Delta 9 a BitSong Music FanToken',
@@ -88,8 +99,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png',
+          theme: {
+            primaryColorHex: '#0d0d0d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'FONTI a BitSong Music FanToken',
@@ -108,8 +123,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png',
+          theme: {
+            primaryColorHex: '#1c2536'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'BlackJack a BitSong Music FanToken',
@@ -128,8 +147,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png',
+          theme: {
+            primaryColorHex: '#f5f5f5'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Rawanne a BitSong Music FanToken',
@@ -148,8 +171,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png',
+          theme: {
+            primaryColorHex: '#1a1521'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Enmoda a BitSong Music FanToken',
@@ -168,8 +195,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png',
+          theme: {
+            primaryColorHex: '#161616'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: '404Deep Records a BitSong Music FanToken',
@@ -188,8 +219,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png',
+          theme: {
+            primaryColorHex: '#cfb1b3'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'N43 a BitSong Music FanToken',
@@ -208,8 +243,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png',
+          theme: {
+            primaryColorHex: '#0a0a0a'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Puro Lobo a BitSong Music FanToken',
@@ -228,8 +267,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png',
+          theme: {
+            primaryColorHex: '#b8b6b6'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Vibranium a BitSong Music FanToken',
@@ -248,8 +291,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png',
+          theme: {
+            primaryColorHex: '#0f0c27'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Karina a BitSong Music FanToken',
@@ -268,8 +315,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png',
+          theme: {
+            primaryColorHex: '#21283c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Luca Testa a BitSong Music FanToken',
@@ -288,8 +339,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png',
+          theme: {
+            primaryColorHex: '#151515'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Carolina Marquez a BitSong Music FanToken',
@@ -308,8 +363,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png',
+          theme: {
+            primaryColorHex: '#847760'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       deprecated: true,
@@ -324,7 +383,8 @@ const info: AssetList = {
       base: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00',
       name: '[Redacted] Fantoken (ft3...A00)',
       display: 'ft347B1612A2B7659913679CF6CD45B8B130C50A00/6',
-      symbol: 'LDON'
+      symbol: 'LDON',
+      typeAsset: 'sdk.coin'
     }
   ]
 };

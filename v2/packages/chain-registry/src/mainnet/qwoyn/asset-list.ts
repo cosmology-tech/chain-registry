@@ -20,14 +20,18 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/qwoyn/images/qwoyn.png',
+          theme: {
+            primaryColorHex: '#04e4fc'
+          }
         }],
       coingeckoId: 'qwoyn',
       keywords: ['gaming'],
       socials: {
         website: 'https://qwoyn.studio',
         twitter: 'https://twitter.com/Qwoyn_Studios'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -21,8 +21,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg',
+          theme: {
+            primaryColorHex: '#5e3be6'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

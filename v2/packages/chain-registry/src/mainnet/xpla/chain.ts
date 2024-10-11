@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://xpla.io',
   networkType: 'mainnet',
   prettyName: 'XPLA',
+  chainType: 'cosmos',
   chainId: 'dimension_37-1',
   bech32Prefix: 'xpla',
   daemonName: 'xplad',
@@ -27,8 +28,150 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'xpladev/cosmos-sdk v0.45.20-xpla',
-    cosmwasmVersion: 'v0.33.0'
+    gitRepo: 'https://github.com/xpladev/xpla',
+    recommendedVersion: 'v1.4.0',
+    compatibleVersions: ['v1.4.0'],
+    cosmosSdkVersion: 'v0.47.13-xpla',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    cosmwasmVersion: 'v0.46.0',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/xpladev/mainnet/main/dimension_37-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'evm',
+        recommendedVersion: 'v1.2.1',
+        compatibleVersions: ['v1.2.1'],
+        cosmosSdkVersion: '0.45.9',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.21'
+        },
+        cosmwasmVersion: '0.28.0',
+        nextVersionName: 'Volunteer',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45.9'
+        },
+        cosmwasm: {
+          version: '0.28.0'
+        }
+      },
+      {
+        name: 'volunteer',
+        recommendedVersion: 'v1.3.0',
+        compatibleVersions: ['v1.3.0'],
+        cosmosSdkVersion: '0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.27'
+        },
+        cosmwasmVersion: '0.33.0',
+        nextVersionName: 'v1_4',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45.16'
+        },
+        cosmwasm: {
+          version: '0.33.0'
+        }
+      },
+      {
+        name: 'v1_4',
+        recommendedVersion: 'v1.4.0',
+        compatibleVersions: ['v1.4.0'],
+        cosmosSdkVersion: 'xpladev/cosmos-sdk v0.45.20-xpla',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.29'
+        },
+        cosmwasmVersion: 'v0.33.0',
+        nextVersionName: 'v1_5',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/xpladev/cosmos-sdk',
+          version: 'v0.45.20',
+          tag: 'v0.45.20-xpla'
+        },
+        cosmwasm: {
+          version: 'v0.33.0'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.5.1'
+        }
+      },
+      {
+        name: 'v1_5',
+        recommendedVersion: 'v1.5.0',
+        compatibleVersions: ['v1.5.0'],
+        proposal: 65,
+        height: 10085200,
+        cosmosSdkVersion: 'v0.47.10-xpla',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.5'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        nextVersionName: 'v1_6',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/xpladev/cosmos-sdk',
+          version: 'v0.47.10',
+          tag: 'v0.47.10-xpla'
+        },
+        cosmwasm: {
+          version: 'v0.45.0'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      },
+      {
+        name: 'v1_6',
+        recommendedVersion: 'v1.6.0',
+        compatibleVersions: ['v1.6.0'],
+        proposal: 66,
+        height: 10491710,
+        cosmosSdkVersion: 'v0.47.13-xpla',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.5'
+        },
+        cosmwasmVersion: 'v0.46.0',
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/xpladev/cosmos-sdk',
+          version: 'v0.47.13',
+          tag: 'v0.47.13-xplaa'
+        },
+        cosmwasm: {
+          version: 'v0.46.0'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.7.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/xpladev/cosmos-sdk',
+      version: 'v0.47.13',
+      tag: 'v0.47.13-xpla'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.7.0'
+    },
+    cosmwasm: {
+      version: 'v0.46.0'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.png',
@@ -45,8 +188,12 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://xpla-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/xpla',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://xpla-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -63,14 +210,24 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://xpla-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/xpla',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://xpla-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
-    grpc: [],
+    grpc: [{
+        address: 'xpla-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
+      }],
     evmHttpJsonrpc: [{
         address: 'https://dimension-evm-rpc.xpla.dev',
         provider: 'Holdings'
+      }, {
+        address: 'https://xpla-evm-rpc.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }]
   },
   explorers: [
@@ -104,7 +261,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.svg',
+      theme: {
+        primaryColorHex: '#04b4fc'
+      }
     }]
 };
 export default info;

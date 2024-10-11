@@ -19,8 +19,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/passage/images/pasg.png',
+          theme: {
+            primaryColorHex: '#05050c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

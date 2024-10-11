@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'secretnetwork',
   assets: [
     {
-      description: 'The native token of Secret Network',
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
+      extendedDescription: 'Secret Network is a blockchain platform that focuses on privacy and security by enabling private smart contracts, known as Secret Contracts. These contracts allow developers to create decentralized applications (dApps) that can utilize sensitive data without exposing it on the blockchain. By incorporating privacy-preserving technologies, Secret Network ensures that data remains confidential while still enabling complex computations and interactions. The native token, SCRT, is used for transaction fees, staking, and governance, empowering users to participate in the network\'s operations and decision-making processes. Secret Network aims to enhance the privacy and functionality of blockchain applications, making it suitable for use cases where data confidentiality is paramount.',
       denomUnits: [{
           denom: 'uscrt',
           exponent: 0
@@ -23,12 +24,16 @@ const info: AssetList = {
       coingeckoId: 'secret',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
         }],
       socials: {
         website: 'https://scrt.network/',
         twitter: 'https://twitter.com/SecretNetwork'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The native token cw20 for SIENNA on Secret Network',
@@ -52,7 +57,10 @@ const info: AssetList = {
       coingeckoId: 'sienna',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg',
+          theme: {
+            primaryColorHex: '#2c2c2c'
+          }
         }]
     },
     {
@@ -99,7 +107,10 @@ const info: AssetList = {
       coingeckoId: 'shade-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg',
+          theme: {
+            primaryColorHex: '#342c52'
+          }
         }]
     },
     {
@@ -124,7 +135,10 @@ const info: AssetList = {
       coingeckoId: 'silk-bcec1136-561c-4706-a42c-8b67d0d7f7d2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg',
+          theme: {
+            primaryColorHex: '#3142fc'
+          }
         }]
     },
     {
@@ -149,7 +163,10 @@ const info: AssetList = {
       coingeckoId: 'stkd-scrt',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg',
+          theme: {
+            primaryColorHex: '#b8a2dc'
+          }
         }]
     },
     {
@@ -171,10 +188,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
       },
-      coingeckoId: 'buttcoin-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg',
+          theme: {
+            primaryColorHex: '#7b04eb'
+          }
         }]
     },
     {
@@ -187,6 +206,8 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
+      typeAsset: 'snip20',
+      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
       name: 'Alter',
       display: 'alter',
       symbol: 'ALTER',
@@ -197,7 +218,10 @@ const info: AssetList = {
       coingeckoId: 'alter',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg',
+          theme: {
+            primaryColorHex: '#694c90'
+          }
         }],
       socials: {
         website: 'http://alter.network/',
@@ -225,7 +249,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.svg',
+          theme: {
+            primaryColorHex: '#f2b854'
+          }
         }],
       socials: {
         website: 'http://amber.money/',
@@ -253,7 +280,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg',
+          theme: {
+            primaryColorHex: '#c49df3'
+          }
         }]
     }
   ]

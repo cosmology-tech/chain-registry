@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://pylons.tech',
   prettyName: 'Pylons',
+  chainType: 'cosmos',
   chainId: 'pylons-mainnet-1',
   bech32Prefix: 'pylo',
   nodeHome: '$HOME/.pylons',
@@ -27,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Pylons-tech/pylons.git',
+    recommendedVersion: 'v1.1.4',
+    compatibleVersions: ['v1.1.4'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Pylons-tech/pylons/main/networks/pylons-mainnet-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.1.4',
+        recommendedVersion: 'v1.1.4',
+        compatibleVersions: ['v1.1.4']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
@@ -54,7 +65,10 @@ const info: Chain = {
       txPage: 'https://pylons.explorers.guru/transaction/${txHash}'
     }],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png',
+      theme: {
+        primaryColorHex: '#ec4424'
+      }
     }]
 };
 export default info;

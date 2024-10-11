@@ -4,8 +4,8 @@ const info: AssetList = {
   chainName: 'kava',
   assets: [
     {
-      description: 'The native staking and governance token of Kava',
-      extendedDescription: 'The native staking and governance token of Kava\n\nKava is a Layer-1 blockchain that combines the speed and interoperability of Cosmos with the developer power of Ethereum.\n\nThe Kava Network uses a developer-optimized co-chain architecture. The Ethereum Co-Chain enables support for EVM smart contracts while the Cosmos Co-Chain enables the lightning-fast Tendermint consensus engine and the Inter Blockchain Communication Protocol (IBC).\n\nThe two co-chains are connected by a translator module that enables them to interoperate seamlessly, bringing the two most used blockchain development environments together in a single, scalable network.\n\nThe Kava Network features a native governance and utility token, KAVA, that can be staked by validators or delegated to validator nodes. Stakers and delegators earn 37.5% of all KAVA emissions as a reward for securing the network. Kava stakers also have voting rights in network governance proposals.',
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
+      extendedDescription: 'Kava offers a suite of DeFi services, such as lending, borrowing, and stablecoin issuance, utilizing a cross-chain platform that integrates the Cosmos SDK and Ethereum interoperability. Users can collateralize their assets to borrow Kava\'s stablecoin, USDX, or participate in lending and liquidity pools to earn rewards. Kava\'s native token, KAVA, is used for staking, governance, and securing the network. The platform\'s goal is to provide a decentralized, efficient, and accessible financial ecosystem that bridges multiple blockchain networks.',
       denomUnits: [{
           denom: 'ukava',
           exponent: 0
@@ -24,12 +24,16 @@ const info: AssetList = {
       coingeckoId: 'kava',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
+          theme: {
+            primaryColorHex: '#e64942'
+          }
         }],
       socials: {
         website: 'https://www.kava.io/',
         twitter: 'https://twitter.com/KAVA_CHAIN'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Governance token of Kava Lend Protocol',
@@ -51,8 +55,12 @@ const info: AssetList = {
       coingeckoId: 'kava-lend',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg',
+          theme: {
+            primaryColorHex: '#7b34ac'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Governance token of Kava Swap Protocol',
@@ -74,8 +82,12 @@ const info: AssetList = {
       coingeckoId: 'kava-swap',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg',
+          theme: {
+            primaryColorHex: '#544cfc'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The native stablecoin of Kava',
@@ -97,8 +109,12 @@ const info: AssetList = {
       coingeckoId: 'usdx',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg',
+          theme: {
+            primaryColorHex: '#04d4a3'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -126,11 +142,19 @@ const info: AssetList = {
             chainName: 'ethereum',
             baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };

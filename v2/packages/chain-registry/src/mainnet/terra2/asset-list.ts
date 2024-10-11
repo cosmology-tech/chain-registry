@@ -23,12 +23,16 @@ const info: AssetList = {
       coingeckoId: 'terra-luna-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.svg',
+          theme: {
+            primaryColorHex: '#f4de6f'
+          }
         }],
       socials: {
         website: 'https://www.terra.money/',
         twitter: 'https://twitter.com/terra_money'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
@@ -45,11 +49,29 @@ const info: AssetList = {
       name: 'Astroport CW20 Token',
       display: 'astro.cw20',
       symbol: 'ASTRO.cw20',
+      traces: [{
+          type: 'legacy-mintage',
+          counterparty: {
+            chainName: 'neutron',
+            baseDenom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          provider: 'Astroport'
+        }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+        }, {
+          imageSync: {
+            chainName: 'neutron',
+            baseDenom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primaryColorHex: '#4056e9'
+          }
         }],
       socials: {
         website: 'https://astroport.fi/',
@@ -75,7 +97,7 @@ const info: AssetList = {
           type: 'ibc',
           counterparty: {
             chainName: 'neutron',
-            baseDenom: 'ibc/8D8A7F7253615E5F76CB6252A1E1BD921D5EDB7BBAAF8913FB1C77FF125D9995',
+            baseDenom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro',
             channelId: 'channel-25'
           },
           chain: {
@@ -88,12 +110,15 @@ const info: AssetList = {
             chainName: 'neutron',
             baseDenom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primaryColorHex: '#4056e9'
+          }
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg'
       }
     },
     {
@@ -113,7 +138,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png',
+          theme: {
+            primaryColorHex: '#244c9c'
+          }
         }]
     },
     {
@@ -135,11 +163,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Reis.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Reis.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Reis.png',
+          theme: {
+            primaryColorHex: '#1d5c65'
+          }
         }]
     },
     {
-      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and foward.',
+      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and forward.',
       denomUnits: [{
           denom: 'cw20:terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg',
           exponent: 0
@@ -157,11 +188,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Escudos.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Escudos.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Escudos.png',
+          theme: {
+            primaryColorHex: '#040404'
+          }
         }]
     },
     {
-      description: 'Alem is a local currency for the region of Alentejo in Portugal, sibling of Dinheiros, Reis and Alem, a token of dioalma.protocol.',
+      description: 'Alem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
       denomUnits: [{
           denom: 'cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q',
           exponent: 0
@@ -179,7 +213,160 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Alem.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Alem.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Alem.png',
+          theme: {
+            primaryColorHex: '#d1b295'
+          }
+        }]
+    },
+    {
+      description: 'almagem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denomUnits: [{
+          denom: 'cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+          exponent: 0
+        }, {
+          denom: 'AMG',
+          exponent: 6
+        }],
+      typeAsset: 'cw20',
+      address: 'terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+      base: 'cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+      name: 'almagem',
+      display: 'AMG',
+      symbol: 'AMG',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png',
+          theme: {
+            primaryColorHex: '#d1b295'
+          }
+        }]
+    },
+    {
+      description: 'arika is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denomUnits: [{
+          denom: 'cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+          exponent: 0
+        }, {
+          denom: 'ARK',
+          exponent: 6
+        }],
+      typeAsset: 'cw20',
+      address: 'terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+      base: 'cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+      name: 'arika',
+      display: 'ARK',
+      symbol: 'ARK',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png',
+          theme: {
+            primaryColorHex: '#d1b295'
+          }
+        }]
+    },
+    {
+      description: 'danu is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denomUnits: [{
+          denom: 'cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+          exponent: 0
+        }, {
+          denom: 'DANU',
+          exponent: 6
+        }],
+      typeAsset: 'cw20',
+      address: 'terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+      base: 'cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+      name: 'danu',
+      display: 'DANU',
+      symbol: 'DANU',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png',
+          theme: {
+            primaryColorHex: '#d1b295'
+          }
+        }]
+    },
+    {
+      description: 'torus is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denomUnits: [{
+          denom: 'cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+          exponent: 0
+        }, {
+          denom: 'TRS',
+          exponent: 6
+        }],
+      typeAsset: 'cw20',
+      address: 'terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+      base: 'cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+      name: 'torus',
+      display: 'TRS',
+      symbol: 'TRS',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png',
+          theme: {
+            primaryColorHex: '#d1b295'
+          }
+        }]
+    },
+    {
+      description: 'plasma is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denomUnits: [{
+          denom: 'cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+          exponent: 0
+        }, {
+          denom: 'PLASMA',
+          exponent: 6
+        }],
+      typeAsset: 'cw20',
+      address: 'terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+      base: 'cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+      name: 'plasma',
+      display: 'PLASMA',
+      symbol: 'PLASMA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png',
+          theme: {
+            primaryColorHex: '#d1b295'
+          }
+        }]
+    },
+    {
+      description: 'dmt is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denomUnits: [{
+          denom: 'cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
+          exponent: 0
+        }, {
+          denom: 'DMT',
+          exponent: 6
+        }],
+      typeAsset: 'cw20',
+      address: 'terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
+      base: 'cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
+      name: 'dmt',
+      display: 'DMT',
+      symbol: 'DMT',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png',
+          theme: {
+            primaryColorHex: '#d1b295'
+          }
         }]
     },
     {
@@ -225,7 +412,10 @@ const info: AssetList = {
       },
       coingeckoId: 'lion-dao',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/roar.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/roar.png',
+          theme: {
+            primaryColorHex: '#f3f313'
+          }
         }]
     },
     {
@@ -247,7 +437,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gem.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gem.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gem.png',
+          theme: {
+            primaryColorHex: '#21b6b3'
+          }
         }]
     },
     {
@@ -269,7 +462,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/cub.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/cub.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/cub.png',
+          theme: {
+            primaryColorHex: '#f3d343'
+          }
         }]
     },
     {
@@ -291,7 +487,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/blue.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/blue.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/blue.png',
+          theme: {
+            primaryColorHex: '#040404'
+          }
         }]
     },
     {
@@ -313,7 +512,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xxx3.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xxx3.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xxx3.png',
+          theme: {
+            primaryColorHex: '#efe8e9'
+          }
         }]
     },
     {
@@ -335,7 +537,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png',
+          theme: {
+            primaryColorHex: '#e3e2e5'
+          }
         }]
     },
     {
@@ -357,7 +562,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primaryColorHex: '#070707'
+          }
         }],
       coingeckoId: 'backbone-labs-staked-luna'
     },
@@ -382,7 +590,10 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.svg',
+          theme: {
+            primaryColorHex: '#f3ebdb'
+          }
         }]
     },
     {
@@ -403,7 +614,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampwhalet.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ERIS Alliance Staked boneWHALE on Terra',
@@ -423,7 +635,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bonewhalet.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ERIS Liquid Enterprise Staked ROAR',
@@ -442,8 +655,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/amproar.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/amproar.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/amproar.png',
+          theme: {
+            primaryColorHex: '#5b83c3'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Nico Dao Money',
@@ -464,7 +681,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/nicodao.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/nicodao.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/nicodao.png',
+          theme: {
+            primaryColorHex: '#f1cc79'
+          }
         }]
     },
     {
@@ -486,7 +706,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/SEAS.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/SEAS.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/SEAS.png',
+          theme: {
+            primaryColorHex: '#c0943f'
+          }
         }]
     },
     {
@@ -508,7 +731,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/BITZ.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/BITZ.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/BITZ.png',
+          theme: {
+            primaryColorHex: '#dd6a30'
+          }
         }]
     },
     {
@@ -567,7 +793,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/seul.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/seul.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/seul.png',
+          theme: {
+            primaryColorHex: '#0da8c9'
+          }
         }]
     },
     {
@@ -589,7 +818,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xseul.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xseul.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xseul.png',
+          theme: {
+            primaryColorHex: '#0ba7ce'
+          }
         }]
     },
     {
@@ -611,7 +843,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/I.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/I.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/I.png',
+          theme: {
+            primaryColorHex: '#f8d034'
+          }
         }]
     },
     {
@@ -633,7 +868,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/armani.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/armani.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/armani.png',
+          theme: {
+            primaryColorHex: '#d19a84'
+          }
         }]
     },
     {
@@ -655,7 +893,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/drogo.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/drogo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/drogo.png',
+          theme: {
+            primaryColorHex: '#ae987b'
+          }
         }]
     },
     {
@@ -677,20 +918,23 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png',
+          theme: {
+            primaryColorHex: '#040607'
+          }
         }]
     },
     {
       description: 'The first memecoin on osmosis.',
       denomUnits: [{
-          denom: 'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278',
+          denom: 'ibc/E18C0D303957867A164DE2863D1C3F83135936E6F17CADF4D241FBC12B0F23B2',
           exponent: 0
         }, {
           denom: 'WOSMO',
           exponent: 6
         }],
       typeAsset: 'ics20',
-      base: 'ibc/7CB33A66F90533ED1E168CB3251253C719CF4B04FF1290AFD795F14CA1D67278',
+      base: 'ibc/E18C0D303957867A164DE2863D1C3F83135936E6F17CADF4D241FBC12B0F23B2',
       name: 'Wosmo',
       display: 'WOSMO',
       symbol: 'WOSMO',
@@ -711,7 +955,10 @@ const info: AssetList = {
             chainName: 'osmosis',
             baseDenom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png',
+          theme: {
+            primaryColorHex: '#edd5ee'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
@@ -736,7 +983,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/DNA.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/DNA.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/DNA.png',
+          theme: {
+            primaryColorHex: '#232333'
+          }
         }]
     },
     {
@@ -758,11 +1008,13 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png',
+          theme: {
+            primaryColorHex: '#0c0704'
+          }
         }]
     },
     {
-      description: '',
       typeAsset: 'cw20',
       address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
       denomUnits: [{
@@ -780,7 +1032,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png',
+          theme: {
+            primaryColorHex: '#040507'
+          }
         }]
     },
     {
@@ -815,7 +1070,10 @@ const info: AssetList = {
             baseDenom: 'factory/migaloo1d0uma9qzcts4fzt7ml39xp44aut5k6qyjfzz4asalnecppppr3rsl52vvv/rstk'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.svg',
+          theme: {
+            primaryColorHex: '#3ccc64'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rstk.png',
@@ -841,7 +1099,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png',
+          theme: {
+            primaryColorHex: '#c7cbcf'
+          }
         }]
     },
     {
@@ -861,8 +1122,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/moar.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/moar.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/moar.png',
+          theme: {
+            primaryColorHex: '#9363b3'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Tether USDt on Terra',
@@ -895,10 +1160,204 @@ const info: AssetList = {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      }
+    },
+    {
+      description: 'ATOM-LUNA liquidity pool token on URA',
+      denomUnits: [{
+          denom: 'factory/terra1djk2zl83dspt696ex5crhfacu8vm6934576t4zdd2592fzyahr2qma6guq/ULUN-IBC/-LP',
+          exponent: 0
+        }, {
+          denom: 'atom-luna-lp',
+          exponent: 6
+        }],
+      base: 'factory/terra1djk2zl83dspt696ex5crhfacu8vm6934576t4zdd2592fzyahr2qma6guq/ULUN-IBC/-LP',
+      name: 'ATOM-LUNA LP Token URA',
+      display: 'atom-luna-lp',
+      symbol: 'ATOM-LUNA-LP',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ura.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LUNA-USDC liquidity pool token on URA',
+      denomUnits: [{
+          denom: 'factory/terra12jxfw2vg4cu6mxlgf39dp5ccxtuwm468w8eh9cnh2qsxc9t0sffs7ekhft/ULUN-IBC/-LP',
+          exponent: 0
+        }, {
+          denom: 'luna-usdc-lp',
+          exponent: 6
+        }],
+      base: 'factory/terra12jxfw2vg4cu6mxlgf39dp5ccxtuwm468w8eh9cnh2qsxc9t0sffs7ekhft/ULUN-IBC/-LP',
+      name: 'LUNA-USDC LP Token URA',
+      display: 'luna-usdc-lp',
+      symbol: 'LUNA-USDC-LP',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ura.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'LUNA-USDT liquidity pool token on URA',
+      denomUnits: [{
+          denom: 'factory/terra1w9spejtuac5dt0gympq576uhwde39exhh7hdxwl99rjvaphfukkq6y4cv7/ULUN-IBC/-LP',
+          exponent: 0
+        }, {
+          denom: 'luna-usdt-lp',
+          exponent: 6
+        }],
+      base: 'factory/terra1w9spejtuac5dt0gympq576uhwde39exhh7hdxwl99rjvaphfukkq6y4cv7/ULUN-IBC/-LP',
+      name: 'LUNA-USDT LP Token URA',
+      display: 'luna-usdt-lp',
+      symbol: 'LUNA-USDT-LP',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ura.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'ashLUNA',
+      denomUnits: [{
+          denom: 'factory/terra1f5cfm48gcezl3cx25l64ngc4yktnmx7rcpj3kggu6v273742sqqs5yn5ks/luna.ash',
+          exponent: 0
+        }, {
+          denom: 'ashLUNA',
+          exponent: 6
+        }],
+      base: 'factory/terra1f5cfm48gcezl3cx25l64ngc4yktnmx7rcpj3kggu6v273742sqqs5yn5ks/luna.ash',
+      name: 'ashLUNA',
+      display: 'ashLUNA',
+      symbol: 'ashLUNA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.ash.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.ash.png',
+          theme: {
+            primaryColorHex: '#66bcf2'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      denomUnits: [{
+          denom: 'ibc/2C962DAB9F57FE0921435426AE75196009FAA1981BF86991203C8411F8980FDB',
+          exponent: 0,
+          aliases: ['microusdc', 'uusdc']
+        }, {
+          denom: 'usdc',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/2C962DAB9F57FE0921435426AE75196009FAA1981BF86991203C8411F8980FDB',
+      name: 'USDC',
+      display: 'usdc',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'forex',
+            baseDenom: 'USD'
+          },
+          provider: 'Circle'
+        },
+        {
+          type: 'additional-mintage',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          provider: 'Circle'
+        },
+        {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'noble',
+            baseDenom: 'uusdc',
+            channelId: 'channel-30'
+          },
+          chain: {
+            channelId: 'channel-253',
+            path: 'transfer/channel-253/uusdc'
+          }
+        }
+      ],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'noble',
+            baseDenom: 'uusdc'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
+        }, {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }]
+    },
+    {
+      description: 'Cosmo is the best currency in the universe.',
+      denomUnits: [{
+          denom: 'ibc/4925733868E7999F5822C961ADE9470A7FC5FA4A560BAE1DE102783C3F64C201',
+          exponent: 0,
+          aliases: ['factory/inj1je6n5sr4qtx2lhpldfxndntmgls9hf38ncmcez/COSMO']
+        }, {
+          denom: 'COSMO',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/4925733868E7999F5822C961ADE9470A7FC5FA4A560BAE1DE102783C3F64C201',
+      name: 'Cosmo',
+      display: 'COSMO',
+      symbol: 'COSMO',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1je6n5sr4qtx2lhpldfxndntmgls9hf38ncmcez/COSMO',
+            channelId: 'channel-8'
+          },
+          chain: {
+            channelId: 'channel-122',
+            path: 'transfer/channel-122/factory/inj1je6n5sr4qtx2lhpldfxndntmgls9hf38ncmcez/COSMO'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/cosmo.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1je6n5sr4qtx2lhpldfxndntmgls9hf38ncmcez/COSMO'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/cosmo.png',
+          theme: {
+            primaryColorHex: '#343169'
+          }
+        }],
+      socials: {
+        website: 'https://github.com/raphaellafar/Cosmo',
+        twitter: 'https://x.com/CosmoClub84'
       }
     }
   ]

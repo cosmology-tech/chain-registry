@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../../assetlist.schema.json',
+  $schema: '../assetlist.schema.json',
   chainName: 'zetachain',
   assets: [{
       description: 'The native token of ZetaChain',
@@ -22,8 +22,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zetachain/images/zetachain.svg',
+          theme: {
+            primaryColorHex: '#045443'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

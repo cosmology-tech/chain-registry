@@ -1,9 +1,10 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'polkadot',
   assets: [{
-      description: 'The native fee, governance, staking, and bonding token of the Polkadot platform.',
+      description: 'Polkadot is a multi-chain blockchain platform that enables interoperability between different blockchains, allowing them to share information and security.',
+      extendedDescription: 'Polkadot is a next-generation blockchain platform that facilitates interoperability between multiple blockchains, allowing them to operate seamlessly together. Developed by the Web3 Foundation and led by Dr. Gavin Wood, Polkadot\'s architecture includes a central relay chain that coordinates consensus and communication among connected parachains. These parachains can be customized for various use cases, providing flexibility and scalability. The native token, DOT, is used for governance, staking, and bonding on the network. Polkadot\'s mission is to create a decentralized web where diverse blockchains can share information and security, enabling a new era of innovation and collaboration.',
       denomUnits: [
         {
           denom: 'Planck',
@@ -49,11 +50,16 @@ const info: AssetList = {
       display: 'DOT',
       symbol: 'DOT',
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
       },
       coingeckoId: 'polkadot',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg',
+          theme: {
+            primaryColorHex: '#e4047c'
+          }
         }]
     }]
 };

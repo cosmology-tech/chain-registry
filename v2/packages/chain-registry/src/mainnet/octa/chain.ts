@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Octa',
+  chainType: 'cosmos',
   chainId: 'octa',
   bech32Prefix: 'octa',
   daemonName: 'octadaemon',
@@ -18,7 +19,10 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    compatibleVersions: [],
+    genesis: {
+      genesisUrl: 'https://octa-coin-assets.s3.eu-central-1.amazonaws.com/genesis.json'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
@@ -35,7 +39,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg',
+      theme: {
+        primaryColorHex: '#04a7f8'
+      }
     }]
 };
 export default info;

@@ -21,8 +21,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg',
+          theme: {
+            primaryColorHex: '#6404fc'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }, {
       description: 'Bitcoin. On Cosmos.',
       denomUnits: [{
@@ -50,8 +54,12 @@ const info: AssetList = {
         }],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg',
+          theme: {
+            primaryColorHex: '#8436e6'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

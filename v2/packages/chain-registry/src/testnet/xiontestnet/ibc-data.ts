@@ -4,21 +4,21 @@ const info: IBCData[] = [
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'axelartestnet',
-      clientId: '07-tendermint-895',
-      connectionId: 'connection-685'
+      clientId: '07-tendermint-970',
+      connectionId: 'connection-752'
     },
     chain2: {
       chainName: 'xiontestnet',
-      clientId: '07-tendermint-118',
-      connectionId: 'connection-54'
+      clientId: '07-tendermint-127',
+      connectionId: 'connection-64'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-462',
+          channelId: 'channel-521',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-486',
+          channelId: 'channel-225057',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -29,7 +29,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'injectivetestnet',
       clientId: '07-tendermint-239',

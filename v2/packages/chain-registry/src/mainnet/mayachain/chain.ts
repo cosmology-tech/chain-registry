@@ -6,13 +6,24 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://mayaprotocol.com/',
   prettyName: 'Maya Protocol',
+  chainType: 'cosmos',
   chainId: 'mayachain-mainnet-v1',
   bech32Prefix: 'maya',
   daemonName: 'mayanode',
   nodeHome: '$HOME/.mayanode',
   slip44: 931,
   codebase: {
-
+    gitRepo: 'https://gitlab.com/mayachain/mayanode',
+    recommendedVersion: 'V1.103.3',
+    compatibleVersions: ['V1.103.3'],
+    genesis: {
+      genesisUrl: 'https://tendermint.mayachain.info/genesis'
+    },
+    versions: [{
+        name: 'V1.103.3',
+        recommendedVersion: 'V1.103.3',
+        compatibleVersions: ['V1.103.3']
+      }]
   },
   apis: {
     rpc: [{

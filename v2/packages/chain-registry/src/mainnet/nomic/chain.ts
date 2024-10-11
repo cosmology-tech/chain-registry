@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   prettyName: 'Nomic',
   website: 'https://nomic.io/',
+  chainType: 'cosmos',
   chainId: 'nomic-stakenet-3',
   bech32Prefix: 'nomic',
   daemonName: 'nomic',
@@ -15,6 +16,11 @@ const info: Chain = {
   fees: {
     feeTokens: [{
         denom: 'unom',
+        lowGasPrice: 0,
+        averageGasPrice: 0,
+        highGasPrice: 0
+      }, {
+        denom: 'usat',
         lowGasPrice: 0,
         averageGasPrice: 0,
         highGasPrice: 0
@@ -29,11 +35,39 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    gitRepo: 'https://github.com/nomic-io/nomic',
+    recommendedVersion: 'v9.0.0',
+    compatibleVersions: ['v9.0.0', 'v8.0.0'],
+    consensus: {
+      type: 'tendermint',
+      version: 'v0.34.0'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/nomic-io/nomic/develop/genesis/stakenet-3.json'
+    },
+    versions: [{
+        name: 'v8.0.0',
+        recommendedVersion: 'v8.0.0',
+        compatibleVersions: ['v8.0.0'],
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.32.0'
+        },
+        nextVersionName: 'v9.0.0'
+      }, {
+        name: 'v9.0.0',
+        recommendedVersion: 'v9.0.0',
+        compatibleVersions: ['v9.0.0'],
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.0'
+        },
+        nextVersionName: ''
+      }]
   },
   logoURIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg'
   },
   description: 'The superior way to use Bitcoin in Cosmos DeFi. Use IBC to securely and efficiently bridge your BTC to Osmosis and more.',
   apis: {
@@ -64,20 +98,36 @@ const info: Chain = {
         provider: 'nomic-io'
       }]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/nomic',
       accountPage: 'https://bigdipper.live/nomic/accounts/${accountAddress}',
       txPage: 'https://bigdipper.live/nomic/transactions/${txHash}'
-    }, {
+    },
+    {
       kind: 'Zenscan.io',
       url: 'https://nomic.zenscan.io/index.php',
       accountPage: 'https://nomic.zenscan.io/address.php?address=${accountAddress}',
       txPage: 'https://nomic.zenscan.io/transaction.php?hash=${txHash}'
-    }],
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/nomic',
+      txPage: 'https://mainnet.whispernode.com/nomic/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/nomic/account/${accountAddress}'
+    }
+  ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg'
+      imageSync: {
+        chainName: 'nomic',
+        baseDenom: 'unom'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg',
+      theme: {
+        primaryColorHex: '#6404fc'
+      }
     }],
   bech32Config: {
     bech32PrefixAccAddr: 'nomic',

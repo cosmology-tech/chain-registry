@@ -6,13 +6,24 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://konstellation.tech/',
   prettyName: 'Konstellation',
+  chainType: 'cosmos',
   chainId: 'darchub',
   bech32Prefix: 'darc',
   daemonName: 'knstld',
   nodeHome: '$HOME/.knstld',
   slip44: 118,
   codebase: {
-
+    gitRepo: 'https://github.com/knstl/konstellation',
+    recommendedVersion: 'v0.6.2',
+    compatibleVersions: ['v0.6.2'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Konstellation/konstellation/master/config/genesis.json'
+    },
+    versions: [{
+        name: 'v0.6.2',
+        recommendedVersion: 'v0.6.2',
+        compatibleVersions: ['v0.6.2']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'
@@ -75,7 +86,10 @@ const info: Chain = {
       txPage: 'https://cosmotracker.com/konstellation/tx/${txHash}'
     }],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png',
+      theme: {
+        primaryColorHex: '#a3d3fb'
+      }
     }]
 };
 export default info;

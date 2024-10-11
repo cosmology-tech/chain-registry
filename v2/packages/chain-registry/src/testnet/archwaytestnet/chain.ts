@@ -1,7 +1,8 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'archwaytestnet',
+  chainType: 'cosmos',
   chainId: 'constantine-3',
   prettyName: 'Archway Testnet',
   status: 'live',
@@ -26,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/archway-network/archway'
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.png',
@@ -34,14 +35,14 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://rpc.constantine.archway.tech',
+        address: 'https://rpc.constantine.archway.io',
         provider: 'Archway'
       }, {
         address: 'https://archway-testnet-rpc.polkachu.com',
         provider: 'Polkachu'
       }],
     rest: [{
-        address: 'https://api.constantine.archway.tech',
+        address: 'https://api.constantine.archway.io',
         provider: 'Archway'
       }]
   },

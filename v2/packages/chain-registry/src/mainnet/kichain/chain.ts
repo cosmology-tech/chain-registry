@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://foundation.ki/',
   prettyName: 'Ki',
+  chainType: 'cosmos',
   chainId: 'kichain-2',
   bech32Prefix: 'ki',
   daemonName: 'kid',
@@ -27,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/KiFoundation/ki-tools',
+    recommendedVersion: '5.0.1',
+    compatibleVersions: ['5.0.0', '5.0.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Mainnet/kichain-2/genesis.json'
+    },
+    versions: [{
+        name: '5.0.0',
+        recommendedVersion: '5.0.1',
+        compatibleVersions: ['5.0.0', '5.0.1']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
@@ -56,7 +67,7 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://kichain-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/kichain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -66,6 +77,10 @@ const info: Chain = {
       {
         address: 'https://ki-rpc.ibs.team/',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://rpc.kichain-2.kichain.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     rest: [
@@ -98,12 +113,16 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://kichain-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/kichain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://ki-api.ibs.team/',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://api.kichain-2.kichain.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     grpc: [
@@ -124,8 +143,12 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'kichain-grpc.lavenderfive.com:443',
+        address: 'kichain.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'grpc.kichain-2.kichain.aviaone.com:9230',
+        provider: 'AVIAONE 🟢'
       }
     ]
   },
@@ -157,11 +180,20 @@ const info: Chain = {
       url: 'https://atomscan.com/ki-chain',
       txPage: 'https://atomscan.com/ki-chain/transactions/${txHash}',
       accountPage: 'https://atomscan.com/ki-chain/accounts/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE Explorer 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/kichain',
+      txPage: 'https://mainnet.explorer.aviaone.com/kichain/transactions/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/kichain/accounts/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg',
+      theme: {
+        primaryColorHex: '#1c04fc'
+      }
     }]
 };
 export default info;

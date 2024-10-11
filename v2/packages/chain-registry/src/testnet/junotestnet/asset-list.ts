@@ -24,7 +24,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The native token of NEXX GEN AI',
@@ -44,7 +45,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/nexx.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       typeAsset: 'sdk.coin',
@@ -74,8 +76,15 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'juno',
+            baseDenom: 'factory/juno1vwmnqk0vyxc96qgffrure4nqxupjrql0zut8s02hadgp0n79r8xq5xdsxy/ARENA'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/arena.png',
+          theme: {
+            primaryColorHex: '#dc6c24'
+          }
         }]
     }
   ]

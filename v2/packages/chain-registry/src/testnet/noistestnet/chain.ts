@@ -1,11 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'noistestnet',
   status: 'live',
   networkType: 'testnet',
   website: 'https://nois.network',
   prettyName: 'Nois',
+  chainType: 'cosmos',
   chainId: 'nois-testnet-005',
   bech32Prefix: 'nois',
   daemonName: 'noisd',
@@ -30,9 +31,50 @@ const info: Chain = {
     }
   },
   codebase: {
+    gitRepo: 'https://github.com/noislabs/noisd',
+    recommendedVersion: 'v1.0.1',
+    compatibleVersions: ['v1.0.1'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.30',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30'
+    genesis: {
+      name: 'v1',
+      genesisUrl: 'https://raw.githubusercontent.com/noislabs/networks/nois-testnet-005/nois-testnet-005/genesis.json'
+    },
+    versions: [{
+        name: 'v1',
+        tag: 'v1.0.1',
+        height: 0,
+        recommendedVersion: 'v1.0.1',
+        compatibleVersions: ['v1.0.1'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',

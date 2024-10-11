@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'qwoyntestnet',
   assets: [{
       description: 'QWOYN is the native governance token for the Qwoyn Studios Platform',
@@ -20,7 +20,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/qwoyntestnet/images/qwoyn.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

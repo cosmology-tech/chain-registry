@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://archway.io/',
   prettyName: 'Archway',
+  chainType: 'cosmos',
   chainId: 'archway-1',
   bech32Prefix: 'archway',
   daemonName: 'archwayd',
@@ -30,9 +31,210 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: 'v0.45.16',
+    gitRepo: 'https://github.com/archway-network/archway',
+    recommendedVersion: 'v8.0.0',
+    compatibleVersions: ['v8.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_linux_amd64',
+      "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_linux_arm64',
+      "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_amd64',
+      "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_arm64'
+    },
+    cosmosSdkVersion: 'v0.47.11',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    cosmwasmVersion: 'v0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.33.0'
+    genesis: {
+      genesisUrl: 'https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz'
+    },
+    versions: [
+      {
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.1',
+        compatibleVersions: ['v1.0.0', 'v1.0.1'],
+        tag: 'v1.0.1',
+        height: 1,
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.27'
+        },
+        cosmosSdkVersion: 'v0.45.16',
+        cosmwasmVersion: 'v0.32.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.archway/data/wasm',
+        binaries: {
+          "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v1.0.1/archwayd_linux_amd64',
+          "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v1.0.1/archwayd_linux_arm64'
+        },
+        nextVersionName: 'v2.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        cosmwasm: {
+          version: 'v0.32.0',
+          path: '$HOME/.archway/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.3.1'
+        }
+      },
+      {
+        name: 'v2.0.0',
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        tag: 'v2.0.0',
+        proposal: 10,
+        height: 525000,
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        cosmosSdkVersion: 'v0.45.16',
+        cosmwasmVersion: 'v0.32.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.archway/data/wasm',
+        binaries: {
+          "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v2.0.0/archwayd_linux_amd64',
+          "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v2.0.0/archwayd_linux_arm64'
+        },
+        nextVersionName: 'v4.0.2',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        cosmwasm: {
+          version: 'v0.32.0',
+          path: '$HOME/.archway/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.3.1'
+        }
+      },
+      {
+        name: 'v4.0.2',
+        recommendedVersion: 'v4.0.3',
+        compatibleVersions: ['v4.0.3'],
+        proposal: 21,
+        height: 1215711,
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        cosmosSdkVersion: 'v0.45.16',
+        cosmwasmVersion: 'v0.33.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.archway/data/wasm',
+        binaries: {
+          "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_linux_amd64',
+          "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_linux_arm64',
+          "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_darwin_amd64',
+          "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_darwin_arm64'
+        },
+        nextVersionName: 'v6.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        cosmwasm: {
+          version: 'v0.33.0',
+          path: '$HOME/.archway/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.3.1'
+        }
+      },
+      {
+        name: 'v6.0.0',
+        recommendedVersion: 'v6.0.3',
+        compatibleVersions: ['v6.0.3'],
+        proposal: 38,
+        height: 3554500,
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmosSdkVersion: 'v0.47.10',
+        cosmwasmVersion: 'archway-network/archway-wasmd v0.45.0-archway',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.archway/data/wasm',
+        binaries: {
+          "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_linux_amd64',
+          "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_linux_arm64',
+          "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_darwin_amd64',
+          "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_darwin_arm64'
+        },
+        nextVersionName: 'v7.0.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          repo: 'https://github.com/archway-network/archway-wasmd',
+          tag: 'v0.45.0-archway',
+          path: '$HOME/.archway/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      },
+      {
+        name: 'v7.0.0',
+        proposal: 43,
+        height: 4473000,
+        recommendedVersion: 'v8.0.0',
+        compatibleVersions: ['v8.0.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_linux_amd64',
+          "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_linux_arm64',
+          "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_amd64',
+          "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_arm64'
+        },
+        cosmosSdkVersion: 'v0.47.11',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.5'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.11'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
@@ -78,10 +280,6 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
-        address: 'https://rpc-archway.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://archway-rpc.w3coins.io',
         provider: 'w3coins'
       },
@@ -90,7 +288,7 @@ const info: Chain = {
         provider: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀'
       },
       {
-        address: 'https://archway-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/archway',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -134,20 +332,16 @@ const info: Chain = {
         provider: 'StakeUp'
       },
       {
-        address: 'https://archway.api.trivium.network:26657',
-        provider: 'TriviumX | Architech'
-      },
-      {
-        address: 'https://archway-rpc.tienthuattoan.ventures',
-        provider: 'TienThuatToan'
-      },
-      {
         address: 'https://archway-rpc.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
       },
       {
         address: 'https://rpc.archway.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rpc-archway.luckyfriday.io/',
+        provider: 'GlobalStake'
       },
       {
         address: 'https://archway-rpc.noders.services',
@@ -192,11 +386,7 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
-        address: 'https://lcd-archway.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
-        address: 'https://archway-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/archway',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -234,10 +424,6 @@ const info: Chain = {
       {
         address: 'https://api.archway.stakeup.tech',
         provider: 'StakeUp'
-      },
-      {
-        address: 'https://archway.api.trivium.network:1317',
-        provider: 'TriviumX | Architech'
       },
       {
         address: 'https://archway-mainnet-archive.allthatnode.com:1317',
@@ -286,7 +472,7 @@ const info: Chain = {
         provider: 'AM Solutions'
       },
       {
-        address: 'archway-grpc.lavenderfive.com:443',
+        address: 'archway.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -332,10 +518,6 @@ const info: Chain = {
       {
         address: 'grpc-archway-mainnet.testnet-pride.com:9096',
         provider: 'TestnetPride'
-      },
-      {
-        address: 'archway.api.trivium.network:9090',
-        provider: 'TriviumX | Architech'
       },
       {
         address: 'archway-grpc.tienthuattoan.ventures:9290',
@@ -402,11 +584,20 @@ const info: Chain = {
       url: 'https://ezstaking.app/archway',
       txPage: 'https://ezstaking.app/archway/txs/${txHash}',
       accountPage: 'https://ezstaking.app/archway/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/archway',
+      txPage: 'https://mainnet.whispernode.com/archway/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/archway/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/archway.svg',
+      theme: {
+        primaryColorHex: '#fc4c04'
+      }
     }]
 };
 export default info;

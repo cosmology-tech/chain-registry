@@ -1,11 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'chain4energytestnet',
   status: 'live',
   networkType: 'testnet',
   website: 'https://c4e.io/',
   prettyName: 'Chain4Energy Testnet',
+  chainType: 'cosmos',
   chainId: 'babajaga-1',
   bech32Prefix: 'c4e',
   daemonName: 'c4ed',
@@ -27,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/chain4energy/c4e-chain',
+    recommendedVersion: 'v1.2.0',
+    compatibleVersions: ['v1.2.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/chain4energy/c4e-chains/main/babajaga-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.2.0',
+        recommendedVersion: 'v1.2.0',
+        compatibleVersions: ['v1.2.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'

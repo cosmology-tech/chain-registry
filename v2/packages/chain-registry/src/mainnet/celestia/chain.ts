@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'celestia',
+  chainType: 'cosmos',
   chainId: 'celestia',
   prettyName: 'Celestia',
   status: 'live',
@@ -27,7 +28,76 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.46.16'
+    gitRepo: 'https://github.com/celestiaorg/celestia-app',
+    recommendedVersion: 'v2.1.2',
+    compatibleVersions: [
+      'v2.0.0',
+      'v2.1.0',
+      'v2.1.1',
+      'v2.1.2'
+    ],
+    cosmosSdkVersion: 'celestiaorg/cosmos-sdk v1.24.1-sdk-v0.46.16',
+    consensus: {
+      type: 'tendermint',
+      version: 'v1.40.0',
+      repo: 'https://github.com/celestiaorg/celestia-core',
+      tag: 'v1.40.0-tm-v0.34.29'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json'
+    },
+    versions: [{
+        name: 'v1',
+        recommendedVersion: 'v1.13.0',
+        compatibleVersions: [
+          'v1.3.0',
+          'v1.6.0',
+          'v1.7.0',
+          'v1.9.0',
+          'v1.10.1',
+          'v1.11.0',
+          'v1.13.0'
+        ],
+        cosmosSdkVersion: 'celestiaorg/cosmos-sdk v1.23.0-sdk-v0.46.16',
+        consensus: {
+          type: 'tendermint',
+          version: 'v1.35.0',
+          repo: 'https://github.com/celestiaorg/celestia-core',
+          tag: 'v1.35.0-tm-v0.34.29'
+        },
+        nextVersionName: 'v2',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/celestiaorg/cosmos-sdk',
+          version: 'v1.23.0',
+          tag: 'v1.23.0-sdk-v0.46.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.2.1'
+        }
+      }, {
+        name: 'v2',
+        height: 2371495,
+        recommendedVersion: 'v2.1.2',
+        compatibleVersions: [
+          'v2.0.0',
+          'v2.1.0',
+          'v2.1.1',
+          'v2.1.2'
+        ],
+        nextVersionName: ''
+      }],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/celestiaorg/cosmos-sdk',
+      version: 'v1.24.1',
+      tag: 'v1.24.1-sdk-v0.46.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.2.1'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
@@ -53,7 +123,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://celestia-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/celestia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -135,6 +205,18 @@ const info: Chain = {
       {
         address: 'https://celestia-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc.celestia.citizenweb3.com',
+        provider: 'Citizen Web3'
+      },
+      {
+        address: 'https://celestia-mainnet-rpc.itrocket.net',
+        provider: '🚀 itrocket 🚀'
+      },
+      {
+        address: 'https://rpc.celestia.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ],
     rest: [
@@ -159,7 +241,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://celestia-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/celestia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -229,6 +311,14 @@ const info: Chain = {
       {
         address: 'https://celestia-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://celestia-mainnet-api.itrocket.net',
+        provider: '🚀 itrocket 🚀'
+      },
+      {
+        address: 'https://api.celestia.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ],
     grpc: [
@@ -241,7 +331,7 @@ const info: Chain = {
         provider: 'AutoStake | Delegate for StakeDrops'
       },
       {
-        address: 'https://celestia-grpc.lavenderfive.com:443',
+        address: 'celestia.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -307,6 +397,14 @@ const info: Chain = {
       {
         address: 'celestia-grpc.noders.services:11090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'celestia-mainnet-grpc.itrocket.net:40090',
+        provider: '🚀 itrocket 🚀'
+      },
+      {
+        address: 'grpc.celestia.mainnet.dteam.tech:28090',
+        provider: 'DTEAM'
       }
     ]
   },
@@ -351,11 +449,26 @@ const info: Chain = {
       url: 'https://ezstaking.app/celestia',
       txPage: 'https://ezstaking.app/celestia/txs/${txHash}',
       accountPage: 'https://ezstaking.app/celestia/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 itrocket 🚀',
+      url: 'https://mainnet.itrocket.net/celestia',
+      txPage: 'https://mainnet.itrocket.net/celestia/transaction/${txHash}',
+      accountPage: 'https://mainnet.itrocket.net/celestia/account/${accountAddress}'
+    },
+    {
+      kind: 'DTEAM | Explorer',
+      url: 'https://explorer.mainnet.dteam.tech/celestia',
+      txPage: 'https://explorer.mainnet.dteam.tech/celestia/transaction/${txHash}',
+      accountPage: 'https://explorer.mainnet.dteam.tech/celestia/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+      theme: {
+        primaryColorHex: '#7c2cfb'
+      }
     }]
 };
 export default info;

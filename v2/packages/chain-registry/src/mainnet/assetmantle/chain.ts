@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://assetmantle.one/',
   prettyName: 'AssetMantle',
+  chainType: 'cosmos',
   chainId: 'mantle-1',
   bech32Prefix: 'mantle',
   daemonName: 'mantleNode',
@@ -25,7 +26,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/AssetMantle/node.git',
+    recommendedVersion: 'v0.3.0',
+    compatibleVersions: ['v0.3.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/AssetMantle/genesisTransactions/main/mantle-1/final_genesis.json'
+    },
+    versions: [{
+        name: 'v0.3.0',
+        recommendedVersion: 'v0.3.0',
+        compatibleVersions: ['v0.3.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',
@@ -53,10 +64,6 @@ const info: Chain = {
       {
         address: 'https://rpc-assetmantle-ia.cosmosia.notional.ventures/',
         provider: 'Notional'
-      },
-      {
-        address: 'https://rpc-assetmantle.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://rpc.mantle.paranorm.pro:443',
@@ -91,10 +98,6 @@ const info: Chain = {
       {
         address: 'https://assetmantle-api.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://lcd-assetmantle.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://api.mantle.paranorm.pro:443',
@@ -165,11 +168,20 @@ const info: Chain = {
       url: 'https://atomscan.com/assetmantle',
       txPage: 'https://atomscan.com/assetmantle/transactions/${txHash}',
       accountPage: 'https://atomscan.com/assetmantle/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/assetmantle',
+      txPage: 'https://mainnet.whispernode.com/assetmantle/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/assetmantle/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo_Dark.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo_Dark.svg',
+      theme: {
+        primaryColorHex: '#f6b620'
+      }
     }]
 };
 export default info;

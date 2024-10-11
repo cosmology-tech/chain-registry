@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'imv',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.svg',
+          theme: {
+            primaryColorHex: '#4c54e4'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

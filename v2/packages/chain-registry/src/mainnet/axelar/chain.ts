@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'axelar',
+  chainType: 'cosmos',
   chainId: 'axelar-dojo-1',
   prettyName: 'Axelar',
   status: 'live',
@@ -27,13 +28,127 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
+    gitRepo: 'https://github.com/axelarnetwork/axelar-core',
+    recommendedVersion: 'v1.0.2',
+    compatibleVersions: ['v1.0.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-linux-amd64-v1.0.2',
+      "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-amd64-v1.0.2',
+      "darwin/arm64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-arm64-v1.0.2'
+    },
+    cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20240321205000-47c0c80e20ca',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.31'
+    },
+    cosmwasmVersion: 'v0.33.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.33.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v0.33.0',
+        recommendedVersion: 'v0.33.0',
+        compatibleVersions: ['v0.33.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.33.0/axelard-linux-amd64-v0.33.0',
+          "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.33.0/axelard-darwin-amd64-v0.33.0'
+        },
+        nextVersionName: 'v0.34.0'
+      },
+      {
+        name: 'v0.34.0',
+        recommendedVersion: 'v0.34.0',
+        compatibleVersions: ['v0.34.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.34.0/axelard-linux-amd64-v0.34.0',
+          "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.34.0/axelard-darwin-amd64-v0.34.0'
+        },
+        nextVersionName: 'v0.35ps://github.com/axelarnetwork/axelar-core/releases/down'
+      },
+      {
+        name: 'v0.35',
+        recommendedVersion: 'v0.35.5',
+        compatibleVersions: ['v0.35.5'],
+        binaries: {
+          "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.35.5/axelard-linux-amd64-v0.35.5',
+          "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.35.5/axelard-darwin-amd64-v0.35.5'
+        },
+        cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.31'
+        },
+        cosmwasmVersion: 'v0.33.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.0',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/axelarnetwork/cosmos-sdk',
+          version: 'v0.45.17',
+          tag: 'v0.45.17-0.20230904150332-37fb903a6c62'
+        },
+        cosmwasm: {
+          version: 'v0.33.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.5.1'
+        }
+      },
+      {
+        name: 'v1.0',
+        recommendedVersion: 'v1.0.2',
+        compatibleVersions: ['v1.0.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-linux-amd64-v1.0.2',
+          "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-amd64-v1.0.2',
+          "darwin/arm64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-arm64-v1.0.2'
+        },
+        cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20240321205000-47c0c80e20ca',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.31'
+        },
+        cosmwasmVersion: 'v0.33.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/axelarnetwork/cosmos-sdk',
+          version: 'v0.45.17',
+          tag: 'v0.45.17-0.20240321205000-47c0c80e20ca'
+        },
+        cosmwasm: {
+          version: 'v0.33.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.6.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/axelarnetwork/cosmos-sdk',
+      version: 'v0.45.17',
+      tag: 'v0.45.17-0.20240321205000-47c0c80e20ca'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.6.0'
+    },
+    cosmwasm: {
+      version: 'v0.33.0',
+      enabled: true
+    }
   },
   logoURIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
   },
   description: 'Axelar delivers secure cross-chain communication for Web3. Our infrastructure enables dApp users to interact with any asset or application, on any chain, with one click.',
   apis: {
@@ -124,6 +239,10 @@ const info: Chain = {
       {
         address: 'https://axelar-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://axelar.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -284,11 +403,31 @@ const info: Chain = {
       url: 'https://ezstaking.app/axelar',
       txPage: 'https://ezstaking.app/axelar/txs/${txHash}',
       accountPage: 'https://ezstaking.app/axelar/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/axelar',
+      txPage: 'https://mainnet.whispernode.com/axelar/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/axelar/account/${accountAddress}'
     }
   ],
   images: [{
+      imageSync: {
+        chainName: 'axelar',
+        baseDenom: 'uaxl'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg',
+      theme: {
+        primaryColorHex: '#040404'
+      }
+    }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg',
+      theme: {
+        primaryColorHex: '#040404',
+        circle: false
+      }
     }]
 };
 export default info;

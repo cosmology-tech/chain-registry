@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'axelartestnet',
   assets: [
     {
@@ -24,7 +24,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Circle\'s stablecoin on Axelar',
@@ -56,7 +57,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Wrapped Ether on Axelar',
@@ -88,7 +90,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Wrapped Moonbeam on Axelar',
@@ -120,7 +123,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Wrapped Matic on Axelar',
@@ -152,7 +156,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Wrapped BNB on Axelar',
@@ -186,7 +191,8 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/wbnb.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Wrapped AVAX on Axelar.',
@@ -218,7 +224,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Wrapped FTM on Axelar.',
@@ -250,7 +257,8 @@ const info: AssetList = {
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };

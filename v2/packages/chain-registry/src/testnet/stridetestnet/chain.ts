@@ -5,7 +5,8 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Stride Testnet',
-  chainId: 'stride-testnet-1',
+  chainType: 'cosmos',
+  chainId: 'stride-internal-1',
   bech32Prefix: 'stride',
   daemonName: 'strided',
   nodeHome: '$HOME/.stride',
@@ -23,7 +24,43 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.46'
+    gitRepo: 'https://github.com/Stride-Labs/stride',
+    recommendedVersion: 'v8.0.0-testnet',
+    compatibleVersions: ['v8.0.0-testnet'],
+    cosmosSdkVersion: '0.46',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Stride-Labs/mainnet/main/testnet/genesis.json'
+    },
+    versions: [{
+        name: 'v8.0.0-testnet',
+        recommendedVersion: 'v8.0.0-testnet',
+        compatibleVersions: ['v8.0.0-testnet'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.1.0'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.1.0'
+    }
   },
   apis: {
     rpc: [{

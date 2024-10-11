@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'tenet-1b000f7b-59cb-4e06-89ce-d62b32d362b9',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

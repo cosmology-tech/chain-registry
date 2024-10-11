@@ -22,8 +22,12 @@ const info: AssetList = {
       keywords: ['medas'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg',
+          theme: {
+            primaryColorHex: '#147ccc'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://realio.network/',
   prettyName: 'Realio Network',
+  chainType: 'cosmos',
   chainId: 'realionetwork_3301-1',
   bech32Prefix: 'realio',
   nodeHome: '$HOME/.realio-network',
@@ -29,7 +30,139 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.46.12'
+    gitRepo: 'https://github.com/realiotech/realio-network',
+    recommendedVersion: 'v0.9.3',
+    compatibleVersions: ['v0.9.3'],
+    binaries: {
+      "linux/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Linux_x86_64.tar.gz',
+      "linux/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Darwin_x86_64.tar.gz',
+      "darwin/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Windows_x86_64.zip'
+    },
+    cosmosSdkVersion: 'v0.46.12',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.27'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/realiotech/mainnet/main/realionetwork_3301-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v0.8.0-rc4',
+        recommendedVersion: 'v0.8.0-rc4',
+        compatibleVersions: ['v0.8.0-rc4'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        nextVersionName: 'v0.8.3',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.0'
+        }
+      },
+      {
+        name: 'v0.8.3',
+        recommendedVersion: 'v0.8.3',
+        compatibleVersions: [
+          'v0.8.1',
+          'v0.8.2',
+          'v0.8.3'
+        ],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.27'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.8.3/realio-network_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.8.3/realio-network_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.8.3/realio-network_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.8.3/realio-network_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.8.3/realio-network_Windows_x86_64.zip'
+        },
+        nextVersionName: 'multistaking',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.1'
+        }
+      },
+      {
+        name: 'multistaking',
+        proposal: 7,
+        height: 5989000,
+        recommendedVersion: 'v0.9.2',
+        compatibleVersions: ['v0.9.2'],
+        cosmosSdkVersion: 'v0.46.12',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.2/realio-network_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.2/realio-network_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.2/realio-network_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.2/realio-network_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.2/realio-network_Windows_x86_64.zip'
+        },
+        nextVersionName: 'Commission',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.12'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.1'
+        }
+      },
+      {
+        name: 'Commission',
+        proposal: 9,
+        height: 7526754,
+        recommendedVersion: 'v0.9.3',
+        compatibleVersions: ['v0.9.3'],
+        cosmosSdkVersion: 'v0.46.12',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Windows_x86_64.zip'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.12'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v6.1.1'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.46.12'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.1.1'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png'
@@ -79,6 +212,10 @@ const info: Chain = {
       {
         address: 'https://rpc-realio.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://realio_rio_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -125,6 +262,10 @@ const info: Chain = {
       {
         address: 'https://api-realio.blockval.io',
         provider: 'Blockval'
+      },
+      {
+        address: 'https://realio_rio_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -193,6 +334,10 @@ const info: Chain = {
       {
         address: 'https://realio-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://realio_rio_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ]
   },
@@ -232,10 +377,19 @@ const info: Chain = {
       url: 'https://explorer.declab.pro/realio',
       txPage: 'https://explorer.declab.pro/realio/tx/${txHash}',
       accountPage: 'https://explorer.declab.pro/realio/account/{$accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/realio',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/realio/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/realio/account/${accountAddress}'
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/realio/images/rio.png',
+      theme: {
+        primaryColorHex: '#181818'
+      }
     }]
 };
 export default info;

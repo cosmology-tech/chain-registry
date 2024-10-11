@@ -29,7 +29,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }, {
       description: 'The native staking and governance token of the Theta testnet version of the Cosmos Hub, via Osmosis.',
       denomUnits: [{
@@ -39,6 +40,7 @@ const info: AssetList = {
           denom: 'atom',
           exponent: 6
         }],
+      typeAsset: 'ics20',
       base: 'ibc/8A138BC76D0FB2665F8937EC2BF01B9F6A714F6127221A0E155106A45E09BCC5',
       name: 'Cosmos',
       display: 'atom',
@@ -46,8 +48,8 @@ const info: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            chainName: 'osmosis',
-            baseDenom: 'ibc/B28CFD38D84A480EF2A03AC575DCB05004D934A603A5A642888847BCDA6340C0',
+            chainName: 'osmosistestnet',
+            baseDenom: 'ibc/9FF2B7A5F55038A7EE61F4FD6749D9A648B48E89830F2682B67B5DC158E2753C',
             channelId: 'channel-4156'
           },
           chain: {
@@ -60,6 +62,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'osmosistestnet',
+            baseDenom: 'ibc/9FF2B7A5F55038A7EE61F4FD6749D9A648B48E89830F2682B67B5DC158E2753C'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }]

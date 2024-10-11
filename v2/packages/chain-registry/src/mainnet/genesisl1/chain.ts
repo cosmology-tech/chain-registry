@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'GenesisL1',
+  chainType: 'cosmos',
   chainId: 'genesis_29-2',
   bech32Prefix: 'genesis',
   daemonName: 'genesisd',
@@ -24,7 +25,43 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.46.15'
+    gitRepo: 'https://github.com/alpha-omega-labs/genesis-crypto',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    cosmosSdkVersion: '0.46.15',
+    genesis: {
+      name: 'plan_ethermint',
+      genesisUrl: 'https://raw.githubusercontent.com/alpha-omega-labs/genesis-parameters/main/genesis_29-2/genesis.json'
+    },
+    versions: [{
+        name: 'plan_ethermint',
+        tag: 'v0.3.0',
+        height: 0,
+        recommendedVersion: 'v0.5.0',
+        compatibleVersions: ['v0.3.0', 'v0.5.0'],
+        cosmosSdkVersion: '0.44.5',
+        nextVersionName: 'plan_crypto',
+        sdk: {
+          type: 'cosmos',
+          version: '0.44.5'
+        }
+      }, {
+        name: 'plan_crypto',
+        tag: 'v1.0.0',
+        height: 7400000,
+        proposal: 92,
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0'],
+        cosmosSdkVersion: '0.46.15',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.15'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.15'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png',
@@ -34,6 +71,9 @@ const info: Chain = {
     rpc: [{
         address: 'https://26657.genesisl1.org',
         provider: 'GenesisL1'
+      }, {
+        address: 'https://genesisl1-rpc.zenode.app',
+        provider: 'anodeofzen'
       }],
     rest: [{
         address: 'https://api.genesisl1.org',
@@ -73,7 +113,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

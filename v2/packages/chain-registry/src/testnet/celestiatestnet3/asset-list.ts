@@ -3,7 +3,6 @@ const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chainName: 'celestiatestnet3',
   assets: [{
-      description: '',
       denomUnits: [{
           denom: 'utia',
           exponent: 0
@@ -22,7 +21,8 @@ const info: AssetList = {
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet3/images/celestia.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/celestiatestnet3/images/celestia.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

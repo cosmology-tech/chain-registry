@@ -21,8 +21,12 @@ const info: AssetList = {
       coingeckoId: 'bostrom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg',
+          theme: {
+            primaryColorHex: '#4cea4e'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The liquid staking token of Bostrom',
@@ -41,8 +45,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg',
+          theme: {
+            primaryColorHex: '#ffffff'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The resource token of Bostrom',
@@ -65,8 +73,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.svg',
+          theme: {
+            primaryColorHex: '#f4ecce'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The resource token of Bostrom',
@@ -89,8 +101,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.svg',
+          theme: {
+            primaryColorHex: '#fba809'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The staking token of Cyber',
@@ -109,8 +125,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg',
+          theme: {
+            primaryColorHex: '#1e8fa9'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

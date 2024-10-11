@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'CosmWasm Testnet',
+  chainType: 'cosmos',
   chainId: 'malaga-420',
   bech32Prefix: 'wasm',
   daemonName: 'wasmd',
@@ -25,9 +26,47 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/CosmWasm/wasmd',
+    recommendedVersion: 'v0.27',
+    compatibleVersions: ['v0.27'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.27',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.27'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-5/genesis.json'
+    },
+    versions: [{
+        name: 'v0.27',
+        recommendedVersion: 'v0.27',
+        compatibleVersions: ['v0.27'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.27',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.27',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.27',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

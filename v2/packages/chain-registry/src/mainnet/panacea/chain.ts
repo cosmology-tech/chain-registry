@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://medibloc.com/en/',
   prettyName: 'Medibloc',
+  chainType: 'cosmos',
   chainId: 'panacea-3',
   bech32Prefix: 'panacea',
   daemonName: 'panacead',
@@ -27,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/medibloc/panacea-core',
+    recommendedVersion: 'v2.0.6',
+    compatibleVersions: ['v2.0.5'],
+    genesis: {
+      genesisUrl: 'https://github.com/medibloc/panacea-mainnet/raw/master/panacea-3/genesis.json'
+    },
+    versions: [{
+        name: 'v2.0.6',
+        recommendedVersion: 'v2.0.6',
+        compatibleVersions: ['v2.0.5']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',
@@ -65,7 +76,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg',
+      theme: {
+        primaryColorHex: '#2474ec'
+      }
     }]
 };
 export default info;

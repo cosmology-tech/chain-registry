@@ -23,12 +23,16 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
+          theme: {
+            primaryColorHex: '#042ca4'
+          }
         }],
       socials: {
         website: 'https://www.gravitybridge.net/',
         twitter: 'https://twitter.com/gravity_bridge'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'pSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.',
@@ -68,8 +72,12 @@ const info: AssetList = {
             baseDenom: '0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg',
+          theme: {
+            primaryColorHex: '#050505'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge WETH',
@@ -103,8 +111,13 @@ const info: AssetList = {
           provider: 'Gravity Bridge'
         }],
       images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge USDC',
@@ -119,7 +132,9 @@ const info: AssetList = {
       name: 'USD Coin',
       display: 'gusdc',
       symbol: 'USDC',
+      coingeckoId: 'gravity-bridge-usdc',
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       traces: [{
@@ -138,8 +153,18 @@ const info: AssetList = {
           provider: 'Gravity Bridge'
         }],
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-        }]
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge USDT',
@@ -155,6 +180,7 @@ const info: AssetList = {
       display: 'gusdt',
       symbol: 'USDT',
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       },
       traces: [{
@@ -173,8 +199,19 @@ const info: AssetList = {
           provider: 'Gravity Bridge'
         }],
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-        }]
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge WBTC',
@@ -209,9 +246,17 @@ const info: AssetList = {
           provider: 'Gravity Bridge'
         }],
       images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg',
+          theme: {
+            primaryColorHex: '#f39444'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge DAI',
@@ -245,8 +290,13 @@ const info: AssetList = {
           provider: 'Gravity Bridge'
         }],
       images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0x6b175474e89094c44da98b954eedeac495271d0f'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge sDAI',
@@ -275,12 +325,16 @@ const info: AssetList = {
         }],
       images: [{
           imageSync: {
-            baseDenom: 'ethereum',
-            chainName: '0x83F20F44975D03b1b09e64809B757c47f942BEeA'
+            chainName: 'ethereum',
+            baseDenom: '0x83F20F44975D03b1b09e64809B757c47f942BEeA'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg',
+          theme: {
+            primaryColorHex: '#7ec231'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge OCC',
@@ -311,8 +365,12 @@ const info: AssetList = {
             chainName: 'ethereum',
             baseDenom: '0x2F109021aFe75B949429fe30523Ee7C0D5B27207'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png',
+          theme: {
+            primaryColorHex: '#313648'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The PAGE token is used for actions in the PageDAO NFT literary ecosystem and for DAO governance.',
@@ -345,8 +403,12 @@ const info: AssetList = {
             baseDenom: '0x60e683C6514Edd5F758A55b6f393BeBBAfaA8d5e'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg',
+          theme: {
+            primaryColorHex: '#ebb324'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Gravity Bridge Paxos Gold',
@@ -375,12 +437,16 @@ const info: AssetList = {
         }],
       images: [{
           imageSync: {
-            baseDenom: 'ethereum',
-            chainName: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
+            chainName: 'ethereum',
+            baseDenom: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg',
+          theme: {
+            primaryColorHex: '#ebe60e'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

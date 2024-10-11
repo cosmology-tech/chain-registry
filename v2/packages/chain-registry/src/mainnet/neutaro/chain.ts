@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://neutaro.com/',
   prettyName: 'Neutaro',
+  chainType: 'cosmos',
   chainId: 'Neutaro-1',
   bech32Prefix: 'neutaro',
   daemonName: 'neutaro',
@@ -27,7 +28,18 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Neutaro/Neutaro',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'http://154.26.153.186/genesis.json'
+    },
+    versions: [{
+        name: 'Neutaro1',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0'],
+        nextVersionName: ''
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
@@ -39,22 +51,16 @@ const info: Chain = {
         address: 'https://rpc2.neutaro.tech:443',
         provider: 'Neutaro'
       }, {
-        address: 'https://rpc-neutaro.blockval.io',
-        provider: 'Blockval'
+        address: 'https://rpc3.neutaro.tech:26657',
+        provider: 'Neutaro'
       }],
     rest: [{
         address: 'https://api2.neutaro.tech:443',
         provider: 'Neutaro'
-      }, {
-        address: 'https://api-neutaro.blockval.io',
-        provider: 'Blockval'
       }],
     grpc: [{
         address: 'https://grpc2.neutaro.tech:443',
         provider: 'Neutaro'
-      }, {
-        address: 'https://grpc-neutaro.blockval.io',
-        provider: 'Blockval'
       }]
   },
   explorers: [{
@@ -65,7 +71,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg',
+      theme: {
+        primaryColorHex: '#cbfb06'
+      }
     }]
 };
 export default info;

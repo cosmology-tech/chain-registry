@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../../assetlist.schema.json',
   chainName: 'binancesmartchaintestnet',
   assets: [
     {
@@ -12,6 +12,7 @@ const info: AssetList = {
           denom: 'bnb',
           exponent: 18
         }],
+      typeAsset: 'evm-base',
       base: 'wei',
       name: 'Binance Coin',
       display: 'bnb',
@@ -69,7 +70,7 @@ const info: AssetList = {
       denomUnits: [{
           denom: '0xc2fA98faB811B785b81c64Ac875b31CC9E40F9D2',
           exponent: 0,
-          aliases: ['uusdc']
+          aliases: ['uausdc']
         }, {
           denom: 'axlusdc',
           exponent: 6
@@ -82,7 +83,7 @@ const info: AssetList = {
           type: 'bridge',
           counterparty: {
             chainName: 'axelartestnet',
-            baseDenom: 'uusdc'
+            baseDenom: 'uausdc'
           },
           provider: 'Axelar'
         }],
@@ -90,6 +91,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'axelartestnet',
+            baseDenom: 'uausdc'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
     }

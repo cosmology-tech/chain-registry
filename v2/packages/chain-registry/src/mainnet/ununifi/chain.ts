@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://ununifi.io/',
   prettyName: 'UnUniFi',
+  chainType: 'cosmos',
   chainId: 'ununifi-beta-v1',
   bech32Prefix: 'ununifi',
   daemonName: 'ununifid',
@@ -30,9 +31,357 @@ const info: Chain = {
     }
   },
   codebase: {
+    gitRepo: 'https://github.com/UnUniFi/chain',
+    recommendedVersion: 'v4.0.2',
+    compatibleVersions: ['v4.0.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.1/ununifid'
+    },
     cosmosSdkVersion: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.2'
+    },
+    cosmwasmVersion: 'v0.40.1',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.40.1'
+    genesis: {
+      name: 'beta-v1',
+      genesisUrl: 'https://raw.githubusercontent.com/UnUniFi/network/main/launch/ununifi-beta-v1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v2',
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v2.0.0/ununifid'
+        },
+        cosmosSdkVersion: '0.47',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.40',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v2_1',
+        sdk: {
+          type: 'cosmos',
+          version: '0.47'
+        },
+        cosmwasm: {
+          version: '0.40',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.0.0',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v2_1',
+        recommendedVersion: 'v2.1.0',
+        compatibleVersions: ['v2.1.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v2.1.0/ununifid'
+        },
+        proposal: 12,
+        height: 5630000,
+        cosmosSdkVersion: '0.47',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.40',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v2_2',
+        sdk: {
+          type: 'cosmos',
+          version: '0.47'
+        },
+        cosmwasm: {
+          version: '0.40',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v2_2',
+        recommendedVersion: 'v2.2.0',
+        compatibleVersions: ['v2.2.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v2.2.0/ununifid'
+        },
+        proposal: 13,
+        height: 5736100,
+        cosmosSdkVersion: 'v0.47.1-bank-rc2',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.1'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v3',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.1',
+          tag: 'v0.47.1-bank-rc2'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v3',
+        recommendedVersion: 'v3.0.0',
+        compatibleVersions: ['v3.0.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v3.0.0/ununifid'
+        },
+        proposal: 14,
+        height: 5807100,
+        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.1'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v3_1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.3',
+          tag: 'v0.47.3-custom-bank-1'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v3_1',
+        recommendedVersion: 'v3.1.0',
+        compatibleVersions: ['v3.1.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v3.1.0/ununifid'
+        },
+        proposal: 15,
+        height: 6577693,
+        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.1'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v3_2_1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.3',
+          tag: 'v0.47.3-custom-bank-1'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v3_2_1',
+        recommendedVersion: 'v3.2.1',
+        compatibleVersions: ['v3.2.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v3.2.1/ununifid'
+        },
+        proposal: 16,
+        height: 6754737,
+        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.1'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v3_2_2',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.3',
+          tag: 'v0.47.3-custom-bank-1'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v3_2_2',
+        recommendedVersion: 'v3.2.2-query',
+        compatibleVersions: ['v3.2.2', 'v3.2.2-query'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v3.2.2-query/ununifid'
+        },
+        proposal: 18,
+        height: 7061394,
+        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.1'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v4',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.3',
+          tag: 'v0.47.3-custom-bank-1'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v4',
+        recommendedVersion: 'v4.0.0',
+        compatibleVersions: ['v4.0.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.0/ununifid'
+        },
+        proposal: 24,
+        height: 8197583,
+        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.1'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v4_0_1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.3',
+          tag: 'v0.47.3-custom-bank-1'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v4_0_1',
+        recommendedVersion: 'v4.0.1',
+        compatibleVersions: ['v4.0.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.1/ununifid'
+        },
+        proposal: 25,
+        height: 8299656,
+        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.1'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v4_0_2',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.3',
+          tag: 'v0.47.3-custom-bank-1'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.0.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v4_0_2',
+        recommendedVersion: 'v4.0.2',
+        compatibleVersions: ['v4.0.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.2/ununifid'
+        },
+        proposal: 26,
+        height: 9974824,
+        cosmosSdkVersion: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmwasmVersion: 'v0.40.1',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/ununifi/cosmos-sdk',
+          version: 'v0.47.3',
+          tag: 'v0.47.3-custom-bank-1'
+        },
+        cosmwasm: {
+          version: 'v0.40.1',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1',
+          icsEnabled: ['ics20-1']
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/ununifi/cosmos-sdk',
+      version: 'v0.47.3',
+      tag: 'v0.47.3-custom-bank-1'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1',
+      icsEnabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: 'v0.40.1',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.png',
@@ -49,11 +398,11 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://ununifi-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/ununifi',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://ununifi-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/ununifi',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -75,7 +424,7 @@ const info: Chain = {
         provider: 'NodeStake'
       },
       {
-        address: 'https://ununifi-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/ununifi',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -105,7 +454,7 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://ununifi-grpc.lavenderfive.com:443',
+        address: 'ununifi.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -139,7 +488,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.svg',
+      theme: {
+        primaryColorHex: '#546c8c'
+      }
     }]
 };
 export default info;

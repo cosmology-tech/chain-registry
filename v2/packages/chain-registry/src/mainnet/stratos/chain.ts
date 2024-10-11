@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.thestratos.org',
   prettyName: 'Stratos',
+  chainType: 'cosmos',
   chainId: 'stratos-1',
   bech32Prefix: 'st',
   daemonName: 'stchaind',
@@ -15,11 +16,24 @@ const info: Chain = {
   slip44: 606,
   fees: {
     feeTokens: [{
-        denom: 'wei'
+        denom: 'wei',
+        lowGasPrice: 1000000000,
+        averageGasPrice: 1200000000,
+        highGasPrice: 1600000000
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/stratosnet/stratos-chain',
+    recommendedVersion: 'v0.11.2',
+    compatibleVersions: ['v0.11.2'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/stratosnet/mainnet/main/genesis/genesis.json'
+    },
+    versions: [{
+        name: 'v0.11.2',
+        recommendedVersion: 'v0.11.2',
+        compatibleVersions: ['v0.11.2']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
@@ -36,28 +50,17 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'https://rpc-stratos.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://stratos-rpc.noders.services:443',
         provider: '[NODERS]TEAM'
       }
     ],
-    rest: [
-      {
+    rest: [{
         address: 'https://rest.thestratos.org',
         provider: 'thestratos.org'
-      },
-      {
-        address: 'https://lcd-stratos.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
+      }, {
         address: 'https://stratos-api.noders.services:443',
         provider: '[NODERS]TEAM'
-      }
-    ],
+      }],
     grpc: [
       {
         address: 'https://grpc.thestratos.org',
@@ -119,7 +122,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.svg',
+      theme: {
+        primaryColorHex: '#04847c'
+      }
     }]
 };
 export default info;

@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'neutaro',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.svg',
+          theme: {
+            primaryColorHex: '#cbfb06'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

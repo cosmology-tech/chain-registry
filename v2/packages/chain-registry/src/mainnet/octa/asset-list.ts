@@ -23,8 +23,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg',
+          theme: {
+            primaryColorHex: '#04a7f8'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

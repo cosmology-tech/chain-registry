@@ -1,10 +1,11 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'lumenxtestnet',
   status: 'live',
   networkType: 'testnet',
   prettyName: 'LumenX-Test',
+  chainType: 'cosmos',
   chainId: 'lumenx-test',
   bech32Prefix: 'lumen',
   daemonName: 'lumenxd',
@@ -26,7 +27,10 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    ibc: {
+      type: 'go',
+      icsEnabled: ['ics20-1']
+    }
   },
   apis: {
     rpc: [{

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'IRISnet',
+  chainType: 'cosmos',
   chainId: 'irishub-1',
   bech32Prefix: 'iaa',
   daemonName: 'iris',
@@ -25,7 +26,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/irisnet/irishub',
+    recommendedVersion: 'v2.0.3',
+    compatibleVersions: ['v2.0.3'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/irisnet/mainnet/master/config/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v1.3.0',
+        nextVersionName: 'v1.4.1',
+        recommendedVersion: 'v1.3.0',
+        compatibleVersions: ['v1.3.0']
+      },
+      {
+        name: 'v1.4.1',
+        nextVersionName: 'v2.0.0',
+        recommendedVersion: 'v1.4.1',
+        compatibleVersions: ['v1.4.1']
+      },
+      {
+        name: 'v2.0.0',
+        nextVersionName: 'v2.1.0',
+        recommendedVersion: 'v2.0.3',
+        compatibleVersions: ['v2.0.3']
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
@@ -173,7 +199,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg',
+      theme: {
+        primaryColorHex: '#5664ad'
+      }
     }]
 };
 export default info;

@@ -1,5 +1,7 @@
 import { IBCData } from '@chain-registry/v2-types';
 
+import * as _ethereum from './ethereum';
+import * as _solana from './solana';
 import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
@@ -47,6 +49,7 @@ import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
 import * as _evmos from './evmos';
 import * as _fetchhub from './fetchhub';
+import * as _firmachain from './firmachain';
 import * as _furya from './furya';
 import * as _fxcore from './fxcore';
 import * as _galaxy from './galaxy';
@@ -61,23 +64,30 @@ import * as _imversed from './imversed';
 import * as _injective from './injective';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
+import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
 import * as _kichain from './kichain';
+import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
 import * as _kujira from './kujira';
 import * as _kyve from './kyve';
 import * as _lambda from './lambda';
+import * as _lava from './lava';
 import * as _likecoin from './likecoin';
+import * as _lorenzo from './lorenzo';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
+import * as _mande from './mande';
 import * as _mars from './mars';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
 import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
+import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
+import * as _nim from './nim';
 import * as _noble from './noble';
 import * as _nois from './nois';
 import * as _nolus from './nolus';
@@ -86,6 +96,7 @@ import * as _nyx from './nyx';
 import * as _odin from './odin';
 import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
+import * as _onex from './onex';
 import * as _onomy from './onomy';
 import * as _oraichain from './oraichain';
 import * as _osmosis from './osmosis';
@@ -95,6 +106,7 @@ import * as _persistence from './persistence';
 import * as _planq from './planq';
 import * as _point from './point';
 import * as _provenance from './provenance';
+import * as _pryzm from './pryzm';
 import * as _pundix from './pundix';
 import * as _pylons from './pylons';
 import * as _quasar from './quasar';
@@ -104,10 +116,13 @@ import * as _realio from './realio';
 import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _rizon from './rizon';
+import * as _routerchain from './routerchain';
 import * as _saga from './saga';
 import * as _scorum from './scorum';
 import * as _secretnetwork from './secretnetwork';
+import * as _seda from './seda';
 import * as _sei from './sei';
+import * as _self from './self';
 import * as _sentinel from './sentinel';
 import * as _sge from './sge';
 import * as _shareledger from './shareledger';
@@ -119,11 +134,13 @@ import * as _source from './source';
 import * as _stafihub from './stafihub';
 import * as _stargaze from './stargaze';
 import * as _starname from './starname';
+import * as _stratos from './stratos';
 import * as _stride from './stride';
 import * as _teritori from './teritori';
 import * as _terra from './terra';
 import * as _terra2 from './terra2';
 import * as _tgrade from './tgrade';
+import * as _titan from './titan';
 import * as _umee from './umee';
 import * as _unification from './unification';
 import * as _uptick from './uptick';
@@ -131,6 +148,8 @@ import * as _vidulum from './vidulum';
 import * as _xpla from './xpla';
 
 const ibcData: IBCData[] = [
+  ..._ethereum.ibcData,
+  ..._solana.ibcData,
   ..._8ball.ibcData,
   ..._acrechain.ibcData,
   ..._agoric.ibcData,
@@ -178,6 +197,7 @@ const ibcData: IBCData[] = [
   ..._empowerchain.ibcData,
   ..._evmos.ibcData,
   ..._fetchhub.ibcData,
+  ..._firmachain.ibcData,
   ..._furya.ibcData,
   ..._fxcore.ibcData,
   ..._galaxy.ibcData,
@@ -192,23 +212,30 @@ const ibcData: IBCData[] = [
   ..._injective.ibcData,
   ..._irisnet.ibcData,
   ..._jackal.ibcData,
+  ..._joltify.ibcData,
   ..._juno.ibcData,
   ..._kava.ibcData,
   ..._kichain.ibcData,
+  ..._kimanetwork.ibcData,
   ..._konstellation.ibcData,
   ..._kujira.ibcData,
   ..._kyve.ibcData,
   ..._lambda.ibcData,
+  ..._lava.ibcData,
   ..._likecoin.ibcData,
+  ..._lorenzo.ibcData,
   ..._lumenx.ibcData,
   ..._lumnetwork.ibcData,
+  ..._mande.ibcData,
   ..._mars.ibcData,
   ..._medasdigital.ibcData,
   ..._meme.ibcData,
   ..._microtick.ibcData,
   ..._migaloo.ibcData,
+  ..._neutaro.ibcData,
   ..._neutron.ibcData,
   ..._nibiru.ibcData,
+  ..._nim.ibcData,
   ..._noble.ibcData,
   ..._nois.ibcData,
   ..._nolus.ibcData,
@@ -217,6 +244,7 @@ const ibcData: IBCData[] = [
   ..._odin.ibcData,
   ..._okexchain.ibcData,
   ..._omniflixhub.ibcData,
+  ..._onex.ibcData,
   ..._onomy.ibcData,
   ..._oraichain.ibcData,
   ..._osmosis.ibcData,
@@ -226,6 +254,7 @@ const ibcData: IBCData[] = [
   ..._planq.ibcData,
   ..._point.ibcData,
   ..._provenance.ibcData,
+  ..._pryzm.ibcData,
   ..._pundix.ibcData,
   ..._pylons.ibcData,
   ..._quasar.ibcData,
@@ -235,10 +264,13 @@ const ibcData: IBCData[] = [
   ..._rebus.ibcData,
   ..._regen.ibcData,
   ..._rizon.ibcData,
+  ..._routerchain.ibcData,
   ..._saga.ibcData,
   ..._scorum.ibcData,
   ..._secretnetwork.ibcData,
+  ..._seda.ibcData,
   ..._sei.ibcData,
+  ..._self.ibcData,
   ..._sentinel.ibcData,
   ..._sge.ibcData,
   ..._shareledger.ibcData,
@@ -250,11 +282,13 @@ const ibcData: IBCData[] = [
   ..._stafihub.ibcData,
   ..._stargaze.ibcData,
   ..._starname.ibcData,
+  ..._stratos.ibcData,
   ..._stride.ibcData,
   ..._teritori.ibcData,
   ..._terra.ibcData,
   ..._terra2.ibcData,
   ..._tgrade.ibcData,
+  ..._titan.ibcData,
   ..._umee.ibcData,
   ..._unification.ibcData,
   ..._uptick.ibcData,

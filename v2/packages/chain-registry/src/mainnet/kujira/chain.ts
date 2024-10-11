@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'kujira',
+  chainType: 'cosmos',
   chainId: 'kaiyo-1',
   prettyName: 'Kujira',
   status: 'live',
@@ -134,17 +135,169 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.47.8',
+    gitRepo: 'https://github.com/Team-Kujira/core',
+    recommendedVersion: 'v1.1.0',
+    compatibleVersions: ['v1.1.0'],
+    cosmosSdkVersion: 'v0.47.12',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    cosmwasmVersion: 'v0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.45.0'
+    genesis: {
+      genesisUrl: 'https://github.com/Team-Kujira/networks/raw/master/mainnet/kaiyo-1.json'
+    },
+    versions: [
+      {
+        name: 'v0.8.4',
+        tag: 'v0.8.4',
+        height: 9226200,
+        proposal: 302,
+        recommendedVersion: 'v0.8.4-mainnet',
+        compatibleVersions: ['v0.8.4', 'v0.8.4-mainnet'],
+        cosmosSdkVersion: '0.46.11',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        nextVersionName: 'v0.8.7',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.11'
+        },
+        ibc: {
+          type: 'go',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v0.8.7',
+        proposal: -1,
+        recommendedVersion: 'v0.8.7',
+        compatibleVersions: ['v0.8.7'],
+        nextVersionName: 'v0.9.0'
+      },
+      {
+        name: 'v0.9.0',
+        proposal: 483,
+        height: 14783000,
+        recommendedVersion: 'v0.9.0',
+        compatibleVersions: ['v0.9.0'],
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        nextVersionName: 'v0.9.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        }
+      },
+      {
+        name: 'v0.9.1',
+        proposal: 488,
+        height: 15205000,
+        recommendedVersion: 'v0.9.1-1',
+        compatibleVersions: ['v0.9.1-1'],
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        nextVersionName: 'v0.9.3',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        }
+      },
+      {
+        name: 'v0.9.3',
+        proposal: 534,
+        height: 16610000,
+        recommendedVersion: 'v0.9.3-1',
+        compatibleVersions: ['v0.9.3-1'],
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.0.2',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        }
+      },
+      {
+        name: 'v1.0.2',
+        proposal: 618,
+        height: 18700000,
+        recommendedVersion: 'v1.0.2',
+        compatibleVersions: ['v1.0.2'],
+        cosmosSdkVersion: 'v0.47.8',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v1.1.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.8'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        }
+      },
+      {
+        name: 'v1.1.0',
+        proposal: 645,
+        height: 19855000,
+        recommendedVersion: 'v1.1.0',
+        compatibleVersions: ['v1.1.0'],
+        cosmosSdkVersion: 'v0.47.12',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.5'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.12'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.12'
+    },
+    ibc: {
+      type: 'go',
+      icsEnabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   description: 'A decentralized ecosystem for protocols, builders and web3 users seeking sustainable FinTech.',
   apis: {
     rpc: [
-      {
-        address: 'https://rpc-kujira.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
       {
         address: 'https://rpc.kaiyo.kujira.setten.io',
         provider: 'setten.io'
@@ -158,7 +311,7 @@ const info: Chain = {
         provider: 'ecostake'
       },
       {
-        address: 'https://kujira-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/kujira',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -220,15 +373,11 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://lcd-kujira.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
-      },
-      {
         address: 'https://lcd.kaiyo.kujira.setten.io',
         provider: 'setten.io'
       },
       {
-        address: 'https://kujira-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/kujira',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -302,7 +451,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'kujira-grpc.lavenderfive.com:443',
+        address: 'kujira.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -328,10 +477,6 @@ const info: Chain = {
       {
         address: 'kujira-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'grpc-kujira.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       }
     ]
   },
@@ -357,6 +502,12 @@ const info: Chain = {
       url: 'https://atomscan.com/kujira',
       txPage: 'https://atomscan.com/kujira/transactions/${txHash}',
       accountPage: 'https://atomscan.com/kujira/accounts/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/kujira',
+      txPage: 'https://mainnet.whispernode.com/kujira/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/kujira/account/${accountAddress}'
     }
   ],
   logoURIs: {
@@ -365,7 +516,10 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kujira-chain-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg',
+      theme: {
+        primaryColorHex: '#e33b34'
+      }
     }]
 };
 export default info;

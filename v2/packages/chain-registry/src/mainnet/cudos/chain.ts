@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Cudos',
+  chainType: 'cosmos',
   chainId: 'cudos-1',
   bech32Prefix: 'cudos',
   daemonName: 'cudos-noded',
@@ -26,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/CudoVentures/cudos-node',
+    recommendedVersion: 'v1.1.0',
+    compatibleVersions: ['v1.0.1', 'v1.1.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/CudoVentures/cudos-builders/v1.0.0/docker/config/genesis.mainnet.json'
+    },
+    versions: [{
+        name: 'v1.1.0',
+        recommendedVersion: 'v1.1.0',
+        compatibleVersions: ['v1.0.1', 'v1.1.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
@@ -51,8 +62,12 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://cudos-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/cudos',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://cudos-rpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     rest: [
@@ -73,8 +88,12 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://cudos-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/cudos',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://cudos-rest.publicnode.com',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ],
     grpc: [
@@ -87,8 +106,12 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'cudos-grpc.lavenderfive.com:443',
+        address: 'cudos.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'cudos-grpc.publicnode.com:443',
+        provider: 'Allnodes ⚡️ Nodes & Staking'
       }
     ]
   },
@@ -126,7 +149,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg',
+      theme: {
+        primaryColorHex: '#5d95ec'
+      }
     }]
 };
 export default info;

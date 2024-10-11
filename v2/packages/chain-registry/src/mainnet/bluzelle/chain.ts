@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://bluzelle.com/',
   prettyName: 'Bluzelle',
+  chainType: 'cosmos',
   chainId: 'bluzelle-9',
   bech32Prefix: 'bluzelle',
   daemonName: 'curiumd',
@@ -30,7 +31,80 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: 'v0.45.11'
+    gitRepo: 'https://github.com/bluzelle/bluzelle-public',
+    recommendedVersion: 'v10.0',
+    compatibleVersions: ['v10.0'],
+    cosmosSdkVersion: 'v0.45.11',
+    consensus: {
+      type: 'cometbft',
+      version: '0.34.23'
+    },
+    genesis: {
+      genesisUrl: 'https://a.client.sentry.net.bluzelle.com:26657/genesis'
+    },
+    versions: [
+      {
+        name: 'v2.0',
+        recommendedVersion: 'v2.0',
+        compatibleVersions: ['v2.0'],
+        cosmosSdkVersion: '0.44.3',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.14'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.44.3'
+        }
+      },
+      {
+        name: 'v9.0',
+        recommendedVersion: 'v9.0',
+        compatibleVersions: ['v9.0'],
+        cosmosSdkVersion: '0.45.11',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.23'
+        },
+        nextVersionName: '10.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45.11'
+        }
+      },
+      {
+        name: '10.0',
+        recommendedVersion: 'v10.0',
+        compatibleVersions: ['v10.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/bluzelle/bluzelle-public/releases/download/v10.0/curiumd'
+        },
+        proposal: 1,
+        height: 3333333,
+        cosmosSdkVersion: 'v0.45.11',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.23'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.11'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v3.4.0'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.png',
@@ -49,6 +123,10 @@ const info: Chain = {
       {
         address: 'https://c.client.sentry.net.bluzelle.com:26657',
         provider: 'Bluzelle'
+      },
+      {
+        address: 'https://bluzelle_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -67,6 +145,10 @@ const info: Chain = {
       {
         address: 'https://bluzelle-api.genznodes.dev/',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://bluzelle_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -114,6 +196,12 @@ const info: Chain = {
       kind: 'Nodine.ID',
       url: 'https://explorer.co.id/bluzelle',
       txPage: 'https://explorer.co.id/bluzelle/transaction/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/bluzelle',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/bluzelle/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/bluzelle/account/${accountAddress}'
     }
   ],
   keywords: [
@@ -124,7 +212,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg',
+      theme: {
+        primaryColorHex: '#708ffc'
+      }
     }]
 };
 export default info;

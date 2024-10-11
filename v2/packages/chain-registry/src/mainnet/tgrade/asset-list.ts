@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'tgrade',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg',
+          theme: {
+            primaryColorHex: '#a7248a'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

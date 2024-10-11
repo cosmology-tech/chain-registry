@@ -23,8 +23,12 @@ const info: AssetList = {
       coingeckoId: 'comdex',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg',
+          theme: {
+            primaryColorHex: '#fc4454'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Governance Token of Harbor protocol on Comdex network',
@@ -46,8 +50,12 @@ const info: AssetList = {
       coingeckoId: 'harbor-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg',
+          theme: {
+            primaryColorHex: '#645ca4'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Stable Token of Harbor protocol on Comdex network',
@@ -69,8 +77,12 @@ const info: AssetList = {
       coingeckoId: 'composite',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

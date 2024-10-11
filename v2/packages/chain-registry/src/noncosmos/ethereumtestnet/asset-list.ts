@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../../assetlist.schema.json',
   chainName: 'ethereumtestnet',
   assets: [
     {
@@ -20,6 +20,7 @@ const info: AssetList = {
           aliases: ['ether']
         }
       ],
+      typeAsset: 'evm-base',
       base: 'wei',
       name: 'Ether',
       display: 'eth',

@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'selfchaindevnet',
+  chainType: 'cosmos',
   chainId: 'self-dev-1',
   prettyName: 'Devnet 1',
   status: 'live',
@@ -18,7 +19,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://docs.selfchain.xyz/nodes-and-validators/releases',
+    recommendedVersion: '0.2.2',
+    compatibleVersions: ['0.2.2'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/hotcrosscom/selfchain-genesis/main/networks/devnet/genesis.json'
+    },
+    versions: [{
+        name: '0.2.2',
+        recommendedVersion: '0.2.2',
+        compatibleVersions: ['0.2.2']
+      }]
   },
   apis: {
     rpc: [{

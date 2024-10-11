@@ -22,7 +22,8 @@ const info: AssetList = {
       coingeckoId: 'stafi',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked ATOMs',
@@ -48,10 +49,10 @@ const info: AssetList = {
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/ratom.svg'
       },
-      coingeckoId: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/ratom.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked IRISs',
@@ -77,10 +78,10 @@ const info: AssetList = {
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/riris.svg'
       },
-      coingeckoId: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/riris.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked HUAHUAs',
@@ -106,10 +107,10 @@ const info: AssetList = {
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rhuahua.svg'
       },
-      coingeckoId: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rhuahua.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'A liquid staking representation of staked SWTHs',
@@ -128,17 +129,17 @@ const info: AssetList = {
           type: 'liquid-stake',
           counterparty: {
             chainName: 'carbon',
-            baseDenom: 'uswth'
+            baseDenom: 'swth'
           },
           provider: 'StaFiHub'
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rswth.svg'
       },
-      coingeckoId: '',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/rswth.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

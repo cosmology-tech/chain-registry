@@ -1,7 +1,8 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'axelartestnet',
+  chainType: 'cosmos',
   chainId: 'axelar-testnet-lisbon-3',
   prettyName: 'Axelar Testnet',
   status: 'live',
@@ -26,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/axelarnetwork/axelar-core'
   },
   apis: {
     rpc: [
@@ -64,9 +65,9 @@ const info: Chain = {
       txPage: 'https://testnet.axelarscan.io/tx/${txHash}'
     }, {
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/axelar-testnet',
-      txPage: 'https://testnet.mintscan.io/axelar-testnet/txs/${txHash}',
-      accountPage: 'https://testnet.mintscan.io/axelar-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/axelar-testnet',
+      txPage: 'https://mintscan.io/axelar-testnet/txs/${txHash}',
+      accountPage: 'https://mintscan.io/axelar-testnet/account/${accountAddress}'
     }]
 };
 export default info;

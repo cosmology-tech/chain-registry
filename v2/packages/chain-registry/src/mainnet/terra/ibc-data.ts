@@ -145,6 +145,22 @@ const info: IBCData[] = [
           preferred: true,
           dex: 'osmosis'
         }
+      }, {
+        chain1: {
+          channelId: 'channel-78488',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-108',
+          portId: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: false,
+          dex: 'osmosis'
+        }
       }]
   },
   {

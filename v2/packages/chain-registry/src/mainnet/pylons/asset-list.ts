@@ -19,12 +19,16 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png',
+          theme: {
+            primaryColorHex: '#ec4424'
+          }
         }],
       socials: {
         website: 'https://pylons.tech',
         twitter: 'https://twitter.com/pylonstech'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

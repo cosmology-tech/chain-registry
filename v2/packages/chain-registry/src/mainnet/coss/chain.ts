@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'coss',
+  chainType: 'cosmos',
   chainId: 'coss-1',
   website: 'https://coss.ink/',
   prettyName: 'COSS',
@@ -43,7 +44,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/coss-inscription/coss',
+    recommendedVersion: 'v0.1.0',
+    compatibleVersions: ['v0.1.0'],
+    genesis: {
+      genesisUrl: 'https://github.com/coss-inscription/networks/blob/main/mainnet/v1/genesis.json'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',
@@ -67,7 +73,10 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.svg',
+      theme: {
+        primaryColorHex: '#876317'
+      }
     }]
 };
 export default info;

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://stargaze.zone/',
   prettyName: 'Stargaze',
+  chainType: 'cosmos',
   chainId: 'stargaze-1',
   bech32Prefix: 'stars',
   daemonName: 'starsd',
@@ -26,9 +27,111 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.47.10',
+    gitRepo: 'https://github.com/public-awesome/stargaze',
+    recommendedVersion: 'v14.0.0',
+    compatibleVersions: ['v14.0.0'],
+    cosmosSdkVersion: 'v0.47.12',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.6'
+    },
+    cosmwasmVersion: 'v0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.45.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/public-awesome/mainnet/main/stargaze-1/genesis.tar.gz'
+    },
+    versions: [
+      {
+        name: 'v9',
+        recommendedVersion: 'v9.1.0',
+        compatibleVersions: ['v9.1.0', 'v9.0.0'],
+        nextVersionName: 'v10'
+      },
+      {
+        name: 'v10',
+        recommendedVersion: 'v10.0.1',
+        compatibleVersions: ['v10.0.1', 'v10.0.0'],
+        nextVersionName: 'v11'
+      },
+      {
+        name: 'v11',
+        recommendedVersion: 'v11.0.0',
+        compatibleVersions: ['v11.0.0'],
+        nextVersionName: 'v12'
+      },
+      {
+        name: 'v12',
+        recommendedVersion: 'v12.0.0',
+        compatibleVersions: ['v12.0.0'],
+        nextVersionName: 'v13'
+      },
+      {
+        name: 'v13',
+        proposal: 260,
+        height: 12801683,
+        recommendedVersion: 'v13.0.0',
+        compatibleVersions: ['v13.0.0'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v14',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v14',
+        proposal: 279,
+        height: 14252867,
+        recommendedVersion: 'v14.0.0',
+        compatibleVersions: ['v14.0.0'],
+        cosmosSdkVersion: 'v0.47.12',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.6'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.12'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.6.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.12'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.6.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
@@ -76,10 +179,6 @@ const info: Chain = {
       {
         address: 'https://rpc.stargaze.silentvalidator.com/',
         provider: 'silent'
-      },
-      {
-        address: 'https://rpc-stargaze.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://stargaze-mainnet-rpc.autostake.com:443',
@@ -162,10 +261,6 @@ const info: Chain = {
       {
         address: 'https://stargaze-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://lcd-stargaze.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://stargaze-api.ramuchi.tech',
@@ -272,11 +367,20 @@ const info: Chain = {
       url: 'https://starscan.net/',
       txPage: 'https://starscan.net/stargaze-1/tx/${txHash}',
       accountPage: 'https://starscan.net/stargaze-1/address/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/stargaze',
+      txPage: 'https://mainnet.whispernode.com/stargaze/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/stargaze/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
+      theme: {
+        primaryColorHex: '#db2777'
+      }
     }]
 };
 export default info;

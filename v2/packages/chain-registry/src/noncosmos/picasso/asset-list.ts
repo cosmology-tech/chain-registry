@@ -1,10 +1,10 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'picasso',
   assets: [
     {
-      description: 'The native staking and governance token of Picasso.',
+      description: 'The native staking and governance token of Picasso Kusama.',
       denomUnits: [{
           denom: 'ppica',
           exponent: 0
@@ -17,6 +17,7 @@ const info: AssetList = {
       name: 'Pica',
       display: 'pica',
       symbol: 'PICA',
+      coingeckoId: 'picasso',
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
       },
@@ -86,9 +87,14 @@ const info: AssetList = {
             chainName: 'composablepolkadot',
             baseDenom: '79228162514264337593543950342'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png',
+          theme: {
+            primaryColorHex: '#e4047c'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg'
       }
     },
@@ -128,6 +134,7 @@ const info: AssetList = {
           denom: 'TNKR',
           exponent: 12
         }],
+      typeAsset: 'substrate',
       base: '2125',
       name: 'Tinkernet',
       display: 'TNKR',

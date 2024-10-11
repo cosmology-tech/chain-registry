@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Mars Hub Testnet',
+  chainType: 'cosmos',
   chainId: 'ares-1',
   bech32Prefix: 'mars',
   keyAlgos: ['secp256k1'],
@@ -24,7 +25,13 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/mars-protocol/networks/main/ares-1/genesis.json'
+    },
+    ibc: {
+      type: 'go',
+      icsEnabled: ['ics20-1']
+    }
   },
   apis: {
     rpc: [{

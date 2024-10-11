@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'devnet',
   website: 'https://www.ixo.world/',
   prettyName: 'ixo',
+  chainType: 'cosmos',
   chainId: 'devnet-1',
   bech32Prefix: 'ixo',
   daemonName: 'ixod',
@@ -27,7 +28,14 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/ixofoundation/ixo-blockchain',
+    recommendedVersion: 'v0.20.0',
+    compatibleVersions: ['v0.20.0'],
+    versions: [{
+        name: 'v0.20.0',
+        recommendedVersion: 'v0.20.0',
+        compatibleVersions: ['v0.20.0']
+      }]
   },
   apis: {
     rpc: [{

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'testnet',
   website: 'https://stargaze.zone/',
   prettyName: 'Stargaze Testnet',
+  chainType: 'cosmos',
   chainId: 'elgafar-1',
   bech32Prefix: 'stars',
   daemonName: 'starsd',
@@ -20,9 +21,47 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/public-awesome/stargaze',
+    recommendedVersion: 'v7.0.0',
+    compatibleVersions: ['v7.0.0'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.28',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.28'
+    genesis: {
+      genesisUrl: 'https://github.com/public-awesome/testnets/blob/main/elgafar-1/genesis/genesis.tar.gz?raw=true'
+    },
+    versions: [{
+        name: 'v7.0.0',
+        recommendedVersion: 'v7.0.0',
+        compatibleVersions: ['v7.0.0'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.28',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.28',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.28',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

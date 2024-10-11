@@ -6,13 +6,101 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://thorchain.org/',
   prettyName: 'THORChain',
-  chainId: 'thorchain-mainnet-v1',
+  chainType: 'cosmos',
+  chainId: 'thorchain-1',
   bech32Prefix: 'thor',
   daemonName: 'thord',
   nodeHome: '$HOME/.thornode',
   slip44: 931,
   codebase: {
-
+    gitRepo: 'https://gitlab.com/thorchain/thornode',
+    recommendedVersion: 'v2.135.0',
+    compatibleVersions: ['v2.135.0'],
+    cosmosSdkVersion: 'v0.45.16',
+    cosmwasmEnabled: false,
+    genesis: {
+      genesisUrl: 'https://storage.googleapis.com/public-snapshots-ninerealms/genesis/17562000.json'
+    },
+    versions: [
+      {
+        name: 'v1.132.0',
+        recommendedVersion: 'v1.132.0',
+        compatibleVersions: ['v1.132.0'],
+        cosmosSdkVersion: 'v0.45.1',
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.1'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v2.0.3'
+        }
+      },
+      {
+        name: 'v1.133.0',
+        recommendedVersion: 'v1.133.0',
+        compatibleVersions: ['v1.133.0'],
+        cosmosSdkVersion: 'v0.45.1',
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.1'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v2.0.3'
+        }
+      },
+      {
+        name: 'v1.134.0',
+        recommendedVersion: 'v1.134.0',
+        compatibleVersions: ['v1.134.0'],
+        cosmosSdkVersion: 'v0.45.1',
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.1'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v2.0.3'
+        }
+      },
+      {
+        name: 'v1.134.1',
+        recommendedVersion: 'v1.134.1',
+        compatibleVersions: ['v1.134.1'],
+        cosmosSdkVersion: 'v0.45.1',
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.1'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v2.0.3'
+        }
+      },
+      {
+        name: 'v2.135.0',
+        recommendedVersion: 'v2.135.0',
+        compatibleVersions: ['v2.135.0'],
+        cosmosSdkVersion: 'v0.45.16',
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [],

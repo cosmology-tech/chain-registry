@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'testnet',
   website: 'https://titanlab.io/',
   prettyName: 'Titan Testnet',
+  chainType: 'cosmos',
   chainId: 'titan_18889-1',
   bech32Prefix: 'titan',
   nodeHome: '$HOME/.titand',
@@ -28,9 +29,121 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/titantkx/titan',
+    recommendedVersion: 'v2.0.1',
+    compatibleVersions: ['v2.0.1'],
     cosmosSdkVersion: '0.47.6-titan.4',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.4'
+    },
+    cosmwasmVersion: '0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.45.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/titantkx/titan-testnets/main/public/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v1.0.0',
+        tag: 'v1.0.0',
+        height: 0,
+        nextVersionName: 'v2.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0-alpha.1', 'v1.0.0'],
+        cosmosSdkVersion: '0.47.6-titan.3',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.4'
+        },
+        cosmwasmVersion: '0.45.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.6',
+          tag: '0.47.6-titan.3'
+        },
+        cosmwasm: {
+          version: '0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v2.0.0',
+        tag: 'v2.0.0',
+        height: 727408,
+        nextVersionName: 'v2.0.1',
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0'],
+        cosmosSdkVersion: '0.47.6-titan.4',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.4'
+        },
+        cosmwasmVersion: '0.45.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.6',
+          tag: '0.47.6-titan.4'
+        },
+        cosmwasm: {
+          version: '0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v2.0.1',
+        tag: 'v2.0.1',
+        height: 967678,
+        recommendedVersion: 'v2.0.1',
+        compatibleVersions: ['v2.0.1'],
+        cosmosSdkVersion: '0.47.6-titan.4',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.4'
+        },
+        cosmwasmVersion: '0.45.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.6',
+          tag: '0.47.6-titan.4'
+        },
+        cosmwasm: {
+          version: '0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.6',
+      tag: '0.47.6-titan.4'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.0',
+      icsEnabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.45.0',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/chain.png',

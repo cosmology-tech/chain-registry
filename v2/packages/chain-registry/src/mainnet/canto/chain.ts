@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://canto.io/',
   prettyName: 'Canto',
+  chainType: 'cosmos',
   chainId: 'canto_7700-1',
   bech32Prefix: 'canto',
   nodeHome: '$HOME/.cantod',
@@ -26,7 +27,34 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Canto-Network/Canto',
+    recommendedVersion: 'v7.0.0',
+    compatibleVersions: ['v7.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Canto-Network/Canto/genesis/Networks/Mainnet/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v5.0.0',
+        recommendedVersion: 'v5.0.0',
+        compatibleVersions: ['v5.0.0'],
+        nextVersionName: 'v6.0.0'
+      },
+      {
+        name: 'v6.0.0',
+        recommendedVersion: 'v6.0.0',
+        compatibleVersions: ['v6.0.0'],
+        nextVersionName: 'v7.0.0'
+      },
+      {
+        name: 'v7.0.0',
+        recommendedVersion: 'v7.0.0',
+        compatibleVersions: ['v7.0.0'],
+        proposal: 113,
+        height: 6055770,
+        nextVersionName: ''
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
@@ -132,25 +160,9 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'bigdipper',
-      url: 'https://cosmos.explorer.canto.io',
-      txPage: 'https://cosmos.explorer.canto.io/transactions/${txHash}'
-    },
-    {
-      kind: 'blockscout',
-      url: 'https://evm.explorer.canto.io/',
-      txPage: 'https://evm.explorer.canto.io/tx/${txHash}'
-    },
-    {
       kind: 'ping.pub',
       url: 'https://cosmos-explorers.neobase.one/canto',
       txPage: 'https://cosmos-explorers.neobase.one/canto/tx/${txHash}'
-    },
-    {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/canto',
-      txPage: 'https://www.mintscan.io/canto/transactions/${txHash}',
-      accountPage: 'https://www.mintscan.io/canto/accounts/${accountAddress}'
     },
     {
       kind: 'TC Network',
@@ -172,7 +184,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.svg',
+      theme: {
+        primaryColorHex: '#1c1f1f'
+      }
     }]
 };
 export default info;

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://nois.network',
   prettyName: 'Nois',
+  chainType: 'cosmos',
   chainId: 'nois-1',
   bech32Prefix: 'nois',
   daemonName: 'noisd',
@@ -30,9 +31,50 @@ const info: Chain = {
     }
   },
   codebase: {
+    gitRepo: 'https://github.com/noislabs/noisd',
+    recommendedVersion: 'v1.0.4',
+    compatibleVersions: ['v1.0.0', 'v1.0.4'],
     cosmosSdkVersion: 'v0.45.15',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.29'
+    },
+    cosmwasmVersion: 'v0.31.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.31.0'
+    genesis: {
+      name: 'v1',
+      genesisUrl: 'https://raw.githubusercontent.com/noislabs/networks/nois1.final.1/nois-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1',
+        tag: 'v1.0.4',
+        height: 0,
+        recommendedVersion: 'v1.0.4',
+        compatibleVersions: ['v1.0.0', 'v1.0.4'],
+        cosmosSdkVersion: 'v0.45.15',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.29'
+        },
+        cosmwasmVersion: 'v0.31.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.15'
+        },
+        cosmwasm: {
+          version: 'v0.31.0',
+          enabled: true
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.15'
+    },
+    cosmwasm: {
+      version: 'v0.31.0',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
@@ -41,7 +83,10 @@ const info: Chain = {
       }
     }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg',
+      theme: {
+        primaryColorHex: '#0c0c14'
+      }
     }],
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png'
@@ -57,7 +102,7 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
-        address: 'https://nois-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/nois',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -101,10 +146,6 @@ const info: Chain = {
         provider: 'kingnodes 👑'
       },
       {
-        address: 'https://nois.rpc.kjnodes.com',
-        provider: 'kjnodes'
-      },
-      {
         address: 'https://rpc.nois.silentvalidator.com',
         provider: 'silent'
       },
@@ -127,7 +168,7 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
-        address: 'https://nois-grpc.lavenderfive.com:443',
+        address: 'nois.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -175,10 +216,6 @@ const info: Chain = {
         provider: 'kingnodes 👑'
       },
       {
-        address: 'nois.grpc.kjnodes.com:15190',
-        provider: 'kjnodes'
-      },
-      {
         address: 'grpc.nois.silentvalidator.com:443',
         provider: 'silent'
       },
@@ -197,7 +234,7 @@ const info: Chain = {
         provider: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀'
       },
       {
-        address: 'https://nois-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/nois',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -231,10 +268,6 @@ const info: Chain = {
       {
         address: 'https://nois-rest.kingnodes.com',
         provider: 'kingnodes 👑'
-      },
-      {
-        address: 'https://nois.api.kjnodes.com',
-        provider: 'kjnodes'
       },
       {
         address: 'https://api.nois.silentvalidator.com',

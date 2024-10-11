@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://desmos.network/',
   prettyName: 'Desmos',
+  chainType: 'cosmos',
   chainId: 'desmos-mainnet',
   bech32Prefix: 'desmos',
   daemonName: 'desmos',
@@ -27,9 +28,161 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
+    gitRepo: 'https://github.com/desmos-labs/desmos',
+    recommendedVersion: 'v7.1.0',
+    compatibleVersions: ['v7.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v7.1.0/desmos-v7.1.0-linux-amd64'
+    },
+    cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.10-desmos',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    cosmwasmVersion: 'v0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.45.0'
+    cosmwasmPath: '$HOME/.desmos/data/wasm',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/desmos-labs/mainnet/main/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v4.8.0',
+        recommendedVersion: 'v4.8.1',
+        compatibleVersions: ['v4.8.0', 'v4.8.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v4.8.1/desmos-4.8.1-linux-amd64'
+        },
+        nextVersionName: 'v5.0.0'
+      },
+      {
+        name: 'v5.0.0',
+        recommendedVersion: 'v5.1.0',
+        compatibleVersions: ['v5.1.0'],
+        proposal: 28,
+        height: 9069645,
+        binaries: {
+          "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v5.1.0/desmos-5.1.0-linux-amd64'
+        },
+        nextVersionName: 'v5.2.0'
+      },
+      {
+        name: 'v5.2.0',
+        recommendedVersion: 'v5.2.0',
+        compatibleVersions: ['v5.2.0'],
+        proposal: 29,
+        height: 9259165,
+        binaries: {
+          "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v5.2.0/desmos-5.2.0-linux-amd64'
+        },
+        nextVersionName: 'v6'
+      },
+      {
+        name: 'v6',
+        recommendedVersion: 'v6.1.1',
+        compatibleVersions: ['v6.1.0', 'v6.1.1'],
+        proposal: 32,
+        height: 10213500,
+        binaries: {
+          "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v6.1.1/desmos-6.1.1-linux-amd64'
+        },
+        nextVersionName: 'v6.2.0'
+      },
+      {
+        name: 'v6.2.0',
+        recommendedVersion: 'v6.2.1',
+        compatibleVersions: ['v6.2.1'],
+        proposal: 36,
+        height: 11312575,
+        binaries: {
+          "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v6.2.1/desmos-6.2.1-linux-amd64'
+        },
+        nextVersionName: 'v7'
+      },
+      {
+        name: 'v7',
+        proposal: 42,
+        height: 12745550,
+        recommendedVersion: 'v7.0.2',
+        compatibleVersions: ['v7.0.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v7.0.2/desmos-7.0.2-linux-amd64'
+        },
+        cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.4'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.desmos/data/wasm',
+        nextVersionName: 'v7.1.0',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/desmos-labs/cosmos-sdk',
+          version: 'v0.47.9',
+          tag: 'v0.47.9-desmos'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          path: '$HOME/.desmos/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.2'
+        }
+      },
+      {
+        name: 'v7.1.0',
+        proposal: 48,
+        height: 13775361,
+        recommendedVersion: 'v7.1.0',
+        compatibleVersions: ['v7.1.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v7.1.0/desmos-v7.1.0-linux-amd64'
+        },
+        cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.10-desmos',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.desmos/data/wasm',
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/desmos-labs/cosmos-sdk',
+          version: 'v0.47.10',
+          tag: 'v0.47.10-desmos'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          path: '$HOME/.desmos/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/desmos-labs/cosmos-sdk',
+      version: 'v0.47.10',
+      tag: 'v0.47.10-desmos'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      path: '$HOME/.desmos/data/wasm',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
@@ -40,10 +193,6 @@ const info: Chain = {
       {
         address: 'https://rpc.mainnet.desmos.network',
         provider: 'desmos'
-      },
-      {
-        address: 'https://desmos-rpc.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://desmos-rpc.ibs.team/',
@@ -62,10 +211,6 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://desmos-rpc.panthea.eu',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'https://desmos.declab.pro:26613',
         provider: 'Decloud Nodes Lab'
       },
@@ -78,10 +223,6 @@ const info: Chain = {
       {
         address: 'https://api.mainnet.desmos.network',
         provider: 'desmos'
-      },
-      {
-        address: 'https://desmos-api.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://desmos-api.ibs.team/',
@@ -100,10 +241,6 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://desmos-api.panthea.eu',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'https://vidulum.declab.pro:443',
         provider: 'Decloud Nodes Lab'
       },
@@ -113,10 +250,6 @@ const info: Chain = {
       }
     ],
     grpc: [
-      {
-        address: 'desmos-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
       {
         address: 'https://grpc-desmos.explorer.co.id',
         provider: 'Nodine.ID'
@@ -136,10 +269,6 @@ const info: Chain = {
       {
         address: 'https://grpc.desmos.bronbro.io:443',
         provider: 'Bro_n_Bro'
-      },
-      {
-        address: 'desmos-grpc.panthea.eu:16730',
-        provider: 'Panthea EU'
       },
       {
         address: 'https://vidulum.declab.pro:9009',
@@ -193,7 +322,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg',
+      theme: {
+        primaryColorHex: '#fb804e'
+      }
     }]
 };
 export default info;

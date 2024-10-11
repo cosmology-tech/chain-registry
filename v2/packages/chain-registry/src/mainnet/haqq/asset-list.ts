@@ -20,9 +20,58 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
       },
+      socials: {
+        website: 'https://islamiccoin.net',
+        twitter: 'https://x.com/1slamic_coin'
+      },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.svg',
+          theme: {
+            primaryColorHex: '#04cd80'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    }, {
+      description: 'Deenar gold-backed stablecoin',
+      extendedDescription: 'Deenar Gold (DEEN) is a 1:1 gold-backed halal stablecoin with the ability to physically deliver gold. 1 DEEN = 1 gram of gold.',
+      denomUnits: [{
+          denom: 'erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+          exponent: 0
+        }, {
+          denom: 'DEEN',
+          exponent: 6
+        }],
+      base: 'erc20/0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+      name: 'Deenar',
+      display: 'DEEN',
+      address: '0x4FEBDDe47Ab9a76200e57eFcC80b212a07b3e6cE',
+      symbol: 'DEEN',
+      typeAsset: 'erc20',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'comex',
+            baseDenom: 'XAU'
+          },
+          provider: 'Deenar'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg'
+      },
+      coingeckoId: 'deenar-gold',
+      socials: {
+        website: 'https://deenar.com',
+        twitter: 'https://x.com/DeenarGold'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/deen.svg',
+          theme: {
+            primaryColorHex: '#ffbc05',
+            circle: true
+          }
         }]
     }]
 };

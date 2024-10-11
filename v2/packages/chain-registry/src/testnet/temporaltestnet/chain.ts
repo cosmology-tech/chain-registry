@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'temporaltestnet',
+  chainType: 'cosmos',
   chainId: 'temporal-test-2',
   prettyName: 'Temporal Testnet',
   status: 'killed',
@@ -23,7 +24,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/temporal-zone/temporal',
+    recommendedVersion: 'v0.4.0',
+    compatibleVersions: ['v0.4.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/temporal-zone/temporal-testnet/main/genesis/genesis.json'
+    },
+    versions: [{
+        name: 'v0.4.0',
+        recommendedVersion: 'v0.4.0',
+        compatibleVersions: ['v0.4.0']
+      }]
   },
   apis: {
     rpc: [{

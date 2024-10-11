@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://uptick.network/',
   prettyName: 'Uptick',
+  chainType: 'cosmos',
   chainId: 'uptick_117-1',
   bech32Prefix: 'uptick',
   daemonName: 'uptickd',
@@ -15,10 +16,10 @@ const info: Chain = {
   fees: {
     feeTokens: [{
         denom: 'auptick',
-        fixedMinGasPrice: 10000000000,
-        lowGasPrice: 10000000000,
-        averageGasPrice: 25000000000,
-        highGasPrice: 40000000000
+        fixedMinGasPrice: 13000000000,
+        lowGasPrice: 13000000000,
+        averageGasPrice: 16000000000,
+        highGasPrice: 20000000000
       }]
   },
   staking: {
@@ -27,9 +28,135 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.46',
-    cosmwasmEnabled: false,
-    cosmwasmVersion: ''
+    gitRepo: 'https://github.com/UptickNetwork/uptick',
+    recommendedVersion: 'v0.2.19',
+    compatibleVersions: ['v0.2.19'],
+    binaries: {
+      "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.19.tar.gz'
+    },
+    cosmosSdkVersion: 'v0.47.5',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.3',
+      tag: 'v0.37.3-0.20230920093934-46df7b597e3c'
+    },
+    cosmwasmVersion: 'v0.45.0',
+    cosmwasmEnabled: true,
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/uptick-network/mainnet/main/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v0.2.4',
+        recommendedVersion: 'v0.2.4',
+        compatibleVersions: ['v0.2.4'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.4.tar.gz'
+        },
+        cosmosSdkVersion: '0.47.5',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmEnabled: false,
+        nextVersionName: 'v0.2.8',
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.5'
+        },
+        cosmwasm: {
+          enabled: false
+        },
+        ibc: {
+          type: 'go',
+          version: '5.0.1'
+        }
+      },
+      {
+        name: 'v0.2.8',
+        proposal: 8,
+        height: 1190080,
+        recommendedVersion: 'v0.2.8',
+        compatibleVersions: ['v0.2.8'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.8.tar.gz'
+        },
+        nextVersionName: 'v0.2.11'
+      },
+      {
+        name: 'v0.2.11',
+        proposal: 12,
+        height: 2411600,
+        recommendedVersion: 'v0.2.11',
+        compatibleVersions: ['v0.2.11'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.11.tar.gz'
+        },
+        nextVersionName: 'v0.2.17'
+      },
+      {
+        name: 'v0.2.17',
+        proposal: 16,
+        height: 4605201,
+        recommendedVersion: 'v0.2.17',
+        compatibleVersions: ['v0.2.17'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.17.tar.gz'
+        },
+        nextVersionName: 'v0.2.18'
+      },
+      {
+        name: 'v0.2.18',
+        proposal: 17,
+        height: 4722001,
+        recommendedVersion: 'v0.2.18',
+        compatibleVersions: ['v0.2.18'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.18.tar.gz'
+        },
+        nextVersionName: 'v0.2.19'
+      },
+      {
+        name: 'v0.2.19',
+        recommendedVersion: 'v0.2.19',
+        compatibleVersions: ['v0.2.19'],
+        binaries: {
+          "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.19.tar.gz'
+        },
+        cosmosSdkVersion: '0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.3',
+          tag: 'v0.37.3-0.20230920093934-46df7b597e3c'
+        },
+        cosmwasmVersion: 'v0.45.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.5'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.5'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
@@ -253,7 +380,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg',
+      theme: {
+        primaryColorHex: '#1f182f'
+      }
     }]
 };
 export default info;

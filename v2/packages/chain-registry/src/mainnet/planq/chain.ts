@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://planq.network/',
   prettyName: 'Planq',
+  chainType: 'cosmos',
   chainId: 'planq_7070-2',
   bech32Prefix: 'plq',
   nodeHome: '$HOME/.planqd',
@@ -27,7 +28,74 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.46.3'
+    gitRepo: 'https://github.com/planq-network/planq',
+    recommendedVersion: 'v1.1.0',
+    compatibleVersions: ['v1.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_windows_amd64.zip'
+    },
+    cosmosSdkVersion: 'v0.46.3',
+    consensus: {
+      type: 'cometbft',
+      version: '0.34.26'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/planq-network/networks/main/mainnet/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.3',
+        recommendedVersion: 'v1.0.3',
+        compatibleVersions: [
+          'v1.0.0',
+          'v1.0.1',
+          'v1.0.2',
+          'v1.0.3'
+        ],
+        binaries: {
+          "linux/amd64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Linux_x86_64.tar.gz',
+          "linux/arm64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Darwin_x86_64.tar.gz',
+          "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Windows_x86_64.zip'
+        }
+      }, {
+        name: 'v1.0.7',
+        recommendedVersion: 'v1.1.0',
+        compatibleVersions: ['v1.1.0'],
+        cosmosSdkVersion: 'v0.46.3',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.26'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_windows_amd64.zip'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.3'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.0.2'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.46.3'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.0.2'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
@@ -61,7 +129,7 @@ const info: Chain = {
       },
       {
         address: 'https://rpc.planq.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://planq-rpc.genznodes.dev',
@@ -115,7 +183,7 @@ const info: Chain = {
       },
       {
         address: 'https://api.planq.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://planq-api.genznodes.dev',
@@ -176,8 +244,8 @@ const info: Chain = {
         provider: 'NodeX Validator'
       },
       {
-        address: 'https://grpc.planq.roomit.xyz:8443',
-        provider: 'RoomIT'
+        address: 'grpc.planq.roomit.xyz:8443',
+        provider: 'Roomit'
       },
       {
         address: 'https://grpc.planq.hexnodes.co:33090',
@@ -244,6 +312,10 @@ const info: Chain = {
       {
         address: 'https://planq_mainnet_evm.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://evm.planq.roomit.xyz',
+        provider: 'Roomit'
       }
     ]
   },
@@ -274,9 +346,9 @@ const info: Chain = {
       txPage: 'https://explorer.tcnetwork.io/planq/transaction/${txHash}'
     },
     {
-      kind: 'RoomIT',
-      url: 'https://explorer.tendermint.roomit.xyz/planq',
-      txPage: 'https://explorer.tendermint.roomit.xyz/planq/transaction/${txHash}'
+      kind: 'Roomit',
+      url: 'https://explorer.tendermint.roomit.xyz/planq-mainnet',
+      txPage: 'https://explorer.tendermint.roomit.xyz/planq-mainnet/transaction/${txHash}'
     },
     {
       kind: 'Kynraze',
@@ -322,7 +394,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg',
+      theme: {
+        primaryColorHex: '#d4f3fb'
+      }
     }]
 };
 export default info;

@@ -1,7 +1,8 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'hedgetestnet',
+  chainType: 'cosmos',
   chainId: 'berberis-1',
   prettyName: 'Hedge Testnet',
   status: 'live',
@@ -26,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/hedgeblock/hedge'
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hedgetestnet/images/hedge.png',

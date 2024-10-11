@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://gitopia.com/',
   networkType: 'mainnet',
   prettyName: 'Gitopia',
+  chainType: 'cosmos',
   chainId: 'gitopia',
   bech32Prefix: 'gitopia',
   daemonName: 'gitopiad',
@@ -30,10 +31,152 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: 'v0.46.13'
+    gitRepo: 'https://github.com/gitopia/gitopia',
+    genesis: {
+      genesisUrl: 'https://github.com/gitopia/mainnet/raw/master/genesis.tar.gz'
+    },
+    recommendedVersion: 'v4.0.0',
+    compatibleVersions: ['v4.0.0'],
+    cosmosSdkVersion: 'v0.47.13',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.6'
+    },
+    versions: [
+      {
+        name: 'v2',
+        recommendedVersion: 'v2.1.1',
+        compatibleVersions: ['v2.0.0', 'v2.1.1'],
+        binaries: {
+          "linux/amd64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v2.1.1/gitopiad_2.1.1_linux_amd64.tar.gz',
+          "linux/arm64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v2.1.1/gitopiad_2.1.1_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v2.1.1/gitopiad_2.1.1_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v2.1.1/gitopiad_2.1.1_darwin_arm64.tar.gz'
+        },
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        nextVersionName: 'v3',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.0.0',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v3',
+        recommendedVersion: 'v3.0.1',
+        compatibleVersions: ['v3.0.1'],
+        binaries: {
+          "linux/amd64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v3.0.1/gitopiad_3.0.1_linux_amd64.tar.gz',
+          "linux/arm64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v3.0.1/gitopiad_3.0.1_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v3.0.1/gitopiad_3.0.1_darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v3.0.1gitopiad_3.0.1_darwin_arm64.tar.gz'
+        },
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34'
+        },
+        nextVersionName: 'v3.2.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.3.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v3.2.0',
+        recommendedVersion: 'v3.2.0',
+        compatibleVersions: ['v3.2.0'],
+        proposal: 12,
+        height: 6446000,
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v3.3.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.3.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v3.3.0',
+        recommendedVersion: 'v3.3.0',
+        compatibleVersions: ['v3.3.0'],
+        proposal: 14,
+        height: 6720000,
+        cosmosSdkVersion: 'v0.46.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.28'
+        },
+        nextVersionName: 'v4',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.46.13'
+        },
+        ibc: {
+          type: 'go',
+          version: '5.3.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'v4',
+        recommendedVersion: 'v4.0.0',
+        compatibleVersions: ['v4.0.0'],
+        proposal: 31,
+        height: 24330422,
+        cosmosSdkVersion: 'v0.47.13',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.6'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.13'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.6.0',
+          icsEnabled: ['ics20-1']
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.13'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.6.0',
+      icsEnabled: ['ics20-1']
+    }
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png',
+      theme: {
+        primaryColorHex: '#2e154d'
+      }
     }],
   description: 'Gitopia is the next-generation Code Collaboration Platform fuelled by a decentralized network and interactive token economy. It is designed to optimize the open-source software development process through collaboration, transparency, and incentivization.',
   apis: {
@@ -43,7 +186,7 @@ const info: Chain = {
         provider: 'polkachu'
       },
       {
-        address: 'https://gitopia-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/gitopia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -69,10 +212,6 @@ const info: Chain = {
       {
         address: 'https://gitopia-rpc.genznodes.dev',
         provider: 'genznodes'
-      },
-      {
-        address: 'https://rpc-gitopia.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://gitopia.rpc.liveraven.net',
@@ -107,12 +246,8 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'https://rpc.gitopia.quokkastake.io',
-        provider: '🐹 Quokka Stake'
-      },
-      {
         address: 'https://rpc.gitopia.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://gitopia.rpc.moonbridge.team',
@@ -169,7 +304,7 @@ const info: Chain = {
         provider: 'polkachu'
       },
       {
-        address: 'https://gitopia-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/gitopia',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -199,10 +334,6 @@ const info: Chain = {
       {
         address: 'https://gitopia-api.genznodes.dev',
         provider: 'genznodes'
-      },
-      {
-        address: 'https://lcd-gitopia.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://gitopia.api.liveraven.net',
@@ -237,12 +368,8 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'https://api.gitopia.quokkastake.io',
-        provider: '🐹 Quokka Stake'
-      },
-      {
         address: 'https://api.gitopia.roomit.xyz',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://gitopia.api.moonbridge.team',
@@ -311,7 +438,7 @@ const info: Chain = {
         provider: 'Staketab'
       },
       {
-        address: 'https://gitopia-grpc.lavenderfive.com:443',
+        address: 'gitopia.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -364,7 +491,7 @@ const info: Chain = {
       },
       {
         address: 'grpc.gitopia.roomit.xyz:8443',
-        provider: 'RoomIT'
+        provider: 'Roomit'
       },
       {
         address: 'https://gitopia.grpc.moonbridge.team',
@@ -466,10 +593,10 @@ const info: Chain = {
       accountPage: 'https://explorer.nodestake.top/gitopia/account/${accountAddress}'
     },
     {
-      kind: 'RoomIT',
-      url: 'https://explorer.tendermint.roomit.xyz/gitopia',
-      txPage: 'https://explorer.tendermint.roomit.xyz/gitopia/transaction/${txHash}',
-      accountPage: 'https://explorer.tendermint.roomit.xyz/gitopia/account/${accountAddress}'
+      kind: 'Roomit',
+      url: 'https://explorer.tendermint.roomit.xyz/gitopia-mainnet',
+      txPage: 'https://explorer.tendermint.roomit.xyz/gitopia-mainnet/transaction/${txHash}',
+      accountPage: 'https://explorer.tendermint.roomit.xyz/gitopia-mainnet/account/${accountAddress}'
     },
     {
       kind: 'Moonbridge',
@@ -512,6 +639,12 @@ const info: Chain = {
       url: 'https://explorer.declab.pro/Gitopia',
       txPage: 'https://explorer.declab.pro/Gitopia/tx/${txHash}',
       accountPage: 'https://explorer.declab.pro/Gitopia/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/gitopia',
+      txPage: 'https://mainnet.whispernode.com/gitopia/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/gitopia/account/${accountAddress}'
     }
   ],
   logoURIs: {

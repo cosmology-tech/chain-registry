@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.gravitybridge.net/',
   prettyName: 'Gravity Bridge',
+  chainType: 'cosmos',
   chainId: 'gravity-bridge-3',
   bech32Prefix: 'gravity',
   daemonName: 'gravity',
@@ -41,7 +42,62 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Gravity-Bridge/Gravity-Bridge',
+    recommendedVersion: 'v1.11.1',
+    compatibleVersions: ['v1.11.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.11.1/gravity-linux-amd64'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Gravity-Bridge/Gravity-Docs/main/genesis.json'
+    },
+    versions: [
+      {
+        name: 'pleiades2',
+        recommendedVersion: 'v1.8.0',
+        compatibleVersions: ['v1.8.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-linux-amd64',
+          "linux/arm64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-linux-arm64',
+          "darwin/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-darwin-amd64',
+          "windows/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-windows-amd64.exe'
+        },
+        nextVersionName: 'orion'
+      },
+      {
+        name: 'orion',
+        height: 6698820,
+        recommendedVersion: 'v1.9.1',
+        proposal: 172,
+        compatibleVersions: ['v1.9.0', 'v1.9.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.9.1/gravity-linux-amd64'
+        },
+        nextVersionName: 'antares'
+      },
+      {
+        name: 'antares',
+        height: 7440250,
+        recommendedVersion: 'v1.10.2',
+        proposal: 183,
+        compatibleVersions: ['v1.10.0', 'v1.10.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.10.2/gravity-linux-amd64'
+        },
+        nextVersionName: 'apollo'
+      },
+      {
+        name: 'apollo',
+        height: 9244100,
+        recommendedVersion: 'v1.11.1',
+        proposal: 212,
+        compatibleVersions: ['v1.11.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.11.1/gravity-linux-amd64'
+        },
+        nextVersionName: ''
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
@@ -67,7 +123,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://gravitybridge-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/gravitybridge',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -97,6 +153,10 @@ const info: Chain = {
       {
         address: 'https://rpc.g-bridge.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rpc.gravity-bridge-3.gravity.aviaone.com:443',
+        provider: 'AviaOne 🟢'
       }
     ],
     rest: [
@@ -113,7 +173,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://gravitybridge-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/gravitybridge',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -143,6 +203,10 @@ const info: Chain = {
       {
         address: 'https://lcd.g-bridge.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://api.gravity-bridge-3.gravity.aviaone.com',
+        provider: 'AviaOne 🟢'
       }
     ],
     grpc: [
@@ -159,7 +223,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'gravitybridge-grpc.lavenderfive.com:443',
+        address: 'gravitybridge.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -181,6 +245,10 @@ const info: Chain = {
       {
         address: 'https://grpc.g-bridge.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'grpc.gravity-bridge-3.gravity.aviaone.com:9200',
+        provider: 'AviaOne 🟢'
       }
     ]
   },
@@ -228,11 +296,20 @@ const info: Chain = {
       url: 'https://explorer.stavr.tech/GravityBridge',
       txPage: 'https://explorer.stavr.tech/GravityBridge/tx/${txHash}',
       accountPage: 'https://explorer.stavr.tech/GravityBridge/accounts/${accountAddress}'
+    },
+    {
+      kind: 'AviaOne 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/gravity-bridge',
+      txPage: 'https://mainnet.explorer.aviaone.com/gravity-bridge/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/gravity-bridge/accounts/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
+      theme: {
+        primaryColorHex: '#042ca4'
+      }
     }]
 };
 export default info;

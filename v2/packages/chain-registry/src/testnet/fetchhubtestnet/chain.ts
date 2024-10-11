@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Fetch.ai Testnet',
+  chainType: 'cosmos',
   chainId: 'dorado-1',
   bech32Prefix: 'fetch',
   daemonName: 'fetchd',
@@ -24,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/fetchai/fetchd',
+    recommendedVersion: 'v0.10.5',
+    compatibleVersions: ['v0.10.5'],
+    genesis: {
+      genesisUrl: 'https://storage.googleapis.com/fetch-ai-testnet-genesis/genesis-dorado-827201.json'
+    },
+    versions: [{
+        name: 'v0.10.5',
+        recommendedVersion: 'v0.10.5',
+        compatibleVersions: ['v0.10.5']
+      }]
   },
   apis: {
     rpc: [{

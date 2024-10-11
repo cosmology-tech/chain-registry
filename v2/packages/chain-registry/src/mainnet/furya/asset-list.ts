@@ -16,21 +16,22 @@ const info: AssetList = {
       display: 'fury',
       symbol: 'FURY',
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/fury.svg',
           theme: {
-            primaryColorHex: '#eaf143'
+            primaryColorHex: '#040404'
           }
         }],
       coingeckoId: 'fanfury',
       keywords: ['gaming', 'staking'],
       socials: {
         twitter: 'https://twitter.com/furyachain'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

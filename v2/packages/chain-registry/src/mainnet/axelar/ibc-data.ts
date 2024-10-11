@@ -644,6 +644,35 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'axelar',
+      clientId: '07-tendermint-225',
+      connectionId: 'connection-210'
+    },
+    chain2: {
+      chainName: 'lava',
+      clientId: '07-tendermint-0',
+      connectionId: 'connection-0'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-156',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-0',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'axelar',
       clientId: '07-tendermint-180',
       connectionId: 'connection-158'
     },
@@ -723,6 +752,35 @@ const info: IBCData[] = [
         version: 'ics20-1',
         tags: {
           status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'axelar',
+      clientId: '07-tendermint-205',
+      connectionId: 'connection-186'
+    },
+    chain2: {
+      chainName: 'nolus',
+      clientId: '07-tendermint-17',
+      connectionId: 'connection-13'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-143',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-10177',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },
@@ -847,6 +905,64 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'axelar',
+      clientId: '07-tendermint-224',
+      connectionId: 'connection-209'
+    },
+    chain2: {
+      chainName: 'pryzm',
+      clientId: '07-tendermint-7',
+      connectionId: 'connection-7'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-155',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-13',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'axelar',
+      clientId: '07-tendermint-208',
+      connectionId: 'connection-189'
+    },
+    chain2: {
+      chainName: 'saga',
+      clientId: '07-tendermint-11',
+      connectionId: 'connection-10'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-146',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-24',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'axelar',
       clientId: '07-tendermint-40',
       connectionId: 'connection-22'
     },
@@ -926,6 +1042,35 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'axelar',
+      clientId: '07-tendermint-226',
+      connectionId: 'connection-211'
+    },
+    chain2: {
+      chainName: 'self',
+      clientId: '07-tendermint-2',
+      connectionId: 'connection-2'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-157',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-2',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'axelar',
       clientId: '07-tendermint-210',
       connectionId: 'connection-191'
     },
@@ -974,6 +1119,35 @@ const info: IBCData[] = [
         },
         ordering: 'unordered',
         version: 'ics-20',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'axelar',
+      clientId: '07-tendermint-229',
+      connectionId: 'connection-219'
+    },
+    chain2: {
+      chainName: 'source',
+      clientId: '07-tendermint-17',
+      connectionId: 'connection-17'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-160',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-3',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
         tags: {
           status: 'live',
           preferred: true

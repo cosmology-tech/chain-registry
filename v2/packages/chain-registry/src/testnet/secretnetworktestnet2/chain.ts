@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   networkType: 'testnet',
   prettyName: 'Secret Network Testnet',
+  chainType: 'cosmos',
   chainId: 'pulsar-2',
   bech32Prefix: 'secret',
   daemonName: 'secretd',
@@ -18,7 +19,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/scrtlabs/SecretNetwork',
+    recommendedVersion: 'v1.3.1',
+    binaries: {
+      "linux/amd64": 'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.3.1/secretnetwork_1.3.1_testnet_goleveldb_amd64.deb'
+    },
+    compatibleVersions: ['v1.3.0', 'v1.3.1'],
+    genesis: {
+      genesisUrl: 'https://storage.googleapis.com/stakeordie-pulsar-2/genesis.json'
+    },
+    versions: [{
+        name: 'v1.3.1',
+        recommendedVersion: 'v1.3.1',
+        compatibleVersions: ['v1.3.0', 'v1.3.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.3.1/secretnetwork_1.3.1_testnet_goleveldb_amd64.deb'
+        }
+      }]
   },
   apis: {
     rpc: [{

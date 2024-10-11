@@ -6,13 +6,24 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://cerberus.zone/',
   prettyName: 'Cerberus',
+  chainType: 'cosmos',
   chainId: 'cerberus-chain-1',
   bech32Prefix: 'cerberus',
   daemonName: 'cerberusd',
   nodeHome: '$HOME/.cerberus',
   slip44: 118,
   codebase: {
-
+    gitRepo: 'https://github.com/cerberus-zone/cerberus',
+    recommendedVersion: 'v3.1.0',
+    compatibleVersions: ['v3.1.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/cerberus-zone/cerberus_genesis/main/genesis.json'
+    },
+    versions: [{
+        name: 'v3.1.0',
+        recommendedVersion: 'v3.1.0',
+        compatibleVersions: ['v3.1.0']
+      }]
   },
   fees: {
     feeTokens: [{
@@ -67,7 +78,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg',
+      theme: {
+        primaryColorHex: '#c6c6c9'
+      }
     }]
 };
 export default info;

@@ -31,6 +31,34 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'cosmoshubtestnet',
+      clientId: '07-tendermint-3748',
+      connectionId: 'connection-3798'
+    },
+    chain2: {
+      chainName: 'symphonytestnet',
+      clientId: '07-tendermint-29',
+      connectionId: 'connection-14'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-4320',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-12',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
       chainName: 'celestiatestnet3',
       clientId: '07-tendermint-0',
       connectionId: 'connection-0'
@@ -58,7 +86,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshubtestnet',
       clientId: '07-tendermint-2073',
@@ -116,7 +144,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshubtestnet',
       clientId: '07-tendermint-2528',
@@ -178,6 +206,34 @@ const info: IBCData[] = [
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshubtestnet',
+      clientId: '07-tendermint-3730',
+      connectionId: 'connection-3782'
+    },
+    chain2: {
+      chainName: 'symphonytestnet',
+      clientId: '07-tendermint-10',
+      connectionId: 'connection-9'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-4300',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-7',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'cosmoshubtestnet',
       clientId: '07-tendermint-3237',
       connectionId: 'connection-3407'
     },
@@ -198,7 +254,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true
         }
       }]

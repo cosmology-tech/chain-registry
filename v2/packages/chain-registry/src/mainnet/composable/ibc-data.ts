@@ -32,6 +32,34 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'archway',
+      clientId: '07-tendermint-75',
+      connectionId: 'connection-79'
+    },
+    chain2: {
+      chainName: 'composable',
+      clientId: '07-tendermint-143',
+      connectionId: 'connection-63'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-108',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-50',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'axelar',
       clientId: '07-tendermint-187',
       connectionId: 'connection-165'
@@ -482,6 +510,35 @@ const info: IBCData[] = [
           status: 'live',
           preferred: true,
           properties: 'privacy'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'composable',
+      clientId: '08-wasm-215',
+      connectionId: 'connection-3'
+    },
+    chain2: {
+      chainName: 'solana',
+      clientId: '07-tendermint-1',
+      connectionId: 'connection-108'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-71',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-1',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },

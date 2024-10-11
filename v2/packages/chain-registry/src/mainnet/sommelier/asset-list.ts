@@ -31,12 +31,16 @@ const info: AssetList = {
       coingeckoId: 'sommelier',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg',
+          theme: {
+            primaryColorHex: '#f36353'
+          }
         }],
       socials: {
         website: 'https://www.sommelier.finance/',
         twitter: 'https://twitter.com/sommfinance'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

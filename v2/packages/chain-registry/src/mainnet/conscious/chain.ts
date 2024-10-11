@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://cvn.io/',
   prettyName: 'ConsciousDAO',
+  chainType: 'cosmos',
   chainId: 'cvn_2032-1',
   bech32Prefix: 'cvn',
   nodeHome: '$HOME/.cvnd',
@@ -27,7 +28,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/cvn-network/cvn',
+    recommendedVersion: 'v2.1.1',
+    compatibleVersions: ['v2.1.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/cvn-network/cvn/release/v2.1.x/networks/mainnet/config/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.3',
+        recommendedVersion: 'v1.0.4',
+        compatibleVersions: ['v1.0.3'],
+        nextVersionName: 'v2.1.1'
+      }, {
+        name: 'v2.1.1',
+        recommendedVersion: 'v2.1.1',
+        compatibleVersions: ['v2.1.1'],
+        nextVersionName: ''
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
@@ -37,31 +54,52 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.cvn.io/',
         provider: 'cvn.io'
+      }, {
+        address: 'https://conscious_mainnet_rpc.chain.whenmoonwhenlambo.money/',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://api.cvn.io',
         provider: 'cvn.io'
+      }, {
+        address: 'https://conscious_mainnet_api.chain.whenmoonwhenlambo.money/',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: [{
         address: 'https://grpc.cvn.io',
         provider: 'cvn.io'
       }],
-    evmHttpJsonrpc: [{
+    evmHttpJsonrpc: [
+      {
         address: 'https://node.cvn.io/',
         provider: 'cvn'
-      }, {
+      },
+      {
         address: 'https://node.consciousdao.io/',
         provider: 'consciousdao'
-      }]
+      },
+      {
+        address: 'https://conscious_mainnet_evm.chain.whenmoonwhenlambo.money/',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ]
   },
   explorers: [{
       kind: 'blockscout',
       url: 'https://explore.consciousdao.com/',
       txPage: 'https://explore.consciousdao.com/tx/${txHash}'
+    }, {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/conscious',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/conscious/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/conscious/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg',
+      theme: {
+        primaryColorHex: '#047e04'
+      }
     }]
 };
 export default info;

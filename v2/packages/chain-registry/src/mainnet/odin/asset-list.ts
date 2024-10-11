@@ -28,7 +28,8 @@ const info: AssetList = {
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'GEO token for ODIN Protocol',
@@ -53,8 +54,12 @@ const info: AssetList = {
             baseDenom: 'mGeo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
+          theme: {
+            primaryColorHex: '#c3ebf3'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'O9W token for ODIN Protocol',
@@ -79,8 +84,12 @@ const info: AssetList = {
             baseDenom: 'mO9W'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'SIX Protocol',
+  chainType: 'cosmos',
   chainId: 'sixnet',
   bech32Prefix: '6x',
   daemonName: 'sixd',
@@ -26,16 +27,42 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.45'
+    gitRepo: 'https://github.com/thesixnetwork/six-protocol',
+    recommendedVersion: 'v3.1.1-fn',
+    compatibleVersions: ['v3.1.1-fn'],
+    cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesisUrl: 'https://github.com/thesixnetwork/chain-info/genesis.json'
+    },
+    versions: [{
+        name: 'v3.1.1-fn',
+        recommendedVersion: 'v3.1.1-fn',
+        compatibleVersions: ['v3.1.1-fn'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    }
   },
   apis: {
     rpc: [{
-        address: 'https://sixnet-rpc.sixprotocol.net:443',
-        provider: ''
+        address: 'https://sixnet-rpc.sixprotocol.net:443'
       }],
     rest: [{
-        address: 'https://sixnet-api.sixprotocol.net:443',
-        provider: ''
+        address: 'https://sixnet-api.sixprotocol.net:443'
       }]
   },
   explorers: [{

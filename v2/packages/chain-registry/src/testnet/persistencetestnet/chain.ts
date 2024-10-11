@@ -1,7 +1,8 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'persistencetestnet',
+  chainType: 'cosmos',
   chainId: 'test-core-1',
   prettyName: 'Persistence Testnet',
   status: 'live',
@@ -27,7 +28,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/persistenceOne/persistenceCore',
+    recommendedVersion: 'v6.0.0-rc5',
+    compatibleVersions: ['v6.0.0-rc5'],
+    binaries: {
+      "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/archive/refs/tags/v6.0.0-rc5.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/persistenceOne/genesisTransactions/master/test-core-1/final_genesis.json'
+    },
+    versions: [{
+        name: 'v6.0.0-rc5',
+        recommendedVersion: 'v6.0.0-rc5',
+        compatibleVersions: ['v6.0.0-rc5'],
+        binaries: {
+          "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/archive/refs/tags/v6.0.0-rc5.tar.gz'
+        }
+      }]
   },
   apis: {
     rpc: [
@@ -96,9 +113,9 @@ const info: Chain = {
       txPage: 'https://testnet.ping.pub/test-core-1/tx/${txHash}'
     }, {
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/persistence-testnet',
-      txPage: 'https://testnet.mintscan.io/persistence-testnet/txs/${txHash}',
-      accountPage: 'https://testnet.mintscan.io/persistence-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/persistence-testnet',
+      txPage: 'https://mintscan.io/persistence-testnet/txs/${txHash}',
+      accountPage: 'https://mintscan.io/persistence-testnet/account/${accountAddress}'
     }]
 };
 export default info;

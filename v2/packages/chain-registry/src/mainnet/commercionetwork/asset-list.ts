@@ -23,8 +23,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.svg',
+          theme: {
+            primaryColorHex: '#41a68c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }, {
       description: 'The cash credit token of Commercio.network',
       denomUnits: [{
@@ -46,8 +50,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/ccc.svg',
+          theme: {
+            primaryColorHex: '#fbb804'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

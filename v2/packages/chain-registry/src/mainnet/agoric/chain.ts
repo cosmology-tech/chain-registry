@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://agoric.com/',
   prettyName: 'Agoric',
+  chainType: 'cosmos',
   chainId: 'agoric-3',
   bech32Prefix: 'agoric',
   daemonName: 'agd',
@@ -31,7 +32,38 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Agoric/agoric-sdk/',
+    genesis: {
+      genesisUrl: 'https://main.agoric.net/genesis.json'
+    },
+    recommendedVersion: 'agoric-upgrade-16',
+    compatibleVersions: ['agoric-upgrade-16'],
+    cosmosSdkVersion: 'agoric-labs/cosmos-sdk v0.46.16-alpha.agoric.2.4',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.30',
+      repo: 'https://github.com/agoric-labs/cometbft',
+      tag: 'v0.34.30-alpha.agoric.1'
+    },
+    cosmwasmEnabled: false,
+    language: {
+      type: 'go',
+      version: '1.20.2'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/agoric-labs/cosmos-sdk',
+      version: 'v0.46.16',
+      tag: 'v0.46.16-alpha.agoric.2.4'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0',
+      icsEnabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',
@@ -219,7 +251,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.svg',
+      theme: {
+        primaryColorHex: '#bc2c44'
+      }
     }]
 };
 export default info;

@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../../assetlist.schema.json',
   chainName: 'polygontestnet',
   assets: [
     {
@@ -13,6 +13,7 @@ const info: AssetList = {
           exponent: 18,
           aliases: ['polygon']
         }],
+      typeAsset: 'evm-base',
       base: 'wei',
       name: 'Matic',
       display: 'matic',
@@ -67,7 +68,7 @@ const info: AssetList = {
       denomUnits: [{
           denom: '0x2c852e740B62308c46DD29B982FBb650D063Bd07',
           exponent: 0,
-          aliases: ['uusdc']
+          aliases: ['uausdc']
         }, {
           denom: 'axlusdc',
           exponent: 6
@@ -80,7 +81,7 @@ const info: AssetList = {
           type: 'bridge',
           counterparty: {
             chainName: 'axelartestnet',
-            baseDenom: 'uusdc'
+            baseDenom: 'uausdc'
           },
           provider: 'Axelar'
         }],
@@ -88,6 +89,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'axelartestnet',
+            baseDenom: 'uausdc'
+          },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
         }]
     }

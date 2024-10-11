@@ -22,12 +22,16 @@ const info: AssetList = {
       coingeckoId: 'band-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg',
+          theme: {
+            primaryColorHex: '#4424e4'
+          }
         }],
       socials: {
         website: 'https://www.bandprotocol.com/',
         twitter: 'https://twitter.com/BandProtocol'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

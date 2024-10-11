@@ -397,21 +397,21 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'furya',
-      clientId: '07-tendermint-2',
-      connectionId: 'connection-1'
+      clientId: '07-tendermint-14',
+      connectionId: 'connection-10'
     },
     chain2: {
       chainName: 'terra2',
-      clientId: '07-tendermint-385',
-      connectionId: 'connection-361'
+      clientId: '07-tendermint-422',
+      connectionId: 'connection-436'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-1',
+          channelId: 'channel-9',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-271',
+          channelId: 'channel-495',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -797,6 +797,101 @@ const info: IBCData[] = [
           status: 'live',
           preferred: true,
           dex: 'osmosis'
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'pryzm',
+      clientId: '07-tendermint-4',
+      connectionId: 'connection-4'
+    },
+    chain2: {
+      chainName: 'terra2',
+      clientId: '07-tendermint-410',
+      connectionId: 'connection-414'
+    },
+    channels: [
+      {
+        chain1: {
+          channelId: 'channel-4',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-473',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-17',
+          portId: 'icacontroller-delegation-uluna'
+        },
+        chain2: {
+          channelId: 'channel-478',
+          portId: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'killed',
+          preferred: false
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-18',
+          portId: 'icacontroller-reward-uluna'
+        },
+        chain2: {
+          channelId: 'channel-479',
+          portId: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-19',
+          portId: 'icacontroller-sweep-uluna'
+        },
+        chain2: {
+          channelId: 'channel-480',
+          portId: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-25',
+          portId: 'icacontroller-delegation-uluna'
+        },
+        chain2: {
+          channelId: 'channel-526',
+          portId: 'icahost'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }
     ]

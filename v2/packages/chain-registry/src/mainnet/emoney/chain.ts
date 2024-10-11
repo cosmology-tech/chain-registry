@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'e-Money',
+  chainType: 'cosmos',
   chainId: 'emoney-3',
   bech32Prefix: 'emoney',
   daemonName: 'emd',
@@ -57,7 +58,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/e-money/em-ledger',
+    recommendedVersion: 'v1.1.3',
+    compatibleVersions: ['v1.1.3'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/e-money/networks/master/emoney-3/genesis.json'
+    },
+    versions: [{
+        name: 'v1.1.3',
+        recommendedVersion: 'v1.1.3',
+        compatibleVersions: ['v1.1.3']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
@@ -108,12 +119,6 @@ const info: Chain = {
       accountPage: 'https://ezstaking.app/emoney/account/${accountAddress}'
     },
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/emoney',
-      txPage: 'https://www.mintscan.io/emoney/transactions/${txHash}',
-      accountPage: 'https://www.mintscan.io/emoney/accounts/${accountAddress}'
-    },
-    {
       kind: 'ping.pub',
       url: 'https://ping.pub/e-money',
       txPage: 'https://ping.pub/e-money/tx/${txHash}'
@@ -127,7 +132,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg',
+      theme: {
+        primaryColorHex: '#caf2ea'
+      }
     }]
 };
 export default info;

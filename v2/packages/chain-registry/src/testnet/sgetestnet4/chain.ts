@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'sgetestnet4',
+  chainType: 'cosmos',
   chainId: 'sge-network-4',
   prettyName: 'SGE Testnet4',
   status: 'live',
@@ -19,7 +20,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/sge-network/sge',
+    recommendedVersion: 'v1.1.1',
+    compatibleVersions: ['v1.0.1']
   },
   apis: {
     rpc: [
@@ -65,7 +68,10 @@ const info: Chain = {
         chainName: 'sge'
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.svg',
+      theme: {
+        primaryColorHex: '#b99952'
+      }
     }],
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://sifchain.finance/',
   prettyName: 'Sifchain',
+  chainType: 'cosmos',
   chainId: 'sifchain-1',
   bech32Prefix: 'sif',
   daemonName: 'sifnoded',
@@ -25,7 +26,50 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/Sifchain/sifnode.git',
+    recommendedVersion: 'v1.2.0-beta',
+    compatibleVersions: ['v1.2.0-beta'],
+    binaries: {
+      "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.2.0-beta/sifnoded-v1.2.0-beta-linux-amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://github.com/Sifchain/networks/blob/master/betanet/sifchain-1/genesis.json.gz?raw=true'
+    },
+    versions: [
+      {
+        name: 'v1.0.14-beta',
+        proposal: 132,
+        height: 9263818,
+        recommendedVersion: 'v1.0.14-beta',
+        compatibleVersions: ['v1.0.14-beta'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.0.14-beta/sifnoded-v1.0.14-beta-linux-amd64.zip'
+        },
+        nextVersionName: 'v1.1.0-beta'
+      },
+      {
+        name: 'v1.1.0-beta',
+        proposal: 141,
+        height: 9663352,
+        recommendedVersion: 'v1.1.0-beta',
+        compatibleVersions: ['v1.1.0-beta'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.1.0-beta/sifnoded-v1.1.0-beta-linux-amd64.zip'
+        },
+        nextVersionName: 'v1.2.0-beta'
+      },
+      {
+        name: 'v1.2.0-beta',
+        proposal: 144,
+        height: 14556000,
+        recommendedVersion: 'v1.2.0-beta',
+        compatibleVersions: ['v1.2.0-beta'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.2.0-beta/sifnoded-v1.2.0-beta-linux-amd64.tar.gz'
+        },
+        nextVersionName: ''
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
@@ -44,6 +88,10 @@ const info: Chain = {
       {
         address: 'https://sifchain-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://sifchain_mainnet_rpc.chain.whenmoonwhenlambo.money:443',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -66,6 +114,10 @@ const info: Chain = {
       {
         address: 'https://sifchain.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://sifchain_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -100,11 +152,20 @@ const info: Chain = {
       url: 'https://explorer.stavr.tech/Sifchain',
       txPage: 'https://explorer.stavr.tech/Sifchain/tx/${txHash}',
       accountPage: 'https://explorer.stavr.tech/Sifchain/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/sifchain',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/sifchain/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/sifchain/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg',
+      theme: {
+        primaryColorHex: '#be9926'
+      }
     }]
 };
 export default info;

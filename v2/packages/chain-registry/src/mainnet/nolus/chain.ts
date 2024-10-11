@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://nolus.io/',
   networkType: 'mainnet',
   prettyName: 'Nolus',
+  chainType: 'cosmos',
   chainId: 'pirin-1',
   bech32Prefix: 'nolus',
   daemonName: 'nolusd',
@@ -30,9 +31,325 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.47.6-nolus',
+    gitRepo: 'https://github.com/nolus-protocol/nolus-core',
+    recommendedVersion: 'v0.6.3',
+    compatibleVersions: ['v0.6.3'],
+    cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.11'
+    },
+    cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'neutron-org/wasmd v0.45.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/mainnet/pirin-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v0.3.0',
+        recommendedVersion: 'v0.3.0',
+        compatibleVersions: ['v0.3.0'],
+        cosmosSdkVersion: '0.45',
+        cosmwasmVersion: '0.31',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.4.0',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.31',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '4.3.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.4.0',
+        proposal: 5,
+        height: 207300,
+        recommendedVersion: 'v0.4.0',
+        compatibleVersions: ['v0.4.0'],
+        cosmosSdkVersion: '0.45',
+        cosmwasmVersion: '0.31',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.4.1',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.31',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '4.3.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.4.1',
+        proposal: 34,
+        height: 941000,
+        recommendedVersion: 'v0.4.1',
+        compatibleVersions: ['v0.4.1'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.27'
+        },
+        cosmwasmVersion: '0.31',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.31',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '4.3.1',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.4.2',
+        proposal: 54,
+        height: 3044000,
+        recommendedVersion: 'v0.4.2',
+        compatibleVersions: ['v0.4.2'],
+        cosmosSdkVersion: 'v0.45.15-ics',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.27'
+        },
+        cosmwasmVersion: '0.31',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.5.0',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.15',
+          tag: 'v0.45.15-ics'
+        },
+        cosmwasm: {
+          version: '0.31',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '4.3.1',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.5.0',
+        proposal: 72,
+        height: 3659000,
+        recommendedVersion: 'v0.5.0',
+        compatibleVersions: ['v0.5.0'],
+        cosmosSdkVersion: 'v0.47.6-nolus',
+        consensus: {
+          type: 'cometbft',
+          version: '0.34.27'
+        },
+        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v5.0.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.6',
+          tag: 'v0.47.6-nolus'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          repo: 'https://github.com/neutron-org/wasmd',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.5.1',
+        proposal: 76,
+        height: 3958000,
+        recommendedVersion: 'v0.5.1',
+        compatibleVersions: ['v0.5.1'],
+        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.47.6-nolus',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.5.2',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/nolus-protocol/cosmos-sdk',
+          version: 'v0.47.6',
+          tag: 'v0.47.6-nolus'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          repo: 'https://github.com/neutron-org/wasmd',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.5.2',
+        proposal: 77,
+        height: 4059500,
+        recommendedVersion: 'v0.5.2',
+        compatibleVersions: ['v0.5.2'],
+        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.47.6-nolus',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.5.3',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/nolus-protocol/cosmos-sdk',
+          version: 'v0.47.6',
+          tag: 'v0.47.6-nolus'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          repo: 'https://github.com/neutron-org/wasmd',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.5.3',
+        proposal: 104,
+        height: 4922500,
+        recommendedVersion: 'v0.5.3',
+        compatibleVersions: ['v0.5.3'],
+        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.47.8-nolus',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/nolus-protocol/cosmos-sdk',
+          version: 'v0.47.8',
+          tag: 'v0.47.8-nolus'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          repo: 'https://github.com/neutron-org/wasmd',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.4.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.6.2',
+        proposal: 136,
+        height: 6556000,
+        recommendedVersion: 'v0.6.2',
+        compatibleVersions: ['v0.6.2'],
+        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.38.10'
+        },
+        cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.6.3',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/nolus-protocol/cosmos-sdk',
+          version: 'v0.50.7',
+          tag: 'v0.50.7-nolus-rc1'
+        },
+        cosmwasm: {
+          version: 'v0.51.0',
+          repo: 'https://github.com/neutron-org/wasmd',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '8.2.1',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'v0.6.3',
+        proposal: 158,
+        height: 7006500,
+        recommendedVersion: 'v0.6.3',
+        compatibleVersions: ['v0.6.3'],
+        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.38.11'
+        },
+        cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
+        cosmwasmEnabled: true,
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/nolus-protocol/cosmos-sdk',
+          version: 'v0.50.7',
+          tag: 'v0.50.7-nolus-rc1'
+        },
+        cosmwasm: {
+          version: 'v0.51.0',
+          repo: 'https://github.com/neutron-org/wasmd',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '8.2.1',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/nolus-protocol/cosmos-sdk',
+      version: 'v0.50.7',
+      tag: 'v0.50.7-nolus-rc1'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.2.1',
+      icsEnabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: 'v0.51.0',
+      repo: 'https://github.com/neutron-org/wasmd',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
@@ -50,7 +367,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://nolus-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/nolus',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -96,7 +413,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://nolus-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/nolus',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -142,7 +459,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://nolus-grpc.lavenderfive.com:443',
+        address: 'nolus.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -205,7 +522,10 @@ const info: Chain = {
   keywords: ['mainnet'],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.svg',
+      theme: {
+        primaryColorHex: '#fc542c'
+      }
     }]
 };
 export default info;

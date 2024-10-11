@@ -22,12 +22,16 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg',
+          theme: {
+            primaryColorHex: '#2b1c54'
+          }
         }],
       socials: {
         website: 'https://rizon.world/',
         twitter: 'https://twitter.com/hdac_rizon'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -22,12 +22,16 @@ const info: AssetList = {
       coingeckoId: 'bitcanna',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg',
+          theme: {
+            primaryColorHex: '#3cc494'
+          }
         }],
       socials: {
         website: 'http://www.bitcanna.io/',
         twitter: 'https://twitter.com/BitCannaGlobal'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -201,7 +201,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true,
           dex: 'osmosis'
         }
@@ -577,13 +577,92 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'injective',
-      clientId: '07-tendermint-97',
-      connectionId: 'connection-83'
+      clientId: '07-tendermint-267',
+      connectionId: 'connection-268'
+    },
+    chain2: {
+      chainName: 'pryzm',
+      clientId: '07-tendermint-1',
+      connectionId: 'connection-1'
+    },
+    channels: [
+      {
+        chain1: {
+          channelId: 'channel-284',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-1',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-285',
+          portId: 'icahost'
+        },
+        chain2: {
+          channelId: 'channel-10',
+          portId: 'icacontroller-delegation-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-286',
+          portId: 'icahost'
+        },
+        chain2: {
+          channelId: 'channel-11',
+          portId: 'icacontroller-reward-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-287',
+          portId: 'icahost'
+        },
+        chain2: {
+          channelId: 'channel-12',
+          portId: 'icacontroller-sweep-inj'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'injective',
+      clientId: '07-tendermint-126',
+      connectionId: 'connection-101'
     },
     chain2: {
       chainName: 'secretnetwork',
-      clientId: '07-tendermint-22',
-      connectionId: 'connection-8'
+      clientId: '07-tendermint-49',
+      connectionId: 'connection-30'
     },
     channels: [{
         chain1: {

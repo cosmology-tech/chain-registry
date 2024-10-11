@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'EntryPoint Testnet',
+  chainType: 'cosmos',
   chainId: 'entrypoint-pubtest-2',
   bech32Prefix: 'entrypoint',
   daemonName: 'entrypointd',
@@ -25,7 +26,48 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.47.4'
+    gitRepo: 'https://github.com/entrypoint-zone/testnets',
+    recommendedVersion: 'v1.2.0',
+    compatibleVersions: ['v1.2.0'],
+    cosmosSdkVersion: '0.47.4',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.2'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/entrypoint-zone/testnets/2f2bffec8e73db30886bffa67fda1a242a6dc1d1/entrypoint-pubtest-2/genesis.json'
+    },
+    versions: [{
+        name: 'v1.1.1',
+        recommendedVersion: 'v1.1.1',
+        compatibleVersions: ['v1.1.1'],
+        cosmosSdkVersion: '0.47.4',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.4'
+        }
+      }, {
+        name: 'v1.2.0',
+        recommendedVersion: 'v1.2.0',
+        compatibleVersions: ['v1.2.0'],
+        cosmosSdkVersion: '0.47.4',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.2'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.4'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.4'
+    }
   },
   apis: {
     rpc: [{

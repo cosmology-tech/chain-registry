@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://tenet.org/',
   prettyName: 'Tenet',
+  chainType: 'cosmos',
   chainId: 'tenet_1559-1',
   bech32Prefix: 'tenet',
   nodeHome: '$HOME/.tenetd',
@@ -28,7 +29,85 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.46'
+    gitRepo: 'https://github.com/tenet-org/tenet-mainnet',
+    recommendedVersion: 'v11.2.1',
+    compatibleVersions: ['v11.2.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Windows_amd64.zip'
+    },
+    cosmosSdkVersion: '0.46',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/tenet-org/tenet-mainnet/master/config/genesis.json'
+    },
+    versions: [{
+        name: 'v11',
+        recommendedVersion: 'v11.0.6',
+        compatibleVersions: ['v11.0.6'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.0.6/tenet-mainnet_11.0.6_Linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.0.6/tenet-mainnet_11.0.6_Darwin_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.0.6/tenet-mainnet_11.0.6_Darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.0.6/tenet-mainnet_11.0.6_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.0.6/tenet-mainnet_11.0.6_Windows_amd64.zip'
+        },
+        nextVersionName: 'multichain',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.0'
+        }
+      }, {
+        name: 'multichain',
+        proposal: 2,
+        height: 2330000,
+        recommendedVersion: 'v11.2.1',
+        compatibleVersions: ['v11.2.0', 'v11.2.1'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Darwin_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Darwin_arm64.tar.gz',
+          "windows/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Windows_amd64.zip'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.0'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.1.0'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
@@ -104,7 +183,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.svg',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

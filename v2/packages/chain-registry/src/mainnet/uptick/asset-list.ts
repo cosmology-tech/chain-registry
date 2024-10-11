@@ -21,8 +21,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.svg',
+          theme: {
+            primaryColorHex: '#1f182f'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

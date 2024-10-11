@@ -3,7 +3,6 @@ const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chainName: 'arkeonetworktestnet',
   assets: [{
-      description: '',
       denomUnits: [{
           denom: 'uarkeo',
           exponent: 0
@@ -20,7 +19,8 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/arkeonetworktestnet/images/arkeo.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

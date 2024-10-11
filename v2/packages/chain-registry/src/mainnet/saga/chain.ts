@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.saga.xyz/',
   prettyName: 'Saga',
+  chainType: 'cosmos',
   chainId: 'ssc-1',
   bech32Prefix: 'saga',
   daemonName: 'sscd',
@@ -29,8 +30,37 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/sagaxyz/ssc',
+    genesis: {
+      name: 'v0.1.5',
+      genesisUrl: 'https://raw.githubusercontent.com/sagaxyz/mainnet/main/genesis/genesis.json'
+    },
+    recommendedVersion: 'v0.1.5',
+    compatibleVersions: ['v0.1.5'],
     cosmosSdkVersion: 'osmosis-labs/cosmos-sdk v0.47.5',
-    cosmwasmEnabled: false
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.2',
+      repo: 'https://github.com/osmosis-labs/cometbft'
+    },
+    cosmwasmEnabled: false,
+    language: {
+      type: 'go',
+      version: '1.21'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/osmosis-labs/cosmos-sdk',
+      version: 'v0.47.5'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1',
+      icsEnabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [
@@ -55,8 +85,20 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
+        address: 'https://rpc.saga.goldenratiostaking.net',
+        provider: 'Golden Ratio Staking'
+      },
+      {
         address: 'https://rpc.saga.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rpc.lavenderfive.com:443/saga',
+        provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://saga-rpc.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     rest: [
@@ -69,6 +111,10 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
+        address: 'https://rest.saga.goldenratiostaking.net',
+        provider: 'Golden Ratio Staking'
+      },
+      {
         address: 'https://api.saga.nodestake.org',
         provider: 'NodeStake'
       },
@@ -79,6 +125,14 @@ const info: Chain = {
       {
         address: 'https://lcd.saga.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rest.lavenderfive.com:443/saga',
+        provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'https://saga-api.stakeandrelax.net',
+        provider: 'Stake&Relax 🦥'
       }
     ],
     grpc: [
@@ -101,6 +155,14 @@ const info: Chain = {
       {
         address: 'grpc.saga.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'saga.lavenderfive.com:443',
+        provider: 'Lavender.Five Nodes 🐝'
+      },
+      {
+        address: 'http://saga-grpc.stakeandrelax.net:24990',
+        provider: 'Stake&Relax 🦥'
       }
     ]
   },
@@ -129,10 +191,12 @@ const info: Chain = {
       accountPage: 'https://explorer.nodestake.org/saga/account/${accountAddress}'
     }
   ],
-  keywords: [],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

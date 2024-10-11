@@ -1,11 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'chimbatestnet',
   status: 'live',
   networkType: 'testnet',
   website: 'https://chimba.ooo/',
   prettyName: 'Chimba',
+  chainType: 'cosmos',
   chainId: 'chimba-testnet',
   bech32Prefix: 'chimba',
   daemonName: 'chimbad',
@@ -25,7 +26,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/ChimbaBlockchain/chimba',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://rpc.testnet.chimba.ooo/genesis'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   apis: {
     rpc: [{

@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'stride',
   assets: [
     {
-      description: 'The native token of Stride',
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
+      extendedDescription: 'Stride is a blockchain ("zone") that provides liquidity for staked tokens within the Cosmos ecosystem. Users can liquid stake their tokens from any Cosmos chain using Stride, earning staking and DeFi yields across the Cosmos IBC ecosystem. When users stake their tokens with Stride, they receive stTokens, which can be traded or redeemed at any time. Stride\'s liquid staking derivatives allow users to retain liquidity while earning staking rewards, supporting various IBC-compatible chains and promoting broader DeFi participation. The native token, STRD, is used for governance and securing the network.',
       denomUnits: [{
           denom: 'ustrd',
           exponent: 0
@@ -23,12 +24,16 @@ const info: AssetList = {
       coingeckoId: 'stride',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
+          theme: {
+            primaryColorHex: '#e4047c'
+          }
         }],
       socials: {
         website: 'https://stride.zone/',
         twitter: 'https://twitter.com/stride_zone'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -57,8 +62,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-atom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -87,8 +96,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-stars',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/ststars.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -117,8 +130,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-osmo',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -147,8 +164,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-juno',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stjuno.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -177,8 +198,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-luna',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stluna.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -206,8 +231,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stinj.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -225,7 +254,7 @@ const info: AssetList = {
           type: 'liquid-stake',
           counterparty: {
             chainName: 'evmos',
-            baseDenom: 'uaevmos'
+            baseDenom: 'aevmos'
           },
           provider: 'Stride'
         }],
@@ -236,8 +265,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-evmos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stevmos.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked DYDX',
@@ -266,8 +299,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdydx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdydx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdydx.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked TIA',
@@ -296,8 +333,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked DYM',
@@ -326,8 +367,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stdym.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -356,8 +401,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-umee',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stumee.svg',
+          theme: {
+            primaryColorHex: '#fbd9e9'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -385,8 +434,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stcmdx.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -415,8 +468,12 @@ const info: AssetList = {
       coingeckoId: 'stride-staked-sommelier',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsomm.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Stride\'s liquid staked SAGA',
@@ -445,8 +502,122 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stsaga.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The native token of Celestia',
+      denomUnits: [{
+          denom: 'ibc/BF3B4F53F3694B66E13C23107C84B6485BD2B96296BB7EC680EA77BBA75B4801',
+          exponent: 0,
+          aliases: ['utia']
+        }, {
+          denom: 'TIA',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/BF3B4F53F3694B66E13C23107C84B6485BD2B96296BB7EC680EA77BBA75B4801',
+      name: 'Celestia',
+      display: 'TIA',
+      symbol: 'TIA',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'celestia',
+            baseDenom: 'utia',
+            channelId: 'channel-4'
+          },
+          chain: {
+            channelId: 'channel-162',
+            path: 'transfer/channel-162/utia'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'celestia',
+            baseDenom: 'utia'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+          theme: {
+            primaryColorHex: '#7c2cfb'
+          }
         }]
+    },
+    {
+      denomUnits: [{
+          denom: 'staISLM',
+          exponent: 0
+        }, {
+          denom: 'stISLM',
+          exponent: 18
+        }],
+      base: 'staISLM',
+      name: 'Stride Staked ISLM',
+      display: 'stISLM',
+      symbol: 'stISLM',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'haqq',
+            baseDenom: 'aISLM'
+          },
+          provider: 'Stride'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.svg'
+      },
+      coingeckoId: 'stride-staked-islm',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stislm.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      denomUnits: [{
+          denom: 'stuband',
+          exponent: 0
+        }, {
+          denom: 'stBAND',
+          exponent: 6
+        }],
+      base: 'stuband',
+      name: 'Stride Staked BAND',
+      display: 'stBAND',
+      symbol: 'stBAND',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'bandchain',
+            baseDenom: 'uband'
+          },
+          provider: 'Stride'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stband.svg',
+          theme: {
+            primaryColorHex: '#e40474'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

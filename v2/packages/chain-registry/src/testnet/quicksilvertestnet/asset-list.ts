@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'quicksilvertestnet',
   assets: [{
       description: 'QCK - native token of Quicksilver',
@@ -23,7 +23,8 @@ const info: AssetList = {
       coingeckoId: 'quicksilver',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

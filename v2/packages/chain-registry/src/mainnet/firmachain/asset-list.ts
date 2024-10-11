@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'firmachain',
   assets: [{
-      description: 'The native token of FirmaChain',
+      description: 'FIRMACHAIN adds a signing and verifying e-contract function to the blockchain. Unlocking new limits of electronic contracts with blockchain technology, FIRMACHAIN seeks to resolve all the social and legal issues (contracts, notarial, etc.) with written contracts through the use of electronic contracts based on FIRMACHAIN’s data blockchain.',
       denomUnits: [{
           denom: 'ufct',
           exponent: 0
@@ -12,7 +12,7 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'ufct',
-      name: 'FirmaChain',
+      name: 'FIRMACHAIN',
       display: 'fct',
       symbol: 'FCT',
       logoURIs: {
@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'firmachain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg',
+          theme: {
+            primaryColorHex: '#1c1c1c'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

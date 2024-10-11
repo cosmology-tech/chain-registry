@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Galactica Protocol Testnet',
+  chainType: 'cosmos',
   chainId: 'galactica_9302-1',
   bech32Prefix: 'gala',
   daemonName: 'galacticad',
@@ -26,8 +27,43 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/Galactica-corp/galactica',
+    recommendedVersion: 'v0.1.1',
+    compatibleVersions: ['v0.1.1'],
     cosmosSdkVersion: '0.46',
-    cosmwasmEnabled: false
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    cosmwasmEnabled: false,
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Galactica-corp/networks/main/galactica_9301-1/genesis.json'
+    },
+    versions: [{
+        name: 'v0.1.1',
+        recommendedVersion: 'v0.1.1',
+        compatibleVersions: ['v0.1.1'],
+        cosmosSdkVersion: '0.46',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37'
+        },
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: '0.46'
+        },
+        cosmwasm: {
+          enabled: false
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

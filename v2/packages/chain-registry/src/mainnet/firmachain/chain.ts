@@ -5,7 +5,8 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   website: 'https://firmachain.org/',
-  prettyName: 'FirmaChain',
+  prettyName: 'FIRMACHAIN',
+  chainType: 'cosmos',
   chainId: 'colosseum-1',
   bech32Prefix: 'firma',
   slip44: 7777777,
@@ -15,7 +16,10 @@ const info: Chain = {
   fees: {
     feeTokens: [{
         denom: 'ufct',
-        fixedMinGasPrice: 0.1
+        fixedMinGasPrice: 0.1,
+        lowGasPrice: 0.1,
+        averageGasPrice: 0.15,
+        highGasPrice: 0.2
       }]
   },
   staking: {
@@ -24,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/firmachain/firmachain',
+    recommendedVersion: 'v0.3.5-patch',
+    compatibleVersions: ['v0.3.5-patch'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/FirmaChain/mainnet/main/colosseum-1/genesis.json'
+    },
+    versions: [{
+        name: 'v0.3.5',
+        recommendedVersion: 'v0.3.5-patch',
+        compatibleVersions: ['v0.3.5-patch']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
@@ -45,7 +59,7 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://firmachain-rpc.lavenderfive.com/',
+        address: 'https://rpc.lavenderfive.com:443/firmachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -55,6 +69,10 @@ const info: Chain = {
       {
         address: 'https://firmachain.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://firmachain_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -71,7 +89,7 @@ const info: Chain = {
         provider: 'ChainTools'
       },
       {
-        address: 'https://firmachain-api.lavenderfive.com/',
+        address: 'https://rest.lavenderfive.com:443/firmachain',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -81,11 +99,15 @@ const info: Chain = {
       {
         address: 'https://firmachain.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://firmachain_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
       {
-        address: 'firmachain-grpc.lavenderfive.com:443',
+        address: 'firmachain.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -136,11 +158,20 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/firmachain/',
       txPage: 'https://explorer.nodeshub.online/firmachain/tx/${txHash}',
       accountPage: 'https://explorer.nodeshub.online/firmachain/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/firmachain',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/firmachain/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/firmachain/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg',
+      theme: {
+        primaryColorHex: '#1c1c1c'
+      }
     }]
 };
 export default info;

@@ -23,8 +23,12 @@ const info: AssetList = {
       coingeckoId: 'fanfury',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Governance token of Jinx Wallet and Fury Lend Protocol',
@@ -45,8 +49,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinx.svg',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Governance token of Fury Swap Protocol',
@@ -67,8 +75,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/jinxy.svg',
+          theme: {
+            primaryColorHex: '#090909'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

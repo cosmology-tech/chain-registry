@@ -24,7 +24,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked ATOM',
@@ -48,7 +49,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkatom.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked OSMO',
@@ -72,7 +74,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkosmo.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'PSTAKE Liquid-Staked DV4TNT',
@@ -96,7 +99,8 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdv4tnt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/stkdv4tnt.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

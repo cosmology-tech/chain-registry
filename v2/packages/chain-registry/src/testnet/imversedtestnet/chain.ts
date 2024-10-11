@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Imversed Testnet',
+  chainType: 'cosmos',
   chainId: 'imversed-test-1',
   bech32Prefix: 'imv',
   daemonName: 'imversed',
@@ -18,7 +19,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/imversed/imversed',
+    recommendedVersion: 'v2.4.0',
+    compatibleVersions: ['v2.4.0'],
+    binaries: {
+      "linux/amd64": 'https://s.imversed.com/imversed_linux_amd64.tar.gz',
+      "darwin/arm64": 'https://s.imversed.com/imversed_darwin_arm64.tar.gz',
+      "darwin/amd64": 'https://s.imversed.com/imversed_darwin_amd64.tar.gz',
+      "windows/amd64": 'https://s.imversed.com/imversed_windows_amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://s.imversed.com/test-net/genesis.json'
+    },
+    versions: [{
+        name: 'v2.4.0',
+        recommendedVersion: 'v2.4.0',
+        compatibleVersions: ['v2.4.0'],
+        binaries: {
+          "linux/amd64": 'https://s.imversed.com/imversed_linux_amd64.tar.gz',
+          "darwin/arm64": 'https://s.imversed.com/imversed_darwin_arm64.tar.gz',
+          "darwin/amd64": 'https://s.imversed.com/imversed_darwin_amd64.tar.gz',
+          "windows/amd64": 'https://s.imversed.com/imversed_windows_amd64.tar.gz'
+        }
+      }]
   },
   apis: {
     rpc: [{

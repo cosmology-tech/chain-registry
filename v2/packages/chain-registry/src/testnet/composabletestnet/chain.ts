@@ -1,10 +1,11 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'composabletestnet',
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Composable Testnet',
+  chainType: 'cosmos',
   chainId: 'banksy-testnet-3',
   bech32Prefix: 'centauri',
   daemonName: 'centaurid',
@@ -26,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/notional-labs/composable-centauri',
+    recommendedVersion: 'v3.0.0',
+    compatibleVersions: ['v3.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/notional-labs/composable-networks/main/banksy-testnet-3/genesis.json'
+    },
+    versions: [{
+        name: 'v3.0.0',
+        recommendedVersion: 'v3.0.0',
+        compatibleVersions: ['v3.0.0']
+      }]
   },
   apis: {
     rpc: [{

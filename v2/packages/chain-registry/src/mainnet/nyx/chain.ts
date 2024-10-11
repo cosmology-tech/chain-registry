@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://nymtech.net/',
   prettyName: 'Nym',
+  chainType: 'cosmos',
   chainId: 'nyx',
   bech32Prefix: 'n',
   daemonName: 'nyxd',
@@ -35,7 +36,68 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmwasmEnabled: true
+    gitRepo: 'https://github.com/nymtech/nyxd/',
+    recommendedVersion: 'v0.43.0',
+    compatibleVersions: ['v0.43.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
+    },
+    genesis: {
+      genesisUrl: 'https://nymtech.net/genesis/genesis.json'
+    },
+    cosmwasmEnabled: true,
+    versions: [
+      {
+        name: 'v0.31.1',
+        tag: 'v0.31.1',
+        height: 7710000,
+        proposal: 8,
+        recommendedVersion: 'v0.31.1',
+        compatibleVersions: ['v0.31.1'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.31.1'
+        },
+        nextVersionName: 'v0.32.0',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v0.32.0',
+        tag: 'v0.32.0',
+        height: 8010500,
+        proposal: 9,
+        recommendedVersion: 'v0.32.0',
+        compatibleVersions: ['v0.32.0'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.32.0'
+        },
+        nextVersionName: 'v0.43.0',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v0.43.0',
+        tag: 'v0.43.0',
+        height: 9912345,
+        proposal: 10,
+        recommendedVersion: 'v0.43.0',
+        compatibleVersions: ['v0.43.0'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
+        },
+        cosmwasm: {
+          enabled: true
+        }
+      }
+    ],
+    cosmwasm: {
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
@@ -117,7 +179,8 @@ const info: Chain = {
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg',
       theme: {
         darkMode: false,
-        circle: true
+        circle: true,
+        primaryColorHex: '#151525'
       }
     },
     {
@@ -125,11 +188,15 @@ const info: Chain = {
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.svg',
       theme: {
         darkMode: true,
-        circle: true
+        circle: true,
+        primaryColorHex: '#141424'
       }
     },
     {
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
+      theme: {
+        primaryColorHex: '#151525'
+      }
     }
   ]
 };

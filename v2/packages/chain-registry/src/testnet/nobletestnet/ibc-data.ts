@@ -29,7 +29,36 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'mantrachaintestnet',
+      clientId: '07-tendermint-6',
+      connectionId: 'connection-6'
+    },
+    chain2: {
+      chainName: 'nobletestnet',
+      clientId: '07-tendermint-294',
+      connectionId: 'connection-247'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-6',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-209',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'nobletestnet',
       clientId: '07-tendermint-42',
@@ -57,7 +86,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'nobletestnet',
       clientId: '07-tendermint-6',
@@ -81,6 +110,64 @@ const info: IBCData[] = [
         version: 'ics20-1',
         tags: {
           status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'nobletestnet',
+      clientId: '07-tendermint-44',
+      connectionId: 'connection-32'
+    },
+    chain2: {
+      chainName: 'seitestnet2',
+      clientId: '07-tendermint-127',
+      connectionId: 'connection-107'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-23',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-75',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'nobletestnet',
+      clientId: '07-tendermint-293',
+      connectionId: 'connection-246'
+    },
+    chain2: {
+      chainName: 'titantestnet',
+      clientId: '07-tendermint-9',
+      connectionId: 'connection-7'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-208',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-7',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },

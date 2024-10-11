@@ -262,6 +262,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'bostrom',
+      clientId: '07-tendermint-15',
+      connectionId: 'connection-10'
+    },
+    chain2: {
+      chainName: 'cosmoshub',
+      clientId: '07-tendermint-764',
+      connectionId: 'connection-553'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-8',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-341',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'carbon',
       clientId: '07-tendermint-6',
       connectionId: 'connection-5'
@@ -727,6 +756,35 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshub',
+      clientId: '07-tendermint-1307',
+      connectionId: 'connection-1041'
+    },
+    chain2: {
+      chainName: 'joltify',
+      clientId: '07-tendermint-3',
+      connectionId: 'connection-2'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-866',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-2',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'cosmoshub',
       clientId: '07-tendermint-439',
       connectionId: 'connection-372'
     },
@@ -829,6 +887,35 @@ const info: IBCData[] = [
         },
         chain2: {
           channelId: 'channel-0',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'cosmoshub',
+      clientId: '07-tendermint-1318',
+      connectionId: 'connection-1050'
+    },
+    chain2: {
+      chainName: 'lava',
+      clientId: '07-tendermint-7',
+      connectionId: 'connection-12'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-969',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-6',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -1133,6 +1220,85 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshub',
+      clientId: '07-tendermint-1304',
+      connectionId: 'connection-1038'
+    },
+    chain2: {
+      chainName: 'pryzm',
+      clientId: '07-tendermint-0',
+      connectionId: 'connection-0'
+    },
+    channels: [
+      {
+        chain1: {
+          channelId: 'channel-859',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-0',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-863',
+          portId: 'icahost'
+        },
+        chain2: {
+          channelId: 'channel-8',
+          portId: 'icacontroller-reward-uatom'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-861',
+          portId: 'icahost'
+        },
+        chain2: {
+          channelId: 'channel-9',
+          portId: 'icacontroller-sweep-uatom'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      },
+      {
+        chain1: {
+          channelId: 'channel-891',
+          portId: 'icahost'
+        },
+        chain2: {
+          channelId: 'channel-20',
+          portId: 'icacontroller-delegation-uatom'
+        },
+        ordering: 'ordered',
+        version: 'ics27-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }
+    ]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'cosmoshub',
       clientId: '07-tendermint-1018',
       connectionId: 'connection-709'
     },
@@ -1268,6 +1434,35 @@ const info: IBCData[] = [
           status: 'live',
           preferred: true,
           properties: 'privacy'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'cosmoshub',
+      clientId: '07-tendermint-1310',
+      connectionId: 'connection-1043'
+    },
+    chain2: {
+      chainName: 'self',
+      clientId: '07-tendermint-0',
+      connectionId: 'connection-0'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-892',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-0',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },

@@ -532,13 +532,13 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'injective',
-      clientId: '07-tendermint-97',
-      connectionId: 'connection-83'
+      clientId: '07-tendermint-126',
+      connectionId: 'connection-101'
     },
     chain2: {
       chainName: 'secretnetwork',
-      clientId: '07-tendermint-22',
-      connectionId: 'connection-8'
+      clientId: '07-tendermint-49',
+      connectionId: 'connection-30'
     },
     channels: [{
         chain1: {

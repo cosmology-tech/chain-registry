@@ -1,7 +1,7 @@
 import { IBCData } from '@chain-registry/v2-types';
 const info: IBCData[] = [
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'axelartestnet',
       clientId: '07-tendermint-213',
@@ -31,7 +31,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'junotestnet',
       clientId: '07-tendermint-135',
@@ -91,7 +91,7 @@ const info: IBCData[] = [
       }]
   },
   {
-    $schema: '../ibc_data.schema.json',
+    $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'nobletestnet',
       clientId: '07-tendermint-6',

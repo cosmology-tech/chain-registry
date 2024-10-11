@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'ki',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg',
+          theme: {
+            primaryColorHex: '#1c04fc'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }, {
       description: 'ELEVENPARIS loyalty token on KiChain',
       typeAsset: 'cw20',
@@ -44,7 +48,10 @@ const info: AssetList = {
       },
       coingeckoId: 'lvn',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png',
+          theme: {
+            primaryColorHex: '#683480'
+          }
         }]
     }]
 };

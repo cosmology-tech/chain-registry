@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://chihuahua.wtf/',
   prettyName: 'Chihuahua',
+  chainType: 'cosmos',
   chainId: 'chihuahua-1',
   bech32Prefix: 'chihuahua',
   daemonName: 'chihuahuad',
@@ -27,9 +28,201 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.47.5',
+    gitRepo: 'https://github.com/ChihuahuaChain/chihuahua/',
+    recommendedVersion: 'v7.0.2',
+    compatibleVersions: ['v7.0.2'],
+    cosmosSdkVersion: 'v0.47.8',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    cosmwasmVersion: 'v0.41.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.41.0'
+    cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/ChihuahuaChain/chihuahua/main/mainnet/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v421',
+        recommendedVersion: 'v4.2.3',
+        compatibleVersions: [
+          'v4.2.3',
+          'v4.2.2',
+          'v4.2.1'
+        ],
+        cosmwasmEnabled: true,
+        nextVersionName: 'v500',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v500',
+        recommendedVersion: 'v5.0.0',
+        compatibleVersions: ['v5.0.0'],
+        proposal: 51,
+        height: 8711111,
+        cosmwasmEnabled: true,
+        nextVersionName: 'v501',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v501',
+        recommendedVersion: 'v5.0.1',
+        compatibleVersions: ['v5.0.1'],
+        proposal: 52,
+        height: 8813000,
+        cosmwasmEnabled: true,
+        nextVersionName: 'v502',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v502',
+        recommendedVersion: 'v5.0.2',
+        compatibleVersions: ['v5.0.2'],
+        proposal: 53,
+        height: 9180000,
+        cosmwasmEnabled: true,
+        nextVersionName: 'v503',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v503',
+        recommendedVersion: 'v5.0.4',
+        compatibleVersions: ['v5.0.3', 'v5.0.4'],
+        proposal: 54,
+        height: 9430000,
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmwasmVersion: 'v0.41.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
+        nextVersionName: 'v6',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        },
+        cosmwasm: {
+          version: 'v0.41.0',
+          path: '$HOME/.chihuahuad/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.0'
+        }
+      },
+      {
+        name: 'v6',
+        recommendedVersion: 'v6.0.1',
+        compatibleVersions: ['v6.0.1'],
+        proposal: 66,
+        height: 10666000,
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmwasmVersion: 'v0.41.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
+        nextVersionName: 'v7',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        },
+        cosmwasm: {
+          version: 'v0.41.0',
+          path: '$HOME/.chihuahuad/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.0'
+        }
+      },
+      {
+        name: 'v7',
+        recommendedVersion: 'v7',
+        compatibleVersions: ['v7'],
+        proposal: 75,
+        height: 12900000,
+        cosmosSdkVersion: 'v0.47.8',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.41.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.8'
+        },
+        cosmwasm: {
+          version: 'v0.41.0',
+          path: '$HOME/.chihuahuad/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.4.0'
+        }
+      },
+      {
+        name: 'v7.0.1',
+        recommendedVersion: 'v7.0.2',
+        compatibleVersions: ['v7.0.2'],
+        proposal: 77,
+        height: 13250000,
+        cosmosSdkVersion: 'v0.47.8',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.41.0',
+        cosmwasmEnabled: true,
+        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.8'
+        },
+        cosmwasm: {
+          version: 'v0.41.0',
+          path: '$HOME/.chihuahuad/data/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.41.0',
+      path: '$HOME/.chihuahuad/data/wasm',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
@@ -58,7 +251,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://chihuahua-rpc.lavenderfive.com',
+        address: 'https://rpc.lavenderfive.com:443/chihuahua',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -116,7 +309,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://chihuahua-api.lavenderfive.com',
+        address: 'https://rest.lavenderfive.com:443/chihuahua',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -158,7 +351,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'chihuahua-grpc.lavenderfive.com:443',
+        address: 'chihuahua.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -225,7 +418,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+      theme: {
+        primaryColorHex: '#343434'
+      }
     }]
 };
 export default info;

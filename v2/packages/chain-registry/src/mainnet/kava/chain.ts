@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.kava.io/',
   prettyName: 'Kava',
+  chainType: 'cosmos',
   chainId: 'kava_2222-10',
   bech32Prefix: 'kava',
   daemonName: 'kava',
@@ -26,7 +27,54 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/kava-Labs/kava/',
+    recommendedVersion: 'v0.26.0',
+    compatibleVersions: ['v0.26.0'],
+    genesis: {
+      genesisUrl: 'https://kava-genesis-files.s3.us-east-1.amazonaws.com/kava_2222-10/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v0.21.0',
+        proposal: 124,
+        height: 3607200,
+        recommendedVersion: 'v0.21.0',
+        compatibleVersions: ['v0.21.0'],
+        nextVersionName: 'v0.23.0'
+      },
+      {
+        name: 'v0.23.0',
+        proposal: 139,
+        height: 4832500,
+        recommendedVersion: 'v0.23.0',
+        compatibleVersions: ['v0.23.0'],
+        nextVersionName: 'v0.24.0'
+      },
+      {
+        name: 'v0.24.0',
+        proposal: 146,
+        height: 5597000,
+        recommendedVersion: 'v0.24.0',
+        compatibleVersions: ['v0.24.0'],
+        nextVersionName: 'v0.25.0'
+      },
+      {
+        name: 'v0.25.0',
+        proposal: 163,
+        height: 7638000,
+        recommendedVersion: 'v0.25.0',
+        compatibleVersions: ['v0.25.0'],
+        nextVersionName: 'v0.26.0'
+      },
+      {
+        name: 'v0.26.0',
+        proposal: 178,
+        height: 9561866,
+        recommendedVersion: 'v0.26.0',
+        compatibleVersions: ['v0.26.0'],
+        nextVersionName: ''
+      }
+    ]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
@@ -62,6 +110,10 @@ const info: Chain = {
       {
         address: 'https://kava-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://kava.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -167,7 +219,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
+      theme: {
+        primaryColorHex: '#e64942'
+      }
     }]
 };
 export default info;

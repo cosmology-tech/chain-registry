@@ -19,11 +19,14 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg'
       },
-      coingeckoId: '',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akiro/images/akiro.svg',
+          theme: {
+            primaryColorHex: '#f7f0e1'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

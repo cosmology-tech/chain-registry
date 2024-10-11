@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'chihuahua',
   assets: [
     {
-      description: 'The native token of Chihuahua Chain',
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
+      extendedDescription: 'Chihuahua aims to foster a vibrant and interactive community through its blockchain platform, which emphasizes social engagement and entertainment. The native token, HUAHUA, is used for various activities within the ecosystem, including rewards, staking, and governance. Chihuahua\'s unique approach combines blockchain technology with community engagement, offering a dynamic and enjoyable environment for its users.',
       denomUnits: [{
           denom: 'uhuahua',
           exponent: 0
@@ -23,8 +24,12 @@ const info: AssetList = {
       coingeckoId: 'chihuahua-token',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+          theme: {
+            primaryColorHex: '#343434'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Puppy',
@@ -42,7 +47,10 @@ const info: AssetList = {
       display: 'puppy',
       symbol: 'PUPPY',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/puppyhuahua_logo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/puppyhuahua_logo.png',
+          theme: {
+            primaryColorHex: '#100e0d'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/puppyhuahua_logo.png'
@@ -50,6 +58,7 @@ const info: AssetList = {
     },
     {
       description: 'has a hat',
+      extendedDescription: 'Chihuahuawifhat is the biggest cult of the Chihuahua chain aiming to take over Cosmos. The token is $BADDOG and we\'re not playing around.',
       denomUnits: [{
           denom: 'factory/chihuahua1x4q2vkrz4dfgd9hcw0p5m2f2nuv2uqmt9xr8k2/achihuahuawifhat',
           exponent: 0
@@ -65,8 +74,18 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png',
+          theme: {
+            primaryColorHex: '#F7E3C0',
+            backgroundColorHex: '#F7E3C0',
+            circle: true
+          }
+        }],
+      socials: {
+        website: 'https://baddog.lol/',
+        twitter: 'https://x.com/chihuahuawifhat'
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Woof',
@@ -85,8 +104,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/woof.png',
+          theme: {
+            primaryColorHex: '#d9905f'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Tacos',
@@ -105,8 +128,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/tacos.png',
+          theme: {
+            primaryColorHex: '#f3bb5b'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Weed',
@@ -125,8 +152,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/weed.png',
+          theme: {
+            primaryColorHex: '#43b333'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Bulldog',
@@ -145,8 +176,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bdog.png',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'CaneCorso',
@@ -165,8 +200,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/corso.png',
+          theme: {
+            primaryColorHex: '#d9d2d2'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'BackBone Labs Liquid Staked HUAHUA',
@@ -184,12 +223,121 @@ const info: AssetList = {
       display: 'bHUAHUA',
       symbol: 'bHUAHUA',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
+          theme: {
+            primaryColorHex: '#f2bd3a'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
       },
       coingeckoId: 'backbone-labs-staked-huahua'
+    },
+    {
+      description: 'ashHUAHUA - Burned HUAHUA',
+      extendedDescription: 'ashHUAHUA - receipt token recieved when burning HUAHUA via ASH DAOs Furnace',
+      denomUnits: [{
+          denom: 'factory/chihuahua1hplyuj2hzxd75q8686g9vm3uzrrny9ggvt8aza2csupgdp98vg2sp0e3h0/uhuahua.ash',
+          exponent: 0
+        }, {
+          denom: 'ashHUAHUA',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'chihuahua1hplyuj2hzxd75q8686g9vm3uzrrny9ggvt8aza2csupgdp98vg2sp0e3h0',
+      base: 'factory/chihuahua1hplyuj2hzxd75q8686g9vm3uzrrny9ggvt8aza2csupgdp98vg2sp0e3h0/uhuahua.ash',
+      name: 'Burned HUAHUA',
+      display: 'ashHUAHUA',
+      symbol: 'ashHUAHUA',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/ashhuahua.png',
+          theme: {
+            primaryColorHex: '#f46c0f'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/ashhuahua.png'
+      }
+    },
+    {
+      denomUnits: [{
+          denom: 'ibc/7D01429FF7542DBC41C261793B480B63FE7A83260C751989CC268BC7E852EB99',
+          exponent: 0,
+          aliases: ['factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH']
+        }, {
+          denom: 'ampGASH',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/7D01429FF7542DBC41C261793B480B63FE7A83260C751989CC268BC7E852EB99',
+      name: 'ampGASH',
+      display: 'ampGASH',
+      symbol: 'ampGASH',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'migaloo',
+            baseDenom: 'factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH',
+            channelId: 'channel-10'
+          },
+          chain: {
+            channelId: 'channel-39',
+            path: 'transfer/channel-39/factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'migaloo',
+            baseDenom: 'factory/migaloo1nsskhvvh0msm7d5ke2kfg24a8d4jecsnxd28s27h0uz5kf9ap60shlqmcl/ampGASH'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png',
+          theme: {
+            primaryColorHex: '#374455'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/ampgash.png'
+      }
+    },
+    {
+      denomUnits: [{
+          denom: 'ibc/DBBDE1753EFA93F09C468DB5E384861BB741D4AA73E9C7032D139BB2C99FDD65',
+          exponent: 0,
+          aliases: ['factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy']
+        }, {
+          denom: 'GUPPY',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/DBBDE1753EFA93F09C468DB5E384861BB741D4AA73E9C7032D139BB2C99FDD65',
+      name: 'GUPPY',
+      display: 'GUPPY',
+      symbol: 'GUPPY',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'migaloo',
+            baseDenom: 'factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy',
+            channelId: 'channel-10'
+          },
+          chain: {
+            channelId: 'channel-39',
+            path: 'transfer/channel-39/factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'migaloo',
+            baseDenom: 'factory/migaloo1etlu2h30tjvv8rfa4fwdc43c92f6ul5w9acxzk/uguppy'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png',
+          theme: {
+            primaryColorHex: '#d9966e'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
+      }
     }
   ]
 };

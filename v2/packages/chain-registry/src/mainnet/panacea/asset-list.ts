@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'medibloc',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg',
+          theme: {
+            primaryColorHex: '#2474ec'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

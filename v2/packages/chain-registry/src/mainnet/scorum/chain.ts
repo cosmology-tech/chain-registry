@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://scorum.com/',
   prettyName: 'Scorum Network',
+  chainType: 'cosmos',
   chainId: 'scorum-1',
   bech32Prefix: 'scorum',
   daemonName: 'scorumd',
@@ -23,11 +24,21 @@ const info: Chain = {
   },
   staking: {
     stakingTokens: [{
-        denom: 'nsp'
+        denom: 'nscr'
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/scorum/cosmos-network',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/scorum/cosmos-network/main/genesis/mainnet/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.png',
@@ -35,24 +46,15 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://scorum-blockchain-mainnet-rpc-1.scorum.com',
-        provider: 'scorum'
-      }, {
-        address: 'https://scorum-blockchain-mainnet-rpc-2.scorum.com',
+        address: 'https://scorum-blockchain-mainnet-rpc.scorum.com',
         provider: 'scorum'
       }],
     rest: [{
-        address: 'https://scorum-blockchain-mainnet-api-1.scorum.com',
-        provider: 'scorum'
-      }, {
-        address: 'https://scorum-blockchain-mainnet-api-2.scorum.com',
+        address: 'https://scorum-blockchain-mainnet-api.scorum.com',
         provider: 'scorum'
       }],
     grpc: [{
-        address: 'https://scorum-blockchain-mainnet-grpc-1.scorum.com',
-        provider: 'scorum'
-      }, {
-        address: 'https://scorum-blockchain-mainnet-grpc-2.scorum.com',
+        address: 'https://scorum-blockchain-mainnet-grpc.scorum.com',
         provider: 'scorum'
       }]
   },
@@ -69,7 +71,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/scorum/images/scorum.svg',
+      theme: {
+        primaryColorHex: '#242424'
+      }
     }]
 };
 export default info;

@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://portal.dymension.xyz',
   prettyName: 'Dymension Hub',
+  chainType: 'cosmos',
   chainId: 'dymension_1100-1',
   bech32Prefix: 'dym',
   slip44: 60,
@@ -14,6 +15,7 @@ const info: Chain = {
   fees: {
     feeTokens: [{
         denom: 'adym',
+        fixedMinGasPrice: 5000000000,
         lowGasPrice: 5000000000,
         averageGasPrice: 5000000000,
         highGasPrice: 20000000000
@@ -31,10 +33,18 @@ const info: Chain = {
   description: 'Dymension is a network of easily deployable and lightning fast modular blockchains called RollApps.',
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg',
+      theme: {
+        primaryColorHex: '#f4e4d4'
+      }
     }],
   codebase: {
-
+    gitRepo: 'https://github.com/dymensionxyz/dymension',
+    recommendedVersion: 'v3.0.0',
+    compatibleVersions: ['v3.0.0'],
+    genesis: {
+      genesisUrl: 'https://github.com/dymensionxyz/networks/raw/main/mainnet/dymension/genesis.json'
+    }
   },
   apis: {
     rpc: [
@@ -52,10 +62,10 @@ const info: Chain = {
       },
       {
         address: 'https://dymension-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake | Delegate for StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://dymension-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/dymension',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -149,6 +159,18 @@ const info: Chain = {
       {
         address: 'https://dymension-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc.mainnet.dymension.aviaone.com',
+        provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'https://rpc.archive.dymension.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
+      },
+      {
+        address: 'https://dymension.drpc.org',
+        provider: 'dRPC'
       }
     ],
     rest: [
@@ -166,10 +188,10 @@ const info: Chain = {
       },
       {
         address: 'https://dymension-mainnet-lcd.autostake.com:443',
-        provider: 'AutoStake | Delegate for StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://dymension-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/dymension',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -263,6 +285,14 @@ const info: Chain = {
       {
         address: 'https://dymension-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://api.mainnet.dymension.aviaone.com',
+        provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'https://api.archive.dymension.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ],
     grpc: [
@@ -276,14 +306,14 @@ const info: Chain = {
       },
       {
         address: 'dymension-mainnet-grpc.autostake.com:443',
-        provider: 'AutoStake | Delegate for StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'dymension.mainnet.grpc.noders.team:42090',
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'https://dymension-grpc.lavenderfive.com:443',
+        address: 'dymension.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -349,6 +379,14 @@ const info: Chain = {
       {
         address: 'dymension-grpc.noders.services:12090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://grpc.mainnet.dymension.aviaone.com:9092',
+        provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'grpc.archive.dymension.mainnet.dteam.tech:29090',
+        provider: 'DTEAM'
       }
     ],
     evmHttpJsonrpc: [
@@ -383,10 +421,20 @@ const info: Chain = {
       {
         address: 'https://dymension-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://evm.archive.dymension.mainnet.dteam.tech:443',
+        provider: 'DTEAM'
       }
     ]
   },
   explorers: [
+    {
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/dymension',
+      txPage: 'https://www.mintscan.io/dymension/tx/${txHash}',
+      accountPage: 'https://www.mintscan.io/dymension/account/${accountAddress}'
+    },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/dymension',
@@ -428,6 +476,24 @@ const info: Chain = {
       url: 'https://explorer.posthuman.digital/dymension',
       txPage: 'https://explorer.posthuman.digital/dymension/tx/${txHash}',
       accountPage: 'https://explorer.posthuman.digital/dymension/account/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/dymension',
+      txPage: 'https://mainnet.explorer.aviaone.com/dymension/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/dymension/account/${accountAddress}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/dymension',
+      txPage: 'https://mainnet.whispernode.com/dymension/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/dymension/account/${accountAddress}'
+    },
+    {
+      kind: 'DTEAM | Explorer',
+      url: 'https://explorer.mainnet.dteam.tech/dymension',
+      txPage: 'https://explorer.mainnet.dteam.tech/dymension/tx/${txHash}',
+      accountPage: 'https://explorer.mainnet.dteam.tech/dymension/account/${accountAddress}'
     }
   ]
 };

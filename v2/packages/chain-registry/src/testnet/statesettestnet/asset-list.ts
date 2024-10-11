@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'statesettestnet',
   assets: [{
       description: 'The native token of the Stateset Network',
@@ -16,7 +16,8 @@ const info: AssetList = {
       base: 'ustate',
       name: 'Stateset',
       display: 'state',
-      symbol: 'STATE'
+      symbol: 'STATE',
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

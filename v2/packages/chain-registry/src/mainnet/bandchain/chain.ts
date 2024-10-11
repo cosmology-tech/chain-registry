@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://bandprotocol.com/',
   prettyName: 'Band Protocol',
+  chainType: 'cosmos',
   chainId: 'laozi-mainnet',
   daemonName: 'bandd',
   nodeHome: '$HOME/.band',
@@ -30,7 +31,76 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: '0.45.16'
+    gitRepo: 'https://github.com/bandprotocol/chain',
+    recommendedVersion: 'v2.5.4',
+    compatibleVersions: [
+      'v2.5.2',
+      'v2.5.3',
+      'v2.5.4'
+    ],
+    cosmosSdkVersion: '0.45.16',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.29'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/bandprotocol/launch/master/laozi-mainnet/genesis.json'
+    },
+    versions: [{
+        name: 'v2_4',
+        tag: 'v2.4.1',
+        proposal: 9,
+        height: 11525000,
+        recommendedVersion: 'v2.4.1',
+        compatibleVersions: ['v2.4.0', 'v2.4.1'],
+        cosmosSdkVersion: 'v0.45.10',
+        consensus: {
+          type: 'tendermint',
+          version: 'v0.34.22'
+        },
+        nextVersionName: 'v2_5',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.10'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v3.3.1'
+        }
+      }, {
+        name: 'v2_5',
+        tag: 'v2.5.4',
+        proposal: 11,
+        height: 16562500,
+        recommendedVersion: 'v2.5.4',
+        compatibleVersions: [
+          'v2.5.2',
+          'v2.5.3',
+          'v2.5.4'
+        ],
+        cosmosSdkVersion: '0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.29'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: '0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.3.1'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.3.1'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
@@ -76,16 +146,16 @@ const info: Chain = {
         provider: 'High Stakes 🇨🇭'
       },
       {
-        address: 'https://band-rpc.stake-town.com',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://public.stakewolle.com/cosmos/bandchain/rpc',
         provider: 'Stakewolle'
       },
       {
         address: 'https://rpc.band.bronbro.io/',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://rpc.band.roomit.xyz/',
+        provider: 'Roomit'
       },
       {
         address: 'https://band-rpc.noders.services',
@@ -130,16 +200,16 @@ const info: Chain = {
         provider: 'High Stakes 🇨🇭'
       },
       {
-        address: 'https://band-api.stake-town.com',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://public.stakewolle.com/cosmos/bandchain/rest',
         provider: 'Stakewolle'
       },
       {
         address: 'https://lcd.band.bronbro.io/',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'https://api.band.roomit.xyz/',
+        provider: 'Roomit'
       },
       {
         address: 'https://band-api.noders.services',
@@ -180,12 +250,12 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
-        address: 'band-grpc.stake-town.com:443',
-        provider: 'StakeTown'
-      },
-      {
         address: 'grpc.band.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'grpc.band.roomit.xyz:8443',
+        provider: 'Roomit'
       },
       {
         address: 'band-grpc.noders.services:30090',
@@ -232,6 +302,11 @@ const info: Chain = {
       accountPage: 'https://stakeflow.io/band-protocol/accounts/${accountAddress}'
     },
     {
+      kind: 'Roomit Explorer',
+      url: 'https://explorer.tendermint.roomit.xyz/band-mainnet',
+      accountPage: 'https://explorer.tendermint.roomit.xyz/band-mainnet/accounts/${accountAddress}'
+    },
+    {
       kind: 'kjnodes Explorer',
       url: 'https://explorer.kjnodes.com/band',
       txPage: 'https://explorer.kjnodes.com/band/tx/${txHash}'
@@ -239,7 +314,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg',
+      theme: {
+        primaryColorHex: '#4424e4'
+      }
     }]
 };
 export default info;

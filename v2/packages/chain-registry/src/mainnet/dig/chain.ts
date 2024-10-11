@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://digchain.org/',
   prettyName: 'Dig Chain',
+  chainType: 'cosmos',
   chainId: 'dig-1',
   bech32Prefix: 'dig',
   daemonName: 'digd',
@@ -27,7 +28,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/notional-labs/dig',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/notional-labs/dig/master/networks/mainnets/dig-1/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
@@ -68,7 +79,10 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
+      theme: {
+        primaryColorHex: '#1b1433'
+      }
     }]
 };
 export default info;

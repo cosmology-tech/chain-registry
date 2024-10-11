@@ -18,7 +18,10 @@ const info: AssetList = {
       symbol: 'FUND',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
+          theme: {
+            primaryColorHex: '#2279c0'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
@@ -28,7 +31,8 @@ const info: AssetList = {
         website: 'https://unification.com',
         twitter: 'https://twitter.com/UnificationUND'
       },
-      coingeckoId: 'unification'
+      coingeckoId: 'unification',
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

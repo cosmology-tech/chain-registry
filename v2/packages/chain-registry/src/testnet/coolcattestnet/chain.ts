@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'testnet',
   website: 'https://app.coolcat.space/',
   prettyName: 'CoolCat',
+  chainType: 'cosmos',
   chainId: 'kitten-04',
   bech32Prefix: 'ccat',
   keyAlgos: ['secp256k1'],
@@ -27,7 +28,17 @@ const info: Chain = {
   nodeHome: '$HOME/.coolcat',
   slip44: 118,
   codebase: {
-
+    gitRepo: 'https://github.com/DigitalKitchenLabs/coolcat',
+    recommendedVersion: 'v2.0.0',
+    compatibleVersions: ['v2.0.0'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/DigitalKitchenLabs/testnets/main/kitten-04/genesis.json'
+    },
+    versions: [{
+        name: 'v2.0.0',
+        recommendedVersion: 'v2.0.0',
+        compatibleVersions: ['v2.0.0']
+      }]
   },
   apis: {
     rpc: [{

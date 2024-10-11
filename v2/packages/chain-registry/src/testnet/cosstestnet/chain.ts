@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'COSS Testnet',
+  chainType: 'cosmos',
   chainId: 'coss-testnet-1',
   bech32Prefix: 'coss',
   daemonName: 'cossd',
@@ -26,8 +27,25 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/coss-inscription/coss',
+    recommendedVersion: '0.1.0-testnet',
+    compatibleVersions: ['0.1.0-testnet'],
     cosmosSdkVersion: '0.50.2',
-    cosmwasmEnabled: false
+    consensus: {
+      type: 'tendermint',
+      version: '0.38.2'
+    },
+    cosmwasmEnabled: false,
+    genesis: {
+      genesisUrl: 'https://github.com/coss-inscription/networks/blob/main/testnet/coss-testnet-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.50.2'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

@@ -2,10 +2,11 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'vidulum',
-  status: 'live',
+  status: 'killed',
   networkType: 'mainnet',
   website: 'https://vidulum.app/',
   prettyName: 'Vidulum',
+  chainType: 'cosmos',
   chainId: 'vidulum-1',
   bech32Prefix: 'vdl',
   daemonName: 'vidulumd',
@@ -27,7 +28,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/vidulum/mainnet',
+    recommendedVersion: 'v1.2.0',
+    compatibleVersions: ['v1.2.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_darwin_amd64.tar.gz',
+      "windows/amd64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_windows_amd64.zip'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/vidulum/mainnet/main/genesis.json'
+    },
+    versions: [{
+        name: 'v1.2.0',
+        recommendedVersion: 'v1.2.0',
+        compatibleVersions: ['v1.2.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_linux_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_darwin_amd64.tar.gz',
+          "windows/amd64": 'https://github.com/vidulum/mainnet/releases/download/v1.2.0/vidulum_windows_amd64.zip'
+        }
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
@@ -124,7 +147,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg',
+      theme: {
+        primaryColorHex: '#3454bc'
+      }
     }]
 };
 export default info;

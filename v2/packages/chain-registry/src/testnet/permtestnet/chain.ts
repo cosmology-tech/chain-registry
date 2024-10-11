@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Perm Testnet',
+  chainType: 'cosmos',
   chainId: 'INVALID-ID-permtestnet-testnet-1',
   bech32Prefix: 'perm',
   daemonName: 'permd',
@@ -25,9 +26,78 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/Loop-Protocol/perm.git',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.30',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/Loop-Protocol/testnet/main/genesis.json'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '4.3.0'
+        }
+      }, {
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '4.3.0'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    ibc: {
+      type: 'go',
+      version: '4.3.0'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

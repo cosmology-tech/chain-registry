@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'jackal',
+  chainType: 'cosmos',
   chainId: 'jackal-1',
   website: 'https://jackalprotocol.com',
   prettyName: 'Jackal',
@@ -27,7 +28,165 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasmEnabled: true
+    gitRepo: 'https://github.com/JackalLabs/canine-chain',
+    recommendedVersion: 'v4.0.3',
+    compatibleVersions: [
+      'v4.0.0',
+      'v4.0.1',
+      'v4.0.2',
+      'v4.0.3'
+    ],
+    binaries: {
+      "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.3/canined-Linux',
+      "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.3/canined-macOS'
+    },
+    genesis: {
+      genesisUrl: 'https://cdn.discordapp.com/attachments/1002389406650466405/1034968352591986859/updated_genesis2.json'
+    },
+    cosmwasmEnabled: true,
+    versions: [
+      {
+        name: 'bouncybulldog',
+        recommendedVersion: 'v1.2.1',
+        compatibleVersions: ['v1.2.1'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.1/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.1/canined-macOS'
+        },
+        nextVersionName: 'recovery',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'recovery',
+        tag: 'V2.0.1',
+        proposal: 4,
+        height: 2631260,
+        recommendedVersion: 'v2.0.1',
+        compatibleVersions: ['v2.0.0', 'v2.0.1'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-macOS'
+        },
+        nextVersionName: 'v210',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v210',
+        tag: 'V2.1.0',
+        proposal: 8,
+        height: 3503000,
+        recommendedVersion: 'v2.1.0',
+        compatibleVersions: ['v2.1.0'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-macOS'
+        },
+        nextVersionName: 'v3',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v3',
+        tag: 'V3.0.5',
+        proposal: 9,
+        height: 4074200,
+        recommendedVersion: 'v3.0.5',
+        compatibleVersions: ['v3.0.5'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.0.5/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.0.5/canined-macOS'
+        },
+        nextVersionName: 'v3.1.1',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v310',
+        tag: 'V3.1.3',
+        proposal: 11,
+        height: 6095000,
+        recommendedVersion: 'v3.1.3',
+        compatibleVersions: ['v3.1.1', 'v3.1.3'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.1.3/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.1.3/canined-macOS'
+        },
+        nextVersionName: 'v320',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v320',
+        tag: 'V3.2.2',
+        proposal: 12,
+        height: 6835000,
+        recommendedVersion: 'v3.2.2',
+        compatibleVersions: ['v3.2.1', 'v3.2.2'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.2.2/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.2.2/canined-macOS'
+        },
+        nextVersionName: 'v340',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v340',
+        tag: 'V3.4.0',
+        proposal: 13,
+        height: 8439000,
+        recommendedVersion: 'v3.4.0',
+        compatibleVersions: ['v3.4.0'],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.4.0/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.4.0/canined-macOS'
+        },
+        nextVersionName: 'v4',
+        cosmwasm: {
+          enabled: true
+        }
+      },
+      {
+        name: 'v4',
+        tag: 'V4.0.3',
+        proposal: 14,
+        height: 8527000,
+        recommendedVersion: 'v4.0.3',
+        compatibleVersions: [
+          'v4.0.0',
+          'v4.0.1',
+          'v4.0.2',
+          'v4.0.3'
+        ],
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.3/canined-Linux',
+          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.3/canined-macOS'
+        },
+        nextVersionName: '',
+        cosmwasm: {
+          enabled: true
+        }
+      }
+    ],
+    cosmwasm: {
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
@@ -44,7 +203,7 @@ const info: Chain = {
         provider: 'Jackal Labs'
       },
       {
-        address: 'https://jackal-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/jackal',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -110,6 +269,10 @@ const info: Chain = {
       {
         address: 'https://jackal-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://jackal_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -118,7 +281,7 @@ const info: Chain = {
         provider: 'Jackal Labs'
       },
       {
-        address: 'https://jackal-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/jackal',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -180,6 +343,10 @@ const info: Chain = {
       {
         address: 'https://jackal-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://jackal_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -196,7 +363,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'jackal-grpc.lavenderfive.com:443',
+        address: 'jackal.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -268,11 +435,26 @@ const info: Chain = {
       kind: 'Big Dipper',
       url: 'https://bigdipper.live/jackal',
       txPage: 'https://bigdipper.live/jackal/transactions/${txHash}'
+    },
+    {
+      kind: 'WhisperNode 🤐',
+      url: 'https://mainnet.whispernode.com/jackal',
+      txPage: 'https://mainnet.whispernode.com/jackal/tx/${txHash}',
+      accountPage: 'https://mainnet.whispernode.com/jackal/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/jackal',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/jackal/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/jackal/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg',
+      theme: {
+        primaryColorHex: '#dbdbcb'
+      }
     }]
 };
 export default info;

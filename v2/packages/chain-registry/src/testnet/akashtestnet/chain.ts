@@ -1,11 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
+  $schema: '../../chain.schema.json',
   chainName: 'akashtestnet',
   status: 'live',
   networkType: 'testnet',
   website: 'https://akash.network/',
   prettyName: 'Sandbox',
+  chainType: 'cosmos',
   chainId: 'sandbox-01',
   bech32Prefix: 'akash',
   daemonName: 'akash',
@@ -26,7 +27,21 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/akash-network/node',
+    recommendedVersion: 'v0.22.0',
+    compatibleVersions: ['v0.22.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.22.0/akash_0.22.0_linux_amd64.zip',
+      "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.22.0/akash_0.22.0_linux_arm64.zip'
+    },
+    versions: [{
+        name: 'v0',
+        recommendedVersion: 'v0.22.0',
+        compatibleVersions: ['v0.22.0']
+      }],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/akash-network/net/master/sandbox/genesis.json'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',

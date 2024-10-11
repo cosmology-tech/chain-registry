@@ -17,7 +17,8 @@ const info: AssetList = {
       base: 'uqsr',
       name: 'Quasar',
       display: 'qsr',
-      symbol: 'QSR'
+      symbol: 'QSR',
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -30,7 +31,8 @@ const info: AssetList = {
       base: 'uayy',
       name: 'AYY',
       display: 'ayy',
-      symbol: 'AYY'
+      symbol: 'AYY',
+      typeAsset: 'sdk.coin'
     },
     {
       denomUnits: [{
@@ -43,7 +45,8 @@ const info: AssetList = {
       base: 'uoro',
       name: 'oro',
       display: 'oro',
-      symbol: 'ORO'
+      symbol: 'ORO',
+      typeAsset: 'sdk.coin'
     }
   ]
 };

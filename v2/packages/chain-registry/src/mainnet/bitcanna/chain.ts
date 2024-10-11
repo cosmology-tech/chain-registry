@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://www.bitcanna.io/',
   prettyName: 'BitCanna',
+  chainType: 'cosmos',
   chainId: 'bitcanna-1',
   bech32Prefix: 'bcna',
   daemonName: 'bcnad',
@@ -27,7 +28,127 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: 'v0.47.9'
+    gitRepo: 'https://github.com/BitCannaGlobal/bcna',
+    recommendedVersion: 'v3.1.0',
+    compatibleVersions: ['v3.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_arm64.tar.gz',
+      "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_darwin_arm64.tar.gz'
+    },
+    cosmosSdkVersion: 'v0.47.11',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/BitCannaGlobal/bcna/main/genesis.json'
+    },
+    versions: [
+      {
+        name: 'vigorous-grow-fix',
+        proposal: 10,
+        height: 7585420,
+        recommendedVersion: 'v1.6.3',
+        compatibleVersions: [
+          'v1.6.1',
+          'v1.6.2',
+          'v1.6.3'
+        ],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v1.6.3/bcna_linux_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v1.6.3/bcna_darwin_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v1.6.3/bcna_darwin_amd64.tar.gz'
+        },
+        nextVersionName: 'vigorous-grow-huckleberry'
+      },
+      {
+        name: 'vigorous-grow-huckleberry',
+        proposal: 11,
+        height: 8771420,
+        recommendedVersion: 'v1.7.0',
+        compatibleVersions: ['v1.7.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v1.7.0/bcna_linux_amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v1.7.0/bcna_darwin_arm64.tar.gz',
+          "darwin/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v1.7.0/bcna_darwin_amd64.tar.gz'
+        },
+        nextVersionName: 'wakeandbake'
+      },
+      {
+        name: 'wakeandbake',
+        proposal: 12,
+        height: 9209420,
+        recommendedVersion: 'v2.0.3',
+        compatibleVersions: ['v2.0.2', 'v2.0.3'],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.3/bcna_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.3/bcna_linux_arm64.tar.gz',
+          "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.3/bcna_darwin_arm64.tar.gz'
+        },
+        nextVersionName: 'ganjarevolution'
+      },
+      {
+        name: 'ganjarevolution',
+        proposal: 14,
+        height: 12288420,
+        recommendedVersion: 'v3.0.2',
+        compatibleVersions: ['v3.0.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.0.2/bcna_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.0.2/bcna_linux_arm64.tar.gz',
+          "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.0.2/bcna_darwin_arm64.tar.gz'
+        },
+        cosmosSdkVersion: 'v0.47.9',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        nextVersionName: 'ganjarevolutionburn',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.9'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.1'
+        }
+      },
+      {
+        name: 'ganjarevolutionburn',
+        proposal: 15,
+        height: 13846420,
+        recommendedVersion: 'v3.1.0',
+        compatibleVersions: ['v3.1.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_arm64.tar.gz',
+          "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_darwin_arm64.tar.gz'
+        },
+        cosmosSdkVersion: 'v0.47.11',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.5'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.11'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
@@ -40,15 +161,11 @@ const info: Chain = {
         provider: 'bitcanna'
       },
       {
-        address: 'http://bcna.paranorm.pro/',
-        provider: 'ParanormalBrothers'
-      },
-      {
         address: 'https://bcna-rpc.ibs.team/',
         provider: 'Inter Blockchain Services'
       },
       {
-        address: 'https://bitcanna-rpc.panthea.eu',
+        address: 'https://bitcanna-rpc.panthea.eu/',
         provider: 'Panthea EU'
       },
       {
@@ -56,11 +173,11 @@ const info: Chain = {
         provider: 'SGTstake'
       },
       {
-        address: 'https://bitcanna.rpc.m.anode.team',
+        address: 'https://bitcanna.rpc.m.anode.team/',
         provider: 'AlxVoy ⚡ ANODE.TEAM'
       },
       {
-        address: 'http://bitcanna.rpc.m.stavr.tech:21327',
+        address: 'https://bitcanna.rpc.m.stavr.tech/',
         provider: '🔥STAVR🔥'
       },
       {
@@ -68,36 +185,32 @@ const info: Chain = {
         provider: 'KJINC.io'
       },
       {
-        address: 'https://mainnet-bitcanna-rpc.konsortech.xyz',
+        address: 'https://mainnet-bitcanna-rpc.konsortech.xyz/',
         provider: 'KonsorTech'
       },
       {
-        address: 'https://bitcanna.rpc.kjnodes.com',
+        address: 'https://bitcanna.rpc.kjnodes.com/',
         provider: 'kjnodes'
       },
       {
-        address: 'https://bitcanna-rpc.genznodes.dev',
+        address: 'https://bitcanna-rpc.genznodes.dev/',
         provider: 'genznodes'
       },
       {
-        address: 'https://rpc.bitcanna-1.bitcanna.aviaone.com',
+        address: 'https://rpc.bitcanna-1.bitcanna.aviaone.com/',
         provider: 'AVIAONE 🟢'
       },
       {
-        address: 'https://rpc.bitcanna-mainnet.hexnodes.co',
+        address: 'https://rpc.bitcanna-mainnet.hexnodes.one/',
         provider: 'Hexnodes'
       },
       {
-        address: 'https://rpc.bitcanna.citizenweb3.com:443',
+        address: 'https://rpc.bitcanna.citizenweb3.com/',
         provider: 'Citizen Web3'
       },
       {
         address: 'https://bitcanna-mainnet.rpc.l0vd.com/',
         provider: 'L0vd.com'
-      },
-      {
-        address: 'https://rpc-bitcanna-ia.cosmosia.notional.ventures',
-        provider: 'Notional'
       },
       {
         address: 'https://bitcanna-rpc.polkachu.com',
@@ -120,40 +233,40 @@ const info: Chain = {
         provider: 'MMS'
       },
       {
-        address: 'http://65.108.142.81:26683',
-        provider: 'Stakely'
-      },
-      {
-        address: 'http://93.115.25.15:26657',
-        provider: 'Stakely'
-      },
-      {
         address: 'https://bitcanna-rpc.validatornode.com',
         provider: 'ValidatorNode'
+      },
+      {
+        address: 'https://bitcanna.rpc.nodex.one',
+        provider: 'NodeX Emperor ⚡ Bitcanna'
       },
       {
         address: 'https://bcna.rpc.arcturian.tech/',
         provider: 'Arcturian Tech'
       },
       {
-        address: 'https://bitcanna-rpc.publicnode.com:443',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
+        address: 'https://rpc.bitcanna.bh.rocks',
+        provider: 'BlockHunters 🎯'
       },
       {
-        address: 'https://rpc.bcna.sopko.net:443',
-        provider: '🐔 The Chicken Coop 🦝 Homestead'
-      },
-      {
-        address: 'https://bitcanna_mainnet_rpc.chain.whenmoonwhenlambo.money',
-        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      },
-      {
-        address: 'https://bitcanna.rpc.nodeshub.online:443',
-        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+        address: 'https://bitcanna-rpc.bluestake.net',
+        provider: 'BlueStake'
       },
       {
         address: 'https://rpc-bitcanna.cryptech.com.ua',
         provider: 'CrypTech'
+      },
+      {
+        address: 'https://bitcanna-rpc.kalia.network/',
+        provider: 'Kalia Network'
+      },
+      {
+        address: 'https://bitcanna.rpc.nodeshub.online:443',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://bitcanna_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -162,28 +275,20 @@ const info: Chain = {
         provider: 'bitcanna'
       },
       {
-        address: 'bitcanna-grpc.lavenderfive.com:443',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'bitcanna.grpc.m.stavr.tech:9081',
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'grpc.bitcanna-mainnet.hexnodes.co:27090',
+        address: 'grpc.bitcanna-mainnet.hexnodes.one:27090',
         provider: 'HexNodes'
       },
       {
-        address: 'grpc.bitcanna-1.bitcanna.aviaone.com:9092',
+        address: 'grpc.bitcanna-1.bitcanna.aviaone.com:9102',
         provider: 'AVIAONE 🟢'
       },
       {
         address: 'bitcanna-mainnet.grpc.l0vd.com:80',
         provider: 'L0vd.com'
-      },
-      {
-        address: 'grpc-bitcanna-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
       },
       {
         address: 'bitcanna.grpc.kjnodes.com:14290',
@@ -198,32 +303,52 @@ const info: Chain = {
         provider: 'MMS'
       },
       {
+        address: 'grpc.bitcanna.safeblock.space:9090',
+        provider: 'Safe Block'
+      },
+      {
+        address: 'mainnet-bitcanna-grpc.konsortech.xyz:27090',
+        provider: 'KonsorTech'
+      },
+      {
         address: 'bitcanna.grpc.m.anode.team:443',
         provider: 'AlxVoy ⚡ ANODE.TEAM'
+      },
+      {
+        address: 'grpc-bcna.kjinc.io:443',
+        provider: 'KJINC.io'
+      },
+      {
+        address: 'bitcanna.grpc.nodex.one:443',
+        provider: 'NodeX Emperor ⚡ Bitcanna'
+      },
+      {
+        address: 'grpc.bitcanna.bh.rocks:42090',
+        provider: 'BlockHunters 🎯'
+      },
+      {
+        address: 'grpc.bitcanna.indonode.net:11090',
+        provider: 'Indonode'
       },
       {
         address: 'bitcanna-grpc.panthea.eu:16710',
         provider: 'Panthea EU'
       },
       {
-        address: 'https://grpc.bitcanna.indonode.net:11090',
-        provider: 'Indonode'
+        address: 'bitcanna-grpc.validatornode.com:443',
+        provider: 'ValidatorNode'
       },
       {
-        address: 'bitcanna-grpc.publicnode.com:443',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'grpc.bitcanna.safeblock.space:9090',
-        provider: 'Safe Block'
-      },
-      {
-        address: 'https://bitcanna.grpc.nodeshub.online',
-        provider: 'Nodes Hub'
-      },
-      {
-        address: 'https://grpc-bitcanna.cryptech.com.ua',
+        address: 'grpc-bitcanna.cryptech.com.ua:443',
         provider: 'CrypTech'
+      },
+      {
+        address: 'bitcanna-grpc.kalia.network:443',
+        provider: 'Kalia Network'
+      },
+      {
+        address: 'bitcanna.grpc.nodeshub.online:13090',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
       }
     ],
     rest: [
@@ -264,28 +389,20 @@ const info: Chain = {
         provider: 'kjnodes'
       },
       {
-        address: 'https://bitcanna-api.lavenderfive.com/',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
         address: 'https://bitcanna-api.genznodes.dev',
         provider: 'genznodes'
       },
       {
-        address: 'https://api.bitcanna-1.bitcanna.aviaone.com/',
+        address: 'https://api.bitcanna-1.bitcanna.aviaone.com',
         provider: 'AVIAONE 🟢'
       },
       {
-        address: 'https://lcd.bitcanna-mainnet.hexnodes.co',
+        address: 'https://lcd.bitcanna-mainnet.hexnodes.one',
         provider: 'Hexnodes'
       },
       {
         address: 'https://bitcanna-mainnet.api.l0vd.com',
         provider: 'L0vd.com'
-      },
-      {
-        address: 'https://api-bitcanna-ia.cosmosia.notional.ventures',
-        provider: 'Notional'
       },
       {
         address: 'https://bitcanna-api.polkachu.com',
@@ -304,47 +421,55 @@ const info: Chain = {
         provider: 'MMS'
       },
       {
-        address: 'http://65.108.142.81:1325',
-        provider: 'Stakely'
-      },
-      {
-        address: 'http://93.115.25.15:1317',
-        provider: 'Stakely'
-      },
-      {
         address: 'https://bitcanna-api.validatornode.com',
         provider: 'ValidatorNode'
+      },
+      {
+        address: 'https://bitcanna.api.nodex.one',
+        provider: 'NodeX Emperor ⚡ Bitcanna'
       },
       {
         address: 'https://bcna.api.arcturian.tech/',
         provider: 'Arcturian Tech'
       },
       {
-        address: 'https://api.bitcanna.indonode.net/',
+        address: 'https://api.bitcanna.bh.rocks',
+        provider: 'BlockHunters 🎯'
+      },
+      {
+        address: 'https://api.bitcanna.indonode.net',
         provider: 'Indonode'
       },
       {
-        address: 'https://bitcanna-rest.publicnode.com',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'https://bitcanna_mainnet_api.chain.whenmoonwhenlambo.money',
-        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      },
-      {
-        address: 'https://bitcanna.api.nodeshub.online:443',
-        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+        address: 'https://bitcanna-api.bluestake.net',
+        provider: 'BlueStake'
       },
       {
         address: 'https://api-bitcanna.cryptech.com.ua',
         provider: 'CrypTech'
+      },
+      {
+        address: 'https://bitcanna-api.kalia.network',
+        provider: 'Kalia Network'
+      },
+      {
+        address: 'https://api.bitcanna.citizenweb3.com',
+        provider: 'Citizen Web3'
+      },
+      {
+        address: 'https://bitcanna.api.nodeshub.online',
+        provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️'
+      },
+      {
+        address: 'https://bitcanna_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ]
   },
   explorers: [
     {
-      kind: 'ezstaking',
-      url: 'https://ezstaking.app/bitcanna',
+      kind: 'EZStaking Tools',
+      url: 'https://app.ezstaking.io/bitcanna',
       txPage: 'https://ezstaking.tools/bitcanna/txs/${txHash}',
       accountPage: 'https://ezstaking.tools/bitcanna/account/${accountAddress}'
     },
@@ -367,9 +492,9 @@ const info: Chain = {
     },
     {
       kind: '🔥STAVR🔥 Explorer',
-      url: 'https://explorer.stavr.tech/bitcanna',
-      txPage: 'https://explorer.stavr.tech/bitcanna/txs/${txHash}',
-      accountPage: 'https://explorer.stavr.tech/bitcanna/account/${accountAddress}'
+      url: 'https://explorer.stavr.tech/Bitcanna',
+      txPage: 'https://explorer.stavr.tech/Bitcanna/txs/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Bitcanna/account/${accountAddress}'
     },
     {
       kind: 'atomscan',
@@ -382,16 +507,39 @@ const info: Chain = {
       txPage: 'https://explorer.validatornode.com/bitcanna/tx/${txHash}'
     },
     {
-      kind: 'AlxVoy ⚡ ANODE.TEAM Explorer',
+      kind: 'Safe Block Explorer Pruned',
+      url: 'https://explorer.safeblock.space/bitcanna',
+      txPage: 'https://explorer.safeblock.space/bitcanna/tx/${txHash}'
+    },
+    {
+      kind: 'AlxVoy ⚡ ANODE.TEAM',
       url: 'https://main.anode.team/bitcanna',
-      txPage: 'https://main.anode.team/bitcanna/txs/${txHash}',
-      accountPage: 'https://main.anode.team/bitcanna/account/${accountAddress}'
+      txPage: 'https://main.anode.team/bitcanna/tx/${txHash}'
+    },
+    {
+      kind: 'kjnodes',
+      url: 'https://explorer.kjnodes.com/bitcanna',
+      txPage: 'https://explorer.kjnodes.com/bitcanna/tx/${txHash}'
+    },
+    {
+      kind: 'L0vd.com ❤️',
+      url: 'https://explorers.l0vd.com/bitcanna-mainnet',
+      txPage: 'https://explorers.l0vd.com/bitcanna-mainnet/tx/${txHash}'
+    },
+    {
+      kind: 'NODEXPLORER',
+      url: 'https://explorer.nodex.one/bitcanna',
+      txPage: 'https://explorer.nodex.one/bitcanna/tx/${txHash}'
     },
     {
       kind: 'Moonbys Dashboard',
       url: 'https://explorer.moonbys.com',
-      txPage: 'https://explorer.moonbys.com/tx/${txHash}',
-      accountPage: 'https://explorer.moonbys.com/bitcanna/account/${accountAddress}'
+      txPage: 'https://explorer.moonbys.com/${txHash}'
+    },
+    {
+      kind: 'BlockHunters 🎯',
+      url: 'https://scan.bh.rocks/bitcanna',
+      txPage: 'https://scan.bh.rocks/bitcanna/tx/${txHash}'
     },
     {
       kind: 'Indonode',
@@ -399,10 +547,27 @@ const info: Chain = {
       txPage: 'https://explorer.indonode.net/bitcanna/tx/${txHash}'
     },
     {
-      kind: 'Safe Block',
-      url: 'https://explorer.safeblock.space/bitcanna',
-      txPage: 'https://explorer.safeblock.space/bitcanna/tx/${txHash}',
-      accountPage: 'https://explorer.safeblock.space/bitcanna/account/${accountAddress}'
+      kind: 'CrypTech Explorer',
+      url: 'https://explorers.cryptech.com.ua/bitcanna',
+      txPage: 'https://explorers.cryptech.com.ua/bitcanna/txs/${txHash}'
+    },
+    {
+      kind: 'Kalia Network',
+      url: 'https://explorer.kalia.network/bitcanna',
+      txPage: 'https://explorer.kalia.network/bitcanna/tx/${txHash}',
+      accountPage: 'https://explorer.kalia.network/bitcanna/account/${accountAddress}'
+    },
+    {
+      kind: 'AviaOne Explorer 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/bitcanna',
+      txPage: 'https://mainnet.explorer.aviaone.com/bitcanna/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/bitcanna/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',
+      url: 'https://explorer.nodeshub.online/bitcanna/',
+      txPage: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
@@ -411,21 +576,18 @@ const info: Chain = {
       accountPage: 'https://explorer.whenmoonwhenlambo.money/bitcanna/account/${accountAddress}'
     },
     {
-      kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
-      url: 'https://explorer.nodeshub.online/bitcanna/',
-      txPage: 'https://explorer.nodeshub.online/bitcanna/tx/${txHash}',
-      accountPage: 'https://explorer.nodeshub.online/bitcanna/accounts/${accountAddress}'
-    },
-    {
-      kind: 'CrypTech Explorer',
-      url: 'https://explorers.cryptech.com.ua/bitcanna',
-      txPage: 'https://explorers.cryptech.com.ua/bitcanna/txs/${txHash}',
-      accountPage: 'https://explorers.cryptech.com.ua/bitcanna/account/${accountAddress}'
+      kind: 'AviaOne Explorer 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/bitcanna',
+      txPage: 'https://mainnet.explorer.aviaone.com/bitcanna/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/bitcanna/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg',
+      theme: {
+        primaryColorHex: '#3cc494'
+      }
     }]
 };
 export default info;

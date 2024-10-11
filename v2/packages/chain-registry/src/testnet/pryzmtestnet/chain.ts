@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Pryzm Testnet',
+  chainType: 'cosmos',
   chainId: 'indigo-1',
   bech32Prefix: 'pryzm',
   daemonName: 'pryzmd',
@@ -26,7 +27,43 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmosSdkVersion: '0.47'
+    gitRepo: 'https://github.com/pryzm-finance/pryzm-core',
+    recommendedVersion: 'v0.9.0',
+    compatibleVersions: ['v0.9.0'],
+    cosmosSdkVersion: '0.47',
+    consensus: {
+      type: 'tendermint',
+      version: '0.37'
+    },
+    genesis: {
+      genesisUrl: 'https://storage.googleapis.com/pryzm-resources/indigo-1/genesis.json'
+    },
+    versions: [{
+        name: 'v0.9.0',
+        recommendedVersion: 'v0.9.0',
+        compatibleVersions: ['v0.9.0'],
+        cosmosSdkVersion: '0.47',
+        consensus: {
+          type: 'tendermint',
+          version: '0.37'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.47'
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.1'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.1'
+    }
   },
   apis: {
     rpc: [{

@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'fetch-ai',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg',
+          theme: {
+            primaryColorHex: '#1c2444'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }, {
       description: 'The MOBX coin rewards the use of eco-friendly micromobility transportation.',
       denomUnits: [{
@@ -43,8 +47,12 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg',
+          theme: {
+            primaryColorHex: '#04ae9b'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'killed',
   networkType: 'testnet',
   prettyName: 'VinceChain Testnet',
+  chainType: 'cosmos',
   chainId: 'vince_1903-1',
   bech32Prefix: 'vce',
   nodeHome: '$HOME/.vinced',
@@ -26,7 +27,10 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/AyrisDev/vinceChain_Blockchain',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/AyrisDev/vinceChain_Blockchain/master/genesis.json'
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/vincechaintestnet/images/vince.png'

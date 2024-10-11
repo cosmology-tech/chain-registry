@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://wormhole.com',
   prettyName: 'Wormhole Gateway',
+  chainType: 'cosmos',
   chainId: 'wormchain',
   bech32Prefix: 'wormhole',
   daemonName: 'wormchaind',
@@ -21,27 +22,57 @@ const info: Chain = {
         highGasPrice: 0
       }]
   },
-  staking: {
-    stakingTokens: [{
-        denom: 'uworm'
-      }]
-  },
   codebase: {
+    gitRepo: 'https://github.com/wormhole-foundation/wormhole',
+    recommendedVersion: 'v2.23.0',
     cosmosSdkVersion: 'github.com/wormhole-foundation/cosmos-sdk@v0.45.9-wormhole-2',
+    consensus: {
+      type: 'tendermint',
+      version: 'v0.34.24',
+      repo: 'https://github.com/tendermint/tendermint'
+    },
+    cosmwasmVersion: 'github.com/wormhole-foundation/wasmd@v0.30.0-wormchain-2',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'github.com/wormhole-foundation/wasmd@v0.30.0-wormchain-2'
+    genesis: {
+      name: 'v1',
+      genesisUrl: 'https://github.com/wormhole-foundation/wormhole/blob/main/wormchain/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/wormhole-foundation/cosmos-sdk',
+      version: 'v0.45.9',
+      tag: 'v0.45.9-wormhole-2'
+    },
+    ibc: {
+      type: 'go',
+      version: '4.2.2',
+      icsEnabled: ['ics20-1']
+    },
+    cosmwasm: {
+      repo: 'https://github.com/wormhole-foundation/wasmd',
+      version: 'v0.30.0',
+      tag: 'v0.30.0-wormchain-2',
+      enabled: true
+    }
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/gateway_logo.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_icon.svg',
       theme: {
-        primaryColorHex: '#0F0C48'
+        backgroundColorHex: '#231b3b',
+        primaryColorHex: '#231b3b',
+        circle: false
       }
     }, {
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/gateway_logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_logo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_circle.svg',
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_circle.png',
+      theme: {
+        backgroundColorHex: '#231b3b',
+        primaryColorHex: '#231b3b',
+        circle: true
+      }
     }],
   logoURIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/gateway_logo.png'
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_icon.svg'
   },
   apis: {
     rpc: [{

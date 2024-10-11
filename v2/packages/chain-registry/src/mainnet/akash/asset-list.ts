@@ -3,7 +3,8 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'akash',
   assets: [{
-      description: 'Akash Token (AKT) is the Akash Network\'s native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
+      description: 'Akash Network is a decentralized cloud computing marketplace that connects users with unused computing resources, offering a cost-effective alternative to traditional cloud providers.',
+      extendedDescription: 'Akash Network is revolutionizing the cloud computing industry with its decentralized marketplace that leverages underutilized computing resources. By connecting users with providers offering unused computational capacity, Akash provides a more affordable and flexible alternative to conventional cloud services. This decentralized approach not only reduces costs but also enhances security and resilience, as data and applications are distributed across multiple nodes rather than centralized servers.\n\nThe Akash Network utilizes its native token, AKT, to facilitate transactions and incentivize participants within the ecosystem. Users can pay for cloud services using AKT, while providers earn AKT by offering their computing resources. The network\'s open-source nature and compatibility with major cloud platforms further enhance its appeal, enabling seamless integration and broad adoption. Akash Network\'s innovative model is poised to disrupt the traditional cloud computing landscape, offering a decentralized, efficient, and cost-effective solution for developers and enterprises.',
       denomUnits: [{
           denom: 'uakt',
           exponent: 0
@@ -22,12 +23,16 @@ const info: AssetList = {
       coingeckoId: 'akash-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg',
+          theme: {
+            primaryColorHex: '#bc342c'
+          }
         }],
       socials: {
         website: 'https://akash.network/',
         twitter: 'https://twitter.com/akashnet_'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }, {
       description: 'Tether USDt on Akash',
       denomUnits: [{
@@ -47,11 +52,11 @@ const info: AssetList = {
           counterparty: {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt',
-            channelId: 'channel-130'
+            channelId: 'channel-5'
           },
           chain: {
-            channelId: 'channel-2',
-            path: 'transfer/channel-2/erc20/tether/usdt'
+            channelId: 'channel-37',
+            path: 'transfer/channel-37/erc20/tether/usdt'
           }
         }],
       images: [{
@@ -59,9 +64,16 @@ const info: AssetList = {
             chainName: 'kava',
             baseDenom: 'erc20/tether/usdt'
           },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
+          }
         }],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       }
     }]

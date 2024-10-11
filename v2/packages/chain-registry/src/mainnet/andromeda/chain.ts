@@ -2,6 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chainName: 'andromeda',
+  chainType: 'cosmos',
   chainId: 'andromeda-1',
   preForkChainName: 'andromeda1',
   prettyName: 'Andromeda',
@@ -14,7 +15,10 @@ const info: Chain = {
   slip44: 118,
   fees: {
     feeTokens: [{
-        denom: 'uandr'
+        denom: 'uandr',
+        lowGasPrice: 0.03,
+        averageGasPrice: 0.05,
+        highGasPrice: 0.075
       }]
   },
   staking: {
@@ -26,15 +30,90 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmosSdkVersion: 'v0.47.5',
+    gitRepo: 'https://github.com/andromedaprotocol/andromedad',
+    recommendedVersion: 'v0.1.1-patch',
+    compatibleVersions: ['v0.1.1-patch'],
+    cosmosSdkVersion: 'v0.47.8',
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    cosmwasmVersion: 'v0.41.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: 'v0.41.0'
+    genesis: {
+      genesisUrl: 'https://snapshots.lavenderfive.com/genesis/andromeda/genesis.json'
+    },
+    versions: [{
+        name: 'andromeda-1-v0.1.0',
+        height: 1696401,
+        tag: 'andromeda-1-v0.1.0',
+        recommendedVersion: 'andromeda-1-v0.1.0',
+        compatibleVersions: ['andromeda-1-v0.1.0'],
+        cosmosSdkVersion: 'v0.47.5',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.2'
+        },
+        cosmwasmVersion: 'v0.41.0',
+        cosmwasmEnabled: true,
+        nextVersionName: 'v0.1.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.5'
+        },
+        cosmwasm: {
+          version: 'v0.41.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.3.0'
+        }
+      }, {
+        name: 'v0.1.1',
+        proposal: 5,
+        height: 2363000,
+        tag: 'v0.1.1-patch',
+        recommendedVersion: 'v0.1.1-patch',
+        compatibleVersions: ['v0.1.1-patch'],
+        cosmosSdkVersion: 'v0.47.8',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.37.4'
+        },
+        cosmwasmVersion: 'v0.41.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.8'
+        },
+        cosmwasm: {
+          version: 'v0.41.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.41.0',
+      enabled: true
+    }
   },
   apis: {
     rpc: [
       {
         address: 'https://rpc.andromeda-1.andromeda.aviaone.com',
-        provider: 'AVIAONE'
+        provider: 'AviaOne 🟢'
       },
       {
         address: 'https://andromeda.rpc.kjnodes.com',
@@ -49,16 +128,12 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://andromeda-rpc.lavenderfive.com:443',
+        address: 'https://rpc.lavenderfive.com:443/andromeda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://andromeda-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://andromeda-rpc.stake-town.com:443',
-        provider: 'StakeTown'
       },
       {
         address: 'https://andromeda-rpc.stakerhouse.com:443',
@@ -79,12 +154,20 @@ const info: Chain = {
       {
         address: 'andromeda-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'rpc-andromeda.blockval.io',
+        provider: 'Blockval'
+      },
+      {
+        address: 'https://andromeda.rpc.liveraven.net',
+        provider: 'LiveRaveN'
       }
     ],
     rest: [
       {
-        address: 'https://api.andromeda-1.andromeda.aviaone.com/',
-        provider: 'AVIAONE'
+        address: 'https://api.andromeda-1.andromeda.aviaone.com',
+        provider: 'AviaOne 🟢'
       },
       {
         address: 'https://andromeda.api.kjnodes.com',
@@ -99,16 +182,12 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://andromeda-api.lavenderfive.com:443',
+        address: 'https://rest.lavenderfive.com:443/andromeda',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://andromeda-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://andromeda-api.stake-town.com:443',
-        provider: 'StakeTown'
       },
       {
         address: 'https://andromeda-rest.stakerhouse.com:443',
@@ -129,16 +208,24 @@ const info: Chain = {
       {
         address: 'andromeda-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'api-andromeda.blockval.io',
+        provider: 'Blockval'
+      },
+      {
+        address: 'https://andromeda.api.liveraven.net',
+        provider: 'LiveRaveN'
       }
     ],
     grpc: [
       {
-        address: 'andromeda-grpc.lavenderfive.com:443',
+        address: 'andromeda.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://grpc.andromeda-1.andromeda.aviaone.com:9094',
-        provider: 'AVIAONE'
+        address: 'https://grpc.andromeda-1.andromeda.aviaone.com:9108',
+        provider: 'AviaOne 🟢'
       },
       {
         address: 'andromeda.grpc.kjnodes.com:443',
@@ -157,10 +244,6 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'andromeda-grpc.stake-town.com:443',
-        provider: 'StakeTown'
-      },
-      {
         address: 'andromeda-grpc.stakerhouse.com:443',
         provider: 'StakerHouse'
       },
@@ -175,6 +258,14 @@ const info: Chain = {
       {
         address: 'andromeda-grpc.noders.services:34090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'grpc-andromeda.blockval.io:443',
+        provider: 'Blockval'
+      },
+      {
+        address: 'andromeda.grpc.liveraven.net:443',
+        provider: 'LiveRaveN'
       }
     ]
   },
@@ -201,13 +292,21 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/andromeda',
       txPage: 'https://ping.pub/andromeda/tx/${txHash}'
+    },
+    {
+      kind: 'AviaOne Explorer 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/andromeda',
+      txPage: 'https://mainnet.explorer.aviaone.com/andromeda/tx/${txHash}'
     }
   ],
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png'
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/andromeda/images/andromeda-logo.png',
+      theme: {
+        primaryColorHex: '#040404'
+      }
     }]
 };
 export default info;

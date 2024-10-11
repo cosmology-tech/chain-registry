@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Warden Protocol Buenavista',
+  chainType: 'cosmos',
   chainId: 'buenavista-1',
   bech32Prefix: 'warden',
   daemonName: 'wardend',
@@ -26,8 +27,43 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/warden-protocol/wardenprotocol',
+    recommendedVersion: 'v0.3.0',
+    compatibleVersions: ['v0.3.0'],
     cosmosSdkVersion: '0.50',
-    cosmwasmEnabled: false
+    consensus: {
+      type: 'cometbft',
+      version: '0.38'
+    },
+    cosmwasmEnabled: false,
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/warden-protocol/networks/main/testnets/buenavista/genesis.json'
+    },
+    versions: [{
+        name: 'v0.3.0',
+        recommendedVersion: 'v0.3.0',
+        compatibleVersions: ['v0.3.0'],
+        cosmosSdkVersion: '0.50',
+        consensus: {
+          type: 'cometbft',
+          version: '0.38'
+        },
+        cosmwasmEnabled: false,
+        sdk: {
+          type: 'cosmos',
+          version: '0.50'
+        },
+        cosmwasm: {
+          enabled: false
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.50'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

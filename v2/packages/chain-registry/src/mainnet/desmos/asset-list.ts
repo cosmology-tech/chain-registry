@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'desmos',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg',
+          theme: {
+            primaryColorHex: '#fb804e'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

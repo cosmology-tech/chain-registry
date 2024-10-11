@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Osmosis Testnet',
+  chainType: 'cosmos',
   chainId: 'osmo-test-5',
   bech32Prefix: 'osmo',
   daemonName: 'osmosisd',
@@ -26,9 +27,89 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/osmosis-labs/osmosis',
+    recommendedVersion: 'v15.0.0',
+    compatibleVersions: ['v15.0.0'],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.30',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30'
+    genesis: {
+      genesisUrl: 'https://genesis.osmotest5.osmosis.zone/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v14.0.0-rc1',
+        recommendedVersion: 'v14.0.0-rc1',
+        compatibleVersions: ['v14.0.0-rc1'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.29',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.29',
+          enabled: true
+        }
+      },
+      {
+        name: 'v15.0.0-rc3',
+        recommendedVersion: 'v15.0.0-rc3',
+        compatibleVersions: ['v15.0.0-rc3'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.29',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.29',
+          enabled: true
+        }
+      },
+      {
+        name: 'v15.0.0',
+        recommendedVersion: 'v15.0.0',
+        compatibleVersions: ['v15.0.0-rc3'],
+        cosmosSdkVersion: '0.45',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{
@@ -49,9 +130,9 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'mintscan',
-      url: 'https://testnet.mintscan.io/osmosis-testnet',
-      txPage: 'https://testnet.mintscan.io/osmosis-testnet/txs/${txHash}',
-      accountPage: 'https://testnet.mintscan.io/osmosis-testnet/account/${accountAddress}'
+      url: 'https://mintscan.io/osmosis-testnet',
+      txPage: 'https://mintscan.io/osmosis-testnet/txs/${txHash}',
+      accountPage: 'https://mintscan.io/osmosis-testnet/account/${accountAddress}'
     }, {
       kind: 'ping.pub',
       url: 'https://explorer.osmotest5.osmosis.zone',

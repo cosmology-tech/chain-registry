@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'osmosistestnet',
   assets: [
     {
@@ -86,6 +86,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'cosmoshubtestnet',
+            baseDenom: 'uatom'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
         }]
@@ -233,6 +237,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'junotestnet',
+            baseDenom: 'ujunox'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
         }]
@@ -265,12 +273,16 @@ const info: AssetList = {
           }
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
+          imageSync: {
+            chainName: 'marstestnet',
+            baseDenom: 'umars'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg'
         }]
     },
     {
@@ -327,10 +339,20 @@ const info: AssetList = {
         }
       ],
       logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          imageSync: {
+            chainName: 'nobletestnet',
+            baseDenom: 'uusdc'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
         }]
     },
     {
@@ -365,6 +387,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'akashtestnet',
+            baseDenom: 'uakt'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
         }]
@@ -413,6 +439,9 @@ const info: AssetList = {
           imageSync: {
             chainName: 'kyve',
             baseDenom: 'ukyve'
+          },
+          theme: {
+            primaryColorHex: '#335350'
           }
         }]
     },
@@ -448,6 +477,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
       },
       images: [{
+          imageSync: {
+            chainName: 'quicksilvertestnet',
+            baseDenom: 'uqck'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
         }]
     },
@@ -482,6 +515,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
       },
       images: [{
+          imageSync: {
+            chainName: 'chain4energytestnet',
+            baseDenom: 'uc4e'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
         }]
     },
@@ -517,6 +554,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'persistencetestnet2',
+            baseDenom: 'uxprt'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
         }]
@@ -553,6 +594,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
       },
       images: [{
+          imageSync: {
+            chainName: 'xiontestnet',
+            baseDenom: 'uxion'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
         }]
     },
@@ -589,6 +634,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'sagatestnet',
+            baseDenom: 'utsaga'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
         }]
@@ -637,7 +686,10 @@ const info: AssetList = {
             baseDenom: 'uixo'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg',
+          theme: {
+            primaryColorHex: '#2c4484'
+          }
         }]
     },
     {
@@ -660,6 +712,46 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The yield token for ATOM denominated vaults on Amulet Protocol',
+      denomUnits: [{
+          denom: 'ibc/C86B92F7FCFC1993DAC4AB0D78D9BC080300354B823A57F12CD6E2FBB667214E',
+          exponent: 0
+        }, {
+          denom: 'amATOM',
+          exponent: 6
+        }],
+      base: 'ibc/C86B92F7FCFC1993DAC4AB0D78D9BC080300354B823A57F12CD6E2FBB667214E',
+      name: 'amATOM (Testnet)',
+      display: 'amATOM',
+      symbol: 'amATOM',
+      typeAsset: 'ics20',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'neutrontestnet',
+            baseDenom: 'factory/neutron15lku24mqhvy4v4gryrqs4662n9v9q4ux9tayn89cmdzldjcgawushxvm76/amatom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'neutrontestnet',
+            baseDenom: 'factory/neutron15lku24mqhvy4v4gryrqs4662n9v9q4ux9tayn89cmdzldjcgawushxvm76/amatom',
+            channelId: 'channel-787'
+          },
+          chain: {
+            channelId: 'channel-7884',
+            path: 'transfer/channel-7884/factory/neutron15lku24mqhvy4v4gryrqs4662n9v9q4ux9tayn89cmdzldjcgawushxvm76/amatom'
+          }
         }]
     },
     {

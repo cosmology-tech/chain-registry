@@ -19,10 +19,11 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.svg',
+          theme: {
+            primaryColorHex: '#4991ee'
+          }
         }],
-      coingeckoId: '',
-      keywords: [],
       socials: {
         website: 'https://www.loop.fans/',
         twitter: 'https://twitter.com/LoopFans'
@@ -46,9 +47,11 @@ const info: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/poa.svg',
+          theme: {
+            primaryColorHex: '#bdaf88'
+          }
         }],
-      coingeckoId: '',
       keywords: ['poa']
     }]
 };

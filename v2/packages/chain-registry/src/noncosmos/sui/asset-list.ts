@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../assetlist.schema.json',
   chainName: 'sui',
   assets: [{
       description: 'Sui’s native asset is called SUI.',
@@ -12,7 +12,7 @@ const info: AssetList = {
           denom: 'SUI',
           exponent: 9
         }],
-      typeAsset: 'evm-base',
+      typeAsset: 'unknown',
       base: '0x2::sui::SUI',
       name: 'Sui',
       display: 'SUI',

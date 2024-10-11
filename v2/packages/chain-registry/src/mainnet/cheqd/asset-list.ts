@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'cheqd-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg',
+          theme: {
+            primaryColorHex: '#fc5f04'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

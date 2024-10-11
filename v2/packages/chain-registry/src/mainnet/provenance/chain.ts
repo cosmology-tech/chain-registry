@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://provenance.io/',
   prettyName: 'Provenance',
+  chainType: 'cosmos',
   chainId: 'pio-mainnet-1',
   bech32Prefix: 'pb',
   daemonName: 'provenanced',
@@ -27,9 +28,260 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/provenance-io/provenance',
+    recommendedVersion: 'v1.17.0',
+    compatibleVersions: ['v1.17.0'],
     cosmosSdkVersion: '0.46.13',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34.29'
+    },
+    cosmwasmVersion: '0.30',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.30'
+    binaries: {
+      "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.17.0/provenance-linux-amd64-v1.17.0.zip'
+    },
+    genesis: {
+      name: 'v1.0.1',
+      genesisUrl: 'https://raw.githubusercontent.com/provenance-io/mainnet/main/pio-mainnet-1/genesis.json'
+    },
+    versions: [
+      {
+        name: 'v1.0.1',
+        tag: 'v1.0.1',
+        height: 0,
+        nextVersionName: 'bluetiful'
+      },
+      {
+        name: 'bluetiful',
+        tag: 'v1.3.1',
+        height: 352000,
+        recommendedVersion: 'v1.3.1',
+        compatibleVersions: ['v1.3.0', 'v1.3.1'],
+        nextVersionName: 'citrine'
+      },
+      {
+        name: 'citrine',
+        tag: 'v1.4.1',
+        height: 940500,
+        recommendedVersion: 'v1.4.1',
+        compatibleVersions: ['v1.4.0', 'v1.4.1'],
+        nextVersionName: 'desert'
+      },
+      {
+        name: 'desert',
+        tag: 'v1.5.0',
+        height: 1442070,
+        recommendedVersion: 'v1.5.0',
+        compatibleVersions: ['v1.5.0'],
+        nextVersionName: 'desert'
+      },
+      {
+        name: 'usdf.c-hotfix',
+        tag: 'v1.6.0',
+        height: 2000000,
+        recommendedVersion: 'v1.6.0',
+        compatibleVersions: ['v1.6.0'],
+        nextVersionName: 'feldgrau'
+      },
+      {
+        name: 'feldgrau',
+        tag: 'v1.7.6',
+        height: 2641250,
+        recommendedVersion: 'v1.7.6',
+        compatibleVersions: [
+          'v1.7.0',
+          'v1.7.1',
+          'v1.7.2',
+          'v1.7.3',
+          'v1.7.4',
+          'v1.7.5',
+          'v1.7.6'
+        ],
+        nextVersionName: 'green'
+      },
+      {
+        name: 'green',
+        tag: 'v1.8.2',
+        height: 4808400,
+        recommendedVersion: 'v1.8.2',
+        compatibleVersions: [
+          'v1.8.0',
+          'v1.8.1',
+          'v1.8.2'
+        ],
+        nextVersionName: 'lava'
+      },
+      {
+        name: 'lava',
+        tag: 'v1.10.0',
+        height: 5689885,
+        recommendedVersion: 'v1.10.0',
+        compatibleVersions: ['v1.10.0'],
+        nextVersionName: 'mango'
+      },
+      {
+        name: 'mango',
+        tag: 'v1.11.1',
+        height: 6512577,
+        recommendedVersion: 'v1.11.1',
+        compatibleVersions: ['v1.11.0', 'v1.11.1'],
+        nextVersionName: 'neoncarrot'
+      },
+      {
+        name: 'neoncarrot',
+        tag: 'v1.12.2',
+        height: 7334444,
+        recommendedVersion: 'v1.12.2',
+        compatibleVersions: [
+          'v1.12.0',
+          'v1.12.1',
+          'v1.12.2'
+        ],
+        nextVersionName: 'ochre'
+      },
+      {
+        name: 'ochre',
+        tag: 'v1.13.1',
+        height: 8485555,
+        recommendedVersion: 'v1.13.1',
+        compatibleVersions: ['v1.13.0', 'v1.13.1'],
+        nextVersionName: 'paua'
+      },
+      {
+        name: 'paua',
+        tag: 'v1.14.1',
+        height: 9828888,
+        recommendedVersion: 'v1.14.1',
+        compatibleVersions: ['v1.14.0', 'v1.14.1'],
+        cosmosSdkVersion: '0.46.10',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.26'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.14.1/provenance-linux-amd64-v1.14.1.zip'
+        },
+        nextVersionName: 'quicksilver',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.10'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.0',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'quicksilver',
+        tag: 'v1.15.2',
+        height: 11130222,
+        recommendedVersion: 'v1.15.2',
+        compatibleVersions: [
+          'v1.15.0',
+          'v1.15.1',
+          'v1.15.2'
+        ],
+        cosmosSdkVersion: '0.46.10',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.26'
+        },
+        binaries: {
+          "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.15.2/provenance-linux-amd64-v1.15.2.zip'
+        },
+        nextVersionName: 'rust',
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.10'
+        },
+        ibc: {
+          type: 'go',
+          version: '6.1.1',
+          icsEnabled: ['ics20-1']
+        }
+      },
+      {
+        name: 'rust',
+        tag: 'v1.16.0',
+        height: 11842000,
+        recommendedVersion: 'v1.16.0',
+        compatibleVersions: ['v1.16.0'],
+        cosmosSdkVersion: '0.46.13',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.28'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.16.0/provenance-linux-amd64-v1.16.0.zip'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.13'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '6.2.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      },
+      {
+        name: 'saffron',
+        tag: 'v1.17.0',
+        height: 13736000,
+        recommendedVersion: 'v1.17.0',
+        compatibleVersions: ['v1.17.0'],
+        cosmosSdkVersion: '0.46.13',
+        consensus: {
+          type: 'tendermint',
+          version: '0.34.29'
+        },
+        cosmwasmVersion: '0.30',
+        cosmwasmEnabled: true,
+        binaries: {
+          "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.17.0/provenance-linux-amd64-v1.17.0.zip'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: '0.46.13'
+        },
+        cosmwasm: {
+          version: '0.30',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '6.2.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      }
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.13'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.2.0',
+      icsEnabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
@@ -72,6 +324,10 @@ const info: Chain = {
       {
         address: 'https://provenance_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://rpc.pio-mainnet-1.provenance.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     rest: [
@@ -114,6 +370,10 @@ const info: Chain = {
       {
         address: 'https://provenance_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://api.pio-mainnet-1.provenance.aviaone.com',
+        provider: 'AVIAONE 🟢'
       }
     ],
     grpc: [
@@ -136,6 +396,10 @@ const info: Chain = {
       {
         address: 'provenance-grpc.panthea.eu:16780',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'grpc.pio-mainnet-1.provenance.aviaone.com:9231',
+        provider: 'AVIAONE 🟢'
       }
     ]
   },
@@ -184,11 +448,20 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/provenance',
       txPage: 'https://explorer.whenmoonwhenlambo.money/provenance/tx/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/provenance/account/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/provenance',
+      txPage: 'https://mainnet.explorer.aviaone.com/provenance/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/provenance/account/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg',
+      theme: {
+        primaryColorHex: '#4c7cdc'
+      }
     }]
 };
 export default info;

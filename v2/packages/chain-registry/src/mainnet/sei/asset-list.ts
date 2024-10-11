@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'sei',
   assets: [
     {
-      description: 'The native staking token of Sei.',
+      description: 'Sei is a layer-1 blockchain optimized for trading, focusing on providing high throughput, low latency, and efficient execution for decentralized exchanges.',
+      extendedDescription: 'Sei is a layer-1 blockchain designed specifically for trading applications, offering a high-performance environment for decentralized exchanges (DEXs). It focuses on providing high throughput, low latency, and efficient order execution. Sei\'s architecture includes features like parallel processing and a unique consensus mechanism to achieve fast and reliable transaction processing. The native token, SEI, is used for transaction fees, staking, and governance within the network. Sei aims to create an optimal infrastructure for trading, addressing the needs of traders and developers in the DeFi space.',
       denomUnits: [{
           denom: 'usei',
           exponent: 0
@@ -23,12 +24,16 @@ const info: AssetList = {
       coingeckoId: 'sei-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.svg',
+          theme: {
+            primaryColorHex: '#9c1c1c'
+          }
         }],
       socials: {
         website: 'https://www.sei.io/',
         twitter: 'https://twitter.com/SeiNetwork'
-      }
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'OIN Token ($OIN) is a groundbreaking digital asset developed on the $SEI Blockchain. It transcends being merely a cryptocurrency; $OIN stands as a robust store of value, symbolizing the future of decentralized finance and its potential to reshape the crypto landscape.',
@@ -47,10 +52,13 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png'
       },
-      coingeckoId: '',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png',
+          theme: {
+            primaryColorHex: '#6cdbac'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'ERIS liquid staked SEI',
@@ -70,7 +78,8 @@ const info: AssetList = {
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/ampsei.svg'
-        }]
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Popeye the Seilor',
@@ -89,8 +98,12 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/popeye.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/popeye.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/popeye.png',
+          theme: {
+            primaryColorHex: '#04040a'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'A wise dog and a marshal arts master',
@@ -109,20 +122,24 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SenseiDog.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SenseiDog.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SenseiDog.png',
+          theme: {
+            primaryColorHex: '#d4d0c7'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'The first memecoin on osmosis.',
       denomUnits: [{
-          denom: 'ibc/AB7C92666DE8C7A977666B8080CABF0127B652B9D40F7251E6914DE942D9942B',
+          denom: 'ibc/B023C57727A38A9CF87238F9008477C3761AD4774D528BFA458DD707D90B553A',
           exponent: 0
         }, {
           denom: 'WOSMO',
           exponent: 6
         }],
       typeAsset: 'ics20',
-      base: 'ibc/AB7C92666DE8C7A977666B8080CABF0127B652B9D40F7251E6914DE942D9942B',
+      base: 'ibc/B023C57727A38A9CF87238F9008477C3761AD4774D528BFA458DD707D90B553A',
       name: 'Wosmo',
       display: 'WOSMO',
       symbol: 'WOSMO',
@@ -143,7 +160,10 @@ const info: AssetList = {
             chainName: 'osmosis',
             baseDenom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png',
+          theme: {
+            primaryColorHex: '#edd5ee'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
@@ -158,6 +178,8 @@ const info: AssetList = {
           denom: 'oozaru',
           exponent: 6
         }],
+      typeAsset: 'cw20',
+      address: 'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
       base: 'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',
       name: 'Oozaru',
       display: 'oozaru',
@@ -166,7 +188,10 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oozaru.png',
+          theme: {
+            primaryColorHex: '#2b1619'
+          }
         }]
     },
     {
@@ -188,13 +213,16 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/SEIYAN.png',
+          theme: {
+            primaryColorHex: '#db1f22'
+          }
         }]
     },
     {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
       denomUnits: [{
-          denom: 'ibc/1FF96B82FDE4B0E38FA0A8EC24A83E1EAC2615F338468A47473BAD3B45E066D2',
+          denom: 'ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8',
           exponent: 0,
           aliases: ['uastro']
         }, {
@@ -202,7 +230,7 @@ const info: AssetList = {
           exponent: 6
         }],
       typeAsset: 'ics20',
-      base: 'ibc/1FF96B82FDE4B0E38FA0A8EC24A83E1EAC2615F338468A47473BAD3B45E066D2',
+      base: 'ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8',
       name: 'Astroport token',
       display: 'astro',
       symbol: 'ASTRO',
@@ -224,7 +252,10 @@ const info: AssetList = {
             baseDenom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.svg',
+          theme: {
+            primaryColorHex: '#4056e9'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png',

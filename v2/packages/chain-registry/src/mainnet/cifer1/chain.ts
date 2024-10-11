@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://cifer.ai/',
   prettyName: 'Cifer',
+  chainType: 'cosmos',
   chainId: 'cifer-1',
   bech32Prefix: 'cife',
   daemonName: 'ciferd',
@@ -26,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/cifer-ai/cifer',
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
+    genesis: {
+      genesisUrl: 'https://rpcmainnet.cifer.ai/genesis'
+    },
+    versions: [{
+        name: 'v1.0.0',
+        recommendedVersion: 'v1.0.0',
+        compatibleVersions: ['v1.0.0']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
@@ -53,7 +64,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.svg',
+      theme: {
+        primaryColorHex: '#af49b7'
+      }
     }]
 };
 export default info;

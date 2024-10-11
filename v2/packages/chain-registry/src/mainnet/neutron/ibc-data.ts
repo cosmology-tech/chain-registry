@@ -279,6 +279,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'juno',
+      clientId: '07-tendermint-557',
+      connectionId: 'connection-524'
+    },
+    chain2: {
+      chainName: 'neutron',
+      clientId: '07-tendermint-97',
+      connectionId: 'connection-71'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-548',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-4328',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'kava',
       clientId: '07-tendermint-151',
       connectionId: 'connection-194'
@@ -542,6 +571,35 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'neutron',
+      clientId: '07-tendermint-137',
+      connectionId: 'connection-98'
+    },
+    chain2: {
+      chainName: 'penumbra',
+      clientId: '07-tendermint-9',
+      connectionId: 'connection-7'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-4886',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-6',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'neutron',
       clientId: '07-tendermint-73',
       connectionId: 'connection-52'
     },
@@ -557,6 +615,35 @@ const info: IBCData[] = [
         },
         chain2: {
           channelId: 'channel-136',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'neutron',
+      clientId: '07-tendermint-98',
+      connectionId: 'connection-72'
+    },
+    chain2: {
+      chainName: 'pryzm',
+      clientId: '07-tendermint-6',
+      connectionId: 'connection-6'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-4329',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-6',
           portId: 'transfer'
         },
         ordering: 'unordered',

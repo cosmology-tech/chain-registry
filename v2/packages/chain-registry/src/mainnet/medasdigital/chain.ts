@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://medas-digital.io/',
   prettyName: 'Medas Digital Network',
+  chainType: 'cosmos',
   chainId: 'medasdigital-1',
   bech32Prefix: 'medas',
   daemonName: 'medasdigitald',
@@ -26,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/oxygene76/medasdigital/',
+    recommendedVersion: 'v0.97',
+    compatibleVersions: ['v0.94'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/oxygene76/medasdigital/main/networks/mainnet/genesis.json'
+    },
+    versions: [{
+        name: 'v0.94',
+        recommendedVersion: 'v0.94',
+        compatibleVersions: ['v0.94']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
@@ -59,7 +70,10 @@ const info: Chain = {
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/medasdigital/images/medas.svg',
+      theme: {
+        primaryColorHex: '#147ccc'
+      }
     }]
 };
 export default info;

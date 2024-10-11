@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Ethos',
+  chainType: 'cosmos',
   chainId: 'ethos_7003-1',
   bech32Prefix: 'ethos',
   daemonName: 'ethosd',
@@ -45,7 +46,10 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg',
+      theme: {
+        primaryColorHex: '#848484'
+      }
     }]
 };
 export default info;

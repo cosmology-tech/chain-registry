@@ -6,6 +6,7 @@ const info: Chain = {
   website: 'https://nolus.io/',
   networkType: 'testnet',
   prettyName: 'Nolus Testnet',
+  chainType: 'cosmos',
   chainId: 'rila-1',
   bech32Prefix: 'nolus',
   daemonName: 'nolusd',
@@ -29,9 +30,53 @@ const info: Chain = {
     }
   },
   codebase: {
+    gitRepo: 'https://github.com/nolus-protocol/nolus-core',
+    recommendedVersion: 'v0.4.0',
+    compatibleVersions: [],
     cosmosSdkVersion: '0.45',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    cosmwasmVersion: '0.31',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.31'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/testnet/rila-1/genesis.json'
+    },
+    versions: [{
+        name: 'v0.3.0',
+        recommendedVersion: 'v0.3.0',
+        compatibleVersions: [],
+        cosmosSdkVersion: '0.45',
+        cosmwasmVersion: '0.31',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.45'
+        },
+        cosmwasm: {
+          version: '0.31',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '4.3.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    ibc: {
+      type: 'go',
+      version: '4.3.0',
+      icsEnabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.31',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nolustestnet/images/nolus.png',

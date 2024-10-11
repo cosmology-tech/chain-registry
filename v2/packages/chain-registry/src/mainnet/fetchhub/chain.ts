@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'mainnet',
   prettyName: 'Fetch.ai',
+  chainType: 'cosmos',
   chainId: 'fetchhub-4',
   bech32Prefix: 'fetch',
   daemonName: 'fetchd',
@@ -24,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/fetchai/fetchd',
+    recommendedVersion: 'v0.10.5',
+    compatibleVersions: ['v0.10.5'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/fetchai/genesis-fetchhub/fetchhub-4/fetchhub-4/data/genesis_migrated_5300200.json'
+    },
+    versions: [{
+        name: 'v0.10.5',
+        recommendedVersion: 'v0.10.5',
+        compatibleVersions: ['v0.10.5']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
@@ -87,6 +98,14 @@ const info: Chain = {
       {
         address: 'https://fetch.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://rpc.fetchhub-4.fetch.aviaone.com',
+        provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'https://fetchai-rpc.bluestake.net:443',
+        provider: 'BlueStake 🚀'
       }
     ],
     rest: [
@@ -145,6 +164,14 @@ const info: Chain = {
       {
         address: 'https://fetch.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://api.fetchhub-4.fetch.aviaone.com/',
+        provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'https://fetchai-api.bluestake.net',
+        provider: 'BlueStake 🚀'
       }
     ],
     grpc: [
@@ -187,6 +214,10 @@ const info: Chain = {
       {
         address: 'fetch.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'grpc.fetchhub-4.fetch.aviaone.com:9094',
+        provider: 'AVIAONE 🟢'
       }
     ]
   },
@@ -235,11 +266,20 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/fetchhub/',
       txPage: 'https://explorer.nodeshub.online/fetchhub/tx/${txHash}',
       accountPage: 'https://explorer.nodeshub.online/fetchhub/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Blockchain Explorer by AVIAONE 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/fetchhub',
+      txPage: 'https://mainnet.explorer.aviaone.com/fetchhub/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/fetchhub/accounts/${accountAddress}'
     }
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg',
+      theme: {
+        primaryColorHex: '#1c2444'
+      }
     }]
 };
 export default info;

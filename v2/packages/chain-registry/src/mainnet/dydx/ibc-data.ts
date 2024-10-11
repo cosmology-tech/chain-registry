@@ -53,7 +53,7 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live',
+          status: 'killed',
           preferred: true,
           dex: 'osmosis'
         }
@@ -253,6 +253,35 @@ const info: IBCData[] = [
         },
         chain2: {
           channelId: 'channel-131',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'dydx',
+      clientId: '07-tendermint-29',
+      connectionId: 'connection-34'
+    },
+    chain2: {
+      chainName: 'pryzm',
+      clientId: '07-tendermint-9',
+      connectionId: 'connection-9'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-71',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-24',
           portId: 'transfer'
         },
         ordering: 'unordered',

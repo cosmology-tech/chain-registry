@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://rizon.world/',
   prettyName: 'Rizon',
+  chainType: 'cosmos',
   chainId: 'titan-1',
   bech32Prefix: 'rizon',
   daemonName: 'rizond',
@@ -26,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/rizon-world/rizon',
+    recommendedVersion: 'v0.4.1',
+    compatibleVersions: ['v0.4.1'],
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/rizon-world/mainnet/master/genesis.json'
+    },
+    versions: [{
+        name: 'v0.4.1',
+        recommendedVersion: 'v0.4.1',
+        compatibleVersions: ['v0.4.1']
+      }]
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
@@ -120,7 +131,10 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg',
+      theme: {
+        primaryColorHex: '#2b1c54'
+      }
     }]
 };
 export default info;

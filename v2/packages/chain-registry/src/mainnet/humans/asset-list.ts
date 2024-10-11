@@ -24,13 +24,15 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.svg',
           theme: {
-            darkMode: true
+            darkMode: true,
+            primaryColorHex: '#f3f3f3'
           }
         }],
       socials: {
         website: 'https://humans.ai/',
         twitter: 'https://twitter.com/humansdotai'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

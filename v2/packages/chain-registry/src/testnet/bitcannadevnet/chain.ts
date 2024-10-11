@@ -5,6 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   prettyName: 'BitCanna Devnet-1',
+  chainType: 'cosmos',
   chainId: 'bitcanna-dev-1',
   bech32Prefix: 'bcna',
   daemonName: 'bcnad',
@@ -18,7 +19,38 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    gitRepo: 'https://github.com/BitCannaGlobal/bcna',
+    recommendedVersion: 'v2.0.3',
+    compatibleVersions: [
+      'v2.0.1-rc6',
+      'v2.0.2-rc1',
+      'v2.0.3'
+    ],
+    binaries: {
+      "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.3/bcna_linux_amd64.tar.gz'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/BitCannaGlobal/bcna/main/devnets/bitcanna-dev-1/genesis.json'
+    },
+    versions: [{
+        name: 'vigorous-grow-fix',
+        recommendedVersion: 'v1.6.3',
+        compatibleVersions: ['v1.6.3'],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v1.6.3/bcna_linux_amd64.tar.gz'
+        }
+      }, {
+        name: 'wakeandbake',
+        recommendedVersion: 'v2.0.3',
+        compatibleVersions: [
+          'v2.0.1-rc6',
+          'v2.0.2-rc1',
+          'v2.0.3'
+        ],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.3/bcna_linux_amd64.tar.gz'
+        }
+      }]
   },
   apis: {
     rpc: [

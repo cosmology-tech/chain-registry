@@ -23,12 +23,16 @@ const info: AssetList = {
       coingeckoId: 'source',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg',
+          theme: {
+            primaryColorHex: '#39a5fc'
+          }
         }],
       socials: {
         website: 'https://www.sourceprotocol.io/',
         twitter: 'https://twitter.com/sourceprotocol_'
-      }
+      },
+      typeAsset: 'sdk.coin'
     }, {
       description: 'Source Protocol\'s SRCX Token Bridged from BNB Through Planq',
       denomUnits: [{
@@ -61,7 +65,10 @@ const info: AssetList = {
             chainName: 'binancesmartchain',
             baseDenom: '0x454b90716a9435e7161a9aea5cf00e0acbe565ae'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png',
+          theme: {
+            primaryColorHex: '#7f22bc'
+          }
         }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'

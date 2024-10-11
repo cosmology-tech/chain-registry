@@ -22,8 +22,12 @@ const info: AssetList = {
       coingeckoId: 'cerberus-2',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg'
-        }]
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg',
+          theme: {
+            primaryColorHex: '#c6c6c9'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

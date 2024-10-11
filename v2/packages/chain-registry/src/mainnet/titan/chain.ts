@@ -6,6 +6,7 @@ const info: Chain = {
   networkType: 'mainnet',
   website: 'https://titanlab.io/',
   prettyName: 'Titan',
+  chainType: 'cosmos',
   chainId: 'titan_18888-1',
   bech32Prefix: 'titan',
   nodeHome: '$HOME/.titand',
@@ -28,13 +29,68 @@ const info: Chain = {
       }]
   },
   codebase: {
+    gitRepo: 'https://github.com/titantkx/titan',
+    recommendedVersion: 'v2.0.1',
+    compatibleVersions: ['v2.0.1'],
     cosmosSdkVersion: '0.47.6-titan.4',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.4'
+    },
+    cosmwasmVersion: '0.45.0',
     cosmwasmEnabled: true,
-    cosmwasmVersion: '0.45.0'
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/titantkx/titan-mainnet/main/public/genesis.json'
+    },
+    versions: [{
+        name: 'v2.0.1',
+        tag: 'v2.0.1',
+        height: 0,
+        recommendedVersion: 'v2.0.1',
+        compatibleVersions: ['v2.0.1'],
+        cosmosSdkVersion: '0.47.6-titan.4',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.4'
+        },
+        cosmwasmVersion: '0.45.0',
+        cosmwasmEnabled: true,
+        sdk: {
+          type: 'cosmos',
+          version: '0.47.6',
+          tag: '0.47.6-titan.4'
+        },
+        cosmwasm: {
+          version: '0.45.0',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: '7.3.0',
+          icsEnabled: ['ics20-1', 'ics27-1']
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.6',
+      tag: '0.47.6-titan.4'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.0',
+      icsEnabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.45.0',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.svg'
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.svg',
+      theme: {
+        primaryColorHex: '#fc641c'
+      }
     }],
   apis: {
     rpc: [
@@ -55,16 +111,8 @@ const info: Chain = {
         provider: 'Titanlab.io'
       },
       {
-        address: 'https://titan-rpc-1.titanlab.io:443',
-        provider: 'Titanlab.io'
-      },
-      {
-        address: 'https://titan-rpc-2.titanlab.io:443',
-        provider: 'Titanlab.io'
-      },
-      {
-        address: 'https://titan-rpc-full-1.titanlab.io:443',
-        provider: 'Titanlab.io'
+        address: 'https://titan-rpc.ibs.team',
+        provider: 'ibs.team'
       }
     ],
     rest: [
@@ -83,6 +131,10 @@ const info: Chain = {
       {
         address: 'https://titan-lcd-hongkong.titanlab.io:443',
         provider: 'Titanlab.io'
+      },
+      {
+        address: 'https://titan-api.ibs.team',
+        provider: 'ibs.team'
       }
     ],
     grpc: [

@@ -223,6 +223,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'doravota',
+      clientId: '07-tendermint-24',
+      connectionId: 'connection-30'
+    },
+    chain2: {
+      chainName: 'stargaze',
+      clientId: '07-tendermint-368',
+      connectionId: 'connection-318'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-15',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-394',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'evmos',
       clientId: '07-tendermint-41',
       connectionId: 'connection-17'
@@ -334,6 +363,35 @@ const info: IBCData[] = [
           status: 'live',
           preferred: true,
           dex: 'osmosis'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'lava',
+      clientId: '07-tendermint-8',
+      connectionId: 'connection-13'
+    },
+    chain2: {
+      chainName: 'stargaze',
+      clientId: '07-tendermint-366',
+      connectionId: 'connection-307'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-7',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-391',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },

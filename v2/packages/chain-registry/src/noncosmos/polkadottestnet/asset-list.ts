@@ -1,6 +1,6 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
+  $schema: '../../../assetlist.schema.json',
   chainName: 'polkadottestnet',
   assets: [{
       description: 'The native fee, governance, staking, and bonding token of the Polkadot platform.',
@@ -43,6 +43,7 @@ const info: AssetList = {
           aliases: ['million', 'Million']
         }
       ],
+      typeAsset: 'substrate',
       base: 'Planck',
       name: 'Polkadot',
       display: 'DOT',
