@@ -89,6 +89,169 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native EVM, governance and staking token of the Evmos Hub',
+      denom_units: [{
+          denom: 'ibc/078EAF11288A47609FD894070CA8A1BFCEBD9E08745EA7030F95D7ADEE2E22CA',
+          exponent: 0,
+          aliases: ['aevmos']
+        }, {
+          denom: 'evmos',
+          exponent: 18
+        }],
+      base: 'ibc/078EAF11288A47609FD894070CA8A1BFCEBD9E08745EA7030F95D7ADEE2E22CA',
+      name: 'Evmos',
+      display: 'evmos',
+      symbol: 'EVMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+      },
+      coingecko_id: 'evmos',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg',
+          theme: {
+            primary_color_hex: '#ec4c34'
+          }
+        }],
+      socials: {
+        website: 'https://evmos.org/',
+        twitter: 'https://twitter.com/EvmosOrg'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'aevmos',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
+      description: 'The token of Neokingdom DAO.',
+      denom_units: [{
+          denom: 'ibc/9C96847F0DC46D41E9D1016C66117DE290A2AF94AE4B583EC26224718A2AAFA0',
+          exponent: 0,
+          aliases: ['erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9']
+        }, {
+          denom: 'neok',
+          exponent: 18
+        }],
+      base: 'ibc/9C96847F0DC46D41E9D1016C66117DE290A2AF94AE4B583EC26224718A2AAFA0',
+      name: 'Neokingdom DAO',
+      display: 'neok',
+      symbol: 'NEOK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg',
+          theme: {
+            primary_color_hex: '#7f0f70'
+          }
+        }],
+      socials: {
+        website: 'https://www.neokingdom.org/',
+        twitter: 'https://twitter.com/NEOKingdomDAO'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
+      description: 'The legacy token of Teledisko DAO.',
+      denom_units: [{
+          denom: 'ibc/EC49BC30535146D28CE4CC90EDDF96E9AE64EC88B2054C72ED12FFA800A817A6',
+          exponent: 0,
+          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
+        }, {
+          denom: 'berlin-legacy',
+          exponent: 18
+        }],
+      base: 'ibc/EC49BC30535146D28CE4CC90EDDF96E9AE64EC88B2054C72ED12FFA800A817A6',
+      name: 'Teledisko DAO - Legacy',
+      display: 'berlin-legacy',
+      symbol: 'BERLIN-legacy',
+      type_asset: 'erc20',
+      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg',
+          theme: {
+            primary_color_hex: '#bbce1a'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
+      description: 'The token of Crowdpunk DAO',
+      denom_units: [{
+          denom: 'ibc/BA50C306DFA7D459E847FFA89C4267652B257E81001D78E1584DFC3CA8DD6416',
+          exponent: 0,
+          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+        }, {
+          denom: 'crowdp',
+          exponent: 18
+        }],
+      base: 'ibc/BA50C306DFA7D459E847FFA89C4267652B257E81001D78E1584DFC3CA8DD6416',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      symbol: 'CROWDP',
+      type_asset: 'erc20',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg',
+          theme: {
+            primary_color_hex: '#04fbfb'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/2CC0B1B7A981ACC74854717F221008484603BB8360E81B262411B0D830EDE9B0',
@@ -171,6 +334,169 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-6'
+          }
+        }]
+    },
+    {
+      description: 'The native EVM, governance and staking token of the Evmos Hub',
+      denom_units: [{
+          denom: 'ibc/078EAF11288A47609FD894070CA8A1BFCEBD9E08745EA7030F95D7ADEE2E22CA',
+          exponent: 0,
+          aliases: ['aevmos']
+        }, {
+          denom: 'evmos',
+          exponent: 18
+        }],
+      base: 'ibc/078EAF11288A47609FD894070CA8A1BFCEBD9E08745EA7030F95D7ADEE2E22CA',
+      name: 'Evmos',
+      display: 'evmos',
+      symbol: 'EVMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+      },
+      coingecko_id: 'evmos',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg',
+          theme: {
+            primary_color_hex: '#ec4c34'
+          }
+        }],
+      socials: {
+        website: 'https://evmos.org/',
+        twitter: 'https://twitter.com/EvmosOrg'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'aevmos',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
+      description: 'The token of Neokingdom DAO.',
+      denom_units: [{
+          denom: 'ibc/9C96847F0DC46D41E9D1016C66117DE290A2AF94AE4B583EC26224718A2AAFA0',
+          exponent: 0,
+          aliases: ['erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9']
+        }, {
+          denom: 'neok',
+          exponent: 18
+        }],
+      base: 'ibc/9C96847F0DC46D41E9D1016C66117DE290A2AF94AE4B583EC26224718A2AAFA0',
+      name: 'Neokingdom DAO',
+      display: 'neok',
+      symbol: 'NEOK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg',
+          theme: {
+            primary_color_hex: '#7f0f70'
+          }
+        }],
+      socials: {
+        website: 'https://www.neokingdom.org/',
+        twitter: 'https://twitter.com/NEOKingdomDAO'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
+      description: 'The legacy token of Teledisko DAO.',
+      denom_units: [{
+          denom: 'ibc/EC49BC30535146D28CE4CC90EDDF96E9AE64EC88B2054C72ED12FFA800A817A6',
+          exponent: 0,
+          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
+        }, {
+          denom: 'berlin-legacy',
+          exponent: 18
+        }],
+      base: 'ibc/EC49BC30535146D28CE4CC90EDDF96E9AE64EC88B2054C72ED12FFA800A817A6',
+      name: 'Teledisko DAO - Legacy',
+      display: 'berlin-legacy',
+      symbol: 'BERLIN-legacy',
+      type_asset: 'erc20',
+      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg',
+          theme: {
+            primary_color_hex: '#bbce1a'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
+      description: 'The token of Crowdpunk DAO',
+      denom_units: [{
+          denom: 'ibc/BA50C306DFA7D459E847FFA89C4267652B257E81001D78E1584DFC3CA8DD6416',
+          exponent: 0,
+          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+        }, {
+          denom: 'crowdp',
+          exponent: 18
+        }],
+      base: 'ibc/BA50C306DFA7D459E847FFA89C4267652B257E81001D78E1584DFC3CA8DD6416',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      symbol: 'CROWDP',
+      type_asset: 'erc20',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg',
+          theme: {
+            primary_color_hex: '#04fbfb'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-117',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-8'
           }
         }]
     },

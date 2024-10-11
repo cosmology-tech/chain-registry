@@ -223,6 +223,35 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'doravota',
+      client_id: '07-tendermint-24',
+      connection_id: 'connection-30'
+    },
+    chain_2: {
+      chain_name: 'stargaze',
+      client_id: '07-tendermint-368',
+      connection_id: 'connection-318'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-15',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-394',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'evmos',
       client_id: '07-tendermint-41',
       connection_id: 'connection-17'

@@ -2061,6 +2061,57 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
+      denom_units: [{
+          denom: 'ibc/757F2D90C8433D3B5CC68B3AC86660CD9682CB63ED9BE2A3DF171EF2A7494788',
+          exponent: 0,
+          aliases: ['ulava']
+        }, {
+          denom: 'lava',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/757F2D90C8433D3B5CC68B3AC86660CD9682CB63ED9BE2A3DF171EF2A7494788',
+      name: 'Lava',
+      coingecko_id: 'lava-network',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',
+          theme: {
+            primary_color_hex: '#6f043e'
+          }
+        }],
+      keywords: [
+        'modular',
+        'data',
+        'data access',
+        'rpc',
+        'staking',
+        'dual staking',
+        'indexing',
+        'incentivized public rpc'
+      ],
+      socials: {
+        website: 'https://lavanet.xyz',
+        twitter: 'https://twitter.com/lavanetxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'ulava',
+            chain_name: 'lava'
+          },
+          chain: {
+            channel_id: 'channel-117'
+          }
+        }]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [{
           denom: 'ibc/BA29D1E62407103ECD8F5032999462C977E221D33B6E2706182A639BCF7C8909',
@@ -3056,6 +3107,57 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-18'
+          }
+        }]
+    },
+    {
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
+      denom_units: [{
+          denom: 'ibc/757F2D90C8433D3B5CC68B3AC86660CD9682CB63ED9BE2A3DF171EF2A7494788',
+          exponent: 0,
+          aliases: ['ulava']
+        }, {
+          denom: 'lava',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/757F2D90C8433D3B5CC68B3AC86660CD9682CB63ED9BE2A3DF171EF2A7494788',
+      name: 'Lava',
+      coingecko_id: 'lava-network',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',
+          theme: {
+            primary_color_hex: '#6f043e'
+          }
+        }],
+      keywords: [
+        'modular',
+        'data',
+        'data access',
+        'rpc',
+        'staking',
+        'dual staking',
+        'indexing',
+        'incentivized public rpc'
+      ],
+      socials: {
+        website: 'https://lavanet.xyz',
+        twitter: 'https://twitter.com/lavanetxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'ulava',
+            chain_name: 'lava'
+          },
+          chain: {
+            channel_id: 'channel-117'
           }
         }]
     },

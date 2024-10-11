@@ -11,6 +11,7 @@ import * as _avalanche from './avalanche';
 import * as _base from './base';
 import * as _binancesmartchain from './binancesmartchain';
 import * as _bitcoin from './bitcoin';
+import * as _bitcoincash from './bitcoincash';
 import * as _comex from './comex';
 import * as _dogecoin from './dogecoin';
 import * as _fantom from './fantom';
@@ -18,6 +19,7 @@ import * as _filecoin from './filecoin';
 import * as _forex from './forex';
 import * as _internetcomputer from './internetcomputer';
 import * as _kusama from './kusama';
+import * as _litecoin from './litecoin';
 import * as _mantle from './mantle';
 import * as _moonbeam from './moonbeam';
 import * as _neo from './neo';
@@ -59,6 +61,7 @@ const assets: AssetList[] = [
   _base.assets,
   _binancesmartchain.assets,
   _bitcoin.assets,
+  _bitcoincash.assets,
   _comex.assets,
   _dogecoin.assets,
   _fantom.assets,
@@ -66,6 +69,7 @@ const assets: AssetList[] = [
   _forex.assets,
   _internetcomputer.assets,
   _kusama.assets,
+  _litecoin.assets,
   _mantle.assets,
   _moonbeam.assets,
   _neo.assets,

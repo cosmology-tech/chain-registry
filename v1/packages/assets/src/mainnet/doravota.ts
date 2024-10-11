@@ -1035,6 +1035,49 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
+      denom_units: [{
+          denom: 'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
+          exponent: 0,
+          aliases: ['ustars']
+        }, {
+          denom: 'stars',
+          exponent: 6
+        }],
+      base: 'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
+      name: 'Stargaze',
+      display: 'stars',
+      symbol: 'STARS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      },
+      coingecko_id: 'stargaze',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
+          theme: {
+            primary_color_hex: '#db2777'
+          }
+        }],
+      socials: {
+        website: 'https://www.stargaze.zone/',
+        twitter: 'https://twitter.com/StargazeZone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-394',
+            base_denom: 'ustars',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-15'
+          }
+        }]
+    },
+    {
       description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
       denom_units: [{
           denom: 'ibc/D0C5DCA29836D2FD5937714B21206DD8243E5E76B1D0F180741CCB43DCAC1584',
@@ -1689,6 +1732,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-12'
+          }
+        }]
+    },
+    {
+      description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
+      denom_units: [{
+          denom: 'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
+          exponent: 0,
+          aliases: ['ustars']
+        }, {
+          denom: 'stars',
+          exponent: 6
+        }],
+      base: 'ibc/07FA7831E1920D0C87C9388F86B0108677F6ED0C9DE7E4063F05ED675192405C',
+      name: 'Stargaze',
+      display: 'stars',
+      symbol: 'STARS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      },
+      coingecko_id: 'stargaze',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
+          theme: {
+            primary_color_hex: '#db2777'
+          }
+        }],
+      socials: {
+        website: 'https://www.stargaze.zone/',
+        twitter: 'https://twitter.com/StargazeZone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-394',
+            base_denom: 'ustars',
+            chain_name: 'stargaze'
+          },
+          chain: {
+            channel_id: 'channel-15'
           }
         }]
     }

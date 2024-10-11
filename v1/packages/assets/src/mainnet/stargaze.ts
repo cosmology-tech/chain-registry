@@ -449,6 +449,44 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native staking and governance token of the Theta testnet version of the Dora Vota.',
+      denom_units: [{
+          denom: 'ibc/922B5DFF7AEEC6D0951341C650A6B97EF1C8E94F670024E57C4BDDCBEC050419',
+          exponent: 0,
+          aliases: ['peaka']
+        }, {
+          denom: 'DORA',
+          exponent: 18
+        }],
+      base: 'ibc/922B5DFF7AEEC6D0951341C650A6B97EF1C8E94F670024E57C4BDDCBEC050419',
+      name: 'Dora Vota',
+      display: 'DORA',
+      symbol: 'DORA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/doravota/images/dora.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/doravota/images/dora.svg'
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/doravota/images/doravota.png',
+          theme: {
+            primary_color_hex: '#fba214'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-15',
+            base_denom: 'peaka',
+            chain_name: 'doravota'
+          },
+          chain: {
+            channel_id: 'channel-394'
+          }
+        }]
+    },
+    {
       description: 'The native EVM, governance and staking token of the Evmos Hub',
       denom_units: [{
           denom: 'ibc/F9C792DF71F960BB9EF698493B61E29C1EBB8FCD56B1F8BB08C86871F5F497C0',
@@ -1818,6 +1856,44 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-51'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of the Theta testnet version of the Dora Vota.',
+      denom_units: [{
+          denom: 'ibc/922B5DFF7AEEC6D0951341C650A6B97EF1C8E94F670024E57C4BDDCBEC050419',
+          exponent: 0,
+          aliases: ['peaka']
+        }, {
+          denom: 'DORA',
+          exponent: 18
+        }],
+      base: 'ibc/922B5DFF7AEEC6D0951341C650A6B97EF1C8E94F670024E57C4BDDCBEC050419',
+      name: 'Dora Vota',
+      display: 'DORA',
+      symbol: 'DORA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/doravota/images/dora.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/doravota/images/dora.svg'
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/doravota/images/doravota.png',
+          theme: {
+            primary_color_hex: '#fba214'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-15',
+            base_denom: 'peaka',
+            chain_name: 'doravota'
+          },
+          chain: {
+            channel_id: 'channel-394'
           }
         }]
     },

@@ -61,7 +61,7 @@ const info: Chain = {
       },
       {
         address: 'https://dydx-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake | StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://rpc-dydx.ecostake.com:443',
@@ -123,7 +123,7 @@ const info: Chain = {
       },
       {
         address: 'https://dydx-mainnet-lcd.autostake.com:443',
-        provider: 'AutoStake | StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://rest-dydx.ecostake.com:443',
@@ -193,7 +193,7 @@ const info: Chain = {
       },
       {
         address: 'dydx-mainnet-grpc.autostake.com:443',
-        provider: 'AutoStake | StakeDrops'
+        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://grpc.dydx.nodestake.top',
