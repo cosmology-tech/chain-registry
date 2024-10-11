@@ -37,6 +37,16 @@ A unified store of chains info, assets, asset lists, and IBC channels for the Co
 - 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](ttps://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/assets) across all chains.
 - 🔄 **Conversions for Keplr, Cosmostation** - Easily convert data for use with Keplr and Cosmostation wallets.
 
+## Versions
+
+⚠️ This repository now contains two versions of the chain-registry:
+
+- **v1**: The original version using `snake_case` naming conventions.
+- **v2**: The new, updated version using `camelCase` naming conventions based on developer feedback.
+
+*We encourage developers to migrate to v2 for improved consistency and readability.
+
+
 ## Usage
 
 ### Using the `chain-registry`
