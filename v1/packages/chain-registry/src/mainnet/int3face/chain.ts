@@ -46,8 +46,8 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'ping.pub',
-      url: 'https://int3face.zone/explorer',
-      tx_page: 'https://int3face.zone/explorer/tx/${txHash}'
+      url: 'https://explorer.int3face.zone',
+      tx_page: 'https://explorer.int3face.zone/tx/${txHash}'
     }],
   images: [{
       image_sync: {
