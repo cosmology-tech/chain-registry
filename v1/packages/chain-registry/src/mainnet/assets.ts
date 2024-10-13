@@ -63,6 +63,7 @@ import * as _dyson from './dyson';
 import * as _echelon from './echelon';
 import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
+import * as _epix from './epix';
 import * as _ethos from './ethos';
 import * as _evmos from './evmos';
 import * as _fetchhub from './fetchhub';
@@ -257,6 +258,7 @@ const assets: AssetList[] = [
   _echelon.assets,
   _emoney.assets,
   _empowerchain.assets,
+  _epix.assets,
   _ethos.assets,
   _evmos.assets,
   _fetchhub.assets,

@@ -62,6 +62,7 @@ export * as dyson from './dyson';
 export * as echelon from './echelon';
 export * as emoney from './emoney';
 export * as empowerchain from './empowerchain';
+export * as epix from './epix';
 export * as ethos from './ethos';
 export * as evmos from './evmos';
 export * as fetchhub from './fetchhub';
