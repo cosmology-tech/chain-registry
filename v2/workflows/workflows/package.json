@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/workflows",
-  "version": "1.52.0",
+  "version": "1.53.0",
   "description": "Chain Registry Workflows",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -33,7 +33,7 @@
     "@types/sha.js": "^2.4.0"
   },
   "dependencies": {
-    "@chain-registry/interfaces": "^0.51.0",
+    "@chain-registry/interfaces": "^0.52.0",
     "ajv": "^8.12.0",
     "ajv-formats": "^3.0.1",
     "bignumber.js": "9.1.2",
