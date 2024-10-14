@@ -1,10 +1,10 @@
 name: Lerna Publish Minor V2
 
 on:
-  workflow_run:
-    workflows: ["Codegen Main V2"]
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ["Codegen Main V2"]
+  #   types:
+  #     - completed
 
   workflow_dispatch:
 
