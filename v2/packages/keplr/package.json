@@ -1,0 +1,41 @@
+{
+  "name": "@chain-registry/v2-keplr",
+  "version": "0.0.1",
+  "author": "Dan Lynch <pyramation@gmail.com>",
+  "description": "Chain Registry to Keplr",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts",
+  "homepage": "https://github.com/chain-registry/v2-keplr",
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chain-registry/v2-keplr"
+  },
+  "bugs": {
+    "url": "https://github.com/chain-registry/v2-keplr/issues"
+  },
+  "dependencies": {
+    "@chain-registry/v2-types": "^0.53.0",
+    "@keplr-wallet/cosmos": "0.12.28",
+    "@keplr-wallet/crypto": "0.12.28",
+    "semver": "^7.5.0",
+    "@types/semver": "^7.5.8",
+    "@chain-registry/v2": "^1.71.0"
+  },
+  "scripts": {
+    "copy": "copyfiles -f ../../LICENSE README.md package.json dist",
+    "clean": "rimraf dist/**",
+    "prepare": "npm run build",
+    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "build:dev": "npm run clean; tsc --declarationMap; tsc -p tsconfig.esm.json; npm run copy",
+    "lint": "eslint . --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": []
+}
