@@ -1,6 +1,6 @@
 import { Chain } from '@chain-registry/v2-types';
 
-import { assetLists, chains } from '@chain-registry/v2/mainnet'
+import { assetLists, chains } from '@chain-registry/v2'
 import { chainRegistryChainToKeplr } from '../src';
 
 const testChainData = async (chainName: string, chainId: ChainInfo['chainId']) => {

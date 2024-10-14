@@ -1,5 +1,5 @@
 import { chainRegistryChainToKeplr } from '../src/';
-import { chains, assetLists } from '@chain-registry/v2/mainnet'
+import { chains, assetLists } from '@chain-registry/v2'
 
 it('keplr', () => {
   const chain = chains.find((chain) => chain.chainName === 'osmosis')!;
