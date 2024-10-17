@@ -24,7 +24,7 @@ const write = (filePath, json, TypeName, isArray = false) => {
   fs.writeFileSync(
     filePath,
     `import { ${TypeName} } from '@chain-registry/types';
-const info: ${exportType} = ${strfy};
+const info = ${strfy} as const satisfies ${exportType};
 export default info;`
   );
 };
@@ -54,16 +54,16 @@ ${
 `
     : ''
 }${
-      chainObj.chain
-        ? `export const chain = _chain;
+  chainObj.chain
+    ? `export const chain = _chain;
 `
-        : ''
-    }${
-      chainObj.ibc
-        ? `export const ibc = _ibc;
+    : ''
+}${
+  chainObj.ibc
+    ? `export const ibc = _ibc;
 `
-        : ''
-    }`
+    : ''
+}`
   );
 };
 
@@ -87,15 +87,13 @@ const writeNetworkAssets = (filePath, networkObj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { AssetList } from '@chain-registry/types';
+    `${importStat}
 
-${importStat}
-
-const assets: AssetList[] = [\n${validChain
-      .map((chain_name) => {
-        return `  _${chain_name}.assets`;
-      })
-      .join(',\n')}
+const assets = [\n${validChain
+    .map((chain_name) => {
+      return `  _${chain_name}.assets`;
+    })
+    .join(',\n')}
 ];
 
 export default assets;
@@ -126,15 +124,13 @@ const writeNetworkChains = (filePath, networkObj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { Chain } from '@chain-registry/types';
+    `${importStat}
 
-${importStat}
-
-const chains: Chain[] = [\n${validChain
-      .map((chain_name) => {
-        return `  _${chain_name}.chain`;
-      })
-      .join(',\n')}
+const chains = [\n${validChain
+    .map((chain_name) => {
+      return `  _${chain_name}.chain`;
+    })
+    .join(',\n')}
 ];
 
 export default chains;
@@ -170,10 +166,10 @@ const writeNetworkIbc = (filePath, networkObj) => {
 ${importStat}
 
 const ibc: IBCInfo[] = [\n${validChain
-      .map((chain_name) => {
-        return `  ..._${chain_name}.ibc`;
-      })
-      .join(',\n')}
+    .map((chain_name) => {
+      return `  ..._${chain_name}.ibc`;
+    })
+    .join(',\n')}
 ];
 
 export default ibc;
@@ -200,17 +196,17 @@ const writeNamedIndex = (filePath, networkObj) => {
 function createExports(isAssets: boolean, isChains: boolean, isIbc: boolean): string {
   // Helper function to collect the export items based on conditions
   function collectExports(items: { key: string, condition: boolean }[]): string {
-      return items
-          .filter(item => item.condition)
-          .map(item => item.key)
-          .join(', ');
+    return items
+      .filter(item => item.condition)
+      .map(item => item.key)
+      .join(', ');
   }
 
   // Define the items for export based on the input flags
   const exportItems = [
-      { key: 'assets', condition: isAssets },
-      { key: 'chains', condition: isChains },
-      { key: 'ibc', condition: isIbc }
+    { key: 'assets', condition: isAssets },
+    { key: 'chains', condition: isChains },
+    { key: 'ibc', condition: isIbc }
   ];
 
   // Collect the export strings
@@ -277,15 +273,13 @@ const writeRootAssets = (filePath, obj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { AssetList } from '@chain-registry/types';
+    `${importStat}
 
-${importStat}
-
-const assets: AssetList[] = [\n${validNetwork
-      .map((network_type) => {
-        return `  ..._${network_type}.assets`;
-      })
-      .join(',\n')}
+const assets = [\n${validNetwork
+    .map((network_type) => {
+      return `  ..._${network_type}.assets`;
+    })
+    .join(',\n')}
 ];
 
 export default assets;
@@ -316,15 +310,13 @@ const writeRootChains = (filePath, obj) => {
 
   fs.writeFileSync(
     filePath,
-    `import { Chain } from '@chain-registry/types';
+    `${importStat}
 
-${importStat}
-
-const chains: Chain[] = [\n${validNetwork
-      .map((network_type) => {
-        return `  ..._${network_type}.chains`;
-      })
-      .join(',\n')}
+const chains = [\n${validNetwork
+    .map((network_type) => {
+      return `  ..._${network_type}.chains`;
+    })
+    .join(',\n')}
 ];
 
 export default chains;
@@ -360,10 +352,10 @@ const writeRootIbc = (filePath, obj) => {
 ${importStat}
 
 const ibc: IBCInfo[] = [\n${validNetwork
-      .map((network_type) => {
-        return `  ..._${network_type}.ibc`;
-      })
-      .join(',\n')}
+    .map((network_type) => {
+      return `  ..._${network_type}.ibc`;
+    })
+    .join(',\n')}
 ];
 
 export default ibc;
@@ -441,13 +433,13 @@ const paths = glob(`${registryDir}/**/*.json`)
   .filter((a) => path.basename(a) !== 'package.json')
   .filter((a) => path.basename(a) !== 'package-lock.json')
   .filter((a) => {
-  const splitedDirs = a.split(registryDirInRepoPath);
-  const filePath = splitedDirs.pop();
-  const dir = path.basename(path.dirname(filePath));
-  return (
-    !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
-  );
-});
+    const splitedDirs = a.split(registryDirInRepoPath);
+    const filePath = splitedDirs.pop();
+    const dir = path.basename(path.dirname(filePath));
+    return (
+      !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
+    );
+  });
 
 const chainNetworkMap = {};
 
