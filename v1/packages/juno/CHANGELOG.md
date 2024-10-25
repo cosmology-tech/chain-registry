@@ -3,6 +3,110 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.70.11 (2024-10-25)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.10 (2024-10-24)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.9 (2024-10-23)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.8 (2024-10-22)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.7 (2024-10-21)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.6 (2024-10-20)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.5 (2024-10-19)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.4 (2024-10-18)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.3 (2024-10-17)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.2 (2024-10-16)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+## 1.70.1 (2024-10-15)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+# 1.70.0 (2024-10-14)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
+# 1.69.0 (2024-10-13)
+
+**Note:** Version bump only for package @chain-registry/juno
+
+
+
+
+
 # 1.68.0 (2024-10-12)
 
 **Note:** Version bump only for package @chain-registry/juno

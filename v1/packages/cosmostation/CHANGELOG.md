@@ -3,6 +3,110 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.72.11 (2024-10-25)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.10 (2024-10-24)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.9 (2024-10-23)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.8 (2024-10-22)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.7 (2024-10-21)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.6 (2024-10-20)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.5 (2024-10-19)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.4 (2024-10-18)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.3 (2024-10-17)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.2 (2024-10-16)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+## 1.72.1 (2024-10-15)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+# 1.72.0 (2024-10-14)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
+# 1.71.0 (2024-10-13)
+
+**Note:** Version bump only for package @chain-registry/cosmostation
+
+
+
+
+
 # 1.70.0 (2024-10-12)
 
 **Note:** Version bump only for package @chain-registry/cosmostation

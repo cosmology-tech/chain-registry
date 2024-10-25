@@ -3,6 +3,110 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.52.11 (2024-10-25)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.10 (2024-10-24)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.9 (2024-10-23)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.8 (2024-10-22)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.7 (2024-10-21)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.6 (2024-10-20)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.5 (2024-10-19)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.4 (2024-10-18)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.3 (2024-10-17)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.2 (2024-10-16)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+## 1.52.1 (2024-10-15)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+# 1.52.0 (2024-10-14)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
+# 1.51.0 (2024-10-13)
+
+**Note:** Version bump only for package @chain-registry/v2-utils
+
+
+
+
+
 # 1.50.0 (2024-10-12)
 
 **Note:** Version bump only for package @chain-registry/v2-utils

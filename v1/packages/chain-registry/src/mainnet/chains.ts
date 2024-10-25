@@ -64,6 +64,7 @@ import * as _dyson from './dyson';
 import * as _echelon from './echelon';
 import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
+import * as _epix from './epix';
 import * as _ethos from './ethos';
 import * as _evmos from './evmos';
 import * as _fetchhub from './fetchhub';
@@ -259,6 +260,7 @@ const chains: Chain[] = [
   _echelon.chain,
   _emoney.chain,
   _empowerchain.chain,
+  _epix.chain,
   _ethos.chain,
   _evmos.chain,
   _fetchhub.chain,
