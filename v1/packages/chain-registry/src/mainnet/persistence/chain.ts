@@ -32,9 +32,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
@@ -299,6 +297,12 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Persistence-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Persistence-Mainnet/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/persistence',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=persistence&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=persistence&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

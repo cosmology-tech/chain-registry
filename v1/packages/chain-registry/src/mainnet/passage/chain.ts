@@ -29,8 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
-    cosmwasm_version: 'v0.31.0'
+    cosmos_sdk_version: 'v0.45.16'
   },
   apis: {
     rpc: [
@@ -242,6 +241,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/passage',
       tx_page: 'https://ezstaking.app/passage/txs/${txHash}',
       account_page: 'https://ezstaking.app/passage/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/passage',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=passage&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=passage&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

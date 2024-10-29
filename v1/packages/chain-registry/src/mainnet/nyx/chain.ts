@@ -36,7 +36,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmwasm_enabled: true
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
@@ -93,6 +93,12 @@ const info: Chain = {
       url: 'https://nym.explorers.guru/',
       tx_page: 'https://nym.explorers.guru/transaction/${txHash}',
       account_page: 'https://nym.explorers.guru/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nyx',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=nyx&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=nyx&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

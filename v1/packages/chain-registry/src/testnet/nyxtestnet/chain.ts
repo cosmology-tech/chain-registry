@@ -36,7 +36,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmwasm_enabled: true
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_light.png',

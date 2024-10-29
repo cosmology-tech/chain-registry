@@ -27,9 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.12',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.45.0'
+    cosmos_sdk_version: '0.47.12'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',

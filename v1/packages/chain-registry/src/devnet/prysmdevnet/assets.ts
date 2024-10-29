@@ -1,7 +1,7 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
-  chain_name: 'prysm',
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'prysmdevnet',
   assets: [{
       description: 'The native token of Prysm',
       denom_units: [{
@@ -16,7 +16,8 @@ const info: AssetList = {
       name: 'Prysm',
       symbol: 'PRYSM',
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/prysm/images/prysm.png',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/prysmdevnet/images/prysm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/prysmdevnet/images/prysm.svg',
           theme: {
             circle: true,
             primary_color_hex: '#cf654f'

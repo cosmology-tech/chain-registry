@@ -32,9 +32,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.7',
-    cosmwasm_enabled: false,
-    cosmwasm_version: '0.30'
+    cosmos_sdk_version: '0.47.7'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png',

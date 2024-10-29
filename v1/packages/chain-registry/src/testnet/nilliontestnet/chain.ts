@@ -26,8 +26,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.50.6',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: 'v0.50.6'
   },
   apis: {
     rpc: [{

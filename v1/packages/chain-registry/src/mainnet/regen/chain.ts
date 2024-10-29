@@ -150,6 +150,12 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/regen/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/regen',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=regen&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=regen&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Regen-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Regen-Mainnet/tx/${txHash}'

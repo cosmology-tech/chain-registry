@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.8',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.41.0'
+    cosmos_sdk_version: 'v0.47.8'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
@@ -204,6 +202,12 @@ const info: Chain = {
       url: 'https://mintscan.io/chihuahua',
       tx_page: 'https://mintscan.io/chihuahua/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/chihuahua/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/chihuahua',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=chihuahua&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=chihuahua&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

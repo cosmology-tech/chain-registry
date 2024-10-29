@@ -29,9 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.10',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'v0.47.10'
   },
   apis: {
     rpc: [
@@ -111,6 +109,12 @@ const info: Chain = {
       kind: 'Router Explorer',
       url: 'https://router.explorers.guru/',
       tx_page: 'https://router.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/routerchain',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=routerchain&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=routerchain&addr=${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',

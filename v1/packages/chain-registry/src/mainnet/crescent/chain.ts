@@ -159,6 +159,12 @@ const info: Chain = {
       tx_page: 'https://crescent.explorers.guru/transaction/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/crescent',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=crescent&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=crescent&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/crescent',
       tx_page: 'https://atomscan.com/crescent/transactions/${txHash}',

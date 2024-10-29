@@ -13,8 +13,7 @@ const info: Chain = {
   node_home: '$HOME/.thornode',
   slip44: 931,
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: 'v0.45.16'
   },
   apis: {
     rpc: [],

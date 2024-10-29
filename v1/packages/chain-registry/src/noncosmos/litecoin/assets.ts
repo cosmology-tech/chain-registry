@@ -19,13 +19,17 @@ const info: AssetList = {
       symbol: 'LTC',
       coingecko_id: 'litecoin',
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/dogecoin/images/ltc.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/dogecoin/images/ltc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/litecoin/images/ltc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/litecoin/images/ltc.png',
           theme: {
             primary_color_hex: '#345D9D',
             circle: true
           }
-        }]
+        }],
+      socials: {
+        website: 'https://litecoin.org/',
+        twitter: 'https://x.com/litecoin'
+      }
     }]
 };
 export default info;

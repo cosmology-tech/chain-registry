@@ -13,9 +13,7 @@ const info: Chain = {
   daemon_name: 'bitsongd',
   node_home: '$HOME/.bitsongd',
   codebase: {
-    cosmos_sdk_version: 'v0.45.16',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.33.0'
+    cosmos_sdk_version: 'v0.45.16'
   },
   fees: {
     fee_tokens: [{
@@ -205,6 +203,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/bitsong',
       tx_page: 'https://www.mintscan.io/bitsong/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/bitsong/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/bitsong',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=bitsong&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=bitsong&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

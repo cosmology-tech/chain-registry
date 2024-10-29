@@ -30,8 +30,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5'
   },
   apis: {
     rpc: [
@@ -148,6 +147,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/saga',
       tx_page: 'https://www.mintscan.io/saga/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/saga/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/saga',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=saga&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=saga&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

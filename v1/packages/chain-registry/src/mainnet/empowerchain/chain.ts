@@ -27,8 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.45'
+
   },
   apis: {
     rpc: [
@@ -191,6 +190,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/empowerchain',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=empowerchain&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=empowerchain&addr=${accountAddress}'
+    },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Empower-Mainnet',

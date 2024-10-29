@@ -32,8 +32,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'agoric-labs/cosmos-sdk v0.46.16-alpha.agoric.2.4',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: 'agoric-labs/cosmos-sdk v0.46.16-alpha.agoric.2.4'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',
@@ -200,6 +199,12 @@ const info: Chain = {
       url: 'https://agoric.explorers.guru',
       tx_page: 'https://agoric.explorers.guru/transaction/${txHash}',
       account_page: 'https://agoric.explorers.guru/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/agoric',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=agoric&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=agoric&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

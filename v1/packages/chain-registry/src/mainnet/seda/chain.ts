@@ -197,6 +197,12 @@ const info: Chain = {
       account_page: 'https://seda.explorers.guru/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/seda',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=seda&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=seda&addr=${accountAddress}'
+    },
+    {
       kind: 'WhisperNode 🤐',
       url: 'https://mainnet.whispernode.com/seda',
       tx_page: 'https://mainnet.whispernode.com/seda/tx/${txHash}',

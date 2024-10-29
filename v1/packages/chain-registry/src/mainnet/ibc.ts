@@ -11,6 +11,7 @@ import * as _andromeda from './andromeda';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
+import * as _atomone from './atomone';
 import * as _aura from './aura';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
@@ -62,6 +63,7 @@ import * as _humans from './humans';
 import * as _impacthub from './impacthub';
 import * as _imversed from './imversed';
 import * as _injective from './injective';
+import * as _int3face from './int3face';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
 import * as _joltify from './joltify';
@@ -79,6 +81,7 @@ import * as _lorenzo from './lorenzo';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
+import * as _mantrachain from './mantrachain';
 import * as _mars from './mars';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
@@ -136,6 +139,7 @@ import * as _stargaze from './stargaze';
 import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
+import * as _synternet from './synternet';
 import * as _teritori from './teritori';
 import * as _terra from './terra';
 import * as _terra2 from './terra2';
@@ -159,6 +163,7 @@ const ibc: IBCInfo[] = [
   ..._archway.ibc,
   ..._arkh.ibc,
   ..._assetmantle.ibc,
+  ..._atomone.ibc,
   ..._aura.ibc,
   ..._axelar.ibc,
   ..._bandchain.ibc,
@@ -210,6 +215,7 @@ const ibc: IBCInfo[] = [
   ..._impacthub.ibc,
   ..._imversed.ibc,
   ..._injective.ibc,
+  ..._int3face.ibc,
   ..._irisnet.ibc,
   ..._jackal.ibc,
   ..._joltify.ibc,
@@ -227,6 +233,7 @@ const ibc: IBCInfo[] = [
   ..._lumenx.ibc,
   ..._lumnetwork.ibc,
   ..._mande.ibc,
+  ..._mantrachain.ibc,
   ..._mars.ibc,
   ..._medasdigital.ibc,
   ..._meme.ibc,
@@ -284,6 +291,7 @@ const ibc: IBCInfo[] = [
   ..._starname.ibc,
   ..._stratos.ibc,
   ..._stride.ibc,
+  ..._synternet.ibc,
   ..._teritori.ibc,
   ..._terra.ibc,
   ..._terra2.ibc,

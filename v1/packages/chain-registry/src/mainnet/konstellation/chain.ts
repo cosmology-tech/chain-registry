@@ -66,15 +66,24 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'konstellation',
       url: 'https://explorer.konstellation.tech/',
       tx_page: 'https://explorer.konstellation.tech/tx/${txHash}'
-    }, {
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/konstellation',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=konstellation&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=konstellation&addr=${accountAddress}'
+    },
+    {
       kind: 'cosmotracker',
       url: 'https://cosmotracker.com/konstellation',
       tx_page: 'https://cosmotracker.com/konstellation/tx/${txHash}'
-    }],
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png',
       theme: {

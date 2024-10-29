@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.15',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.31.0'
+    cosmos_sdk_version: 'v0.45.15'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
@@ -248,6 +246,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/nois',
       tx_page: 'https://ezstaking.app/nois/txs/${txHash}',
       account_page: 'https://ezstaking.app/nois/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nois',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=nois&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=nois&addr=${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',

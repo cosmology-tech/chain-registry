@@ -25,7 +25,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
@@ -78,6 +78,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/bostrom',
       tx_page: 'https://ping.pub/bostrom/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/bostrom',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=bostrom&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=bostrom&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

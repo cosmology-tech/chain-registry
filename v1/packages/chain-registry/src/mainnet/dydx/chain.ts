@@ -34,7 +34,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240606183841-18966898625f'
+    cosmos_sdk_version: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240808180557-4b1c1dc17703'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',
@@ -223,6 +223,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/dydx',
       tx_page: 'https://www.mintscan.io/dydx/txs/${txHash}',
       account_page: 'https://www.mintscan.io/dydx/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/dydx',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=dydx&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=dydx&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

@@ -59,9 +59,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.50.7-neutron',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'neutron-org/wasmd v0.51.0'
+    cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.50.7-neutron'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.png',
@@ -70,6 +68,14 @@ const info: Chain = {
   description: 'The most secure CosmWasm platform in Cosmos, Neutron lets smart-contracts leverage bleeding-edge Interchain technology with minimal overhead.',
   apis: {
     rpc: [
+      {
+        address: 'https://rpc-voidara.neutron-1.neutron.org',
+        provider: 'Neutron'
+      },
+      {
+        address: 'https://rpc-pulsarix.neutron-1.neutron.org',
+        provider: 'Neutron'
+      },
       {
         address: 'https://rpc.novel.remedy.tm.p2p.org',
         provider: 'P2P'

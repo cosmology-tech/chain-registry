@@ -135,9 +135,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.12',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'v0.47.12'
   },
   description: 'A decentralized ecosystem for protocols, builders and web3 users seeking sustainable FinTech.',
   apis: {
@@ -334,6 +332,12 @@ const info: Chain = {
       kind: 'explorers.guru',
       url: 'https://kujira.explorers.guru',
       tx_page: 'https://kujira.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/kujira',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=kujira&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=kujira&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

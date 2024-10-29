@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'github.com/Finschia/finschia-sdk@v0.48.1',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'github.com/Finschia/wasmd@v0.2.0'
+    cosmos_sdk_version: 'github.com/Finschia/finschia-sdk@v0.48.1'
   },
   apis: {
     rpc: [{

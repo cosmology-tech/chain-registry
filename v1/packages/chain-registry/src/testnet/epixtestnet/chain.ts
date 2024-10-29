@@ -49,9 +49,9 @@ const info: Chain = {
       }]
   },
   explorers: [{
-      kind: 'Silk Nodes Explorer',
-      url: 'https://https://testnet.epix.zone/epix',
-      tx_page: 'https://https://testnet.epix.zone/epix/tx/${txHash}'
+      kind: 'Epix Explorer',
+      url: 'https://testnet.epix.zone/epix',
+      tx_page: 'https://testnet.epix.zone/epix/tx/${txHash}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/epix/images/epix.png',

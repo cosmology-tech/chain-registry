@@ -32,9 +32,7 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.7',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'v0.47.7'
   },
   apis: {
     rpc: [
@@ -127,6 +125,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/migaloo',
       tx_page: 'https://ping.pub/migaloo/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/migaloo',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=migaloo&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=migaloo&addr=${accountAddress}'
     },
     {
       kind: 'Silk Nodes',

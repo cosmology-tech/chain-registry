@@ -68,16 +68,25 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/conscious',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=conscious&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=conscious&addr=${accountAddress}'
+    },
+    {
       kind: 'blockscout',
       url: 'https://explore.consciousdao.com/',
       tx_page: 'https://explore.consciousdao.com/tx/${txHash}'
-    }, {
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/conscious',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/conscious/tx/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/conscious/account/${accountAddress}'
-    }],
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.svg',

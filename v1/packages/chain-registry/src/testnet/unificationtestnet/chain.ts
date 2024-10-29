@@ -31,8 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.13',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: '0.47.13'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',

@@ -28,8 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30.2'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',
@@ -80,6 +79,10 @@ const info: Chain = {
       {
         address: 'https://orai-rpc.imdev.app',
         provider: 'imORAI'
+      },
+      {
+        address: 'https://orai-rpc.owallet.io',
+        provider: 'OWALLET'
       }
     ],
     rest: [
@@ -110,6 +113,10 @@ const info: Chain = {
       {
         address: 'https://oraichain-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://orai-rest.owallet.io',
+        provider: 'OWALLET'
       }
     ],
     grpc: [
@@ -140,6 +147,10 @@ const info: Chain = {
       {
         address: 'oraichain-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'orai-grpc.owallet.io:9999',
+        provider: 'OWALLET'
       }
     ]
   },
@@ -164,6 +175,12 @@ const info: Chain = {
       url: 'https://atomscan.com/orai',
       tx_page: 'https://atomscan.com/orai/transactions/${txHash}',
       account_page: 'https://atomscan.com/orai/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/oraichain',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=oraichain&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=oraichain&addr=${accountAddress}'
     },
     {
       kind: 'KonsorTech Explorer',

@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.44'
+    cosmos_sdk_version: '0.47'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',
@@ -174,6 +172,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/coreum',
       tx_page: 'https://www.mintscan.io/coreum/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/coreum/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/coreum',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=coreum&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=coreum&addr=${accountAddress}'
     },
     {
       kind: 'NODEXPLORER',

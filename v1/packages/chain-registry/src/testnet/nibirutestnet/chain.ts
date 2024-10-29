@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.7',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.44.0'
+    cosmos_sdk_version: 'v0.47.7'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',

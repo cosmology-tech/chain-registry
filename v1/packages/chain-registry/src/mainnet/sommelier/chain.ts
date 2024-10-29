@@ -141,6 +141,12 @@ const info: Chain = {
       account_page: 'https://ezstaking.app/sommelier/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/sommelier',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=sommelier&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=sommelier&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sommelier-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Sommelier-Mainnet/tx/${txHash}',

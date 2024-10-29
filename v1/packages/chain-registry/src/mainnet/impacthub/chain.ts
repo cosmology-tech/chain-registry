@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'mainnet',
   website: 'https://www.ixo.world/',
-  pretty_name: 'Impacts Hub',
+  pretty_name: 'Impact Hub',
   chain_type: 'cosmos',
   chain_id: 'ixo-5',
   bech32_prefix: 'ixo',
@@ -119,6 +119,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/impacthub',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=impacthub&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=impacthub&addr=${accountAddress}'
+    },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/ixo',

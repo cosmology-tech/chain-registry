@@ -26,9 +26,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.6',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.41.0'
+    cosmos_sdk_version: 'v0.47.6'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.png',
@@ -232,6 +230,12 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/teritori',
       tx_page: 'https://explorer.tcnetwork.io/teritori/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/teritori',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=teritori&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=teritori&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

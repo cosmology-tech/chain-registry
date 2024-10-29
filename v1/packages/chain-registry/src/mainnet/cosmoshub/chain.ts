@@ -28,8 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.50.9-lsm',
-    cosmwasm_version: 'v0.51.0'
+    cosmos_sdk_version: 'v0.50.9-lsm'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
@@ -415,6 +414,12 @@ const info: Chain = {
       validator_page: 'https://ping.pub/cosmos/staking/${validatorAddress}',
       proposal_page: 'https://ping.pub/cosmos/gov/${proposalId}',
       block_page: 'https://ping.pub/cosmos/block/${blockHeight}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/cosmoshub',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=cosmoshub&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=cosmoshub&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

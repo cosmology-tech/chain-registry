@@ -51,9 +51,7 @@ const info: Chain = {
     ]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.50.9',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.53.0'
+    cosmos_sdk_version: 'v0.50.9'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
@@ -211,6 +209,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/quasar',
       tx_page: 'https://ezstaking.app/quasar/txs/${txHash}',
       account_page: 'https://ezstaking.app/quasar/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/quasar',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=quasar&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=quasar&addr=${accountAddress}'
     },
     {
       kind: 'WhisperNode 🤐',

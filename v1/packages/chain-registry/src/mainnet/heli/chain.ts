@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.4',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.41.0'
+    cosmos_sdk_version: '0.47.4'
   },
   apis: {
     rpc: [{
@@ -50,6 +48,11 @@ const info: Chain = {
       url: 'https://explorer.helichain.com/Helichain',
       tx_page: 'https://explorer.helichain.com/Helichain/tx/${txHash}',
       account_page: 'https://explorer.helichain.com/Helichain/account/${accountAddress}'
+    }, {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/heli',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=heli&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=heli&addr=${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.png',

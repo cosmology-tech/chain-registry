@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.40.1'
+    cosmos_sdk_version: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.png',
@@ -125,6 +123,12 @@ const info: Chain = {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/ununifi',
       tx_page: 'https://explorer.nodestake.top/ununifi/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/ununifi',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=ununifi&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=ununifi&addr=${accountAddress}'
     },
     {
       kind: 'Nodeist Explorer',

@@ -1,7 +1,7 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../assetlist.schema.json',
-  chain_name: 'mantrachain',
+  $schema: '../../assetlist.schema.json',
+  chain_name: 'mantrachaintestnet2',
   assets: [{
       description: 'The native token of MANTRA',
       extended_description: 'The first RWA Layer 1 Blockchain, capable of adherence and enforcement of real world regulatory requirements.',
@@ -14,17 +14,19 @@ const info: AssetList = {
         }],
       type_asset: 'sdk.coin',
       base: 'uom',
-      name: 'MANTRA Chain',
+      name: 'MANTRA Chain Dukong',
       display: 'om',
       symbol: 'OM',
       keywords: [
-        'mantra',
+        'rwa',
+        'wasm',
         'staking',
-        'delegating',
-        'governance',
-        'regulation',
-        'defi'
+        'testnet'
       ],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg'
+      },
       images: [
         {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',

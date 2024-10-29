@@ -8,8 +8,8 @@ const info: Chain = {
   website: 'https://bitbadges.io/',
   pretty_name: 'BitBadges',
   chain_id: 'bitbadges-1',
-  bech32_prefix: 'cosmos',
   daemon_name: 'bitbadgeschaind',
+  bech32_prefix: 'bb',
   node_home: '$HOME/.bitbadgeschaind',
   slip44: 118,
   fees: {
@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.50.8'
+    cosmos_sdk_version: 'v0.50.10'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitbadges/images/bitbadgeslogo.png'
