@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'axelarnetwork/cosmos-sdk v0.45.17-0.20240321205000-47c0c80e20ca',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.33.0'
+    cosmos_sdk_version: 'axelarnetwork/cosmos-sdk v0.45.17-0.20240321205000-47c0c80e20ca'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
@@ -272,6 +270,12 @@ const info: Chain = {
       kind: 'explorers.guru',
       url: 'https://axelar.explorers.guru',
       tx_page: 'https://axelar.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/axelar',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=axelar&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=axelar&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

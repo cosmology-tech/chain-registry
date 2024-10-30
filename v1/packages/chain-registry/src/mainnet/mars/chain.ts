@@ -29,9 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.7',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30.0'
+    cosmos_sdk_version: '0.46.7'
   },
   description: 'Lend, borrow and earn with an autonomous credit protocol in the Cosmos universe. Open to all, closed to none.',
   apis: {

@@ -61,6 +61,10 @@ const info: Chain = {
         provider: 'Stakeflow'
       },
       {
+        address: 'https://rpc-archive-terra.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
+      },
+      {
         address: 'https://rpc-terra.cosmos-spaces.cloud',
         provider: 'Cosmos Spaces'
       },
@@ -103,6 +107,10 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
+        address: 'https://api-archive-terra.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
+      },
+      {
         address: 'https://api-terra-01.stakeflow.io',
         provider: 'Stakeflow'
       },
@@ -141,6 +149,10 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
+        address: 'grpc-archive-terra.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
+      },
+      {
         address: 'grpc-terra.cosmos-spaces.cloud:2690',
         provider: 'Cosmos Spaces'
       },
@@ -160,6 +172,12 @@ const info: Chain = {
       url: 'https://atomscan.com/terra2',
       tx_page: 'https://atomscan.com/terra2/transactions/${txHash}',
       account_page: 'https://atomscan.com/terra2/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/terra2',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=terra2&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=terra2&addr=${accountAddress}'
     },
     {
       kind: 'finder',

@@ -146,6 +146,12 @@ const info: Chain = {
       tx_page: 'https://ping.pub/iris-network/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/irisnet',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=irisnet&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=irisnet&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/iris-network',
       tx_page: 'https://atomscan.com/iris-network/transactions/${txHash}',

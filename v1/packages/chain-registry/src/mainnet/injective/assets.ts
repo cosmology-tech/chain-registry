@@ -184,6 +184,14 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/binj.png'
       },
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'injective',
+            base_denom: 'inj'
+          },
+          provider: 'BackBoneLabs'
+        }],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/binj.png',
           theme: {
@@ -923,7 +931,7 @@ const info: AssetList = {
           type: 'legacy-mintage',
           counterparty: {
             chain_name: 'injective',
-            base_denom: 'factory/inj1sklcy2px26jj73ffs2f7fmxw77zsts66prrqxr/DRUGS'
+            base_denom: 'factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS'
           },
           provider: 'Drugs'
         }],
@@ -937,13 +945,13 @@ const info: AssetList = {
     {
       description: 'Distributing happiness, is a serious business',
       denom_units: [{
-          denom: 'factory/inj1sklcy2px26jj73ffs2f7fmxw77zsts66prrqxr/DRUGS',
+          denom: 'factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS',
           exponent: 0
         }, {
           denom: 'DRUGS',
-          exponent: 9
+          exponent: 6
         }],
-      base: 'factory/inj1sklcy2px26jj73ffs2f7fmxw77zsts66prrqxr/DRUGS',
+      base: 'factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS',
       name: 'DRUGS',
       display: 'DRUGS',
       symbol: 'DRUGS',

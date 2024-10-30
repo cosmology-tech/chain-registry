@@ -53,6 +53,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/B04E05414845971C4E65D635AD20BE4A19654029DC44D26945C48D040A8649EC',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/B04E05414845971C4E65D635AD20BE4A19654029DC44D26945C48D040A8649EC',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-112',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-62'
+          }
+        }]
+    },
+    {
       description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/9117A26BA81E29FA4F78F57DC2BD90CD3D26848101BA880445F119B22A1E254E',
@@ -431,6 +465,40 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-112',
             base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-62'
+          }
+        }]
+    },
+    {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/B04E05414845971C4E65D635AD20BE4A19654029DC44D26945C48D040A8649EC',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/B04E05414845971C4E65D635AD20BE4A19654029DC44D26945C48D040A8649EC',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-112',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
             chain_name: 'archway'
           },
           chain: {

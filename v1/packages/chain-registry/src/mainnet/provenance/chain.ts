@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.13',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmos_sdk_version: '0.46.13'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',
@@ -191,6 +189,12 @@ const info: Chain = {
       url: 'https://atomscan.com/provenance',
       tx_page: 'https://atomscan.com/provenance/transactions/${txHash}',
       account_page: 'https://atomscan.com/provenance/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/provenance',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=provenance&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=provenance&addr=${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',

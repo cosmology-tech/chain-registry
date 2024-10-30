@@ -4,6 +4,7 @@ const info: Chain = {
   chain_name: 'beezee',
   status: 'live',
   network_type: 'mainnet',
+  website: 'https://getbze.com/',
   pretty_name: 'BeeZee',
   chain_type: 'cosmos',
   chain_id: 'beezee-1',
@@ -91,6 +92,12 @@ const info: Chain = {
       url: 'https://ping.pub/beezee',
       tx_page: 'https://ping.pub/beezee/tx/${txHash}',
       account_page: 'https://ping.pub/beezee/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/beezee',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=beezee&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=beezee&addr=${accountAddress}'
     },
     {
       kind: 'ping.pub',

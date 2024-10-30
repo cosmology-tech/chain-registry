@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'v0.47.5'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',
@@ -215,6 +213,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://explorers.brocha.in/uptick',
       tx_page: 'https://explorers.brocha.in/uptick/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/uptick',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=uptick&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=uptick&addr=${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',

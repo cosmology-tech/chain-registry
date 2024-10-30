@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'neutron-org/wasmd v0.51.0'
+    cosmos_sdk_version: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',
@@ -43,7 +41,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://pirin-cl.nolus.network:26657',
+        address: 'rpc.nolus.network',
         provider: 'NolusProtocol'
       },
       {
@@ -89,7 +87,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://pirin-cl.nolus.network:1317',
+        address: 'lcd.nolus.network',
         provider: 'NolusProtocol'
       },
       {
@@ -135,7 +133,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://pirin-cl.nolus.network:9090',
+        address: 'grpc.nolus.network',
         provider: 'NolusProtocol'
       },
       {
@@ -195,6 +193,12 @@ const info: Chain = {
       kind: 'Nodes Guru Explorer',
       url: 'https://nolus.explorers.guru',
       tx_page: 'https://nolus.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nolus',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=nolus&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=nolus&addr=${accountAddress}'
     },
     {
       kind: 'KJ Nodes Explorer',

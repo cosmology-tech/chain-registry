@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'sei-cosmos v0.3.35',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'sei-wasmd v0.2.4'
+    cosmos_sdk_version: 'sei-cosmos v0.3.37'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',
@@ -70,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://sei-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://sei.drpc.org',
+        provider: 'dRPC - All chains in one place'
       }
     ],
     rest: [
@@ -175,6 +177,12 @@ const info: Chain = {
       url: 'https://www.seiscan.app/pacific-1',
       tx_page: 'https://www.seiscan.app/pacific-1/txs/${txHash}',
       account_page: 'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/sei',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=sei&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=sei&addr=${accountAddress}'
     },
     {
       kind: 'WhisperNode 🤐',

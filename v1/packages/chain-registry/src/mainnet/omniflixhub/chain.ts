@@ -13,8 +13,7 @@ const info: Chain = {
   bech32_prefix: 'omniflix',
   slip44: 118,
   codebase: {
-    cosmos_sdk_version: 'v0.47.10',
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'v0.47.10'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
@@ -221,12 +220,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'ezstaking',
-      url: 'https://ezstaking.app/omniflixhub',
-      tx_page: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
-      account_page: 'https://ezstaking.app/omniflixhub/account/${accountAddress}'
-    },
-    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/omniflix',
       tx_page: 'https://www.mintscan.io/omniflix/transactions/${txHash}',
@@ -237,6 +230,18 @@ const info: Chain = {
       url: 'https://atomscan.com/omniflixhub',
       tx_page: 'https://atomscan.com/omniflixhub/transactions/${txHash}',
       account_page: 'https://atomscan.com/omniflixhub/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/omniflixhub',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=omniflixhub&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=omniflixhub&addr=${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/omniflixhub',
+      tx_page: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
+      account_page: 'https://ezstaking.app/omniflixhub/account/${accountAddress}'
     },
     {
       kind: 'STAKR.space explorer',

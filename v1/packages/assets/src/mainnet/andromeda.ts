@@ -53,6 +53,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/657E8D05AB120050649CC02D9B3EA60BB7D1A3525C36541FC891F77A1B9328B3',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/657E8D05AB120050649CC02D9B3EA60BB7D1A3525C36541FC891F77A1B9328B3',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-97',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-11'
+          }
+        }]
+    },
+    {
       description: 'Injective is a decentralized exchange protocol that enables fast, secure, and fully decentralized trading of derivatives, futures, and spot markets.',
       denom_units: [{
           denom: 'ibc/9D0AC973BAFA293781F9A86B2911069DF9D8ECE86CDD884F0DE4889AF666B28A',
@@ -635,6 +669,40 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-97',
             base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-11'
+          }
+        }]
+    },
+    {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/657E8D05AB120050649CC02D9B3EA60BB7D1A3525C36541FC891F77A1B9328B3',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/657E8D05AB120050649CC02D9B3EA60BB7D1A3525C36541FC891F77A1B9328B3',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-97',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
             chain_name: 'archway'
           },
           chain: {

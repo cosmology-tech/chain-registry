@@ -135,6 +135,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/7F6E6511003DBC592D3BAB0F05C8963ADC49D99A3E2295A680902B6B781CCF35',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/7F6E6511003DBC592D3BAB0F05C8963ADC49D99A3E2295A680902B6B781CCF35',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-12'
+          }
+        }]
+    },
+    {
       description: 'The native token of Aura Network',
       denom_units: [{
           denom: 'ibc/B20E274EE534A7EFCF269FE302EDCBC5DFD9144673B3B03BE1067085FFFFC3BE',
@@ -174,7 +208,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'BeeZee native blockchain',
+      description: 'BeeZee network native coin',
       denom_units: [{
           denom: 'ibc/013AE50CCCE7DC02463EE602010A0F25C8405F39D7CB3BB4E944DCF2213C18AF',
           exponent: 0,
@@ -200,6 +234,10 @@ const assets: AssetList = {
           }
         }],
       type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -740,7 +778,7 @@ const assets: AssetList = {
       },
       socials: {
         website: 'https://islamiccoin.net',
-        twitter: 'https://x.com/1slamic_coin'
+        twitter: 'https://x.com/islamic_coin'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
@@ -1453,6 +1491,122 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
+      denom_units: [{
+          denom: 'ibc/73982CE9E59A59330E68602337E178E6B1044B97AEC5EDF46AA159A386B50E6C',
+          exponent: 0,
+          aliases: ['ulava']
+        }, {
+          denom: 'lava',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/73982CE9E59A59330E68602337E178E6B1044B97AEC5EDF46AA159A386B50E6C',
+      name: 'Lava',
+      coingecko_id: 'lava-network',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',
+          theme: {
+            primary_color_hex: '#6f043e'
+          }
+        }],
+      keywords: [
+        'modular',
+        'data',
+        'data access',
+        'rpc',
+        'staking',
+        'dual staking',
+        'indexing',
+        'incentivized public rpc'
+      ],
+      socials: {
+        website: 'https://lavanet.xyz',
+        twitter: 'https://twitter.com/lavanetxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom: 'ulava',
+            chain_name: 'lava'
+          },
+          chain: {
+            channel_id: 'channel-105'
+          }
+        }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/438006FC41DCE1C90E7F02F106E78EEEFAB78763A2703FB1C8481234244A959A',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/438006FC41DCE1C90E7F02F106E78EEEFAB78763A2703FB1C8481234244A959A',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      coingecko_id: 'mantra-dao',
+      keywords: [
+        'rwa',
+        'wasm',
+        'staking'
+      ],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#fba0c1'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        }
+      ],
+      socials: {
+        website: 'https://www.mantrachain.io/',
+        twitter: 'https://x.com/MANTRA_Chain'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uom',
+            chain_name: 'mantrachain'
+          },
+          chain: {
+            channel_id: 'channel-101'
           }
         }]
     },
@@ -1903,6 +2057,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/7F6E6511003DBC592D3BAB0F05C8963ADC49D99A3E2295A680902B6B781CCF35',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/7F6E6511003DBC592D3BAB0F05C8963ADC49D99A3E2295A680902B6B781CCF35',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-29',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-12'
+          }
+        }]
+    },
+    {
       description: 'The native token of Aura Network',
       denom_units: [{
           denom: 'ibc/B20E274EE534A7EFCF269FE302EDCBC5DFD9144673B3B03BE1067085FFFFC3BE',
@@ -1942,7 +2130,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'BeeZee native blockchain',
+      description: 'BeeZee network native coin',
       denom_units: [{
           denom: 'ibc/013AE50CCCE7DC02463EE602010A0F25C8405F39D7CB3BB4E944DCF2213C18AF',
           exponent: 0,
@@ -1968,6 +2156,10 @@ const assets: AssetList = {
           }
         }],
       type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -2508,7 +2700,7 @@ const assets: AssetList = {
       },
       socials: {
         website: 'https://islamiccoin.net',
-        twitter: 'https://x.com/1slamic_coin'
+        twitter: 'https://x.com/islamic_coin'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
@@ -3221,6 +3413,122 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'Lava Network is a modular data network designed to provide fast, reliable, and scalable access to blockchain data for developers and users.',
+      denom_units: [{
+          denom: 'ibc/73982CE9E59A59330E68602337E178E6B1044B97AEC5EDF46AA159A386B50E6C',
+          exponent: 0,
+          aliases: ['ulava']
+        }, {
+          denom: 'lava',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/73982CE9E59A59330E68602337E178E6B1044B97AEC5EDF46AA159A386B50E6C',
+      name: 'Lava',
+      coingecko_id: 'lava-network',
+      display: 'lava',
+      symbol: 'LAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',
+          theme: {
+            primary_color_hex: '#6f043e'
+          }
+        }],
+      keywords: [
+        'modular',
+        'data',
+        'data access',
+        'rpc',
+        'staking',
+        'dual staking',
+        'indexing',
+        'incentivized public rpc'
+      ],
+      socials: {
+        website: 'https://lavanet.xyz',
+        twitter: 'https://twitter.com/lavanetxyz'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom: 'ulava',
+            chain_name: 'lava'
+          },
+          chain: {
+            channel_id: 'channel-105'
+          }
+        }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/438006FC41DCE1C90E7F02F106E78EEEFAB78763A2703FB1C8481234244A959A',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/438006FC41DCE1C90E7F02F106E78EEEFAB78763A2703FB1C8481234244A959A',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      coingecko_id: 'mantra-dao',
+      keywords: [
+        'rwa',
+        'wasm',
+        'staking'
+      ],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#fba0c1'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        }
+      ],
+      socials: {
+        website: 'https://www.mantrachain.io/',
+        twitter: 'https://x.com/MANTRA_Chain'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'uom',
+            chain_name: 'mantrachain'
+          },
+          chain: {
+            channel_id: 'channel-101'
           }
         }]
     },
@@ -3706,7 +4014,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
       denom_units: [{
           denom: 'ibc/8B511C5792C4E0E3F8EF3CD02A9CB7CC2CB9931A4042A7B3A5D0F2DDD4EEED88',
           exponent: 0,
@@ -7272,7 +7580,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
       denom_units: [{
           denom: 'ibc/8B511C5792C4E0E3F8EF3CD02A9CB7CC2CB9931A4042A7B3A5D0F2DDD4EEED88',
           exponent: 0,

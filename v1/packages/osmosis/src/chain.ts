@@ -31,9 +31,7 @@ const chain: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v25-osmo-1',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'osmosis-labs/wasmd v0.45.0-osmo'
+    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v25-osmo-1'
   },
   images: [{
       image_sync: {
@@ -382,6 +380,12 @@ const chain: Chain = {
       url: 'https://explorer.tcnetwork.io/osmosis',
       tx_page: 'https://explorer.tcnetwork.io/osmosis/transaction/${txHash}',
       account_page: 'https://explorer.tcnetwork.io/osmosis/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/osmosis',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=osmosis&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=osmosis&addr=${accountAddress}'
     },
     {
       kind: 'Stakeflow',

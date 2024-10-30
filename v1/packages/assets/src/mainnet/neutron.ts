@@ -53,6 +53,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/FEFB9DB3AED86F6B1BFC010034DE0822DE0DC2806F80F79BB6DA6333539FB532',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/FEFB9DB3AED86F6B1BFC010034DE0822DE0DC2806F80F79BB6DA6333539FB532',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-61',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-41'
+          }
+        }]
+    },
+    {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
@@ -924,6 +958,40 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-61',
             base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-41'
+          }
+        }]
+    },
+    {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/FEFB9DB3AED86F6B1BFC010034DE0822DE0DC2806F80F79BB6DA6333539FB532',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/FEFB9DB3AED86F6B1BFC010034DE0822DE0DC2806F80F79BB6DA6333539FB532',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-61',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
             chain_name: 'archway'
           },
           chain: {
@@ -2132,7 +2200,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
       denom_units: [{
           denom: 'ibc/B3881052DCC62E68955C71A49C5306717CFDE5B6526D39C89D1278DAE3284432',
           exponent: 0,
@@ -5580,7 +5648,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
       denom_units: [{
           denom: 'ibc/B3881052DCC62E68955C71A49C5306717CFDE5B6526D39C89D1278DAE3284432',
           exponent: 0,
@@ -8789,16 +8857,6 @@ const assets: AssetList = {
       name: 'BackBone Labs Liquid Staked HUAHUA',
       display: 'bHUAHUA',
       symbol: 'bHUAHUA',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
-          theme: {
-            primary_color_hex: '#f2bd3a'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -8811,7 +8869,17 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-52'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
+          theme: {
+            primary_color_hex: '#f2bd3a'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+      },
+      coingecko_id: 'backbone-labs-staked-huahua'
     },
     {
       description: 'Puppy',
@@ -8868,16 +8936,6 @@ const assets: AssetList = {
       name: 'BackBone Labs Liquid Staked HUAHUA',
       display: 'bHUAHUA',
       symbol: 'bHUAHUA',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
-          theme: {
-            primary_color_hex: '#f2bd3a'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -8890,7 +8948,17 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-52'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
+          theme: {
+            primary_color_hex: '#f2bd3a'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+      },
+      coingecko_id: 'backbone-labs-staked-huahua'
     },
     {
       description: 'The native token cw20 for SIENNA on Secret Network',
@@ -9997,13 +10065,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
-          theme: {
-            primary_color_hex: '#070707'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -10016,7 +10077,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-5'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-luna'
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
@@ -11670,13 +11738,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
-          theme: {
-            primary_color_hex: '#070707'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -11689,7 +11750,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-5'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-luna'
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',

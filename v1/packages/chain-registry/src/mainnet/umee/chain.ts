@@ -27,9 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.43'
+    cosmos_sdk_version: '0.47'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
@@ -274,6 +272,12 @@ const info: Chain = {
       url: 'https://atomscan.com/umee',
       tx_page: 'https://atomscan.com/umee/transactions/${txHash}',
       account_page: 'https://atomscan.com/umee/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/umee',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=umee&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=umee&addr=${accountAddress}'
     },
     {
       kind: 'Stakeflow',

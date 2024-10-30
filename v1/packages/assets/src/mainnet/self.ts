@@ -177,6 +177,49 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Router Chain',
+      denom_units: [{
+          denom: 'ibc/AE650BD48F6712E412D2F982E44C9BB9B232F182F6D8C08B38E56613F53DCC3C',
+          exponent: 0,
+          aliases: ['route']
+        }, {
+          denom: 'ROUTE',
+          exponent: 18
+        }],
+      base: 'ibc/AE650BD48F6712E412D2F982E44C9BB9B232F182F6D8C08B38E56613F53DCC3C',
+      name: 'Router Chain',
+      display: 'ROUTE',
+      symbol: 'ROUTE',
+      coingecko_id: 'router-protocol-2',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png',
+          theme: {
+            primary_color_hex: '#cb0766'
+          }
+        }],
+      socials: {
+        website: 'https://www.routerprotocol.com/',
+        twitter: 'https://x.com/routerprotocol'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'route',
+            chain_name: 'routerchain'
+          },
+          chain: {
+            channel_id: 'channel-6'
+          }
+        }]
+    },
+    {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD',
@@ -347,6 +390,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-1'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Router Chain',
+      denom_units: [{
+          denom: 'ibc/AE650BD48F6712E412D2F982E44C9BB9B232F182F6D8C08B38E56613F53DCC3C',
+          exponent: 0,
+          aliases: ['route']
+        }, {
+          denom: 'ROUTE',
+          exponent: 18
+        }],
+      base: 'ibc/AE650BD48F6712E412D2F982E44C9BB9B232F182F6D8C08B38E56613F53DCC3C',
+      name: 'Router Chain',
+      display: 'ROUTE',
+      symbol: 'ROUTE',
+      coingecko_id: 'router-protocol-2',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/routerchain/images/router.png',
+          theme: {
+            primary_color_hex: '#cb0766'
+          }
+        }],
+      socials: {
+        website: 'https://www.routerprotocol.com/',
+        twitter: 'https://x.com/routerprotocol'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'route',
+            chain_name: 'routerchain'
+          },
+          chain: {
+            channel_id: 'channel-6'
           }
         }]
     }

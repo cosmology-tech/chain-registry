@@ -29,8 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
@@ -38,27 +37,48 @@ const info: Chain = {
   },
   description: 'The most reliable, secure, and frictionless way to natively issue a digital asset in Cosmos.',
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://noble-rpc.polkachu.com',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://rpc.lavenderfive.com:443/noble',
         provider: 'Lavender.Five Nodes 🐝'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://noble-rpc.owallet.io',
+        provider: 'OWALLET'
+      }
+    ],
+    rest: [
+      {
         address: 'https://noble-api.polkachu.com',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://rest.lavenderfive.com:443/noble',
         provider: 'Lavender.Five Nodes 🐝'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://noble-rest.owallet.io',
+        provider: 'OWALLET'
+      }
+    ],
+    grpc: [
+      {
         address: 'noble-grpc.polkachu.com:21590',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'noble.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      }]
+      },
+      {
+        address: 'noble-grpc.owallet.io:9999',
+        provider: 'OWALLET'
+      }
+    ]
   },
   explorers: [
     {

@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
@@ -247,6 +247,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/jackal',
       tx_page: 'https://ping.pub/jackal/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/jackal',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=jackal&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=jackal&addr=${accountAddress}'
     },
     {
       kind: 'NodeStake',

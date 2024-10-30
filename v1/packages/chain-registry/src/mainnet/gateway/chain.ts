@@ -23,9 +23,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'github.com/wormhole-foundation/cosmos-sdk@v0.45.9-wormhole-2',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'github.com/wormhole-foundation/wasmd@v0.30.0-wormchain-2'
+    cosmos_sdk_version: 'github.com/wormhole-foundation/cosmos-sdk@v0.45.9-wormhole-2'
   },
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_icon.svg',

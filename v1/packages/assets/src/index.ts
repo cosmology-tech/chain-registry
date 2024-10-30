@@ -1,5 +1,6 @@
 export * from './mainnet';
 export * from './testnet';
+export * from './devnet';
 export * from './noncosmos'; import asset_lists from './asset_lists';
 
   export default {

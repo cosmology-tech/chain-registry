@@ -31,8 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.47.13',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: '0.47.13'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',
@@ -80,6 +79,12 @@ const info: Chain = {
       url: 'https://explorer.unification.chainmasters.ninja/unification',
       tx_page: 'https://explorer.unification.chainmasters.ninja/unification/tx/${txHash}',
       account_page: 'https://explorer.unification.chainmasters.ninja/Unification/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/unification',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=unification&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=unification&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

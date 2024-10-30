@@ -427,6 +427,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/3838496384B98CEDA02B5030FACFC4DEAFCA368568B9EAC186AA7E8C4359933F',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/3838496384B98CEDA02B5030FACFC4DEAFCA368568B9EAC186AA7E8C4359933F',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-1429'
+          }
+        }]
+    },
+    {
       description: 'The native token of Arkhadian',
       denom_units: [{
           denom: 'ibc/0F91EE8B98AAE3CF393D94CD7F89A10F8D7758C5EC707E721899DFE65C164C28',
@@ -508,6 +542,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-232'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of AtomOne',
+      denom_units: [{
+          denom: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+          exponent: 0,
+          aliases: ['uatone']
+        }, {
+          denom: 'atone',
+          exponent: 6
+        }],
+      base: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+      name: 'Atone',
+      display: 'atone',
+      symbol: 'ATONE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
+        }],
+      type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://atom.one',
+        twitter: 'https://x.com/_atomone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uatone',
+            chain_name: 'atomone'
+          },
+          chain: {
+            channel_id: 'channel-85309'
           }
         }]
     },
@@ -637,7 +710,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'BeeZee native blockchain',
+      description: 'BeeZee network native coin',
       denom_units: [{
           denom: 'ibc/C822645522FC3EECF817609AA38C24B64D04F5C267A23BCCF8F2E3BC5755FA88',
           exponent: 0,
@@ -663,6 +736,10 @@ const assets: AssetList = {
           }
         }],
       type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -3124,7 +3201,7 @@ const assets: AssetList = {
       },
       socials: {
         website: 'https://islamiccoin.net',
-        twitter: 'https://x.com/1slamic_coin'
+        twitter: 'https://x.com/islamic_coin'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
@@ -3590,6 +3667,46 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-122'
+          }
+        }]
+    },
+    {
+      description: 'Int3face blockchain native token',
+      denom_units: [{
+          denom: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
+          exponent: 0,
+          aliases: ['uint3']
+        }, {
+          denom: 'int3',
+          exponent: 6
+        }],
+      base: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
+      name: 'Int3face Token',
+      display: 'int3',
+      symbol: 'INT3',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png',
+          theme: {
+            primary_color_hex: '#3d3d3d'
+          }
+        }],
+      socials: {
+        website: 'https://int3face.io/',
+        twitter: 'https://x.com/int3face'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uint3',
+            chain_name: 'int3face'
+          },
+          chain: {
+            channel_id: 'channel-82819'
           }
         }]
     },
@@ -4369,6 +4486,71 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-115'
+          }
+        }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      coingecko_id: 'mantra-dao',
+      keywords: [
+        'rwa',
+        'wasm',
+        'staking'
+      ],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#fba0c1'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        }
+      ],
+      socials: {
+        website: 'https://www.mantrachain.io/',
+        twitter: 'https://x.com/MANTRA_Chain'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uom',
+            chain_name: 'mantrachain'
+          },
+          chain: {
+            channel_id: 'channel-85077'
           }
         }]
     },
@@ -5909,6 +6091,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/3838496384B98CEDA02B5030FACFC4DEAFCA368568B9EAC186AA7E8C4359933F',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/3838496384B98CEDA02B5030FACFC4DEAFCA368568B9EAC186AA7E8C4359933F',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-1429'
+          }
+        }]
+    },
+    {
       description: 'The native token of Arkhadian',
       denom_units: [{
           denom: 'ibc/0F91EE8B98AAE3CF393D94CD7F89A10F8D7758C5EC707E721899DFE65C164C28',
@@ -5990,6 +6206,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-232'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of AtomOne',
+      denom_units: [{
+          denom: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+          exponent: 0,
+          aliases: ['uatone']
+        }, {
+          denom: 'atone',
+          exponent: 6
+        }],
+      base: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+      name: 'Atone',
+      display: 'atone',
+      symbol: 'ATONE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
+        }],
+      type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://atom.one',
+        twitter: 'https://x.com/_atomone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uatone',
+            chain_name: 'atomone'
+          },
+          chain: {
+            channel_id: 'channel-85309'
           }
         }]
     },
@@ -6119,7 +6374,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'BeeZee native blockchain',
+      description: 'BeeZee network native coin',
       denom_units: [{
           denom: 'ibc/C822645522FC3EECF817609AA38C24B64D04F5C267A23BCCF8F2E3BC5755FA88',
           exponent: 0,
@@ -6145,6 +6400,10 @@ const assets: AssetList = {
           }
         }],
       type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -8606,7 +8865,7 @@ const assets: AssetList = {
       },
       socials: {
         website: 'https://islamiccoin.net',
-        twitter: 'https://x.com/1slamic_coin'
+        twitter: 'https://x.com/islamic_coin'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/islm.png',
@@ -9072,6 +9331,46 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-122'
+          }
+        }]
+    },
+    {
+      description: 'Int3face blockchain native token',
+      denom_units: [{
+          denom: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
+          exponent: 0,
+          aliases: ['uint3']
+        }, {
+          denom: 'int3',
+          exponent: 6
+        }],
+      base: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
+      name: 'Int3face Token',
+      display: 'int3',
+      symbol: 'INT3',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png',
+          theme: {
+            primary_color_hex: '#3d3d3d'
+          }
+        }],
+      socials: {
+        website: 'https://int3face.io/',
+        twitter: 'https://x.com/int3face'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uint3',
+            chain_name: 'int3face'
+          },
+          chain: {
+            channel_id: 'channel-82819'
           }
         }]
     },
@@ -9851,6 +10150,71 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-115'
+          }
+        }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      coingecko_id: 'mantra-dao',
+      keywords: [
+        'rwa',
+        'wasm',
+        'staking'
+      ],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#fba0c1'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        }
+      ],
+      socials: {
+        website: 'https://www.mantrachain.io/',
+        twitter: 'https://x.com/MANTRA_Chain'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uom',
+            chain_name: 'mantrachain'
+          },
+          chain: {
+            channel_id: 'channel-85077'
           }
         }]
     },
@@ -11082,7 +11446,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
       denom_units: [{
           denom: 'ibc/A0CC0CF735BFB30E730C70019D4218A1244FF383503FF7579C9201AB93CA9293',
           exponent: 0,
@@ -14057,7 +14421,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Quasar',
+      description: 'The QSR token has transitioned to a legacy token, with migration to the EVM ecosystem currently underway.',
       denom_units: [{
           denom: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
           exponent: 0,
@@ -14069,9 +14433,9 @@ const assets: AssetList = {
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
-      name: 'Quasar',
+      name: 'Quasar (legacy)',
       display: 'qsr',
-      symbol: 'QSR',
+      symbol: 'QSR.legacy',
       coingecko_id: 'quasar-2',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
@@ -15270,7 +15634,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'STOS coin is the token for the Stratos (STOS) cosmos based blockchain',
+      description: 'STOS coin is the native token for the Stratos Blockchain. Stratos is a pioneering decentralized infrastructure service provider, revolutionizing AI and DePIN with advanced decentralized solutions in storage, computing, databases, and blockchain services. We empower Web 3.0 developpers and dApps through our scalable, reliable, and high-performance networks.',
       denom_units: [
         {
           denom: 'ibc/ABD49F44559CB3E557CC458459CB6A67CEBD66E23C7674A0B2B445230BDA1F6C',
@@ -15302,6 +15666,15 @@ const assets: AssetList = {
             primary_color_hex: '#04847c'
           }
         }],
+      socials: {
+        website: 'https://www.thestratos.org/',
+        twitter: 'https://x.com/Stratos_Network',
+        discord: 'https://discord.gg/tpQGpC2nMh',
+        telegram: 'https://t.me/StratosOfficial',
+        reddit: 'https://www.reddit.com/r/stratoscommunity/',
+        github: 'https://github.com/stratosnet',
+        medium: 'https://stratos-network.medium.com/'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
@@ -15355,6 +15728,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-326'
+          }
+        }]
+    },
+    {
+      description: 'Synternet is a blockchain that powers modular, interoperable data infrastructure across all major chains.',
+      denom_units: [{
+          denom: 'ibc/1B454982D3746951510D3845145B83628D4ED380D95722C8077776C4689F973A',
+          exponent: 0,
+          aliases: ['usynt']
+        }, {
+          denom: 'SYNT',
+          exponent: 6
+        }],
+      base: 'ibc/1B454982D3746951510D3845145B83628D4ED380D95722C8077776C4689F973A',
+      name: 'Synternet',
+      display: 'SYNT',
+      symbol: 'SYNT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      socials: {
+        website: 'https://www.synternet.com/',
+        twitter: 'https://twitter.com/synternet_com'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'usynt',
+            chain_name: 'synternet'
+          },
+          chain: {
+            channel_id: 'channel-85186'
           }
         }]
     },
@@ -16760,7 +17175,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
       denom_units: [{
           denom: 'ibc/A0CC0CF735BFB30E730C70019D4218A1244FF383503FF7579C9201AB93CA9293',
           exponent: 0,
@@ -19735,7 +20150,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Quasar',
+      description: 'The QSR token has transitioned to a legacy token, with migration to the EVM ecosystem currently underway.',
       denom_units: [{
           denom: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
           exponent: 0,
@@ -19747,9 +20162,9 @@ const assets: AssetList = {
         }],
       type_asset: 'sdk.coin',
       base: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
-      name: 'Quasar',
+      name: 'Quasar (legacy)',
       display: 'qsr',
-      symbol: 'QSR',
+      symbol: 'QSR.legacy',
       coingecko_id: 'quasar-2',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
@@ -20948,7 +21363,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'STOS coin is the token for the Stratos (STOS) cosmos based blockchain',
+      description: 'STOS coin is the native token for the Stratos Blockchain. Stratos is a pioneering decentralized infrastructure service provider, revolutionizing AI and DePIN with advanced decentralized solutions in storage, computing, databases, and blockchain services. We empower Web 3.0 developpers and dApps through our scalable, reliable, and high-performance networks.',
       denom_units: [
         {
           denom: 'ibc/ABD49F44559CB3E557CC458459CB6A67CEBD66E23C7674A0B2B445230BDA1F6C',
@@ -20980,6 +21395,15 @@ const assets: AssetList = {
             primary_color_hex: '#04847c'
           }
         }],
+      socials: {
+        website: 'https://www.thestratos.org/',
+        twitter: 'https://x.com/Stratos_Network',
+        discord: 'https://discord.gg/tpQGpC2nMh',
+        telegram: 'https://t.me/StratosOfficial',
+        reddit: 'https://www.reddit.com/r/stratoscommunity/',
+        github: 'https://github.com/stratosnet',
+        medium: 'https://stratos-network.medium.com/'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
@@ -21033,6 +21457,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-326'
+          }
+        }]
+    },
+    {
+      description: 'Synternet is a blockchain that powers modular, interoperable data infrastructure across all major chains.',
+      denom_units: [{
+          denom: 'ibc/1B454982D3746951510D3845145B83628D4ED380D95722C8077776C4689F973A',
+          exponent: 0,
+          aliases: ['usynt']
+        }, {
+          denom: 'SYNT',
+          exponent: 6
+        }],
+      base: 'ibc/1B454982D3746951510D3845145B83628D4ED380D95722C8077776C4689F973A',
+      name: 'Synternet',
+      display: 'SYNT',
+      symbol: 'SYNT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      socials: {
+        website: 'https://www.synternet.com/',
+        twitter: 'https://twitter.com/synternet_com'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'usynt',
+            chain_name: 'synternet'
+          },
+          chain: {
+            channel_id: 'channel-85186'
           }
         }]
     },
@@ -22455,16 +22921,6 @@ const assets: AssetList = {
       name: 'BackBone Labs Liquid Staked HUAHUA',
       display: 'bHUAHUA',
       symbol: 'bHUAHUA',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
-          theme: {
-            primary_color_hex: '#f2bd3a'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -22477,7 +22933,17 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-11348'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
+          theme: {
+            primary_color_hex: '#f2bd3a'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+      },
+      coingecko_id: 'backbone-labs-staked-huahua'
     },
     {
       description: 'The native token cw20 for Neta on Juno Chain',
@@ -25202,13 +25668,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png',
-          theme: {
-            primary_color_hex: '#d17e7f'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-juno',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -25221,7 +25680,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-169'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png',
+          theme: {
+            primary_color_hex: '#d17e7f'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-juno'
     },
     {
       description: 'Airdrop For All [AFA - New Name on Cosmos Ecosystem, A4A - Old Name on TurtleNetwork] is a token from turtleNetwork towards cosmos ecosystem.',
@@ -25354,16 +25820,6 @@ const assets: AssetList = {
       name: 'BackBone Labs Liquid Staked HUAHUA',
       display: 'bHUAHUA',
       symbol: 'bHUAHUA',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
-          theme: {
-            primary_color_hex: '#f2bd3a'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -25376,7 +25832,17 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-11348'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
+          theme: {
+            primary_color_hex: '#f2bd3a'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
+      },
+      coingecko_id: 'backbone-labs-staked-huahua'
     },
     {
       description: 'The native token cw20 for Neta on Juno Chain',
@@ -28101,13 +28567,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png',
-          theme: {
-            primary_color_hex: '#d17e7f'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-juno',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -28120,7 +28579,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-169'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png',
+          theme: {
+            primary_color_hex: '#d17e7f'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-juno'
     },
     {
       description: 'Airdrop For All [AFA - New Name on Cosmos Ecosystem, A4A - Old Name on TurtleNetwork] is a token from turtleNetwork towards cosmos ecosystem.',
@@ -36364,13 +36830,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
-          theme: {
-            primary_color_hex: '#070707'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -36383,7 +36842,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-559'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-luna'
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
@@ -45098,13 +45564,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
-          theme: {
-            primary_color_hex: '#070707'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -45117,7 +45576,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-559'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-luna'
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',

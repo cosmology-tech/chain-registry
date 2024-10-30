@@ -46,17 +46,26 @@ const info: Chain = {
       }],
     grpc: []
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/onomy-protocol',
       tx_page: 'https://www.mintscan.io/onomy-protocol/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/onomy-protocol/accounts/${accountAddress}'
-    }, {
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/onomy',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=onomy&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=onomy&addr=${accountAddress}'
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/onomy',
       tx_page: 'https://ezstaking.app/onomy/txs/${txHash}',
       account_page: 'https://ezstaking.app/onomy/account/${accountAddress}'
-    }],
+    }
+  ],
   keywords: [
     'dex',
     'stablecoin',

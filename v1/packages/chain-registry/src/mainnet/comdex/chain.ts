@@ -25,9 +25,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.9',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'v0.47.9'
   },
   daemon_name: 'comdex',
   node_home: '$HOME/.comdex',
@@ -216,6 +214,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/comdex',
       tx_page: 'https://www.mintscan.io/comdex/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/comdex/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/comdex',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=comdex&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=comdex&addr=${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',

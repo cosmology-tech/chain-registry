@@ -104,9 +104,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.13',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.46.0'
+    cosmos_sdk_version: 'v0.47.13'
   },
   apis: {
     rpc: [
@@ -156,7 +154,8 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm-logo.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm-logo.svg'
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'Chainscope',
       url: 'https://chainsco.pe/pryzm',
       tx_page: 'https://chainsco.pe/pryzm/tx/${txHash}',
@@ -164,7 +163,8 @@ const info: Chain = {
       block_page: 'https://chainsco.pe/pryzm/block/${blockHeight}',
       proposal_page: 'https://chainsco.pe/pryzm/governance/proposal/${proposalId}',
       validator_page: 'https://chainsco.pe/pryzm/validator/${validatorAddress}'
-    }, {
+    },
+    {
       kind: 'PingPub',
       url: 'https://cosmosrun.info/pryzm',
       tx_page: 'https://cosmosrun.info/pryzm/tx/${txHash}',
@@ -172,7 +172,14 @@ const info: Chain = {
       block_page: 'https://cosmosrun.info/pryzm/blocks/${blockHeight}',
       proposal_page: 'https://cosmosrun.info/pryzm/gov/${proposalId}',
       validator_page: 'https://cosmosrun.info/pryzm/staking/${validatorAddress}'
-    }],
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/pryzm',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=pryzm&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=pryzm&addr=${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm-logo.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pryzm-logo.svg',

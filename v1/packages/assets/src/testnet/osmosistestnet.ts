@@ -1843,6 +1843,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native staking and governance token of the testnet version of Synternet chain.',
+      denom_units: [{
+          denom: 'ibc/5A40E4FFC9DD1E4BF7BF7C77AC2B0F72C179DB4C64D4B351969FC8EBB9D12B97',
+          exponent: 0,
+          aliases: ['uamber']
+        }, {
+          denom: 'AMBER',
+          exponent: 6
+        }],
+      base: 'ibc/5A40E4FFC9DD1E4BF7BF7C77AC2B0F72C179DB4C64D4B351969FC8EBB9D12B97',
+      name: 'Synternet',
+      display: 'AMBER',
+      symbol: 'AMBER',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'synternet',
+            base_denom: 'usynt'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uamber',
+            chain_name: 'synternettestnet'
+          },
+          chain: {
+            channel_id: 'channel-9152'
+          }
+        }]
+    },
+    {
       description: 'The native token of the Titan network.',
       denom_units: [
         {
@@ -2373,6 +2415,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-8743'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of the testnet version of Synternet chain.',
+      denom_units: [{
+          denom: 'ibc/5A40E4FFC9DD1E4BF7BF7C77AC2B0F72C179DB4C64D4B351969FC8EBB9D12B97',
+          exponent: 0,
+          aliases: ['uamber']
+        }, {
+          denom: 'AMBER',
+          exponent: 6
+        }],
+      base: 'ibc/5A40E4FFC9DD1E4BF7BF7C77AC2B0F72C179DB4C64D4B351969FC8EBB9D12B97',
+      name: 'Synternet',
+      display: 'AMBER',
+      symbol: 'AMBER',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'synternet',
+            base_denom: 'usynt'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uamber',
+            chain_name: 'synternettestnet'
+          },
+          chain: {
+            channel_id: 'channel-9152'
           }
         }]
     },

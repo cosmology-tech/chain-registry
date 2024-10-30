@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',

@@ -1918,6 +1918,14 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png'
       },
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'juno',
+            base_denom: 'ujuno'
+          },
+          provider: 'BackBoneLabs'
+        }],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/bJUNO-bbl.png',
           theme: {

@@ -48,6 +48,11 @@ const info: Chain = {
       kind: 'Big Dipper',
       url: 'https://explorer.synternet.com/',
       tx_page: 'https://explorer.synternet.com/transactions/${txHash}'
+    }, {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/synternet',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=synternet&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=synternet&addr=${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',

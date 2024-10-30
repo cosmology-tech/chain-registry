@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.27'
+    cosmos_sdk_version: '0.45'
   },
   apis: {
     rpc: [{
@@ -51,6 +49,11 @@ const info: Chain = {
       url: 'https://explorer.shareri.ng',
       tx_page: 'https://explorer.shareri.ng/transactions/${txHash}',
       account_page: 'https://explorer.shareri.ng/accounts/${accountAddress}'
+    }, {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/shareledger',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=shareledger&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=shareledger&addr=${accountAddress}'
     }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/chain-logo.png',

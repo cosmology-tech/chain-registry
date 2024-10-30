@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.11',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.44.0'
+    cosmos_sdk_version: 'v0.47.11'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
@@ -226,6 +224,12 @@ const info: Chain = {
       url: 'https://nibiru.explorers.guru/',
       tx_page: 'https://nibiru.explorers.guru/transaction/${txHash}',
       account_page: 'https://nibiru.explorers.guru/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nibiru',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=nibiru&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=nibiru&addr=${accountAddress}'
     },
     {
       kind: 'NodeStake',

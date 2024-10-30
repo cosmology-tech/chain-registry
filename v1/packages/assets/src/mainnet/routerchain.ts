@@ -177,6 +177,88 @@ const assets: AssetList = {
             channel_id: 'channel-7'
           }
         }]
+    },
+    {
+      description: 'The native staking token of Self Chain.',
+      denom_units: [{
+          denom: 'ibc/9B241C6E36A45D7DE8B12B8DEDF871BFFAD11350505D8952FCDF445AC3065F6F',
+          exponent: 0,
+          aliases: ['uslf']
+        }, {
+          denom: 'slf',
+          exponent: 6
+        }],
+      base: 'ibc/9B241C6E36A45D7DE8B12B8DEDF871BFFAD11350505D8952FCDF445AC3065F6F',
+      name: 'Self',
+      display: 'slf',
+      symbol: 'SLF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+      },
+      coingecko_id: 'self-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png',
+          theme: {
+            primary_color_hex: '#9454f1'
+          }
+        }],
+      socials: {
+        website: 'https://selfchain.xyz',
+        twitter: 'https://x.com/selfchainxyz'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uslf',
+            chain_name: 'self'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
+      description: 'The native staking token of Self Chain.',
+      denom_units: [{
+          denom: 'ibc/9B241C6E36A45D7DE8B12B8DEDF871BFFAD11350505D8952FCDF445AC3065F6F',
+          exponent: 0,
+          aliases: ['uslf']
+        }, {
+          denom: 'slf',
+          exponent: 6
+        }],
+      base: 'ibc/9B241C6E36A45D7DE8B12B8DEDF871BFFAD11350505D8952FCDF445AC3065F6F',
+      name: 'Self',
+      display: 'slf',
+      symbol: 'SLF',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png'
+      },
+      coingecko_id: 'self-chain',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/self/images/self.png',
+          theme: {
+            primary_color_hex: '#9454f1'
+          }
+        }],
+      socials: {
+        website: 'https://selfchain.xyz',
+        twitter: 'https://x.com/selfchainxyz'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uslf',
+            chain_name: 'self'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
     }
   ]
 };

@@ -27,8 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: 'v0.47.5'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.png',
@@ -65,17 +64,26 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'big dipper',
       url: 'https://explorer.joltify.io/joltify',
       tx_page: 'https://explorer.joltify.io/joltify/transactions/${txHash}',
       account_page: 'https://explorer.joltify.io/joltify/accounts/${accountAddress}'
-    }, {
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/joltify',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=joltify&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=joltify&addr=${accountAddress}'
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/joltify',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/joltify/tx/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/joltify/account/${accountAddress}'
-    }],
+    }
+  ],
   keywords: ['rwa', 'lending']
 };
 export default info;

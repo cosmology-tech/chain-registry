@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmos_sdk_version: '0.45'
   },
   apis: {
     rpc: [
@@ -283,6 +281,12 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/source',
       tx_page: 'https://explorer.tcnetwork.io/source/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/source',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=source&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=source&addr=${accountAddress}'
     },
     {
       kind: 'Indonode',

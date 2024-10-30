@@ -10616,13 +10616,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
-          theme: {
-            primary_color_hex: '#070707'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -10635,7 +10628,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-2'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-luna'
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
@@ -19350,13 +19350,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
       },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
-          theme: {
-            primary_color_hex: '#070707'
-          }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna',
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
@@ -19369,7 +19362,14 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-2'
           }
-        }]
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png',
+          theme: {
+            primary_color_hex: '#070707'
+          }
+        }],
+      coingecko_id: 'backbone-labs-staked-luna'
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',

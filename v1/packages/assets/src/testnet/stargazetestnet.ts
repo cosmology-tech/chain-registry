@@ -299,6 +299,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Prysm',
+      denom_units: [{
+          denom: 'ibc/8A6CC8011B6421E227D5BF753C3937F703A5470847EEDF78C87111252AE1B6DE',
+          exponent: 0,
+          aliases: ['uprysm']
+        }, {
+          denom: 'prysm',
+          exponent: 6
+        }],
+      base: 'ibc/8A6CC8011B6421E227D5BF753C3937F703A5470847EEDF78C87111252AE1B6DE',
+      display: 'prysm',
+      name: 'Prysm',
+      symbol: 'PRYSM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/prysmdevnet/images/prysm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/prysmdevnet/images/prysm.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#cf654f'
+          }
+        }],
+      socials: {
+        website: 'https://www.prysm.network/',
+        twitter: 'https://twitter.com/PrysmNetwork'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'uprysm',
+            chain_name: 'prysmdevnet'
+          },
+          chain: {
+            channel_id: 'channel-1005'
+          }
+        }]
+    },
+    {
       description: 'The native token of Symphony',
       denom_units: [{
           denom: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
@@ -663,6 +702,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-807'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Prysm',
+      denom_units: [{
+          denom: 'ibc/8A6CC8011B6421E227D5BF753C3937F703A5470847EEDF78C87111252AE1B6DE',
+          exponent: 0,
+          aliases: ['uprysm']
+        }, {
+          denom: 'prysm',
+          exponent: 6
+        }],
+      base: 'ibc/8A6CC8011B6421E227D5BF753C3937F703A5470847EEDF78C87111252AE1B6DE',
+      display: 'prysm',
+      name: 'Prysm',
+      symbol: 'PRYSM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/prysmdevnet/images/prysm.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/prysmdevnet/images/prysm.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#cf654f'
+          }
+        }],
+      socials: {
+        website: 'https://www.prysm.network/',
+        twitter: 'https://twitter.com/PrysmNetwork'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'uprysm',
+            chain_name: 'prysmdevnet'
+          },
+          chain: {
+            channel_id: 'channel-1005'
           }
         }]
     }

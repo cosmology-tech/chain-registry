@@ -27,9 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.12',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.45.0'
+    cosmos_sdk_version: 'v0.47.12'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
@@ -253,6 +251,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/stargaze',
       tx_page: 'https://ping.pub/stargaze/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/stargaze',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=stargaze&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=stargaze&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

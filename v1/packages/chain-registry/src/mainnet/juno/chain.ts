@@ -34,9 +34,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.12',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.46.0'
+    cosmos_sdk_version: 'v0.47.12'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
@@ -369,6 +367,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/juno',
       tx_page: 'https://www.mintscan.io/juno/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/juno/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/juno',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=juno&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=juno&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

@@ -31,9 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46.10',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.30'
+    cosmos_sdk_version: '0.46.10'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png',

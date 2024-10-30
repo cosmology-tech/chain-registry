@@ -16,8 +16,8 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'uxion',
-        fixed_min_gas_price: 0.025,
-        low_gas_price: 0.025,
+        fixed_min_gas_price: 0,
+        low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
       }]
@@ -61,7 +61,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://testnet-burnt-grpc.lavenderfive.com',
+        address: 'testnet-burnt-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
@@ -74,6 +74,24 @@ const info: Chain = {
       }
     ]
   },
+  explorers: [
+    {
+      url: 'https://explorer.burnt.com/xion-testnet-1',
+      tx_page: 'https://explorer.burnt.com/xion-testnet-1/tx/${txHash}',
+      account_page: 'https://explorer.burnt.com/xion-testnet-1/account/${accountAddress}'
+    },
+    {
+      url: 'https://testnet.xion.explorers.guru',
+      tx_page: 'https://testnet.xion.explorers.guru/transaction/${txHash}',
+      account_page: 'https://testnet.xion.explorers.guru/account/${accountAddress}'
+    },
+    {
+      kind: 'ITRocket',
+      url: 'https://testnet.itrocket.net/burnt',
+      tx_page: 'https://testnet.itrocket.net/burnt/tx/${txHash}',
+      account_page: 'https://testnet.itrocket.net/burnt/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
     }],
@@ -84,12 +102,6 @@ const info: Chain = {
     'xion',
     'burnt',
     'testnet'
-  ],
-  explorers: [{
-      kind: 'ITRocket',
-      url: 'https://testnet.itrocket.net/burnt',
-      tx_page: 'https://testnet.itrocket.net/burnt/tx/${txHash}',
-      account_page: 'https://testnet.itrocket.net/burnt/account/${accountAddress}'
-    }]
+  ]
 };
 export default info;

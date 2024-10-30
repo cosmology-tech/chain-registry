@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmwasm_enabled: true
+
   },
   apis: {
     rpc: [{

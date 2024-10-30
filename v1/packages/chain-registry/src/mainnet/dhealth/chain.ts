@@ -28,9 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'cosmos/cosmos-sdk v0.47.4',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.41.0'
+    cosmos_sdk_version: 'cosmos/cosmos-sdk v0.47.4'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
@@ -80,17 +78,26 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/dhealth',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=dhealth&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=dhealth&addr=${accountAddress}'
+    },
+    {
       kind: 'nodestake',
       url: 'https://explorer.nodestake.org/dhealth',
       tx_page: 'https://explorer.nodestake.org/dhealth/tx/${txHash}',
       account_page: 'https://explorer.nodestake.org/dhealth/account/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',
       url: 'https://explorer.nodeshub.online/dhealth/',
       tx_page: 'https://explorer.nodeshub.online/dhealth/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/dhealth/accounts/${accountAddress}'
-    }],
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg',

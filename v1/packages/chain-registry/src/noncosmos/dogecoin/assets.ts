@@ -23,7 +23,11 @@ const info: AssetList = {
           theme: {
             primary_color_hex: '#bda148'
           }
-        }]
+        }],
+      socials: {
+        website: 'https://dogecoin.com/',
+        twitter: 'https://x.com/dogecoin'
+      }
     }]
 };
 export default info;

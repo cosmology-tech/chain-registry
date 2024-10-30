@@ -36,6 +36,7 @@ export * as sgetestnet from './sgetestnet';
 export * as stargazetestnet from './stargazetestnet';
 export * as swisstroniktestnet from './swisstroniktestnet';
 export * as symphonytestnet from './symphonytestnet';
+export * as synternettestnet from './synternettestnet';
 export * as terra2testnet from './terra2testnet';
 export * as titantestnet from './titantestnet';
 export * as xiontestnet from './xiontestnet'

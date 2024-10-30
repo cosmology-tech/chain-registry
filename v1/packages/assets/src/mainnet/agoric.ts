@@ -53,1085 +53,32 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
       denom_units: [{
-          denom: 'ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F',
+          denom: 'ibc/942E6FDD64A9887E6E647900EC9E18EE166D6DAE76F470D324C349361AA6CE37',
           exponent: 0,
-          aliases: ['uaxl']
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
         }, {
-          denom: 'axl',
-          exponent: 6
-        }],
-      base: 'ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F',
-      name: 'Axelar',
-      display: 'axl',
-      symbol: 'AXL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
-      },
-      coingecko_id: 'axelar',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg',
-          theme: {
-            primary_color_hex: '#040404'
-          }
-        }],
-      socials: {
-        website: 'https://axelar.network/',
-        twitter: 'https://twitter.com/axelarnetwork'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-41',
-            base_denom: 'uaxl',
-            chain_name: 'axelar'
-          },
-          chain: {
-            channel_id: 'channel-9'
-          }
-        }]
-    },
-    {
-      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
-      denom_units: [{
-          denom: 'ibc/BA313C4A19DFBF943586C0387E6B11286F9E416B4DD27574E6909CABE0E342FA',
-          exponent: 0,
-          aliases: ['uatom']
-        }, {
-          denom: 'atom',
-          exponent: 6
-        }],
-      base: 'ibc/BA313C4A19DFBF943586C0387E6B11286F9E416B4DD27574E6909CABE0E342FA',
-      name: 'Cosmos Hub Atom',
-      display: 'atom',
-      symbol: 'ATOM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
-      },
-      coingecko_id: 'cosmos',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
-          theme: {
-            primary_color_hex: '#272d45'
-          }
-        }],
-      socials: {
-        website: 'https://cosmos.network',
-        twitter: 'https://twitter.com/cosmoshub'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-405',
-            base_denom: 'uatom',
-            chain_name: 'cosmoshub'
-          },
-          chain: {
-            channel_id: 'channel-5'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Crescent',
-      denom_units: [{
-          denom: 'ibc/7A0FAE01EB4FD6930A0111759B22BB631BB089C75F7186E4F9ACC0E139DE678C',
-          exponent: 0,
-          aliases: ['ucre']
-        }, {
-          denom: 'cre',
-          exponent: 6
-        }],
-      base: 'ibc/7A0FAE01EB4FD6930A0111759B22BB631BB089C75F7186E4F9ACC0E139DE678C',
-      name: 'Crescent',
-      display: 'cre',
-      symbol: 'CRE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
-      },
-      coingecko_id: 'crescent-network',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg',
-          theme: {
-            primary_color_hex: '#3c2832'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-11',
-            base_denom: 'ucre',
-            chain_name: 'crescent'
-          },
-          chain: {
-            channel_id: 'channel-2'
-          }
-        }]
-    },
-    {
-      description: 'The bonded token of Crescent',
-      denom_units: [{
-          denom: 'ibc/8EA29200F7BBF4941DDCE468340077B206D13078BF146D70F7D798E08C4A172F',
-          exponent: 0,
-          aliases: ['ubcre']
-        }, {
-          denom: 'bcre',
-          exponent: 6
-        }],
-      base: 'ibc/8EA29200F7BBF4941DDCE468340077B206D13078BF146D70F7D798E08C4A172F',
-      name: 'Bonded Crescent',
-      display: 'bcre',
-      symbol: 'bCRE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
-      },
-      coingecko_id: 'liquid-staking-crescent',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
-          theme: {
-            primary_color_hex: '#df969f'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-11',
-            base_denom: 'ubcre',
-            chain_name: 'crescent'
-          },
-          chain: {
-            channel_id: 'channel-2'
-          }
-        }]
-    },
-    {
-      description: 'The native EVM, governance and staking token of the Evmos Hub',
-      denom_units: [{
-          denom: 'ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107',
-          exponent: 0,
-          aliases: ['aevmos']
-        }, {
-          denom: 'evmos',
+          denom: 'TOKN',
           exponent: 18
         }],
-      base: 'ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107',
-      name: 'Evmos',
-      display: 'evmos',
-      symbol: 'EVMOS',
+      base: 'ibc/942E6FDD64A9887E6E647900EC9E18EE166D6DAE76F470D324C349361AA6CE37',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
-      },
-      coingecko_id: 'evmos',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg',
-          theme: {
-            primary_color_hex: '#ec4c34'
-          }
-        }],
-      socials: {
-        website: 'https://evmos.org/',
-        twitter: 'https://twitter.com/EvmosOrg'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-85',
-            base_denom: 'aevmos',
-            chain_name: 'evmos'
-          },
-          chain: {
-            channel_id: 'channel-57'
-          }
-        }]
-    },
-    {
-      description: 'The token of Neokingdom DAO.',
-      denom_units: [{
-          denom: 'ibc/B44BF5AB79C7893A27BAFCF65702B3EBC6DD1E2CF0C8D43605ACDFD1F98229BB',
-          exponent: 0,
-          aliases: ['erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9']
-        }, {
-          denom: 'neok',
-          exponent: 18
-        }],
-      base: 'ibc/B44BF5AB79C7893A27BAFCF65702B3EBC6DD1E2CF0C8D43605ACDFD1F98229BB',
-      name: 'Neokingdom DAO',
-      display: 'neok',
-      symbol: 'NEOK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg',
-          theme: {
-            primary_color_hex: '#7f0f70'
-          }
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
         }],
-      socials: {
-        website: 'https://www.neokingdom.org/',
-        twitter: 'https://twitter.com/NEOKingdomDAO'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-85',
-            base_denom: 'erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9',
-            chain_name: 'evmos'
-          },
-          chain: {
-            channel_id: 'channel-57'
-          }
-        }]
-    },
-    {
-      description: 'The legacy token of Teledisko DAO.',
-      denom_units: [{
-          denom: 'ibc/2146068C178D878826DD34FC86EC1DC279B33765D8FFA60C5A9E5AF5AEC34EBA',
-          exponent: 0,
-          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
-        }, {
-          denom: 'berlin-legacy',
-          exponent: 18
-        }],
-      base: 'ibc/2146068C178D878826DD34FC86EC1DC279B33765D8FFA60C5A9E5AF5AEC34EBA',
-      name: 'Teledisko DAO - Legacy',
-      display: 'berlin-legacy',
-      symbol: 'BERLIN-legacy',
-      type_asset: 'erc20',
-      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg',
-          theme: {
-            primary_color_hex: '#bbce1a'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-85',
-            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
-            chain_name: 'evmos'
-          },
-          chain: {
-            channel_id: 'channel-57'
-          }
-        }]
-    },
-    {
-      description: 'The token of Crowdpunk DAO',
-      denom_units: [{
-          denom: 'ibc/FBB519CDE3A502E73DB5E61B09EA27B621CF8576165DCEC0C92AEC5E2C4B7689',
-          exponent: 0,
-          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
-        }, {
-          denom: 'crowdp',
-          exponent: 18
-        }],
-      base: 'ibc/FBB519CDE3A502E73DB5E61B09EA27B621CF8576165DCEC0C92AEC5E2C4B7689',
-      name: 'Crowdpunk DAO',
-      display: 'crowdp',
-      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
-      symbol: 'CROWDP',
-      type_asset: 'erc20',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg',
-          theme: {
-            primary_color_hex: '#04fbfb'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-85',
-            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
-            chain_name: 'evmos'
-          },
-          chain: {
-            channel_id: 'channel-57'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Gravity Bridge',
-      denom_units: [{
-          denom: 'ibc/64B3EFE08A6A3EF5D2A7F1D3AF033DDC951DA51F92E06CC31D3F9AF8E8368860',
-          exponent: 0,
-          aliases: ['ugraviton']
-        }, {
-          denom: 'graviton',
-          exponent: 6
-        }],
-      base: 'ibc/64B3EFE08A6A3EF5D2A7F1D3AF033DDC951DA51F92E06CC31D3F9AF8E8368860',
-      name: 'Graviton',
-      display: 'graviton',
-      symbol: 'GRAV',
-      coingecko_id: 'graviton',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
-          theme: {
-            primary_color_hex: '#042ca4'
-          }
-        }],
-      socials: {
-        website: 'https://www.gravitybridge.net/',
-        twitter: 'https://twitter.com/gravity_bridge'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-91',
-            base_denom: 'ugraviton',
-            chain_name: 'gravitybridge'
-          },
-          chain: {
-            channel_id: 'channel-4'
-          }
-        }]
-    },
-    {
-      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
-      denom_units: [{
-          denom: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
-          exponent: 0,
-          aliases: ['ukava']
-        }, {
-          denom: 'kava',
-          exponent: 6
-        }],
-      base: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
-      name: 'Kava',
-      display: 'kava',
-      symbol: 'KAVA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
-      },
-      coingecko_id: 'kava',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
-          theme: {
-            primary_color_hex: '#e64942'
-          }
-        }],
-      socials: {
-        website: 'https://www.kava.io/',
-        twitter: 'https://twitter.com/KAVA_CHAIN'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-133',
-            base_denom: 'ukava',
-            chain_name: 'kava'
-          },
-          chain: {
-            channel_id: 'channel-63'
-          }
-        }]
-    },
-    {
-      description: 'Governance token of Kava Lend Protocol',
-      denom_units: [{
-          denom: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
-          exponent: 0,
-          aliases: ['hard']
-        }, {
-          denom: 'HARD',
-          exponent: 6
-        }],
-      base: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
-      name: 'Kava Hard',
-      display: 'HARD',
-      symbol: 'HARD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
-      },
-      coingecko_id: 'kava-lend',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg',
-          theme: {
-            primary_color_hex: '#7b34ac'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-133',
-            base_denom: 'hard',
-            chain_name: 'kava'
-          },
-          chain: {
-            channel_id: 'channel-63'
-          }
-        }]
-    },
-    {
-      description: 'Governance token of Kava Swap Protocol',
-      denom_units: [{
-          denom: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
-          exponent: 0,
-          aliases: ['swp']
-        }, {
-          denom: 'SWP',
-          exponent: 6
-        }],
-      base: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
-      name: 'Kava Swap',
-      display: 'SWP',
-      symbol: 'SWP',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
-      },
-      coingecko_id: 'kava-swap',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg',
-          theme: {
-            primary_color_hex: '#544cfc'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-133',
-            base_denom: 'swp',
-            chain_name: 'kava'
-          },
-          chain: {
-            channel_id: 'channel-63'
-          }
-        }]
-    },
-    {
-      description: 'The native stablecoin of Kava',
-      denom_units: [{
-          denom: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
-          exponent: 0,
-          aliases: ['usdx']
-        }, {
-          denom: 'USDX',
-          exponent: 6
-        }],
-      base: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
-      name: 'Kava USDX',
-      display: 'USDX',
-      symbol: 'USDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg'
-      },
-      coingecko_id: 'usdx',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg',
-          theme: {
-            primary_color_hex: '#04d4a3'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-133',
-            base_denom: 'usdx',
-            chain_name: 'kava'
-          },
-          chain: {
-            channel_id: 'channel-63'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
-          exponent: 0,
-          aliases: ['erc20/tether/usdt']
-        }, {
-          denom: 'usdt',
-          exponent: 6
-        }],
-      base: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
-      name: 'Tether USD',
-      display: 'usdt',
-      symbol: 'USDT',
-      coingecko_id: 'tether',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-133',
-            base_denom: 'erc20/tether/usdt',
-            chain_name: 'kava'
-          },
-          chain: {
-            channel_id: 'channel-63'
-          }
-        }],
-      images: [{
-          image_sync: {
-            chain_name: 'ethereum',
-            base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
-          },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
-          theme: {
-            circle: true,
-            primary_color_hex: '#009393',
-            background_color_hex: '#009393'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      },
-      type_asset: 'sdk.coin'
-    },
-    {
-      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
-      denom_units: [{
-          denom: 'ibc/6AA5123E11E0AB0D7ACCF898848435C06A1D1C138D4732FB90F9414205B6F0FA',
-          exponent: 0,
-          aliases: ['ukuji']
-        }, {
-          denom: 'kuji',
-          exponent: 6
-        }],
-      base: 'ibc/6AA5123E11E0AB0D7ACCF898848435C06A1D1C138D4732FB90F9414205B6F0FA',
-      name: 'Kujira',
-      display: 'kuji',
-      symbol: 'KUJI',
-      coingecko_id: 'kujira',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg',
-          theme: {
-            primary_color_hex: '#e33b34'
-          }
-        }],
-      socials: {
-        website: 'https://kujira.network/',
-        twitter: 'https://twitter.com/TeamKujira'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-61',
-            base_denom: 'ukuji',
-            chain_name: 'kujira'
-          },
-          chain: {
-            channel_id: 'channel-13'
-          }
-        }]
-    },
-    {
-      description: 'The permissioned staking asset for Noble Chain',
-      denom_units: [{
-          denom: 'ibc/C53931BE8DBFA7FB2F183E4B3C835E005187B167AFC0165724004B878FD5FD66',
-          exponent: 0,
-          aliases: ['ustake']
-        }, {
-          denom: 'stake',
-          exponent: 6
-        }],
-      type_asset: 'sdk.coin',
-      base: 'ibc/C53931BE8DBFA7FB2F183E4B3C835E005187B167AFC0165724004B878FD5FD66',
-      name: 'Stake',
-      display: 'stake',
-      symbol: 'STAKE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
-          theme: {
-            primary_color_hex: '#a8bbfb'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-21',
-            base_denom: 'ustake',
-            chain_name: 'noble'
-          },
-          chain: {
-            channel_id: 'channel-62'
-          }
-        }]
-    },
-    {
-      description: 'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
-      denom_units: [{
-          denom: 'ibc/90D9BE4D0D9BFD6AE61FCACF84765820EDA9EE795548324AD60FF416E6685ECF',
-          exponent: 0,
-          aliases: ['ufrienzies']
-        }, {
-          denom: 'frienzies',
-          exponent: 6
-        }],
-      type_asset: 'sdk.coin',
-      base: 'ibc/90D9BE4D0D9BFD6AE61FCACF84765820EDA9EE795548324AD60FF416E6685ECF',
-      display: 'frienzies',
-      name: 'Frienzies',
-      symbol: 'FRNZ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg',
-          theme: {
-            primary_color_hex: '#04041c'
-          }
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-21',
-            base_denom: 'ufrienzies',
-            chain_name: 'noble'
-          },
-          chain: {
-            channel_id: 'channel-62'
-          }
-        }]
-    },
-    {
-      description: 'Ondo US Dollar Yield',
-      denom_units: [{
-          denom: 'ibc/E1CEC1DEA8B17EEA3FEF47215571727EA7D668AC18E7A2F6B8C85F09E4A055BA',
-          exponent: 0,
-          aliases: ['ausdy']
-        }, {
-          denom: 'usdy',
-          exponent: 18
-        }],
-      base: 'ibc/E1CEC1DEA8B17EEA3FEF47215571727EA7D668AC18E7A2F6B8C85F09E4A055BA',
-      display: 'usdy',
-      name: 'Ondo US Dollar Yield',
-      symbol: 'USDY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg',
-          theme: {
-            primary_color_hex: '#142c5c'
-          }
-        }],
-      coingecko_id: 'ondo-us-dollar-yield',
-      socials: {
-        website: 'https://ondo.finance/usdy',
-        twitter: 'https://x.com/OndoFinance'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-21',
-            base_denom: 'ausdy',
-            chain_name: 'noble'
-          },
-          chain: {
-            channel_id: 'channel-62'
-          }
-        }]
-    },
-    {
-      description: 'OmniFlix is a decentralized media platform that enables content creators to distribute, monetize, and manage their digital content using blockchain technology.',
-      denom_units: [{
-          denom: 'ibc/B11D2BF454691B63FF73738EAC8D27C37F66948A5F390003AE1891FEFD387DDE',
-          exponent: 0,
-          aliases: ['uflix']
-        }, {
-          denom: 'flix',
-          exponent: 6
-        }],
-      base: 'ibc/B11D2BF454691B63FF73738EAC8D27C37F66948A5F390003AE1891FEFD387DDE',
-      name: 'Flix',
-      display: 'flix',
-      symbol: 'FLIX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
-      },
-      coingecko_id: 'omniflix-network',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg',
-          theme: {
-            primary_color_hex: '#c33635'
-          }
-        }],
-      socials: {
-        website: 'https://omniflix.network/',
-        twitter: 'https://twitter.com/OmniFlixNetwork'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-30',
-            base_denom: 'uflix',
-            chain_name: 'omniflixhub'
-          },
-          chain: {
-            channel_id: 'channel-58'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Osmosis',
-      denom_units: [{
-          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
-          exponent: 0,
-          aliases: ['uosmo']
-        }, {
-          denom: 'osmo',
-          exponent: 6
-        }],
-      type_asset: 'sdk.coin',
-      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
-      name: 'Osmosis',
-      display: 'osmo',
-      symbol: 'OSMO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
-          theme: {
-            primary_color_hex: '#760dbb'
-          }
-        }],
-      coingecko_id: 'osmosis',
-      keywords: ['dex', 'staking'],
-      socials: {
-        website: 'https://osmosis.zone',
-        twitter: 'https://twitter.com/osmosiszone'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-320',
-            base_denom: 'uosmo',
-            chain_name: 'osmosis'
-          },
-          chain: {
-            channel_id: 'channel-1'
-          }
-        }]
-    },
-    {
-      description: 'ION is the second native token of Osmosis.',
-      denom_units: [{
-          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
-          exponent: 0,
-          aliases: ['uion']
-        }, {
-          denom: 'ion',
-          exponent: 6
-        }],
-      type_asset: 'sdk.coin',
-      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
-      name: 'Ion DAO',
-      display: 'ion',
-      symbol: 'ION',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg',
-          theme: {
-            primary_color_hex: '#4453c7'
-          }
-        }],
-      coingecko_id: 'ion',
-      keywords: ['memecoin', 'defi'],
-      socials: {
-        website: 'https://ion.wtf',
-        twitter: 'https://twitter.com/_IONDAO'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-320',
-            base_denom: 'uion',
-            chain_name: 'osmosis'
-          },
-          chain: {
-            channel_id: 'channel-1'
-          }
-        }]
-    },
-    {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
-      denom_units: [{
-          denom: 'ibc/1C312D6A05202A8F83393290B3403EAA37FF2E3DDA73BB69253C2D10CDA4D6CF',
-          exponent: 0,
-          aliases: ['uxprt']
-        }, {
-          denom: 'xprt',
-          exponent: 6
-        }],
-      base: 'ibc/1C312D6A05202A8F83393290B3403EAA37FF2E3DDA73BB69253C2D10CDA4D6CF',
-      name: 'Persistence',
-      display: 'xprt',
-      symbol: 'XPRT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
-      },
-      coingecko_id: 'persistence',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
-          theme: {
-            circle: true,
-            primary_color_hex: '#E59636',
-            background_color_hex: '#000000'
-          }
-        }],
-      socials: {
-        website: 'https://persistence.one/',
-        twitter: 'https://twitter.com/PersistenceOne'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-202',
-            base_denom: 'uxprt',
-            chain_name: 'persistence'
-          },
-          chain: {
-            channel_id: 'channel-72'
-          }
-        }]
-    },
-    {
-      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
-      denom_units: [{
-          denom: 'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
-          exponent: 0,
-          aliases: ['uscrt']
-        }, {
-          denom: 'scrt',
-          exponent: 6
-        }],
-      base: 'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
-      name: 'Secret Network',
-      display: 'scrt',
-      symbol: 'SCRT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
-      },
-      coingecko_id: 'secret',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
-          theme: {
-            primary_color_hex: '#040404'
-          }
-        }],
-      socials: {
-        website: 'https://scrt.network/',
-        twitter: 'https://twitter.com/SecretNetwork'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-51',
-            base_denom: 'uscrt',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            channel_id: 'channel-10'
-          }
-        }]
-    },
-    {
-      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
-      denom_units: [{
-          denom: 'ibc/299612A95693138225447366268ED58014100D965FCEDC43F27D47AB360F351F',
-          exponent: 0,
-          aliases: ['ustrd']
-        }, {
-          denom: 'strd',
-          exponent: 6
-        }],
-      base: 'ibc/299612A95693138225447366268ED58014100D965FCEDC43F27D47AB360F351F',
-      name: 'Stride',
-      display: 'strd',
-      symbol: 'STRD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
-      },
-      coingecko_id: 'stride',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
-          theme: {
-            primary_color_hex: '#e4047c'
-          }
-        }],
-      socials: {
-        website: 'https://stride.zone/',
-        twitter: 'https://twitter.com/stride_zone'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-148',
-            base_denom: 'ustrd',
-            chain_name: 'stride'
-          },
-          chain: {
-            channel_id: 'channel-59'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Umee',
-      denom_units: [{
-          denom: 'ibc/B557233C2463BCEB5D95E247CBD52AC98BE0847E9BEC5C3800A4384936EB6280',
-          exponent: 0,
-          aliases: ['uumee']
-        }, {
-          denom: 'umee',
-          exponent: 6
-        }],
-      base: 'ibc/B557233C2463BCEB5D95E247CBD52AC98BE0847E9BEC5C3800A4384936EB6280',
-      name: 'Umee',
-      display: 'umee',
-      symbol: 'UMEE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg'
-      },
-      coingecko_id: 'umee',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg',
-          theme: {
-            primary_color_hex: '#22f2e9'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-42',
-            base_denom: 'uumee',
-            chain_name: 'umee'
-          },
-          chain: {
-            channel_id: 'channel-11'
-          }
-        }]
-    },
-    {
-      description: 'Archway is a smart contract platform in the Cosmos ecosystem designed to reward developers by providing them with a share of transaction fees generated by their applications.',
-      denom_units: [
-        {
-          denom: 'ibc/3763997B746CA5FDC9883C5192B783B114A4610E1A37751955288E0940BB0B7F',
-          exponent: 0,
-          aliases: ['aarch']
-        },
-        {
-          denom: 'uarch',
-          exponent: 12
-        },
-        {
-          denom: 'arch',
-          exponent: 18
-        }
-      ],
-      base: 'ibc/3763997B746CA5FDC9883C5192B783B114A4610E1A37751955288E0940BB0B7F',
-      name: 'Archway',
-      display: 'arch',
-      symbol: 'ARCH',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg'
-      },
-      coingecko_id: 'archway',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg',
-          theme: {
-            primary_color_hex: '#fc4c04'
-          }
-        }],
-      socials: {
-        website: 'https://archway.io/',
-        twitter: 'https://twitter.com/archwayHQ'
-      },
-      type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-20',
-            base_denom: 'aarch',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
             chain_name: 'archway'
           },
           chain: {
@@ -2007,7 +954,1128 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Persistence is a blockchain platform designed to facilitate institutional decentralized finance (DeFi) and real-world asset tokenization, integrating with the Cosmos ecosystem.',
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
+      denom_units: [{
+          denom: 'ibc/1C312D6A05202A8F83393290B3403EAA37FF2E3DDA73BB69253C2D10CDA4D6CF',
+          exponent: 0,
+          aliases: ['uxprt']
+        }, {
+          denom: 'xprt',
+          exponent: 6
+        }],
+      base: 'ibc/1C312D6A05202A8F83393290B3403EAA37FF2E3DDA73BB69253C2D10CDA4D6CF',
+      name: 'Persistence',
+      display: 'xprt',
+      symbol: 'XPRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
+      },
+      coingecko_id: 'persistence',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#E59636',
+            background_color_hex: '#000000'
+          }
+        }],
+      socials: {
+        website: 'https://persistence.one/',
+        twitter: 'https://twitter.com/PersistenceOne'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-202',
+            base_denom: 'uxprt',
+            chain_name: 'persistence'
+          },
+          chain: {
+            channel_id: 'channel-72'
+          }
+        }]
+    },
+    {
+      description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
+      denom_units: [{
+          denom: 'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
+          exponent: 0,
+          aliases: ['uscrt']
+        }, {
+          denom: 'scrt',
+          exponent: 6
+        }],
+      base: 'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
+      name: 'Secret Network',
+      display: 'scrt',
+      symbol: 'SCRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg'
+      },
+      coingecko_id: 'secret',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
+        }],
+      socials: {
+        website: 'https://scrt.network/',
+        twitter: 'https://twitter.com/SecretNetwork'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-51',
+            base_denom: 'uscrt',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            channel_id: 'channel-10'
+          }
+        }]
+    },
+    {
+      description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
+      denom_units: [{
+          denom: 'ibc/299612A95693138225447366268ED58014100D965FCEDC43F27D47AB360F351F',
+          exponent: 0,
+          aliases: ['ustrd']
+        }, {
+          denom: 'strd',
+          exponent: 6
+        }],
+      base: 'ibc/299612A95693138225447366268ED58014100D965FCEDC43F27D47AB360F351F',
+      name: 'Stride',
+      display: 'strd',
+      symbol: 'STRD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+      },
+      coingecko_id: 'stride',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg',
+          theme: {
+            primary_color_hex: '#e4047c'
+          }
+        }],
+      socials: {
+        website: 'https://stride.zone/',
+        twitter: 'https://twitter.com/stride_zone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-148',
+            base_denom: 'ustrd',
+            chain_name: 'stride'
+          },
+          chain: {
+            channel_id: 'channel-59'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Umee',
+      denom_units: [{
+          denom: 'ibc/B557233C2463BCEB5D95E247CBD52AC98BE0847E9BEC5C3800A4384936EB6280',
+          exponent: 0,
+          aliases: ['uumee']
+        }, {
+          denom: 'umee',
+          exponent: 6
+        }],
+      base: 'ibc/B557233C2463BCEB5D95E247CBD52AC98BE0847E9BEC5C3800A4384936EB6280',
+      name: 'Umee',
+      display: 'umee',
+      symbol: 'UMEE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg'
+      },
+      coingecko_id: 'umee',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg',
+          theme: {
+            primary_color_hex: '#22f2e9'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-42',
+            base_denom: 'uumee',
+            chain_name: 'umee'
+          },
+          chain: {
+            channel_id: 'channel-11'
+          }
+        }]
+    },
+    {
+      description: 'Archway is a smart contract platform in the Cosmos ecosystem designed to reward developers by providing them with a share of transaction fees generated by their applications.',
+      denom_units: [
+        {
+          denom: 'ibc/3763997B746CA5FDC9883C5192B783B114A4610E1A37751955288E0940BB0B7F',
+          exponent: 0,
+          aliases: ['aarch']
+        },
+        {
+          denom: 'uarch',
+          exponent: 12
+        },
+        {
+          denom: 'arch',
+          exponent: 18
+        }
+      ],
+      base: 'ibc/3763997B746CA5FDC9883C5192B783B114A4610E1A37751955288E0940BB0B7F',
+      name: 'Archway',
+      display: 'arch',
+      symbol: 'ARCH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg'
+      },
+      coingecko_id: 'archway',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/arch.svg',
+          theme: {
+            primary_color_hex: '#fc4c04'
+          }
+        }],
+      socials: {
+        website: 'https://archway.io/',
+        twitter: 'https://twitter.com/archwayHQ'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-20',
+            base_denom: 'aarch',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-60'
+          }
+        }]
+    },
+    {
+      description: 'Architects Token',
+      type_asset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denom_units: [{
+          denom: 'ibc/942E6FDD64A9887E6E647900EC9E18EE166D6DAE76F470D324C349361AA6CE37',
+          exponent: 0,
+          aliases: ['archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu']
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'ibc/942E6FDD64A9887E6E647900EC9E18EE166D6DAE76F470D324C349361AA6CE37',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-20',
+            base_denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+            chain_name: 'archway'
+          },
+          chain: {
+            channel_id: 'channel-60'
+          }
+        }]
+    },
+    {
+      description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
+      denom_units: [{
+          denom: 'ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F',
+          exponent: 0,
+          aliases: ['uaxl']
+        }, {
+          denom: 'axl',
+          exponent: 6
+        }],
+      base: 'ibc/C01154C2547F4CB10A985EA78E7CD4BA891C1504360703A37E1D7043F06B5E1F',
+      name: 'Axelar',
+      display: 'axl',
+      symbol: 'AXL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+      },
+      coingecko_id: 'axelar',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg',
+          theme: {
+            primary_color_hex: '#040404'
+          }
+        }],
+      socials: {
+        website: 'https://axelar.network/',
+        twitter: 'https://twitter.com/axelarnetwork'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-41',
+            base_denom: 'uaxl',
+            chain_name: 'axelar'
+          },
+          chain: {
+            channel_id: 'channel-9'
+          }
+        }]
+    },
+    {
+      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
+      denom_units: [{
+          denom: 'ibc/BA313C4A19DFBF943586C0387E6B11286F9E416B4DD27574E6909CABE0E342FA',
+          exponent: 0,
+          aliases: ['uatom']
+        }, {
+          denom: 'atom',
+          exponent: 6
+        }],
+      base: 'ibc/BA313C4A19DFBF943586C0387E6B11286F9E416B4DD27574E6909CABE0E342FA',
+      name: 'Cosmos Hub Atom',
+      display: 'atom',
+      symbol: 'ATOM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
+      },
+      coingecko_id: 'cosmos',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      socials: {
+        website: 'https://cosmos.network',
+        twitter: 'https://twitter.com/cosmoshub'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-405',
+            base_denom: 'uatom',
+            chain_name: 'cosmoshub'
+          },
+          chain: {
+            channel_id: 'channel-5'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Crescent',
+      denom_units: [{
+          denom: 'ibc/7A0FAE01EB4FD6930A0111759B22BB631BB089C75F7186E4F9ACC0E139DE678C',
+          exponent: 0,
+          aliases: ['ucre']
+        }, {
+          denom: 'cre',
+          exponent: 6
+        }],
+      base: 'ibc/7A0FAE01EB4FD6930A0111759B22BB631BB089C75F7186E4F9ACC0E139DE678C',
+      name: 'Crescent',
+      display: 'cre',
+      symbol: 'CRE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg'
+      },
+      coingecko_id: 'crescent-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg',
+          theme: {
+            primary_color_hex: '#3c2832'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'ucre',
+            chain_name: 'crescent'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'The bonded token of Crescent',
+      denom_units: [{
+          denom: 'ibc/8EA29200F7BBF4941DDCE468340077B206D13078BF146D70F7D798E08C4A172F',
+          exponent: 0,
+          aliases: ['ubcre']
+        }, {
+          denom: 'bcre',
+          exponent: 6
+        }],
+      base: 'ibc/8EA29200F7BBF4941DDCE468340077B206D13078BF146D70F7D798E08C4A172F',
+      name: 'Bonded Crescent',
+      display: 'bcre',
+      symbol: 'bCRE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
+      },
+      coingecko_id: 'liquid-staking-crescent',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
+          theme: {
+            primary_color_hex: '#df969f'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-11',
+            base_denom: 'ubcre',
+            chain_name: 'crescent'
+          },
+          chain: {
+            channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'The native EVM, governance and staking token of the Evmos Hub',
+      denom_units: [{
+          denom: 'ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107',
+          exponent: 0,
+          aliases: ['aevmos']
+        }, {
+          denom: 'evmos',
+          exponent: 18
+        }],
+      base: 'ibc/80D5E86278CE910A7A9653CCA7DEB62C817E07AF9C0C657B43191C43DE60B107',
+      name: 'Evmos',
+      display: 'evmos',
+      symbol: 'EVMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
+      },
+      coingecko_id: 'evmos',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg',
+          theme: {
+            primary_color_hex: '#ec4c34'
+          }
+        }],
+      socials: {
+        website: 'https://evmos.org/',
+        twitter: 'https://twitter.com/EvmosOrg'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-85',
+            base_denom: 'aevmos',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-57'
+          }
+        }]
+    },
+    {
+      description: 'The token of Neokingdom DAO.',
+      denom_units: [{
+          denom: 'ibc/B44BF5AB79C7893A27BAFCF65702B3EBC6DD1E2CF0C8D43605ACDFD1F98229BB',
+          exponent: 0,
+          aliases: ['erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9']
+        }, {
+          denom: 'neok',
+          exponent: 18
+        }],
+      base: 'ibc/B44BF5AB79C7893A27BAFCF65702B3EBC6DD1E2CF0C8D43605ACDFD1F98229BB',
+      name: 'Neokingdom DAO',
+      display: 'neok',
+      symbol: 'NEOK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/neok.svg',
+          theme: {
+            primary_color_hex: '#7f0f70'
+          }
+        }],
+      socials: {
+        website: 'https://www.neokingdom.org/',
+        twitter: 'https://twitter.com/NEOKingdomDAO'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-85',
+            base_denom: 'erc20/0x655ecB57432CC1370f65e5dc2309588b71b473A9',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-57'
+          }
+        }]
+    },
+    {
+      description: 'The legacy token of Teledisko DAO.',
+      denom_units: [{
+          denom: 'ibc/2146068C178D878826DD34FC86EC1DC279B33765D8FFA60C5A9E5AF5AEC34EBA',
+          exponent: 0,
+          aliases: ['erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280']
+        }, {
+          denom: 'berlin-legacy',
+          exponent: 18
+        }],
+      base: 'ibc/2146068C178D878826DD34FC86EC1DC279B33765D8FFA60C5A9E5AF5AEC34EBA',
+      name: 'Teledisko DAO - Legacy',
+      display: 'berlin-legacy',
+      symbol: 'BERLIN-legacy',
+      type_asset: 'erc20',
+      address: '0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/berlin.svg',
+          theme: {
+            primary_color_hex: '#bbce1a'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-85',
+            base_denom: 'erc20/0x1cFc8f1FE8D5668BAFF2724547EcDbd6f013a280',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-57'
+          }
+        }]
+    },
+    {
+      description: 'The token of Crowdpunk DAO',
+      denom_units: [{
+          denom: 'ibc/FBB519CDE3A502E73DB5E61B09EA27B621CF8576165DCEC0C92AEC5E2C4B7689',
+          exponent: 0,
+          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+        }, {
+          denom: 'crowdp',
+          exponent: 18
+        }],
+      base: 'ibc/FBB519CDE3A502E73DB5E61B09EA27B621CF8576165DCEC0C92AEC5E2C4B7689',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      symbol: 'CROWDP',
+      type_asset: 'erc20',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg',
+          theme: {
+            primary_color_hex: '#04fbfb'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-85',
+            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            chain_name: 'evmos'
+          },
+          chain: {
+            channel_id: 'channel-57'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Gravity Bridge',
+      denom_units: [{
+          denom: 'ibc/64B3EFE08A6A3EF5D2A7F1D3AF033DDC951DA51F92E06CC31D3F9AF8E8368860',
+          exponent: 0,
+          aliases: ['ugraviton']
+        }, {
+          denom: 'graviton',
+          exponent: 6
+        }],
+      base: 'ibc/64B3EFE08A6A3EF5D2A7F1D3AF033DDC951DA51F92E06CC31D3F9AF8E8368860',
+      name: 'Graviton',
+      display: 'graviton',
+      symbol: 'GRAV',
+      coingecko_id: 'graviton',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg',
+          theme: {
+            primary_color_hex: '#042ca4'
+          }
+        }],
+      socials: {
+        website: 'https://www.gravitybridge.net/',
+        twitter: 'https://twitter.com/gravity_bridge'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-91',
+            base_denom: 'ugraviton',
+            chain_name: 'gravitybridge'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
+      description: 'Kava is a decentralized finance (DeFi) platform that provides a range of financial services, including lending, borrowing, and stablecoins, leveraging the Cosmos and Ethereum ecosystems.',
+      denom_units: [{
+          denom: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
+          exponent: 0,
+          aliases: ['ukava']
+        }, {
+          denom: 'kava',
+          exponent: 6
+        }],
+      base: 'ibc/75ECE93EE15EB4B5AA9D49E8481194BF331E9089651A58356F9307344F801FB6',
+      name: 'Kava',
+      display: 'kava',
+      symbol: 'KAVA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg'
+      },
+      coingecko_id: 'kava',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
+          theme: {
+            primary_color_hex: '#e64942'
+          }
+        }],
+      socials: {
+        website: 'https://www.kava.io/',
+        twitter: 'https://twitter.com/KAVA_CHAIN'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'ukava',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'Governance token of Kava Lend Protocol',
+      denom_units: [{
+          denom: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
+          exponent: 0,
+          aliases: ['hard']
+        }, {
+          denom: 'HARD',
+          exponent: 6
+        }],
+      base: 'ibc/35DD779EA37203421A78882D7BFC02751B414AB9631F63B95FC0F1583C1B90B4',
+      name: 'Kava Hard',
+      display: 'HARD',
+      symbol: 'HARD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg'
+      },
+      coingecko_id: 'kava-lend',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg',
+          theme: {
+            primary_color_hex: '#7b34ac'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'hard',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'Governance token of Kava Swap Protocol',
+      denom_units: [{
+          denom: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
+          exponent: 0,
+          aliases: ['swp']
+        }, {
+          denom: 'SWP',
+          exponent: 6
+        }],
+      base: 'ibc/4E8A3EB42BE34325E109F332473156A36BE87FB00CA74174BE9D8DA88E00ED90',
+      name: 'Kava Swap',
+      display: 'SWP',
+      symbol: 'SWP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg'
+      },
+      coingecko_id: 'kava-swap',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg',
+          theme: {
+            primary_color_hex: '#544cfc'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'swp',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      description: 'The native stablecoin of Kava',
+      denom_units: [{
+          denom: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
+          exponent: 0,
+          aliases: ['usdx']
+        }, {
+          denom: 'USDX',
+          exponent: 6
+        }],
+      base: 'ibc/88970698183DEFB89B059E9F89BE130EE4713FB9142C60615A3EE23430DDD6F9',
+      name: 'Kava USDX',
+      display: 'USDX',
+      symbol: 'USDX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg'
+      },
+      coingecko_id: 'usdx',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/usdx.svg',
+          theme: {
+            primary_color_hex: '#04d4a3'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'usdx',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
+          exponent: 0,
+          aliases: ['erc20/tether/usdt']
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      base: 'ibc/079DAF1995A28BCD3B4E3D38948BB0FBC1CDE47939820CBAB7C02AFB88FF31A3',
+      name: 'Tether USD',
+      display: 'usdt',
+      symbol: 'USDT',
+      coingecko_id: 'tether',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-133',
+            base_denom: 'erc20/tether/usdt',
+            chain_name: 'kava'
+          },
+          chain: {
+            channel_id: 'channel-63'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          theme: {
+            circle: true,
+            primary_color_hex: '#009393',
+            background_color_hex: '#009393'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      },
+      type_asset: 'sdk.coin'
+    },
+    {
+      description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
+      denom_units: [{
+          denom: 'ibc/6AA5123E11E0AB0D7ACCF898848435C06A1D1C138D4732FB90F9414205B6F0FA',
+          exponent: 0,
+          aliases: ['ukuji']
+        }, {
+          denom: 'kuji',
+          exponent: 6
+        }],
+      base: 'ibc/6AA5123E11E0AB0D7ACCF898848435C06A1D1C138D4732FB90F9414205B6F0FA',
+      name: 'Kujira',
+      display: 'kuji',
+      symbol: 'KUJI',
+      coingecko_id: 'kujira',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.svg',
+          theme: {
+            primary_color_hex: '#e33b34'
+          }
+        }],
+      socials: {
+        website: 'https://kujira.network/',
+        twitter: 'https://twitter.com/TeamKujira'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-61',
+            base_denom: 'ukuji',
+            chain_name: 'kujira'
+          },
+          chain: {
+            channel_id: 'channel-13'
+          }
+        }]
+    },
+    {
+      description: 'The permissioned staking asset for Noble Chain',
+      denom_units: [{
+          denom: 'ibc/C53931BE8DBFA7FB2F183E4B3C835E005187B167AFC0165724004B878FD5FD66',
+          exponent: 0,
+          aliases: ['ustake']
+        }, {
+          denom: 'stake',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/C53931BE8DBFA7FB2F183E4B3C835E005187B167AFC0165724004B878FD5FD66',
+      name: 'Stake',
+      display: 'stake',
+      symbol: 'STAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
+          theme: {
+            primary_color_hex: '#a8bbfb'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom: 'ustake',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-62'
+          }
+        }]
+    },
+    {
+      description: 'Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.',
+      denom_units: [{
+          denom: 'ibc/90D9BE4D0D9BFD6AE61FCACF84765820EDA9EE795548324AD60FF416E6685ECF',
+          exponent: 0,
+          aliases: ['ufrienzies']
+        }, {
+          denom: 'frienzies',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/90D9BE4D0D9BFD6AE61FCACF84765820EDA9EE795548324AD60FF416E6685ECF',
+      display: 'frienzies',
+      name: 'Frienzies',
+      symbol: 'FRNZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/frnz.svg',
+          theme: {
+            primary_color_hex: '#04041c'
+          }
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom: 'ufrienzies',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-62'
+          }
+        }]
+    },
+    {
+      description: 'Ondo US Dollar Yield',
+      denom_units: [{
+          denom: 'ibc/E1CEC1DEA8B17EEA3FEF47215571727EA7D668AC18E7A2F6B8C85F09E4A055BA',
+          exponent: 0,
+          aliases: ['ausdy']
+        }, {
+          denom: 'usdy',
+          exponent: 18
+        }],
+      base: 'ibc/E1CEC1DEA8B17EEA3FEF47215571727EA7D668AC18E7A2F6B8C85F09E4A055BA',
+      display: 'usdy',
+      name: 'Ondo US Dollar Yield',
+      symbol: 'USDY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg',
+          theme: {
+            primary_color_hex: '#142c5c'
+          }
+        }],
+      coingecko_id: 'ondo-us-dollar-yield',
+      socials: {
+        website: 'https://ondo.finance/usdy',
+        twitter: 'https://x.com/OndoFinance'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-21',
+            base_denom: 'ausdy',
+            chain_name: 'noble'
+          },
+          chain: {
+            channel_id: 'channel-62'
+          }
+        }]
+    },
+    {
+      description: 'OmniFlix is a decentralized media platform that enables content creators to distribute, monetize, and manage their digital content using blockchain technology.',
+      denom_units: [{
+          denom: 'ibc/B11D2BF454691B63FF73738EAC8D27C37F66948A5F390003AE1891FEFD387DDE',
+          exponent: 0,
+          aliases: ['uflix']
+        }, {
+          denom: 'flix',
+          exponent: 6
+        }],
+      base: 'ibc/B11D2BF454691B63FF73738EAC8D27C37F66948A5F390003AE1891FEFD387DDE',
+      name: 'Flix',
+      display: 'flix',
+      symbol: 'FLIX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
+      },
+      coingecko_id: 'omniflix-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg',
+          theme: {
+            primary_color_hex: '#c33635'
+          }
+        }],
+      socials: {
+        website: 'https://omniflix.network/',
+        twitter: 'https://twitter.com/OmniFlixNetwork'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-30',
+            base_denom: 'uflix',
+            chain_name: 'omniflixhub'
+          },
+          chain: {
+            channel_id: 'channel-58'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Osmosis',
+      denom_units: [{
+          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+          exponent: 0,
+          aliases: ['uosmo']
+        }, {
+          denom: 'osmo',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+          theme: {
+            primary_color_hex: '#760dbb'
+          }
+        }],
+      coingecko_id: 'osmosis',
+      keywords: ['dex', 'staking'],
+      socials: {
+        website: 'https://osmosis.zone',
+        twitter: 'https://twitter.com/osmosiszone'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-320',
+            base_denom: 'uosmo',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }]
+    },
+    {
+      description: 'ION is the second native token of Osmosis.',
+      denom_units: [{
+          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+          exponent: 0,
+          aliases: ['uion']
+        }, {
+          denom: 'ion',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+      name: 'Ion DAO',
+      display: 'ion',
+      symbol: 'ION',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg',
+          theme: {
+            primary_color_hex: '#4453c7'
+          }
+        }],
+      coingecko_id: 'ion',
+      keywords: ['memecoin', 'defi'],
+      socials: {
+        website: 'https://ion.wtf',
+        twitter: 'https://twitter.com/_IONDAO'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-320',
+            base_denom: 'uion',
+            chain_name: 'osmosis'
+          },
+          chain: {
+            channel_id: 'channel-1'
+          }
+        }]
+    },
+    {
+      description: 'Persistence One is building a Bitcoin Cross-chain Swaps solution, enabling fast, zero-slippage secure swaps across Bitcoin Layer 2s.',
       denom_units: [{
           denom: 'ibc/1C312D6A05202A8F83393290B3403EAA37FF2E3DDA73BB69253C2D10CDA4D6CF',
           exponent: 0,

@@ -54,16 +54,25 @@ const info: Chain = {
         provider: 'Staketab'
       }]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/medibloc',
       tx_page: 'https://www.mintscan.io/medibloc/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/medibloc/accounts/${accountAddress}'
-    }, {
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/panacea',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=panacea&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=panacea&addr=${accountAddress}'
+    },
+    {
       kind: 'bigdipper',
       url: 'https://explorer.gopanacea.org',
       tx_page: 'https://explorer.gopanacea.org/transactions/${txHash}'
-    }],
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg',

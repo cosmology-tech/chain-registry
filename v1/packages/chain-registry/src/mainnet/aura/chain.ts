@@ -32,9 +32,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.12-evmos',
-    cosmwasm_enabled: true,
-    cosmwasm_version: 'v0.42.0'
+    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.12-evmos'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
@@ -254,6 +252,12 @@ const info: Chain = {
       url: 'https://aurascan.io',
       tx_page: 'https://aurascan.io/tx/${txHash}',
       account_page: 'https://aurascan.io/address/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/aura',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=aura&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=aura&addr=${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',

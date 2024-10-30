@@ -29,8 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.6',
-    cosmwasm_version: '0.40.0'
+    cosmos_sdk_version: '0.47.6'
   },
   apis: {
     rpc: [
@@ -134,6 +133,12 @@ const info: Chain = {
       url: 'https://explorer.theamsolutions.info/qwoyn-main/',
       tx_page: 'https://explorer.theamsolutions.info/qwoyn-main/blocks',
       account_page: 'https://explorer.theamsolutions.info/qwoyn-main/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/qwoyn',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=qwoyn&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=qwoyn&addr=${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',

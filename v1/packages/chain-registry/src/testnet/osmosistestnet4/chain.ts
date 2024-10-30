@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'osmosistestnet4',
-  status: 'live',
+  status: 'killed',
   network_type: 'testnet',
   pretty_name: 'Osmosis Testnet',
   chain_type: 'cosmos',
@@ -27,9 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.29'
+    cosmos_sdk_version: '0.45'
   },
   apis: {
     rpc: [

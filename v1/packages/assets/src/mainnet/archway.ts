@@ -370,7 +370,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'BeeZee native blockchain',
+      description: 'BeeZee network native coin',
       denom_units: [{
           denom: 'ibc/477BF795EE81A93C4B278F032FF847261D1FA5A3E41C5338DA3D8173699D9739',
           exponent: 0,
@@ -396,6 +396,10 @@ const assets: AssetList = {
           }
         }],
       type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {
@@ -1608,7 +1612,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'BeeZee native blockchain',
+      description: 'BeeZee network native coin',
       denom_units: [{
           denom: 'ibc/477BF795EE81A93C4B278F032FF847261D1FA5A3E41C5338DA3D8173699D9739',
           exponent: 0,
@@ -1634,6 +1638,10 @@ const assets: AssetList = {
           }
         }],
       type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
       traces: [{
           type: 'ibc',
           counterparty: {

@@ -31,8 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: '0.46'
   },
   apis: {
     rpc: [
@@ -95,6 +94,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/likecoin',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=likecoin&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=likecoin&addr=${accountAddress}'
+    },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/likecoin',

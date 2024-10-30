@@ -31,8 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'lavanet/cosmos-sdk v0.47.13-lava-cosmos',
-    cosmwasm_enabled: false
+    cosmos_sdk_version: 'lavanet/cosmos-sdk v0.47.13-lava-cosmos'
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',
@@ -226,6 +225,12 @@ const info: Chain = {
       url: 'https://lava-explorer.w3coins.io/Lava',
       tx_page: 'https://lava-explorer.w3coins.io/Lava/tx/${txHash}',
       account_page: 'https://lava-explorer.w3coins.io/Lava/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/lava',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=lava&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=lava&addr=${accountAddress}'
     },
     {
       kind: 'Stake Village',

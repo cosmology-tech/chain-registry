@@ -26,9 +26,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46',
-    cosmwasm_enabled: true,
-    cosmwasm_version: '0.29'
+    cosmos_sdk_version: '0.46'
   },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'

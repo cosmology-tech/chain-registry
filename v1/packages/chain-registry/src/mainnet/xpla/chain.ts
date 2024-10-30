@@ -28,8 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.13-xpla',
-    cosmwasm_version: 'v0.46.0'
+    cosmos_sdk_version: 'v0.47.13-xpla'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.png',
@@ -109,6 +108,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/xpla',
       tx_page: 'https://www.mintscan.io/xpla/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/xpla/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/xpla',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=xpla&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=xpla&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

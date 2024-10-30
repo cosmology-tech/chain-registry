@@ -415,6 +415,12 @@ const info: Chain = {
       tx_page: 'https://evmos.explorers.guru/transaction/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/evmos',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=evmos&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=evmos&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/evmos',
       tx_page: 'https://atomscan.com/evmos/transactions/${txHash}',
