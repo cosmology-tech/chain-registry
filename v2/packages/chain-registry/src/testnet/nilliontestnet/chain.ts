@@ -34,7 +34,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.38.6'
     },
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/NillionNetwork/networks/main/nillion-chain-testnet-1/genesis.json'
     },
@@ -47,7 +46,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.38.6'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: 'v0.50.6'

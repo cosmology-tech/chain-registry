@@ -165,6 +165,12 @@ const info: Chain = {
       txPage: 'https://cosmos-explorers.neobase.one/canto/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/canto',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=canto&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=canto&addr=${accountAddress}'
+    },
+    {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/canto',
       txPage: 'https://explorer.tcnetwork.io/canto/transaction/${txHash}'

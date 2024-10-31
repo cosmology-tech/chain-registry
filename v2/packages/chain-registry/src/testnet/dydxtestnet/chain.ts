@@ -32,7 +32,6 @@ const info: Chain = {
     recommendedVersion: 'v2.0.0',
     compatibleVersions: ['v2.0.0'],
     cosmosSdkVersion: 'v0.47.4',
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dydxprotocol/v4-testnets/main/dydx-testnet-4/genesis.json'
     },

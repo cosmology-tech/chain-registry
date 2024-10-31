@@ -4,7 +4,7 @@ const info: AssetList = {
   chainName: 'quasar',
   assets: [
     {
-      description: 'The native token of Quasar',
+      description: 'The QSR token has transitioned to a legacy token, with migration to the EVM ecosystem currently underway.',
       denomUnits: [{
           denom: 'uqsr',
           exponent: 0,
@@ -16,9 +16,9 @@ const info: AssetList = {
         }],
       typeAsset: 'sdk.coin',
       base: 'uqsr',
-      name: 'Quasar',
+      name: 'Quasar (legacy)',
       display: 'qsr',
-      symbol: 'QSR',
+      symbol: 'QSR.legacy',
       coingeckoId: 'quasar-2',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'

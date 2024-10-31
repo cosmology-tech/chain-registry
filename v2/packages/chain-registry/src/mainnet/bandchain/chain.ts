@@ -281,6 +281,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/band-protocol/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/bandchain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=bandchain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=bandchain&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Band-Mainnet',
       txPage: 'https://explorer.stavr.tech/Band-Mainnet/tx/${txHash}'

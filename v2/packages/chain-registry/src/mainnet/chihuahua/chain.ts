@@ -36,9 +36,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.41.0',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/ChihuahuaChain/chihuahua/main/mainnet/genesis.json'
     },
@@ -51,7 +48,6 @@ const info: Chain = {
           'v4.2.2',
           'v4.2.1'
         ],
-        cosmwasmEnabled: true,
         nextVersionName: 'v500',
         cosmwasm: {
           enabled: true
@@ -63,7 +59,6 @@ const info: Chain = {
         compatibleVersions: ['v5.0.0'],
         proposal: 51,
         height: 8711111,
-        cosmwasmEnabled: true,
         nextVersionName: 'v501',
         cosmwasm: {
           enabled: true
@@ -75,7 +70,6 @@ const info: Chain = {
         compatibleVersions: ['v5.0.1'],
         proposal: 52,
         height: 8813000,
-        cosmwasmEnabled: true,
         nextVersionName: 'v502',
         cosmwasm: {
           enabled: true
@@ -87,7 +81,6 @@ const info: Chain = {
         compatibleVersions: ['v5.0.2'],
         proposal: 53,
         height: 9180000,
-        cosmwasmEnabled: true,
         nextVersionName: 'v503',
         cosmwasm: {
           enabled: true
@@ -104,9 +97,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
         nextVersionName: 'v6',
         sdk: {
           type: 'cosmos',
@@ -133,9 +123,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
         nextVersionName: 'v7',
         sdk: {
           type: 'cosmos',
@@ -162,9 +149,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -191,9 +175,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.chihuahuad/data/wasm',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -396,6 +377,12 @@ const info: Chain = {
       url: 'https://mintscan.io/chihuahua',
       txPage: 'https://mintscan.io/chihuahua/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/chihuahua/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/chihuahua',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=chihuahua&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=chihuahua&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

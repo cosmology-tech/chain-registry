@@ -46,7 +46,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmEnabled: false,
     genesis: {
       name: 'fotan-1.0',
       genesisUrl: 'https://raw.githubusercontent.com/likecoin/mainnet/master/genesis.json'
@@ -299,6 +298,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/likecoin',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=likecoin&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=likecoin&addr=${accountAddress}'
+    },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/likecoin',

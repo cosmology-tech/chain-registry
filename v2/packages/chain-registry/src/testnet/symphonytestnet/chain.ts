@@ -35,8 +35,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.37.4'
     },
-    cosmwasmVersion: '0.30',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://rpc.testnet.symphonychain.org/genesis'
     },
@@ -49,8 +47,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.37.4'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47.8'

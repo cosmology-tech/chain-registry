@@ -148,6 +148,12 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/sifchain/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/sifchain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=sifchain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=sifchain&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Sifchain',
       txPage: 'https://explorer.stavr.tech/Sifchain/tx/${txHash}',

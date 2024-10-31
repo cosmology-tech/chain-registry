@@ -35,7 +35,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.38.2'
     },
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://github.com/coss-inscription/networks/blob/main/testnet/coss-testnet-1/genesis.json'
     },

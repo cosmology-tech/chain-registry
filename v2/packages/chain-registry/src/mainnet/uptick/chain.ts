@@ -40,8 +40,6 @@ const info: Chain = {
       version: 'v0.37.3',
       tag: 'v0.37.3-0.20230920093934-46df7b597e3c'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/uptick-network/mainnet/main/genesis.json'
     },
@@ -58,7 +56,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'v0.2.8',
         sdk: {
           type: 'cosmos',
@@ -129,8 +126,6 @@ const info: Chain = {
           version: 'v0.37.3',
           tag: 'v0.37.3-0.20230920093934-46df7b597e3c'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47.5'
@@ -341,6 +336,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://explorers.brocha.in/uptick',
       txPage: 'https://explorers.brocha.in/uptick/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/uptick',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=uptick&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=uptick&addr=${accountAddress}'
     },
     {
       kind: 'NodeStake Explorer',

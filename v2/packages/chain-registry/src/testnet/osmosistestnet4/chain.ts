@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'osmosistestnet4',
-  status: 'live',
+  status: 'killed',
   networkType: 'testnet',
   prettyName: 'Osmosis Testnet',
   chainType: 'cosmos',
@@ -35,8 +35,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.29',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/osmosis-labs/networks/raw/main/osmo-test-4/genesis.tar.bz2'
     },
@@ -49,8 +47,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'
@@ -68,8 +64,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'

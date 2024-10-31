@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.27',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'v1',
       genesisUrl: 'https://github.com/ShareRing/Shareledger/releases/download/v1.2.0/genesis.json'
@@ -76,8 +74,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.27',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/ShareRing/Shareledger/releases/download/v1.4.1/shareledger'
         },
@@ -129,6 +125,11 @@ const info: Chain = {
       url: 'https://explorer.shareri.ng',
       txPage: 'https://explorer.shareri.ng/transactions/${txHash}',
       accountPage: 'https://explorer.shareri.ng/accounts/${accountAddress}'
+    }, {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/shareledger',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=shareledger&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=shareledger&addr=${accountAddress}'
     }],
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/chain-logo.png',

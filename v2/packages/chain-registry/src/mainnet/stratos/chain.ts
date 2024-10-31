@@ -22,6 +22,7 @@ const info: Chain = {
         highGasPrice: 1600000000
       }]
   },
+  description: 'STOS coin is the native token for the Stratos Blockchain. Stratos is a pioneering decentralized infrastructure service provider, revolutionizing AI and DePIN with advanced decentralized solutions in storage, computing, databases, and blockchain services. We empower Web 3.0 developpers and dApps through our scalable, reliable, and high-performance networks.',
   codebase: {
     gitRepo: 'https://github.com/stratosnet/stratos-chain',
     recommendedVersion: 'v0.11.2',
@@ -112,6 +113,12 @@ const info: Chain = {
       url: 'https://explorer.nodestake.top/stratos',
       txPage: 'https://explorer.nodestake.top/stratos/tx/${txHash}',
       accountPage: 'https://explorer.nodestake.top/stratos/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/stratos',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=stratos&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=stratos&addr=${accountAddress}'
     },
     {
       kind: 'TC Network',

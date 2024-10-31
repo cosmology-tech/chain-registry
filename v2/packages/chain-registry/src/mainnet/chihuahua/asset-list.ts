@@ -222,6 +222,14 @@ const info: AssetList = {
       name: 'BackBone Labs Liquid Staked HUAHUA',
       display: 'bHUAHUA',
       symbol: 'bHUAHUA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'chihuahua',
+            baseDenom: 'uhuahua'
+          },
+          provider: 'BackBoneLabs'
+        }],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png',
           theme: {

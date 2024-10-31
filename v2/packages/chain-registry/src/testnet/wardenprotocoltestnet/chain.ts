@@ -35,7 +35,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.38'
     },
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/warden-protocol/networks/main/testnets/buenavista/genesis.json'
     },
@@ -48,7 +47,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.38'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: '0.50'

@@ -42,8 +42,6 @@ const info: Chain = {
       repo: 'https://github.com/aura-nw/cometbft',
       tag: 'v0.37.4-aura.2'
     },
-    cosmwasmVersion: 'v0.42.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://images.aura.network/aura_6322-2-genesis.tar.gz'
     },
@@ -57,8 +55,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.4'
         },
-        cosmwasmVersion: '0.42.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'ibcupgrade',
         sdk: {
           type: 'cosmos',
@@ -84,8 +80,6 @@ const info: Chain = {
           repo: 'https://github.com/aura-nw/cometbft',
           tag: 'v0.37.4-aura.2'
         },
-        cosmwasmVersion: 'v0.42.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.9.3',
         sdk: {
           type: 'cosmos',
@@ -113,8 +107,6 @@ const info: Chain = {
           repo: 'https://github.com/aura-nw/cometbft',
           tag: 'v0.37.4-aura.2'
         },
-        cosmwasmVersion: 'v0.42.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -365,6 +357,12 @@ const info: Chain = {
       url: 'https://aurascan.io',
       txPage: 'https://aurascan.io/tx/${txHash}',
       accountPage: 'https://aurascan.io/address/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/aura',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=aura&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=aura&addr=${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 Explorer',

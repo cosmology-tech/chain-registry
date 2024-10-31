@@ -70,8 +70,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.38.7'
     },
-    cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/neutron-org/mainnet-assets/main/neutron-1-genesis.json'
     },
@@ -85,8 +83,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         nextVersionName: 'v2.0.0',
         sdk: {
           type: 'cosmos',
@@ -115,8 +111,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3.0.1',
         sdk: {
           type: 'cosmos',
@@ -145,8 +139,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3.0.5',
         sdk: {
           type: 'cosmos',
@@ -178,8 +170,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v4.0.1',
         sdk: {
           type: 'cosmos',
@@ -211,8 +201,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.38.7'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -254,6 +242,14 @@ const info: Chain = {
   description: 'The most secure CosmWasm platform in Cosmos, Neutron lets smart-contracts leverage bleeding-edge Interchain technology with minimal overhead.',
   apis: {
     rpc: [
+      {
+        address: 'https://rpc-voidara.neutron-1.neutron.org',
+        provider: 'Neutron'
+      },
+      {
+        address: 'https://rpc-pulsarix.neutron-1.neutron.org',
+        provider: 'Neutron'
+      },
       {
         address: 'https://rpc.novel.remedy.tm.p2p.org',
         provider: 'P2P'

@@ -11,6 +11,7 @@ import * as _andromeda from './andromeda';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
+import * as _atomone from './atomone';
 import * as _aura from './aura';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
@@ -62,6 +63,7 @@ import * as _humans from './humans';
 import * as _impacthub from './impacthub';
 import * as _imversed from './imversed';
 import * as _injective from './injective';
+import * as _int3face from './int3face';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
 import * as _joltify from './joltify';
@@ -79,6 +81,7 @@ import * as _lorenzo from './lorenzo';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
+import * as _mantrachain from './mantrachain';
 import * as _mars from './mars';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
@@ -136,6 +139,7 @@ import * as _stargaze from './stargaze';
 import * as _starname from './starname';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
+import * as _synternet from './synternet';
 import * as _teritori from './teritori';
 import * as _terra from './terra';
 import * as _terra2 from './terra2';
@@ -159,6 +163,7 @@ const ibcData: IBCData[] = [
   ..._archway.ibcData,
   ..._arkh.ibcData,
   ..._assetmantle.ibcData,
+  ..._atomone.ibcData,
   ..._aura.ibcData,
   ..._axelar.ibcData,
   ..._bandchain.ibcData,
@@ -210,6 +215,7 @@ const ibcData: IBCData[] = [
   ..._impacthub.ibcData,
   ..._imversed.ibcData,
   ..._injective.ibcData,
+  ..._int3face.ibcData,
   ..._irisnet.ibcData,
   ..._jackal.ibcData,
   ..._joltify.ibcData,
@@ -227,6 +233,7 @@ const ibcData: IBCData[] = [
   ..._lumenx.ibcData,
   ..._lumnetwork.ibcData,
   ..._mande.ibcData,
+  ..._mantrachain.ibcData,
   ..._mars.ibcData,
   ..._medasdigital.ibcData,
   ..._meme.ibcData,
@@ -284,6 +291,7 @@ const ibcData: IBCData[] = [
   ..._starname.ibcData,
   ..._stratos.ibcData,
   ..._stride.ibcData,
+  ..._synternet.ibcData,
   ..._teritori.ibcData,
   ..._terra.ibcData,
   ..._terra2.ibcData,

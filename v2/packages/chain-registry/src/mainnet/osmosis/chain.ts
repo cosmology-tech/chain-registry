@@ -45,8 +45,6 @@ const info: Chain = {
       repo: 'https://github.com/osmosis-labs/cometbft',
       tag: 'v25-osmo-2'
     },
-    cosmwasmVersion: 'osmosis-labs/wasmd v0.45.0-osmo',
-    cosmwasmEnabled: true,
     binaries: {
       "linux/amd64": 'https://github.com/osmosis-labs/osmosis/releases/download/v25.0.0/osmosisd-25.0.0-linux-amd64',
       "linux/arm64": 'https://github.com/osmosis-labs/osmosis/releases/download/v25.0.0/osmosisd-25.0.0-linux-arm64'
@@ -420,6 +418,12 @@ const info: Chain = {
       url: 'https://explorer.tcnetwork.io/osmosis',
       txPage: 'https://explorer.tcnetwork.io/osmosis/transaction/${txHash}',
       accountPage: 'https://explorer.tcnetwork.io/osmosis/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/osmosis',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=osmosis&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=osmosis&addr=${accountAddress}'
     },
     {
       kind: 'Stakeflow',

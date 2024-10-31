@@ -450,6 +450,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/composable/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/composable',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=composable&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=composable&addr=${accountAddress}'
+    },
+    {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/composable',
       txPage: 'https://explorer.nodestake.top/composable/tx/${txHash}'

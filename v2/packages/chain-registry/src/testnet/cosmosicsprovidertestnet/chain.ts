@@ -28,20 +28,17 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/cosmos/gaia',
-    recommendedVersion: 'v20.0.0-rc0',
-    compatibleVersions: ['v20.0.0-rc0'],
+    recommendedVersion: 'v20.0.0',
+    compatibleVersions: ['v20.0.0'],
     cosmosSdkVersion: 'v0.50.9-lsm',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.11'
     },
     binaries: {
-      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-linux-amd64',
-      "linux/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-linux-arm64',
-      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-darwin-amd64',
-      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-darwin-arm64',
-      "windows/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-darwin-amd64',
-      "windows/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-windows-arm64.exe'
+      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0/gaiad-v20.0.0-linux-amd64',
+      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0/gaiad-v20.0.0-darwin-amd64',
+      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0/gaiad-v20.0.0-darwin-arm64'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/cosmos/testnets/master/interchain-security/provider/provider-genesis.json'
@@ -159,21 +156,18 @@ const info: Chain = {
       },
       {
         name: 'v20',
-        tag: 'v20.0.0-rc0',
-        recommendedVersion: 'v20.0.0-rc0',
-        compatibleVersions: ['v20.0.0-rc0'],
+        tag: 'v20.0.0',
+        recommendedVersion: 'v20.0.0',
+        compatibleVersions: ['v20.0.0'],
         cosmosSdkVersion: 'v0.50.9-lsm',
         consensus: {
           type: 'cometbft',
-          version: 'v0.37.6'
+          version: 'v0.38.11'
         },
         binaries: {
-          "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-linux-amd64',
-          "linux/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-linux-arm64',
-          "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-darwin-amd64',
-          "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-darwin-arm64',
-          "windows/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-darwin-amd64',
-          "windows/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0-rc0/gaiad-v20.0.0-rc0-windows-arm64.exe'
+          "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0/gaiad-v20.0.0-linux-amd64',
+          "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0/gaiad-v20.0.0-darwin-amd64',
+          "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v20.0.0/gaiad-v20.0.0-darwin-arm64'
         },
         nextVersionName: 'v21',
         sdk: {

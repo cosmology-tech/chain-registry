@@ -29,16 +29,13 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/sei-protocol/sei-chain',
-    recommendedVersion: 'v5.8.0',
-    compatibleVersions: ['v5.8.0'],
-    cosmosSdkVersion: 'sei-cosmos v0.3.35',
+    recommendedVersion: 'v5.9.0',
+    compatibleVersions: ['v5.9.0'],
+    cosmosSdkVersion: 'sei-cosmos v0.3.37',
     consensus: {
       type: 'sei-tendermint',
       version: 'v0.3.8'
     },
-    cosmwasmVersion: 'sei-wasmd v0.2.4',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.sei/wasm',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/sei-protocol/testnet/main/pacific-1/genesis.json'
     },
@@ -48,9 +45,6 @@ const info: Chain = {
         recommendedVersion: '3.0.8',
         compatibleVersions: ['3.0.8'],
         cosmosSdkVersion: 'v0.45.10',
-        cosmwasmVersion: 'v0.27.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.0.9',
         sdk: {
           type: 'cosmos',
@@ -73,9 +67,6 @@ const info: Chain = {
         proposal: 24,
         height: 25259000,
         cosmosSdkVersion: 'v0.45.10',
-        cosmwasmVersion: 'v0.27.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.1.1',
         sdk: {
           type: 'cosmos',
@@ -98,9 +89,6 @@ const info: Chain = {
         proposal: 32,
         height: 29772820,
         cosmosSdkVersion: 'v0.45.10',
-        cosmwasmVersion: 'v0.27.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.2.1',
         sdk: {
           type: 'cosmos',
@@ -123,9 +111,6 @@ const info: Chain = {
         proposal: 42,
         height: 34078260,
         cosmosSdkVersion: 'v0.45.10',
-        cosmwasmVersion: 'v0.27.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.3.0',
         sdk: {
           type: 'cosmos',
@@ -155,9 +140,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.2.28'
         },
-        cosmwasmVersion: 'sei-wasmd v0.0.2',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.5.0',
         sdk: {
           type: 'cosmos',
@@ -165,13 +147,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.0.2',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.0'
         }
       },
@@ -184,9 +166,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.2.35'
         },
-        cosmwasmVersion: 'sei-wasmd v0.0.4',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.6.1',
         sdk: {
           type: 'cosmos',
@@ -194,13 +173,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.0.4',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.0'
         }
       },
@@ -215,9 +194,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.2.37'
         },
-        cosmwasmVersion: 'sei-wasmd v0.0.4',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.7.0',
         sdk: {
           type: 'cosmos',
@@ -225,13 +201,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.0.4',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.0'
         }
       },
@@ -246,9 +222,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.2.37'
         },
-        cosmwasmVersion: 'sei-wasmd v0.0.4',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.8.0',
         sdk: {
           type: 'cosmos',
@@ -256,13 +229,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.0.4',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.0'
         }
       },
@@ -277,9 +250,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.2.39'
         },
-        cosmwasmVersion: 'sei-wasmd v0.0.8',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v3.9.0',
         sdk: {
           type: 'cosmos',
@@ -287,13 +257,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.0.8',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.0'
         }
       },
@@ -308,9 +278,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.2.40'
         },
-        cosmwasmVersion: 'sei-wasmd v0.1.1',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v5.5.2',
         sdk: {
           type: 'cosmos',
@@ -318,13 +285,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.1.1',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.0'
         }
       },
@@ -339,9 +306,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.3.3'
         },
-        cosmwasmVersion: 'sei-wasmd v0.1.5',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v5.5.5',
         sdk: {
           type: 'cosmos',
@@ -349,13 +313,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.1.5',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.0'
         }
       },
@@ -370,9 +334,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.3.3'
         },
-        cosmwasmVersion: 'sei-wasmd v0.1.5',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v5.6.2',
         sdk: {
           type: 'cosmos',
@@ -380,13 +341,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.1.5',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.1'
         }
       },
@@ -401,9 +362,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.3.4'
         },
-        cosmwasmVersion: 'sei-wasmd v0.1.9',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: '5.7.5',
         sdk: {
           type: 'cosmos',
@@ -411,13 +369,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.1.9',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.1'
         }
       },
@@ -432,9 +390,6 @@ const info: Chain = {
           type: 'sei-tendermint',
           version: 'v0.3.6'
         },
-        cosmwasmVersion: 'sei-wasmd v0.2.3',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
         nextVersionName: 'v5.8.0',
         sdk: {
           type: 'cosmos',
@@ -442,13 +397,13 @@ const info: Chain = {
         },
         cosmwasm: {
           version: 'v0.2.3',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.2'
         }
       },
@@ -456,42 +411,67 @@ const info: Chain = {
         name: 'v5.8.0',
         proposal: 84,
         height: 102491599,
-        recommendedVersion: 'v5.7.5',
-        compatibleVersions: ['v5.7.5'],
+        recommendedVersion: 'v5.8.0',
+        compatibleVersions: ['v5.8.0'],
         cosmosSdkVersion: 'sei-cosmos v0.3.35',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.3.8'
         },
-        cosmwasmVersion: 'sei-wasmd v0.2.4',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.sei/wasm',
-        nextVersionName: '',
+        nextVersionName: 'v5.9.0',
         sdk: {
           type: 'cosmos',
           version: 'v0.3.35'
         },
         cosmwasm: {
           version: 'v0.2.4',
-          repo: 'https://github.com/sei-wasmd',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
           path: '$HOME/.sei/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
-          repo: 'https://github.com/sei-ibc-go/v3',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
+          version: 'v3.3.2'
+        }
+      },
+      {
+        name: 'v5.9.0',
+        proposal: 85,
+        height: 107000672,
+        recommendedVersion: 'v5.9.0',
+        compatibleVersions: ['v5.9.0'],
+        cosmosSdkVersion: 'sei-cosmos v0.3.37',
+        consensus: {
+          type: 'sei-tendermint',
+          version: 'v0.3.8'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.3.37'
+        },
+        cosmwasm: {
+          version: 'v0.2.4',
+          repo: 'https://github.com/sei-protocol/sei-wasmd',
+          path: '$HOME/.sei/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          repo: 'https://github.com/sei-protocol/sei-ibc-go',
           version: 'v3.3.2'
         }
       }
     ],
     sdk: {
       type: 'cosmos',
-      repo: 'https://github.com/sei-cosmos',
-      version: 'v0.3.35'
+      repo: 'https://github.com/sei-protocol/sei-cosmos',
+      version: 'v0.3.37'
     },
     ibc: {
       type: 'go',
-      repo: 'https://github.com/sei-ibc-go/v3',
+      repo: 'https://github.com/sei-protocol/sei-ibc-go',
       version: 'v3.3.2'
     },
     cosmwasm: {
@@ -539,6 +519,10 @@ const info: Chain = {
       {
         address: 'https://sei-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://sei.drpc.org',
+        provider: 'dRPC - All chains in one place'
       }
     ],
     rest: [
@@ -644,6 +628,12 @@ const info: Chain = {
       url: 'https://www.seiscan.app/pacific-1',
       txPage: 'https://www.seiscan.app/pacific-1/txs/${txHash}',
       accountPage: 'https://www.seiscan.app/pacific-1/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/sei',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=sei&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=sei&addr=${accountAddress}'
     },
     {
       kind: 'WhisperNode 🤐',

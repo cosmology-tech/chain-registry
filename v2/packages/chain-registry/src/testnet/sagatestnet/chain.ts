@@ -40,7 +40,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.37'
     },
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/sagaxyz/ssc-public-testnet/main/genesis.json'
     },
@@ -58,7 +57,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.37'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: '0.47'

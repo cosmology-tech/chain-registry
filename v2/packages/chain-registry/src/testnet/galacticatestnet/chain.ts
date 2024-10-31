@@ -35,7 +35,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37'
     },
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Galactica-corp/networks/main/galactica_9301-1/genesis.json'
     },
@@ -48,7 +47,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: '0.46'

@@ -889,6 +889,12 @@ const info: Chain = {
       txPage: 'https://haqq.explorers.guru/transaction/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/haqq',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=haqq&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=haqq&addr=${accountAddress}'
+    },
+    {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/haqq',
       txPage: 'https://explorer.nodestake.top/haqq/tx/${txHash}'

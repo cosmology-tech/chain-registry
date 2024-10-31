@@ -123,6 +123,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/decentr/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/decentr',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=decentr&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=decentr&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Decentr-Mainnet',
       txPage: 'https://explorer.stavr.tech/Decentr-Mainnet/tx/${txHash}'

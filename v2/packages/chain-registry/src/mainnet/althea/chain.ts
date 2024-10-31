@@ -86,6 +86,12 @@ const info: Chain = {
         address: 'althea.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       }]
-  }
+  },
+  explorers: [{
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/althea',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=althea&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=althea&addr=${accountAddress}'
+    }]
 };
 export default info;

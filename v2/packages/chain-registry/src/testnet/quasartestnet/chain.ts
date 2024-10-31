@@ -35,8 +35,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.6'
     },
-    cosmwasmVersion: '0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/quasar-finance/questnet/main/v04/definitive-genesis.json'
     },
@@ -49,8 +47,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.27'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45.16'
@@ -68,8 +64,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.6'
         },
-        cosmwasmVersion: '0.45.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47.12'

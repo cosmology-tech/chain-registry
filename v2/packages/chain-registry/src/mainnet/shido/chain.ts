@@ -37,8 +37,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
     binaries: {
       "linux/amd64": 'https://github.com/ShidoGlobal/mainnetShidoNodeSync/releases/download/v2.0.0/ubuntu_22.04.tar.gz'
     },

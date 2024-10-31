@@ -45,7 +45,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.4'
     },
-    cosmwasmEnabled: false,
     language: {
       type: 'go',
       version: '1.20'
@@ -257,6 +256,12 @@ const info: Chain = {
       url: 'https://lava-explorer.w3coins.io/Lava',
       txPage: 'https://lava-explorer.w3coins.io/Lava/tx/${txHash}',
       accountPage: 'https://lava-explorer.w3coins.io/Lava/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/lava',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=lava&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=lava&addr=${accountAddress}'
     },
     {
       kind: 'Stake Village',

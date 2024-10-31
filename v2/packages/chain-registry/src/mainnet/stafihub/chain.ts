@@ -164,6 +164,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/stafihub/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/stafihub',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=stafihub&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=stafihub&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/stafihub',
       txPage: 'https://atomscan.com/stafihub/transactions/${txHash}',

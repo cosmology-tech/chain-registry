@@ -323,6 +323,12 @@ const info: Chain = {
       txPage: 'https://explorer.nodestake.org/zetachain/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/zetachain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=zetachain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=zetachain&addr=${accountAddress}'
+    },
+    {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅',
       url: 'https://explorer.nodeshub.online/zetachain/',
       txPage: 'https://explorer.nodeshub.online/zetachain/tx/${txHash}',

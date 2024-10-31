@@ -34,9 +34,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.2'
     },
-    cosmwasmVersion: 'v0.41.0',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.teritorid/data/wasm',
     genesis: {
       genesisUrl: 'https://github.com/TERITORI/teritori-chain/raw/mainnet/mainnet/teritori-1/genesis.json'
     },
@@ -66,9 +63,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.teritorid/data/wasm',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -301,6 +295,12 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/teritori',
       txPage: 'https://explorer.tcnetwork.io/teritori/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/teritori',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=teritori&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=teritori&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

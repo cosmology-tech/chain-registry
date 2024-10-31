@@ -554,6 +554,64 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'lava',
+      clientId: '07-tendermint-11',
+      connectionId: 'connection-15'
+    },
+    chain2: {
+      chainName: 'noble',
+      clientId: '07-tendermint-120',
+      connectionId: 'connection-115'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-9',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-105',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'mantrachain',
+      clientId: '07-tendermint-1',
+      connectionId: 'connection-1'
+    },
+    chain2: {
+      chainName: 'noble',
+      clientId: '07-tendermint-117',
+      connectionId: 'connection-111'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-1',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-101',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'migaloo',
       clientId: '07-tendermint-113',
       connectionId: 'connection-89'

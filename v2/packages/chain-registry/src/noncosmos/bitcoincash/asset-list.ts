@@ -25,7 +25,11 @@ const info: AssetList = {
             primaryColorHex: '#0AC18E',
             circle: true
           }
-        }]
+        }],
+      socials: {
+        website: 'https://bitcoincash.org/',
+        twitter: 'https://x.com/bitcoincashorg'
+      }
     }]
 };
 export default info;

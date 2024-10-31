@@ -28,15 +28,23 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/CudoVentures/cudos-node',
-    recommendedVersion: 'v1.1.0',
-    compatibleVersions: ['v1.0.1', 'v1.1.0'],
+    recommendedVersion: 'v9.9.9',
+    compatibleVersions: [
+      'v1.0.1',
+      'v1.1.0',
+      'v9.9.9'
+    ],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/CudoVentures/cudos-builders/v1.0.0/docker/config/genesis.mainnet.json'
     },
     versions: [{
-        name: 'v1.1.0',
-        recommendedVersion: 'v1.1.0',
-        compatibleVersions: ['v1.0.1', 'v1.1.0']
+        name: 'v9.9.9',
+        recommendedVersion: 'v9.9.9',
+        compatibleVersions: [
+          'v1.0.1',
+          'v1.1.0',
+          'v9.9.9'
+        ]
       }]
   },
   logoURIs: {
@@ -133,6 +141,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/cudos',
       txPage: 'https://www.mintscan.io/cudos/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/cudos/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/cudos',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=cudos&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=cudos&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

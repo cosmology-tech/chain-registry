@@ -115,6 +115,12 @@ const info: Chain = {
       accountPage: 'https://explorer.selfchain.xyz/selfchain/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/self',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=self&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=self&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Selfchain-Mainnet',
       txPage: 'https://explorer.stavr.tech/Selfchain-Mainnet/tx/${txHash}',

@@ -32,7 +32,6 @@ const info: Chain = {
     recommendedVersion: 'v1',
     compatibleVersions: ['v1'],
     cosmosSdkVersion: '0.46.7',
-    cosmwasmEnabled: true,
     binaries: {
       "linux/amd64": 'https://8ball.info/8ball.tar.gz'
     },
@@ -44,7 +43,6 @@ const info: Chain = {
         recommendedVersion: 'v1',
         compatibleVersions: ['v1'],
         cosmosSdkVersion: '0.46.7',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://8ball.info/8ball.tar.gz'
         },

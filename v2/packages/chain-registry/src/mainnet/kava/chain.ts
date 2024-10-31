@@ -195,6 +195,12 @@ const info: Chain = {
       accountPage: 'https://www.mintscan.io/kava/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/kava',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=kava&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=kava&addr=${accountAddress}'
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/kava',
       txPage: 'https://ezstaking.app/kava/txs/${txHash}',

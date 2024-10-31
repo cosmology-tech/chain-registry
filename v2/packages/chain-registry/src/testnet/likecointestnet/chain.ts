@@ -45,7 +45,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/likecoin/testnets/aeba532ba9162a876a2180e925a49cbedba512e5/likecoin-public-testnet-5/genesis.json'
     },

@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.34.29'
     },
-    cosmwasmVersion: 'v0.31.0',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/noislabs/networks/nois1.final.1/nois-1/genesis.json'
@@ -56,8 +54,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.29'
         },
-        cosmwasmVersion: 'v0.31.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: 'v0.45.15'
@@ -289,6 +285,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/nois',
       txPage: 'https://ezstaking.app/nois/txs/${txHash}',
       accountPage: 'https://ezstaking.app/nois/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nois',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=nois&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=nois&addr=${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',

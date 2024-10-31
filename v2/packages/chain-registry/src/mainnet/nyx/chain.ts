@@ -45,7 +45,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://nymtech.net/genesis/genesis.json'
     },
-    cosmwasmEnabled: true,
     versions: [
       {
         name: 'v0.31.1',
@@ -54,7 +53,6 @@ const info: Chain = {
         proposal: 8,
         recommendedVersion: 'v0.31.1',
         compatibleVersions: ['v0.31.1'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.31.1'
         },
@@ -70,7 +68,6 @@ const info: Chain = {
         proposal: 9,
         recommendedVersion: 'v0.32.0',
         compatibleVersions: ['v0.32.0'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.32.0'
         },
@@ -86,7 +83,6 @@ const info: Chain = {
         proposal: 10,
         recommendedVersion: 'v0.43.0',
         compatibleVersions: ['v0.43.0'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
         },
@@ -154,6 +150,12 @@ const info: Chain = {
       url: 'https://nym.explorers.guru/',
       txPage: 'https://nym.explorers.guru/transaction/${txHash}',
       accountPage: 'https://nym.explorers.guru/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nyx',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=nyx&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=nyx&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

@@ -34,8 +34,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.29',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhye-2/genesis.json'
     },
@@ -48,8 +46,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.46'

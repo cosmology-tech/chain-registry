@@ -416,6 +416,12 @@ const info: Chain = {
       accountPage: 'https://mintscan.io/celestia/address/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/celestia',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=celestia&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=celestia&addr=${accountAddress}'
+    },
+    {
       kind: 'NodeStake',
       url: 'https://explorer.nodestake.top/celestia/',
       txPage: 'https://explorer.nodestake.top/celestia/txs/${txHash}',

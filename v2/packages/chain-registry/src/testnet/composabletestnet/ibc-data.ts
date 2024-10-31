@@ -27,5 +27,29 @@ const info: IBCData[] = [{
           preferred: true
         }
       }]
+  }, {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'composabletestnet',
+      clientId: '07-tendermint-218',
+      connectionId: 'connection-127'
+    },
+    chain2: {
+      chainName: 'prysmdevnet',
+      clientId: '07-tendermint-6',
+      connectionId: 'connection-3'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-50',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-3',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1'
+      }]
   }];
 export default info;

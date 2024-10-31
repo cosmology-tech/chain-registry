@@ -334,6 +334,12 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/shentu/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/shentu',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=shentu&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=shentu&addr=${accountAddress}'
+    },
+    {
       kind: 'bigdipper',
       url: 'https://bigdipper.live/shentu',
       txPage: 'https://bigdipper.live/shentu/transactions/${txHash}',

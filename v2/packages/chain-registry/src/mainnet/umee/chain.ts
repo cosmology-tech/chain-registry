@@ -38,8 +38,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37'
     },
-    cosmwasmVersion: '0.43',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'v1.0.1',
       genesisUrl: 'https://raw.githubusercontent.com/umee-network/mainnet/main/genesis.json'
@@ -165,8 +163,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v3.3.0/umeed-v3.3.0-linux-amd64'
         },
@@ -195,8 +191,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v4.0.0/umeed-v4.0.0-linux-amd64'
         },
@@ -225,8 +219,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v4.0.1/umeed-v4.0.1-linux-amd64'
         },
@@ -255,8 +247,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v4.1.0/umeed-v4.1.0-linux-amd64'
         },
@@ -285,8 +275,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v4.2.0/umeed-v4.2.0-linux-amd64'
         },
@@ -314,8 +302,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v4.3.0/umeed-v4.3.0-linux-amd64'
         },
@@ -343,8 +329,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v4.4.0/umeed-v4.4.0-linux-amd64'
         },
@@ -372,8 +356,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v5.0.1/umeed-v5.0.1-linux-amd64.tar.gz'
         },
@@ -401,8 +383,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v5.1.0/umeed-v5.1.0-linux-amd64.tar.gz'
         },
@@ -430,8 +410,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v5.2.0/umeed-v5.2.0-linux-amd64.tar.gz'
         },
@@ -459,8 +437,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v6.0.2/umeed-v6.0.2-linux-amd64.tar.gz'
         },
@@ -488,8 +464,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v6.1.0/umeed-v6.1.0-linux-amd64.tar.gz'
         },
@@ -517,8 +491,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37'
         },
-        cosmwasmVersion: '0.43',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v6.2.0/umeed-v6.2.0-linux-amd64.tar.gz'
         },
@@ -546,8 +518,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37'
         },
-        cosmwasmVersion: '0.43',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v6.3.0/umeed-v6.3.0-linux-amd64.tar.gz'
         },
@@ -821,6 +791,12 @@ const info: Chain = {
       url: 'https://atomscan.com/umee',
       txPage: 'https://atomscan.com/umee/transactions/${txHash}',
       accountPage: 'https://atomscan.com/umee/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/umee',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=umee&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=umee&addr=${accountAddress}'
     },
     {
       kind: 'Stakeflow',

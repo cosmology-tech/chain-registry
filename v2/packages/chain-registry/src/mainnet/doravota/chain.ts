@@ -120,6 +120,12 @@ const info: Chain = {
       txPage: 'https://mainnet.itrocket.net/doravota/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/doravota',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=doravota&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=doravota&addr=${accountAddress}'
+    },
+    {
       kind: 'Explorers',
       url: 'https://dora.explorers.guru',
       txPage: 'https://dora.explorers.guru/transaction/${txHash}'

@@ -40,8 +40,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/White-Whale-Defi-Platform/migaloo-chain/release/v2.0.x/networks/mainnet/genesis.json'
     },
@@ -59,8 +57,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.27'
         },
-        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
-        cosmwasmEnabled: true,
         nextVersionName: 'v2.2.5',
         sdk: {
           type: 'cosmos',
@@ -87,8 +83,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.29'
         },
-        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3.0.0',
         sdk: {
           type: 'cosmos',
@@ -115,8 +109,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.29'
         },
-        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3.0.2',
         sdk: {
           type: 'cosmos',
@@ -143,8 +135,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.29'
         },
-        cosmwasmVersion: 'v0.30.1-0.20230320091624-f5072b9b04a6',
-        cosmwasmEnabled: true,
         nextVersionName: 'v4.1.0',
         sdk: {
           type: 'cosmos',
@@ -171,8 +161,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -292,6 +280,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/migaloo',
       txPage: 'https://ping.pub/migaloo/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/migaloo',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=migaloo&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=migaloo&addr=${accountAddress}'
     },
     {
       kind: 'Silk Nodes',

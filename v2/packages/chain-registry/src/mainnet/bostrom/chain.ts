@@ -35,12 +35,10 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://cloudflare-ipfs.com/ipfs/QmYubyVNfghD4xCrTFj26zBwrF9s5GJhi1TmxvrwmJCipr'
     },
-    cosmwasmEnabled: true,
     versions: [{
         name: 'v0.3.0',
         recommendedVersion: 'v0.3.0',
         compatibleVersions: ['v0.3.0'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_linux-amd64.tar.gz',
           "darwin/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_darwin-amd64.tar.gz'
@@ -104,6 +102,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/bostrom',
       txPage: 'https://ping.pub/bostrom/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/bostrom',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=bostrom&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=bostrom&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

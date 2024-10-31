@@ -4,7 +4,8 @@ const info: AssetList = {
   chainName: 'beezee',
   assets: [
     {
-      description: 'BeeZee native blockchain',
+      description: 'BeeZee network native coin',
+      extendedDescription: 'Powered by BZE Coin, BeeZee Network offers users access to decentralized services through a variety of applications built on a fast and cost-efficient blockchain.',
       denomUnits: [{
           denom: 'ubze',
           exponent: 0
@@ -28,10 +29,15 @@ const info: AssetList = {
             primaryColorHex: '#079fd7'
           }
         }],
-      typeAsset: 'sdk.coin'
+      typeAsset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      }
     },
     {
       description: 'Vidulum App Token',
+      extendedDescription: 'Vidulum App is your one stop, multi-currency crypto web wallet. Hold, earn, and own your crypto assets in non-custodial fashion from any device, anytime.',
       denomUnits: [{
           denom: 'factory/bze13gzq40che93tgfm9kzmkpjamah5nj0j73pyhqk/uvdl',
           exponent: 0
@@ -55,7 +61,11 @@ const info: AssetList = {
             primaryColorHex: '#3454bc'
           }
         }],
-      typeAsset: 'sdk.coin'
+      typeAsset: 'sdk.coin',
+      socials: {
+        website: 'https://vidulum.app/',
+        twitter: 'https://x.com/VidulumApp'
+      }
     },
     {
       description: 'OSMO from Osmosis',

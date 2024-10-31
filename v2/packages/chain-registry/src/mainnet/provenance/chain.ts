@@ -36,8 +36,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34.29'
     },
-    cosmwasmVersion: '0.30',
-    cosmwasmEnabled: true,
     binaries: {
       "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.17.0/provenance-linux-amd64-v1.17.0.zip'
     },
@@ -159,8 +157,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.26'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.14.1/provenance-linux-amd64-v1.14.1.zip'
         },
@@ -219,8 +215,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.28'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.16.0/provenance-linux-amd64-v1.16.0.zip'
         },
@@ -249,8 +243,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.29'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.17.0/provenance-linux-amd64-v1.17.0.zip'
         },
@@ -442,6 +434,12 @@ const info: Chain = {
       url: 'https://atomscan.com/provenance',
       txPage: 'https://atomscan.com/provenance/transactions/${txHash}',
       accountPage: 'https://atomscan.com/provenance/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/provenance',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=provenance&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=provenance&addr=${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',

@@ -37,7 +37,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.2'
     },
-    cosmwasmVersion: '0.40.0',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/cosmic-horizon/mainnet/main/genesis.json'
     },
@@ -121,7 +120,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: '0.40.0',
         nextVersionName: 'v5.4.1',
         sdk: {
           type: 'cosmos',
@@ -148,7 +146,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: '0.40.0',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -279,6 +276,12 @@ const info: Chain = {
       url: 'https://explorer.theamsolutions.info/qwoyn-main/',
       txPage: 'https://explorer.theamsolutions.info/qwoyn-main/blocks',
       accountPage: 'https://explorer.theamsolutions.info/qwoyn-main/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/qwoyn',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=qwoyn&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=qwoyn&addr=${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',

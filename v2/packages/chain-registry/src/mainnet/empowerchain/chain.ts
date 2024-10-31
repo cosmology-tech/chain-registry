@@ -30,8 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/EmpowerPlastic/empowerchain',
     recommendedVersion: 'v1.0.0',
     compatibleVersions: ['v1.0.0'],
-    cosmwasmVersion: '0.45',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/EmpowerPlastic/empowerchain/raw/main/mainnet/empowerchain-1/genesis.tar.gz'
     },
@@ -206,6 +204,12 @@ const info: Chain = {
     ]
   },
   explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/empowerchain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=empowerchain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=empowerchain&addr=${accountAddress}'
+    },
     {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Empower-Mainnet',

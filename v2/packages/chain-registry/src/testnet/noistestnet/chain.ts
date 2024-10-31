@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.30',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/noislabs/networks/nois-testnet-005/nois-testnet-005/genesis.json'
@@ -56,8 +54,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'

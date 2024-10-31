@@ -38,8 +38,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.31',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/testnet/rila-1/genesis.json'
     },
@@ -48,8 +46,6 @@ const info: Chain = {
         recommendedVersion: 'v0.3.0',
         compatibleVersions: [],
         cosmosSdkVersion: '0.45',
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'

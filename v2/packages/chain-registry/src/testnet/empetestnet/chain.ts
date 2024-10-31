@@ -39,7 +39,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmEnabled: false,
     genesis: {
       name: 'v0.1.0',
       genesisUrl: 'https://raw.githubusercontent.com/empe-io/empe-chain/main/testnet-2/genesis.json'
@@ -55,7 +54,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: 'v0.47'

@@ -43,13 +43,11 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://cdn.discordapp.com/attachments/1002389406650466405/1034968352591986859/updated_genesis2.json'
     },
-    cosmwasmEnabled: true,
     versions: [
       {
         name: 'bouncybulldog',
         recommendedVersion: 'v1.2.1',
         compatibleVersions: ['v1.2.1'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.1/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.1/canined-macOS'
@@ -66,7 +64,6 @@ const info: Chain = {
         height: 2631260,
         recommendedVersion: 'v2.0.1',
         compatibleVersions: ['v2.0.0', 'v2.0.1'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.0.2/canined-macOS'
@@ -83,7 +80,6 @@ const info: Chain = {
         height: 3503000,
         recommendedVersion: 'v2.1.0',
         compatibleVersions: ['v2.1.0'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v2.1.0/canined-macOS'
@@ -100,7 +96,6 @@ const info: Chain = {
         height: 4074200,
         recommendedVersion: 'v3.0.5',
         compatibleVersions: ['v3.0.5'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.0.5/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.0.5/canined-macOS'
@@ -117,7 +112,6 @@ const info: Chain = {
         height: 6095000,
         recommendedVersion: 'v3.1.3',
         compatibleVersions: ['v3.1.1', 'v3.1.3'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.1.3/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.1.3/canined-macOS'
@@ -134,7 +128,6 @@ const info: Chain = {
         height: 6835000,
         recommendedVersion: 'v3.2.2',
         compatibleVersions: ['v3.2.1', 'v3.2.2'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.2.2/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.2.2/canined-macOS'
@@ -151,7 +144,6 @@ const info: Chain = {
         height: 8439000,
         recommendedVersion: 'v3.4.0',
         compatibleVersions: ['v3.4.0'],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.4.0/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v3.4.0/canined-macOS'
@@ -173,7 +165,6 @@ const info: Chain = {
           'v4.0.2',
           'v4.0.3'
         ],
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.3/canined-Linux',
           "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.3/canined-macOS'
@@ -405,6 +396,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/jackal',
       txPage: 'https://ping.pub/jackal/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/jackal',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=jackal&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=jackal&addr=${accountAddress}'
     },
     {
       kind: 'NodeStake',

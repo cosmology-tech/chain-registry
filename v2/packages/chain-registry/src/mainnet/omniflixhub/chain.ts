@@ -21,7 +21,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.45.0',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/OmniFlix/mainnet/main/omniflixhub-1/genesis.json'
     },
@@ -161,7 +160,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
         nextVersionName: 'v4',
         sdk: {
           type: 'cosmos',
@@ -186,7 +184,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -418,12 +415,6 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'ezstaking',
-      url: 'https://ezstaking.app/omniflixhub',
-      txPage: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
-      accountPage: 'https://ezstaking.app/omniflixhub/account/${accountAddress}'
-    },
-    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/omniflix',
       txPage: 'https://www.mintscan.io/omniflix/transactions/${txHash}',
@@ -434,6 +425,18 @@ const info: Chain = {
       url: 'https://atomscan.com/omniflixhub',
       txPage: 'https://atomscan.com/omniflixhub/transactions/${txHash}',
       accountPage: 'https://atomscan.com/omniflixhub/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/omniflixhub',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=omniflixhub&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=omniflixhub&addr=${accountAddress}'
+    },
+    {
+      kind: 'ezstaking',
+      url: 'https://ezstaking.app/omniflixhub',
+      txPage: 'https://ezstaking.app/omniflixhub/txs/${txHash}',
+      accountPage: 'https://ezstaking.app/omniflixhub/account/${accountAddress}'
     },
     {
       kind: 'STAKR.space explorer',

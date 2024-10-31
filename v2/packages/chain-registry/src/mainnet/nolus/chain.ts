@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.38.11'
     },
-    cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/mainnet/pirin-1/genesis.json'
     },
@@ -50,8 +48,6 @@ const info: Chain = {
         recommendedVersion: 'v0.3.0',
         compatibleVersions: ['v0.3.0'],
         cosmosSdkVersion: '0.45',
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.4.0',
         sdk: {
           type: 'cosmos',
@@ -74,8 +70,6 @@ const info: Chain = {
         recommendedVersion: 'v0.4.0',
         compatibleVersions: ['v0.4.0'],
         cosmosSdkVersion: '0.45',
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.4.1',
         sdk: {
           type: 'cosmos',
@@ -102,8 +96,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.27'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -130,8 +122,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.27'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.5.0',
         sdk: {
           type: 'cosmos',
@@ -159,8 +149,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.27'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v5.0.1',
         sdk: {
           type: 'cosmos',
@@ -189,8 +177,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.5.2',
         sdk: {
           type: 'cosmos',
@@ -220,8 +206,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.5.3',
         sdk: {
           type: 'cosmos',
@@ -251,8 +235,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -282,8 +264,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.38.10'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.6.3',
         sdk: {
           type: 'cosmos',
@@ -313,8 +293,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.38.11'
         },
-        cosmwasmVersion: 'neutron-org/wasmd v0.51.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -359,7 +337,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://pirin-cl.nolus.network:26657',
+        address: 'rpc.nolus.network',
         provider: 'NolusProtocol'
       },
       {
@@ -405,7 +383,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://pirin-cl.nolus.network:1317',
+        address: 'lcd.nolus.network',
         provider: 'NolusProtocol'
       },
       {
@@ -451,7 +429,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://pirin-cl.nolus.network:9090',
+        address: 'grpc.nolus.network',
         provider: 'NolusProtocol'
       },
       {
@@ -511,6 +489,12 @@ const info: Chain = {
       kind: 'Nodes Guru Explorer',
       url: 'https://nolus.explorers.guru',
       txPage: 'https://nolus.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nolus',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=nolus&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=nolus&addr=${accountAddress}'
     },
     {
       kind: 'KJ Nodes Explorer',

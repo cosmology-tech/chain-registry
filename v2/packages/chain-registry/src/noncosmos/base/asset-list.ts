@@ -179,7 +179,7 @@ const info: AssetList = {
             chainName: 'bitcoin',
             baseDenom: 'sat'
           },
-          provider: 'Base Bridge'
+          provider: 'Coinbase'
         }],
       coingeckoId: 'coinbase-wrapped-btc',
       images: [{

@@ -26,5 +26,29 @@ const info: IBCData[] = [{
           status: 'live'
         }
       }]
+  }, {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'jackaltestnet2',
+      clientId: '07-tendermint-2',
+      connectionId: 'connection-2'
+    },
+    chain2: {
+      chainName: 'prysmdevnet',
+      clientId: '07-tendermint-17',
+      connectionId: 'connection-10'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-2',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-6',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1'
+      }]
   }];
 export default info;

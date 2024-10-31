@@ -35,8 +35,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.6'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/public-awesome/mainnet/main/stargaze-1/genesis.tar.gz'
     },
@@ -76,8 +74,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v14',
         sdk: {
           type: 'cosmos',
@@ -103,8 +99,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.6'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -355,6 +349,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/stargaze',
       txPage: 'https://ping.pub/stargaze/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/stargaze',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=stargaze&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=stargaze&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

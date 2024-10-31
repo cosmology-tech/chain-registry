@@ -111,6 +111,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/rizon/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/rizon',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=rizon&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=rizon&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/rizon',
       txPage: 'https://atomscan.com/rizon/transactions/${txHash}',

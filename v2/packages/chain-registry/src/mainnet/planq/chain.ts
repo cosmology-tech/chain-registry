@@ -372,6 +372,12 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/planq/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/planq',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=planq&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=planq&addr=${accountAddress}'
+    },
+    {
       kind: 'Indonode',
       url: 'https://explorer.indonode.net/planq',
       txPage: 'https://explorer.indonode.net/planq/tx/${txHash}'

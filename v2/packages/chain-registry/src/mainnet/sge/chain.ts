@@ -463,6 +463,12 @@ const info: Chain = {
       accountPage: 'https://explorer.tcnetwork.io/sge/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/sge',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=sge&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=sge&addr=${accountAddress}'
+    },
+    {
       kind: 'Safe Block',
       url: 'https://explorer.safeblock.space/sge',
       txPage: 'https://explorer.safeblock.space/sge/tx/${txHash}',

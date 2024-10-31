@@ -40,9 +40,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.persistenceCore/wasm',
     binaries: {
       "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.14.0/persistenceCore-v11.14.0-linux-amd64.tar.gz'
     },
@@ -88,9 +85,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.40.2-lsm3',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v9.2.1/persistenceCore-v9.2.1-linux-amd64.tar.gz'
         },
@@ -125,9 +119,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.47.3-lsm5',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v10.0.0/persistenceCore-v10.0.0-linux-amd64.tar.gz'
         },
@@ -162,9 +153,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'persistenceOne/wasmd v0.40.2-lsm3',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v10.3.0/persistenceCore-v10.3.0-linux-amd64.tar.gz'
         },
@@ -202,9 +190,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'persistenceOne/wasmd v0.40.2-lsm3',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v10.4.0/persistenceCore-v10.4.0-linux-amd64.tar.gz'
         },
@@ -242,9 +227,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'persistenceOne/wasmd v0.40.2-lsm3',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v10.5.0/persistenceCore-v10.5.0-linux-amd64.tar.gz'
         },
@@ -282,9 +264,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'persistenceOne/wasmd v0.40.2-lsm3',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.8.1/persistenceCore-v11.8.1-linux-amd64.tar.gz'
         },
@@ -322,9 +301,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.9.0/persistenceCore-v11.9.0-linux-amd64.tar.gz'
         },
@@ -358,9 +334,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.10.0/persistenceCore-v11.10.0-linux-amd64.tar.gz'
         },
@@ -394,9 +367,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.11.0/persistenceCore-v11.11.0-linux-amd64.tar.gz'
         },
@@ -430,9 +400,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.12.0/persistenceCore-v11.12.0-linux-amd64.tar.gz'
         },
@@ -466,9 +433,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.13.0/persistenceCore-v11.13.0-linux-amd64.tar.gz'
         },
@@ -502,9 +466,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.14.0/persistenceCore-v11.14.0-linux-amd64.tar.gz'
         },
@@ -807,6 +768,12 @@ const info: Chain = {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Persistence-Mainnet',
       txPage: 'https://explorer.stavr.tech/Persistence-Mainnet/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/persistence',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=persistence&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=persistence&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

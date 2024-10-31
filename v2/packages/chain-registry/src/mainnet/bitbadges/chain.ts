@@ -8,8 +8,8 @@ const info: Chain = {
   website: 'https://bitbadges.io/',
   prettyName: 'BitBadges',
   chainId: 'bitbadges-1',
-  bech32Prefix: 'cosmos',
   daemonName: 'bitbadgeschaind',
+  bech32Prefix: 'bb',
   nodeHome: '$HOME/.bitbadgeschaind',
   slip44: 118,
   fees: {
@@ -28,23 +28,23 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/bitbadges/bitbadgeschain/',
-    recommendedVersion: 'v1.0-mainnet',
-    compatibleVersions: ['v1.0-mainnet'],
+    recommendedVersion: 'v1.0-bb-mainnet',
+    compatibleVersions: ['v1.0-bb-mainnet'],
     versions: [{
-        name: 'v1.0-mainnet',
+        name: 'v1.0-bb-mainnet',
         binaries: {
-          "linux/amd64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-mainnet/bitbadgeschain-linux-amd64',
-          "linux/arm64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-mainnet/bitbadgeschain-linux-arm64'
+          "linux/amd64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-amd64',
+          "linux/arm64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-arm64'
         },
-        cosmosSdkVersion: 'v0.50.8',
+        cosmosSdkVersion: 'v0.50.10',
         consensus: {
           type: 'cometbft',
-          version: 'v0.38.9',
+          version: 'v0.38.12',
           repo: 'https://github.com/cometbft/cometbft'
         },
         sdk: {
           type: 'cosmos',
-          version: 'v0.50.8'
+          version: 'v0.50.10'
         },
         ibc: {
           type: 'go',
@@ -52,13 +52,13 @@ const info: Chain = {
         }
       }],
     binaries: {
-      "linux/amd64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-mainnet/bitbadgeschain-linux-amd64',
-      "linux/arm64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-mainnet/bitbadgeschain-linux-arm64'
+      "linux/amd64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-amd64',
+      "linux/arm64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-arm64'
     },
-    cosmosSdkVersion: 'v0.50.8',
+    cosmosSdkVersion: 'v0.50.10',
     sdk: {
       type: 'cosmos',
-      version: 'v0.50.8'
+      version: 'v0.50.10'
     },
     ibc: {
       type: 'go',
@@ -66,7 +66,7 @@ const info: Chain = {
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.38.9',
+      version: 'v0.38.12',
       repo: 'https://github.com/cometbft/cometbft'
     },
     genesis: {

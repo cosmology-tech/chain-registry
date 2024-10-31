@@ -59,8 +59,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.6'
     },
-    cosmwasmVersion: 'v0.53.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/quasar-finance/networks/main/quasar-1/definitive-genesis.json'
     },
@@ -74,8 +72,6 @@ const info: Chain = {
           type: 'tendermint',
           version: 'v0.34.26'
         },
-        cosmwasmVersion: '0.27',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1',
         sdk: {
           type: 'cosmos',
@@ -97,8 +93,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.27'
         },
-        cosmwasmVersion: '0.31.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v2',
         sdk: {
           type: 'cosmos',
@@ -120,8 +114,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.6'
         },
-        cosmwasmVersion: '0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3',
         sdk: {
           type: 'cosmos',
@@ -143,8 +135,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.38.11'
         },
-        cosmwasmVersion: 'v0.53.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -321,6 +311,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/quasar',
       txPage: 'https://ezstaking.app/quasar/txs/${txHash}',
       accountPage: 'https://ezstaking.app/quasar/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/quasar',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=quasar&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=quasar&addr=${accountAddress}'
     },
     {
       kind: 'WhisperNode 🤐',

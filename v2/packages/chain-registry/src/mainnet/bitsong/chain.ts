@@ -20,8 +20,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/bitsongofficial/go-bitsong/releases/download/v0.15.0/bitsongd'
     },
     cosmosSdkVersion: 'v0.45.16',
-    cosmwasmVersion: 'v0.33.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-2b/genesis.json'
     },
@@ -30,8 +28,6 @@ const info: Chain = {
         recommendedVersion: 'v0.14.0',
         compatibleVersions: ['v0.14.0'],
         cosmosSdkVersion: '0.45.11',
-        cosmwasmVersion: '0.29.2',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.15.0',
         sdk: {
           type: 'cosmos',
@@ -52,8 +48,6 @@ const info: Chain = {
         recommendedVersion: 'v0.15.0',
         compatibleVersions: ['v0.15.0'],
         cosmosSdkVersion: '0.45.16',
-        cosmwasmVersion: '0.33.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -269,6 +263,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/bitsong',
       txPage: 'https://www.mintscan.io/bitsong/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/bitsong/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/bitsong',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=bitsong&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=bitsong&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

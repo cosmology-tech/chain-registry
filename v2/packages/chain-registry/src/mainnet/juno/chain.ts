@@ -45,8 +45,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.8'
     },
-    cosmwasmVersion: 'v0.46.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://download.dimi.sh/juno-phoenix2-genesis.tar.gz'
     },
@@ -66,8 +64,6 @@ const info: Chain = {
           version: 'v0.34.26',
           repo: 'https://github.com/informalsystems/tendermint'
         },
-        cosmwasmVersion: '0.30.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v14',
         sdk: {
           type: 'cosmos',
@@ -97,8 +93,6 @@ const info: Chain = {
           version: 'v0.34.27',
           tag: 'v0.34.27-mev.18'
         },
-        cosmwasmVersion: '0.31.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v15',
         sdk: {
           type: 'cosmos',
@@ -128,8 +122,6 @@ const info: Chain = {
           version: 'v0.34.27',
           tag: 'v0.34.27-mev.18'
         },
-        cosmwasmVersion: '0.31.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v16',
         sdk: {
           type: 'cosmos',
@@ -158,8 +150,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.40.2',
-        cosmwasmEnabled: true,
         nextVersionName: 'v17',
         sdk: {
           type: 'cosmos',
@@ -188,8 +178,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.41.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v18',
         sdk: {
           type: 'cosmos',
@@ -218,8 +206,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v19',
         sdk: {
           type: 'cosmos',
@@ -248,8 +234,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v21',
         sdk: {
           type: 'cosmos',
@@ -278,8 +262,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v22',
         sdk: {
           type: 'cosmos',
@@ -308,8 +290,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.5'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v23',
         sdk: {
           type: 'cosmos',
@@ -339,8 +319,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.8'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v24',
         sdk: {
           type: 'cosmos',
@@ -369,8 +347,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.8'
         },
-        cosmwasmVersion: 'v0.46.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -730,6 +706,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/juno',
       txPage: 'https://www.mintscan.io/juno/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/juno/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/juno',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=juno&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=juno&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

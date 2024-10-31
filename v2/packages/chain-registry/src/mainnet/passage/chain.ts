@@ -37,7 +37,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.34.27'
     },
-    cosmwasmVersion: 'v0.31.0',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/envadiv/mainnet/main/passage-2/genesis.json'
     },
@@ -89,7 +88,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmwasmVersion: 'v0.31.0',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -326,6 +324,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/passage',
       txPage: 'https://ezstaking.app/passage/txs/${txHash}',
       accountPage: 'https://ezstaking.app/passage/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/passage',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=passage&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=passage&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

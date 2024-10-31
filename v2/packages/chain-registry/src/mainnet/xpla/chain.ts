@@ -36,7 +36,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.5'
     },
-    cosmwasmVersion: 'v0.46.0',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/xpladev/mainnet/main/dimension_37-1/genesis.json'
     },
@@ -50,7 +49,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.21'
         },
-        cosmwasmVersion: '0.28.0',
         nextVersionName: 'Volunteer',
         sdk: {
           type: 'cosmos',
@@ -69,7 +67,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.27'
         },
-        cosmwasmVersion: '0.33.0',
         nextVersionName: 'v1_4',
         sdk: {
           type: 'cosmos',
@@ -88,7 +85,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.29'
         },
-        cosmwasmVersion: 'v0.33.0',
         nextVersionName: 'v1_5',
         sdk: {
           type: 'cosmos',
@@ -115,7 +111,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.5'
         },
-        cosmwasmVersion: 'v0.45.0',
         nextVersionName: 'v1_6',
         sdk: {
           type: 'cosmos',
@@ -142,7 +137,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.5'
         },
-        cosmwasmVersion: 'v0.46.0',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -251,6 +245,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/xpla',
       txPage: 'https://www.mintscan.io/xpla/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/xpla/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/xpla',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=xpla&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=xpla&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

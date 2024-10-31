@@ -192,8 +192,6 @@ const info: Chain = {
         tag: 'v2.0.1',
         height: 12815210,
         cosmosSdkVersion: '0.45.13',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: '0.16.7',
         consensus: {
           type: 'tendermint',
           version: '0.34.24'
@@ -219,8 +217,6 @@ const info: Chain = {
         tag: 'v2.1.1',
         height: 13215800,
         cosmosSdkVersion: '0.45.14',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: '0.30.0',
         consensus: {
           type: 'tendermint',
           version: '0.34.24'
@@ -320,6 +316,12 @@ const info: Chain = {
       url: 'https://atomscan.com/terra',
       txPage: 'https://atomscan.com/terra/transactions/${txHash}',
       accountPage: 'https://atomscan.com/terra/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/terra',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=terra&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=terra&addr=${accountAddress}'
     },
     {
       kind: 'finder',

@@ -37,7 +37,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.34.27'
     },
-    cosmwasmEnabled: false,
     genesis: {
       name: 'v1.0.0',
       genesisUrl: 'https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json'
@@ -54,7 +53,6 @@ const info: Chain = {
           type: 'tendermint',
           version: 'v0.34'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'neon',
         sdk: {
           type: 'cosmos',
@@ -80,7 +78,6 @@ const info: Chain = {
           type: 'tendermint',
           version: 'v0.34'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'radon',
         sdk: {
           type: 'cosmos',
@@ -106,7 +103,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'v3.1.0',
         sdk: {
           type: 'cosmos',
@@ -132,7 +128,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'argon',
         sdk: {
           type: 'cosmos',
@@ -158,7 +153,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'fusion',
         sdk: {
           type: 'cosmos',
@@ -184,7 +178,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'krypton',
         sdk: {
           type: 'cosmos',
@@ -210,7 +203,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'xenon',
         sdk: {
           type: 'cosmos',
@@ -238,7 +230,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmwasmEnabled: false,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -277,27 +268,48 @@ const info: Chain = {
   },
   description: 'The most reliable, secure, and frictionless way to natively issue a digital asset in Cosmos.',
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://noble-rpc.polkachu.com',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://rpc.lavenderfive.com:443/noble',
         provider: 'Lavender.Five Nodes 🐝'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://noble-rpc.owallet.io',
+        provider: 'OWALLET'
+      }
+    ],
+    rest: [
+      {
         address: 'https://noble-api.polkachu.com',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://rest.lavenderfive.com:443/noble',
         provider: 'Lavender.Five Nodes 🐝'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://noble-rest.owallet.io',
+        provider: 'OWALLET'
+      }
+    ],
+    grpc: [
+      {
         address: 'noble-grpc.polkachu.com:21590',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'noble.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      }]
+      },
+      {
+        address: 'noble-grpc.owallet.io:9999',
+        provider: 'OWALLET'
+      }
+    ]
   },
   explorers: [
     {

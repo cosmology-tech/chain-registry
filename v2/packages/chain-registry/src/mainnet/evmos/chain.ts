@@ -720,6 +720,12 @@ const info: Chain = {
       txPage: 'https://evmos.explorers.guru/transaction/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/evmos',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=evmos&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=evmos&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/evmos',
       txPage: 'https://atomscan.com/evmos/transactions/${txHash}',

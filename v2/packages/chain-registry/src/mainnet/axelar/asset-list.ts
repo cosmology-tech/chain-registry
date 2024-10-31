@@ -164,6 +164,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
           theme: {
@@ -1240,6 +1244,10 @@ const info: AssetList = {
         }],
       base: 'yum-wei',
       name: 'Axelar Wrapped YUM',
+      socials: {
+        website: 'https://cacaoswap.app',
+        twitter: 'https://x.com/CacaoSwap'
+      },
       display: 'yum',
       symbol: 'YUM.axl',
       traces: [{
@@ -1382,6 +1390,214 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.png',
           theme: {
             primaryColorHex: '#fc0424'
+          }
+        }]
+    },
+    {
+      description: 'Tether\'s USD stablecoin from Arbitrum on Axelar',
+      denomUnits: [{
+          denom: 'arbitrum-uusdt',
+          exponent: 0
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'arbitrum-uusdt',
+      name: 'Tether USD (Arbitrum)',
+      display: 'usdt',
+      symbol: 'axlUSDT',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'arbitrum',
+            baseDenom: '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9'
+          },
+          provider: 'Axelar'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'arbitrum',
+            baseDenom: '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          theme: {
+            primaryColorHex: '#54ac94'
+          }
+        }]
+    },
+    {
+      description: 'Tether\'s USD stablecoin from Optimism on Axelar',
+      denomUnits: [{
+          denom: 'optimism-uusdt',
+          exponent: 0
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'optimism-uusdt',
+      name: 'Tether USD (Optimism)',
+      display: 'usdt',
+      symbol: 'axlUSDT',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'optimism',
+            baseDenom: '0x94b008aA00579c1307B0EF2c499aD98a8ce58e58'
+          },
+          provider: 'Axelar'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'optimism',
+            baseDenom: '0x94b008aA00579c1307B0EF2c499aD98a8ce58e58'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          theme: {
+            primaryColorHex: '#54ac94'
+          }
+        }]
+    },
+    {
+      description: 'Tether\'s USD stablecoin from Polygon on Axelar',
+      denomUnits: [{
+          denom: 'polygon-uusdt',
+          exponent: 0
+        }, {
+          denom: 'usdt',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'polygon-uusdt',
+      name: 'Tether USD (Polygon)',
+      display: 'usdt',
+      symbol: 'axlUSDT',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'polygon',
+            baseDenom: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F'
+          },
+          provider: 'Axelar'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'polygon',
+            baseDenom: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          theme: {
+            primaryColorHex: '#54ac94'
+          }
+        }]
+    },
+    {
+      description: 'Coinbase Wrapped Bitcoin on Axelar',
+      denomUnits: [{
+          denom: 'cbbtc-satoshi',
+          exponent: 0
+        }, {
+          denom: 'cbbtc',
+          exponent: 8
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'cbbtc-satoshi',
+      name: 'Coinbase Warpped Bitcoin',
+      display: 'cbbtc',
+      symbol: 'axl-cbBTC',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'base',
+            baseDenom: '0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf'
+          },
+          provider: 'Axelar'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'base',
+            baseDenom: '0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/base/images/cbbtc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/base/images/cbbtc.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#0052FF'
+          }
+        }]
+    },
+    {
+      description: 'Fire Bitcoin on Axelar',
+      denomUnits: [{
+          denom: 'fbtc-satoshi',
+          exponent: 0
+        }, {
+          denom: 'fbtc',
+          exponent: 8
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'fbtc-satoshi',
+      name: 'Fire Bitcoin',
+      display: 'fbtc',
+      symbol: 'axlFBTC',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'mantle',
+            baseDenom: '0xC96dE26018A54D51c097160568752c4E3BD6C364'
+          },
+          provider: 'Axelar'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'mantle',
+            baseDenom: '0xC96dE26018A54D51c097160568752c4E3BD6C364'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/mantle/images/fbtc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/mantle/images/fbtc.svg',
+          theme: {
+            circle: false,
+            primaryColorHex: '#8F00FF',
+            backgroundColorHex: '#00000000'
+          }
+        }]
+    },
+    {
+      description: 'Lombard Staked Bitcoin on Axelar',
+      denomUnits: [{
+          denom: 'lbtc-satoshi',
+          exponent: 0
+        }, {
+          denom: 'lbtc',
+          exponent: 8
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'lbtc-satoshi',
+      name: 'Lombard Staked Bitcoin',
+      display: 'lbtc',
+      symbol: 'axlLBTC',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0x8236a87084f8B84306f72007F36F2618A5634494'
+          },
+          provider: 'Axelar'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0x8236a87084f8B84306f72007F36F2618A5634494'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/lbtc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/lbtc.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#162E2F'
           }
         }]
     }

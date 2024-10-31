@@ -117,6 +117,31 @@ const info: IBCData[] = [
           status: 'live'
         }
       }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'osmosistestnet4',
+      clientId: '07-tendermint-4060',
+      connectionId: 'connection-3506'
+    },
+    chain2: {
+      chainName: 'prysmdevnet',
+      clientId: '07-tendermint-3',
+      connectionId: 'connection-1'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-9018',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-1',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1'
+      }]
   }
 ];
 export default info;

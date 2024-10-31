@@ -29,24 +29,22 @@ const info: Chain = {
       }]
   },
   codebase: {
-    recommendedVersion: 'v2.1.6',
-    compatibleVersions: ['v2.1.6'],
+    recommendedVersion: 'v2.2.3',
+    compatibleVersions: ['v2.2.3'],
     cosmosSdkVersion: 'v0.47.10',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.routerd/wasm',
     binaries: {
-      "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.1.6/linux/routerd.tar.gz',
-      "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.1.6/debian/routerd.tar.gz'
+      "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.3/linux/routerd.tar.gz',
+      "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.3/debian/routerd.tar.gz'
     },
     genesis: {
       genesisUrl: 'https://sentry.tm.rpc.routerprotocol.com/genesis'
     },
-    versions: [{
+    versions: [
+      {
         name: 'v2.1.1',
         recommendedVersion: 'v2.1.1',
         compatibleVersions: ['v2.1.1'],
@@ -54,8 +52,6 @@ const info: Chain = {
           "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.1.1/linux/routerd.tar.gz',
           "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.1.1/debian/routerd.tar.gz'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: '2.1.1-nitro-to-2.1.6',
         cosmwasm: {
           version: 'v0.45.0',
@@ -65,7 +61,8 @@ const info: Chain = {
           type: 'go',
           version: 'v7.4.0'
         }
-      }, {
+      },
+      {
         name: '2.1.1-nitro-to-2.1.6',
         tag: 'v2.1.6',
         height: 8649000,
@@ -77,9 +74,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.5'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.routerd/wasm',
         binaries: {
           "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.1.6/linux/routerd.tar.gz',
           "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.1.6/debian/routerd.tar.gz'
@@ -96,8 +90,103 @@ const info: Chain = {
         ibc: {
           type: 'go',
           version: 'v7.4.0'
-        }
-      }],
+        },
+        nextVersionName: '2.1.6-to-2.2.0'
+      },
+      {
+        name: '2.1.6-to-2.2.0',
+        tag: 'v2.2.0',
+        height: 9252000,
+        proposal: 173,
+        recommendedVersion: 'v2.2.0',
+        compatibleVersions: ['v2.2.0'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.5'
+        },
+        binaries: {
+          "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.0/linux/routerd.tar.gz',
+          "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.0/debian/routerd.tar.gz'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          path: '$HOME/.routerd/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        },
+        nextVersionName: '2.2.1-to-2.2.2'
+      },
+      {
+        name: '2.2.1-to-2.2.2',
+        tag: 'v2.2.2',
+        height: 9634000,
+        proposal: 183,
+        recommendedVersion: 'v2.2.2',
+        compatibleVersions: ['v2.2.2'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.5'
+        },
+        binaries: {
+          "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.2/linux/routerd.tar.gz',
+          "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.2/debian/routerd.tar.gz'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          path: '$HOME/.routerd/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        },
+        nextVersionName: '2.2.2-to-2.2.3'
+      },
+      {
+        name: '2.2.2-to-2.2.3',
+        tag: 'v2.2.3',
+        height: 10133000,
+        proposal: 186,
+        recommendedVersion: 'v2.2.3',
+        compatibleVersions: ['v2.2.3'],
+        cosmosSdkVersion: 'v0.47.10',
+        consensus: {
+          type: 'cometbft',
+          version: '0.37.5'
+        },
+        binaries: {
+          "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.3/linux/routerd.tar.gz',
+          "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.3/debian/routerd.tar.gz'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.47.10'
+        },
+        cosmwasm: {
+          version: 'v0.45.0',
+          path: '$HOME/.routerd/wasm',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v7.4.0'
+        },
+        nextVersionName: ''
+      }
+    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.10'
@@ -190,6 +279,12 @@ const info: Chain = {
       kind: 'Router Explorer',
       url: 'https://router.explorers.guru/',
       txPage: 'https://router.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/routerchain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=routerchain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=routerchain&addr=${accountAddress}'
     },
     {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',

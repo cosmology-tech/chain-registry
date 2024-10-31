@@ -42,8 +42,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.2'
     },
-    cosmwasmVersion: 'v0.40.1',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'beta-v1',
       genesisUrl: 'https://raw.githubusercontent.com/UnUniFi/network/main/launch/ununifi-beta-v1/genesis.json'
@@ -61,8 +59,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.40',
-        cosmwasmEnabled: true,
         nextVersionName: 'v2_1',
         sdk: {
           type: 'cosmos',
@@ -92,8 +88,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmVersion: '0.40',
-        cosmwasmEnabled: true,
         nextVersionName: 'v2_2',
         sdk: {
           type: 'cosmos',
@@ -123,8 +117,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.1'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3',
         sdk: {
           type: 'cosmos',
@@ -155,8 +147,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.1'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3_1',
         sdk: {
           type: 'cosmos',
@@ -187,8 +177,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.1'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3_2_1',
         sdk: {
           type: 'cosmos',
@@ -219,8 +207,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.1'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: 'v3_2_2',
         sdk: {
           type: 'cosmos',
@@ -251,8 +237,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.1'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: 'v4',
         sdk: {
           type: 'cosmos',
@@ -283,8 +267,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.1'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: 'v4_0_1',
         sdk: {
           type: 'cosmos',
@@ -315,8 +297,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.1'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: 'v4_0_2',
         sdk: {
           type: 'cosmos',
@@ -347,8 +327,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.40.1',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -473,6 +451,12 @@ const info: Chain = {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/ununifi',
       txPage: 'https://explorer.nodestake.top/ununifi/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/ununifi',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=ununifi&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=ununifi&addr=${accountAddress}'
     },
     {
       kind: 'Nodeist Explorer',

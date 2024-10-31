@@ -45,8 +45,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.44.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/NibiruChain/Networks/main/Testnet/nibiru-testnet-2/genesis.json'
     },
@@ -61,9 +59,6 @@ const info: Chain = {
           version: 'v0.37.2'
         },
         cosmosSdkVersion: 'v0.45.5',
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.nibid/data/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_amd64.tar.gz',
           "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_arm64.tar.gz'
@@ -100,8 +95,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',

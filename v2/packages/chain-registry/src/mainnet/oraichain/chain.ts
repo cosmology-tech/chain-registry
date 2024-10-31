@@ -29,42 +29,66 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/oraichain/orai',
-    recommendedVersion: 'v0.41.7',
-    compatibleVersions: [
-      'v0.41.3',
-      'v0.41.4',
-      'v0.41.6',
-      'v0.41.7'
-    ],
-    cosmwasmVersion: '0.30.2',
-    cosmwasmEnabled: true,
+    recommendedVersion: 'v0.42.4',
+    compatibleVersions: ['v0.42.4'],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/oraichain/oraichain-static-files/master/genesis.json'
     },
-    versions: [{
+    versions: [
+      {
         name: 'v0.40',
+        height: 2098755,
+        proposal: 32,
         recommendedVersion: 'v0.40.3',
-        compatibleVersions: ['v0.40.3'],
-        binaries: {
-          "linux/amd64": 'https://orai.s3.us-east-2.amazonaws.com/v0.40.3/oraid'
-        },
-        nextVersionName: 'v0.41'
-      }, {
-        name: 'v0.41',
-        height: 12353514,
-        proposal: 185,
-        recommendedVersion: 'v0.41.7',
         compatibleVersions: [
+          'v0.40.0',
+          'v0.40.1',
+          'v0.40.2',
+          'v0.40.3'
+        ],
+        nextVersionName: 'v0.41'
+      },
+      {
+        name: 'v0.41',
+        height: 9058418,
+        proposal: 116,
+        recommendedVersion: 'v0.41.8',
+        compatibleVersions: [
+          'v0.41.0',
+          'v0.41.1',
+          'v0.41.2',
           'v0.41.3',
           'v0.41.4',
           'v0.41.5',
-          'v0.41.7'
+          'v0.41.6',
+          'v0.41.7',
+          'v0.41.8'
         ],
         previousVersionName: 'v0.40',
+        nextVersionName: 'v0.42'
+      },
+      {
+        name: 'v0.42',
+        height: 21627705,
+        proposal: 234,
+        recommendedVersion: 'v0.42.4',
+        compatibleVersions: [
+          'v0.42.0',
+          'v0.42.1',
+          'v0.42.2',
+          'v0.42.3',
+          'v0.42.4'
+        ],
+        previousVersionName: 'v0.41',
         nextVersionName: ''
-      }],
+      }
+    ],
     cosmwasm: {
-      version: '0.30.2',
+      version: '0.33.0',
       enabled: true
     }
   },
@@ -117,6 +141,10 @@ const info: Chain = {
       {
         address: 'https://orai-rpc.imdev.app',
         provider: 'imORAI'
+      },
+      {
+        address: 'https://orai-rpc.owallet.io',
+        provider: 'OWALLET'
       }
     ],
     rest: [
@@ -147,6 +175,10 @@ const info: Chain = {
       {
         address: 'https://oraichain-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://orai-rest.owallet.io',
+        provider: 'OWALLET'
       }
     ],
     grpc: [
@@ -177,6 +209,10 @@ const info: Chain = {
       {
         address: 'oraichain-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'orai-grpc.owallet.io:9999',
+        provider: 'OWALLET'
       }
     ]
   },
@@ -201,6 +237,12 @@ const info: Chain = {
       url: 'https://atomscan.com/orai',
       txPage: 'https://atomscan.com/orai/transactions/${txHash}',
       accountPage: 'https://atomscan.com/orai/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/oraichain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=oraichain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=oraichain&addr=${accountAddress}'
     },
     {
       kind: 'KonsorTech Explorer',

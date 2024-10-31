@@ -43,7 +43,6 @@ const info: Chain = {
       version: 'v0.37.2',
       repo: 'https://github.com/osmosis-labs/cometbft'
     },
-    cosmwasmEnabled: false,
     language: {
       type: 'go',
       version: '1.21'
@@ -177,6 +176,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/saga',
       txPage: 'https://www.mintscan.io/saga/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/saga/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/saga',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=saga&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=saga&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

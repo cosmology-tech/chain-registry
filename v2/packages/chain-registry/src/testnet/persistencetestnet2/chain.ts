@@ -59,8 +59,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.37'
         },
-        cosmwasmVersion: '0.40',
-        cosmwasmEnabled: true,
         nextVersionName: 'v8.1.0',
         sdk: {
           type: 'cosmos',
@@ -85,8 +83,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.37'
         },
-        cosmwasmVersion: '0.40',
-        cosmwasmEnabled: true,
         nextVersionName: 'v9',
         sdk: {
           type: 'cosmos',
@@ -113,8 +109,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.37'
         },
-        cosmwasmVersion: '0.40',
-        cosmwasmEnabled: true,
         nextVersionName: 'v9.1.0',
         sdk: {
           type: 'cosmos',
@@ -141,9 +135,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.40.2',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.persistenceCore/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v9.1.1/persistenceCore-v9.1.1-linux-amd64.tar.gz'
         },

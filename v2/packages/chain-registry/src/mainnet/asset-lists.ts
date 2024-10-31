@@ -16,6 +16,7 @@ import * as _andromeda from './andromeda';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
+import * as _atomone from './atomone';
 import * as _aura from './aura';
 import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
@@ -57,6 +58,7 @@ import * as _desmos from './desmos';
 import * as _dhealth from './dhealth';
 import * as _dig from './dig';
 import * as _doravota from './doravota';
+import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
 import * as _dymension from './dymension';
 import * as _dyson from './dyson';
@@ -106,6 +108,7 @@ import * as _loyal from './loyal';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
+import * as _mantrachain from './mantrachain';
 import * as _mars from './mars';
 import * as _mayachain from './mayachain';
 import * as _medasdigital from './medasdigital';
@@ -211,6 +214,7 @@ const assetList: AssetList[] = [
   _archway.assetList,
   _arkh.assetList,
   _assetmantle.assetList,
+  _atomone.assetList,
   _aura.assetList,
   _aura1.assetList,
   _axelar.assetList,
@@ -252,6 +256,7 @@ const assetList: AssetList[] = [
   _dhealth.assetList,
   _dig.assetList,
   _doravota.assetList,
+  _dungeon.assetList,
   _dydx.assetList,
   _dymension.assetList,
   _dyson.assetList,
@@ -301,6 +306,7 @@ const assetList: AssetList[] = [
   _lumenx.assetList,
   _lumnetwork.assetList,
   _mande.assetList,
+  _mantrachain.assetList,
   _mars.assetList,
   _mayachain.assetList,
   _medasdigital.assetList,

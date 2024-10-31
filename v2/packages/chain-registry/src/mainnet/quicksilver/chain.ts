@@ -51,8 +51,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.2.10',
         sdk: {
           type: 'cosmos',
@@ -81,8 +79,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.2.13',
         sdk: {
           type: 'cosmos',
@@ -110,8 +106,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.2.15',
         sdk: {
           type: 'cosmos',
@@ -140,8 +134,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.29'
         },
-        cosmwasmVersion: '0.29',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.2.17',
         sdk: {
           type: 'cosmos',
@@ -170,8 +162,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.29'
         },
-        cosmwasmVersion: 'v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.4.5',
         sdk: {
           type: 'cosmos',
@@ -201,8 +191,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.29'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.4.6',
         sdk: {
           type: 'cosmos',
@@ -233,8 +221,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.29'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.4.7',
         sdk: {
           type: 'cosmos',
@@ -265,8 +251,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.29'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.5.0',
         sdk: {
           type: 'cosmos',
@@ -297,8 +281,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.29'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.5.1',
         sdk: {
           type: 'cosmos',
@@ -329,8 +311,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.29'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.5.3',
         sdk: {
           type: 'cosmos',
@@ -361,8 +341,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.32'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.5.4',
         sdk: {
           type: 'cosmos',
@@ -393,8 +371,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.32'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.5.5',
         sdk: {
           type: 'cosmos',
@@ -425,8 +401,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.32'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.5.6',
         sdk: {
           type: 'cosmos',
@@ -457,8 +431,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.32'
         },
-        cosmwasmVersion: 'notional-labs/wasmd v0.29.0-sdk46.0.20221114145317-d6e67fd50956',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.6.1',
         sdk: {
           type: 'cosmos',
@@ -834,6 +806,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/quicksilver',
       txPage: 'https://ezstaking.app/quicksilver/txs/${txHash}',
       accountPage: 'https://ezstaking.app/quicksilver/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/quicksilver',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=quicksilver&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=quicksilver&addr=${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 explorer',

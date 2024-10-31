@@ -251,6 +251,12 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/fetchai/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/fetchhub',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=fetchhub&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=fetchhub&addr=${accountAddress}'
+    },
+    {
       kind: 'bigdipper',
       url: 'https://fetch-explorer.teasel.org',
       txPage: 'https://fetch-explorer.teasel.org/transactions/${txHash}'

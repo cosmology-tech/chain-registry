@@ -399,6 +399,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/akash-network/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/akash',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=akash&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=akash&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/akash',
       txPage: 'https://atomscan.com/akash/transactions/${txHash}',

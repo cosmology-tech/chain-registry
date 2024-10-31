@@ -226,6 +226,12 @@ const info: Chain = {
       txPage: 'https://explorer.nodestake.top/rebus/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/rebus',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=rebus&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=rebus&addr=${accountAddress}'
+    },
+    {
       kind: 'BccNodes',
       url: 'https://explorer.bccnodes.com/rebus-M',
       txPage: 'https://explorer.bccnodes.com/rebus-M/tx/${txHash}'

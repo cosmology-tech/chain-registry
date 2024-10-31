@@ -375,6 +375,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/cheqd/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/cheqd',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=cheqd&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=cheqd&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/Cheqd-Mainnet',
       txPage: 'https://explorer.stavr.tech/Cheqd-Mainnet/tx/${txHash}'

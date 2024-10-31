@@ -290,6 +290,12 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/sentinel/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/sentinel',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=sentinel&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=sentinel&addr=${accountAddress}'
+    },
+    {
       kind: 'Roomit',
       url: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet',
       txPage: 'https://explorer.tendermint.roomit.xyz/sentinel-mainnet/transactions/${txHash}',

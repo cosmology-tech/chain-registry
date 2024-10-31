@@ -43,8 +43,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.37'
     },
-    cosmwasmVersion: '0.30',
-    cosmwasmEnabled: false,
     genesis: {
       name: 'v0.21.1.2',
       genesisUrl: 'https://raw.githubusercontent.com/lavanet/lava-config/main/testnet-2/genesis_json/genesis.json'
@@ -145,7 +143,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.37'
         },
-        cosmwasmEnabled: false,
         binaries: {
           "linux/amd64": 'https://github.com/lavanet/lava/releases/download/v1.0.1/lavad-v1.0.1-linux-amd64'
         },

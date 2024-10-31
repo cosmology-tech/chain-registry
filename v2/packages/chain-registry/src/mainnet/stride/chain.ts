@@ -719,6 +719,12 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/stride/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/stride',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=stride&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=stride&addr=${accountAddress}'
+    },
+    {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/stride',
       accountPage: 'https://stakeflow.io/stride/accounts/${accountAddress}'

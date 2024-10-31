@@ -219,6 +219,12 @@ const info: Chain = {
       accountPage: 'https://seda.explorers.guru/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/seda',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=seda&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=seda&addr=${accountAddress}'
+    },
+    {
       kind: 'WhisperNode 🤐',
       url: 'https://mainnet.whispernode.com/seda',
       txPage: 'https://mainnet.whispernode.com/seda/tx/${txHash}',

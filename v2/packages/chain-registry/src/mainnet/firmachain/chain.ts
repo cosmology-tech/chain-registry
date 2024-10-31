@@ -126,6 +126,12 @@ const info: Chain = {
   },
   explorers: [
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/firmachain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=firmachain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=firmachain&addr=${accountAddress}'
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/firmachain',
       txPage: 'https://ezstaking.app/firmachain/txs/${txHash}',

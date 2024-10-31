@@ -157,6 +157,12 @@ const info: Chain = {
       accountPage: 'https://explorer.govgen.io/govgen/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/govgen',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=govgen&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=govgen&addr=${accountAddress}'
+    },
+    {
       kind: 'ping.pub',
       url: 'https://explorer.nodeshub.online/govgen',
       txPage: 'https://explorer.nodeshub.online/govgen/tx/${txHash}',

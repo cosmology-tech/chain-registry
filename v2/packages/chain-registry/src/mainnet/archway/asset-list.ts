@@ -43,6 +43,58 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'BackBone Labs Liquid Staked Archway',
+      typeAsset: 'cw20',
+      address: 'archway12yurzx8zynv3ck7uh4tucre48tqsm4fac4hfk9p3l24qs2cn08dqr684cg',
+      denomUnits: [{
+          denom: 'archway12yurzx8zynv3ck7uh4tucre48tqsm4fac4hfk9p3l24qs2cn08dqr684cg',
+          exponent: 0
+        }, {
+          denom: 'bARCH',
+          exponent: 18
+        }],
+      base: 'archway12yurzx8zynv3ck7uh4tucre48tqsm4fac4hfk9p3l24qs2cn08dqr684cg',
+      name: 'BackBone Labs Liquid Staked Archway',
+      display: 'bARCH',
+      symbol: 'bARCH',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/barch.png'
+      },
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'archway',
+            baseDenom: 'aarch'
+          },
+          provider: 'BackBoneLabs'
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/barch.png'
+        }]
+    },
+    {
+      description: 'Architects Token',
+      typeAsset: 'cw20',
+      address: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      denomUnits: [{
+          denom: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+          exponent: 0
+        }, {
+          denom: 'TOKN',
+          exponent: 18
+        }],
+      base: 'archway16kxu278xtwa9ql20yhgk9smk2k6ke74hsxeesf36c9dhxqc5zyksh8ykwu',
+      name: 'Architects Token',
+      display: 'TOKN',
+      symbol: 'TOKN',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/tokn.png'
+        }]
+    },
+    {
       description: 'ERIS liquid staked ARCH',
       typeAsset: 'cw20',
       address: 'archway1fwurjg7ah4v7hhs6xsc3wutqpvmahrfhns285s0lt34tgfdhplxq6m8xg5',

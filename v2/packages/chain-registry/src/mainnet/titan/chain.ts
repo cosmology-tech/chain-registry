@@ -37,8 +37,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.4'
     },
-    cosmwasmVersion: '0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/titantkx/titan-mainnet/main/public/genesis.json'
     },
@@ -53,8 +51,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.4'
         },
-        cosmwasmVersion: '0.45.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47.6',

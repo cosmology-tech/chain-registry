@@ -686,6 +686,22 @@ const info: IBCData[] = [
           status: 'live',
           preferred: true
         }
+      },
+      {
+        chain1: {
+          channelId: 'channel-5389',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-554',
+          portId: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }
     ]
   },

@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.4'
     },
-    cosmwasmVersion: '0.42.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://images.aura.network/aura_6321-3-genesis.tar.gz'
     },
@@ -53,8 +51,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.4'
         },
-        cosmwasmVersion: '0.42.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',

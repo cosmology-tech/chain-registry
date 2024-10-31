@@ -29,8 +29,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.38.11'
     },
-    cosmwasmVersion: '0.51',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis.json'
     },
@@ -45,8 +43,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'
@@ -70,8 +66,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34.27'
         },
-        cosmwasmVersion: '0.31',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'
@@ -95,8 +89,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.45',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47'
@@ -120,8 +112,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.4'
         },
-        cosmwasmVersion: '0.45',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47'
@@ -145,8 +135,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.38.7'
         },
-        cosmwasmVersion: '0.51',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.50'
@@ -170,8 +158,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.38.11'
         },
-        cosmwasmVersion: '0.51',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.50'
@@ -195,8 +181,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.38.11'
         },
-        cosmwasmVersion: '0.51',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.50'

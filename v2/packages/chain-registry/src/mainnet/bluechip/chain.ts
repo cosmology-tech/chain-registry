@@ -33,7 +33,6 @@ const info: Chain = {
     recommendedVersion: 'v1',
     compatibleVersions: ['v1'],
     cosmosSdkVersion: '0.47.11',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/Bluechip23/bluechip/blob/main/genesis.json'
     },
@@ -42,7 +41,6 @@ const info: Chain = {
         recommendedVersion: 'v1',
         compatibleVersions: ['v1'],
         cosmosSdkVersion: '0.47.11',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47.11'

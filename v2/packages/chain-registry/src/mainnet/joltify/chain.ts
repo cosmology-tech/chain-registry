@@ -38,7 +38,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.3'
     },
-    cosmwasmEnabled: false,
     binaries: {
       "linux/amd64": 'https://gitlab.com/api/v4/projects/42057472/packages/generic/joltify-linux-amd64-v0.1.0-rc1/v0.1.0-rc1/joltify'
     },
@@ -51,7 +50,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.3'
         },
-        cosmwasmEnabled: false,
         binaries: {
           "linux/amd64": 'https://gitlab.com/api/v4/projects/42057472/packages/generic/joltify-linux-amd64-v0.1.0-rc1/v0.1.0-rc1/joltify'
         },
@@ -124,17 +122,26 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'big dipper',
       url: 'https://explorer.joltify.io/joltify',
       txPage: 'https://explorer.joltify.io/joltify/transactions/${txHash}',
       accountPage: 'https://explorer.joltify.io/joltify/accounts/${accountAddress}'
-    }, {
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/joltify',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=joltify&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=joltify&addr=${accountAddress}'
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/joltify',
       txPage: 'https://explorer.whenmoonwhenlambo.money/joltify/tx/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/joltify/account/${accountAddress}'
-    }],
+    }
+  ],
   keywords: ['rwa', 'lending']
 };
 export default info;

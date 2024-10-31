@@ -1076,6 +1076,14 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png'
       },
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'kujira',
+            baseDenom: 'ukuji'
+          },
+          provider: 'BackBoneLabs'
+        }],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/bKUJI.png',
           theme: {
@@ -2491,6 +2499,57 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/boon.svg'
         }],
       typeAsset: 'sdk.coin'
+    },
+    {
+      typeAsset: 'ics20',
+      denomUnits: [{
+          denom: 'ibc/507BE7E33F06026652F519AD4D36716251F2D34DF04514A905D3B19A7D8130F7',
+          exponent: 0,
+          aliases: ['yum-wei']
+        }, {
+          denom: 'yum',
+          exponent: 18
+        }],
+      base: 'ibc/507BE7E33F06026652F519AD4D36716251F2D34DF04514A905D3B19A7D8130F7',
+      name: 'Axelar Wrapped YUM',
+      socials: {
+        website: 'https://cacaoswap.app',
+        twitter: 'https://x.com/CacaoSwap'
+      },
+      display: 'yum',
+      symbol: 'YUM.axl',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6'
+          },
+          provider: 'Axelar'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'axelar',
+            baseDenom: 'yum-wei',
+            channelId: 'channel-14'
+          },
+          chain: {
+            channelId: 'channel-9',
+            path: 'transfer/channel-9/yum-wei'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xcE682c89C63d2850Cb2ca898E44D6c7c30d897a6'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yum.png',
+          theme: {
+            primaryColorHex: '#33a6e7'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/yum.png'
+      }
     }
   ]
 };

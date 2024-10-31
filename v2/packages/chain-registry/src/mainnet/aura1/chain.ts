@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.2'
     },
-    cosmwasmVersion: '0.42.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/aura-nw/mainnet-artifacts/main/xstaxy-1/genesis.json'
     },
@@ -70,8 +68,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.41.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.7.2',
         sdk: {
           type: 'cosmos',
@@ -93,8 +89,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.41.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.7.3',
         sdk: {
           type: 'cosmos',
@@ -120,8 +114,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.42.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.47.5'

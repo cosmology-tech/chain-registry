@@ -29,8 +29,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.28',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/public-awesome/testnets/blob/main/elgafar-1/genesis/genesis.tar.gz?raw=true'
     },
@@ -43,8 +41,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.28',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'

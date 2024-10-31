@@ -175,6 +175,12 @@ const info: Chain = {
       accountPage: 'https://explorer.tcnetwork.io/tenet/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/tenet',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=tenet&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=tenet&addr=${accountAddress}'
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/tenet',
       txPage: 'https://explorer.whenmoonwhenlambo.money/tenet/tx/${txHash}',

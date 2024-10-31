@@ -45,8 +45,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.5'
     },
-    cosmwasmVersion: 'v0.44.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/NibiruChain/Networks/main/Mainnet/cataclysm-1/genesis.json'
     },
@@ -62,9 +60,6 @@ const info: Chain = {
           version: 'v0.37.2'
         },
         cosmosSdkVersion: 'v0.45.5',
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.nibid/data/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_amd64.tar.gz',
           "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_arm64.tar.gz'
@@ -102,8 +97,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.0.2',
         sdk: {
           type: 'cosmos',
@@ -136,8 +129,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.0.3',
         sdk: {
           type: 'cosmos',
@@ -170,8 +161,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.1.0',
         sdk: {
           type: 'cosmos',
@@ -204,8 +193,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.2.0',
         sdk: {
           type: 'cosmos',
@@ -238,8 +225,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.3.0',
         sdk: {
           type: 'cosmos',
@@ -272,8 +257,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.4.0',
         sdk: {
           type: 'cosmos',
@@ -306,8 +289,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.5.0',
         sdk: {
           type: 'cosmos',
@@ -340,8 +321,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.5'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -561,6 +540,12 @@ const info: Chain = {
       url: 'https://nibiru.explorers.guru/',
       txPage: 'https://nibiru.explorers.guru/transaction/${txHash}',
       accountPage: 'https://nibiru.explorers.guru/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/nibiru',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=nibiru&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=nibiru&addr=${accountAddress}'
     },
     {
       kind: 'NodeStake',

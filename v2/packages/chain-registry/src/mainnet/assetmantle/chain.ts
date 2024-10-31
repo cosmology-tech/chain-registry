@@ -154,6 +154,12 @@ const info: Chain = {
       txPage: 'https://explorer.postcapitalist.io/AssetMantle/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/assetmantle',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=assetmantle&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=assetmantle&addr=${accountAddress}'
+    },
+    {
       kind: 'other',
       url: 'https://explorer.assetmantle.one',
       txPage: 'https://explorer.assetmantle.one/transactions/${txHash}'

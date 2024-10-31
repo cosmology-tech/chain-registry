@@ -299,8 +299,8 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/Switcheo/carbon-bootstrap',
-    recommendedVersion: 'v2.48.0',
-    compatibleVersions: ['v2.48.0'],
+    recommendedVersion: 'v2.53.0',
+    compatibleVersions: ['v2.53.0'],
     binaries: {
       "linux/amd64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.48.0/carbond-mainnet.linux-amd64.tar.gz',
       "linux/arm64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.48.0/carbond-mainnet.linux-arm64.tar.gz'
@@ -656,6 +656,30 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.51.1/carbond-mainnet.linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.51.1/carbond-mainnet.linux-arm64.tar.gz'
         },
+        nextVersionName: 'v2.52.0'
+      },
+      {
+        name: 'v2.52.0',
+        proposal: 373,
+        height: 63916741,
+        recommendedVersion: 'v2.52.0',
+        compatibleVersions: ['v2.52.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.52.0/carbond-mainnet.linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.52.0/carbond-mainnet.linux-arm64.tar.gz'
+        },
+        nextVersionName: 'v2.53.0'
+      },
+      {
+        name: 'v2.53.0',
+        proposal: 374,
+        height: 63957661,
+        recommendedVersion: 'v2.53.0',
+        compatibleVersions: ['v2.53.0'],
+        binaries: {
+          "linux/amd64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.53.0/carbond-mainnet.linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.53.0/carbond-mainnet.linux-arm64.tar.gz'
+        },
         nextVersionName: ''
       }
     ]
@@ -719,6 +743,12 @@ const info: Chain = {
       kind: 'ping.pub',
       url: 'https://ping.pub/carbon',
       txPage: 'https://ping.pub/carbon/tx/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/carbon',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=carbon&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=carbon&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

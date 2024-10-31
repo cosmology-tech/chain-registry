@@ -143,8 +143,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.5'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/Team-Kujira/networks/raw/master/mainnet/kaiyo-1.json'
     },
@@ -223,8 +221,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.0.2',
         sdk: {
           type: 'cosmos',
@@ -246,8 +242,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.1.0',
         sdk: {
           type: 'cosmos',
@@ -269,8 +263,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.5'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -490,6 +482,12 @@ const info: Chain = {
       kind: 'explorers.guru',
       url: 'https://kujira.explorers.guru',
       txPage: 'https://kujira.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/kujira',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=kujira&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=kujira&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

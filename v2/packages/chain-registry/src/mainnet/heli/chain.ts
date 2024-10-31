@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.2'
     },
-    cosmwasmVersion: '0.41.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Heli-Chain/heli/main/genesis.json'
     },
@@ -53,8 +51,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: '0.42.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -97,6 +93,11 @@ const info: Chain = {
       url: 'https://explorer.helichain.com/Helichain',
       txPage: 'https://explorer.helichain.com/Helichain/tx/${txHash}',
       accountPage: 'https://explorer.helichain.com/Helichain/account/${accountAddress}'
+    }, {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/heli',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=heli&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=heli&addr=${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/heli/images/heli.png',

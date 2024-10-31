@@ -39,9 +39,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.desmos/data/wasm',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/desmos-labs/mainnet/main/genesis.json'
     },
@@ -113,9 +110,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.desmos/data/wasm',
         nextVersionName: 'v7.1.0',
         sdk: {
           type: 'cosmos',
@@ -147,9 +141,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.desmos/data/wasm',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',

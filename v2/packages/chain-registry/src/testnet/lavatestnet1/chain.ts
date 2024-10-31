@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.30',
-    cosmwasmEnabled: false,
     genesis: {
       name: 'v0.3.0',
       genesisUrl: 'https://raw.githubusercontent.com/lavanet/lava-config/main/testnet-1/genesis_json/genesis.json'
@@ -120,7 +118,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: '0.45'

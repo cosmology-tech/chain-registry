@@ -39,9 +39,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.2'
     },
-    cosmwasmVersion: 'v0.41.0',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.dhealth/wasm',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dhealthproject/mainnet/main/genesis.json'
     },
@@ -57,9 +54,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.dhealth/wasm',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -139,17 +133,26 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/dhealth',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=dhealth&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=dhealth&addr=${accountAddress}'
+    },
+    {
       kind: 'nodestake',
       url: 'https://explorer.nodestake.org/dhealth',
       txPage: 'https://explorer.nodestake.org/dhealth/tx/${txHash}',
       accountPage: 'https://explorer.nodestake.org/dhealth/account/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️',
       url: 'https://explorer.nodeshub.online/dhealth/',
       txPage: 'https://explorer.nodeshub.online/dhealth/tx/${txHash}',
       accountPage: 'https://explorer.nodeshub.online/dhealth/accounts/${accountAddress}'
-    }],
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.svg',

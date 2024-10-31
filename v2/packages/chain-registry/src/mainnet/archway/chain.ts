@@ -45,8 +45,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.5'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz'
     },
@@ -62,9 +60,6 @@ const info: Chain = {
           version: 'v0.34.27'
         },
         cosmosSdkVersion: 'v0.45.16',
-        cosmwasmVersion: 'v0.32.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.archway/data/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v1.0.1/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v1.0.1/archwayd_linux_arm64'
@@ -96,9 +91,6 @@ const info: Chain = {
           version: 'v0.34.27'
         },
         cosmosSdkVersion: 'v0.45.16',
-        cosmwasmVersion: 'v0.32.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.archway/data/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v2.0.0/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v2.0.0/archwayd_linux_arm64'
@@ -129,9 +121,6 @@ const info: Chain = {
           version: 'v0.34.27'
         },
         cosmosSdkVersion: 'v0.45.16',
-        cosmwasmVersion: 'v0.33.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.archway/data/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_linux_arm64',
@@ -164,9 +153,6 @@ const info: Chain = {
           version: 'v0.37.4'
         },
         cosmosSdkVersion: 'v0.47.10',
-        cosmwasmVersion: 'archway-network/archway-wasmd v0.45.0-archway',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.archway/data/wasm',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_linux_arm64',
@@ -207,8 +193,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.5'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: 'v0.47.11'
@@ -543,6 +527,12 @@ const info: Chain = {
       url: 'https://archway.explorers.guru/',
       txPage: 'https://archway.explorers.guru/transaction/${txHash}',
       accountPage: 'https://archway.explorers.guru/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/archway',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=archway&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=archway&addr=${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀',

@@ -5,6 +5,7 @@ const info: AssetList = {
   assets: [
     {
       description: 'The native token of Bluzelle',
+      extendedDescription: 'BeeZee Network offers users access to decentralized services through a variety of applications built on a fast and cost-efficient blockchain.',
       denomUnits: [{
           denom: 'ubnt',
           exponent: 0

@@ -318,6 +318,12 @@ const info: Chain = {
       accountPage: 'https://www.mintscan.io/kyve/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/kyve',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=kyve&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=kyve&addr=${accountAddress}'
+    },
+    {
       kind: 'NodeStake Explorer',
       url: 'https://explorer.nodestake.top/kyve',
       txPage: 'https://explorer.nodestake.top/kyve/txs/${txHash}',

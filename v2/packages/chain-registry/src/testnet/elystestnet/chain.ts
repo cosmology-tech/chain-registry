@@ -54,7 +54,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.2'
     },
-    cosmwasmEnabled: false,
     genesis: {
       genesisUrl: 'https://snapshots.polkachu.com/testnet-genesis/elys/genesis.json'
     },
@@ -68,7 +67,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmEnabled: false,
         binaries: {
           "linux/amd64": 'https://github.com/elys-network/elys/releases/download/v0.2.3/elys._v0.2.3_linux_amd64.tar.gz'
         },
@@ -200,7 +198,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: 'v0.47'

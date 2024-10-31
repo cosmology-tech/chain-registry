@@ -41,8 +41,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.34.31'
     },
-    cosmwasmVersion: 'v0.33.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json'
     },
@@ -80,8 +78,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.31'
         },
-        cosmwasmVersion: 'v0.33.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v1.0',
         sdk: {
           type: 'cosmos',
@@ -112,8 +108,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.31'
         },
-        cosmwasmVersion: 'v0.33.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -386,6 +380,12 @@ const info: Chain = {
       kind: 'explorers.guru',
       url: 'https://axelar.explorers.guru',
       txPage: 'https://axelar.explorers.guru/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/axelar',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=axelar&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=axelar&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

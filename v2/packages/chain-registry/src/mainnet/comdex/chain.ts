@@ -37,8 +37,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37.5'
     },
-    cosmwasmVersion: 'v0.45.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://comdex-mainnet-genesis.s3.ap-southeast-1.amazonaws.com/genesis.json'
     },
@@ -47,7 +45,6 @@ const info: Chain = {
         name: 'v9.0.0',
         recommendedVersion: 'v9.0.0',
         compatibleVersions: ['v9.0.0'],
-        cosmwasmEnabled: true,
         nextVersionName: 'v10.0.0',
         cosmwasm: {
           enabled: true
@@ -57,7 +54,6 @@ const info: Chain = {
         name: 'v10.0.0',
         recommendedVersion: 'v10.0.0',
         compatibleVersions: ['v10.0.0'],
-        cosmwasmEnabled: true,
         nextVersionName: 'v11.5.0',
         cosmwasm: {
           enabled: true
@@ -69,7 +65,6 @@ const info: Chain = {
         proposal: 154,
         recommendedVersion: 'v11.5.2',
         compatibleVersions: ['v11.5.2'],
-        cosmwasmEnabled: true,
         nextVersionName: 'v13.3.0',
         cosmwasm: {
           enabled: true
@@ -89,8 +84,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.2'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v14.1.0',
         sdk: {
           type: 'cosmos',
@@ -116,8 +109,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.5'
         },
-        cosmwasmVersion: 'v0.45.0',
-        cosmwasmEnabled: true,
         nextVersionName: '',
         sdk: {
           type: 'cosmos',
@@ -333,6 +324,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/comdex',
       txPage: 'https://www.mintscan.io/comdex/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/comdex/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/comdex',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=comdex&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=comdex&addr=${accountAddress}'
     },
     {
       kind: '🔥STAVR🔥',

@@ -45,8 +45,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.44.0',
-    cosmwasmEnabled: true,
     sdk: {
       type: 'cosmos',
       version: 'v0.47.7'
@@ -74,9 +72,6 @@ const info: Chain = {
           version: 'v0.37.2'
         },
         cosmosSdkVersion: 'v0.45.5',
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.nibid/data/wasm',
         sdk: {
           type: 'cosmos',
           version: 'v0.45.5'
@@ -113,8 +108,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.44.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: 'v0.47.7'

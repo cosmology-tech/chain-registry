@@ -153,6 +153,12 @@ const info: Chain = {
       accountPage: 'https://www.mintscan.io/crypto-org/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/cryptoorgchain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=cryptoorgchain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=cryptoorgchain&addr=${accountAddress}'
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/crypto-org',
       txPage: 'https://ezstaking.app/crypto-org/txs/${txHash}',

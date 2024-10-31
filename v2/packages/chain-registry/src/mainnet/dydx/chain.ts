@@ -35,13 +35,13 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/dydxprotocol/v4-chain/',
-    recommendedVersion: 'protocol/v5.2.0',
-    compatibleVersions: ['protocol/v5.2.0'],
+    recommendedVersion: 'protocol/v6.0.4',
+    compatibleVersions: ['protocol/v6.0.4'],
     binaries: {
-      "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.2.0/dydxprotocold-v5.2.0-linux-amd64.tar.gz',
-      "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.2.0/dydxprotocold-v5.2.0-linux-arm64.tar.gz'
+      "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-arm64.tar.gz'
     },
-    cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240606183841-18966898625f',
+    cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240808180557-4b1c1dc17703',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.6',
@@ -481,6 +481,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/dydx',
       txPage: 'https://www.mintscan.io/dydx/txs/${txHash}',
       accountPage: 'https://www.mintscan.io/dydx/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/dydx',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=dydx&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=dydx&addr=${accountAddress}'
     },
     {
       kind: 'ezstaking',

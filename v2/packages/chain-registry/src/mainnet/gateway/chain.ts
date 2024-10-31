@@ -31,8 +31,6 @@ const info: Chain = {
       version: 'v0.34.24',
       repo: 'https://github.com/tendermint/tendermint'
     },
-    cosmwasmVersion: 'github.com/wormhole-foundation/wasmd@v0.30.0-wormchain-2',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'v1',
       genesisUrl: 'https://github.com/wormhole-foundation/wormhole/blob/main/wormchain/mainnet/genesis.json'

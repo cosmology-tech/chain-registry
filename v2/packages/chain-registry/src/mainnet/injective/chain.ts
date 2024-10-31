@@ -320,6 +320,12 @@ const info: Chain = {
       accountPage: 'https://www.mintscan.io/injective/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/injective',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=injective&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=injective&addr=${accountAddress}'
+    },
+    {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/injective',
       accountPage: 'https://stakeflow.io/injective/accounts/${accountAddress}'

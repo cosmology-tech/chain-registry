@@ -176,6 +176,12 @@ const info: Chain = {
       txPage: 'https://ping.pub/kichain/tx/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/kichain',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=kichain&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=kichain&addr=${accountAddress}'
+    },
+    {
       kind: 'atomscan',
       url: 'https://atomscan.com/ki-chain',
       txPage: 'https://atomscan.com/ki-chain/transactions/${txHash}',

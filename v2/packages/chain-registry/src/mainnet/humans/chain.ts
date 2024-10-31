@@ -267,6 +267,12 @@ const info: Chain = {
       txPage: 'https://humans.explorers.guru/transaction/${txHash}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/humans',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=humans&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=humans&addr=${accountAddress}'
+    },
+    {
       kind: 'exploreme',
       url: 'https://humansai.exploreme.pro/',
       txPage: 'https://humans.exploreme.pro/transaction/${txHash}'

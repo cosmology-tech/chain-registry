@@ -363,6 +363,12 @@ const info: Chain = {
       accountPage: 'https://www.mintscan.io/lum/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/lumnetwork',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=lumnetwork&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=lumnetwork&addr=${accountAddress}'
+    },
+    {
       kind: '🔥STAVR🔥',
       url: 'https://explorer.stavr.tech/LumNetwork-Mainnet',
       txPage: 'https://explorer.stavr.tech/LumNetwork-Mainnet/tx/${txHash}'

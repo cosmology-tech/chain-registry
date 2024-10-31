@@ -47,7 +47,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmEnabled: false,
     genesis: {
       name: 'v0.3.0',
       genesisUrl: 'https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/testnet/grand-1/genesis.json'
@@ -70,7 +69,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmEnabled: false,
         nextVersionName: 'radon',
         sdk: {
           type: 'cosmos',
@@ -96,7 +94,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: 'v0.45'
@@ -120,7 +117,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.34'
         },
-        cosmwasmEnabled: false,
         sdk: {
           type: 'cosmos',
           version: 'v0.45'

@@ -436,6 +436,12 @@ const info: Chain = {
       accountPage: 'https://www.mintscan.io/dymension/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/dymension',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=dymension&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=dymension&addr=${accountAddress}'
+    },
+    {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/dymension',
       txPage: 'https://ezstaking.app/dymension/txs/${txHash}',

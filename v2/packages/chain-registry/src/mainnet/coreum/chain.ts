@@ -43,8 +43,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37'
     },
-    cosmwasmVersion: '0.44',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/CoreumFoundation/coreum/master/genesis/coreum-mainnet-1.json'
@@ -61,8 +59,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/CoreumFoundation/coreum/releases/download/v1.0.0/cored-linux-amd64?checksum=sha256:34098ad7586bda364b1b2e7c4569cbcefb630cd4ed7c8f68eb5bced834082c57',
           "linux/arm64": 'https://github.com/CoreumFoundation/coreum/releases/download/v1.0.0/cored-linux-arm64?checksum=sha256:3ced97f06607f0cdaf77e7ff0b36b2011d101c660684e4f3e54c2ac6bf344dd6'
@@ -89,8 +85,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/CoreumFoundation/coreum/releases/download/v2.0.2/cored-linux-amd64?checksum=sha256:3facf55f7ff795719f68b9bcf76ea08262bc7c9e9cd735c660257ba73678250e',
           "linux/arm64": 'https://github.com/CoreumFoundation/coreum/releases/download/v2.0.2/cored-linux-arm64?checksum=sha256:35e261eb3b87c833c30174e6b8667a6155f5962441275d443157e209bbb0bf0d'
@@ -117,8 +111,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37'
         },
-        cosmwasmVersion: '0.44',
-        cosmwasmEnabled: true,
         binaries: {
           "linux/amd64": 'https://github.com/CoreumFoundation/coreum/releases/download/v3.0.3/cored-linux-amd64?checksum=sha256:1719a32e6f8e8813d00cd86e1d8d02e893324d4f59fa7a1b8cedc5836140ecef',
           "linux/arm64": 'https://github.com/CoreumFoundation/coreum/releases/download/v3.0.3/cored-linux-arm64?checksum=sha256:cfbbad6803c0327407e4dd222a108505e6ff9e294d7c86e34b6b895b96b61bbd'
@@ -281,6 +273,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/coreum',
       txPage: 'https://www.mintscan.io/coreum/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/coreum/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/coreum',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=coreum&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=coreum&addr=${accountAddress}'
     },
     {
       kind: 'NODEXPLORER',

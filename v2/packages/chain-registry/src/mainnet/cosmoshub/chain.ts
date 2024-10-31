@@ -36,7 +36,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.38.11'
     },
-    cosmwasmVersion: 'v0.51.0',
     binaries: {
       "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-linux-amd64',
       "linux/arm64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-linux-arm64',
@@ -339,7 +338,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.6'
         },
-        cosmwasmVersion: 'informalsystems/wasmd v0.45.0-lsm',
         binaries: {
           "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v18.1.0/gaiad-v18.1.0-linux-amd64',
           "linux/arm64": 'https://github.com/cosmos/gaia/releases/download/v18.1.0/gaiad-v18.1.0-linux-arm64',
@@ -376,7 +374,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.38.11'
         },
-        cosmwasmVersion: 'v0.51.0',
         binaries: {
           "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-linux-amd64',
           "linux/arm64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-linux-arm64',
@@ -799,6 +796,12 @@ const info: Chain = {
       validatorPage: 'https://ping.pub/cosmos/staking/${validatorAddress}',
       proposalPage: 'https://ping.pub/cosmos/gov/${proposalId}',
       blockPage: 'https://ping.pub/cosmos/block/${blockHeight}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/cosmoshub',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=cosmoshub&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=cosmoshub&addr=${accountAddress}'
     },
     {
       kind: 'atomscan',

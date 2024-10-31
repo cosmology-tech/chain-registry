@@ -35,7 +35,6 @@ const info: Chain = {
     },
     recommendedVersion: 'v1.0.0',
     compatibleVersions: ['v1.0.0'],
-    cosmwasmEnabled: true,
     binaries: {
       "linux/amd64": 'https://github.com/LoopFans/loop-chain/releases/download/v1.0.0/loopchain_1.0.0_linux_amd64.tar.gz'
     },

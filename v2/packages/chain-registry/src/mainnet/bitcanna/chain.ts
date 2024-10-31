@@ -474,6 +474,12 @@ const info: Chain = {
       accountPage: 'https://ezstaking.tools/bitcanna/account/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/bitcanna',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=bitcanna&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=bitcanna&addr=${accountAddress}'
+    },
+    {
       kind: 'forbole',
       url: 'https://explorer.bitcanna.io',
       txPage: 'https://explorer.bitcanna.io/transactions/${txHash}',

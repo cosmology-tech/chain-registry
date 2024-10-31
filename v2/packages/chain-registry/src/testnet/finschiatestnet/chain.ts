@@ -41,9 +41,6 @@ const info: Chain = {
       "darwin/arm64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-arm64'
     },
     cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.48.1',
-    cosmwasmVersion: 'github.com/Finschia/wasmd@v0.2.0',
-    cosmwasmEnabled: true,
-    cosmwasmPath: '$HOME/.finschia/wasm/wasm',
     genesis: {
       name: 'v2',
       genesisUrl: 'https://vos.line-scdn.net/finschia-2-fileshare/ebony-prod-2/genesis-file.tgz'
@@ -61,9 +58,6 @@ const info: Chain = {
           "darwin/arm64": 'https://github.com/Finschia/finschia/releases/download/v1.1.1/finschia-v1.1.1-darwin-arm64.tgz'
         },
         cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.47.3',
-        cosmwasmVersion: 'github.com/Finschia/wasmd@v0.1.5',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.finschia/wasm/wasm',
         nextVersionName: 'v2',
         sdk: {
           type: 'cosmos',
@@ -99,9 +93,6 @@ const info: Chain = {
           "darwin/arm64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-arm64'
         },
         cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.48.1',
-        cosmwasmVersion: 'github.com/Finschia/wasmd@v0.2.0',
-        cosmwasmEnabled: true,
-        cosmwasmPath: '$HOME/.finschia/wasm/wasm',
         previousVersionName: 'v1',
         nextVersionName: 'v3',
         sdk: {

@@ -4,6 +4,7 @@ const info: Chain = {
   chainName: 'beezee',
   status: 'live',
   networkType: 'mainnet',
+  website: 'https://getbze.com/',
   prettyName: 'BeeZee',
   chainType: 'cosmos',
   chainId: 'beezee-1',
@@ -28,14 +29,14 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/bze-alphateam/bze',
-    recommendedVersion: 'v7.0.0',
-    compatibleVersions: ['v7.0.0'],
+    recommendedVersion: 'v7.1.1',
+    compatibleVersions: ['v7.1.1'],
     binaries: {
-      "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-darwin-amd64.tar.gz',
-      "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-darwin-arm64.tar.gz',
-      "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-linux-amd64.tar.gz',
-      "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-linux-arm64.tar.gz',
-      "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.0.0/bze-7.0.0-win64.zip'
+      "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-darwin-amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-darwin-arm64.tar.gz',
+      "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-linux-arm64.tar.gz',
+      "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-win64.zip'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/bze-alphateam/bze/main/genesis.json'
@@ -208,6 +209,61 @@ const info: Chain = {
           type: 'go',
           version: 'v4.5.1'
         }
+      },
+      {
+        name: 'v7.1.0',
+        recommendedVersion: 'v7.1.0',
+        tag: 'v7.1.0',
+        compatibleVersions: ['v7.1.0'],
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        height: 13710000,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.0/bze-7.1.0-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.0/bze-7.1.0-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.0/bze-7.1.0-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.0/bze-7.1.0-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.0/bze-7.1.0-win64.zip'
+        },
+        nextVersionName: 'v7.1.1',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.5.1'
+        }
+      },
+      {
+        name: 'v7.1.1',
+        recommendedVersion: 'v7.1.1',
+        tag: 'v7.1.1',
+        compatibleVersions: ['v7.1.1'],
+        cosmosSdkVersion: 'v0.45.16',
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.34.27'
+        },
+        height: 14182500,
+        binaries: {
+          "darwin/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-darwin-amd64.tar.gz',
+          "darwin/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-darwin-arm64.tar.gz',
+          "linux/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-linux-arm64.tar.gz',
+          "windows/amd64": 'https://github.com/bze-alphateam/bze/releases/download/v7.1.1/bze-7.1.1-win64.zip'
+        },
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.45.16'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v4.5.1'
+        }
       }
     ]
   },
@@ -273,6 +329,12 @@ const info: Chain = {
       url: 'https://ping.pub/beezee',
       txPage: 'https://ping.pub/beezee/tx/${txHash}',
       accountPage: 'https://ping.pub/beezee/account/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/beezee',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=beezee&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=beezee&addr=${accountAddress}'
     },
     {
       kind: 'ping.pub',

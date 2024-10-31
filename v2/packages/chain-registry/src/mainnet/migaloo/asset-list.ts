@@ -68,6 +68,14 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png'
       },
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'migaloo',
+            baseDenom: 'uwhale'
+          },
+          provider: 'BackBoneLabs'
+        }],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/bWHALE.png',
           theme: {

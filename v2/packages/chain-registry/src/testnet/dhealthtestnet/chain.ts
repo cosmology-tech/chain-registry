@@ -35,8 +35,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.2'
     },
-    cosmwasmVersion: 'v0.41.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dhealthproject/mainnet/main/genesis.json'
     },

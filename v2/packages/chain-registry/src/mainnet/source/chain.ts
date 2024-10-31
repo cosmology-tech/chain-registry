@@ -36,8 +36,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    cosmwasmVersion: '0.30',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Source-Protocol-Cosmos/mainnet/master/source-1/genesis.json'
     },
@@ -50,8 +48,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34'
         },
-        cosmwasmVersion: '0.30',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.45'
@@ -321,6 +317,12 @@ const info: Chain = {
       kind: 'TC Network',
       url: 'https://explorer.tcnetwork.io/source',
       txPage: 'https://explorer.tcnetwork.io/source/transaction/${txHash}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/source',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=source&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=source&addr=${accountAddress}'
     },
     {
       kind: 'Indonode',

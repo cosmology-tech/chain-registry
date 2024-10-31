@@ -102,6 +102,12 @@ const info: Chain = {
       accountPage: 'https://atomscan.com/meme/accounts/${accountAddress}'
     },
     {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/meme',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=meme&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=meme&addr=${accountAddress}'
+    },
+    {
       kind: 'MEME Explorer',
       url: 'https://explorer.meme.sx/meme',
       txPage: 'https://explorer.meme.sx/meme/tx/${txHash}'

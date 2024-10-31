@@ -17,6 +17,7 @@ import * as _andromeda1 from './andromeda1';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
+import * as _atomone from './atomone';
 import * as _aura from './aura';
 import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
@@ -58,6 +59,7 @@ import * as _desmos from './desmos';
 import * as _dhealth from './dhealth';
 import * as _dig from './dig';
 import * as _doravota from './doravota';
+import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
 import * as _dymension from './dymension';
 import * as _dyson from './dyson';
@@ -107,6 +109,7 @@ import * as _loyal from './loyal';
 import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
+import * as _mantrachain from './mantrachain';
 import * as _mars from './mars';
 import * as _mayachain from './mayachain';
 import * as _medasdigital from './medasdigital';
@@ -213,6 +216,7 @@ const chains: Chain[] = [
   _archway.chain,
   _arkh.chain,
   _assetmantle.chain,
+  _atomone.chain,
   _aura.chain,
   _aura1.chain,
   _axelar.chain,
@@ -254,6 +258,7 @@ const chains: Chain[] = [
   _dhealth.chain,
   _dig.chain,
   _doravota.chain,
+  _dungeon.chain,
   _dydx.chain,
   _dymension.chain,
   _dyson.chain,
@@ -303,6 +308,7 @@ const chains: Chain[] = [
   _lumenx.chain,
   _lumnetwork.chain,
   _mande.chain,
+  _mantrachain.chain,
   _mars.chain,
   _mayachain.chain,
   _medasdigital.chain,

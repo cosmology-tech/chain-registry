@@ -17,13 +17,11 @@ const info: AssetList = {
       name: 'MANTRA Chain',
       display: 'om',
       symbol: 'OM',
+      coingeckoId: 'mantra-dao',
       keywords: [
-        'mantra',
-        'staking',
-        'delegating',
-        'governance',
-        'regulation',
-        'defi'
+        'rwa',
+        'wasm',
+        'staking'
       ],
       images: [
         {

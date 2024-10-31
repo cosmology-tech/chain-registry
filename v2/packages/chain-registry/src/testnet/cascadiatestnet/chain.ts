@@ -39,8 +39,6 @@ const info: Chain = {
       type: 'tendermint',
       version: 'v0.34.26'
     },
-    cosmwasmVersion: '0.30',
-    cosmwasmEnabled: true,
     genesis: {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/CascadiaFoundation/chain-configuration/master/testnet/genesis.json'

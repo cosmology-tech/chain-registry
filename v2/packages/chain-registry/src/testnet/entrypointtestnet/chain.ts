@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
   chainName: 'entrypointtestnet',
-  status: 'live',
+  status: 'killed',
   networkType: 'testnet',
   prettyName: 'EntryPoint Testnet',
   chainType: 'cosmos',

@@ -38,8 +38,6 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    cosmwasmVersion: 'v0.41.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://snapshots.lavenderfive.com/genesis/andromeda/genesis.json'
     },
@@ -54,8 +52,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
         nextVersionName: 'v0.1.1',
         sdk: {
           type: 'cosmos',
@@ -81,8 +77,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmwasmVersion: 'v0.41.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: 'v0.47.8'

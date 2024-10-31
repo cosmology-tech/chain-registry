@@ -37,8 +37,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34.24'
     },
-    cosmwasmVersion: '0.30.0',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://github.com/mars-protocol/networks/raw/main/mars-1/genesis.json'
     },
@@ -53,8 +51,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.24'
         },
-        cosmwasmVersion: '0.30.0',
-        cosmwasmEnabled: true,
         sdk: {
           type: 'cosmos',
           version: '0.46.7'

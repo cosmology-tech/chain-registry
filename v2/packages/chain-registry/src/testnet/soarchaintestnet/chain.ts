@@ -35,8 +35,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34.19'
     },
-    cosmwasmVersion: '0.27',
-    cosmwasmEnabled: true,
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/soar-robotics/testnet-validator-onboard/main/release/genesis.json'
     },

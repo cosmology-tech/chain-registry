@@ -44,8 +44,6 @@ const info: Chain = {
         tag: 'v2.0.1',
         recommendedVersion: 'v2.0.1',
         cosmosSdkVersion: '0.45.4',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: '0.27.0',
         consensus: {
           type: 'tendermint',
           version: '0.34.19'
@@ -74,8 +72,6 @@ const info: Chain = {
         tag: 'v2.1.4',
         recommendedVersion: 'v2.1.4',
         cosmosSdkVersion: '0.46.9',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: '0.27.0',
         consensus: {
           type: 'tendermint',
           version: '0.34.21'
@@ -106,8 +102,6 @@ const info: Chain = {
         recommendedVersion: 'v2.2.1',
         compatibleVersions: ['v2.2.0', 'v2.2.1'],
         cosmosSdkVersion: 'v0.46.11',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.27.0',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.21'
@@ -142,8 +136,6 @@ const info: Chain = {
           'v2.3.5'
         ],
         cosmosSdkVersion: 'v0.46.11',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.30.0',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.27'
@@ -172,8 +164,6 @@ const info: Chain = {
         proposal: 4737,
         height: 5994365,
         cosmosSdkVersion: 'v0.46.11',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.30.0',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.27'
@@ -202,8 +192,6 @@ const info: Chain = {
         proposal: 4785,
         height: 7316000,
         cosmosSdkVersion: 'v0.47.5-terra.2',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.41.0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -235,8 +223,6 @@ const info: Chain = {
         proposal: 4792,
         height: 7722000,
         cosmosSdkVersion: 'v0.47.5-terra.2',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.43.0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -268,8 +254,6 @@ const info: Chain = {
         proposal: 4798,
         height: 8782000,
         cosmosSdkVersion: 'v0.47.5-terra.2',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.43.0-terra',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -302,8 +286,6 @@ const info: Chain = {
         proposal: 4805,
         height: 9444000,
         cosmosSdkVersion: 'v0.47.5-terra.2',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.43.0-terra',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -336,8 +318,6 @@ const info: Chain = {
         proposal: 4807,
         height: 10136000,
         cosmosSdkVersion: 'terra-money/cosmos-sdk v0.47.6-terra.0',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.45.0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -372,8 +352,6 @@ const info: Chain = {
         proposal: 4818,
         height: 11860000,
         cosmosSdkVersion: 'v0.47.6-terra.0',
-        cosmwasmEnabled: true,
-        cosmwasmVersion: 'v0.45.0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -434,6 +412,10 @@ const info: Chain = {
         provider: 'Stakeflow'
       },
       {
+        address: 'https://rpc-archive-terra.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
+      },
+      {
         address: 'https://rpc-terra.cosmos-spaces.cloud',
         provider: 'Cosmos Spaces'
       },
@@ -476,6 +458,10 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
+        address: 'https://api-archive-terra.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
+      },
+      {
         address: 'https://api-terra-01.stakeflow.io',
         provider: 'Stakeflow'
       },
@@ -514,6 +500,10 @@ const info: Chain = {
         provider: 'Allnodes ⚡️ Nodes & Staking'
       },
       {
+        address: 'grpc-archive-terra.r93axnodes.cloud:443',
+        provider: 'r93AX Nodes'
+      },
+      {
         address: 'grpc-terra.cosmos-spaces.cloud:2690',
         provider: 'Cosmos Spaces'
       },
@@ -533,6 +523,12 @@ const info: Chain = {
       url: 'https://atomscan.com/terra2',
       txPage: 'https://atomscan.com/terra2/transactions/${txHash}',
       accountPage: 'https://atomscan.com/terra2/accounts/${accountAddress}'
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/terra2',
+      txPage: 'https://staking-explorer.com/transaction.php?chain=terra2&tx=${txHash}',
+      accountPage: 'https://staking-explorer.com/account.php?chain=terra2&addr=${accountAddress}'
     },
     {
       kind: 'finder',
