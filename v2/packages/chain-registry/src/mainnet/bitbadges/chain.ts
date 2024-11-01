@@ -81,24 +81,39 @@ const info: Chain = {
     rpc: [{
         address: 'http://134.122.12.165:26657',
         provider: 'bitbadges'
+      }, {
+        address: 'https://bitbadges_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'http://134.122.12.165:1317',
         provider: 'bitbadges'
+      }, {
+        address: 'https://bitbadges_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: []
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'mintscan',
       url: 'https://www.mintscan.io/bitbadges',
       txPage: 'https://www.mintscan.io/bitbadges/transactions/${txHash}',
       accountPage: 'https://www.mintscan.io/bitbadges/accounts/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'ping.pub',
       url: 'https://explorer.bitbadges.io/BitBadges%20Mainnet',
       txPage: 'https://explorer.bitbadges.io/BitBadges%20Mainnet/txs/${txHash}',
       accountPage: 'https://explorer.bitbadges.io/BitBadBitBadges%20Mainnetges/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/bitbadges',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/bitbadges/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/bitbadges/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitbadges/images/bitbadgeslogo.png'
     }]
