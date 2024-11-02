@@ -1,13 +1,13 @@
 import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chain_name: 'nibirudevnet4',
+  chain_name: 'nibirutestnet3',
   status: 'live',
-  network_type: 'devnet',
+  network_type: 'testnet',
   website: 'https://nibiru.fi/',
-  pretty_name: 'Nibiru',
+  pretty_name: 'Nibiru Testnet 3',
   chain_type: 'cosmos',
-  chain_id: 'nibiru-devnet-3-evm',
+  chain_id: 'nibiru-testnet-3',
   bech32_prefix: 'nibi',
   daemon_name: 'nibid',
   node_home: '$HOME/.nibid',
@@ -40,27 +40,27 @@ const info: Chain = {
   description: 'A Web3 hub ushering in the next era of money',
   apis: {
     wss: [{
-        address: 'wss://evm-rpc.devnet-3.nibiru.fi/websocket',
+        address: 'wss://rpc.testnet-3.nibiru.fi/websocket',
         provider: 'Nibiru Foundation'
       }],
     rpc: [{
-        address: 'https://evm-rpc.devnet-3.nibiru.fi',
+        address: 'https://rpc.testnet-3.nibiru.fi',
         provider: 'Nibiru Foundation'
       }],
     rest: [{
-        address: 'https://evm-lcd.devnet-3.nibiru.fi',
+        address: 'https://lcd.testnet-3.nibiru.fi',
         provider: 'Nibiru Foundation'
       }],
     grpc: [{
-        address: 'grpc.devnet-3.nibiru.fi:443',
+        address: 'grpc.testnet-3.nibiru.fi:443',
         provider: 'Nibiru Foundation'
       }]
   },
   explorers: [{
       kind: 'Nibiru Foundation',
-      url: 'https://explorer.nibiru.fi/nibiru-devnet-2',
-      tx_page: 'https://explorer.nibiru.fi/nibiru-devnet-2/tx/${txHash}',
-      account_page: 'https://explorer.nibiru.fi/nibiru-devnet-2/account/${accountAddress}'
+      url: 'https://explorer.nibiru.fi/nibiru-testnet-3',
+      tx_page: 'https://explorer.nibiru.fi/nibiru-tesnet-3/tx/${txHash}',
+      account_page: 'https://explorer.nibiru.fi/nibiru-testnet-3/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',

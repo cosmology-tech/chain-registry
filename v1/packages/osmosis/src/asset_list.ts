@@ -4736,6 +4736,10 @@ const asset_list: AssetList = {
             primary_color_hex: '#cbfb06'
           }
         }],
+      socials: {
+        website: 'https://neutaro.com/',
+        twitter: 'https://twitter.com/Timpi_TheNewWay'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
@@ -10400,6 +10404,10 @@ const asset_list: AssetList = {
             primary_color_hex: '#cbfb06'
           }
         }],
+      socials: {
+        website: 'https://neutaro.com/',
+        twitter: 'https://twitter.com/Timpi_TheNewWay'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',

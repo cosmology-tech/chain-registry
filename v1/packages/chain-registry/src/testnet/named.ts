@@ -67,6 +67,7 @@ export * as neuratestnet from './neuratestnet';
 export * as neutrontestnet from './neutrontestnet';
 export * as nibirutestnet from './nibirutestnet';
 export * as nibirutestnet2 from './nibirutestnet2';
+export * as nibirutestnet3 from './nibirutestnet3';
 export * as nilliontestnet from './nilliontestnet';
 export * as nobletestnet from './nobletestnet';
 export * as noistestnet from './noistestnet';
