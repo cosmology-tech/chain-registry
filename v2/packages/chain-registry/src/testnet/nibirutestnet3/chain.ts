@@ -1,13 +1,13 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chainName: 'nibirudevnet4',
+  chainName: 'nibirutestnet3',
   status: 'live',
-  networkType: 'devnet',
+  networkType: 'testnet',
   website: 'https://nibiru.fi/',
-  prettyName: 'Nibiru',
+  prettyName: 'Nibiru Testnet 3',
   chainType: 'cosmos',
-  chainId: 'nibiru-devnet-3-evm',
+  chainId: 'nibiru-testnet-3',
   bech32Prefix: 'nibi',
   daemonName: 'nibid',
   nodeHome: '$HOME/.nibid',
@@ -45,21 +45,8 @@ const info: Chain = {
       type: 'cometbft',
       version: 'v0.37.4'
     },
-    sdk: {
-      type: 'cosmos',
-      version: 'v0.47.7'
-    },
-    cosmwasm: {
-      version: 'v0.44.0',
-      path: '$HOME/.nibid/data/wasm',
-      enabled: true
-    },
-    ibc: {
-      type: 'go',
-      version: 'v7.3.1'
-    },
     genesis: {
-      genesisUrl: 'https://raw.githubusercontent.com/NibiruChain/Networks/main/Testnet/nibiru-devnet-2/genesis.json'
+      genesisUrl: 'https://raw.githubusercontent.com/NibiruChain/Networks/main/Testnet/nibiru-testnet-2/genesis.json'
     },
     versions: [{
         name: 'v1.0.0',
@@ -72,6 +59,11 @@ const info: Chain = {
           version: 'v0.37.2'
         },
         cosmosSdkVersion: 'v0.45.5',
+        binaries: {
+          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_arm64.tar.gz'
+        },
+        nextVersionName: 'v1.0.1',
         sdk: {
           type: 'cosmos',
           version: 'v0.45.5'
@@ -84,12 +76,7 @@ const info: Chain = {
         ibc: {
           type: 'go',
           version: 'v7.3.1'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_arm64.tar.gz'
-        },
-        nextVersionName: 'v1.0.1'
+        }
       }, {
         name: 'v1.0.1',
         recommendedVersion: 'v1.0.1',
@@ -108,21 +95,32 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
+        nextVersionName: '',
         sdk: {
           type: 'cosmos',
           version: 'v0.47.7'
         },
         cosmwasm: {
           version: 'v0.44.0',
-          path: '$HOME/.nibid/data/wasm',
           enabled: true
         },
         ibc: {
           type: 'go',
           version: 'v7.3.1'
-        },
-        nextVersionName: ''
-      }]
+        }
+      }],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.7'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1'
+    },
+    cosmwasm: {
+      version: 'v0.44.0',
+      enabled: true
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',
@@ -131,27 +129,27 @@ const info: Chain = {
   description: 'A Web3 hub ushering in the next era of money',
   apis: {
     wss: [{
-        address: 'wss://evm-rpc.devnet-3.nibiru.fi/websocket',
+        address: 'wss://rpc.testnet-3.nibiru.fi/websocket',
         provider: 'Nibiru Foundation'
       }],
     rpc: [{
-        address: 'https://evm-rpc.devnet-3.nibiru.fi',
+        address: 'https://rpc.testnet-3.nibiru.fi',
         provider: 'Nibiru Foundation'
       }],
     rest: [{
-        address: 'https://evm-lcd.devnet-3.nibiru.fi',
+        address: 'https://lcd.testnet-3.nibiru.fi',
         provider: 'Nibiru Foundation'
       }],
     grpc: [{
-        address: 'grpc.devnet-3.nibiru.fi:443',
+        address: 'grpc.testnet-3.nibiru.fi:443',
         provider: 'Nibiru Foundation'
       }]
   },
   explorers: [{
       kind: 'Nibiru Foundation',
-      url: 'https://explorer.nibiru.fi/nibiru-devnet-2',
-      txPage: 'https://explorer.nibiru.fi/nibiru-devnet-2/tx/${txHash}',
-      accountPage: 'https://explorer.nibiru.fi/nibiru-devnet-2/account/${accountAddress}'
+      url: 'https://explorer.nibiru.fi/nibiru-testnet-3',
+      txPage: 'https://explorer.nibiru.fi/nibiru-tesnet-3/tx/${txHash}',
+      accountPage: 'https://explorer.nibiru.fi/nibiru-testnet-3/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',

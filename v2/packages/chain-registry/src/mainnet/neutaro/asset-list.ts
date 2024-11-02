@@ -4,6 +4,7 @@ const info: AssetList = {
   chainName: 'neutaro',
   assets: [{
       description: 'The native token of Neutaro',
+      extendedDescription: 'Neutaro (NTMPI) serves as the governance token for Timpi (www.timpi.io), a technology pioneer poised to shake up the industry through Decentralization, Web3, and AI.',
       denomUnits: [{
           denom: 'uneutaro',
           exponent: 0
@@ -27,6 +28,10 @@ const info: AssetList = {
             primaryColorHex: '#cbfb06'
           }
         }],
+      socials: {
+        website: 'https://neutaro.com/',
+        twitter: 'https://twitter.com/Timpi_TheNewWay'
+      },
       typeAsset: 'sdk.coin'
     }]
 };

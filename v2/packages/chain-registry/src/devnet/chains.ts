@@ -8,7 +8,6 @@ import * as _neuradevnet from './neuradevnet';
 import * as _nibirudevnet from './nibirudevnet';
 import * as _nibirudevnet2 from './nibirudevnet2';
 import * as _nibirudevnet3 from './nibirudevnet3';
-import * as _nibirudevnet4 from './nibirudevnet4';
 import * as _prysmdevnet from './prysmdevnet';
 import * as _seidevnet3 from './seidevnet3';
 
@@ -21,7 +20,6 @@ const chains: Chain[] = [
   _nibirudevnet.chain,
   _nibirudevnet2.chain,
   _nibirudevnet3.chain,
-  _nibirudevnet4.chain,
   _prysmdevnet.chain,
   _seidevnet3.chain
 ];

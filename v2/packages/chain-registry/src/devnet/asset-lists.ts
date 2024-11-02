@@ -8,7 +8,6 @@ import * as _neuradevnet from './neuradevnet';
 import * as _nibirudevnet from './nibirudevnet';
 import * as _nibirudevnet2 from './nibirudevnet2';
 import * as _nibirudevnet3 from './nibirudevnet3';
-import * as _nibirudevnet4 from './nibirudevnet4';
 import * as _prysmdevnet from './prysmdevnet';
 import * as _seidevnet3 from './seidevnet3';
 
@@ -21,7 +20,6 @@ const assetList: AssetList[] = [
   _nibirudevnet.assetList,
   _nibirudevnet2.assetList,
   _nibirudevnet3.assetList,
-  _nibirudevnet4.assetList,
   _prysmdevnet.assetList,
   _seidevnet3.assetList
 ];

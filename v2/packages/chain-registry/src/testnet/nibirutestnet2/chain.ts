@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   website: 'https://nibiru.fi/',
-  prettyName: 'Nibiru',
+  prettyName: 'Nibiru Testnet 2',
   chainType: 'cosmos',
   chainId: 'nibiru-testnet-2',
   bech32Prefix: 'nibi',
