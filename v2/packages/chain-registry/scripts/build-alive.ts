@@ -5,12 +5,12 @@ import path from 'path';
 import { exec } from 'child_process';
 
 const srcDir = path.join(__dirname, '../src');
-const srcTempDir = path.join(__dirname, '../tempDir')
+const tempSrcDir = path.join(__dirname, '../tempSrc')
 const outDir = path.join(__dirname, '../dist');
 
 // Create the target directory if it does not exist
-if (!fs.existsSync(srcTempDir)) {
-  fs.mkdirSync(srcTempDir, { recursive: true });
+if (!fs.existsSync(tempSrcDir)) {
+  fs.mkdirSync(tempSrcDir, { recursive: true });
 }
 // Recursive copy function
 function copyFiles(src: string, dest: string) {
@@ -34,7 +34,7 @@ function copyFiles(src: string, dest: string) {
 }
 
 // Start copying
-copyFiles(srcDir, srcTempDir);
+copyFiles(srcDir, tempSrcDir);
 console.log('All files and folders copied successfully!');
 
 // Create the dist directory if it does not exist
@@ -140,12 +140,16 @@ function getFilesToCompile(dir: string): string[] {
 }
 
 // Collect all files to be compiled
-const filesToCompile = getFilesToCompile(srcTempDir);
+const filesToCompile = getFilesToCompile(tempSrcDir);
 // If there are files to compile, run the tsc command and specify the output directory and generate declaration files
 if (filesToCompile.length > 0) {
   // npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy
   // const command = `tsc --outDir ${outDir} --declaration ${filesToCompile.join(' ')}`;
-  const command = `npm run clean;tsc --outDir ${outDir} --declaration ${filesToCompile.join(' ')};tsc --outDir ${outDir}/esm --declaration false ${filesToCompile.join(' ')}`
+  const cleanScript = 'npm run clean;'
+  const commonjsBuildScript = `tsc --outDir ${outDir} --declaration ${filesToCompile.join(' ')};`
+  const esmBuildScript = `tsc --outDir ${outDir}/esm --declaration false ${filesToCompile.join(' ')};`
+  const npmCopyScript = 'npm run copy;'
+  const command = `${cleanScript}${commonjsBuildScript}${esmBuildScript}${npmCopyScript}`
   exec(command, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error: ${error.message}`);
@@ -156,7 +160,7 @@ if (filesToCompile.length > 0) {
       return;
     }
     console.log(`Compilation successful! Output files and .d.ts files are in the 'dist' directory.`);
-    fs.rmSync(srcTempDir, { recursive: true })
+    fs.rmSync(tempSrcDir, { recursive: true })
   });
 } else {
   console.log("No eligible modules need to be compiled.");
