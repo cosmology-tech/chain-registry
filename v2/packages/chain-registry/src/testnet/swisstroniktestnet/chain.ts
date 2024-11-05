@@ -30,7 +30,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/SigmaGmbH/swisstronik-chain/releases/download/testnet-v1.0.2/swisstronik_1.0.2_amd64.deb.zip'
     },
-    cosmosSdkVersion: '0.47',
     consensus: {
       type: 'cometbft',
       version: '0.37'
@@ -43,7 +42,6 @@ const info: Chain = {
         name: 'v0.1.11-testnet',
         recommendedVersion: 'v0.1.11-testnet',
         compatibleVersions: ['v0.1.11-testnet'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'
@@ -64,7 +62,6 @@ const info: Chain = {
         height: 1969786,
         recommendedVersion: 'v1.0.1',
         compatibleVersions: ['v1.0.1'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'
@@ -87,7 +84,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/SigmaGmbH/swisstronik-chain/releases/download/testnet-v1.0.2/swisstronik_1.0.2_amd64.deb.zip'
         },
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'

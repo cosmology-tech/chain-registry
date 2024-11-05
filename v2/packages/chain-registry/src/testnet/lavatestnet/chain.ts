@@ -38,7 +38,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/lavanet/lava/releases/download/v1.0.1/lavad-v1.0.1-linux-amd64'
     },
-    cosmosSdkVersion: '0.47.7',
     consensus: {
       type: 'tendermint',
       version: '0.37'
@@ -138,7 +137,6 @@ const info: Chain = {
         height: 927794,
         recommendedVersion: 'v1.0.1',
         compatibleVersions: ['v1.0.1'],
-        cosmosSdkVersion: '0.47.7',
         consensus: {
           type: 'tendermint',
           version: '0.37'

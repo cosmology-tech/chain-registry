@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Int3facechain/bridge',
     recommendedVersion: 'v0.2.7',
     compatibleVersions: ['v0.2.7'],
-    cosmosSdkVersion: 'github.com/cosmos/cosmos-sdk v0.50.8',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.10'

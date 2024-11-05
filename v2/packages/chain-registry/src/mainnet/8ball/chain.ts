@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://secp256k1.net/8ball.git',
     recommendedVersion: 'v1',
     compatibleVersions: ['v1'],
-    cosmosSdkVersion: '0.46.7',
     binaries: {
       "linux/amd64": 'https://8ball.info/8ball.tar.gz'
     },
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v1',
         recommendedVersion: 'v1',
         compatibleVersions: ['v1'],
-        cosmosSdkVersion: '0.46.7',
         binaries: {
           "linux/amd64": 'https://8ball.info/8ball.tar.gz'
         },

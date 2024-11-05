@@ -34,7 +34,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v7.1.0/desmos-v7.1.0-linux-amd64'
     },
-    cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.10-desmos',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -105,7 +104,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v7.0.2/desmos-7.0.2-linux-amd64'
         },
-        cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.9-desmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.4'
@@ -136,7 +134,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v7.1.0/desmos-v7.1.0-linux-amd64'
         },
-        cosmosSdkVersion: 'desmos-labs/cosmos-sdk v0.47.10-desmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

@@ -36,7 +36,6 @@ const info: Chain = {
       'v2.1.1',
       'v2.1.2'
     ],
-    cosmosSdkVersion: 'celestiaorg/cosmos-sdk v1.24.1-sdk-v0.46.16',
     consensus: {
       type: 'tendermint',
       version: 'v1.40.0',
@@ -58,7 +57,6 @@ const info: Chain = {
           'v1.11.0',
           'v1.13.0'
         ],
-        cosmosSdkVersion: 'celestiaorg/cosmos-sdk v1.23.0-sdk-v0.46.16',
         consensus: {
           type: 'tendermint',
           version: 'v1.35.0',
@@ -217,6 +215,10 @@ const info: Chain = {
       {
         address: 'https://rpc.celestia.mainnet.dteam.tech:443',
         provider: 'DTEAM'
+      },
+      {
+        address: 'https://celestia-rpc.stakeandrelax.net',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ],
     rest: [
@@ -319,6 +321,10 @@ const info: Chain = {
       {
         address: 'https://api.celestia.mainnet.dteam.tech:443',
         provider: 'DTEAM'
+      },
+      {
+        address: 'https://celestia-api.stakeandrelax.net',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ],
     grpc: [
@@ -405,6 +411,10 @@ const info: Chain = {
       {
         address: 'grpc.celestia.mainnet.dteam.tech:28090',
         provider: 'DTEAM'
+      },
+      {
+        address: 'http://celestia-grpc.stakeandrelax.net:11690',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ]
   },
@@ -467,6 +477,12 @@ const info: Chain = {
       url: 'https://explorer.mainnet.dteam.tech/celestia',
       txPage: 'https://explorer.mainnet.dteam.tech/celestia/transaction/${txHash}',
       accountPage: 'https://explorer.mainnet.dteam.tech/celestia/account/${accountAddress}'
+    },
+    {
+      kind: 'Relaxed Explorer 🦥',
+      url: 'https://explorer.stakeandrelax.net/celestia',
+      txPage: 'https://explorer.stakeandrelax.net/celestia/transaction/${txHash}',
+      accountPage: 'https://explorer.stakeandrelax.net/celestia/account/${accountAddress}'
     }
   ],
   images: [{

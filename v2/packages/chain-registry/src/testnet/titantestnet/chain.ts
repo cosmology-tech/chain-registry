@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/titantkx/titan',
     recommendedVersion: 'v2.0.1',
     compatibleVersions: ['v2.0.1'],
-    cosmosSdkVersion: '0.47.6-titan.4',
     consensus: {
       type: 'cometbft',
       version: '0.37.4'
@@ -48,7 +47,6 @@ const info: Chain = {
         nextVersionName: 'v2.0.0',
         recommendedVersion: 'v1.0.0',
         compatibleVersions: ['v1.0.0-alpha.1', 'v1.0.0'],
-        cosmosSdkVersion: '0.47.6-titan.3',
         consensus: {
           type: 'cometbft',
           version: '0.37.4'
@@ -75,7 +73,6 @@ const info: Chain = {
         nextVersionName: 'v2.0.1',
         recommendedVersion: 'v2.0.0',
         compatibleVersions: ['v2.0.0'],
-        cosmosSdkVersion: '0.47.6-titan.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.4'
@@ -101,7 +98,6 @@ const info: Chain = {
         height: 967678,
         recommendedVersion: 'v2.0.1',
         compatibleVersions: ['v2.0.1'],
-        cosmosSdkVersion: '0.47.6-titan.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.4'

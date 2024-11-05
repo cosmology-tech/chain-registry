@@ -54,7 +54,6 @@ const info: Chain = {
         tag: 'v8.0.0',
         recommendedVersion: 'v8.0.0',
         compatibleVersions: ['v8.0.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'tendermint',
           version: '0.37'
@@ -78,7 +77,6 @@ const info: Chain = {
         tag: 'v8.1.0',
         recommendedVersion: 'v8.1.0',
         compatibleVersions: ['v8.1.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'tendermint',
           version: '0.37'
@@ -104,7 +102,6 @@ const info: Chain = {
         proposal: 16,
         recommendedVersion: 'v8.0.0',
         compatibleVersions: ['v8.0.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'tendermint',
           version: '0.37'
@@ -130,7 +127,6 @@ const info: Chain = {
         proposal: 17,
         recommendedVersion: 'v9.1.1',
         compatibleVersions: ['v9.1.1', 'v9.1.0'],
-        cosmosSdkVersion: 'v0.47.0-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'

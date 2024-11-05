@@ -34,7 +34,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/onomyprotocol/onomy/releases/download/v1.1.4/onomyd',
       "linux/arm64": 'https://github.com/onomyprotocol/onomy/releases/download/v1.1.4/onomyd-arm'
     },
-    cosmosSdkVersion: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.28'
@@ -48,7 +47,6 @@ const info: Chain = {
         tag: 'v1.0.1',
         recommendedVersion: 'v1.0.1',
         compatibleVersions: ['v1.0.1'],
-        cosmosSdkVersion: 'onomyprotocol/onomy-sdk v0.44.6-0.20221103153534-77ffa1c3fab2',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.14'
@@ -72,7 +70,6 @@ const info: Chain = {
         height: 2377000,
         recommendedVersion: 'v1.0.3',
         compatibleVersions: ['v1.0.3'],
-        cosmosSdkVersion: 'onomyprotocol/onomy-sdk v0.44.6-0.20230418124728-9c1be80b05bd',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.19'
@@ -96,7 +93,6 @@ const info: Chain = {
         height: 4010000,
         recommendedVersion: 'v1.1.2',
         compatibleVersions: ['v1.1.2'],
-        cosmosSdkVersion: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -124,7 +120,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/onomyprotocol/onomy/releases/download/v1.1.4/onomyd',
           "linux/arm64": 'https://github.com/onomyprotocol/onomy/releases/download/v1.1.4/onomyd-arm'
         },
-        cosmosSdkVersion: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'

@@ -36,7 +36,6 @@ const info: Chain = {
       "darwin/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_amd64.zip',
       "darwin/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_arm64.zip'
     },
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -48,7 +47,6 @@ const info: Chain = {
         name: 'v5.0.0',
         recommendedVersion: 'v5.0.0',
         compatibleVersions: ['v5.0.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

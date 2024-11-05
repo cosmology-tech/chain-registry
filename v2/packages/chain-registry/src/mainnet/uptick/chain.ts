@@ -34,7 +34,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.19.tar.gz'
     },
-    cosmosSdkVersion: 'v0.47.5',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.3',
@@ -51,7 +50,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.4.tar.gz'
         },
-        cosmosSdkVersion: '0.47.5',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -120,7 +118,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.19.tar.gz'
         },
-        cosmosSdkVersion: '0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3',

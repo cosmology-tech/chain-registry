@@ -33,7 +33,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/andromedaprotocol/andromedad',
     recommendedVersion: 'v0.1.1-patch',
     compatibleVersions: ['v0.1.1-patch'],
-    cosmosSdkVersion: 'v0.47.8',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -47,7 +46,6 @@ const info: Chain = {
         tag: 'andromeda-1-v0.1.0',
         recommendedVersion: 'andromeda-1-v0.1.0',
         compatibleVersions: ['andromeda-1-v0.1.0'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -72,7 +70,6 @@ const info: Chain = {
         tag: 'v0.1.1-patch',
         recommendedVersion: 'v0.1.1-patch',
         compatibleVersions: ['v0.1.1-patch'],
-        cosmosSdkVersion: 'v0.47.8',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

@@ -43,7 +43,6 @@ const info: Chain = {
         name: 'v2.0',
         tag: 'v2.0.1',
         recommendedVersion: 'v2.0.1',
-        cosmosSdkVersion: '0.45.4',
         consensus: {
           type: 'tendermint',
           version: '0.34.19'
@@ -71,7 +70,6 @@ const info: Chain = {
         name: 'v2.1',
         tag: 'v2.1.4',
         recommendedVersion: 'v2.1.4',
-        cosmosSdkVersion: '0.46.9',
         consensus: {
           type: 'tendermint',
           version: '0.34.21'
@@ -101,7 +99,6 @@ const info: Chain = {
         height: 2979805,
         recommendedVersion: 'v2.2.1',
         compatibleVersions: ['v2.2.0', 'v2.2.1'],
-        cosmosSdkVersion: 'v0.46.11',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.21'
@@ -135,7 +132,6 @@ const info: Chain = {
           'v2.3.4',
           'v2.3.5'
         ],
-        cosmosSdkVersion: 'v0.46.11',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.27'
@@ -163,7 +159,6 @@ const info: Chain = {
         tag: 'v2.4.1',
         proposal: 4737,
         height: 5994365,
-        cosmosSdkVersion: 'v0.46.11',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.27'
@@ -191,7 +186,6 @@ const info: Chain = {
         tag: 'v2.5.2',
         proposal: 4785,
         height: 7316000,
-        cosmosSdkVersion: 'v0.47.5-terra.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -222,7 +216,6 @@ const info: Chain = {
         compatibleVersions: ['v2.6.3', 'v2.6.4'],
         proposal: 4792,
         height: 7722000,
-        cosmosSdkVersion: 'v0.47.5-terra.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -253,7 +246,6 @@ const info: Chain = {
         compatibleVersions: ['v2.9.4'],
         proposal: 4798,
         height: 8782000,
-        cosmosSdkVersion: 'v0.47.5-terra.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -285,7 +277,6 @@ const info: Chain = {
         compatibleVersions: ['v2.10.4', 'v2.10.5'],
         proposal: 4805,
         height: 9444000,
-        cosmosSdkVersion: 'v0.47.5-terra.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -317,7 +308,6 @@ const info: Chain = {
         compatibleVersions: ['v2.11.8'],
         proposal: 4807,
         height: 10136000,
-        cosmosSdkVersion: 'terra-money/cosmos-sdk v0.47.6-terra.0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -351,7 +341,6 @@ const info: Chain = {
         compatibleVersions: ['v2.12.4'],
         proposal: 4818,
         height: 11860000,
-        cosmosSdkVersion: 'v0.47.6-terra.0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'

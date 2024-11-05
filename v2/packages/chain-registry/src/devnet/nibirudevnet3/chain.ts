@@ -40,7 +40,6 @@ const info: Chain = {
       "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_amd64.tar.gz',
       "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_arm64.tar.gz'
     },
-    cosmosSdkVersion: 'v0.47.7',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -71,7 +70,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.2'
         },
-        cosmosSdkVersion: 'v0.45.5',
         binaries: {
           "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_amd64.tar.gz',
           "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_arm64.tar.gz'
@@ -103,7 +101,6 @@ const info: Chain = {
         },
         proposal: 2,
         height: 2753803,
-        cosmosSdkVersion: 'v0.47.7',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

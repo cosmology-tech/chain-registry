@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/aura-nw/aura',
     recommendedVersion: 'v0.7.3',
     compatibleVersions: ['v0.7.3'],
-    cosmosSdkVersion: '0.47.5',
     consensus: {
       type: 'cometbft',
       version: '0.37.2'
@@ -63,7 +62,6 @@ const info: Chain = {
         height: 3666129,
         recommendedVersion: 'v0.7.1',
         compatibleVersions: ['v0.7.1'],
-        cosmosSdkVersion: '0.47.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -84,7 +82,6 @@ const info: Chain = {
         height: 5329503,
         recommendedVersion: 'v0.7.2',
         compatibleVersions: ['v0.7.2'],
-        cosmosSdkVersion: '0.47.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -109,7 +106,6 @@ const info: Chain = {
         height: 4083908,
         recommendedVersion: 'v0.7.3',
         compatibleVersions: ['v0.7.3'],
-        cosmosSdkVersion: '0.47.5',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'

@@ -34,7 +34,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/dhealthproject/dhealth/releases/download/v1.0.0/dhealthd-1.0.0-linux-amd64'
     },
-    cosmosSdkVersion: 'cosmos/cosmos-sdk v0.47.4',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.2'
@@ -49,7 +48,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/dhealthproject/dhealth/releases/download/v1.0.0/dhealthd-1.0.0-linux-amd64'
         },
-        cosmosSdkVersion: 'cosmos/cosmos-sdk v0.47.4',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'

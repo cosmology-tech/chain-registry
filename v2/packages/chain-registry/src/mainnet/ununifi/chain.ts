@@ -37,7 +37,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.1/ununifid'
     },
-    cosmosSdkVersion: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
     consensus: {
       type: 'cometbft',
       version: '0.37.2'
@@ -54,7 +53,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v2.0.0/ununifid'
         },
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -83,7 +81,6 @@ const info: Chain = {
         },
         proposal: 12,
         height: 5630000,
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -112,7 +109,6 @@ const info: Chain = {
         },
         proposal: 13,
         height: 5736100,
-        cosmosSdkVersion: 'v0.47.1-bank-rc2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -142,7 +138,6 @@ const info: Chain = {
         },
         proposal: 14,
         height: 5807100,
-        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -172,7 +167,6 @@ const info: Chain = {
         },
         proposal: 15,
         height: 6577693,
-        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -202,7 +196,6 @@ const info: Chain = {
         },
         proposal: 16,
         height: 6754737,
-        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -232,7 +225,6 @@ const info: Chain = {
         },
         proposal: 18,
         height: 7061394,
-        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -262,7 +254,6 @@ const info: Chain = {
         },
         proposal: 24,
         height: 8197583,
-        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -292,7 +283,6 @@ const info: Chain = {
         },
         proposal: 25,
         height: 8299656,
-        cosmosSdkVersion: 'v0.47.3-custom-bank-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -322,7 +312,6 @@ const info: Chain = {
         },
         proposal: 26,
         height: 9974824,
-        cosmosSdkVersion: 'ununifi/cosmos-sdk v0.47.3-custom-bank-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'

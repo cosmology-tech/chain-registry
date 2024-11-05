@@ -28,7 +28,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/alpha-omega-labs/genesis-crypto',
     recommendedVersion: 'v1.0.0',
     compatibleVersions: ['v1.0.0'],
-    cosmosSdkVersion: '0.46.15',
     genesis: {
       name: 'plan_ethermint',
       genesisUrl: 'https://raw.githubusercontent.com/alpha-omega-labs/genesis-parameters/main/genesis_29-2/genesis.json'
@@ -39,7 +38,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v0.5.0',
         compatibleVersions: ['v0.3.0', 'v0.5.0'],
-        cosmosSdkVersion: '0.44.5',
         nextVersionName: 'plan_crypto',
         sdk: {
           type: 'cosmos',
@@ -52,7 +50,6 @@ const info: Chain = {
         proposal: 92,
         recommendedVersion: 'v1.0.0',
         compatibleVersions: ['v1.0.0'],
-        cosmosSdkVersion: '0.46.15',
         sdk: {
           type: 'cosmos',
           version: '0.46.15'

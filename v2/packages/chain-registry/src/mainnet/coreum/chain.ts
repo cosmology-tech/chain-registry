@@ -38,7 +38,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/CoreumFoundation/coreum/releases/download/v3.0.3/cored-linux-amd64?checksum=sha256:1719a32e6f8e8813d00cd86e1d8d02e893324d4f59fa7a1b8cedc5836140ecef',
       "linux/arm64": 'https://github.com/CoreumFoundation/coreum/releases/download/v3.0.3/cored-linux-arm64?checksum=sha256:cfbbad6803c0327407e4dd222a108505e6ff9e294d7c86e34b6b895b96b61bbd'
     },
-    cosmosSdkVersion: '0.47',
     consensus: {
       type: 'cometbft',
       version: '0.37'
@@ -54,7 +53,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v1.0.0',
         compatibleVersions: ['v1.0.0'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -80,7 +78,6 @@ const info: Chain = {
         height: 6947500,
         recommendedVersion: 'v2.0.2',
         compatibleVersions: ['v2.0.2'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -106,7 +103,6 @@ const info: Chain = {
         height: 13480000,
         recommendedVersion: 'v3.0.3',
         compatibleVersions: ['v3.0.3'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'

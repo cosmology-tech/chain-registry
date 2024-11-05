@@ -42,7 +42,6 @@ const info: Chain = {
       name: 'pxv1',
       genesisUrl: 'https://raw.githubusercontent.com/pundix/pundix/main/public/mainnet/genesis.json'
     },
-    cosmosSdkVersion: '0.45.11',
     consensus: {
       type: 'tendermint',
       version: '0.34'

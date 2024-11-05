@@ -39,7 +39,6 @@ const info: Chain = {
       "darwin/arm64": 'https://github.com/haqq-network/haqq/releases/download/v1.8.0/haqq_1.8.0_darwin_arm64.tar.gz',
       "windows/amd64": 'https://github.com/haqq-network/haqq/releases/download/v1.8.0/haqq_1.8.0_windows_amd64.zip'
     },
-    cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos.2',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.9'
@@ -55,7 +54,6 @@ const info: Chain = {
         compatibleVersions: ['v1.0.2'],
         proposal: 4,
         height: 1027509,
-        cosmosSdkVersion: 'v0.45.5-0.20220523154235-2921a1c3c918',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.20',
@@ -79,7 +77,6 @@ const info: Chain = {
         compatibleVersions: ['v1.1.9'],
         proposal: 6,
         height: 2853700,
-        cosmosSdkVersion: 'v0.45.6',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.20',
@@ -102,7 +99,6 @@ const info: Chain = {
         compatibleVersions: ['v1.2.1'],
         proposal: 7,
         height: 2865555,
-        cosmosSdkVersion: 'v0.45.9',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.21'
@@ -124,7 +120,6 @@ const info: Chain = {
         compatibleVersions: ['v1.3.0'],
         proposal: 8,
         height: 5978000,
-        cosmosSdkVersion: 'v0.45.9',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.21'
@@ -146,7 +141,6 @@ const info: Chain = {
         compatibleVersions: ['v1.3.1'],
         proposal: 9,
         height: 5978800,
-        cosmosSdkVersion: 'v0.45.9',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.21'
@@ -168,7 +162,6 @@ const info: Chain = {
         compatibleVersions: ['v1.4.0'],
         proposal: 10,
         height: 6134000,
-        cosmosSdkVersion: 'v0.46.9-ledger',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.26'
@@ -189,7 +182,6 @@ const info: Chain = {
         tag: 'v1.4.1',
         recommendedVersion: 'v1.4.1',
         compatibleVersions: ['v1.4.1'],
-        cosmosSdkVersion: 'v0.46.9-ledger',
         consensus: {
           type: 'tendermint',
           version: '0.34.26'
@@ -219,7 +211,6 @@ const info: Chain = {
         compatibleVersions: ['v1.5.0'],
         proposal: 18,
         height: 7770000,
-        cosmosSdkVersion: 'v0.46.10-ledger.3',
         consensus: {
           type: 'tendermint',
           version: '0.34.26'
@@ -249,7 +240,6 @@ const info: Chain = {
         compatibleVersions: ['v1.6.0'],
         proposal: 21,
         height: 8002000,
-        cosmosSdkVersion: 'v0.46.13-ledger.3',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -279,7 +269,6 @@ const info: Chain = {
         compatibleVersions: ['v1.6.1'],
         proposal: 22,
         height: 8076500,
-        cosmosSdkVersion: 'v0.46.13-ledger.3',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -309,7 +298,6 @@ const info: Chain = {
         compatibleVersions: ['v1.6.2'],
         proposal: 23,
         height: 8193000,
-        cosmosSdkVersion: 'v0.46.13-ledger.3',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -339,7 +327,6 @@ const info: Chain = {
         compatibleVersions: ['v1.6.3'],
         proposal: 25,
         height: 8282000,
-        cosmosSdkVersion: 'v0.46.13-ledger.3',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -369,7 +356,6 @@ const info: Chain = {
         compatibleVersions: ['v1.6.4'],
         proposal: 26,
         height: 9070000,
-        cosmosSdkVersion: 'v0.46.13-ledger.3',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -399,7 +385,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.0'],
         proposal: 27,
         height: 9451000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3'
@@ -430,7 +415,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.1'],
         proposal: 28,
         height: 9774000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3'
@@ -461,7 +445,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.2'],
         proposal: 29,
         height: 9862000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3'
@@ -492,7 +475,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.3'],
         proposal: 30,
         height: 9950000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3'
@@ -523,7 +505,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.4'],
         proposal: 31,
         height: 10881000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3'
@@ -554,7 +535,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.5'],
         proposal: 32,
         height: 11235000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3'
@@ -585,7 +565,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.6'],
         proposal: 34,
         height: 11567000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.8-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -616,7 +595,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.7'],
         proposal: 34,
         height: 11567000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.8-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -647,7 +625,6 @@ const info: Chain = {
         compatibleVersions: ['v1.7.8'],
         proposal: 38,
         height: 12380500,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.8-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -678,7 +655,6 @@ const info: Chain = {
         compatibleVersions: ['v1.8.0'],
         proposal: 39,
         height: 13035000,
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.9'

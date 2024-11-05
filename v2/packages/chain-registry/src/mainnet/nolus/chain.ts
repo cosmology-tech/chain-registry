@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/nolus-protocol/nolus-core',
     recommendedVersion: 'v0.6.3',
     compatibleVersions: ['v0.6.3'],
-    cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.11'
@@ -47,7 +46,6 @@ const info: Chain = {
         name: 'v0.3.0',
         recommendedVersion: 'v0.3.0',
         compatibleVersions: ['v0.3.0'],
-        cosmosSdkVersion: '0.45',
         nextVersionName: 'v0.4.0',
         sdk: {
           type: 'cosmos',
@@ -69,7 +67,6 @@ const info: Chain = {
         height: 207300,
         recommendedVersion: 'v0.4.0',
         compatibleVersions: ['v0.4.0'],
-        cosmosSdkVersion: '0.45',
         nextVersionName: 'v0.4.1',
         sdk: {
           type: 'cosmos',
@@ -91,7 +88,6 @@ const info: Chain = {
         height: 941000,
         recommendedVersion: 'v0.4.1',
         compatibleVersions: ['v0.4.1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'cometbft',
           version: '0.34.27'
@@ -117,7 +113,6 @@ const info: Chain = {
         height: 3044000,
         recommendedVersion: 'v0.4.2',
         compatibleVersions: ['v0.4.2'],
-        cosmosSdkVersion: 'v0.45.15-ics',
         consensus: {
           type: 'cometbft',
           version: '0.34.27'
@@ -144,7 +139,6 @@ const info: Chain = {
         height: 3659000,
         recommendedVersion: 'v0.5.0',
         compatibleVersions: ['v0.5.0'],
-        cosmosSdkVersion: 'v0.47.6-nolus',
         consensus: {
           type: 'cometbft',
           version: '0.34.27'
@@ -172,7 +166,6 @@ const info: Chain = {
         height: 3958000,
         recommendedVersion: 'v0.5.1',
         compatibleVersions: ['v0.5.1'],
-        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.47.6-nolus',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -201,7 +194,6 @@ const info: Chain = {
         height: 4059500,
         recommendedVersion: 'v0.5.2',
         compatibleVersions: ['v0.5.2'],
-        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.47.6-nolus',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -230,7 +222,6 @@ const info: Chain = {
         height: 4922500,
         recommendedVersion: 'v0.5.3',
         compatibleVersions: ['v0.5.3'],
-        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.47.8-nolus',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -259,7 +250,6 @@ const info: Chain = {
         height: 6556000,
         recommendedVersion: 'v0.6.2',
         compatibleVersions: ['v0.6.2'],
-        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.10'
@@ -288,7 +278,6 @@ const info: Chain = {
         height: 7006500,
         recommendedVersion: 'v0.6.3',
         compatibleVersions: ['v0.6.3'],
-        cosmosSdkVersion: 'nolus-protocol/cosmos-sdk v0.50.7-nolus-rc1',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.11'

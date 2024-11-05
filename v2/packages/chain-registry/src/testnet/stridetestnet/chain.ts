@@ -27,7 +27,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Stride-Labs/stride',
     recommendedVersion: 'v8.0.0-testnet',
     compatibleVersions: ['v8.0.0-testnet'],
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -39,7 +38,6 @@ const info: Chain = {
         name: 'v8.0.0-testnet',
         recommendedVersion: 'v8.0.0-testnet',
         compatibleVersions: ['v8.0.0-testnet'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

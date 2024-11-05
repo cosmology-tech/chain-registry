@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/artela-network/artela',
     recommendedVersion: 'v0.4.2-beta',
     compatibleVersions: ['v0.4.2-beta'],
-    cosmosSdkVersion: '0.47',
     consensus: {
       type: 'cometbft',
       version: '0.37'
@@ -41,7 +40,6 @@ const info: Chain = {
         name: 'v0.4.2-beta',
         recommendedVersion: 'v0.4.2-beta',
         compatibleVersions: ['v0.4.2-beta'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'
@@ -58,7 +56,6 @@ const info: Chain = {
         name: 'v0.4.1-beta',
         recommendedVersion: 'v0.4.1-beta',
         compatibleVersions: ['v0.4.1-beta'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'

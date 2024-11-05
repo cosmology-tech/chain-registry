@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/thesixnetwork/six-protocol',
     recommendedVersion: 'v3.1.1-fn',
     compatibleVersions: ['v3.1.1-fn'],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v3.1.1-fn',
         recommendedVersion: 'v3.1.1-fn',
         compatibleVersions: ['v3.1.1-fn'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

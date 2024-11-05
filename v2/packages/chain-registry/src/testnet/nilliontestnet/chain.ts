@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/NillionNetwork/nilchain',
     recommendedVersion: 'v0.1.1',
     compatibleVersions: ['v0.1.1'],
-    cosmosSdkVersion: 'v0.50.6',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.6'
@@ -41,7 +40,6 @@ const info: Chain = {
         name: 'v0.1.1',
         recommendedVersion: 'v0.1.1',
         compatibleVersions: ['v0.1.1'],
-        cosmosSdkVersion: 'v0.50.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.6'
@@ -71,29 +69,65 @@ const info: Chain = {
     }
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://nillion-testnet-rpc.polkachu.com/',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://testnet-nillion-rpc.lavenderfive.com',
         provider: 'lavenderfive'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://nillion-testnet.rpc.kjnodes.com',
+        provider: 'kjnodes'
+      },
+      {
+        address: 'https://nillion-testnet.rpc.nodex.one',
+        provider: 'NodeX Emperor'
+      }
+    ],
+    rest: [
+      {
         address: 'https://nillion-testnet-api.polkachu.com/',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://testnet-nillion-api.lavenderfive.com',
         provider: 'lavenderfive'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://nillion-testnet.api.kjnodes.com',
+        provider: 'kjnodes'
+      },
+      {
+        address: 'https://nillion-testnet.api.nodex.one',
+        provider: 'NodeX Emperor'
+      }
+    ],
+    grpc: [
+      {
         address: 'https://testnet-nillion-grpc.lavenderfive.com',
         provider: 'lavenderfive'
-      }]
+      },
+      {
+        address: 'https://nillion-testnet.grpc.kjnodes.com',
+        provider: 'kjnodes'
+      },
+      {
+        address: 'https://nillion-testnet.grpc.nodex.one',
+        provider: 'NodeX Emperor'
+      }
+    ]
   },
   explorers: [{
       url: 'https://testnet.nillion.explorers.guru',
       txPage: 'https://testnet.nillion.explorers.guru/transaction/${txHash}',
       accountPage: 'https://testnet.nillion.explorers.guru/account/${accountAddress}'
+    }, {
+      url: 'https://testnet.ping.pub/nillion',
+      txPage: 'https://testnet.ping.pub/nillion/tx/${txHash}',
+      accountPage: 'https://testnet.ping.pub/nillion/account/${accountAddress}'
     }],
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nilliontestnet/images/nil.svg',

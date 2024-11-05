@@ -35,7 +35,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/aura-nw/aura',
     recommendedVersion: 'v0.9.3',
     compatibleVersions: ['v0.9.3'],
-    cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4',
@@ -50,7 +49,6 @@ const info: Chain = {
         name: 'v0.8.2',
         recommendedVersion: 'v0.8.2',
         compatibleVersions: ['v0.8.2'],
-        cosmosSdkVersion: 'v0.47.8',
         consensus: {
           type: 'cometbft',
           version: '0.37.4'
@@ -73,7 +71,6 @@ const info: Chain = {
         name: 'ibcupgrade',
         recommendedVersion: 'v0.8.3',
         compatibleVersions: ['v0.8.3'],
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.8-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4',
@@ -100,7 +97,6 @@ const info: Chain = {
         name: 'v0.9.3',
         recommendedVersion: 'v0.9.3',
         compatibleVersions: ['v0.9.3'],
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4',

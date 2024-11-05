@@ -39,7 +39,6 @@ const info: Chain = {
       "darwin/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Darwin_arm64.tar.gz',
       "windows/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Windows_amd64.zip'
     },
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -51,7 +50,6 @@ const info: Chain = {
         name: 'v11',
         recommendedVersion: 'v11.0.6',
         compatibleVersions: ['v11.0.6'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -78,7 +76,6 @@ const info: Chain = {
         height: 2330000,
         recommendedVersion: 'v11.2.1',
         compatibleVersions: ['v11.2.0', 'v11.2.1'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

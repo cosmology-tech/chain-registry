@@ -37,7 +37,6 @@ const info: Chain = {
       "darwin/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_darwin_arm64.tar.gz',
       "windows/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_windows_amd64.tar.gz'
     },
-    cosmosSdkVersion: 'v0.46.14',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.28'
@@ -84,7 +83,6 @@ const info: Chain = {
           "darwin/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_darwin_arm64.tar.gz',
           "windows/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_windows_amd64.tar.gz'
         },
-        cosmosSdkVersion: 'v0.46.14',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'

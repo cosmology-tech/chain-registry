@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/empe-io/empe-chain',
     recommendedVersion: 'v0.1.0',
     compatibleVersions: ['v0.1.0'],
-    cosmosSdkVersion: 'v0.47',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -49,7 +48,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v0.1.0',
         compatibleVersions: ['v0.1.0'],
-        cosmosSdkVersion: 'v0.47',
         consensus: {
           type: 'tendermint',
           version: '0.34'

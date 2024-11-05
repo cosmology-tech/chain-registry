@@ -30,7 +30,6 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/airchains-network/junction',
     recommendedVersion: 'v0.1.0',
-    cosmosSdkVersion: '0.50.3',
     genesis: {
       genesisUrl: 'https://github.com/airchains-network/junction/releases/download/v0.1.0/genesis.json'
     },

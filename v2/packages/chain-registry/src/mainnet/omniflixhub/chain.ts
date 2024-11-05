@@ -16,7 +16,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/OmniFlix/omniflixhub',
     recommendedVersion: 'v4.1.1',
     compatibleVersions: ['v4.1.1'],
-    cosmosSdkVersion: 'v0.47.10',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -29,7 +28,6 @@ const info: Chain = {
         name: 'v0.8.0',
         recommendedVersion: 'v0.8.0',
         compatibleVersions: ['v0.8.0'],
-        cosmosSdkVersion: 'v0.45.10',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.22'
@@ -50,7 +48,6 @@ const info: Chain = {
         height: 6262420,
         recommendedVersion: 'v0.10.0',
         compatibleVersions: ['v0.10.0'],
-        cosmosSdkVersion: 'v0.45.15',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -71,7 +68,6 @@ const info: Chain = {
         height: 7339200,
         recommendedVersion: 'v0.11.1',
         compatibleVersions: ['v0.11.1'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -92,7 +88,6 @@ const info: Chain = {
         height: 8054200,
         recommendedVersion: 'v0.12.1',
         compatibleVersions: ['v0.12.1'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -113,7 +108,6 @@ const info: Chain = {
         height: 10428200,
         recommendedVersion: 'v2.0.0',
         compatibleVersions: ['v2.0.0'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -134,7 +128,6 @@ const info: Chain = {
         height: 10678600,
         recommendedVersion: 'v2.1.0',
         compatibleVersions: ['v2.1.0'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -155,7 +148,6 @@ const info: Chain = {
         height: 10872800,
         recommendedVersion: 'v3.3.0',
         compatibleVersions: ['v3.3.0'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -179,7 +171,6 @@ const info: Chain = {
         height: 11914000,
         recommendedVersion: 'v4.1.1',
         compatibleVersions: ['v4.1.1'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

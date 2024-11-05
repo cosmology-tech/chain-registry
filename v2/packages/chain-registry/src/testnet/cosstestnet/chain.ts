@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/coss-inscription/coss',
     recommendedVersion: '0.1.0-testnet',
     compatibleVersions: ['0.1.0-testnet'],
-    cosmosSdkVersion: '0.50.2',
     consensus: {
       type: 'tendermint',
       version: '0.38.2'

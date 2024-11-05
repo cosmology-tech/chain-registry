@@ -37,7 +37,6 @@ const info: Chain = {
         name: 'v0.2',
         recommendedVersion: 'v0.2',
         compatibleVersions: ['v0.2'],
-        cosmosSdkVersion: 'v0.45.4',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.19'

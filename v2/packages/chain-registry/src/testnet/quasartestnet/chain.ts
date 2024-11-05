@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/quasar-finance/quasar',
     recommendedVersion: 'v2.0.0-rc',
     compatibleVersions: ['v2.0.0-rc'],
-    cosmosSdkVersion: '0.47.12',
     consensus: {
       type: 'cometbft',
       version: '0.37.6'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v1.0.1-rc-testnet',
         recommendedVersion: 'v1.0.1-rc-testnet',
         compatibleVersions: ['v1.0.1-rc-testnet'],
-        cosmosSdkVersion: '0.45.16',
         consensus: {
           type: 'tendermint',
           version: '0.34.27'
@@ -59,7 +57,6 @@ const info: Chain = {
         name: 'v2.0.0-rc',
         recommendedVersion: 'v2.0.0-rc',
         compatibleVersions: ['v2.0.0-rc'],
-        cosmosSdkVersion: '0.47.12',
         consensus: {
           type: 'cometbft',
           version: '0.37.6'

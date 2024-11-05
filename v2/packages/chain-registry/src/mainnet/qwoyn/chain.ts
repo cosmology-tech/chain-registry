@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/cosmic-horizon/QWOYN',
     recommendedVersion: 'v5.4.1',
     compatibleVersions: ['v5.4.1'],
-    cosmosSdkVersion: '0.47.6',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.2'
@@ -46,7 +45,6 @@ const info: Chain = {
         tag: 'v5.0.2',
         recommendedVersion: 'v5.0.2',
         compatibleVersions: ['v5.0.2'],
-        cosmosSdkVersion: '0.47.3',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -71,7 +69,6 @@ const info: Chain = {
         height: 280850,
         recommendedVersion: 'v5.1.0',
         compatibleVersions: ['v5.1.0'],
-        cosmosSdkVersion: '0.47.3',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -93,7 +90,6 @@ const info: Chain = {
         height: 805404,
         recommendedVersion: 'v5.2.0',
         compatibleVersions: ['v5.2.0'],
-        cosmosSdkVersion: '0.47.3',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.1'
@@ -115,7 +111,6 @@ const info: Chain = {
         height: 2789768,
         recommendedVersion: 'v5.3.0',
         compatibleVersions: ['v5.3.0'],
-        cosmosSdkVersion: '0.47.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -141,7 +136,6 @@ const info: Chain = {
         height: 3395000,
         recommendedVersion: 'v5.4.1',
         compatibleVersions: ['v5.4.1'],
-        cosmosSdkVersion: '0.47.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'

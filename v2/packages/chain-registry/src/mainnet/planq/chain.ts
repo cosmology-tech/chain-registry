@@ -38,7 +38,6 @@ const info: Chain = {
       "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_arm64.tar.gz',
       "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_windows_amd64.zip'
     },
-    cosmosSdkVersion: 'v0.46.3',
     consensus: {
       type: 'cometbft',
       version: '0.34.26'
@@ -66,7 +65,6 @@ const info: Chain = {
         name: 'v1.0.7',
         recommendedVersion: 'v1.1.0',
         compatibleVersions: ['v1.1.0'],
-        cosmosSdkVersion: 'v0.46.3',
         consensus: {
           type: 'cometbft',
           version: '0.34.26'

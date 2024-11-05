@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/soar-robotics/soarchain-core',
     recommendedVersion: 'v0.2.10',
     compatibleVersions: ['v0.2.10'],
-    cosmosSdkVersion: '0.45.5',
     consensus: {
       type: 'tendermint',
       version: '0.34.19'

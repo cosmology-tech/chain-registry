@@ -40,7 +40,6 @@ const info: Chain = {
       "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_amd64',
       "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_arm64'
     },
-    cosmosSdkVersion: 'v0.47.11',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -59,7 +58,6 @@ const info: Chain = {
           type: 'tendermint',
           version: 'v0.34.27'
         },
-        cosmosSdkVersion: 'v0.45.16',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v1.0.1/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v1.0.1/archwayd_linux_arm64'
@@ -90,7 +88,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmosSdkVersion: 'v0.45.16',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v2.0.0/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v2.0.0/archwayd_linux_arm64'
@@ -120,7 +117,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.34.27'
         },
-        cosmosSdkVersion: 'v0.45.16',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v4.0.3/archwayd_linux_arm64',
@@ -152,7 +148,6 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.4'
         },
-        cosmosSdkVersion: 'v0.47.10',
         binaries: {
           "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_linux_amd64',
           "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v6.0.3/archwayd_linux_arm64',
@@ -188,7 +183,6 @@ const info: Chain = {
           "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_amd64',
           "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_arm64'
         },
-        cosmosSdkVersion: 'v0.47.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'

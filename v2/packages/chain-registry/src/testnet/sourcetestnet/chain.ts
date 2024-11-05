@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Source-Protocol-Cosmos/source',
     recommendedVersion: 'v3.0.1',
     compatibleVersions: ['v3.0.1'],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v3.0.0',
         recommendedVersion: 'v3.0.0',
         compatibleVersions: ['v3.0.0'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -59,7 +57,6 @@ const info: Chain = {
         name: 'v3.0.1',
         recommendedVersion: 'v3.0.1',
         compatibleVersions: ['v3.0.1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/evmos/evmos',
     recommendedVersion: 'v19.1.0',
     compatibleVersions: ['v19.1.0'],
-    cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos.2',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.9'
@@ -61,7 +60,6 @@ const info: Chain = {
           'v12.1.1',
           'v12.1.0'
         ],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -90,7 +88,6 @@ const info: Chain = {
         height: 14538200,
         recommendedVersion: 'v13.0.2',
         compatibleVersions: ['v13.0.2'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -119,7 +116,6 @@ const info: Chain = {
         height: 16105000,
         recommendedVersion: 'v14.0.0',
         compatibleVersions: ['v14.0.0'],
-        cosmosSdkVersion: 'v0.47.4-evmos.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -149,7 +145,6 @@ const info: Chain = {
         height: 16946771,
         recommendedVersion: 'v15.0.0',
         compatibleVersions: ['v15.0.0'],
-        cosmosSdkVersion: 'v0.47.5-evmos',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3',
@@ -180,7 +175,6 @@ const info: Chain = {
         height: 18295000,
         recommendedVersion: 'v16.0.4',
         compatibleVersions: ['v16.0.4'],
-        cosmosSdkVersion: 'v0.47.5-evmos.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3',
@@ -210,7 +204,6 @@ const info: Chain = {
         height: 20101000,
         recommendedVersion: 'v17.0.1',
         compatibleVersions: ['v17.0.1'],
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -240,7 +233,6 @@ const info: Chain = {
         height: 20396852,
         recommendedVersion: 'v18.0.1',
         compatibleVersions: ['v18.0.1'],
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -270,7 +262,6 @@ const info: Chain = {
         height: 21209000,
         recommendedVersion: 'v18.1.0',
         compatibleVersions: ['v18.1.0'],
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.5-evmos.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -300,7 +291,6 @@ const info: Chain = {
         height: 22763500,
         recommendedVersion: 'v19.1.0',
         compatibleVersions: ['v19.1.0'],
-        cosmosSdkVersion: 'evmos/cosmos-sdk v0.47.12-evmos.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.9'
@@ -343,10 +333,6 @@ const info: Chain = {
   description: 'Developers use Evmos as the Ethereum Canary Chain to deploy applications of the future. Get all the functionalities of Ethereum with the power of IBC and Interchain composability.',
   apis: {
     rpc: [
-      {
-        address: 'https://rpc-evmos.ecostake.com',
-        provider: 'ecostake'
-      },
       {
         address: 'https://rpc.lavenderfive.com:443/evmos',
         provider: 'Lavender.Five Nodes 🐝'
@@ -488,10 +474,6 @@ const info: Chain = {
       {
         address: 'https://evmos-api.validatrium.club',
         provider: 'Validatrium'
-      },
-      {
-        address: 'https://rest-evmos.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://evmos-rest.publicnode.com',

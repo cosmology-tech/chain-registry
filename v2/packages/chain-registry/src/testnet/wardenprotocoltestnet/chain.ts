@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/warden-protocol/wardenprotocol',
     recommendedVersion: 'v0.3.0',
     compatibleVersions: ['v0.3.0'],
-    cosmosSdkVersion: '0.50',
     consensus: {
       type: 'cometbft',
       version: '0.38'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v0.3.0',
         recommendedVersion: 'v0.3.0',
         compatibleVersions: ['v0.3.0'],
-        cosmosSdkVersion: '0.50',
         consensus: {
           type: 'cometbft',
           version: '0.38'

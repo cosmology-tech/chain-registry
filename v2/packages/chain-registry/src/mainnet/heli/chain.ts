@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Heli-Chain/heli',
     recommendedVersion: 'v0.0.1',
     compatibleVersions: ['v0.0.1'],
-    cosmosSdkVersion: '0.47.4',
     consensus: {
       type: 'cometbft',
       version: '0.37.2'
@@ -46,7 +45,6 @@ const info: Chain = {
         name: 'v0.0.1',
         recommendedVersion: 'v0.0.1',
         compatibleVersions: ['v0.0.1'],
-        cosmosSdkVersion: '0.47.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'

@@ -40,7 +40,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v24.0.0/junod'
     },
-    cosmosSdkVersion: 'v0.47.12',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.8'
@@ -58,7 +57,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v13.0.0/junod'
         },
-        cosmosSdkVersion: '0.45.14',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.26',
@@ -87,7 +85,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v14.1.0/junod'
         },
-        cosmosSdkVersion: '0.45.15',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',
@@ -116,7 +113,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v15.0.0/junod'
         },
-        cosmosSdkVersion: '0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',
@@ -145,7 +141,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v16.0.2/junod'
         },
-        cosmosSdkVersion: '0.47.3',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -173,7 +168,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v17.1.1/junod'
         },
-        cosmosSdkVersion: '0.47.5',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -201,7 +195,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v18.1.0/junod'
         },
-        cosmosSdkVersion: '0.47.5',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -229,7 +222,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v20.0.0/junod'
         },
-        cosmosSdkVersion: 'v0.47.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -257,7 +249,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/kintsugi-tech/juno/releases/download/v21.0.1/junod'
         },
-        cosmosSdkVersion: 'v0.47.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -285,7 +276,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v22.0.1/junod'
         },
-        cosmosSdkVersion: 'v0.47.11-0.20240417094812-f556fd956fb1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
@@ -314,7 +304,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v23.1.0/junod'
         },
-        cosmosSdkVersion: 'v0.47.12',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.8'
@@ -342,7 +331,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v24.0.0/junod'
         },
-        cosmosSdkVersion: 'v0.47.12',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.8'
@@ -389,10 +377,6 @@ const info: Chain = {
       {
         address: 'http://juno.rpc.m.stavr.tech:1067',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://rpc-juno.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://juno-rpc.polkachu.com',
@@ -499,10 +483,6 @@ const info: Chain = {
       {
         address: 'https://lcd-juno.itastakers.com',
         provider: 'itastakers'
-      },
-      {
-        address: 'https://rest-juno.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://rest.lavenderfive.com:443/juno',

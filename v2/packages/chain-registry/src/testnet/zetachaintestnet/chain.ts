@@ -29,7 +29,6 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/zeta-chain/node',
     recommendedVersion: 'v8.3.3',
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -40,7 +39,6 @@ const info: Chain = {
     versions: [{
         name: 'v8.3.3',
         recommendedVersion: 'v8.3.3',
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

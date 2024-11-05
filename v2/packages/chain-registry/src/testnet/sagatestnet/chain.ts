@@ -35,7 +35,6 @@ const info: Chain = {
       'v0.1.2',
       'v0.1.3'
     ],
-    cosmosSdkVersion: '0.47',
     consensus: {
       type: 'tendermint',
       version: '0.37'
@@ -52,7 +51,6 @@ const info: Chain = {
           'v0.1.2',
           'v0.1.3'
         ],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'tendermint',
           version: '0.37'

@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/humansdotai/',
     recommendedVersion: 'v1.0.0',
     compatibleVersions: ['v1.0.0'],
-    cosmosSdkVersion: '0.46.11',
     consensus: {
       type: 'cometbft',
       version: '0.34.27'

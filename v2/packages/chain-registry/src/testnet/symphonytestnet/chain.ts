@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Orchestra-Labs/symphony',
     recommendedVersion: 'v23.0.5',
     compatibleVersions: ['v23.0.5'],
-    cosmosSdkVersion: '0.47.8',
     consensus: {
       type: 'tendermint',
       version: '0.37.4'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v23.0.5-rc1',
         recommendedVersion: 'v23.0.5-rc1',
         compatibleVersions: ['v23.0.5-rc1'],
-        cosmosSdkVersion: '0.47.8',
         consensus: {
           type: 'tendermint',
           version: '0.37.4'

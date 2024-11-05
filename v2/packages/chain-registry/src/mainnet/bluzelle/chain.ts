@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/bluzelle/bluzelle-public',
     recommendedVersion: 'v10.0',
     compatibleVersions: ['v10.0'],
-    cosmosSdkVersion: 'v0.45.11',
     consensus: {
       type: 'cometbft',
       version: '0.34.23'
@@ -47,7 +46,6 @@ const info: Chain = {
         name: 'v2.0',
         recommendedVersion: 'v2.0',
         compatibleVersions: ['v2.0'],
-        cosmosSdkVersion: '0.44.3',
         consensus: {
           type: 'tendermint',
           version: '0.34.14'
@@ -61,7 +59,6 @@ const info: Chain = {
         name: 'v9.0',
         recommendedVersion: 'v9.0',
         compatibleVersions: ['v9.0'],
-        cosmosSdkVersion: '0.45.11',
         consensus: {
           type: 'tendermint',
           version: '0.34.23'
@@ -81,7 +78,6 @@ const info: Chain = {
         },
         proposal: 1,
         height: 3333333,
-        cosmosSdkVersion: 'v0.45.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.23'

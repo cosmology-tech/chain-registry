@@ -36,7 +36,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-amd64',
           "linux/arm64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-arm64'
         },
-        cosmosSdkVersion: 'v0.50.10',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.12',
@@ -55,7 +54,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-amd64',
       "linux/arm64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-arm64'
     },
-    cosmosSdkVersion: 'v0.50.10',
     sdk: {
       type: 'cosmos',
       version: 'v0.50.10'

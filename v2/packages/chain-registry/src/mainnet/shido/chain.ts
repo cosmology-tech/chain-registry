@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/ShidoGlobal/shidochain',
     recommendedVersion: 'v2.0.0',
     compatibleVersions: ['v2.0.0'],
-    cosmosSdkVersion: 'v0.47.4',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -48,7 +47,6 @@ const info: Chain = {
         tag: 'v1.0.0',
         recommendedVersion: 'v1.0.0',
         compatibleVersions: ['v1.0.0'],
-        cosmosSdkVersion: 'v0.47.4',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -69,7 +67,6 @@ const info: Chain = {
         tag: 'v2.0.0',
         recommendedVersion: 'v2.0.0',
         compatibleVersions: ['v2.0.0'],
-        cosmosSdkVersion: 'v0.47.4',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

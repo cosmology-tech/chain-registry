@@ -40,7 +40,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/lavanet/lava/releases/download/v3.1.0/lavad-v3.1.0-linux-amd64'
     },
-    cosmosSdkVersion: 'lavanet/cosmos-sdk v0.47.13-lava-cosmos',
     consensus: {
       type: 'cometbft',
       version: '0.37.4'

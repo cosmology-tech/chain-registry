@@ -35,7 +35,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/White-Whale-Defi-Platform/migaloo-chain',
     recommendedVersion: 'v4.1.3',
     compatibleVersions: ['v4.1.3'],
-    cosmosSdkVersion: 'v0.47.7',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -52,7 +51,6 @@ const info: Chain = {
           'v2.0.4',
           'v2.0.5'
         ],
-        cosmosSdkVersion: '0.46.11',
         consensus: {
           type: 'cometbft',
           version: '0.34.27'
@@ -78,7 +76,6 @@ const info: Chain = {
         height: 2342302,
         recommendedVersion: 'v2.2.7-hotfix',
         compatibleVersions: ['v2.2.7-hotfix'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -104,7 +101,6 @@ const info: Chain = {
         height: 3574316,
         recommendedVersion: 'v3.0.1-hotfix',
         compatibleVersions: ['v3.0.1-hotfix'],
-        cosmosSdkVersion: '0.46.15',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -130,7 +126,6 @@ const info: Chain = {
         height: 4128108,
         recommendedVersion: 'v3.0.4',
         compatibleVersions: ['v3.0.4'],
-        cosmosSdkVersion: '0.46.15',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -156,7 +151,6 @@ const info: Chain = {
         height: 5962700,
         recommendedVersion: 'v4.1.3',
         compatibleVersions: ['v4.1.3'],
-        cosmosSdkVersion: 'v0.47.7',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

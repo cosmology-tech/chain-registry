@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/TucanaProtocol/Tucana',
     recommendedVersion: 'v8.1.0',
     compatibleVersions: ['v8.1.0'],
-    cosmosSdkVersion: 'v0.50.8',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.9'
@@ -43,7 +42,6 @@ const info: Chain = {
         name: 'v8.1.0',
         recommendedVersion: 'v8.1.0',
         compatibleVersions: ['v8.1.0'],
-        cosmosSdkVersion: 'v0.50.8',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.9'

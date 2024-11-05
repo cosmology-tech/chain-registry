@@ -49,7 +49,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/elys-network/elys',
     recommendedVersion: 'v0.12.0',
     compatibleVersions: ['v0.12.0'],
-    cosmosSdkVersion: 'v0.47',
     consensus: {
       type: 'cometbft',
       version: '0.37.2'
@@ -62,7 +61,6 @@ const info: Chain = {
         name: 'v0.2.3',
         recommendedVersion: 'v0.2.3',
         compatibleVersions: ['v0.2.3'],
-        cosmosSdkVersion: 'v0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -193,7 +191,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/elys-network/elys/releases/download/v0.12.0/elysd-v0.12.0-linux-amd64.tar.gz'
         },
-        cosmosSdkVersion: 'v0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'

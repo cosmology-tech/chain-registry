@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/noislabs/noisd',
     recommendedVersion: 'v1.0.4',
     compatibleVersions: ['v1.0.0', 'v1.0.4'],
-    cosmosSdkVersion: 'v0.45.15',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.29'
@@ -49,7 +48,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v1.0.4',
         compatibleVersions: ['v1.0.0', 'v1.0.4'],
-        cosmosSdkVersion: 'v0.45.15',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'

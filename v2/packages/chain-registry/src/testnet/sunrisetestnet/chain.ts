@@ -33,7 +33,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/sunriselayer/sunrise/releases/download/v0.1.2/sunrised'
     },
-    cosmosSdkVersion: '0.50.2',
     consensus: {
       type: 'cometbft',
       version: 'v0.0.5',
@@ -48,7 +47,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/sunriselayer/sunrise/releases/download/v0.0.7/sunrised'
         },
-        cosmosSdkVersion: '0.50.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.0.5',
@@ -72,7 +70,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/sunriselayer/sunrise/releases/download/v0.0.8/sunrised'
         },
-        cosmosSdkVersion: '0.50.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.0.5',
@@ -96,7 +93,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/sunriselayer/sunrise/releases/download/v0.1.1/sunrised'
         },
-        cosmosSdkVersion: '0.50.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.0.5',
@@ -120,7 +116,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/sunriselayer/sunrise/releases/download/v0.1.2/sunrised'
         },
-        cosmosSdkVersion: '0.50.2',
         consensus: {
           type: 'cometbft',
           version: 'v0.0.5',

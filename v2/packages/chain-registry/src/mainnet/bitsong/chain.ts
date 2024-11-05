@@ -19,7 +19,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/bitsongofficial/go-bitsong/releases/download/v0.15.0/bitsongd'
     },
-    cosmosSdkVersion: 'v0.45.16',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-2b/genesis.json'
     },
@@ -27,7 +26,6 @@ const info: Chain = {
         name: 'v0.14.0',
         recommendedVersion: 'v0.14.0',
         compatibleVersions: ['v0.14.0'],
-        cosmosSdkVersion: '0.45.11',
         nextVersionName: 'v0.15.0',
         sdk: {
           type: 'cosmos',
@@ -47,7 +45,6 @@ const info: Chain = {
         height: 15947000,
         recommendedVersion: 'v0.15.0',
         compatibleVersions: ['v0.15.0'],
-        cosmosSdkVersion: '0.45.16',
         nextVersionName: '',
         sdk: {
           type: 'cosmos',

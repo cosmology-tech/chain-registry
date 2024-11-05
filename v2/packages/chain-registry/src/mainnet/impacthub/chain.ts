@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/ixofoundation/ixo-blockchain',
     recommendedVersion: 'v3.0.0',
     compatibleVersions: ['v3.0.0'],
-    cosmosSdkVersion: 'v0.45.16',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.27'
@@ -46,7 +45,6 @@ const info: Chain = {
         height: 1254500,
         recommendedVersion: 'v0.20.1',
         compatibleVersions: ['v0.20.0', 'v0.20.1'],
-        cosmosSdkVersion: 'v0.45.12',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.24'
@@ -67,7 +65,6 @@ const info: Chain = {
         height: 2383000,
         recommendedVersion: 'v2.0.0',
         compatibleVersions: ['v2.0.0'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -88,7 +85,6 @@ const info: Chain = {
         height: 6556300,
         recommendedVersion: 'v3.0.0',
         compatibleVersions: ['v3.0.0'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'

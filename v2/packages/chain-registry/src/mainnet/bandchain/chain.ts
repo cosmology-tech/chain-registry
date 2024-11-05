@@ -38,7 +38,6 @@ const info: Chain = {
       'v2.5.3',
       'v2.5.4'
     ],
-    cosmosSdkVersion: '0.45.16',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.29'
@@ -53,7 +52,6 @@ const info: Chain = {
         height: 11525000,
         recommendedVersion: 'v2.4.1',
         compatibleVersions: ['v2.4.0', 'v2.4.1'],
-        cosmosSdkVersion: 'v0.45.10',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.22'
@@ -78,7 +76,6 @@ const info: Chain = {
           'v2.5.3',
           'v2.5.4'
         ],
-        cosmosSdkVersion: '0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'

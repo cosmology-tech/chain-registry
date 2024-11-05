@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/sei-protocol/sei-chain',
     recommendedVersion: 'v5.9.0',
     compatibleVersions: ['v5.9.0'],
-    cosmosSdkVersion: 'sei-cosmos v0.3.37',
     consensus: {
       type: 'sei-tendermint',
       version: 'v0.3.8'
@@ -44,7 +43,6 @@ const info: Chain = {
         name: 'v.0.8',
         recommendedVersion: '3.0.8',
         compatibleVersions: ['3.0.8'],
-        cosmosSdkVersion: 'v0.45.10',
         nextVersionName: 'v3.0.9',
         sdk: {
           type: 'cosmos',
@@ -66,7 +64,6 @@ const info: Chain = {
         compatibleVersions: ['v3.0.9'],
         proposal: 24,
         height: 25259000,
-        cosmosSdkVersion: 'v0.45.10',
         nextVersionName: 'v3.1.1',
         sdk: {
           type: 'cosmos',
@@ -88,7 +85,6 @@ const info: Chain = {
         compatibleVersions: ['v3.1.1'],
         proposal: 32,
         height: 29772820,
-        cosmosSdkVersion: 'v0.45.10',
         nextVersionName: 'v3.2.1',
         sdk: {
           type: 'cosmos',
@@ -110,7 +106,6 @@ const info: Chain = {
         compatibleVersions: ['v3.2.1'],
         proposal: 42,
         height: 34078260,
-        cosmosSdkVersion: 'v0.45.10',
         nextVersionName: 'v3.3.0',
         sdk: {
           type: 'cosmos',
@@ -135,7 +130,6 @@ const info: Chain = {
           'v3.3.3',
           'v3.3.4'
         ],
-        cosmosSdkVersion: 'sei-cosmos v0.2.63',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.2.28'
@@ -161,7 +155,6 @@ const info: Chain = {
         name: 'v3.5.0',
         recommendedVersion: 'v3.5.1',
         compatibleVersions: ['v3.5.0', 'V3.5.1'],
-        cosmosSdkVersion: 'sei-cosmos v0.2.63',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.2.35'
@@ -189,7 +182,6 @@ const info: Chain = {
         height: 53894102,
         recommendedVersion: 'v3.6.1',
         compatibleVersions: ['v3.6.1'],
-        cosmosSdkVersion: 'sei-cosmos v0.2.72',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.2.37'
@@ -217,7 +209,6 @@ const info: Chain = {
         height: 60622970,
         recommendedVersion: 'v3.7.0',
         compatibleVersions: ['v3.7.0'],
-        cosmosSdkVersion: 'sei-cosmos v0.2.74',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.2.37'
@@ -245,7 +236,6 @@ const info: Chain = {
         height: 64851894,
         recommendedVersion: 'v3.8.2',
         compatibleVersions: ['v3.8.0', 'v3.8.2'],
-        cosmosSdkVersion: 'sei-cosmos v0.2.77',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.2.39'
@@ -273,7 +263,6 @@ const info: Chain = {
         height: 79123881,
         recommendedVersion: 'v5.5.2',
         compatibleVersions: ['v5.5.2'],
-        cosmosSdkVersion: 'sei-cosmos v0.2.83',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.2.40'
@@ -301,7 +290,6 @@ const info: Chain = {
         height: 73290488,
         recommendedVersion: 'v5.5.2',
         compatibleVersions: ['v5.5.2'],
-        cosmosSdkVersion: 'sei-cosmos v0.3.13',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.3.3'
@@ -329,7 +317,6 @@ const info: Chain = {
         height: 84006014,
         recommendedVersion: 'v5.5.5',
         compatibleVersions: ['v5.5.5'],
-        cosmosSdkVersion: 'sei-cosmos v0.3.19',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.3.3'
@@ -357,7 +344,6 @@ const info: Chain = {
         height: 89475838,
         recommendedVersion: 'v5.6.2',
         compatibleVersions: ['v5.6.2'],
-        cosmosSdkVersion: 'sei-cosmos v0.3.24',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.3.4'
@@ -385,7 +371,6 @@ const info: Chain = {
         height: 94496767,
         recommendedVersion: 'v5.7.5',
         compatibleVersions: ['v5.7.5'],
-        cosmosSdkVersion: 'sei-cosmos v0.3.31',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.3.6'
@@ -413,7 +398,6 @@ const info: Chain = {
         height: 102491599,
         recommendedVersion: 'v5.8.0',
         compatibleVersions: ['v5.8.0'],
-        cosmosSdkVersion: 'sei-cosmos v0.3.35',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.3.8'
@@ -441,7 +425,6 @@ const info: Chain = {
         height: 107000672,
         recommendedVersion: 'v5.9.0',
         compatibleVersions: ['v5.9.0'],
-        cosmosSdkVersion: 'sei-cosmos v0.3.37',
         consensus: {
           type: 'sei-tendermint',
           version: 'v0.3.8'

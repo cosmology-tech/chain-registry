@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/onomyprotocol/onex',
     recommendedVersion: 'v1.1.0',
     compatibleVersions: ['v1.1.0'],
-    cosmosSdkVersion: '0.45.16',
     consensus: {
       type: 'cometbft',
       version: '0.34.28'
@@ -45,7 +44,6 @@ const info: Chain = {
         tag: 'v1.1.0',
         recommendedVersion: 'v1.1.0',
         compatibleVersions: ['v1.1.0'],
-        cosmosSdkVersion: '0.45.16',
         consensus: {
           type: 'cometbft',
           version: '0.34.28'

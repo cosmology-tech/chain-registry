@@ -131,7 +131,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Stride-Labs/stride',
     recommendedVersion: 'v24.0.0',
     compatibleVersions: ['v24.0.0'],
-    cosmosSdkVersion: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -145,7 +144,6 @@ const info: Chain = {
         name: 'v8',
         recommendedVersion: 'v8.0.0',
         compatibleVersions: ['v8.0.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -174,7 +172,6 @@ const info: Chain = {
         proposal: 206,
         recommendedVersion: 'v10.0.0',
         compatibleVersions: ['v10.0.0'],
-        cosmosSdkVersion: '0.47.3',
         nextVersionName: 'v11',
         sdk: {
           type: 'cosmos',
@@ -290,7 +287,6 @@ const info: Chain = {
         compatibleVersions: ['v17.0.0'],
         proposal: 226,
         height: 7244427,
-        cosmosSdkVersion: 'v0.47.5-stride-distribution-fix-0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -313,7 +309,6 @@ const info: Chain = {
         compatibleVersions: ['v18.0.0'],
         proposal: 229,
         height: 7464647,
-        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.5-stride-distribution-fix-0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -337,7 +332,6 @@ const info: Chain = {
         compatibleVersions: ['v19.0.0'],
         proposal: 233,
         height: 8064608,
-        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.5-stride-distribution-fix-0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -361,7 +355,6 @@ const info: Chain = {
         compatibleVersions: ['v20.0.0'],
         proposal: 235,
         height: 8269628,
-        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -385,7 +378,6 @@ const info: Chain = {
         compatibleVersions: ['v21.0.0'],
         proposal: 236,
         height: 8370738,
-        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -409,7 +401,6 @@ const info: Chain = {
         compatibleVersions: ['v22.0.0'],
         proposal: 237,
         height: 8681868,
-        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -433,7 +424,6 @@ const info: Chain = {
         compatibleVersions: ['v23.0.0'],
         proposal: 247,
         height: 10077001,
-        cosmosSdkVersion: 'Stride-Labs/cosmos-sdk v0.47.10-stride-distribution-fix-0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -457,7 +447,6 @@ const info: Chain = {
         compatibleVersions: ['v24.0.0'],
         proposal: 249,
         height: 10755701,
-        cosmosSdkVersion: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

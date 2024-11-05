@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/aura-nw/aura',
     recommendedVersion: 'v0.8.0-euphoria',
     compatibleVersions: ['v0.8.0-euphoria'],
-    cosmosSdkVersion: 'v0.47.8',
     consensus: {
       type: 'cometbft',
       version: '0.37.4'
@@ -46,7 +45,6 @@ const info: Chain = {
         name: 'v0.8.0-euphoria',
         recommendedVersion: 'v0.8.0-euphoria',
         compatibleVersions: ['v0.8.0-euphoria'],
-        cosmosSdkVersion: 'v0.47.8',
         consensus: {
           type: 'cometbft',
           version: '0.37.4'

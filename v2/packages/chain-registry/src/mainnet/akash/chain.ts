@@ -34,7 +34,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_amd64.zip',
       "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_arm64.zip'
     },
-    cosmosSdkVersion: 'v0.45.16',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.27',
@@ -111,7 +110,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.32.1/akash_linux_amd64.zip',
           "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.32.1238/akash_linux_arm64.zip'
         },
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',
@@ -138,7 +136,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.34.1/akash_linux_amd64.zip',
           "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.34.1/akash_linux_arm64.zip'
         },
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',
@@ -165,7 +162,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_amd64.zip',
           "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_arm64.zip'
         },
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',

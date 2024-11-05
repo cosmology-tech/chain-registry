@@ -32,7 +32,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-linux-amd64.tar.gz',
       "darwin/arm64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-darwin-arm64.tar.gz'
     },
-    cosmosSdkVersion: 'v0.47.9',
     consensus: {
       type: 'cometbft',
       version: '0.37.5'
@@ -79,7 +78,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/comdex-official/comdex/releases/download/v13.4.0/comdex-linux-amd64.tar.gz'
         },
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -104,7 +102,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-linux-amd64.tar.gz',
           "darwin/arm64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-darwin-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'v0.47.9',
         consensus: {
           type: 'cometbft',
           version: '0.37.5'

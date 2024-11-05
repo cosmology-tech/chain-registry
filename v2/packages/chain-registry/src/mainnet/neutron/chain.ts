@@ -65,7 +65,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v4.2.0/neutrond-linux-amd64'
     },
-    cosmosSdkVersion: 'neutron-org/cosmos-sdk v0.50.7-neutron',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.7'
@@ -78,7 +77,6 @@ const info: Chain = {
         name: 'v1.0.1',
         recommendedVersion: 'v1.0.4',
         compatibleVersions: ['v1.0.3', 'v1.0.4'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -106,7 +104,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v2.0.4/neutrond-linux-amd64'
         },
-        cosmosSdkVersion: 'v0.47.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -134,7 +131,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v3.0.2/neutrond-linux-amd64'
         },
-        cosmosSdkVersion: 'neutron-org/cosmos-sdk v0.47.10-neutron',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -165,7 +161,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v3.0.6/neutrond-linux-amd64'
         },
-        cosmosSdkVersion: 'neutron-org/cosmos-sdk v0.47.10-neutron',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -196,7 +191,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v4.2.0/neutrond-linux-amd64'
         },
-        cosmosSdkVersion: 'neutron-org/cosmos-sdk v0.50.7-neutron',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.7'
