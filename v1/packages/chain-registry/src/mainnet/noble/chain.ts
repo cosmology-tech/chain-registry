@@ -29,7 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',

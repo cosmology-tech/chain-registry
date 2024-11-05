@@ -32,7 +32,7 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
   },
   codebase: {
-    cosmos_sdk_version: '0.45'
+
   },
   apis: {
     rpc: [{

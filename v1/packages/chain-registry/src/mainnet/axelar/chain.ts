@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'axelarnetwork/cosmos-sdk v0.45.17-0.20240321205000-47c0c80e20ca'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',

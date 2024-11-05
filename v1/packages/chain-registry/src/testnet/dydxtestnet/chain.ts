@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.4'
+
   },
   description: 'Our goal is to build open source code that can power a first class product and trading experience.',
   apis: {

@@ -49,6 +49,10 @@ const info: Chain = {
       {
         address: 'https://rpc.celestia.testnet.dteam.tech:443',
         provider: 'DTEAM'
+      },
+      {
+        address: 'https://celestia-testnet-rpc.stakeandrelax.net',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ],
     rest: [
@@ -75,6 +79,10 @@ const info: Chain = {
       {
         address: 'https://api.celestia.testnet.dteam.tech:443',
         provider: 'DTEAM'
+      },
+      {
+        address: 'https://celestia-testnet-api.stakeandrelax.net',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ],
     grpc: [
@@ -97,6 +105,10 @@ const info: Chain = {
       {
         address: 'grpc.celestia.testnet.dteam.tech:27090',
         provider: 'DTEAM'
+      },
+      {
+        address: 'http://celestia-testnet-grpc.stakeandrelax.net:11690',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ]
   },
@@ -123,6 +135,12 @@ const info: Chain = {
       url: 'https://explorer.testnet.dteam.tech/celestia',
       tx_page: 'https://explorer.testnet.dteam.tech/celestia/tx/${txHash}',
       account_page: 'https://explorer.testnet.dteam.tech/celestia/account/${accountAddress}'
+    },
+    {
+      kind: 'Relaxed Explorer 🦥',
+      url: 'https://testnet.explorer.stakeandrelax.net/celestia',
+      tx_page: 'https://testnet.explorer.stakeandrelax.net/celestia/transaction/${txHash}',
+      account_page: 'https://testnet.explorer.stakeandrelax.net/celestia/account/${accountAddress}'
     }
   ]
 };

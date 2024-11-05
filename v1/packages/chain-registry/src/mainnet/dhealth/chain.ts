@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'cosmos/cosmos-sdk v0.47.4'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',

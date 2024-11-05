@@ -59,7 +59,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'neutron-org/cosmos-sdk v0.50.7-neutron'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.png',

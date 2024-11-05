@@ -31,7 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45'
+
   },
   apis: {
     rpc: [{

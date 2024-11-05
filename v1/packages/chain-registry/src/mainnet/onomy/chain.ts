@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'onomyprotocol/onomy-sdk v0.45.16-onomy-dev'
+
   },
   apis: {
     rpc: [{

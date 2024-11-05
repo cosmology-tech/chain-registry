@@ -135,7 +135,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.12'
+
   },
   description: 'A decentralized ecosystem for protocols, builders and web3 users seeking sustainable FinTech.',
   apis: {
@@ -147,10 +147,6 @@ const info: Chain = {
       {
         address: 'https://kujira-rpc.polkachu.com',
         provider: 'polkachu'
-      },
-      {
-        address: 'https://rpc-kujira.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://rpc.lavenderfive.com:443/kujira',
@@ -225,10 +221,6 @@ const info: Chain = {
       {
         address: 'https://kujira-api.polkachu.com/',
         provider: 'polkachu'
-      },
-      {
-        address: 'https://rest-kujira.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://api-kujira-ia.cosmosia.notional.ventures/',

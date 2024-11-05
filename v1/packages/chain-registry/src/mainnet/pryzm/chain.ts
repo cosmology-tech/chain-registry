@@ -104,7 +104,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.13'
+
   },
   apis: {
     rpc: [

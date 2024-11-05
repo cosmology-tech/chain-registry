@@ -31,7 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'github.com/Finschia/finschia-sdk@v0.48.1'
+
   },
   description: 'Finschia (formerly LINE Blockchain Mainnet) aims to build a sustainable token model and create token demand to become a blockchain with 1 billion users.',
   apis: {

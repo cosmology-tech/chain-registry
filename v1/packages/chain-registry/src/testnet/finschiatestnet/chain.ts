@@ -31,7 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'github.com/Finschia/finschia-sdk@v0.48.1'
+
   },
   apis: {
     rpc: [{

@@ -40,10 +40,6 @@ const info: Chain = {
         provider: 'AssetMantle'
       },
       {
-        address: 'https://rpc-assetmantle.ecostake.com',
-        provider: 'ecostake'
-      },
-      {
         address: 'https://assetmantle-rpc.polkachu.com',
         provider: 'Polkachu'
       },
@@ -72,10 +68,6 @@ const info: Chain = {
       {
         address: 'https://rest.assetmantle.one',
         provider: 'AssetMantle'
-      },
-      {
-        address: 'https://rest-assetmantle.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://api.assetmantle.nodestake.top',

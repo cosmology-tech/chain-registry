@@ -29,7 +29,7 @@ const info: Chain = {
   },
   description: 'Stake to the BlueChip chain, interact with the creator pools, and subscribe through the creator subscription contracts.',
   codebase: {
-    cosmos_sdk_version: '0.47.11'
+
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluechip/images/bluechip.png',

@@ -32,7 +32,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',

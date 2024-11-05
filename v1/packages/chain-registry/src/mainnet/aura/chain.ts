@@ -32,7 +32,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.12-evmos'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',
