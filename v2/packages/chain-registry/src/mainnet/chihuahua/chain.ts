@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/ChihuahuaChain/chihuahua/',
     recommendedVersion: 'v7.0.2',
     compatibleVersions: ['v7.0.2'],
-    cosmosSdkVersion: 'v0.47.8',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -92,7 +91,6 @@ const info: Chain = {
         compatibleVersions: ['v5.0.3', 'v5.0.4'],
         proposal: 54,
         height: 9430000,
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -118,7 +116,6 @@ const info: Chain = {
         compatibleVersions: ['v6.0.1'],
         proposal: 66,
         height: 10666000,
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -144,7 +141,6 @@ const info: Chain = {
         compatibleVersions: ['v7'],
         proposal: 75,
         height: 12900000,
-        cosmosSdkVersion: 'v0.47.8',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -170,7 +166,6 @@ const info: Chain = {
         compatibleVersions: ['v7.0.2'],
         proposal: 77,
         height: 13250000,
-        cosmosSdkVersion: 'v0.47.8',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

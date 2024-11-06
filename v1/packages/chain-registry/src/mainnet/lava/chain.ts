@@ -31,7 +31,7 @@ const info: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'lavanet/cosmos-sdk v0.47.13-lava-cosmos'
+
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',

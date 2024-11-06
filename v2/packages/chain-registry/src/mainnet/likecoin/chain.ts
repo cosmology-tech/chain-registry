@@ -41,7 +41,6 @@ const info: Chain = {
       "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Darwin_arm64.tar.gz',
       "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Windows_x86_64.zip'
     },
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -57,7 +56,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v1.2.0',
         compatibleVersions: ['v1.2.0', 'fotan-1.2'],
-        cosmosSdkVersion: '0.42',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -85,7 +83,6 @@ const info: Chain = {
           'v2.0.1',
           'v2.0.2'
         ],
-        cosmosSdkVersion: '0.44',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -113,7 +110,6 @@ const info: Chain = {
         height: 4810000,
         recommendedVersion: 'v3.1.0',
         compatibleVersions: ['v3.1.0'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -145,7 +141,6 @@ const info: Chain = {
           'v4.0.1',
           'v4.0.2'
         ],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -173,7 +168,6 @@ const info: Chain = {
         height: 12102100,
         recommendedVersion: 'v4.1.1',
         compatibleVersions: ['v4.1.1'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -201,7 +195,6 @@ const info: Chain = {
         height: 14103500,
         recommendedVersion: 'v4.2.0',
         compatibleVersions: ['v4.2.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

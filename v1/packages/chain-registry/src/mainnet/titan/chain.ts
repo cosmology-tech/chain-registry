@@ -29,7 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.47.6-titan.4'
+
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.png',

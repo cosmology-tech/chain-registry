@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/titantkx/titan',
     recommendedVersion: 'v2.0.1',
     compatibleVersions: ['v2.0.1'],
-    cosmosSdkVersion: '0.47.6-titan.4',
     consensus: {
       type: 'cometbft',
       version: '0.37.4'
@@ -46,7 +45,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v2.0.1',
         compatibleVersions: ['v2.0.1'],
-        cosmosSdkVersion: '0.47.6-titan.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.4'

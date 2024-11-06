@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/CosmosContracts/juno',
     recommendedVersion: 'v15.0.0-alpha.2',
     compatibleVersions: ['v15.0.0', 'v15.0.0-alpha.2'],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -41,7 +40,6 @@ const info: Chain = {
         name: 'v13.0.0-beta.1',
         recommendedVersion: 'v13.0.0-beta.1',
         compatibleVersions: ['v13.0.0-beta.1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -62,7 +60,6 @@ const info: Chain = {
         name: 'v14.0.0-alpha.1',
         recommendedVersion: 'v14.0.0-alpha.1',
         compatibleVersions: ['v14.0.0-alpha.1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

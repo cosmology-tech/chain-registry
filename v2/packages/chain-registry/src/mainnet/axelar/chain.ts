@@ -36,7 +36,6 @@ const info: Chain = {
       "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-amd64-v1.0.2',
       "darwin/arm64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-arm64-v1.0.2'
     },
-    cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20240321205000-47c0c80e20ca',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.31'
@@ -73,7 +72,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.35.5/axelard-linux-amd64-v0.35.5',
           "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v0.35.5/axelard-darwin-amd64-v0.35.5'
         },
-        cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20230904150332-37fb903a6c62',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.31'
@@ -103,7 +101,6 @@ const info: Chain = {
           "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-amd64-v1.0.2',
           "darwin/arm64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-arm64-v1.0.2'
         },
-        cosmosSdkVersion: 'axelarnetwork/cosmos-sdk v0.45.17-0.20240321205000-47c0c80e20ca',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.31'

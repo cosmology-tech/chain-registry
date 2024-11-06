@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/stafihub/stafihub',
     recommendedVersion: 'v0.5.0',
     compatibleVersions: ['v0.5.0'],
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -70,7 +69,6 @@ const info: Chain = {
         proposal: 4,
         recommendedVersion: 'v0.5.0',
         compatibleVersions: ['v0.5.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

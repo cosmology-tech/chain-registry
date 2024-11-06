@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.45.16'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
@@ -53,20 +53,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://rpc-akash.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
-      },
-      {
-        address: 'https://rpc-akash-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
-      },
-      {
         address: 'http://akash.c29r3.xyz:80/rpc',
         provider: 'c29r3'
-      },
-      {
-        address: 'https://akash-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://akash-rpc.kleomedes.network',
@@ -87,14 +75,6 @@ const info: Chain = {
       {
         address: 'https://akash-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'https://akash-rpc.validatornode.com',
-        provider: 'ValidatorNode'
-      },
-      {
-        address: 'https://rpc-akash.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://public.stakewolle.com/cosmos/akash/rpc',

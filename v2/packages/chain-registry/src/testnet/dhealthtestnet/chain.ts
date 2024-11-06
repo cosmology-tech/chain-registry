@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/dhealthproject/dhealth-testnet',
     recommendedVersion: 'v2.1.1',
     compatibleVersions: ['v2.1.1'],
-    cosmosSdkVersion: 'cosmos/cosmos-sdk v0.47.4',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.2'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v2',
         recommendedVersion: 'v2.1.1',
         compatibleVersions: ['v2.1.1'],
-        cosmosSdkVersion: 'v0.47.4',
         sdk: {
           type: 'cosmos',
           version: 'v0.47.4'

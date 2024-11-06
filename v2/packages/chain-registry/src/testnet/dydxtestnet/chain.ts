@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/dydxprotocol/v4-chain/',
     recommendedVersion: 'v2.0.0',
     compatibleVersions: ['v2.0.0'],
-    cosmosSdkVersion: 'v0.47.4',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dydxprotocol/v4-testnets/main/dydx-testnet-4/genesis.json'
     },
@@ -39,7 +38,6 @@ const info: Chain = {
         name: 'v2',
         recommendedVersion: 'v2.0.0',
         compatibleVersions: ['v2.0.0'],
-        cosmosSdkVersion: 'v0.47.4',
         sdk: {
           type: 'cosmos',
           version: 'v0.47.4'

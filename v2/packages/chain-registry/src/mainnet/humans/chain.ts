@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/humansdotai/',
     recommendedVersion: 'v1.0.0',
     compatibleVersions: ['v1.0.0'],
-    cosmosSdkVersion: '0.46.11',
     consensus: {
       type: 'cometbft',
       version: '0.34.27'
@@ -115,6 +114,10 @@ const info: Chain = {
       {
         address: 'https://humans-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://humans-mainnet-rpc.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ],
     rest: [
@@ -169,6 +172,10 @@ const info: Chain = {
       {
         address: 'https://humans-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://humans-mainnet-rest.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ],
     grpc: [
@@ -211,6 +218,10 @@ const info: Chain = {
       {
         address: 'humans-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'humans-mainnet-grpc.cosmonautstakes.com:9190',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ],
     evmHttpJsonrpc: [
@@ -241,6 +252,10 @@ const info: Chain = {
       {
         address: 'https://humans-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://humans-mainnet-evm.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ]
   },

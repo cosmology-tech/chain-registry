@@ -33,7 +33,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.6.3/quicksilverd-v1.6.3-amd64'
     },
-    cosmosSdkVersion: 'v0.46.16',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.33'
@@ -46,7 +45,6 @@ const info: Chain = {
         name: 'v1.2.9-hotfix.0',
         recommendedVersion: 'v1.2.9-hotfix.0',
         compatibleVersions: ['v1.2.9-hotfix.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -74,7 +72,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.2.10/quicksilverd-v1.2.10-amd64'
         },
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -101,7 +98,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.2.14/quicksilverd-v1.2.14-amd64'
         },
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -129,7 +125,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.2.16/quicksilverd-v1.2.16-amd64'
         },
-        cosmosSdkVersion: '0.46.14',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -157,7 +152,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.2.17/quicksilverd-v1.2.17-amd64'
         },
-        cosmosSdkVersion: '0.46.15',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -186,7 +180,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.4.5/quicksilverd-v1.4.5-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -216,7 +209,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.4.6/quicksilverd-v1.4.6-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -246,7 +238,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.4.7/quicksilverd-v1.4.7-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -276,7 +267,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.5.0/quicksilverd-v1.5.0-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -306,7 +296,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.5.2/quicksilverd-v1.5.2-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -336,7 +325,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.5.3/quicksilverd-v1.5.3-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.32'
@@ -366,7 +354,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.5.4/quicksilverd-v1.5.4-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.32'
@@ -396,7 +383,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.5.5/quicksilverd-v1.5.5-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.32'
@@ -426,7 +412,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.5.7/quicksilverd-v1.5.7-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.32'
@@ -456,7 +441,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.6.1/quicksilverd-v1.6.1-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.33'
@@ -480,7 +464,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.6.2/quicksilverd-v1.6.1-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.33'
@@ -504,7 +487,6 @@ const info: Chain = {
         binaries: {
           "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.6.3/quicksilverd-v1.6.3-amd64'
         },
-        cosmosSdkVersion: 'v0.46.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.33'

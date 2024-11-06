@@ -26,7 +26,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/UptickNetwork/uptick',
     recommendedVersion: 'v0.2.6',
     compatibleVersions: ['v0.2.6'],
-    cosmosSdkVersion: '0.46.5',
     consensus: {
       type: 'tendermint',
       version: '0.34.23'
@@ -38,7 +37,6 @@ const info: Chain = {
         name: 'v0.2.6',
         recommendedVersion: 'v0.2.6',
         compatibleVersions: ['v0.2.6'],
-        cosmosSdkVersion: '0.46.5',
         consensus: {
           type: 'tendermint',
           version: '0.34.23'

@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/evmos/evmos',
     recommendedVersion: 'v12.0.0-rc4',
     compatibleVersions: ['v12.0.0-rc4'],
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v11.0.0-rc3',
         recommendedVersion: 'v11.0.0-rc3',
         compatibleVersions: ['v11.0.0-rc3'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -59,7 +57,6 @@ const info: Chain = {
         name: 'v12.0.0',
         recommendedVersion: 'v12.0.0-rc4',
         compatibleVersions: ['v12.0.0-rc4'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

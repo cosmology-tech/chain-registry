@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/xpladev/xpla',
     recommendedVersion: 'v1.4.0',
     compatibleVersions: ['v1.4.0'],
-    cosmosSdkVersion: 'v0.47.13-xpla',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -44,7 +43,6 @@ const info: Chain = {
         name: 'evm',
         recommendedVersion: 'v1.2.1',
         compatibleVersions: ['v1.2.1'],
-        cosmosSdkVersion: '0.45.9',
         consensus: {
           type: 'tendermint',
           version: '0.34.21'
@@ -62,7 +60,6 @@ const info: Chain = {
         name: 'volunteer',
         recommendedVersion: 'v1.3.0',
         compatibleVersions: ['v1.3.0'],
-        cosmosSdkVersion: '0.45.16',
         consensus: {
           type: 'cometbft',
           version: '0.34.27'
@@ -80,7 +77,6 @@ const info: Chain = {
         name: 'v1_4',
         recommendedVersion: 'v1.4.0',
         compatibleVersions: ['v1.4.0'],
-        cosmosSdkVersion: 'xpladev/cosmos-sdk v0.45.20-xpla',
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -106,7 +102,6 @@ const info: Chain = {
         compatibleVersions: ['v1.5.0'],
         proposal: 65,
         height: 10085200,
-        cosmosSdkVersion: 'v0.47.10-xpla',
         consensus: {
           type: 'cometbft',
           version: '0.37.5'
@@ -132,7 +127,6 @@ const info: Chain = {
         compatibleVersions: ['v1.6.0'],
         proposal: 66,
         height: 10491710,
-        cosmosSdkVersion: 'v0.47.13-xpla',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'

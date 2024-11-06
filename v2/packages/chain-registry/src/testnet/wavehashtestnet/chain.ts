@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/WaveHashProtocol/wavehash',
     recommendedVersion: 'v6.0.0',
     compatibleVersions: ['v6.0.0'],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -41,7 +40,6 @@ const info: Chain = {
         name: 'v6.0.0',
         recommendedVersion: 'v6.0.0',
         compatibleVersions: ['v6.0.0'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

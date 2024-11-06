@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/osmosis-labs/osmosis',
     recommendedVersion: 'v15.0.0-rc3',
     compatibleVersions: ['v15.0.0-rc3'],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v14.0.0-rc1',
         recommendedVersion: 'v14.0.0-rc1',
         compatibleVersions: ['v14.0.0-rc1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -59,7 +57,6 @@ const info: Chain = {
         name: 'v15.0.0-rc3',
         recommendedVersion: 'v15.0.0-rc3',
         compatibleVersions: ['v15.0.0-rc3'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

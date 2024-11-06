@@ -34,7 +34,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_amd64.zip',
       "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_arm64.zip'
     },
-    cosmosSdkVersion: 'v0.45.16',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.27',
@@ -111,7 +110,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.32.1/akash_linux_amd64.zip',
           "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.32.1238/akash_linux_arm64.zip'
         },
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',
@@ -138,7 +136,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.34.1/akash_linux_amd64.zip',
           "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.34.1/akash_linux_arm64.zip'
         },
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',
@@ -165,7 +162,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_amd64.zip',
           "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_arm64.zip'
         },
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27',
@@ -215,20 +211,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://rpc-akash.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
-      },
-      {
-        address: 'https://rpc-akash-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
-      },
-      {
         address: 'http://akash.c29r3.xyz:80/rpc',
         provider: 'c29r3'
-      },
-      {
-        address: 'https://akash-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://akash-rpc.kleomedes.network',
@@ -249,14 +233,6 @@ const info: Chain = {
       {
         address: 'https://akash-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'https://akash-rpc.validatornode.com',
-        provider: 'ValidatorNode'
-      },
-      {
-        address: 'https://rpc-akash.whispernode.com:443',
-        provider: 'WhisperNode 🤐'
       },
       {
         address: 'https://public.stakewolle.com/cosmos/akash/rpc',

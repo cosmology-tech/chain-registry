@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.5'
+
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.png',

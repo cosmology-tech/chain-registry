@@ -40,7 +40,6 @@ const info: Chain = {
       "darwin/amd64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-amd64',
       "darwin/arm64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-arm64'
     },
-    cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.48.1',
     genesis: {
       name: 'v2',
       genesisUrl: 'https://vos.line-scdn.net/finschia-2-fileshare/datafile/finschia-prod-2/finschia-2-genesis.tgz'
@@ -57,7 +56,6 @@ const info: Chain = {
           "darwin/amd64": 'https://github.com/Finschia/finschia/releases/download/v1.1.1/finschia-v1.1.1-darwin-amd64.tgz',
           "darwin/arm64": 'https://github.com/Finschia/finschia/releases/download/v1.1.1/finschia-v1.1.1-darwin-arm64.tgz'
         },
-        cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.47.3',
         nextVersionName: 'v2',
         sdk: {
           type: 'cosmos',
@@ -92,7 +90,6 @@ const info: Chain = {
           "darwin/amd64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-amd64',
           "darwin/arm64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-arm64'
         },
-        cosmosSdkVersion: 'github.com/Finschia/finschia-sdk@v0.48.1',
         previousVersionName: 'v1',
         nextVersionName: 'v3',
         sdk: {

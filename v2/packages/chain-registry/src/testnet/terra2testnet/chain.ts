@@ -51,7 +51,6 @@ const info: Chain = {
         tag: 'v2.1.0-beta.1',
         height: 838500,
         recommendedVersion: 'v2.1.0-beta.1',
-        cosmosSdkVersion: '0.46.9',
         consensus: {
           type: 'tendermint',
           version: '0.34.21'
@@ -79,7 +78,6 @@ const info: Chain = {
         height: 2777777,
         recommendedVersion: 'v2.2.1',
         compatibleVersions: ['v2.2.0', 'v2.2.1'],
-        cosmosSdkVersion: '0.46.11',
         consensus: {
           type: 'tendermint',
           version: '0.34.21'
@@ -112,7 +110,6 @@ const info: Chain = {
           'v2.3.2',
           'v2.3.4'
         ],
-        cosmosSdkVersion: 'v0.46.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -139,7 +136,6 @@ const info: Chain = {
         height: 6272928,
         recommendedVersion: 'v2.4.0-rc5',
         compatibleVersions: ['v2.4.0-rc5'],
-        cosmosSdkVersion: 'v0.46.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'

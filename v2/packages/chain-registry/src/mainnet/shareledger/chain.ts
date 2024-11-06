@@ -34,7 +34,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/ShareRing/Shareledger/releases/download/v1.4.1/shareledger'
     },
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -69,7 +68,6 @@ const info: Chain = {
         nextVersionName: 'v5',
         recommendedVersion: '1.4.1',
         compatibleVersions: ['1.4.1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

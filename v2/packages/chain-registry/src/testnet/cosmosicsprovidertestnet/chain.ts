@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/cosmos/gaia',
     recommendedVersion: 'v20.0.0',
     compatibleVersions: ['v20.0.0'],
-    cosmosSdkVersion: 'v0.50.9-lsm',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.11'
@@ -130,7 +129,6 @@ const info: Chain = {
         tag: 'v18.0.0-rc3',
         recommendedVersion: 'v18.0.0-rc3',
         compatibleVersions: ['v18.0.0-rc3'],
-        cosmosSdkVersion: 'v0.47.16-ics-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.6'
@@ -159,7 +157,6 @@ const info: Chain = {
         tag: 'v20.0.0',
         recommendedVersion: 'v20.0.0',
         compatibleVersions: ['v20.0.0'],
-        cosmosSdkVersion: 'v0.50.9-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.11'

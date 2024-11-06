@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/MANTRA-Chain/mantrachain',
     recommendedVersion: '1.0.0-rc3',
     compatibleVersions: ['1.0.0-rc3'],
-    cosmosSdkVersion: '0.50.10',
     consensus: {
       type: 'cometbft',
       version: '0.38'
@@ -47,7 +46,6 @@ const info: Chain = {
         name: '1.0.0-rc3',
         recommendedVersion: '1.0.0-rc3',
         compatibleVersions: ['1.0.0-rc3'],
-        cosmosSdkVersion: '0.50.10',
         consensus: {
           type: 'cometbft',
           version: '0.38'

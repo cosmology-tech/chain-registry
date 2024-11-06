@@ -28,7 +28,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'celestiaorg/cosmos-sdk v1.24.1-sdk-v0.46.16'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
@@ -148,6 +148,10 @@ const info: Chain = {
       {
         address: 'https://rpc.celestia.mainnet.dteam.tech:443',
         provider: 'DTEAM'
+      },
+      {
+        address: 'https://celestia-rpc.stakeandrelax.net',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ],
     rest: [
@@ -250,6 +254,10 @@ const info: Chain = {
       {
         address: 'https://api.celestia.mainnet.dteam.tech:443',
         provider: 'DTEAM'
+      },
+      {
+        address: 'https://celestia-api.stakeandrelax.net',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ],
     grpc: [
@@ -336,6 +344,10 @@ const info: Chain = {
       {
         address: 'grpc.celestia.mainnet.dteam.tech:28090',
         provider: 'DTEAM'
+      },
+      {
+        address: 'http://celestia-grpc.stakeandrelax.net:11690',
+        provider: 'Stake&Relax Validator 🦥'
       }
     ]
   },
@@ -398,6 +410,12 @@ const info: Chain = {
       url: 'https://explorer.mainnet.dteam.tech/celestia',
       tx_page: 'https://explorer.mainnet.dteam.tech/celestia/transaction/${txHash}',
       account_page: 'https://explorer.mainnet.dteam.tech/celestia/account/${accountAddress}'
+    },
+    {
+      kind: 'Relaxed Explorer 🦥',
+      url: 'https://explorer.stakeandrelax.net/celestia',
+      tx_page: 'https://explorer.stakeandrelax.net/celestia/transaction/${txHash}',
+      account_page: 'https://explorer.stakeandrelax.net/celestia/account/${accountAddress}'
     }
   ],
   images: [{

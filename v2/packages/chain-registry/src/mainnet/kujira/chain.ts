@@ -138,7 +138,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Team-Kujira/core',
     recommendedVersion: 'v1.1.0',
     compatibleVersions: ['v1.1.0'],
-    cosmosSdkVersion: 'v0.47.12',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -154,7 +153,6 @@ const info: Chain = {
         proposal: 302,
         recommendedVersion: 'v0.8.4-mainnet',
         compatibleVersions: ['v0.8.4', 'v0.8.4-mainnet'],
-        cosmosSdkVersion: '0.46.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -182,7 +180,6 @@ const info: Chain = {
         height: 14783000,
         recommendedVersion: 'v0.9.0',
         compatibleVersions: ['v0.9.0'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -199,7 +196,6 @@ const info: Chain = {
         height: 15205000,
         recommendedVersion: 'v0.9.1-1',
         compatibleVersions: ['v0.9.1-1'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -216,7 +212,6 @@ const info: Chain = {
         height: 16610000,
         recommendedVersion: 'v0.9.3-1',
         compatibleVersions: ['v0.9.3-1'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -237,7 +232,6 @@ const info: Chain = {
         height: 18700000,
         recommendedVersion: 'v1.0.2',
         compatibleVersions: ['v1.0.2'],
-        cosmosSdkVersion: 'v0.47.8',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -258,7 +252,6 @@ const info: Chain = {
         height: 19855000,
         recommendedVersion: 'v1.1.0',
         compatibleVersions: ['v1.1.0'],
-        cosmosSdkVersion: 'v0.47.12',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
@@ -297,10 +290,6 @@ const info: Chain = {
       {
         address: 'https://kujira-rpc.polkachu.com',
         provider: 'polkachu'
-      },
-      {
-        address: 'https://rpc-kujira.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://rpc.lavenderfive.com:443/kujira',
@@ -375,10 +364,6 @@ const info: Chain = {
       {
         address: 'https://kujira-api.polkachu.com/',
         provider: 'polkachu'
-      },
-      {
-        address: 'https://rest-kujira.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://api-kujira-ia.cosmosia.notional.ventures/',

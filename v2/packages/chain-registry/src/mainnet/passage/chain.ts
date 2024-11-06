@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/envadiv/Passage3D',
     recommendedVersion: 'v2.4.0',
     compatibleVersions: ['v2.4.0'],
-    cosmosSdkVersion: 'v0.45.16',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.27'
@@ -45,7 +44,6 @@ const info: Chain = {
         name: 'v2.0.0',
         recommendedVersion: 'v2.0.1',
         compatibleVersions: ['v2.0.1'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -64,7 +62,6 @@ const info: Chain = {
         name: 'v2.2.0',
         recommendedVersion: 'v2.2.0',
         compatibleVersions: ['v2.2.0'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -83,7 +80,6 @@ const info: Chain = {
         name: 'v2.4.0',
         recommendedVersion: 'v2.4.0',
         compatibleVersions: ['v2.4.0'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'

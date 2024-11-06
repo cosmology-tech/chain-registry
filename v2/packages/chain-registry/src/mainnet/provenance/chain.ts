@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/provenance-io/provenance',
     recommendedVersion: 'v1.17.0',
     compatibleVersions: ['v1.17.0'],
-    cosmosSdkVersion: '0.46.13',
     consensus: {
       type: 'tendermint',
       version: '0.34.29'
@@ -152,7 +151,6 @@ const info: Chain = {
         height: 9828888,
         recommendedVersion: 'v1.14.1',
         compatibleVersions: ['v1.14.0', 'v1.14.1'],
-        cosmosSdkVersion: '0.46.10',
         consensus: {
           type: 'tendermint',
           version: '0.34.26'
@@ -185,7 +183,6 @@ const info: Chain = {
           'v1.15.1',
           'v1.15.2'
         ],
-        cosmosSdkVersion: '0.46.10',
         consensus: {
           type: 'tendermint',
           version: '0.34.26'
@@ -210,7 +207,6 @@ const info: Chain = {
         height: 11842000,
         recommendedVersion: 'v1.16.0',
         compatibleVersions: ['v1.16.0'],
-        cosmosSdkVersion: '0.46.13',
         consensus: {
           type: 'tendermint',
           version: '0.34.28'
@@ -238,7 +234,6 @@ const info: Chain = {
         height: 13736000,
         recommendedVersion: 'v1.17.0',
         compatibleVersions: ['v1.17.0'],
-        cosmosSdkVersion: '0.46.13',
         consensus: {
           type: 'tendermint',
           version: '0.34.29'

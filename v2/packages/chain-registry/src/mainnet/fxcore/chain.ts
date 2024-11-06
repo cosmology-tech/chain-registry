@@ -43,7 +43,6 @@ const info: Chain = {
       name: 'fxv1',
       genesisUrl: 'https://github.com/functionx/fx-core/raw/main/public/mainnet/genesis.json'
     },
-    cosmosSdkVersion: 'v0.47.13',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.6'
@@ -110,7 +109,6 @@ const info: Chain = {
           "darwin/arm64": 'https://github.com/FunctionX/fx-core/releases/download/v4.2.1/fx-core_Darwin_arm64.tar.gz',
           "windows/amd64": 'https://github.com/functionx/fx-core/releases/download/v4.2.1/fx-core_Windows_x86_64.zip'
         },
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -129,7 +127,6 @@ const info: Chain = {
         nextVersionName: 'v6.0.x',
         recommendedVersion: 'v5.0.0',
         compatibleVersions: ['v5.0.0'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.28'
@@ -159,7 +156,6 @@ const info: Chain = {
         nextVersionName: 'v7.5.x',
         recommendedVersion: 'v6.1.0',
         compatibleVersions: ['v6.1.0'],
-        cosmosSdkVersion: 'v0.46.13',
         sdk: {
           type: 'cosmos',
           version: 'v0.46.13'
@@ -189,7 +185,6 @@ const info: Chain = {
         nextVersionName: '',
         recommendedVersion: 'v7.5.0',
         compatibleVersions: ['v7.5.0'],
-        cosmosSdkVersion: 'v0.47.13',
         sdk: {
           type: 'cosmos',
           version: 'v0.47.13',

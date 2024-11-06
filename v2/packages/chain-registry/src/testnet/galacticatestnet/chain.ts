@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Galactica-corp/galactica',
     recommendedVersion: 'v0.1.1',
     compatibleVersions: ['v0.1.1'],
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'cometbft',
       version: '0.37'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v0.1.1',
         recommendedVersion: 'v0.1.1',
         compatibleVersions: ['v0.1.1'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.37'

@@ -31,7 +31,6 @@ const info: Chain = {
   codebase: {
     recommendedVersion: 'v2.2.3',
     compatibleVersions: ['v2.2.3'],
-    cosmosSdkVersion: 'v0.47.10',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -69,7 +68,6 @@ const info: Chain = {
         proposal: 169,
         recommendedVersion: 'v2.1.6',
         compatibleVersions: ['v2.1.6'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: '0.37.5'
@@ -100,7 +98,6 @@ const info: Chain = {
         proposal: 173,
         recommendedVersion: 'v2.2.0',
         compatibleVersions: ['v2.2.0'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: '0.37.5'
@@ -131,7 +128,6 @@ const info: Chain = {
         proposal: 183,
         recommendedVersion: 'v2.2.2',
         compatibleVersions: ['v2.2.2'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: '0.37.5'
@@ -162,7 +158,6 @@ const info: Chain = {
         proposal: 186,
         recommendedVersion: 'v2.2.3',
         compatibleVersions: ['v2.2.3'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: '0.37.5'

@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/TERITORI/teritori-chain',
     recommendedVersion: 'v2.0.6',
     compatibleVersions: ['v2.0.6'],
-    cosmosSdkVersion: 'v0.47.6',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.2'
@@ -58,7 +57,6 @@ const info: Chain = {
         height: 7199342,
         recommendedVersion: 'v2.0.6',
         compatibleVersions: ['v2.0.6'],
-        cosmosSdkVersion: 'v0.47.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'

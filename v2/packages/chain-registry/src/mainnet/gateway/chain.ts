@@ -25,7 +25,6 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/wormhole-foundation/wormhole',
     recommendedVersion: 'v2.23.0',
-    cosmosSdkVersion: 'github.com/wormhole-foundation/cosmos-sdk@v0.45.9-wormhole-2',
     consensus: {
       type: 'tendermint',
       version: 'v0.34.24',

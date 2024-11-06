@@ -32,7 +32,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'agoric-labs/cosmos-sdk v0.46.16-alpha.agoric.2.4'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',

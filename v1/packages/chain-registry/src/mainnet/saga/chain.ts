@@ -30,7 +30,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5'
+
   },
   apis: {
     rpc: [

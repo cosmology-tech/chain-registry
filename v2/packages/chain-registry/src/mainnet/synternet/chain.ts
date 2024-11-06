@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/Synternet/synternet-chain-releases',
     recommendedVersion: 'v0.14.0',
     compatibleVersions: ['v0.14.0'],
-    cosmosSdkVersion: 'v0.47.11',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -43,7 +42,6 @@ const info: Chain = {
         tag: 'v0.11.0',
         recommendedVersion: 'v0.11.0',
         compatibleVersions: ['v0.11.0'],
-        cosmosSdkVersion: 'v0.47.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
@@ -65,7 +63,6 @@ const info: Chain = {
         height: 505094,
         recommendedVersion: 'v0.14.0',
         compatibleVersions: ['v0.14.0'],
-        cosmosSdkVersion: 'v0.47.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'

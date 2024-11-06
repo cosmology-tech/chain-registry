@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/zeta-chain/node',
     recommendedVersion: 'v20.0.0',
     compatibleVersions: ['v20.0.0'],
-    cosmosSdkVersion: 'v0.47.10',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -43,7 +42,6 @@ const info: Chain = {
         name: 'v11',
         recommendedVersion: 'v11.0.0',
         compatibleVersions: ['v11.0.0'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -62,7 +60,6 @@ const info: Chain = {
         name: 'v12',
         recommendedVersion: 'v12.0.0',
         compatibleVersions: ['v12.0.0'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -81,7 +78,6 @@ const info: Chain = {
         name: 'v12.1.0',
         recommendedVersion: 'v12.1.0',
         compatibleVersions: ['v12.1.0'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -100,7 +96,6 @@ const info: Chain = {
         name: 'v12.2.0',
         recommendedVersion: 'v12.2.5',
         compatibleVersions: ['v12.2.5'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -121,7 +116,6 @@ const info: Chain = {
         compatibleVersions: ['v14.0.1'],
         proposal: 21,
         height: 2074730,
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -142,7 +136,6 @@ const info: Chain = {
         height: 3388200,
         recommendedVersion: 'v17.0.0',
         compatibleVersions: ['v17.0.0'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -163,7 +156,6 @@ const info: Chain = {
         height: 4071400,
         recommendedVersion: 'v18.0.0',
         compatibleVersions: ['v18.0.0'],
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -184,7 +176,6 @@ const info: Chain = {
         height: 4696150,
         recommendedVersion: 'v19.1.7',
         compatibleVersions: ['v19.1.1', 'v19.1.7'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -205,7 +196,6 @@ const info: Chain = {
         height: 5089400,
         recommendedVersion: 'v20.0.0',
         compatibleVersions: ['v20.0.0'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

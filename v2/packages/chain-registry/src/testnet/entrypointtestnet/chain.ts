@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/entrypoint-zone/testnets',
     recommendedVersion: 'v1.2.0',
     compatibleVersions: ['v1.2.0'],
-    cosmosSdkVersion: '0.47.4',
     consensus: {
       type: 'cometbft',
       version: '0.37.2'
@@ -41,7 +40,6 @@ const info: Chain = {
         name: 'v1.1.1',
         recommendedVersion: 'v1.1.1',
         compatibleVersions: ['v1.1.1'],
-        cosmosSdkVersion: '0.47.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -54,7 +52,6 @@ const info: Chain = {
         name: 'v1.2.0',
         recommendedVersion: 'v1.2.0',
         compatibleVersions: ['v1.2.0'],
-        cosmosSdkVersion: '0.47.4',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'

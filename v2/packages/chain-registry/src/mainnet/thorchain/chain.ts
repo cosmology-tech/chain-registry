@@ -16,7 +16,6 @@ const info: Chain = {
     gitRepo: 'https://gitlab.com/thorchain/thornode',
     recommendedVersion: 'v2.135.0',
     compatibleVersions: ['v2.135.0'],
-    cosmosSdkVersion: 'v0.45.16',
     genesis: {
       genesisUrl: 'https://storage.googleapis.com/public-snapshots-ninerealms/genesis/17562000.json'
     },
@@ -25,7 +24,6 @@ const info: Chain = {
         name: 'v1.132.0',
         recommendedVersion: 'v1.132.0',
         compatibleVersions: ['v1.132.0'],
-        cosmosSdkVersion: 'v0.45.1',
         sdk: {
           type: 'cosmos',
           version: 'v0.45.1'
@@ -39,7 +37,6 @@ const info: Chain = {
         name: 'v1.133.0',
         recommendedVersion: 'v1.133.0',
         compatibleVersions: ['v1.133.0'],
-        cosmosSdkVersion: 'v0.45.1',
         sdk: {
           type: 'cosmos',
           version: 'v0.45.1'
@@ -53,7 +50,6 @@ const info: Chain = {
         name: 'v1.134.0',
         recommendedVersion: 'v1.134.0',
         compatibleVersions: ['v1.134.0'],
-        cosmosSdkVersion: 'v0.45.1',
         sdk: {
           type: 'cosmos',
           version: 'v0.45.1'
@@ -67,7 +63,6 @@ const info: Chain = {
         name: 'v1.134.1',
         recommendedVersion: 'v1.134.1',
         compatibleVersions: ['v1.134.1'],
-        cosmosSdkVersion: 'v0.45.1',
         sdk: {
           type: 'cosmos',
           version: 'v0.45.1'
@@ -81,7 +76,6 @@ const info: Chain = {
         name: 'v2.135.0',
         recommendedVersion: 'v2.135.0',
         compatibleVersions: ['v2.135.0'],
-        cosmosSdkVersion: 'v0.45.16',
         sdk: {
           type: 'cosmos',
           version: 'v0.45.16'

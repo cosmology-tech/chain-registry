@@ -26,7 +26,7 @@ const testnet: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.45'
+
   },
   apis: {
     rpc: [{

@@ -34,7 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/lavanet/lava',
     recommendedVersion: 'v0.12.1',
     compatibleVersions: ['v0.12.1'],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -113,7 +112,6 @@ const info: Chain = {
         height: 227130,
         recommendedVersion: 'v0.12.1',
         compatibleVersions: ['v0.12.1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

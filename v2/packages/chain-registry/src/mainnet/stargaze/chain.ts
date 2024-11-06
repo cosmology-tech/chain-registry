@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/public-awesome/stargaze',
     recommendedVersion: 'v14.0.0',
     compatibleVersions: ['v14.0.0'],
-    cosmosSdkVersion: 'v0.47.12',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.6'
@@ -69,7 +68,6 @@ const info: Chain = {
         height: 12801683,
         recommendedVersion: 'v13.0.0',
         compatibleVersions: ['v13.0.0'],
-        cosmosSdkVersion: 'v0.47.10',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -94,7 +92,6 @@ const info: Chain = {
         height: 14252867,
         recommendedVersion: 'v14.0.0',
         compatibleVersions: ['v14.0.0'],
-        cosmosSdkVersion: 'v0.47.12',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.6'

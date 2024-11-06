@@ -21629,7 +21629,7 @@ const info: AssetList = {
       base: 'factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/uspice',
       name: 'Spice',
       display: 'Spice',
-      symbol: 'Spice',
+      symbol: 'SPICE',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/spice.png'
       },

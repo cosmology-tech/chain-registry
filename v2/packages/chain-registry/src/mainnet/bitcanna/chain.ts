@@ -36,7 +36,6 @@ const info: Chain = {
       "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_arm64.tar.gz',
       "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_darwin_arm64.tar.gz'
     },
-    cosmosSdkVersion: 'v0.47.11',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -99,7 +98,6 @@ const info: Chain = {
           "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.0.2/bcna_linux_arm64.tar.gz',
           "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.0.2/bcna_darwin_arm64.tar.gz'
         },
-        cosmosSdkVersion: 'v0.47.9',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -125,7 +123,6 @@ const info: Chain = {
           "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_arm64.tar.gz',
           "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_darwin_arm64.tar.gz'
         },
-        cosmosSdkVersion: 'v0.47.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'

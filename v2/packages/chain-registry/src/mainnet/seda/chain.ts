@@ -35,7 +35,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.1/sedad-amd64',
       "linux/arm64": 'https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.1/sedad-arm64'
     },
-    cosmosSdkVersion: 'v0.50.5',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.6'

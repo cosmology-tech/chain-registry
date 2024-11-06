@@ -191,7 +191,6 @@ const info: Chain = {
         name: '2.0.1',
         tag: 'v2.0.1',
         height: 12815210,
-        cosmosSdkVersion: '0.45.13',
         consensus: {
           type: 'tendermint',
           version: '0.34.24'
@@ -216,7 +215,6 @@ const info: Chain = {
         name: '2.1.1',
         tag: 'v2.1.1',
         height: 13215800,
-        cosmosSdkVersion: '0.45.14',
         consensus: {
           type: 'tendermint',
           version: '0.34.24'

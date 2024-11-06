@@ -28,7 +28,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/palomachain/paloma',
     recommendedVersion: 'v1.15.4',
     compatibleVersions: ['v1.15.4'],
-    cosmosSdkVersion: 'v0.50.6',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.6'

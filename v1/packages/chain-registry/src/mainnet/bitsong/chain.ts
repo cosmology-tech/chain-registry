@@ -13,7 +13,7 @@ const info: Chain = {
   daemon_name: 'bitsongd',
   node_home: '$HOME/.bitsongd',
   codebase: {
-    cosmos_sdk_version: 'v0.45.16'
+
   },
   fees: {
     fee_tokens: [{

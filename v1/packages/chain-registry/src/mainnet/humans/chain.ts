@@ -29,7 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: '0.46.11'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.png',
@@ -92,6 +92,10 @@ const info: Chain = {
       {
         address: 'https://humans-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://humans-mainnet-rpc.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ],
     rest: [
@@ -146,6 +150,10 @@ const info: Chain = {
       {
         address: 'https://humans-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://humans-mainnet-rest.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ],
     grpc: [
@@ -188,6 +196,10 @@ const info: Chain = {
       {
         address: 'humans-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'humans-mainnet-grpc.cosmonautstakes.com:9190',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ],
     "evm-http-jsonrpc": [
@@ -218,6 +230,10 @@ const info: Chain = {
       {
         address: 'https://humans-jsonrpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://humans-mainnet-evm.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes 🤖'
       }
     ]
   },

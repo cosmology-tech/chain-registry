@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/kleomedes/prysm',
     recommendedVersion: 'v0.1.0-devnet',
     compatibleVersions: ['v0.1.0-devnet'],
-    cosmosSdkVersion: 'v0.50.8',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.10'

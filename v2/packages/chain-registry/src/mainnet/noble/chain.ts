@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/strangelove-ventures/noble',
     recommendedVersion: 'v6.0.0',
     compatibleVersions: ['v6.0.0'],
-    cosmosSdkVersion: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.27'
@@ -48,7 +47,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v1.0.0',
         compatibleVersions: ['v1.0.0'],
-        cosmosSdkVersion: 'v0.45',
         consensus: {
           type: 'tendermint',
           version: 'v0.34'
@@ -73,7 +71,6 @@ const info: Chain = {
         height: 119000,
         recommendedVersion: 'v2.0.1',
         compatibleVersions: ['v2.0.1', 'v2.0.0'],
-        cosmosSdkVersion: 'v0.45',
         consensus: {
           type: 'tendermint',
           version: 'v0.34'
@@ -98,7 +95,6 @@ const info: Chain = {
         height: 1296000,
         recommendedVersion: 'v3.0.0',
         compatibleVersions: ['v3.0.0'],
-        cosmosSdkVersion: 'v0.45.15',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -123,7 +119,6 @@ const info: Chain = {
         height: 2672000,
         recommendedVersion: 'v3.1.0',
         compatibleVersions: ['v3.1.0'],
-        cosmosSdkVersion: 'v0.45.15',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -148,7 +143,6 @@ const info: Chain = {
         height: 3408600,
         recommendedVersion: 'v4.0.3',
         compatibleVersions: ['v4.0.3'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -173,7 +167,6 @@ const info: Chain = {
         height: 5797500,
         recommendedVersion: 'v4.1.3',
         compatibleVersions: ['v4.1.3'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -198,7 +191,6 @@ const info: Chain = {
         height: 7947000,
         recommendedVersion: 'v5.0.0',
         compatibleVersions: ['v5.0.0'],
-        cosmosSdkVersion: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -225,7 +217,6 @@ const info: Chain = {
         height: 11110000,
         recommendedVersion: 'v6.0.0',
         compatibleVersions: ['v6.0.0'],
-        cosmosSdkVersion: 'noble-assets/cosmos-sdk v0.45.16-send-restrictions',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'

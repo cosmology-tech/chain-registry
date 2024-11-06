@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/lum-network/chain',
     recommendedVersion: 'v1.6.7',
     compatibleVersions: ['v1.6.7'],
-    cosmosSdkVersion: 'v0.47.11',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -124,7 +123,6 @@ const info: Chain = {
         height: 10444000,
         recommendedVersion: 'v1.6.3',
         compatibleVersions: ['v1.6.3'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -153,7 +151,6 @@ const info: Chain = {
         height: 11390000,
         recommendedVersion: 'v1.6.4',
         compatibleVersions: ['v1.6.4'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -182,7 +179,6 @@ const info: Chain = {
         height: 11992000,
         recommendedVersion: 'v1.6.5',
         compatibleVersions: ['v1.6.5'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -211,7 +207,6 @@ const info: Chain = {
         height: 12969000,
         recommendedVersion: 'v1.6.6',
         compatibleVersions: ['v1.6.6'],
-        cosmosSdkVersion: 'v0.47.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
@@ -240,7 +235,6 @@ const info: Chain = {
         height: 13241000,
         recommendedVersion: 'v1.6.7',
         compatibleVersions: ['v1.6.7'],
-        cosmosSdkVersion: 'v0.47.11',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'

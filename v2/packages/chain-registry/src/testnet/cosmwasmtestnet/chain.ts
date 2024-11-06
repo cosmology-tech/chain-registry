@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/CosmWasm/wasmd',
     recommendedVersion: 'v0.27',
     compatibleVersions: ['v0.27'],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -41,7 +40,6 @@ const info: Chain = {
         name: 'v0.27',
         recommendedVersion: 'v0.27',
         compatibleVersions: ['v0.27'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'

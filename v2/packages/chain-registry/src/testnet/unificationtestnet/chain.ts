@@ -39,7 +39,6 @@ const info: Chain = {
       "darwin/amd64": 'https://github.com/unification-com/mainchain/releases/download/v1.10.1/und_v1.10.1_darwin_x86_64.tar.gz',
       "windows/amd64": 'https://github.com/unification-com/mainchain/releases/download/v1.10.1/und_v1.10.1_windows_x86_64.tar.gz'
     },
-    cosmosSdkVersion: '0.47.13',
     consensus: {
       type: 'cometbft',
       version: '0.37.5'
@@ -57,7 +56,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.21'
         },
-        cosmosSdkVersion: '0.45.9',
         nextVersionName: 'v1.7.0',
         sdk: {
           type: 'cosmos',
@@ -81,7 +79,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.26'
         },
-        cosmosSdkVersion: '0.45.14',
         nextVersionName: 'v1.8.2',
         sdk: {
           type: 'cosmos',
@@ -105,7 +102,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.29'
         },
-        cosmosSdkVersion: '0.46.15',
         recommendedVersion: 'v1.8.2',
         nextVersionName: 'v1.9.0',
         compatibleVersions: ['v1.8.2'],
@@ -131,7 +127,6 @@ const info: Chain = {
           type: 'tendermint',
           version: '0.34.29'
         },
-        cosmosSdkVersion: '0.46.16',
         nextVersionName: 'v1.10.1',
         recommendedVersion: 'v1.9.0',
         compatibleVersions: ['v1.9.0'],
@@ -157,7 +152,6 @@ const info: Chain = {
           type: 'cometbft',
           version: '0.37.5'
         },
-        cosmosSdkVersion: '0.47.13',
         recommendedVersion: 'v1.10.1',
         compatibleVersions: ['v1.10.0', 'v1.10.1'],
         sdk: {

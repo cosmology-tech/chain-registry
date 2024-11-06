@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/pryzm-finance/pryzm-core',
     recommendedVersion: 'v0.9.0',
     compatibleVersions: ['v0.9.0'],
-    cosmosSdkVersion: '0.47',
     consensus: {
       type: 'tendermint',
       version: '0.37'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v0.9.0',
         recommendedVersion: 'v0.9.0',
         compatibleVersions: ['v0.9.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'tendermint',
           version: '0.37'

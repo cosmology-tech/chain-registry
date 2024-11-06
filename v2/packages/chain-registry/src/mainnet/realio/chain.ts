@@ -40,7 +40,6 @@ const info: Chain = {
       "darwin/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Darwin_arm64.tar.gz',
       "windows/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Windows_x86_64.zip'
     },
-    cosmosSdkVersion: 'v0.46.12',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.27'
@@ -53,7 +52,6 @@ const info: Chain = {
         name: 'v0.8.0-rc4',
         recommendedVersion: 'v0.8.0-rc4',
         compatibleVersions: ['v0.8.0-rc4'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -76,7 +74,6 @@ const info: Chain = {
           'v0.8.2',
           'v0.8.3'
         ],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34.27'
@@ -104,7 +101,6 @@ const info: Chain = {
         height: 5989000,
         recommendedVersion: 'v0.9.2',
         compatibleVersions: ['v0.9.2'],
-        cosmosSdkVersion: 'v0.46.12',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -132,7 +128,6 @@ const info: Chain = {
         height: 7526754,
         recommendedVersion: 'v0.9.3',
         compatibleVersions: ['v0.9.3'],
-        cosmosSdkVersion: 'v0.46.12',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'

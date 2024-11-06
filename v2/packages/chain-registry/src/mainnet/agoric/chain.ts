@@ -38,7 +38,6 @@ const info: Chain = {
     },
     recommendedVersion: 'agoric-upgrade-17',
     compatibleVersions: ['agoric-upgrade-17'],
-    cosmosSdkVersion: 'agoric-labs/cosmos-sdk v0.46.16-alpha.agoric.2.4',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.30',

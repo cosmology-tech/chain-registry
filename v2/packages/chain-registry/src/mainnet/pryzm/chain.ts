@@ -113,7 +113,6 @@ const info: Chain = {
       "linux/amd64": 'https://storage.googleapis.com/pryzm-zone/core/0.19.0/pryzmd-0.19.0-linux-amd64',
       "linux/arm64": 'https://storage.googleapis.com/pryzm-zone/core/0.19.0/pryzmd-0.19.0-linux-arm64'
     },
-    cosmosSdkVersion: 'v0.47.13',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'

@@ -24,7 +24,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/neutron-org/neutron',
     recommendedVersion: 'v4.2.2-testnet',
     compatibleVersions: ['v4.2.2-testnet'],
-    cosmosSdkVersion: '0.50',
     consensus: {
       type: 'cometbft',
       version: '0.38.11'
@@ -38,7 +37,6 @@ const info: Chain = {
         nextVersionName: 'v1.0.4',
         recommendedVersion: 'v0.4.3',
         compatibleVersions: ['v0.4.3'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -61,7 +59,6 @@ const info: Chain = {
         nextVersionName: 'v2.0.0',
         recommendedVersion: 'v1.0.4',
         compatibleVersions: ['v1.0.4'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'cometbft',
           version: '0.34.27'
@@ -84,7 +81,6 @@ const info: Chain = {
         nextVersionName: '',
         recommendedVersion: 'v2.0.0',
         compatibleVersions: ['v2.0.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -107,7 +103,6 @@ const info: Chain = {
         nextVersionName: 'v4.0.0-rc3',
         recommendedVersion: 'v3.0.0',
         compatibleVersions: ['v3.0.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37.4'
@@ -130,7 +125,6 @@ const info: Chain = {
         nextVersionName: 'v4.2.1-testnet',
         recommendedVersion: 'v4.0.0-rc3',
         compatibleVersions: ['v4.0.0-rc3'],
-        cosmosSdkVersion: '0.50',
         consensus: {
           type: 'cometbft',
           version: '0.38.7'
@@ -153,7 +147,6 @@ const info: Chain = {
         nextVersionName: '',
         recommendedVersion: 'v4.2.1-testnet',
         compatibleVersions: ['v4.2.1-testnet'],
-        cosmosSdkVersion: '0.50',
         consensus: {
           type: 'cometbft',
           version: '0.38.11'
@@ -176,7 +169,6 @@ const info: Chain = {
         nextVersionName: '',
         recommendedVersion: 'v4.2.2-testnet',
         compatibleVersions: ['v4.2.2-testnet'],
-        cosmosSdkVersion: '0.50',
         consensus: {
           type: 'cometbft',
           version: '0.38.11'

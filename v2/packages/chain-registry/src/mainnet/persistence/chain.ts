@@ -35,7 +35,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/persistenceOne/persistenceCore',
     recommendedVersion: 'v11.14.0',
     compatibleVersions: ['v11.14.0'],
-    cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.4'
@@ -80,7 +79,6 @@ const info: Chain = {
           'v9.1.0',
           'v9.2.1'
         ],
-        cosmosSdkVersion: 'v0.47.3-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -114,7 +112,6 @@ const info: Chain = {
         proposal: 55,
         recommendedVersion: 'v10.0.0',
         compatibleVersions: ['v10.0.0'],
-        cosmosSdkVersion: 'v0.47.3-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -148,7 +145,6 @@ const info: Chain = {
         height: 14965000,
         recommendedVersion: 'v10.3.0',
         compatibleVersions: ['v10.3.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.3-lsm5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -185,7 +181,6 @@ const info: Chain = {
         height: 15242222,
         recommendedVersion: 'v10.4.0',
         compatibleVersions: ['v10.4.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.3-lsm5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -222,7 +217,6 @@ const info: Chain = {
         height: 15386200,
         recommendedVersion: 'v10.5.0',
         compatibleVersions: ['v10.5.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.3-lsm5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -259,7 +253,6 @@ const info: Chain = {
         height: 15860600,
         recommendedVersion: 'v11.8.1',
         compatibleVersions: ['v11.8.1'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.3-lsm5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -296,7 +289,6 @@ const info: Chain = {
         height: 16250000,
         recommendedVersion: 'v11.9.0',
         compatibleVersions: ['v11.9.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -329,7 +321,6 @@ const info: Chain = {
         height: 16392000,
         recommendedVersion: 'v11.10.0',
         compatibleVersions: ['v11.10.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -362,7 +353,6 @@ const info: Chain = {
         height: 16578000,
         recommendedVersion: 'v11.11.0',
         compatibleVersions: ['v11.11.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -395,7 +385,6 @@ const info: Chain = {
         height: 16851000,
         recommendedVersion: 'v11.12.0',
         compatibleVersions: ['v11.12.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -428,7 +417,6 @@ const info: Chain = {
         height: 16980000,
         recommendedVersion: 'v11.13.0',
         compatibleVersions: ['v11.13.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -461,7 +449,6 @@ const info: Chain = {
         height: 17453500,
         recommendedVersion: 'v11.14.0',
         compatibleVersions: ['v11.14.0'],
-        cosmosSdkVersion: 'persistenceOne/cosmos-sdk v0.47.10-lsm-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'

@@ -29,7 +29,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/ingenuity-build/quicksilver',
     recommendedVersion: 'v1.4.5-rc2',
     compatibleVersions: ['v1.4.5-rc2'],
-    cosmosSdkVersion: '0.46',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -41,7 +40,6 @@ const info: Chain = {
         name: 'v1.4.5-rc2',
         recommendedVersion: 'v1.4.5-rc2',
         compatibleVersions: ['v1.4.5-rc2'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'

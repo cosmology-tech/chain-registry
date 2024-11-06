@@ -36,7 +36,6 @@ const info: Chain = {
       "darwin/amd64": 'https://github.com/cheqd/cheqd-node/releases/download/v2.0.1/cheqd-noded-2.0.1-darwin-amd64.tar.gz',
       "darwin/arm64": 'https://github.com/cheqd/cheqd-node/releases/download/v2.0.1/cheqd-noded-2.0.1-darwin-arm64.tar.gz'
     },
-    cosmosSdkVersion: 'cheqd/cosmos-sdk v0.47.10-height-mismatch',
     consensus: {
       type: 'cometbft',
       version: '0.37.5'
@@ -49,7 +48,6 @@ const info: Chain = {
         name: 'v0.3',
         recommendedVersion: 'v0.3.1',
         compatibleVersions: ['v0.3.1'],
-        cosmosSdkVersion: '0.44.3',
         consensus: {
           type: 'tendermint',
           version: '0.34.14'
@@ -71,7 +69,6 @@ const info: Chain = {
         name: 'v0.4',
         recommendedVersion: 'v0.4.1',
         compatibleVersions: ['v0.4.0', 'v0.4.1'],
-        cosmosSdkVersion: 'cheqd/cosmos-sdk v0.44.5-cheqd',
         consensus: {
           type: 'tendermint',
           version: '0.34.14'
@@ -98,7 +95,6 @@ const info: Chain = {
         name: 'v0.5',
         recommendedVersion: 'v0.5.0',
         compatibleVersions: ['v0.5.0'],
-        cosmosSdkVersion: 'cheqd/cosmos-sdk v0.44.5-cheqd',
         consensus: {
           type: 'tendermint',
           version: '0.34.15'
@@ -131,7 +127,6 @@ const info: Chain = {
           'v0.6.9',
           'v0.6.10'
         ],
-        cosmosSdkVersion: 'cheqd/cosmos-sdk v0.45.9-cheqd-tag',
         consensus: {
           type: 'tendermint',
           version: '0.34.21'
@@ -166,7 +161,6 @@ const info: Chain = {
           'v1.4.4',
           'v1.4.5'
         ],
-        cosmosSdkVersion: 'cheqd/cosmos-sdk v0.46.10-barberry',
         consensus: {
           type: 'tendermint',
           version: '0.34.26'
@@ -196,7 +190,6 @@ const info: Chain = {
         name: 'v2',
         recommendedVersion: 'v2.0.1',
         compatibleVersions: ['v2.0.0', 'v2.0.1'],
-        cosmosSdkVersion: 'cheqd/cosmos-sdk v0.47.10-height-mismatch',
         consensus: {
           type: 'cometbft',
           version: '0.37.5'

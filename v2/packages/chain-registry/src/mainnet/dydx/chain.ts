@@ -41,7 +41,6 @@ const info: Chain = {
       "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-amd64.tar.gz',
       "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-arm64.tar.gz'
     },
-    cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240808180557-4b1c1dc17703',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.6',
@@ -60,7 +59,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv2.0.0/dydxprotocold-v2.0.0-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv2.0.0/dydxprotocold-v2.0.0-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.47.5-0.20231011192538-b95c66dedbd5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3',
@@ -89,7 +87,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv3.0.0/dydxprotocold-v3.0.0-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv3.0.0/dydxprotocold-v3.0.0-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.47.5-0.20240111163003-128eb0a555af',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.3',
@@ -118,7 +115,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv4.0.5/dydxprotocold-v4.0.5-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv4.0.5/dydxprotocold-v4.0.5-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.5-0.20240220212824-35f31482370c',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.6',
@@ -147,7 +143,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv4.1.0/dydxprotocold-v4.1.0-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv4.1.0/dydxprotocold-v4.1.0-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.5-0.20240220212824-35f31482370c',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.6',
@@ -176,7 +171,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.0.0/dydxprotocold-v5.0.0-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.0.0/dydxprotocold-v5.0.0-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240517185527-7330926cd9ad',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.6',
@@ -205,7 +199,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.1.0/dydxprotocold-v5.1.0-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.1.0/dydxprotocold-v5.1.0-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240606183841-18966898625f',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.6',
@@ -234,7 +227,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.2.0/dydxprotocold-v5.2.0-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv5.2.0/dydxprotocold-v5.2.0-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240606183841-18966898625f',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.6',
@@ -263,7 +255,6 @@ const info: Chain = {
           "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-amd64.tar.gz',
           "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-arm64.tar.gz'
         },
-        cosmosSdkVersion: 'dydxprotocol/cosmos-sdk v0.50.6-0.20240808180557-4b1c1dc17703',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.6',

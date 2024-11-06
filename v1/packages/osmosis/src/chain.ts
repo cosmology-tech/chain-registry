@@ -31,7 +31,7 @@ const chain: Chain = {
     }
   },
   codebase: {
-    cosmos_sdk_version: 'osmosis-labs/cosmos-sdk v0.47.5-v25-osmo-1'
+
   },
   images: [{
       image_sync: {

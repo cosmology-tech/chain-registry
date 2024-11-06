@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/composable/composable-cosmos',
     recommendedVersion: 'v6.5.3',
     compatibleVersions: ['v6.5.3'],
-    cosmosSdkVersion: 'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.2',
@@ -47,7 +46,6 @@ const info: Chain = {
         tag: 'v2.3.5',
         recommendedVersion: 'v2.3.5',
         compatibleVersions: ['v2.3.5'],
-        cosmosSdkVersion: 'v0.47.1',
         consensus: {
           type: 'cometbft',
           version: '0.37.0'
@@ -75,7 +73,6 @@ const info: Chain = {
           'v3.1.1',
           'v3.1.2'
         ],
-        cosmosSdkVersion: 'v0.47.3',
         consensus: {
           type: 'cometbft',
           version: '0.37.0'
@@ -100,7 +97,6 @@ const info: Chain = {
         tag: 'v3.2.2',
         recommendedVersion: 'v3.2.2',
         compatibleVersions: ['v3.2.2'],
-        cosmosSdkVersion: 'v0.47.3',
         consensus: {
           type: 'cometbft',
           version: '0.37.1'
@@ -122,7 +118,6 @@ const info: Chain = {
         tag: 'v4.5.0',
         recommendedVersion: 'v4.5.0',
         compatibleVersions: ['v4.5.0'],
-        cosmosSdkVersion: 'v0.47.3',
         consensus: {
           type: 'cometbft',
           version: '0.37.1'
@@ -144,7 +139,6 @@ const info: Chain = {
         tag: 'v5.2.0',
         recommendedVersion: 'v5.2.0',
         compatibleVersions: ['v5.1.0', 'v5.2.0'],
-        cosmosSdkVersion: 'v0.47.3',
         consensus: {
           type: 'cometbft',
           version: '0.37.1'
@@ -166,7 +160,6 @@ const info: Chain = {
         tag: 'v6.3.1',
         recommendedVersion: 'v6.3.6',
         compatibleVersions: ['v6.3.6'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: '0.37.2'
@@ -188,7 +181,6 @@ const info: Chain = {
         tag: 'v6.4.2',
         recommendedVersion: 'v6.4.3',
         compatibleVersions: ['v6.4.3'],
-        cosmosSdkVersion: 'v0.47.5',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2',
@@ -216,7 +208,6 @@ const info: Chain = {
         tag: 'v6.5.1',
         recommendedVersion: 'v6.5.2',
         compatibleVersions: ['v6.5.2'],
-        cosmosSdkVersion: 'v0.47.6',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -240,7 +231,6 @@ const info: Chain = {
         tag: 'v6.5.3',
         recommendedVersion: 'v6.5.3',
         compatibleVersions: ['v6.5.3'],
-        cosmosSdkVersion: 'rust-ninja/cosmos-sdk v0.47.5-patch-validators-trim-tag',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2',

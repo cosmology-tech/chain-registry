@@ -26,32 +26,68 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.50.6'
+
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://nillion-testnet-rpc.polkachu.com/',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://testnet-nillion-rpc.lavenderfive.com',
         provider: 'lavenderfive'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://nillion-testnet.rpc.kjnodes.com',
+        provider: 'kjnodes'
+      },
+      {
+        address: 'https://nillion-testnet.rpc.nodex.one',
+        provider: 'NodeX Emperor'
+      }
+    ],
+    rest: [
+      {
         address: 'https://nillion-testnet-api.polkachu.com/',
         provider: 'polkachu'
-      }, {
+      },
+      {
         address: 'https://testnet-nillion-api.lavenderfive.com',
         provider: 'lavenderfive'
-      }],
-    grpc: [{
+      },
+      {
+        address: 'https://nillion-testnet.api.kjnodes.com',
+        provider: 'kjnodes'
+      },
+      {
+        address: 'https://nillion-testnet.api.nodex.one',
+        provider: 'NodeX Emperor'
+      }
+    ],
+    grpc: [
+      {
         address: 'https://testnet-nillion-grpc.lavenderfive.com',
         provider: 'lavenderfive'
-      }]
+      },
+      {
+        address: 'https://nillion-testnet.grpc.kjnodes.com',
+        provider: 'kjnodes'
+      },
+      {
+        address: 'https://nillion-testnet.grpc.nodex.one',
+        provider: 'NodeX Emperor'
+      }
+    ]
   },
   explorers: [{
       url: 'https://testnet.nillion.explorers.guru',
       tx_page: 'https://testnet.nillion.explorers.guru/transaction/${txHash}',
       account_page: 'https://testnet.nillion.explorers.guru/account/${accountAddress}'
+    }, {
+      url: 'https://testnet.ping.pub/nillion',
+      tx_page: 'https://testnet.ping.pub/nillion/tx/${txHash}',
+      account_page: 'https://testnet.ping.pub/nillion/account/${accountAddress}'
     }],
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nilliontestnet/images/nil.svg',

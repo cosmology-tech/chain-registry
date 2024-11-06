@@ -32,7 +32,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/mars-protocol/hub',
     recommendedVersion: 'v1.0.2',
     compatibleVersions: ['v1.0.0', 'v1.0.2'],
-    cosmosSdkVersion: '0.46.7',
     consensus: {
       type: 'tendermint',
       version: '0.34.24'
@@ -46,7 +45,6 @@ const info: Chain = {
         height: 0,
         recommendedVersion: 'v1.0.2',
         compatibleVersions: ['v1.0.0', 'v1.0.2'],
-        cosmosSdkVersion: '0.46.7',
         consensus: {
           type: 'tendermint',
           version: '0.34.24'

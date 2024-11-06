@@ -34,7 +34,7 @@ const chain: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'v0.47.12'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',
@@ -50,10 +50,6 @@ const chain: Chain = {
       {
         address: 'http://juno.rpc.m.stavr.tech:1067',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://rpc-juno.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://juno-rpc.polkachu.com',
@@ -160,10 +156,6 @@ const chain: Chain = {
       {
         address: 'https://lcd-juno.itastakers.com',
         provider: 'itastakers'
-      },
-      {
-        address: 'https://rest-juno.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://rest.lavenderfive.com:443/juno',

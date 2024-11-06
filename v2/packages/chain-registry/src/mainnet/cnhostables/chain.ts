@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/alashooinc/ChainCNHO/',
     recommendedVersion: 'v1',
     compatibleVersions: ['v1'],
-    cosmosSdkVersion: 'v0.46.7',
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/alashooinc/ChainCNHO/master/mainnet/genesis.json'
     },
@@ -38,7 +37,6 @@ const info: Chain = {
         name: 'v1',
         recommendedVersion: 'v1',
         compatibleVersions: ['v1'],
-        cosmosSdkVersion: 'v0.46.7',
         sdk: {
           type: 'cosmos',
           version: 'v0.46.7'

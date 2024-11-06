@@ -42,7 +42,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://atomone.fra1.digitaloceanspaces.com/govgen/govgen-1/genesis.json'
     },
-    cosmosSdkVersion: 'v0.45.16',
     consensus: {
       type: 'cometbft',
       version: 'v0.34.29'
@@ -52,7 +51,6 @@ const info: Chain = {
         tag: 'v1.0.1',
         recommendedVersion: 'v1.0.1',
         compatibleVersions: ['v1.0.1'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'

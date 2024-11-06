@@ -47,7 +47,6 @@ const info: Chain = {
         recommendedVersion: 'v5.0.1',
         tag: 'v5.0.1',
         compatibleVersions: ['v5.0.1'],
-        cosmosSdkVersion: 'v0.44.3',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.14'
@@ -75,7 +74,6 @@ const info: Chain = {
         recommendedVersion: 'v5.1.1',
         tag: 'v5.1.1',
         compatibleVersions: ['v5.1.1'],
-        cosmosSdkVersion: 'v0.45.9',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.22'
@@ -103,7 +101,6 @@ const info: Chain = {
         recommendedVersion: 'v5.1.2',
         tag: 'v5.1.2',
         compatibleVersions: ['v5.1.2'],
-        cosmosSdkVersion: 'v0.45.9',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.22'
@@ -131,7 +128,6 @@ const info: Chain = {
         recommendedVersion: 'v6.0.0',
         tag: 'v6.0.0',
         compatibleVersions: ['v6.0.0'],
-        cosmosSdkVersion: 'v0.45.10',
         consensus: {
           type: 'tendermint',
           version: 'v0.34.22'
@@ -159,7 +155,6 @@ const info: Chain = {
         recommendedVersion: 'v6.1.0',
         tag: 'v6.1.0',
         compatibleVersions: ['v6.1.0'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -187,7 +182,6 @@ const info: Chain = {
         recommendedVersion: 'v7.0.0',
         tag: 'v7.0.0',
         compatibleVersions: ['v7.0.0'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -215,7 +209,6 @@ const info: Chain = {
         recommendedVersion: 'v7.1.0',
         tag: 'v7.1.0',
         compatibleVersions: ['v7.1.0'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -243,7 +236,6 @@ const info: Chain = {
         recommendedVersion: 'v7.1.1',
         tag: 'v7.1.1',
         compatibleVersions: ['v7.1.1'],
-        cosmosSdkVersion: 'v0.45.16',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'

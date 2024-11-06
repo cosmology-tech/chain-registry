@@ -29,7 +29,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    cosmos_sdk_version: 'evmos/cosmos-sdk v0.47.12-evmos.2'
+
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',
@@ -38,10 +38,6 @@ const info: Chain = {
   description: 'Developers use Evmos as the Ethereum Canary Chain to deploy applications of the future. Get all the functionalities of Ethereum with the power of IBC and Interchain composability.',
   apis: {
     rpc: [
-      {
-        address: 'https://rpc-evmos.ecostake.com',
-        provider: 'ecostake'
-      },
       {
         address: 'https://rpc.lavenderfive.com:443/evmos',
         provider: 'Lavender.Five Nodes 🐝'
@@ -183,10 +179,6 @@ const info: Chain = {
       {
         address: 'https://evmos-api.validatrium.club',
         provider: 'Validatrium'
-      },
-      {
-        address: 'https://rest-evmos.ecostake.com',
-        provider: 'ecostake'
       },
       {
         address: 'https://evmos-rest.publicnode.com',

@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/KYVENetwork/chain',
     recommendedVersion: 'v1.5.0',
     compatibleVersions: ['v1.5.0'],
-    cosmosSdkVersion: 'v0.50.7-kyve-rc0',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.7',
@@ -89,7 +88,6 @@ const info: Chain = {
         height: 3908000,
         recommendedVersion: 'v1.4.0',
         compatibleVersions: ['v1.4.0'],
-        cosmosSdkVersion: 'v0.47.6-kyve-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.2'
@@ -117,7 +115,6 @@ const info: Chain = {
         height: 7254527,
         recommendedVersion: 'v1.5.0',
         compatibleVersions: ['v1.5.0'],
-        cosmosSdkVersion: 'v0.50.7-kyve-rc0',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.7',

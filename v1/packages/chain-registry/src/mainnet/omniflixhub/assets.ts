@@ -292,6 +292,32 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/baddog.png'
       }
+    },
+    {
+      description: 'GATA Yield DAO Governance Token powered by OmniFlixHub',
+      denom_units: [{
+          denom: 'factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata',
+          exponent: 0
+        }, {
+          denom: 'ygata',
+          exponent: 6
+        }],
+      base: 'factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata',
+      name: 'Yield GATA',
+      display: 'ygata',
+      symbol: 'YGATA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg',
+          theme: {
+            primary_color_hex: '#7b5aff'
+          }
+        }],
+      type_asset: 'sdk.coin'
     }
   ]
 };

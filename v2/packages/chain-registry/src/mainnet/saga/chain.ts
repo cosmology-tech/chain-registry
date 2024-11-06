@@ -37,7 +37,6 @@ const info: Chain = {
     },
     recommendedVersion: 'v0.1.5',
     compatibleVersions: ['v0.1.5'],
-    cosmosSdkVersion: 'osmosis-labs/cosmos-sdk v0.47.5',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.2',

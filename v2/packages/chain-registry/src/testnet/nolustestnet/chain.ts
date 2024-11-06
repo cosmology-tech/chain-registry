@@ -33,7 +33,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/nolus-protocol/nolus-core',
     recommendedVersion: 'v0.4.0',
     compatibleVersions: [],
-    cosmosSdkVersion: '0.45',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -45,7 +44,6 @@ const info: Chain = {
         name: 'v0.3.0',
         recommendedVersion: 'v0.3.0',
         compatibleVersions: [],
-        cosmosSdkVersion: '0.45',
         sdk: {
           type: 'cosmos',
           version: '0.45'

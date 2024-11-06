@@ -31,7 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/cosmos/gaia',
     recommendedVersion: 'v19.2.0',
     compatibleVersions: ['v19.2.0'],
-    cosmosSdkVersion: 'v0.50.9-lsm',
     consensus: {
       type: 'cometbft',
       version: 'v0.38.11'
@@ -51,7 +50,6 @@ const info: Chain = {
         tag: 'v9.1.1',
         recommendedVersion: 'v9.1.1',
         compatibleVersions: ['v9.1.1'],
-        cosmosSdkVersion: 'v0.45.15-ics',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -86,7 +84,6 @@ const info: Chain = {
           'v10.0.1',
           'v10.0.2'
         ],
-        cosmosSdkVersion: 'v0.45.16-ics',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -116,7 +113,6 @@ const info: Chain = {
         height: 16596000,
         recommendedVersion: 'v11.0.0',
         compatibleVersions: ['v11.0.0'],
-        cosmosSdkVersion: 'v0.45.16-ics',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -147,7 +143,6 @@ const info: Chain = {
         height: 16985500,
         recommendedVersion: 'v12.0.0',
         compatibleVersions: ['v12.0.0'],
-        cosmosSdkVersion: 'v0.45.16-ics',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -178,7 +173,6 @@ const info: Chain = {
         height: 17380000,
         recommendedVersion: 'v13.0.2',
         compatibleVersions: ['v13.0.1', 'v13.0.2'],
-        cosmosSdkVersion: 'v0.45.16-ics-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -209,7 +203,6 @@ const info: Chain = {
         height: 18262000,
         recommendedVersion: 'v14.2.0',
         compatibleVersions: ['v14.2.0'],
-        cosmosSdkVersion: 'v0.45.16-ics-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -240,7 +233,6 @@ const info: Chain = {
         height: 19639600,
         recommendedVersion: 'v15.2.0',
         compatibleVersions: ['v15.2.0'],
-        cosmosSdkVersion: 'v0.47.11-ics-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.4'
@@ -271,7 +263,6 @@ const info: Chain = {
         height: 20440500,
         recommendedVersion: 'v16.0.0',
         compatibleVersions: ['v16.0.0'],
-        cosmosSdkVersion: 'v0.47.13-ics-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
@@ -302,7 +293,6 @@ const info: Chain = {
         height: 20739800,
         recommendedVersion: 'v17.3.0',
         compatibleVersions: ['v17.3.0'],
-        cosmosSdkVersion: 'v0.47.15-ics-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.6'
@@ -333,7 +323,6 @@ const info: Chain = {
         height: 21330500,
         recommendedVersion: 'v18.1.0',
         compatibleVersions: ['v18.1.0'],
-        cosmosSdkVersion: 'v0.47.16-ics-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.6'
@@ -369,7 +358,6 @@ const info: Chain = {
         height: 21835200,
         recommendedVersion: 'v19.2.0',
         compatibleVersions: ['v19.2.0'],
-        cosmosSdkVersion: 'v0.50.9-lsm',
         consensus: {
           type: 'cometbft',
           version: 'v0.38.11'

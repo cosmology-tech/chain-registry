@@ -5,7 +5,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+          denom: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -14,7 +14,7 @@ const assets: AssetList = {
           aliases: []
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+      base: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
       name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
@@ -31,18 +31,18 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8867',
+            channel_id: 'channel-9247',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-2'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+          denom: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -50,7 +50,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+      base: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -67,19 +67,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8867',
+            channel_id: 'channel-9247',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-2'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+          denom: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -88,7 +88,7 @@ const assets: AssetList = {
           aliases: []
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
+      base: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
       name: 'Osmosis Testnet',
       display: 'osmo',
       symbol: 'OSMO',
@@ -105,18 +105,18 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8867',
+            channel_id: 'channel-9247',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-2'
           }
         }]
     },
     {
       denom_units: [{
-          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+          denom: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -124,7 +124,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
+      base: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
       name: 'Ion',
       display: 'ion',
       symbol: 'ION',
@@ -141,12 +141,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8867',
+            channel_id: 'channel-9247',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
           chain: {
-            channel_id: 'channel-1'
+            channel_id: 'channel-2'
           }
         }]
     }

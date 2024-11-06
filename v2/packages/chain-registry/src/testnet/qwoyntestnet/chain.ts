@@ -30,7 +30,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/cosmic-horizon/QWOYN/releases/download/v1.0.0/qwoynd_1.0.0_linux_amd64.zip'
     },
-    cosmosSdkVersion: '0.47.3',
     consensus: {
       type: 'tendermint',
       version: '0.34'
@@ -42,7 +41,6 @@ const info: Chain = {
         name: 'v1.0.0',
         recommendedVersion: 'v1.0.0',
         compatibleVersions: ['v1.0.0'],
-        cosmosSdkVersion: '0.42.10',
         consensus: {
           type: 'tendermint',
           version: '0.34'

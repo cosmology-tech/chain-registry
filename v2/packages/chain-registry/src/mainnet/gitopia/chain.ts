@@ -37,7 +37,6 @@ const info: Chain = {
     },
     recommendedVersion: 'v4.0.0',
     compatibleVersions: ['v4.0.0'],
-    cosmosSdkVersion: 'v0.47.13',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.6'
@@ -53,7 +52,6 @@ const info: Chain = {
           "darwin/amd64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v2.1.1/gitopiad_2.1.1_darwin_amd64.tar.gz',
           "darwin/arm64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v2.1.1/gitopiad_2.1.1_darwin_arm64.tar.gz'
         },
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -79,7 +77,6 @@ const info: Chain = {
           "darwin/amd64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v3.0.1/gitopiad_3.0.1_darwin_amd64.tar.gz',
           "darwin/arm64": 'https://server.gitopia.com/releases/Gitopia/gitopia/v3.0.1gitopiad_3.0.1_darwin_arm64.tar.gz'
         },
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -101,7 +98,6 @@ const info: Chain = {
         compatibleVersions: ['v3.2.0'],
         proposal: 12,
         height: 6446000,
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -123,7 +119,6 @@ const info: Chain = {
         compatibleVersions: ['v3.3.0'],
         proposal: 14,
         height: 6720000,
-        cosmosSdkVersion: 'v0.46.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.28'
@@ -145,7 +140,6 @@ const info: Chain = {
         compatibleVersions: ['v4.0.0'],
         proposal: 31,
         height: 24330422,
-        cosmosSdkVersion: 'v0.47.13',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.6'

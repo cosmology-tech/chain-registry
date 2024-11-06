@@ -33,7 +33,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v6.3.0/umeed-v6.3.0-linux-amd64.tar.gz'
     },
-    cosmosSdkVersion: '0.47',
     consensus: {
       type: 'cometbft',
       version: '0.37'
@@ -50,7 +49,6 @@ const info: Chain = {
         nextVersionName: 'v1.1.0',
         recommendedVersion: 'v1.0.1',
         compatibleVersions: ['v1.0.1'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -77,7 +75,6 @@ const info: Chain = {
         nextVersionName: 'v1.1-v3.0',
         recommendedVersion: 'v1.1.0',
         compatibleVersions: ['v1.1.0'],
-        cosmosSdkVersion: '0.45',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -104,7 +101,6 @@ const info: Chain = {
         nextVersionName: 'v3.1.0',
         recommendedVersion: 'v3.0.0',
         compatibleVersions: ['v3.0.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -131,7 +127,6 @@ const info: Chain = {
         nextVersionName: 'v3.1-v3.3',
         recommendedVersion: 'v3.1.0',
         compatibleVersions: ['v3.1.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -158,7 +153,6 @@ const info: Chain = {
         nextVersionName: 'v4.0',
         recommendedVersion: 'v3.3.0',
         compatibleVersions: ['v3.3.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -186,7 +180,6 @@ const info: Chain = {
         nextVersionName: 'v4.0.1',
         recommendedVersion: 'v4.0.0',
         compatibleVersions: ['v4.0.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -214,7 +207,6 @@ const info: Chain = {
         nextVersionName: 'v4.1.0',
         recommendedVersion: 'v4.0.1',
         compatibleVersions: ['v4.0.1'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -242,7 +234,6 @@ const info: Chain = {
         nextVersionName: 'v4.2',
         recommendedVersion: 'v4.1.0',
         compatibleVersions: ['v4.1.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -270,7 +261,6 @@ const info: Chain = {
         nextVersionName: 'v4.3',
         recommendedVersion: 'v4.2.0',
         compatibleVersions: ['v4.2.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'tendermint',
           version: '0.34'
@@ -297,7 +287,6 @@ const info: Chain = {
         height: 6049552,
         recommendedVersion: 'v4.3.0',
         compatibleVersions: ['v4.3.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -324,7 +313,6 @@ const info: Chain = {
         height: 6547400,
         recommendedVersion: 'v4.4.1',
         compatibleVersions: ['v4.4.1', 'v4.4.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -351,7 +339,6 @@ const info: Chain = {
         height: 6986150,
         recommendedVersion: 'v5.0.1',
         compatibleVersions: ['v5.0.1'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -378,7 +365,6 @@ const info: Chain = {
         height: 7428000,
         recommendedVersion: 'v5.1.0',
         compatibleVersions: ['v5.1.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -405,7 +391,6 @@ const info: Chain = {
         height: 8220900,
         recommendedVersion: 'v5.2.0',
         compatibleVersions: ['v5.2.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -432,7 +417,6 @@ const info: Chain = {
         height: 8427800,
         recommendedVersion: 'v6.0.2',
         compatibleVersions: ['v6.0.2'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -459,7 +443,6 @@ const info: Chain = {
         height: 8941650,
         recommendedVersion: 'v6.1.0',
         compatibleVersions: ['v6.1.0'],
-        cosmosSdkVersion: '0.46',
         consensus: {
           type: 'cometbft',
           version: '0.34'
@@ -486,7 +469,6 @@ const info: Chain = {
         height: 9561500,
         recommendedVersion: 'v6.2.0',
         compatibleVersions: ['v6.2.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'
@@ -513,7 +495,6 @@ const info: Chain = {
         height: 10046600,
         recommendedVersion: 'v6.3.0',
         compatibleVersions: ['v6.3.0'],
-        cosmosSdkVersion: '0.47',
         consensus: {
           type: 'cometbft',
           version: '0.37'

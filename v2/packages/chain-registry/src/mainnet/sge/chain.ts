@@ -30,7 +30,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/sge-network/sge',
     recommendedVersion: 'v1.7.2',
     compatibleVersions: ['v1.7.2'],
-    cosmosSdkVersion: 'sge-network/cosmos-sdk v0.47.9-0.20240409081440-054c8c413d45',
     consensus: {
       type: 'cometbft',
       version: 'v0.37.5'
@@ -43,7 +42,6 @@ const info: Chain = {
         name: 'v1.1.0',
         recommendedVersion: 'v1.1.0',
         compatibleVersions: ['v1.1.0'],
-        cosmosSdkVersion: 'v0.46.14',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -64,7 +62,6 @@ const info: Chain = {
         compatibleVersions: ['v1.1.1'],
         proposal: 1,
         height: 1097000,
-        cosmosSdkVersion: 'v0.46.14',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -85,7 +82,6 @@ const info: Chain = {
         compatibleVersions: ['v1.2.0'],
         proposal: 3,
         height: 1564215,
-        cosmosSdkVersion: 'v0.46.14',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -106,7 +102,6 @@ const info: Chain = {
         compatibleVersions: ['v1.3.0'],
         proposal: 4,
         height: 1887954,
-        cosmosSdkVersion: 'v0.46.14',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -127,7 +122,6 @@ const info: Chain = {
         compatibleVersions: ['v1.3.1'],
         proposal: 5,
         height: 1911750,
-        cosmosSdkVersion: 'v0.46.17-0.20231114190313-b9164dd660b6',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -149,7 +143,6 @@ const info: Chain = {
         compatibleVersions: ['v1.5.2'],
         proposal: 6,
         height: 2867354,
-        cosmosSdkVersion: 'sge-network/cosmos-sdk v0.46.17-0.20240223100624-2a2661276cb4',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -172,7 +165,6 @@ const info: Chain = {
         compatibleVersions: ['v1.5.3'],
         proposal: 7,
         height: 2973740,
-        cosmosSdkVersion: 'sge-network/cosmos-sdk v0.46.17-0.20240223100624-2a2661276cb4',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -195,7 +187,6 @@ const info: Chain = {
         compatibleVersions: ['v1.6.2'],
         proposal: 8,
         height: 3685910,
-        cosmosSdkVersion: 'sge-network/cosmos-sdk v0.46.17-0.20240430064306-1b044d03d56c',
         consensus: {
           type: 'cometbft',
           version: 'v0.34.29'
@@ -218,7 +209,6 @@ const info: Chain = {
         height: 3976350,
         recommendedVersion: 'v1.7.0-tmfix',
         compatibleVersions: ['v1.7.0-tmfix'],
-        cosmosSdkVersion: 'sge-network/cosmos-sdk v0.47.9-0.20240409081440-054c8c413d45',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
@@ -241,7 +231,6 @@ const info: Chain = {
         height: 3976350,
         recommendedVersion: 'v1.7.2',
         compatibleVersions: ['v1.7.2'],
-        cosmosSdkVersion: 'sge-network/cosmos-sdk v0.47.9-0.20240409081440-054c8c413d45',
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
