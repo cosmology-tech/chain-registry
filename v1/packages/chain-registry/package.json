@@ -24,10 +24,9 @@
     "clean": "rimraf dist/**",
     "prepare": "npm run build",
     "codegen": "ts-node ./scripts/build.ts",
-    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
+    "build": "ts-node ./scripts/build-alive.ts",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "build:alive": "ts-node ./scripts/build-alive.ts"
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@chain-registry/utils": "^1.51.6",
