@@ -2102,7 +2102,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
       },
-      coingecko_id: 'dig-chain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
           theme: {
@@ -7770,7 +7769,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
       },
-      coingecko_id: 'dig-chain',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
           theme: {

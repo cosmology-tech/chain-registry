@@ -2,7 +2,7 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'dig',
-  status: 'live',
+  status: 'killed',
   network_type: 'mainnet',
   website: 'https://digchain.org/',
   pretty_name: 'Dig Chain',
