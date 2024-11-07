@@ -2,7 +2,6 @@ import { IBCInfo } from '@chain-registry/types';
 
 import * as _ethereum from './ethereum';
 import * as _solana from './solana';
-import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
@@ -23,7 +22,6 @@ import * as _bostrom from './bostrom';
 import * as _canto from './canto';
 import * as _carbon from './carbon';
 import * as _celestia from './celestia';
-import * as _cerberus from './cerberus';
 import * as _chain4energy from './chain4energy';
 import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
@@ -36,11 +34,9 @@ import * as _cosmoshub from './cosmoshub';
 import * as _crescent from './crescent';
 import * as _cronos from './cronos';
 import * as _cryptoorgchain from './cryptoorgchain';
-import * as _cudos from './cudos';
 import * as _decentr from './decentr';
 import * as _desmos from './desmos';
 import * as _dhealth from './dhealth';
-import * as _dig from './dig';
 import * as _doravota from './doravota';
 import * as _dydx from './dydx';
 import * as _dymension from './dymension';
@@ -78,14 +74,12 @@ import * as _lambda from './lambda';
 import * as _lava from './lava';
 import * as _likecoin from './likecoin';
 import * as _lorenzo from './lorenzo';
-import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
 import * as _mantrachain from './mantrachain';
 import * as _mars from './mars';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
-import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
@@ -96,7 +90,6 @@ import * as _nois from './nois';
 import * as _nolus from './nolus';
 import * as _nomic from './nomic';
 import * as _nyx from './nyx';
-import * as _odin from './odin';
 import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
 import * as _onex from './onex';
@@ -148,13 +141,11 @@ import * as _titan from './titan';
 import * as _umee from './umee';
 import * as _unification from './unification';
 import * as _uptick from './uptick';
-import * as _vidulum from './vidulum';
 import * as _xpla from './xpla';
 
 const ibc: IBCInfo[] = [
   ..._ethereum.ibc,
   ..._solana.ibc,
-  ..._8ball.ibc,
   ..._acrechain.ibc,
   ..._agoric.ibc,
   ..._aioz.ibc,
@@ -175,7 +166,6 @@ const ibc: IBCInfo[] = [
   ..._canto.ibc,
   ..._carbon.ibc,
   ..._celestia.ibc,
-  ..._cerberus.ibc,
   ..._chain4energy.ibc,
   ..._cheqd.ibc,
   ..._chihuahua.ibc,
@@ -188,11 +178,9 @@ const ibc: IBCInfo[] = [
   ..._crescent.ibc,
   ..._cronos.ibc,
   ..._cryptoorgchain.ibc,
-  ..._cudos.ibc,
   ..._decentr.ibc,
   ..._desmos.ibc,
   ..._dhealth.ibc,
-  ..._dig.ibc,
   ..._doravota.ibc,
   ..._dydx.ibc,
   ..._dymension.ibc,
@@ -230,14 +218,12 @@ const ibc: IBCInfo[] = [
   ..._lava.ibc,
   ..._likecoin.ibc,
   ..._lorenzo.ibc,
-  ..._lumenx.ibc,
   ..._lumnetwork.ibc,
   ..._mande.ibc,
   ..._mantrachain.ibc,
   ..._mars.ibc,
   ..._medasdigital.ibc,
   ..._meme.ibc,
-  ..._microtick.ibc,
   ..._migaloo.ibc,
   ..._neutaro.ibc,
   ..._neutron.ibc,
@@ -248,7 +234,6 @@ const ibc: IBCInfo[] = [
   ..._nolus.ibc,
   ..._nomic.ibc,
   ..._nyx.ibc,
-  ..._odin.ibc,
   ..._okexchain.ibc,
   ..._omniflixhub.ibc,
   ..._onex.ibc,
@@ -300,7 +285,6 @@ const ibc: IBCInfo[] = [
   ..._umee.ibc,
   ..._unification.ibc,
   ..._uptick.ibc,
-  ..._vidulum.ibc,
   ..._xpla.ibc
 ];
 

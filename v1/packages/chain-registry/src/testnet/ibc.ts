@@ -12,7 +12,6 @@ import * as _doravotatestnet from './doravotatestnet';
 import * as _dydxtestnet from './dydxtestnet';
 import * as _elystestnet from './elystestnet';
 import * as _empowertestnet from './empowertestnet';
-import * as _entrypointtestnet from './entrypointtestnet';
 import * as _impacthubtestnet from './impacthubtestnet';
 import * as _injectivetestnet from './injectivetestnet';
 import * as _jackaltestnet2 from './jackaltestnet2';
@@ -29,7 +28,6 @@ import * as _nobletestnet from './nobletestnet';
 import * as _noistestnet from './noistestnet';
 import * as _nolustestnet from './nolustestnet';
 import * as _osmosistestnet from './osmosistestnet';
-import * as _osmosistestnet4 from './osmosistestnet4';
 import * as _persistencetestnet2 from './persistencetestnet2';
 import * as _quicksilvertestnet from './quicksilvertestnet';
 import * as _sagatestnet from './sagatestnet';
@@ -56,7 +54,6 @@ const ibc: IBCInfo[] = [
   ..._dydxtestnet.ibc,
   ..._elystestnet.ibc,
   ..._empowertestnet.ibc,
-  ..._entrypointtestnet.ibc,
   ..._impacthubtestnet.ibc,
   ..._injectivetestnet.ibc,
   ..._jackaltestnet2.ibc,
@@ -73,7 +70,6 @@ const ibc: IBCInfo[] = [
   ..._noistestnet.ibc,
   ..._nolustestnet.ibc,
   ..._osmosistestnet.ibc,
-  ..._osmosistestnet4.ibc,
   ..._persistencetestnet2.ibc,
   ..._quicksilvertestnet.ibc,
   ..._sagatestnet.ibc,
