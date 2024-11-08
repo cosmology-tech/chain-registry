@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.70.26 (2024-11-08)
+
+**Note:** Version bump only for package @chain-registry/assets
+
+
+
+
+
 ## 1.70.25 (2024-11-07)
 
 **Note:** Version bump only for package @chain-registry/assets
