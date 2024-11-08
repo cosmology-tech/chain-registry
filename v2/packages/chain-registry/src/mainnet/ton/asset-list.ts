@@ -32,6 +32,36 @@ const info: AssetList = {
         website: 'https://ton.tg/',
         twitter: 'https://x.com/ton_blockchain'
       }
+    }, {
+      description: 'The Hamster Kombat ($HMSTR) is the cryptocurrency of the TON (The Open Network) blockchain.',
+      extendedDescription: 'HMSTR (The Hamster Kombat) is a cryptocurrency-based clicker game that has garnered attention for its engaging gameplay and integration with the digital currency ecosystem.',
+      denomUnits: [{
+          denom: 'nanohmstr',
+          exponent: 0,
+          aliases: ['nanoHmstr']
+        }, {
+          denom: 'hmstr',
+          exponent: 9
+        }],
+      typeAsset: 'unknown',
+      base: 'nanohmstr',
+      name: 'Hamster',
+      display: 'hmstr',
+      symbol: 'HMSTR',
+      coingeckoId: 'hamster-kombat',
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#0088CC',
+            backgroundColorHex: '#0088CC'
+          }
+        }],
+      socials: {
+        website: 'https://hamsterkombatgame.io/',
+        twitter: 'https://x.com/hamster_kombat'
+      }
     }]
 };
 export default info;

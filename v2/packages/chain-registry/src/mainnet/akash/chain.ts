@@ -241,6 +241,10 @@ const info: Chain = {
       {
         address: 'https://akash.declab.pro:26601',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://rpc.akash.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     rest: [
@@ -311,6 +315,10 @@ const info: Chain = {
       {
         address: 'https://akash.declab.pro:443',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'https://lcd.akash.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ],
     grpc: [
@@ -353,6 +361,10 @@ const info: Chain = {
       {
         address: 'grpc-akash.whispernode.com:443',
         provider: 'WhisperNode 🤐'
+      },
+      {
+        address: 'https://grpc.akash.bronbro.io:443',
+        provider: 'Bro_n_Bro'
       }
     ]
   },
