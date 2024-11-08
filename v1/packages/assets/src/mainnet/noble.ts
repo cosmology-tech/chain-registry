@@ -11110,6 +11110,7 @@ const assets: AssetList = {
       address: 'orai1lus0f0rhx8s03gdllx2n6vhkmf0536dv57wfge',
       base: 'ibc/A20134CB5B4C1551B8E1319CB602B0F5EE03E9EAA05AC05818F21A1266C12FFE',
       name: 'Oraix',
+      coingecko_id: 'oraidex',
       display: 'oraix',
       symbol: 'ORAIX',
       images: [{
@@ -11271,6 +11272,7 @@ const assets: AssetList = {
       base: 'ibc/26E9FFCA4B6525662272F3EEB9AD4CEFFF46728B2A4DB330B97EB2064F28A79C',
       name: 'Scorai',
       display: 'scorai',
+      coingecko_id: 'scorai',
       symbol: 'SCORAI',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scorai.png',
@@ -11357,6 +11359,7 @@ const assets: AssetList = {
       name: 'scATOM',
       display: 'scatom',
       symbol: 'scATOM',
+      coingecko_id: 'scatom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.svg'
@@ -11525,6 +11528,7 @@ const assets: AssetList = {
       name: 'Och',
       display: 'och',
       symbol: 'OCH',
+      coingecko_id: 'och',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/och.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/och.svg'
@@ -11679,6 +11683,7 @@ const assets: AssetList = {
       address: 'orai1lus0f0rhx8s03gdllx2n6vhkmf0536dv57wfge',
       base: 'ibc/A20134CB5B4C1551B8E1319CB602B0F5EE03E9EAA05AC05818F21A1266C12FFE',
       name: 'Oraix',
+      coingecko_id: 'oraidex',
       display: 'oraix',
       symbol: 'ORAIX',
       images: [{
@@ -11840,6 +11845,7 @@ const assets: AssetList = {
       base: 'ibc/26E9FFCA4B6525662272F3EEB9AD4CEFFF46728B2A4DB330B97EB2064F28A79C',
       name: 'Scorai',
       display: 'scorai',
+      coingecko_id: 'scorai',
       symbol: 'SCORAI',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scorai.png',
@@ -11926,6 +11932,7 @@ const assets: AssetList = {
       name: 'scATOM',
       display: 'scatom',
       symbol: 'scATOM',
+      coingecko_id: 'scatom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.svg'
@@ -12094,6 +12101,7 @@ const assets: AssetList = {
       name: 'Och',
       display: 'och',
       symbol: 'OCH',
+      coingecko_id: 'och',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/och.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/och.svg'

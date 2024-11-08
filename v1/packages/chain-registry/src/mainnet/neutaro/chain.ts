@@ -40,7 +40,7 @@ const info: Chain = {
         address: 'https://rpc2.neutaro.tech:443',
         provider: 'Neutaro'
       }, {
-        address: 'https://rpc3.neutaro.tech:26657',
+        address: 'https://rpc3.neutaro.io:26657',
         provider: 'Neutaro'
       }],
     rest: [{
