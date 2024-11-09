@@ -37,18 +37,24 @@ const info: Chain = {
   description: 'The Blockchain that is Pioneering Ethical Standards, Values, and Transparency in cross chain Blockchain Technology to drive innovation',
   apis: {
     rpc: [{
-        address: 'https://rpc2.neutaro.tech:443',
+        address: 'https://rpc2.neutaro.io:443',
         provider: 'Neutaro'
       }, {
-        address: 'https://rpc3.neutaro.io:26657',
+        address: 'https://rpc3.neutaro.io:443',
         provider: 'Neutaro'
       }],
     rest: [{
-        address: 'https://api2.neutaro.tech:443',
+        address: 'https://api2.neutaro.io:443',
+        provider: 'Neutaro'
+      }, {
+        address: 'https://api3.neutaro.io:443',
         provider: 'Neutaro'
       }],
     grpc: [{
-        address: 'https://grpc2.neutaro.tech:443',
+        address: 'https://grpc2.neutaro.io:443',
+        provider: 'Neutaro'
+      }, {
+        address: 'https://grpc3.neutaro.io:443',
         provider: 'Neutaro'
       }]
   },

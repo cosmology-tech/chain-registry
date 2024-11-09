@@ -206,6 +206,7 @@ const info: AssetList = {
             primary_color_hex: '#3a3444'
           }
         }],
+      coingecko_id: 'axlweth',
       type_asset: 'sdk.coin'
     },
     {
