@@ -120,6 +120,7 @@ import * as _vincechaintestnet from './vincechaintestnet';
 import * as _wardenprotocoltestnet from './wardenprotocoltestnet';
 import * as _wavehashtestnet from './wavehashtestnet';
 import * as _xiontestnet from './xiontestnet';
+import * as _xplatestnet from './xplatestnet';
 import * as _zetachaintestnet from './zetachaintestnet';
 
 const chains: Chain[] = [
@@ -243,6 +244,7 @@ const chains: Chain[] = [
   _wardenprotocoltestnet.chain,
   _wavehashtestnet.chain,
   _xiontestnet.chain,
+  _xplatestnet.chain,
   _zetachaintestnet.chain
 ];
 

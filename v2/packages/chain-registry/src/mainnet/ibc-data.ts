@@ -42,6 +42,7 @@ import * as _desmos from './desmos';
 import * as _dhealth from './dhealth';
 import * as _dig from './dig';
 import * as _doravota from './doravota';
+import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
 import * as _dymension from './dymension';
 import * as _dyson from './dyson';
@@ -194,6 +195,7 @@ const ibcData: IBCData[] = [
   ..._dhealth.ibcData,
   ..._dig.ibcData,
   ..._doravota.ibcData,
+  ..._dungeon.ibcData,
   ..._dydx.ibcData,
   ..._dymension.ibcData,
   ..._dyson.ibcData,
