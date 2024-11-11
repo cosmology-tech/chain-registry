@@ -247,6 +247,21 @@ const info: IBCData[] = [
           status: 'live',
           preferred: true
         }
+      }, {
+        chain1: {
+          channelId: 'channel-16',
+          portId: 'wasm.dora1q09v79ar0w99av6hlut0nhkstqt6up5mv3gmnut53t7jzxu4plyqt268vu'
+        },
+        chain2: {
+          channelId: 'channel-397',
+          portId: 'wasm.stars1r0a8ygvnjfaegy4n5z9325e0ew9uy2s7rn4vt7qf4ltv49fj4tnsk6pvtv'
+        },
+        ordering: 'unordered',
+        version: 'ics721-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
