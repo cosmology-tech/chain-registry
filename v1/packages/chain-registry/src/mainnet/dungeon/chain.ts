@@ -9,6 +9,15 @@ const info: Chain = {
   pretty_name: 'Dungeon Chain',
   chain_id: 'dungeon-1',
   bech32_prefix: 'dungeon',
+  fees: {
+    fee_tokens: [{
+        denom: 'udgn',
+        fixed_min_gas_price: 0,
+        low_gas_price: 0,
+        average_gas_price: 0,
+        high_gas_price: 0.001
+      }]
+  },
   apis: {
     rpc: [{
         address: 'https://rpc-dungeonchain.apeironnodes.com',
