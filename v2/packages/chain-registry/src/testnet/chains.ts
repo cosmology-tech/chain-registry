@@ -8,11 +8,9 @@ import * as _artelatestnet from './artelatestnet';
 import * as _auratestnet from './auratestnet';
 import * as _axelartestnet from './axelartestnet';
 import * as _babylontestnet from './babylontestnet';
-import * as _babylontestnet1 from './babylontestnet1';
 import * as _bitcannadevnet from './bitcannadevnet';
 import * as _blockxtestnet from './blockxtestnet';
 import * as _cascadiatestnet from './cascadiatestnet';
-import * as _celestiatestnet from './celestiatestnet';
 import * as _celestiatestnet3 from './celestiatestnet3';
 import * as _chain4energytestnet from './chain4energytestnet';
 import * as _cheqdtestnet from './cheqdtestnet';
@@ -29,12 +27,10 @@ import * as _deardogetestnet from './deardogetestnet';
 import * as _desmostestnet from './desmostestnet';
 import * as _dhealthtestnet from './dhealthtestnet';
 import * as _doravotatestnet from './doravotatestnet';
-import * as _doravotatestnet2 from './doravotatestnet2';
 import * as _dydxtestnet from './dydxtestnet';
 import * as _elystestnet from './elystestnet';
 import * as _empetestnet from './empetestnet';
 import * as _empowertestnet from './empowertestnet';
-import * as _entrypointtestnet from './entrypointtestnet';
 import * as _epixtestnet from './epixtestnet';
 import * as _evmostestnet from './evmostestnet';
 import * as _fetchhubtestnet from './fetchhubtestnet';
@@ -56,7 +52,6 @@ import * as _kimanetworktestnet from './kimanetworktestnet';
 import * as _kujiratestnet from './kujiratestnet';
 import * as _kyvetestnet from './kyvetestnet';
 import * as _lavatestnet from './lavatestnet';
-import * as _lavatestnet1 from './lavatestnet1';
 import * as _likecointestnet from './likecointestnet';
 import * as _lumenxtestnet from './lumenxtestnet';
 import * as _manifesttestnet from './manifesttestnet';
@@ -78,7 +73,6 @@ import * as _nomictestnet from './nomictestnet';
 import * as _nyxtestnet from './nyxtestnet';
 import * as _okp4testnet from './okp4testnet';
 import * as _osmosistestnet from './osmosistestnet';
-import * as _osmosistestnet4 from './osmosistestnet4';
 import * as _permtestnet from './permtestnet';
 import * as _persistencetestnet from './persistencetestnet';
 import * as _persistencetestnet2 from './persistencetestnet2';
@@ -89,7 +83,6 @@ import * as _quicksilvertestnet from './quicksilvertestnet';
 import * as _qwoyntestnet from './qwoyntestnet';
 import * as _sagatestnet from './sagatestnet';
 import * as _secretnetworktestnet from './secretnetworktestnet';
-import * as _secretnetworktestnet2 from './secretnetworktestnet2';
 import * as _seitestnet from './seitestnet';
 import * as _seitestnet2 from './seitestnet2';
 import * as _selfchaindevnet from './selfchaindevnet';
@@ -106,7 +99,6 @@ import * as _sunrisetestnet from './sunrisetestnet';
 import * as _swisstroniktestnet from './swisstroniktestnet';
 import * as _symphonytestnet from './symphonytestnet';
 import * as _synternettestnet from './synternettestnet';
-import * as _temporaltestnet from './temporaltestnet';
 import * as _terpnettestnet from './terpnettestnet';
 import * as _terpnettestnet2 from './terpnettestnet2';
 import * as _terra2testnet from './terra2testnet';
@@ -116,7 +108,6 @@ import * as _ulastestnet from './ulastestnet';
 import * as _unificationtestnet from './unificationtestnet';
 import * as _uniontestnet from './uniontestnet';
 import * as _upticktestnet from './upticktestnet';
-import * as _vincechaintestnet from './vincechaintestnet';
 import * as _wardenprotocoltestnet from './wardenprotocoltestnet';
 import * as _wavehashtestnet from './wavehashtestnet';
 import * as _xiontestnet from './xiontestnet';
@@ -132,11 +123,9 @@ const chains: Chain[] = [
   _auratestnet.chain,
   _axelartestnet.chain,
   _babylontestnet.chain,
-  _babylontestnet1.chain,
   _bitcannadevnet.chain,
   _blockxtestnet.chain,
   _cascadiatestnet.chain,
-  _celestiatestnet.chain,
   _celestiatestnet3.chain,
   _chain4energytestnet.chain,
   _cheqdtestnet.chain,
@@ -153,12 +142,10 @@ const chains: Chain[] = [
   _desmostestnet.chain,
   _dhealthtestnet.chain,
   _doravotatestnet.chain,
-  _doravotatestnet2.chain,
   _dydxtestnet.chain,
   _elystestnet.chain,
   _empetestnet.chain,
   _empowertestnet.chain,
-  _entrypointtestnet.chain,
   _epixtestnet.chain,
   _evmostestnet.chain,
   _fetchhubtestnet.chain,
@@ -180,7 +167,6 @@ const chains: Chain[] = [
   _kujiratestnet.chain,
   _kyvetestnet.chain,
   _lavatestnet.chain,
-  _lavatestnet1.chain,
   _likecointestnet.chain,
   _lumenxtestnet.chain,
   _manifesttestnet.chain,
@@ -202,7 +188,6 @@ const chains: Chain[] = [
   _nyxtestnet.chain,
   _okp4testnet.chain,
   _osmosistestnet.chain,
-  _osmosistestnet4.chain,
   _permtestnet.chain,
   _persistencetestnet.chain,
   _persistencetestnet2.chain,
@@ -213,7 +198,6 @@ const chains: Chain[] = [
   _qwoyntestnet.chain,
   _sagatestnet.chain,
   _secretnetworktestnet.chain,
-  _secretnetworktestnet2.chain,
   _seitestnet.chain,
   _seitestnet2.chain,
   _selfchaindevnet.chain,
@@ -230,7 +214,6 @@ const chains: Chain[] = [
   _swisstroniktestnet.chain,
   _symphonytestnet.chain,
   _synternettestnet.chain,
-  _temporaltestnet.chain,
   _terpnettestnet.chain,
   _terpnettestnet2.chain,
   _terra2testnet.chain,
@@ -240,7 +223,6 @@ const chains: Chain[] = [
   _unificationtestnet.chain,
   _uniontestnet.chain,
   _upticktestnet.chain,
-  _vincechaintestnet.chain,
   _wardenprotocoltestnet.chain,
   _wavehashtestnet.chain,
   _xiontestnet.chain,
