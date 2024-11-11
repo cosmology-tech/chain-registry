@@ -5,21 +5,17 @@ import * as _rootstock from './rootstock';
 import * as _solana from './solana';
 import * as _ton from './ton';
 import * as _tron from './tron';
-import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
-import * as _akiro from './akiro';
 import * as _althea from './althea';
 import * as _andromeda from './andromeda';
-import * as _andromeda1 from './andromeda1';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
 import * as _atomone from './atomone';
 import * as _aura from './aura';
-import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
@@ -34,14 +30,11 @@ import * as _bouachain from './bouachain';
 import * as _canto from './canto';
 import * as _carbon from './carbon';
 import * as _celestia from './celestia';
-import * as _cerberus from './cerberus';
 import * as _chain4energy from './chain4energy';
 import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
 import * as _chimba from './chimba';
-import * as _chronicnetwork from './chronicnetwork';
 import * as _cifer from './cifer';
-import * as _cifer1 from './cifer1';
 import * as _cnhostables from './cnhostables';
 import * as _comdex from './comdex';
 import * as _commercionetwork from './commercionetwork';
@@ -53,11 +46,9 @@ import * as _coss from './coss';
 import * as _crescent from './crescent';
 import * as _cronos from './cronos';
 import * as _cryptoorgchain from './cryptoorgchain';
-import * as _cudos from './cudos';
 import * as _decentr from './decentr';
 import * as _desmos from './desmos';
 import * as _dhealth from './dhealth';
-import * as _dig from './dig';
 import * as _doravota from './doravota';
 import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
@@ -106,7 +97,6 @@ import * as _logos from './logos';
 import * as _loop from './loop';
 import * as _lorenzo from './lorenzo';
 import * as _loyal from './loyal';
-import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
 import * as _mantrachain from './mantrachain';
@@ -114,7 +104,6 @@ import * as _mars from './mars';
 import * as _mayachain from './mayachain';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
-import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _mises from './mises';
 import * as _mtgbp from './mtgbp';
@@ -141,7 +130,6 @@ import * as _osmosis from './osmosis';
 import * as _paloma from './paloma';
 import * as _panacea from './panacea';
 import * as _passage from './passage';
-import * as _passage1 from './passage1';
 import * as _persistence from './persistence';
 import * as _planq from './planq';
 import * as _point from './point';
@@ -194,7 +182,6 @@ import * as _unicorn from './unicorn';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
-import * as _vidulum from './vidulum';
 import * as _xpla from './xpla';
 import * as _zetachain from './zetachain';
 
@@ -204,21 +191,17 @@ const chains: Chain[] = [
   _solana.chain,
   _ton.chain,
   _tron.chain,
-  _8ball.chain,
   _acrechain.chain,
   _agoric.chain,
   _aioz.chain,
   _akash.chain,
-  _akiro.chain,
   _althea.chain,
   _andromeda.chain,
-  _andromeda1.chain,
   _archway.chain,
   _arkh.chain,
   _assetmantle.chain,
   _atomone.chain,
   _aura.chain,
-  _aura1.chain,
   _axelar.chain,
   _bandchain.chain,
   _beezee.chain,
@@ -233,14 +216,11 @@ const chains: Chain[] = [
   _canto.chain,
   _carbon.chain,
   _celestia.chain,
-  _cerberus.chain,
   _chain4energy.chain,
   _cheqd.chain,
   _chihuahua.chain,
   _chimba.chain,
-  _chronicnetwork.chain,
   _cifer.chain,
-  _cifer1.chain,
   _cnhostables.chain,
   _comdex.chain,
   _commercionetwork.chain,
@@ -252,11 +232,9 @@ const chains: Chain[] = [
   _crescent.chain,
   _cronos.chain,
   _cryptoorgchain.chain,
-  _cudos.chain,
   _decentr.chain,
   _desmos.chain,
   _dhealth.chain,
-  _dig.chain,
   _doravota.chain,
   _dungeon.chain,
   _dydx.chain,
@@ -305,7 +283,6 @@ const chains: Chain[] = [
   _loop.chain,
   _lorenzo.chain,
   _loyal.chain,
-  _lumenx.chain,
   _lumnetwork.chain,
   _mande.chain,
   _mantrachain.chain,
@@ -313,7 +290,6 @@ const chains: Chain[] = [
   _mayachain.chain,
   _medasdigital.chain,
   _meme.chain,
-  _microtick.chain,
   _migaloo.chain,
   _mises.chain,
   _mtgbp.chain,
@@ -340,7 +316,6 @@ const chains: Chain[] = [
   _paloma.chain,
   _panacea.chain,
   _passage.chain,
-  _passage1.chain,
   _persistence.chain,
   _planq.chain,
   _point.chain,
@@ -393,7 +368,6 @@ const chains: Chain[] = [
   _unification.chain,
   _ununifi.chain,
   _uptick.chain,
-  _vidulum.chain,
   _xpla.chain,
   _zetachain.chain
 ];

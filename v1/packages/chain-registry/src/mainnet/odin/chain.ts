@@ -2,12 +2,13 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'odin',
-  status: 'killed',
+  status: 'live',
   network_type: 'mainnet',
   website: 'https://odinprotocol.io/',
   pretty_name: 'Odin Protocol',
   chain_type: 'cosmos',
   chain_id: 'odin-mainnet-freya',
+  pre_fork_chain_name: 'odin1',
   bech32_prefix: 'odin',
   daemon_name: 'odind',
   node_home: '$HOME/.odin',
@@ -37,8 +38,12 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'http://34.79.179.216:26657',
-        provider: 'Odin Protocol'
+        address: 'https://rpc.odinprotocol.io',
+        provider: 'Heimdall Gateway'
+      },
+      {
+        address: 'https://odin.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://rpc.lavenderfive.com:443/odin',
@@ -51,8 +56,12 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'http://34.79.179.216:1317/',
-        provider: 'Odin Protocol'
+        address: 'https://api.odinprotocol.io',
+        provider: 'Heimdall Gateway'
+      },
+      {
+        address: 'https://odin.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       },
       {
         address: 'https://rest.lavenderfive.com:443/odin',
@@ -63,27 +72,39 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
-    grpc: [{
+    grpc: [
+      {
         address: 'odin.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      }, {
+      },
+      {
+        address: 'odin.grpc.m.stavr.tech:122',
+        provider: '🔥STAVR🔥'
+      },
+      {
         address: 'odin-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      }]
+      }
+    ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'odin web',
       url: 'https://mainnet.odinprotocol.io/',
       tx_page: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
-    }, {
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Odin-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Odin-Mainnet/tx/${txHash}'
+    },
+    {
       kind: 'ping.pub',
       url: 'https://ping.pub/odin',
       tx_page: 'https://ping.pub/odin/tx/${txHash}'
-    }],
+    }
+  ],
   images: [{
-      image_sync: {
-        chain_name: 'odin'
-      },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
     }]
