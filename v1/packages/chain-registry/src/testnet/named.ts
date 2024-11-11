@@ -118,4 +118,5 @@ export * as vincechaintestnet from './vincechaintestnet';
 export * as wardenprotocoltestnet from './wardenprotocoltestnet';
 export * as wavehashtestnet from './wavehashtestnet';
 export * as xiontestnet from './xiontestnet';
+export * as xplatestnet from './xplatestnet';
 export * as zetachaintestnet from './zetachaintestnet';

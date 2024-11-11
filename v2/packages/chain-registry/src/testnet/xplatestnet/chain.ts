@@ -1,13 +1,13 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../chain.schema.json',
-  chainName: 'xpla',
+  $schema: '../../chain.schema.json',
+  chainName: 'xplatestnet',
   status: 'live',
   website: 'https://xpla.io',
-  networkType: 'mainnet',
+  networkType: 'testnet',
   prettyName: 'XPLA',
   chainType: 'cosmos',
-  chainId: 'dimension_37-1',
+  chainId: 'cube_47-5',
   bech32Prefix: 'xpla',
   daemonName: 'xplad',
   nodeHome: '$HOME/.xpla',
@@ -36,7 +36,7 @@ const info: Chain = {
       version: 'v0.37.5'
     },
     genesis: {
-      genesisUrl: 'https://raw.githubusercontent.com/xpladev/mainnet/main/dimension_37-1/genesis.json'
+      genesisUrl: 'https://github.com/xpladev/testnets/blob/main/cube_47-5/genesis.json'
     },
     versions: [
       {
@@ -65,10 +65,10 @@ const info: Chain = {
       },
       {
         name: 'add-reward',
-        recommendedVersion: 'v1.1.0',
-        compatibleVersions: ['v1.1.0'],
-        proposal: 2,
-        height: 755000,
+        recommendedVersion: 'v1.1.0-cube',
+        compatibleVersions: ['v1.1.0-cube'],
+        proposal: 1,
+        height: 12700,
         consensus: {
           type: 'tendermint',
           version: 'v0.34.20'
@@ -92,8 +92,8 @@ const info: Chain = {
         name: 'evm',
         recommendedVersion: 'v1.2.1',
         compatibleVersions: ['v1.2.1'],
-        proposal: 4,
-        height: 2459600,
+        proposal: 37,
+        height: 2184000,
         consensus: {
           type: 'tendermint',
           version: '0.34.21'
@@ -112,11 +112,11 @@ const info: Chain = {
         }
       },
       {
-        name: 'Volunteer',
-        recommendedVersion: 'v1.3.0',
-        compatibleVersions: ['v1.3.0'],
-        proposal: 56,
-        height: 6881850,
+        name: 'volunteer',
+        recommendedVersion: 'v1.3.0-cube',
+        compatibleVersions: ['v1.3.0-cube'],
+        proposal: 63,
+        height: 4845600,
         consensus: {
           type: 'cometbft',
           version: 'v0.34.27'
@@ -138,8 +138,8 @@ const info: Chain = {
         name: 'v1_4',
         recommendedVersion: 'v1.4.0',
         compatibleVersions: ['v1.4.0'],
-        proposal: 59,
-        height: 8373900,
+        proposal: 110,
+        height: 7516478,
         consensus: {
           type: 'cometbft',
           version: '0.34.29'
@@ -163,8 +163,8 @@ const info: Chain = {
         name: 'v1_5',
         recommendedVersion: 'v1.5.0',
         compatibleVersions: ['v1.5.0'],
-        proposal: 65,
-        height: 10085200,
+        proposal: 112,
+        height: 9229980,
         consensus: {
           type: 'cometbft',
           version: '0.37.5'
@@ -188,8 +188,8 @@ const info: Chain = {
         name: 'v1_6',
         recommendedVersion: 'v1.6.0',
         compatibleVersions: ['v1.6.0'],
-        proposal: 66,
-        height: 10491710,
+        proposal: 146,
+        height: 10397730,
         consensus: {
           type: 'cometbft',
           version: 'v0.37.5'
@@ -229,93 +229,28 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.svg'
   },
   apis: {
-    rpc: [
-      {
-        address: 'https://dimension-rpc.xpla.dev',
+    rpc: [{
+        address: 'https://cube-rpc.xpla.dev',
         provider: 'Holdings'
-      },
-      {
-        address: 'https://xpla.rpc.m.stavr.tech',
-        provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://rpc.lavenderfive.com:443/xpla',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
-        address: 'https://xpla-rpc.publicnode.com:443',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ],
-    rest: [
-      {
-        address: 'https://dimension-lcd.xpla.io',
-        provider: 'ZenaAD'
-      },
-      {
-        address: 'https://dimension-lcd.xpla.dev',
+      }],
+    rest: [{
+        address: 'https://cube-lcd.xpla.dev',
         provider: 'Holdings'
-      },
-      {
-        address: 'https://xpla.api.m.stavr.tech',
-        provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://rest.lavenderfive.com:443/xpla',
-        provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
-        address: 'https://xpla-rest.publicnode.com',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
-      }
-    ],
-    grpc: [{
-        address: 'xpla-grpc.publicnode.com:443',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
       }],
     evmHttpJsonrpc: [{
-        address: 'https://dimension-evm-rpc.xpla.dev',
+        address: 'https://cube-evm-rpc.xpla.dev',
         provider: 'Holdings'
-      }, {
-        address: 'https://xpla-evm-rpc.publicnode.com',
-        provider: 'Allnodes ⚡️ Nodes & Staking'
       }]
   },
-  explorers: [
-    {
+  explorers: [{
       kind: 'explorer.xpla',
-      url: 'https://explorer.xpla.io',
-      txPage: 'https://explorer.xpla.io/mainnet/tx/${txHash}'
-    },
-    {
+      url: 'https://explorer.xpla.io/testnet',
+      txPage: 'https://explorer.xpla.io/testnet/mainnet/tx/${txHash}'
+    }, {
       kind: 'finder',
-      url: 'https://finder.xpla.io',
-      txPage: 'https://finder.xpla.io/mainnet/tx/${txHash}'
-    },
-    {
-      kind: '🔥STAVR🔥',
-      url: 'https://explorer.stavr.tech/Xpla-Mainnet',
-      txPage: 'https://explorer.stavr.tech/Xpla-Mainnet/tx/${txHash}'
-    },
-    {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/xpla',
-      txPage: 'https://www.mintscan.io/xpla/transactions/${txHash}',
-      accountPage: 'https://www.mintscan.io/xpla/accounts/${accountAddress}'
-    },
-    {
-      kind: 'staking-explorer.com',
-      url: 'https://staking-explorer.com/explorer/xpla',
-      txPage: 'https://staking-explorer.com/transaction.php?chain=xpla&tx=${txHash}',
-      accountPage: 'https://staking-explorer.com/account.php?chain=xpla&addr=${accountAddress}'
-    },
-    {
-      kind: 'ezstaking',
-      url: 'https://ezstaking.app/xpla',
-      txPage: 'https://ezstaking.app/xpla/txs/${txHash}',
-      accountPage: 'https://ezstaking.app/xpla/account/${accountAddress}'
-    }
-  ],
+      url: 'https://finder.xpla.io/testnet',
+      txPage: 'https://finder.xpla.io/testnet/tx/${txHash}'
+    }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.svg',

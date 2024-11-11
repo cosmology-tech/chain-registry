@@ -40,6 +40,7 @@ export * as desmos from './desmos';
 export * as dhealth from './dhealth';
 export * as dig from './dig';
 export * as doravota from './doravota';
+export * as dungeon from './dungeon';
 export * as dydx from './dydx';
 export * as dymension from './dymension';
 export * as dyson from './dyson';
