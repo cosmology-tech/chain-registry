@@ -1257,6 +1257,7 @@ The Axelar Network's native token, AXL, is used for transaction fees, incentiviz
       },
       {
         "base": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+        "coingeckoId": "axlweth",
         "denomUnits": [
           {
             "aliases": [
@@ -8911,6 +8912,51 @@ Cosmos leverages the Tendermint consensus algorithm to achieve high transaction 
               "base_denom": "peaka",
               "chain_name": "doravota",
               "channel_id": "channel-0",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995",
+        "denomUnits": [
+          {
+            "aliases": [
+              "udgn",
+            ],
+            "denom": "ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995",
+            "exponent": 0,
+          },
+          {
+            "denom": "DGN",
+            "exponent": 6,
+          },
+        ],
+        "description": "Dungeon native token",
+        "display": "DGN",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png",
+            "theme": {
+              "circle": true,
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png",
+        },
+        "name": "Dungeon Coin",
+        "symbol": "DGN",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-85791",
+            },
+            "counterparty": {
+              "base_denom": "udgn",
+              "chain_name": "dungeon",
+              "channel_id": "channel-2",
             },
             "type": "ibc",
           },
@@ -25743,6 +25789,113 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
             },
             "counterparty": {
               "base_denom": "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/ton",
+              "chain_name": "oraichain",
+              "channel_id": "channel-13",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/9253F17BA4C45BBCAC44A9DF23476C7011729A6944A9541B372575204A7C6886",
+        "denomUnits": [
+          {
+            "aliases": [
+              "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/extPEPE",
+            ],
+            "denom": "ibc/9253F17BA4C45BBCAC44A9DF23476C7011729A6944A9541B372575204A7C6886",
+            "exponent": 0,
+          },
+          {
+            "denom": "pepe",
+            "exponent": 6,
+          },
+        ],
+        "description": "The PEPE native token of Oraichain",
+        "display": "pepe",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "0x6982508145454Ce325dDbE47a25d4ec3d2311933",
+              "chainName": "ethereum",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg",
+            "theme": {
+              "primaryColorHex": "#cc3233",
+            },
+          },
+        ],
+        "keywords": [
+          "meme",
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg",
+        },
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-216",
+            },
+            "counterparty": {
+              "base_denom": "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/extPEPE",
+              "chain_name": "oraichain",
+              "channel_id": "channel-13",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/615422D3409021B2DE968EA1D75B204D4B46F6ED794362D5727F889CE2BFCE17",
+        "denomUnits": [
+          {
+            "aliases": [
+              "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/HMSTR",
+            ],
+            "denom": "ibc/615422D3409021B2DE968EA1D75B204D4B46F6ED794362D5727F889CE2BFCE17",
+            "exponent": 0,
+          },
+          {
+            "denom": "hmstr",
+            "exponent": 9,
+          },
+        ],
+        "description": "The Hamster Kombat native token of Oraichain",
+        "display": "hmstr",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "nanohmstr",
+              "chainName": "ton",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg",
+            "theme": {
+              "backgroundColorHex": "#f4941c",
+              "circle": true,
+              "primaryColorHex": "#f4941c",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg",
+        },
+        "name": "HMSTR",
+        "symbol": "HMSTR",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-216",
+            },
+            "counterparty": {
+              "base_denom": "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/HMSTR",
               "chain_name": "oraichain",
               "channel_id": "channel-13",
             },
@@ -27004,6 +27157,7 @@ The Axelar Network's native token, AXL, is used for transaction fees, incentiviz
       },
       {
         "base": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+        "coingeckoId": "axlweth",
         "denomUnits": [
           {
             "aliases": [
@@ -34658,6 +34812,51 @@ Cosmos leverages the Tendermint consensus algorithm to achieve high transaction 
               "base_denom": "peaka",
               "chain_name": "doravota",
               "channel_id": "channel-0",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995",
+        "denomUnits": [
+          {
+            "aliases": [
+              "udgn",
+            ],
+            "denom": "ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995",
+            "exponent": 0,
+          },
+          {
+            "denom": "DGN",
+            "exponent": 6,
+          },
+        ],
+        "description": "Dungeon native token",
+        "display": "DGN",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png",
+            "theme": {
+              "circle": true,
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png",
+        },
+        "name": "Dungeon Coin",
+        "symbol": "DGN",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-85791",
+            },
+            "counterparty": {
+              "base_denom": "udgn",
+              "chain_name": "dungeon",
+              "channel_id": "channel-2",
             },
             "type": "ibc",
           },
@@ -51490,6 +51689,113 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
             },
             "counterparty": {
               "base_denom": "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/ton",
+              "chain_name": "oraichain",
+              "channel_id": "channel-13",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/9253F17BA4C45BBCAC44A9DF23476C7011729A6944A9541B372575204A7C6886",
+        "denomUnits": [
+          {
+            "aliases": [
+              "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/extPEPE",
+            ],
+            "denom": "ibc/9253F17BA4C45BBCAC44A9DF23476C7011729A6944A9541B372575204A7C6886",
+            "exponent": 0,
+          },
+          {
+            "denom": "pepe",
+            "exponent": 6,
+          },
+        ],
+        "description": "The PEPE native token of Oraichain",
+        "display": "pepe",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "0x6982508145454Ce325dDbE47a25d4ec3d2311933",
+              "chainName": "ethereum",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg",
+            "theme": {
+              "primaryColorHex": "#cc3233",
+            },
+          },
+        ],
+        "keywords": [
+          "meme",
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg",
+        },
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-216",
+            },
+            "counterparty": {
+              "base_denom": "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/extPEPE",
+              "chain_name": "oraichain",
+              "channel_id": "channel-13",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/615422D3409021B2DE968EA1D75B204D4B46F6ED794362D5727F889CE2BFCE17",
+        "denomUnits": [
+          {
+            "aliases": [
+              "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/HMSTR",
+            ],
+            "denom": "ibc/615422D3409021B2DE968EA1D75B204D4B46F6ED794362D5727F889CE2BFCE17",
+            "exponent": 0,
+          },
+          {
+            "denom": "hmstr",
+            "exponent": 9,
+          },
+        ],
+        "description": "The Hamster Kombat native token of Oraichain",
+        "display": "hmstr",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "nanohmstr",
+              "chainName": "ton",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg",
+            "theme": {
+              "backgroundColorHex": "#f4941c",
+              "circle": true,
+              "primaryColorHex": "#f4941c",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg",
+        },
+        "name": "HMSTR",
+        "symbol": "HMSTR",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-216",
+            },
+            "counterparty": {
+              "base_denom": "factory/orai1wuvhex9xqs3r539mvc6mtm7n20fcj3qr2m0y9khx6n5vtlngfzes3k0rq9/HMSTR",
               "chain_name": "oraichain",
               "channel_id": "channel-13",
             },
