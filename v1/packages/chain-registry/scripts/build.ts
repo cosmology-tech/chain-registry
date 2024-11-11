@@ -427,13 +427,14 @@ const initIBC = (obj, ibcFieldName) => {
 };
 
 const NON_INFO_DIRS = ['_memo_keys', '_scripts', '_template', '.github'];
+const OUT_DATED_DIRS = ['odin1', 'passage1']
 
 const chainPaths = glob(`${registryDir}/**/chain.json`).filter(
   (a) => {
     const splitedDirs = a.split(registryDirInRepoPath);
     let dir = splitedDirs.pop();
     dir = path.basename(path.dirname(dir));
-    return !NON_INFO_DIRS.includes(dir);
+    return !NON_INFO_DIRS.includes(dir) && !OUT_DATED_DIRS.includes(dir);
   }
 );
 
@@ -445,7 +446,7 @@ const paths = glob(`${registryDir}/**/*.json`)
   const filePath = splitedDirs.pop();
   const dir = path.basename(path.dirname(filePath));
   return (
-    !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
+    !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json' && !OUT_DATED_DIRS.includes(dir)
   );
 });
 
@@ -508,7 +509,7 @@ paths.forEach((file) => {
 
   if (data.$schema.endsWith('assetlist.schema.json')) {
     if (statusKilledChainNames.includes(data.chain_name)) {
-      // assetlist with chain status of 'killed' will not be included
+      // assetlist with chain status of 'killed' will be excluded
       return;
     }
 
@@ -526,7 +527,7 @@ paths.forEach((file) => {
     const network_type1 = chainNetworkMap[data.chain_1.chain_name];
 
     if (statusKilledChainNames.includes(data.chain_1.chain_name)) {
-      // ibc data with chain status of 'killed' will not be included
+      // ibc data with chain status of 'killed' will be excluded
     } else if (!network_type1) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_1.chain_name);
       initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name], 'ibc');
@@ -539,7 +540,7 @@ paths.forEach((file) => {
     const network_type2 = chainNetworkMap[data.chain_2.chain_name];
 
     if (statusKilledChainNames.includes(data.chain_2.chain_name)) {
-      // ibc data with chain status of 'killed' will not be included
+      // ibc data with chain status of 'killed' will be excluded
     } else if (!network_type2) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_2.chain_name);
       initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_2.chain_name], 'ibc');
