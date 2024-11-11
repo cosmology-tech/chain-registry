@@ -5,53 +5,6 @@ exports[`getAssetLists 1`] = `
   {
     "assets": [
       {
-        "base": "ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F",
-        "denomUnits": [
-          {
-            "aliases": [
-              "uebl",
-            ],
-            "denom": "ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F",
-            "exponent": 0,
-          },
-          {
-            "denom": "ebl",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native staking token of 8ball.",
-        "display": "ebl",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg",
-            "theme": {
-              "primaryColorHex": "#dbdbdb",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg",
-        },
-        "name": "8ball",
-        "symbol": "EBL",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-641",
-            },
-            "counterparty": {
-              "base_denom": "uebl",
-              "chain_name": "8ball",
-              "channel_id": "channel-16",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06",
         "coingeckoId": "arable-protocol",
         "denomUnits": [
@@ -5486,54 +5439,6 @@ Celestia's unique approach includes a consensus and data availability layer that
         "typeAsset": "sdk.coin",
       },
       {
-        "base": "ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7",
-        "coingeckoId": "cerberus-2",
-        "denomUnits": [
-          {
-            "aliases": [
-              "ucrbrus",
-            ],
-            "denom": "ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7",
-            "exponent": 0,
-          },
-          {
-            "denom": "crbrus",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token of Cerberus Chain",
-        "display": "crbrus",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg",
-            "theme": {
-              "primaryColorHex": "#c6c6c9",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg",
-        },
-        "name": "Cerberus",
-        "symbol": "CRBRUS",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-212",
-            },
-            "counterparty": {
-              "base_denom": "ucrbrus",
-              "chain_name": "cerberus",
-              "channel_id": "channel-1",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/62118FB4D5FEDD5D2B18DC93648A745CD5E5B01D420E9B7A5FED5381CB13A7E8",
         "coingeckoId": "chain4energy",
         "denomUnits": [
@@ -8625,58 +8530,6 @@ Cosmos leverages the Tendermint consensus algorithm to achieve high transaction 
         "typeAsset": "ics20",
       },
       {
-        "base": "ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B",
-        "coingeckoId": "cudos",
-        "denomUnits": [
-          {
-            "aliases": [
-              "acudos",
-            ],
-            "denom": "ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B",
-            "exponent": 0,
-          },
-          {
-            "denom": "cudos",
-            "exponent": 18,
-          },
-        ],
-        "description": "The native token of the Cudos blockchain",
-        "display": "cudos",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg",
-            "theme": {
-              "primaryColorHex": "#5d95ec",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg",
-        },
-        "name": "Cudos",
-        "socials": {
-          "twitter": "https://twitter.com/CUDOS_",
-          "website": "http://www.cudos.org",
-        },
-        "symbol": "CUDOS",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-298",
-            },
-            "counterparty": {
-              "base_denom": "acudos",
-              "chain_name": "cudos",
-              "channel_id": "channel-1",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84",
         "coingeckoId": "decentr",
         "denomUnits": [
@@ -8819,51 +8672,6 @@ Cosmos leverages the Tendermint consensus algorithm to achieve high transaction 
               "base_denom": "udhp",
               "chain_name": "dhealth",
               "channel_id": "channel-4",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
-        "base": "ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D",
-        "denomUnits": [
-          {
-            "aliases": [
-              "udig",
-            ],
-            "denom": "ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D",
-            "exponent": 0,
-          },
-          {
-            "denom": "dig",
-            "exponent": 6,
-          },
-        ],
-        "description": "Native token of Dig Chain",
-        "display": "dig",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
-            "theme": {
-              "primaryColorHex": "#1b1433",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
-        },
-        "name": "Dig Chain",
-        "symbol": "DIG",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-128",
-            },
-            "counterparty": {
-              "base_denom": "udig",
-              "chain_name": "dig",
-              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -19503,53 +19311,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "typeAsset": "sdk.coin",
       },
       {
-        "base": "ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7",
-        "denomUnits": [
-          {
-            "aliases": [
-              "ulumen",
-            ],
-            "denom": "ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7",
-            "exponent": 0,
-          },
-          {
-            "denom": "lumen",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token of LumenX Network",
-        "display": "lumen",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg",
-            "theme": {
-              "primaryColorHex": "#cb8b40",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg",
-        },
-        "name": "LUMEN",
-        "symbol": "LUMEN",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-286",
-            },
-            "counterparty": {
-              "base_denom": "ulumen",
-              "chain_name": "lumenx",
-              "channel_id": "channel-3",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/8A34AF0C1943FD0DFCDE9ADBF0B2C9959C45E87E6088EA2FC6ADACD59261B8A2",
         "coingeckoId": "lum-network",
         "denomUnits": [
@@ -19870,54 +19631,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
           },
         ],
         "typeAsset": "ics20",
-      },
-      {
-        "base": "ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8",
-        "coingeckoId": "microtick",
-        "denomUnits": [
-          {
-            "aliases": [
-              "utick",
-            ],
-            "denom": "ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8",
-            "exponent": 0,
-          },
-          {
-            "denom": "tick",
-            "exponent": 6,
-          },
-        ],
-        "description": "TICK coin is the token for the Microtick Price Discovery & Oracle App",
-        "display": "tick",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg",
-            "theme": {
-              "primaryColorHex": "#6bab14",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg",
-        },
-        "name": "Microtick",
-        "symbol": "TICK",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-39",
-            },
-            "counterparty": {
-              "base_denom": "utick",
-              "chain_name": "microtick",
-              "channel_id": "channel-16",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
       },
       {
         "base": "ibc/EDD6F0D66BCD49C1084FB2C35353B4ACD7B9191117CE63671B61320548F7C89D",
@@ -24874,14 +24587,10 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
             "exponent": 6,
           },
         ],
-        "description": "Staking and governance token for ODIN Protocol",
+        "description": "ODIN is the Staking and governance token for ODIN Protocol",
         "display": "odin",
         "images": [
           {
-            "imageSync": {
-              "baseDenom": "loki",
-              "chainName": "odin",
-            },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png",
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg",
           },
@@ -24891,6 +24600,10 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg",
         },
         "name": "ODIN",
+        "socials": {
+          "twitter": "https://twitter.com/odinprotocol",
+          "website": "https://odinprotocol.io/",
+        },
         "symbol": "ODIN",
         "traces": [
           {
@@ -24926,10 +24639,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "display": "geo",
         "images": [
           {
-            "imageSync": {
-              "baseDenom": "mGeo",
-              "chainName": "odin",
-            },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png",
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg",
             "theme": {
@@ -24959,6 +24668,104 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "typeAsset": "sdk.coin",
       },
       {
+        "base": "ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B",
+        "coingeckoId": "doki",
+        "denomUnits": [
+          {
+            "aliases": [
+              "udoki",
+            ],
+            "denom": "ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B",
+            "exponent": 0,
+          },
+          {
+            "denom": "doki",
+            "exponent": 6,
+          },
+        ],
+        "description": "DOKI the last Dragon",
+        "display": "doki",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png",
+            "theme": {
+              "primaryColorHex": "#2e2d2a",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png",
+        },
+        "name": "DOKI",
+        "socials": {
+          "twitter": "https://twitter.com/doki_coin",
+          "website": "https://dokicoin.io/",
+        },
+        "symbol": "DOKI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-258",
+            },
+            "counterparty": {
+              "base_denom": "udoki",
+              "chain_name": "odin",
+              "channel_id": "channel-3",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752",
+        "denomUnits": [
+          {
+            "aliases": [
+              "umyrk",
+            ],
+            "denom": "ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752",
+            "exponent": 0,
+          },
+          {
+            "denom": "myrk",
+            "exponent": 6,
+          },
+        ],
+        "description": "Myrkur the leader of OLD Order",
+        "display": "myrk",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png",
+            "theme": {
+              "primaryColorHex": "#0a0707",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png",
+        },
+        "name": "MYRK",
+        "socials": {
+          "twitter": "https://twitter.com/myrkweilds",
+        },
+        "symbol": "MYRK",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-258",
+            },
+            "counterparty": {
+              "base_denom": "umyrk",
+              "chain_name": "odin",
+              "channel_id": "channel-3",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
         "base": "ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D",
         "denomUnits": [
           {
@@ -24977,10 +24784,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "display": "O9W",
         "images": [
           {
-            "imageSync": {
-              "baseDenom": "mO9W",
-              "chainName": "odin",
-            },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png",
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg",
             "theme": {
@@ -24993,6 +24796,10 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg",
         },
         "name": "O9W",
+        "socials": {
+          "twitter": "https://twitter.com/odin9worlds",
+          "website": "https://www.odin9worlds.io/",
+        },
         "symbol": "O9W",
         "traces": [
           {
@@ -25905,53 +25712,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "typeAsset": "sdk.coin",
       },
       {
-        "base": "ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F",
-        "denomUnits": [
-          {
-            "aliases": [
-              "uebl",
-            ],
-            "denom": "ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F",
-            "exponent": 0,
-          },
-          {
-            "denom": "ebl",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native staking token of 8ball.",
-        "display": "ebl",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg",
-            "theme": {
-              "primaryColorHex": "#dbdbdb",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg",
-        },
-        "name": "8ball",
-        "symbol": "EBL",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-641",
-            },
-            "counterparty": {
-              "base_denom": "uebl",
-              "chain_name": "8ball",
-              "channel_id": "channel-16",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06",
         "coingeckoId": "arable-protocol",
         "denomUnits": [
@@ -31386,54 +31146,6 @@ Celestia's unique approach includes a consensus and data availability layer that
         "typeAsset": "sdk.coin",
       },
       {
-        "base": "ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7",
-        "coingeckoId": "cerberus-2",
-        "denomUnits": [
-          {
-            "aliases": [
-              "ucrbrus",
-            ],
-            "denom": "ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7",
-            "exponent": 0,
-          },
-          {
-            "denom": "crbrus",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token of Cerberus Chain",
-        "display": "crbrus",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg",
-            "theme": {
-              "primaryColorHex": "#c6c6c9",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg",
-        },
-        "name": "Cerberus",
-        "symbol": "CRBRUS",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-212",
-            },
-            "counterparty": {
-              "base_denom": "ucrbrus",
-              "chain_name": "cerberus",
-              "channel_id": "channel-1",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/62118FB4D5FEDD5D2B18DC93648A745CD5E5B01D420E9B7A5FED5381CB13A7E8",
         "coingeckoId": "chain4energy",
         "denomUnits": [
@@ -34525,58 +34237,6 @@ Cosmos leverages the Tendermint consensus algorithm to achieve high transaction 
         "typeAsset": "ics20",
       },
       {
-        "base": "ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B",
-        "coingeckoId": "cudos",
-        "denomUnits": [
-          {
-            "aliases": [
-              "acudos",
-            ],
-            "denom": "ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B",
-            "exponent": 0,
-          },
-          {
-            "denom": "cudos",
-            "exponent": 18,
-          },
-        ],
-        "description": "The native token of the Cudos blockchain",
-        "display": "cudos",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg",
-            "theme": {
-              "primaryColorHex": "#5d95ec",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg",
-        },
-        "name": "Cudos",
-        "socials": {
-          "twitter": "https://twitter.com/CUDOS_",
-          "website": "http://www.cudos.org",
-        },
-        "symbol": "CUDOS",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-298",
-            },
-            "counterparty": {
-              "base_denom": "acudos",
-              "chain_name": "cudos",
-              "channel_id": "channel-1",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84",
         "coingeckoId": "decentr",
         "denomUnits": [
@@ -34719,51 +34379,6 @@ Cosmos leverages the Tendermint consensus algorithm to achieve high transaction 
               "base_denom": "udhp",
               "chain_name": "dhealth",
               "channel_id": "channel-4",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
-        "base": "ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D",
-        "denomUnits": [
-          {
-            "aliases": [
-              "udig",
-            ],
-            "denom": "ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D",
-            "exponent": 0,
-          },
-          {
-            "denom": "dig",
-            "exponent": 6,
-          },
-        ],
-        "description": "Native token of Dig Chain",
-        "display": "dig",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
-            "theme": {
-              "primaryColorHex": "#1b1433",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
-        },
-        "name": "Dig Chain",
-        "symbol": "DIG",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-128",
-            },
-            "counterparty": {
-              "base_denom": "udig",
-              "chain_name": "dig",
-              "channel_id": "channel-1",
             },
             "type": "ibc",
           },
@@ -45403,53 +45018,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "typeAsset": "sdk.coin",
       },
       {
-        "base": "ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7",
-        "denomUnits": [
-          {
-            "aliases": [
-              "ulumen",
-            ],
-            "denom": "ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7",
-            "exponent": 0,
-          },
-          {
-            "denom": "lumen",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token of LumenX Network",
-        "display": "lumen",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg",
-            "theme": {
-              "primaryColorHex": "#cb8b40",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg",
-        },
-        "name": "LUMEN",
-        "symbol": "LUMEN",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-286",
-            },
-            "counterparty": {
-              "base_denom": "ulumen",
-              "chain_name": "lumenx",
-              "channel_id": "channel-3",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/8A34AF0C1943FD0DFCDE9ADBF0B2C9959C45E87E6088EA2FC6ADACD59261B8A2",
         "coingeckoId": "lum-network",
         "denomUnits": [
@@ -45770,54 +45338,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
           },
         ],
         "typeAsset": "ics20",
-      },
-      {
-        "base": "ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8",
-        "coingeckoId": "microtick",
-        "denomUnits": [
-          {
-            "aliases": [
-              "utick",
-            ],
-            "denom": "ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8",
-            "exponent": 0,
-          },
-          {
-            "denom": "tick",
-            "exponent": 6,
-          },
-        ],
-        "description": "TICK coin is the token for the Microtick Price Discovery & Oracle App",
-        "display": "tick",
-        "images": [
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg",
-            "theme": {
-              "primaryColorHex": "#6bab14",
-            },
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg",
-        },
-        "name": "Microtick",
-        "symbol": "TICK",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-39",
-            },
-            "counterparty": {
-              "base_denom": "utick",
-              "chain_name": "microtick",
-              "channel_id": "channel-16",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
       },
       {
         "base": "ibc/EDD6F0D66BCD49C1084FB2C35353B4ACD7B9191117CE63671B61320548F7C89D",
@@ -50774,14 +50294,10 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
             "exponent": 6,
           },
         ],
-        "description": "Staking and governance token for ODIN Protocol",
+        "description": "ODIN is the Staking and governance token for ODIN Protocol",
         "display": "odin",
         "images": [
           {
-            "imageSync": {
-              "baseDenom": "loki",
-              "chainName": "odin",
-            },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png",
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg",
           },
@@ -50791,6 +50307,10 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg",
         },
         "name": "ODIN",
+        "socials": {
+          "twitter": "https://twitter.com/odinprotocol",
+          "website": "https://odinprotocol.io/",
+        },
         "symbol": "ODIN",
         "traces": [
           {
@@ -50826,10 +50346,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "display": "geo",
         "images": [
           {
-            "imageSync": {
-              "baseDenom": "mGeo",
-              "chainName": "odin",
-            },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png",
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg",
             "theme": {
@@ -50859,6 +50375,104 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "typeAsset": "sdk.coin",
       },
       {
+        "base": "ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B",
+        "coingeckoId": "doki",
+        "denomUnits": [
+          {
+            "aliases": [
+              "udoki",
+            ],
+            "denom": "ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B",
+            "exponent": 0,
+          },
+          {
+            "denom": "doki",
+            "exponent": 6,
+          },
+        ],
+        "description": "DOKI the last Dragon",
+        "display": "doki",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png",
+            "theme": {
+              "primaryColorHex": "#2e2d2a",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png",
+        },
+        "name": "DOKI",
+        "socials": {
+          "twitter": "https://twitter.com/doki_coin",
+          "website": "https://dokicoin.io/",
+        },
+        "symbol": "DOKI",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-258",
+            },
+            "counterparty": {
+              "base_denom": "udoki",
+              "chain_name": "odin",
+              "channel_id": "channel-3",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
+        "base": "ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752",
+        "denomUnits": [
+          {
+            "aliases": [
+              "umyrk",
+            ],
+            "denom": "ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752",
+            "exponent": 0,
+          },
+          {
+            "denom": "myrk",
+            "exponent": 6,
+          },
+        ],
+        "description": "Myrkur the leader of OLD Order",
+        "display": "myrk",
+        "images": [
+          {
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png",
+            "theme": {
+              "primaryColorHex": "#0a0707",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png",
+        },
+        "name": "MYRK",
+        "socials": {
+          "twitter": "https://twitter.com/myrkweilds",
+        },
+        "symbol": "MYRK",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-258",
+            },
+            "counterparty": {
+              "base_denom": "umyrk",
+              "chain_name": "odin",
+              "channel_id": "channel-3",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "sdk.coin",
+      },
+      {
         "base": "ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D",
         "denomUnits": [
           {
@@ -50877,10 +50491,6 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
         "display": "O9W",
         "images": [
           {
-            "imageSync": {
-              "baseDenom": "mO9W",
-              "chainName": "odin",
-            },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png",
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg",
             "theme": {
@@ -50893,6 +50503,10 @@ stBTC's role in the Lorenzo protocol illustrates its importance in creating a hi
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg",
         },
         "name": "O9W",
+        "socials": {
+          "twitter": "https://twitter.com/odin9worlds",
+          "website": "https://www.odin9worlds.io/",
+        },
         "symbol": "O9W",
         "traces": [
           {
@@ -64402,62 +64016,6 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
         "typeAsset": "sdk.coin",
       },
       {
-        "base": "ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD",
-        "coingeckoId": "vidulum",
-        "denomUnits": [
-          {
-            "aliases": [
-              "uvdl",
-            ],
-            "denom": "ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD",
-            "exponent": 0,
-          },
-          {
-            "denom": "vdl",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token of Vidulum",
-        "display": "vdl",
-        "images": [
-          {
-            "imageSync": {
-              "baseDenom": "factory/bze13gzq40che93tgfm9kzmkpjamah5nj0j73pyhqk/uvdl",
-              "chainName": "beezee",
-            },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.svg",
-            "theme": {
-              "primaryColorHex": "#3454bc",
-            },
-          },
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg",
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.svg",
-        },
-        "name": "Vidulum",
-        "symbol": "VDL",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-124",
-            },
-            "counterparty": {
-              "base_denom": "uvdl",
-              "chain_name": "vidulum",
-              "channel_id": "channel-0",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
         "base": "ibc/95C9B5870F95E21A242E6AF9ADCB1F212EE4A8855087226C36FBE43FC41A77B8",
         "coingeckoId": "xpla",
         "denomUnits": [
@@ -77046,62 +76604,6 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
             "counterparty": {
               "base_denom": "nund",
               "chain_name": "unification",
-              "channel_id": "channel-0",
-            },
-            "type": "ibc",
-          },
-        ],
-        "typeAsset": "sdk.coin",
-      },
-      {
-        "base": "ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD",
-        "coingeckoId": "vidulum",
-        "denomUnits": [
-          {
-            "aliases": [
-              "uvdl",
-            ],
-            "denom": "ibc/E7B35499CFBEB0FF5778127ABA4FB2C4B79A6B8D3D831D4379C4048C238796BD",
-            "exponent": 0,
-          },
-          {
-            "denom": "vdl",
-            "exponent": 6,
-          },
-        ],
-        "description": "The native token of Vidulum",
-        "display": "vdl",
-        "images": [
-          {
-            "imageSync": {
-              "baseDenom": "factory/bze13gzq40che93tgfm9kzmkpjamah5nj0j73pyhqk/uvdl",
-              "chainName": "beezee",
-            },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.svg",
-            "theme": {
-              "primaryColorHex": "#3454bc",
-            },
-          },
-          {
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg",
-          },
-        ],
-        "logoURIs": {
-          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.svg",
-        },
-        "name": "Vidulum",
-        "symbol": "VDL",
-        "traces": [
-          {
-            "chain": {
-              "channel_id": "channel-124",
-            },
-            "counterparty": {
-              "base_denom": "uvdl",
-              "chain_name": "vidulum",
               "channel_id": "channel-0",
             },
             "type": "ibc",
