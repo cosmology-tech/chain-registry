@@ -25,7 +25,6 @@ const info: AssetList = {
             primary_color_hex: '#04e4fc'
           }
         }],
-      coingecko_id: 'qwoyn',
       keywords: ['gaming'],
       socials: {
         website: 'https://qwoyn.studio',

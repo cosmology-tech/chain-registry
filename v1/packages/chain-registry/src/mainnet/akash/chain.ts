@@ -61,10 +61,6 @@ const info: Chain = {
         provider: 'Kleomedes'
       },
       {
-        address: 'https://rpc-akash-01.stakeflow.io',
-        provider: 'Stakeflow'
-      },
-      {
         address: 'https://akash-mainnet-rpc.cosmonautstakes.com:443',
         provider: 'Cosmonaut Stakes'
       },
@@ -75,10 +71,6 @@ const info: Chain = {
       {
         address: 'https://akash-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
-      },
-      {
-        address: 'https://public.stakewolle.com/cosmos/akash/rpc',
-        provider: 'Stakewolle'
       },
       {
         address: 'https://akash.declab.pro:26601',

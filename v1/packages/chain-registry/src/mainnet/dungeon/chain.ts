@@ -9,6 +9,7 @@ const info: Chain = {
   pretty_name: 'Dungeon Chain',
   chain_id: 'dungeon-1',
   bech32_prefix: 'dungeon',
+  slip44: 118,
   fees: {
     fee_tokens: [{
         denom: 'udgn',
@@ -33,7 +34,6 @@ const info: Chain = {
         address: 'https://api-archive-dungeonchain.apeironnodes.com',
         provider: 'ApeironNodes (Archive)'
       }]
-  },
-  slip44: 118
+  }
 };
 export default info;
