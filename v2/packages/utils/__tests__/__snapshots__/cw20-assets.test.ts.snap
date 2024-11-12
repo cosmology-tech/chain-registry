@@ -1344,7 +1344,6 @@ exports[`getCw20Assets 1`] = `
       {
         "address": "juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9",
         "base": "ibc/2FBAC4BF296D7844796844B35978E5899984BA5A6314B2DD8F83C215550010B3",
-        "coingeckoId": "wynd",
         "denomUnits": [
           {
             "aliases": [
@@ -3519,7 +3518,6 @@ We support innovation in the Cosmos Ecosystem by funding and supporting projects
       {
         "address": "ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy",
         "base": "ibc/AD185F62399F770CCCE8A36A180A77879FF6C26A0398BD3D2A74E087B0BFA121",
-        "coingeckoId": "lvn",
         "denomUnits": [
           {
             "aliases": [
@@ -4905,7 +4903,6 @@ We support innovation in the Cosmos Ecosystem by funding and supporting projects
       {
         "address": "juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9",
         "base": "ibc/2FBAC4BF296D7844796844B35978E5899984BA5A6314B2DD8F83C215550010B3",
-        "coingeckoId": "wynd",
         "denomUnits": [
           {
             "aliases": [
@@ -7080,7 +7077,6 @@ We support innovation in the Cosmos Ecosystem by funding and supporting projects
       {
         "address": "ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy",
         "base": "ibc/AD185F62399F770CCCE8A36A180A77879FF6C26A0398BD3D2A74E087B0BFA121",
-        "coingeckoId": "lvn",
         "denomUnits": [
           {
             "aliases": [

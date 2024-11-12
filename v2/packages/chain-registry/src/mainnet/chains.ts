@@ -132,6 +132,7 @@ import * as _nomic from './nomic';
 import * as _nyx from './nyx';
 import * as _octa from './octa';
 import * as _odin from './odin';
+import * as _odin1 from './odin1';
 import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
 import * as _onex from './onex';
@@ -331,6 +332,7 @@ const chains: Chain[] = [
   _nyx.chain,
   _octa.chain,
   _odin.chain,
+  _odin1.chain,
   _okexchain.chain,
   _omniflixhub.chain,
   _onex.chain,
