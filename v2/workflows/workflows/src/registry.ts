@@ -214,6 +214,25 @@ export class Registry {
     });
   }
 
+  public validateUnique() {
+    let duplicatedChain = null as Chain
+    const hasDuplicates = this.chains.some((chain, index, array) => {
+      let existingIndex = array.findIndex(c => c.chain_name === chain.chain_name)
+      if (existingIndex !== index) {
+        duplicatedChain = chain
+        return true
+      }
+      return false
+    });
+
+    if (duplicatedChain) {
+      console.log(hasDuplicates ? "Duplicates found" : "No duplicates found");
+      throw new Error(`Duplicate chain found: ${duplicatedChain.chain_name}`)
+    }
+    
+    return duplicatedChain
+  }
+
   public get count() {
     return {
       chains: this.chains.length,
