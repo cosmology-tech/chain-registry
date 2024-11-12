@@ -409,14 +409,13 @@ const initIBC = (obj, ibcFieldName) => {
 };
 
 const NON_INFO_DIRS = ['_memo_keys', '_scripts', '_template', '.github'];
-const OUT_DATED_DIRS = ['odin1', 'passage1']
 
 const chainPaths = glob(`${registryDir}/**/chain.json`).filter(
   (a) => {
     const splitedDirs = a.split(registryDirInRepoPath);
     let dir = splitedDirs.pop();
     dir = path.basename(path.dirname(dir));
-    return !NON_INFO_DIRS.includes(dir) && !OUT_DATED_DIRS.includes(dir);
+    return !NON_INFO_DIRS.includes(dir)
   }
 );
 
@@ -428,7 +427,7 @@ const paths = glob(`${registryDir}/**/*.json`)
     const filePath = splitedDirs.pop();
     const dir = path.basename(path.dirname(filePath));
     return (
-      !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json' && !OUT_DATED_DIRS.includes(dir)
+      !NON_INFO_DIRS.includes(dir) && path.basename(filePath) !== 'chain.json'
     );
   });
 
