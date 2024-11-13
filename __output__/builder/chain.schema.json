@@ -82,17 +82,6 @@
         },
         "ibc": {
           "$ref": "#/$defs/ibc"
-        },
-        "cosmosSdkVersion": {
-          "type": "string",
-          "minLength": 1
-        },
-        "cosmwasmVersion": {
-          "type": "string",
-          "minLength": 1
-        },
-        "cosmwasmEnabled": {
-          "type": "boolean"
         }
       },
       "additionalProperties": false

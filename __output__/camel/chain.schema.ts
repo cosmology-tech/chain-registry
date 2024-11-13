@@ -118,12 +118,8 @@ export interface Chain {
     compatibleVersions?: string[];
     language?: Language;
     binaries?: Binaries;
-    cosmosSdkVersion?: string;
     sdk?: Sdk;
     consensus?: Consensus;
-    cosmwasmVersion?: string;
-    cosmwasmEnabled?: boolean;
-    cosmwasmPath?: string;
     cosmwasm?: Cosmwasm;
     ibc?: Ibc;
     genesis?: {
@@ -141,12 +137,8 @@ export interface Chain {
       recommendedVersion?: string;
       compatibleVersions?: string[];
       language?: Language;
-      cosmosSdkVersion?: string;
       sdk?: Sdk;
       consensus?: Consensus;
-      cosmwasmVersion?: string;
-      cosmwasmEnabled?: boolean;
-      cosmwasmPath?: string;
       cosmwasm?: Cosmwasm;
       ibc?: Ibc;
       binaries?: Binaries;
