@@ -215,23 +215,20 @@ export class Registry {
   }
 
   public validateUnique() {
-    let chainNameCount: Record<string, number> = {};  // object to store the count of each chain_name
-    const duplicates: string[] = []
+    const seen = new Set<string>(); // set to store unique chain_names
+    const duplicates = new Set<string>(); // set to store duplicate chain_names
 
     this.chains.forEach(chain => {
       let chainName = chain.chain_name
-      // If the chainName already exists in chainNameCount, it's a duplicate
-      if (chainNameCount[chainName]) {
-        chainNameCount[chainName]++
-        if (chainNameCount[chainName] === 2) { // Only add to duplicates on first repeat
-          duplicates.push(chainName)
-        }
+      if (seen.has(chainName)) {
+        duplicates.add(chainName)
       } else {
-        chainNameCount[chainName] = 1;
+        seen.add(chainName)
       }
     })
-    if (duplicates.length > 0) {
-      throw new Error(`duplicates found: ${duplicates.join(', ')}`)
+    const duplicatesArr = Array.from(duplicates)
+    if (duplicatesArr.length > 0) {
+      throw new Error(`duplicates found: ${duplicatesArr.join(', ')}`)
     }
   }
 
