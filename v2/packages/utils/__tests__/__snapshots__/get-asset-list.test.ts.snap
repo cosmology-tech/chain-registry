@@ -22,7 +22,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "display": "akt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg",
         },
@@ -60,7 +60,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Asset Mantle",
         "display": "mntl",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png",
         },
         "name": "AssetMantle",
@@ -97,7 +97,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Axelar",
         "display": "axl",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg",
         },
@@ -135,7 +135,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Circle's stablecoin on Axelar",
         "display": "usdc",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg",
         },
@@ -173,7 +173,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Frax's fractional-algorithmic stablecoin on Axelar",
         "display": "frax",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg",
         },
@@ -211,7 +211,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Dai stablecoin on Axelar",
         "display": "dai",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg",
         },
@@ -249,7 +249,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Tether's USD stablecoin on Axelar",
         "display": "usdt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
         },
@@ -287,7 +287,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Wrapped Ether on Axelar",
         "display": "weth",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png",
         },
         "name": "Wrapped Ether",
@@ -324,7 +324,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Wrapped Bitcoin on Axelar",
         "display": "wbtc",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
         },
         "name": "Wrapped Bitcoin",
@@ -361,7 +361,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Aave on Axelar",
         "display": "aave",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg",
         },
         "name": "Aave",
@@ -398,7 +398,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "ApeCoin on Axelar",
         "display": "ape",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg",
         },
         "name": "ApeCoin",
@@ -436,7 +436,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Axie Infinity Shard on Axelar",
         "display": "axs",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg",
         },
         "name": "Axie Infinity Shard",
@@ -474,7 +474,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Chainlink on Axelar",
         "display": "link",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg",
         },
@@ -512,7 +512,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Maker on Axelar",
         "display": "mkr",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg",
         },
         "name": "Maker",
@@ -549,7 +549,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Rai Reflex Index on Axelar",
         "display": "rai",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg",
         },
         "name": "Rai Reflex Index",
@@ -586,7 +586,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Shiba Inu on Axelar",
         "display": "shib",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg",
         },
         "name": "Shiba Inu",
@@ -623,7 +623,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Lido Staked Ether on Axelar",
         "display": "steth",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg",
         },
         "name": "Lido Staked Ether",
@@ -660,7 +660,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Uniswap on Axelar",
         "display": "uni",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg",
         },
         "name": "Uniswap",
@@ -697,7 +697,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Chain on Axelar",
         "display": "xcn",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg",
         },
         "name": "Chain",
@@ -734,7 +734,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Wrapped Polkadot on Axelar",
         "display": "dot",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg",
         },
@@ -772,7 +772,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Wrapped Moonbeam on Axelar",
         "display": "wglmr",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg",
         },
@@ -810,7 +810,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of BandChain",
         "display": "band",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg",
         },
@@ -848,7 +848,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The BCNA coin is the transactional token within the BitCanna network, serving the legal cannabis industry through its payment network, supply chain and trust network.",
         "display": "bcna",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg",
         },
@@ -886,7 +886,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "BitSong Native Token",
         "display": "btsg",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg",
         },
@@ -924,7 +924,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Adam Clay a BitSong Music FanToken",
         "display": "clay",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png",
         },
         "name": "Adam Clay FanToken",
@@ -960,7 +960,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Nicola Fasano a BitSong Music FanToken",
         "display": "fasano",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png",
         },
         "name": "Nicola Fasano Fantoken",
@@ -996,7 +996,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Delta 9 a BitSong Music FanToken",
         "display": "d9x",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png",
         },
         "name": "Delta 9 Fantoken",
@@ -1032,7 +1032,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "FONTI a BitSong Music FanToken",
         "display": "fonti",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png",
         },
         "name": "FONTI Fantoken",
@@ -1068,7 +1068,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "BlackJack a BitSong Music FanToken",
         "display": "bjks",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png",
         },
         "name": "BlackJack Fantoken",
@@ -1104,7 +1104,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Rawanne a BitSong Music FanToken",
         "display": "rwne",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png",
         },
         "name": "Rawanne Fantoken",
@@ -1140,7 +1140,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Enmoda a BitSong Music FanToken",
         "display": "enmoda",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png",
         },
         "name": "Enmoda Fantoken",
@@ -1176,7 +1176,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "404Deep Records a BitSong Music FanToken",
         "display": "404dr",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png",
         },
         "name": "404Deep Records Fantoken",
@@ -1212,7 +1212,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "N43 a BitSong Music FanToken",
         "display": "n43",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png",
         },
         "name": "N43 Fantoken",
@@ -1248,7 +1248,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Puro Lobo a BitSong Music FanToken",
         "display": "lobo",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png",
         },
         "name": "Puro Lobo Fantoken",
@@ -1284,7 +1284,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Vibranium a BitSong Music FanToken",
         "display": "vibra",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png",
         },
         "name": "Vibranium Fantoken",
@@ -1320,7 +1320,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Karina a BitSong Music FanToken",
         "display": "karina",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png",
         },
         "name": "Karina Fantoken",
@@ -1356,7 +1356,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Luca Testa a BitSong Music FanToken",
         "display": "testa",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png",
         },
         "name": "Luca Testa Fantoken",
@@ -1392,7 +1392,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Carolina Marquez a BitSong Music FanToken",
         "display": "cmqz",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png",
         },
         "name": "Carolina Marquez Fantoken",
@@ -1425,7 +1425,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The staking token of Bostrom",
         "display": "boot",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png",
         },
         "name": "Bostrom",
@@ -1465,7 +1465,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Carbon",
         "display": "dswth",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg",
         },
@@ -1503,7 +1503,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Cerberus Chain",
         "display": "crbrus",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png",
         },
         "name": "Cerberus",
@@ -1540,7 +1540,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Native token for the cheqd network",
         "display": "cheq",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg",
         },
@@ -1578,7 +1578,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Chihuahua Chain",
         "display": "huahua",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png",
         },
         "name": "Chihuahua",
@@ -1615,7 +1615,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Native Token of Comdex Protocol",
         "display": "cmdx",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png",
         },
         "name": "Comdex",
@@ -1652,7 +1652,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native staking and governance token of the Cosmos Hub.",
         "display": "atom",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg",
         },
@@ -1691,7 +1691,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Crescent",
         "display": "cre",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg",
         },
@@ -1730,7 +1730,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The bonded token of Crescent",
         "display": "bcre",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg",
         },
@@ -1768,7 +1768,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "CRO coin is the token for the Crypto.com platform.",
         "display": "cro",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png",
         },
         "name": "Cronos",
@@ -1806,7 +1806,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Decentr",
         "display": "dec",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg",
         },
@@ -1845,7 +1845,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Desmos",
         "display": "dsm",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg",
         },
@@ -1883,7 +1883,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Native token of Dig Chain",
         "display": "dig",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
         },
         "name": "Dig Chain",
@@ -1920,7 +1920,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "e-Money NGM staking token. In addition to earning staking rewards the token is bought back and burned based on e-Money stablecoin inflation.",
         "display": "ngm",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png",
         },
         "name": "e-Money",
@@ -1957,7 +1957,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "e-Money EUR stablecoin. Audited and backed by fiat EUR deposits and government bonds.",
         "display": "eur",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png",
         },
         "name": "e-Money EUR",
@@ -1994,7 +1994,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native EVM, governance and staking token of the Evmos Hub",
         "display": "evmos",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg",
         },
@@ -2032,7 +2032,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native staking and governance token of the Fetch Hub.",
         "display": "fet",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg",
         },
@@ -2069,7 +2069,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The MOBX coin rewards the use of eco-friendly micromobility transportation.",
         "display": "mobx",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg",
         },
@@ -2106,7 +2106,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "GLX is the staking token of the Galaxy Chain",
         "display": "glx",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg",
         },
@@ -2143,7 +2143,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "L1 coin is the GenesisL1 blockchain utility, governance and EVM token",
         "display": "l1",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg",
         },
@@ -2187,7 +2187,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
         },
@@ -2234,7 +2234,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
         },
@@ -2276,7 +2276,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg",
         },
         "name": "Wrapped Ethereum",
@@ -2317,7 +2317,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
         },
         "name": "USD Coin",
@@ -2358,7 +2358,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
         },
         "name": "Tether USD",
@@ -2400,7 +2400,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg",
         },
@@ -2442,7 +2442,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg",
         },
         "name": "Dai Stablecoin",
@@ -2488,7 +2488,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
         },
@@ -2534,7 +2534,7 @@ exports[`getAssetLists 1`] = `
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png",
         },
         "name": "OccamFi",
@@ -2580,7 +2580,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
         },
@@ -2618,7 +2618,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of IXO Chain",
         "display": "ixo",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png",
         },
         "name": "IXO",
@@ -2655,7 +2655,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The INJ token is the native governance token for the Injective chain.",
         "display": "inj",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg",
         },
@@ -2693,7 +2693,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The IRIS token is the native governance token for the IrisNet chain.",
         "display": "iris",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg",
         },
@@ -2731,7 +2731,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of JUNO Chain",
         "display": "juno",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg",
         },
@@ -2769,7 +2769,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native staking and governance token of Kava",
         "display": "kava",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png",
         },
         "name": "Kava",
@@ -2806,7 +2806,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Governance token of Kava Lend Protocol",
         "display": "HARD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg",
         },
@@ -2844,7 +2844,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Governance token of Kava Swap Protocol",
         "display": "SWP",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg",
         },
@@ -2882,7 +2882,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Ki Chain",
         "display": "xki",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg",
         },
@@ -2920,7 +2920,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Konstellation Network",
         "display": "darc",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.svg",
         },
@@ -2958,7 +2958,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "LIKE is the native staking and governance token of LikeCoin chain, a Decentralized Publishing Infrastructure to empower content ownership, authenticity, and provenance.",
         "display": "like",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg",
         },
@@ -2995,7 +2995,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Lumen Network",
         "display": "lumen",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png",
         },
         "name": "LUMEN",
@@ -3032,7 +3032,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Native token of the Lum Network",
         "display": "lum",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg",
         },
@@ -3069,7 +3069,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "MEME Token (MEME) is the native staking token of the MEME Chain",
         "display": "meme",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg",
         },
@@ -3106,7 +3106,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "TICK coin is the token for the Microtick Price Discovery & Oracle App",
         "display": "tick",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg",
         },
@@ -3144,7 +3144,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Oraichain",
         "display": "orai",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg",
         },
@@ -3182,7 +3182,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Panacea is a public blockchain launched by MediBloc, which is the key infrastructure for reinventing the patient-centered healthcare data ecosystem",
         "display": "med",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png",
         },
         "name": "MediBloc",
@@ -3219,7 +3219,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The XPRT token is primarily a governance token for the Persistence chain.",
         "display": "xprt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg",
         },
@@ -3262,7 +3262,7 @@ exports[`getAssetLists 1`] = `
           "sourceChannel": "channel-24",
           "sourceDenom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006",
         },
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
         },
@@ -3301,7 +3301,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Hash is the staking token of the Provenance Blockchain",
         "display": "hash",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg",
         },
@@ -3339,7 +3339,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "REGEN coin is the token for the Regen Network Platform",
         "display": "regen",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
         },
         "name": "Regen Network",
@@ -3376,7 +3376,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Native token of Rizon Chain",
         "display": "atolo",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg",
         },
@@ -3414,7 +3414,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Secret Network",
         "display": "scrt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg",
         },
@@ -3452,7 +3452,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "DVPN is the native token of the Sentinel Hub.",
         "display": "dvpn",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png",
         },
         "name": "Sentinel",
@@ -3489,7 +3489,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Shentu",
         "display": "ctk",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png",
         },
         "name": "Shentu",
@@ -3522,7 +3522,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "display": "rowan",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg",
         },
@@ -3567,7 +3567,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Somm Token (SOMM) is the native staking token of the Sommelier Chain",
         "display": "somm",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg",
         },
@@ -3605,7 +3605,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Stargaze",
         "display": "stars",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png",
         },
         "name": "Stargaze",
@@ -3642,7 +3642,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "IOV coin is the token for the Starname (IOV) Asset Name Service",
         "display": "iov",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg",
         },
@@ -3690,7 +3690,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native staking token of Terra Classic.",
         "display": "luna",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg",
         },
@@ -3738,7 +3738,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The USD stablecoin of Terra Classic.",
         "display": "ust",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg",
         },
@@ -3786,7 +3786,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The KRW stablecoin of Terra Classic.",
         "display": "krt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg",
         },
@@ -3833,7 +3833,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The AUD stablecoin of Terra Classic.",
         "display": "aut",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg",
         },
@@ -3880,7 +3880,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The CAD stablecoin of Terra Classic.",
         "display": "cat",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg",
         },
@@ -3927,7 +3927,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The CHF stablecoin of Terra Classic.",
         "display": "cht",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg",
         },
@@ -3974,7 +3974,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The CNY stablecoin of Terra Classic.",
         "display": "cnt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg",
         },
@@ -4021,7 +4021,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The DKK stablecoin of Terra Classic.",
         "display": "dkt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg",
         },
@@ -4068,7 +4068,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The EUR stablecoin of Terra Classic.",
         "display": "eut",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg",
         },
@@ -4115,7 +4115,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The GBP stablecoin of Terra Classic.",
         "display": "gbt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg",
         },
@@ -4162,7 +4162,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The HKD stablecoin of Terra Classic.",
         "display": "hkt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg",
         },
@@ -4209,7 +4209,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The IDR stablecoin of Terra Classic.",
         "display": "idt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg",
         },
@@ -4256,7 +4256,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The INR stablecoin of Terra Classic.",
         "display": "int",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg",
         },
@@ -4303,7 +4303,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The JPY stablecoin of Terra Classic.",
         "display": "jpt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg",
         },
@@ -4350,7 +4350,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The MNT stablecoin of Terra Classic.",
         "display": "mnt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg",
         },
@@ -4397,7 +4397,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The MYR stablecoin of Terra Classic.",
         "display": "myt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg",
         },
@@ -4444,7 +4444,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The NOK stablecoin of Terra Classic.",
         "display": "not",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg",
         },
@@ -4491,7 +4491,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The PHP stablecoin of Terra Classic.",
         "display": "pht",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg",
         },
@@ -4538,7 +4538,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The SDR stablecoin of Terra Classic.",
         "display": "sdt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg",
         },
@@ -4585,7 +4585,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The SEK stablecoin of Terra Classic.",
         "display": "set",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg",
         },
@@ -4632,7 +4632,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The SGD stablecoin of Terra Classic.",
         "display": "sgt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg",
         },
@@ -4679,7 +4679,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The THB stablecoin of Terra Classic.",
         "display": "tht",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg",
         },
@@ -4726,7 +4726,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The TWD stablecoin of Terra Classic.",
         "display": "twt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg",
         },
@@ -4765,7 +4765,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Tgrade",
         "display": "tgd",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg",
         },
@@ -4803,7 +4803,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Umee",
         "display": "umee",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png",
         },
         "name": "Umee",
@@ -4841,7 +4841,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Vidulum",
         "display": "vdl",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg",
         },
@@ -4880,7 +4880,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token cw20 for Neta on Juno Chain",
         "display": "neta",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg",
         },
@@ -4922,7 +4922,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token cw20 for Marble DAO on Juno Chain",
         "display": "marble",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg",
         },
@@ -4964,7 +4964,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Hope Galaxy is an NFT collection based on its own native Token $HOPE, a cw20 token on Juno chain.",
         "display": "hope",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg",
         },
@@ -5006,7 +5006,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Racoon aims to simplify accessibility to AI, NFTs and Gambling on the Cosmos Ecosystem",
         "display": "rac",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg",
         },
@@ -5047,7 +5047,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of Marble DEX on Juno Chain",
         "display": "block",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg",
         },
@@ -5084,7 +5084,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The DAO token to build consensus among Hong Kong People",
         "display": "dhk",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg",
         },
@@ -5126,7 +5126,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Token governance for Junoswap",
         "display": "raw",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png",
         },
         "name": "JunoSwap",
@@ -5166,7 +5166,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Profit sharing token for Another.Software validator. Hold and receive dividends from Another.Software validator commissions!",
         "display": "asvt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png",
         },
         "name": "Another.Software Validator Token",
@@ -5206,7 +5206,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "IBC HNS is HNS, coin of Handshake, decentralized root namesystem, but wrapped to cosmos for IBC support by Another.Software through Juno netowrk.",
         "display": "hns",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg",
         },
         "name": "IBC HNS (Handshake)",
@@ -5246,7 +5246,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "DAO dedicated to building tools on the Juno Network",
         "display": "joe",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png",
         },
         "name": "JoeDAO",
@@ -5286,7 +5286,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Governance Token for Digital Land Acquisition DAO",
         "display": "dla",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg",
         },
@@ -5327,7 +5327,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "DeFi gaming platform built on Juno",
         "display": "glto",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg",
         },
@@ -5368,7 +5368,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Gelotto Year 1 Grand Prize Token",
         "display": "gkey",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg",
         },
@@ -5409,7 +5409,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token cw20 for BlackHole on Juno Chain",
         "display": "blkh",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.svg",
         },
@@ -5451,7 +5451,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "ELEVENPARIS loyalty token on KiChain",
         "display": "lvn",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png",
         },
         "name": "LVN",

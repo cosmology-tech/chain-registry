@@ -2270,7 +2270,7 @@
     "keyAlgos": [
       "secp256k1"
     ],
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png",
       "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg"
     },
@@ -2742,7 +2742,7 @@
         }
       ]
     },
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
       "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
     },
@@ -4580,7 +4580,7 @@
       ]
     },
     "explorers": [],
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png",
       "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg"
     }
@@ -6638,7 +6638,7 @@
       ]
     },
     "explorers": [],
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png",
       "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg"
     }
@@ -7069,7 +7069,7 @@
       ]
     },
     "explorers": [],
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.png",
       "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.svg"
     }
@@ -7850,7 +7850,7 @@
         "txPage": "https://atomscan.com/osmosis/transactions/${txHash}"
       }
     ],
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmosis-chain-logo.png"
     },
     "keywords": [
@@ -8347,7 +8347,7 @@
         "txPage": "https://atomscan.com/regen-network/transactions/${txHash}"
       }
     ],
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png"
     }
   },
@@ -9985,7 +9985,7 @@
         "accountPage": "https://tgrade.aneka.io/accounts/${accountAddress}"
       }
     ],
-    "logoUris": {
+    "logoURIs": {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-logo-gradient_h.png"
     }
   },

@@ -23,7 +23,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "The native token cw20 for Neta on Juno Chain",
         "display": "neta",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg",
         },
@@ -65,7 +65,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "The native token cw20 for Marble DAO on Juno Chain",
         "display": "marble",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg",
         },
@@ -107,7 +107,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "Hope Galaxy is an NFT collection based on its own native Token $HOPE, a cw20 token on Juno chain.",
         "display": "hope",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg",
         },
@@ -149,7 +149,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "Racoon aims to simplify accessibility to AI, NFTs and Gambling on the Cosmos Ecosystem",
         "display": "rac",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg",
         },
@@ -190,7 +190,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "The native token of Marble DEX on Juno Chain",
         "display": "block",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg",
         },
@@ -227,7 +227,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "The DAO token to build consensus among Hong Kong People",
         "display": "dhk",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg",
         },
@@ -269,7 +269,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "Token governance for Junoswap",
         "display": "raw",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png",
         },
         "name": "JunoSwap",
@@ -309,7 +309,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "Profit sharing token for Another.Software validator. Hold and receive dividends from Another.Software validator commissions!",
         "display": "asvt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png",
         },
         "name": "Another.Software Validator Token",
@@ -349,7 +349,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "IBC HNS is HNS, coin of Handshake, decentralized root namesystem, but wrapped to cosmos for IBC support by Another.Software through Juno netowrk.",
         "display": "hns",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg",
         },
         "name": "IBC HNS (Handshake)",
@@ -389,7 +389,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "DAO dedicated to building tools on the Juno Network",
         "display": "joe",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png",
         },
         "name": "JoeDAO",
@@ -429,7 +429,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "Governance Token for Digital Land Acquisition DAO",
         "display": "dla",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg",
         },
@@ -470,7 +470,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "DeFi gaming platform built on Juno",
         "display": "glto",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg",
         },
@@ -511,7 +511,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "Gelotto Year 1 Grand Prize Token",
         "display": "gkey",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg",
         },
@@ -552,7 +552,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "The native token cw20 for BlackHole on Juno Chain",
         "display": "blkh",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.svg",
         },
@@ -594,7 +594,7 @@ exports[`getCw20Assets 1`] = `
         ],
         "description": "ELEVENPARIS loyalty token on KiChain",
         "display": "lvn",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png",
         },
         "name": "LVN",

@@ -19,7 +19,7 @@
         "name": "Avalanche",
         "display": "avax",
         "symbol": "AVAX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/avax.svg"
         },
@@ -46,7 +46,7 @@
         "name": "Wrapped AVAX",
         "display": "wavax",
         "symbol": "WAVAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/avalanche/images/wavax.svg"
         },
         "coingeckoId": "wrapped-avax"
@@ -72,7 +72,7 @@
         "name": "Axelar Wrapped DAI",
         "display": "axldai",
         "symbol": "axlDAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
         }
       },
@@ -97,7 +97,7 @@
         "name": "Axelar Wrapped Frax",
         "display": "axlfrax",
         "symbol": "axlFRAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg"
         }
       },
@@ -122,7 +122,7 @@
         "name": "Axelar Wrapped USDC",
         "display": "axlusdc",
         "symbol": "axlUSDC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
         }
       },
@@ -147,7 +147,7 @@
         "name": "Axelar Wrapped USDT",
         "display": "axlusdt",
         "symbol": "axlUSDT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
         }
       }
@@ -180,7 +180,7 @@
         "name": "Ether",
         "display": "eth",
         "symbol": "ETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg"
         },
         "coingeckoId": "ethereum"
@@ -206,7 +206,7 @@
         "name": "Aave",
         "display": "aave",
         "symbol": "AAVE",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg"
         },
         "coingeckoId": "aave"
@@ -232,7 +232,7 @@
         "name": "ApeCoin",
         "display": "ape",
         "symbol": "APE",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg"
         },
         "coingeckoId": "apecoin"
@@ -258,7 +258,7 @@
         "name": "Axie Infinity Shard",
         "display": "axs",
         "symbol": "AXS",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg"
         },
         "coingeckoId": "axie-infinity"
@@ -284,7 +284,7 @@
         "name": "Dai Stablecoin",
         "display": "dai",
         "symbol": "DAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
         },
         "coingeckoId": "dai"
@@ -310,7 +310,7 @@
         "name": "Frax",
         "display": "frax",
         "symbol": "FRAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg"
         },
         "coingeckoId": "frax"
@@ -336,7 +336,7 @@
         "name": "Chainlink",
         "display": "link",
         "symbol": "LINK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg"
         },
@@ -363,7 +363,7 @@
         "name": "Maker",
         "display": "mkr",
         "symbol": "MKR",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg"
         },
         "coingeckoId": "maker"
@@ -389,7 +389,7 @@
         "name": "Rai Reflex Index",
         "display": "rai",
         "symbol": "RAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg"
         },
         "coingeckoId": "rai"
@@ -415,7 +415,7 @@
         "name": "Shiba Inu",
         "display": "shib",
         "symbol": "SHIB",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg"
         },
         "coingeckoId": "shiba-inu"
@@ -441,7 +441,7 @@
         "name": "Lido Staked Ether",
         "display": "steth",
         "symbol": "stETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg"
         },
         "coingeckoId": "staked-ether"
@@ -467,7 +467,7 @@
         "name": "Uniswap",
         "display": "uni",
         "symbol": "UNI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg"
         },
         "coingeckoId": "uniswap"
@@ -493,7 +493,7 @@
         "name": "USD Coin",
         "display": "usdc",
         "symbol": "USDC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
         },
         "coingeckoId": "usd-coin"
@@ -519,7 +519,7 @@
         "name": "Tether USD",
         "display": "usdt",
         "symbol": "USDT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
         },
         "coingeckoId": "tether"
@@ -545,7 +545,7 @@
         "name": "Wrapped Bitcoin",
         "display": "wbtc",
         "symbol": "WBTC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg"
         },
@@ -572,7 +572,7 @@
         "name": "Wrapped Ether",
         "display": "weth",
         "symbol": "WETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg"
         },
         "coingeckoId": "weth"
@@ -598,7 +598,7 @@
         "name": "Chain",
         "display": "xcn",
         "symbol": "XCN",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg"
         },
         "coingeckoId": "chain-2"
@@ -631,7 +631,7 @@
         "name": "Glimmer",
         "display": "GLMR",
         "symbol": "GLMR",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg"
         },
         "coingeckoId": "moonbeam"
@@ -657,7 +657,7 @@
         "name": "Wrapped Moonbeam",
         "display": "wglmr",
         "symbol": "WGLMR",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg"
         },
         "coingeckoId": "wrapped-moonbeam"
@@ -683,7 +683,7 @@
         "name": "Wrapped Polkadot",
         "display": "xcdot",
         "symbol": "xcDOT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/dot.svg"
         }
       },
@@ -708,7 +708,7 @@
         "name": "Axelar Wrapped Dai Stablecoin",
         "display": "axldai",
         "symbol": "axlDAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
         }
       },
@@ -733,7 +733,7 @@
         "name": "Axelar Wrapped Frax",
         "display": "axlfrax",
         "symbol": "axlFRAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg"
         }
       },
@@ -758,7 +758,7 @@
         "name": "Axelar Wrapped USD Coin",
         "display": "axlusdc",
         "symbol": "axlUSDC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
         }
       },
@@ -783,7 +783,7 @@
         "name": "Axelar Wrapped Tether USD",
         "display": "axlusdt",
         "symbol": "axlUSDT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
         }
       }
@@ -846,7 +846,7 @@
         "name": "Polkadot",
         "display": "DOT",
         "symbol": "DOT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg"
         },
         "coingeckoId": "polkadot"
@@ -876,7 +876,7 @@
         "name": "Matic",
         "display": "matic",
         "symbol": "MATIC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/matic.svg"
         },
@@ -906,7 +906,7 @@
         "name": "Wrapped Matic",
         "display": "wmatic",
         "symbol": "WMATIC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polygon/images/wmatic.svg"
         },
         "coingeckoId": "wmatic"
@@ -932,7 +932,7 @@
         "name": "Axelar Wrapped Dai Stablecoin",
         "display": "axldai",
         "symbol": "axlDAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
         }
       },
@@ -957,7 +957,7 @@
         "name": "Axelar Wrapped Frax",
         "display": "axlfrax",
         "symbol": "axlFRAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/frax.svg"
         }
       },
@@ -982,7 +982,7 @@
         "name": "Axelar Wrapped USD Coin",
         "display": "axlusdc",
         "symbol": "axlUSDC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
         }
       },
@@ -1007,7 +1007,7 @@
         "name": "Axelar Wrapped Tether USD",
         "display": "axlusdt",
         "symbol": "axlUSDT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
         }
       }
@@ -1033,7 +1033,7 @@
         "name": "Agoric Staking Token",
         "display": "bld",
         "symbol": "BLD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/bld.png"
         }
       },
@@ -1053,7 +1053,7 @@
         "name": "Agoric Stable Token",
         "display": "run",
         "symbol": "RUN",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/run.png"
         }
       }
@@ -1083,7 +1083,7 @@
         "name": "AIOZ",
         "display": "aioz",
         "symbol": "AIOZ",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png"
         },
@@ -1111,7 +1111,7 @@
         "name": "Akash Network",
         "display": "akt",
         "symbol": "AKT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg"
         },
@@ -1139,7 +1139,7 @@
         "name": "Arkh",
         "display": "arkh",
         "symbol": "ARKH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://www.arkhadian.com/static/images/600-prism.png"
         }
       }
@@ -1165,7 +1165,7 @@
         "name": "AssetMantle",
         "display": "mntl",
         "symbol": "MNTL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png"
         },
         "coingeckoId": "assetmantle"
@@ -1192,7 +1192,7 @@
         "name": "Axelar",
         "display": "axl",
         "symbol": "AXL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
         },
@@ -1214,7 +1214,7 @@
         "name": "USD Coin",
         "display": "usdc",
         "symbol": "USDC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png"
         },
@@ -1236,7 +1236,7 @@
         "name": "Frax",
         "display": "frax",
         "symbol": "FRAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/frax.png"
         },
@@ -1258,7 +1258,7 @@
         "name": "Dai Stablecoin",
         "display": "dai",
         "symbol": "DAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/dai.png"
         },
@@ -1280,7 +1280,7 @@
         "name": "Tether USD",
         "display": "usdt",
         "symbol": "USDT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png"
         },
@@ -1302,7 +1302,7 @@
         "name": "Wrapped Ether",
         "display": "weth",
         "symbol": "WETH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/weth.png"
         },
         "coingeckoId": "weth"
@@ -1323,7 +1323,7 @@
         "name": "Wrapped Bitcoin",
         "display": "wbtc",
         "symbol": "WBTC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png"
         },
         "coingeckoId": "wrapped-bitcoin"
@@ -1344,7 +1344,7 @@
         "name": "Aave",
         "display": "aave",
         "symbol": "AAVE",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/aave.svg"
         },
         "coingeckoId": "aave"
@@ -1365,7 +1365,7 @@
         "name": "ApeCoin",
         "display": "ape",
         "symbol": "APE",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/ape.svg"
         },
         "coingeckoId": "apecoin"
@@ -1388,7 +1388,7 @@
         "name": "Axie Infinity Shard",
         "display": "axs",
         "symbol": "AXS",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/axs.svg"
         },
         "coingeckoId": "axie-infinity"
@@ -1409,7 +1409,7 @@
         "name": "Chainlink",
         "display": "link",
         "symbol": "LINK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg"
         },
@@ -1431,7 +1431,7 @@
         "name": "Maker",
         "display": "mkr",
         "symbol": "MKR",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/mkr.svg"
         },
         "coingeckoId": "maker"
@@ -1452,7 +1452,7 @@
         "name": "Rai Reflex Index",
         "display": "rai",
         "symbol": "RAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/rai.svg"
         },
         "coingeckoId": "rai"
@@ -1473,7 +1473,7 @@
         "name": "Shiba Inu",
         "display": "shib",
         "symbol": "SHIB",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg"
         },
         "coingeckoId": "shiba-inu"
@@ -1494,7 +1494,7 @@
         "name": "Lido Staked Ether",
         "display": "steth",
         "symbol": "stETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/steth.svg"
         },
         "coingeckoId": "staked-ether"
@@ -1515,7 +1515,7 @@
         "name": "Uniswap",
         "display": "uni",
         "symbol": "UNI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/uni.svg"
         },
         "coingeckoId": "uniswap"
@@ -1536,7 +1536,7 @@
         "name": "Chain",
         "display": "xcn",
         "symbol": "XCN",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/xcn.svg"
         },
         "coingeckoId": "chain-2"
@@ -1557,7 +1557,7 @@
         "name": "Wrapped Polkadot",
         "display": "dot",
         "symbol": "DOT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/polkadot/images/dot.png"
         },
@@ -1579,7 +1579,7 @@
         "name": "Wrapped Moonbeam",
         "display": "wglmr",
         "symbol": "WGLMR",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/moonbeam/images/glmr.png"
         },
@@ -1607,7 +1607,7 @@
         "display": "band",
         "name": "Band Protocol",
         "symbol": "BAND",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bandchain/images/band.svg"
         },
@@ -1635,7 +1635,7 @@
         "display": "bcna",
         "name": "BitCanna",
         "symbol": "BCNA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg"
         },
@@ -1663,7 +1663,7 @@
         "name": "BitSong",
         "display": "btsg",
         "symbol": "BTSG",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg"
         },
@@ -1686,7 +1686,7 @@
         "name": "Adam Clay FanToken",
         "display": "clay",
         "symbol": "CLAY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png"
         }
       },
@@ -1706,7 +1706,7 @@
         "name": "Nicola Fasano Fantoken",
         "display": "fasano",
         "symbol": "FASANO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png"
         }
       },
@@ -1726,7 +1726,7 @@
         "name": "Delta 9 Fantoken",
         "display": "d9x",
         "symbol": "D9X",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png"
         }
       },
@@ -1746,7 +1746,7 @@
         "name": "FONTI Fantoken",
         "display": "fonti",
         "symbol": "FONTI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png"
         }
       },
@@ -1766,7 +1766,7 @@
         "name": "BlackJack Fantoken",
         "display": "bjks",
         "symbol": "BJKS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png"
         }
       },
@@ -1786,7 +1786,7 @@
         "name": "Rawanne Fantoken",
         "display": "rwne",
         "symbol": "RWNE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png"
         }
       },
@@ -1806,7 +1806,7 @@
         "name": "Enmoda Fantoken",
         "display": "enmoda",
         "symbol": "ENMODA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png"
         }
       },
@@ -1826,7 +1826,7 @@
         "name": "404Deep Records Fantoken",
         "display": "404dr",
         "symbol": "404DR",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png"
         }
       },
@@ -1846,7 +1846,7 @@
         "name": "N43 Fantoken",
         "display": "n43",
         "symbol": "N43",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png"
         }
       },
@@ -1866,7 +1866,7 @@
         "name": "Puro Lobo Fantoken",
         "display": "lobo",
         "symbol": "LOBO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png"
         }
       },
@@ -1886,7 +1886,7 @@
         "name": "Vibranium Fantoken",
         "display": "vibra",
         "symbol": "VIBRA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png"
         }
       },
@@ -1906,7 +1906,7 @@
         "name": "Karina Fantoken",
         "display": "karina",
         "symbol": "KARINA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png"
         }
       },
@@ -1926,7 +1926,7 @@
         "name": "Luca Testa Fantoken",
         "display": "testa",
         "symbol": "TESTA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png"
         }
       },
@@ -1946,7 +1946,7 @@
         "name": "Carolina Marquez Fantoken",
         "display": "cmqz",
         "symbol": "CMQZ",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png"
         }
       }
@@ -1968,7 +1968,7 @@
         "name": "Bostrom",
         "display": "boot",
         "symbol": "BOOT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png"
         },
         "coingeckoId": "bostrom"
@@ -1999,7 +1999,7 @@
         "name": "Carbon",
         "display": "dswth",
         "symbol": "SWTH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.svg"
         },
@@ -2027,7 +2027,7 @@
         "name": "Cerberus",
         "display": "crbrus",
         "symbol": "CRBRUS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png"
         },
         "coingeckoId": "cerberus-2"
@@ -2054,7 +2054,7 @@
         "display": "cheq",
         "name": "cheqd",
         "symbol": "CHEQ",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cheqd/images/cheq.svg"
         },
@@ -2082,7 +2082,7 @@
         "name": "Chihuahua",
         "display": "huahua",
         "symbol": "HUAHUA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png"
         },
         "coingeckoId": "chihuahua-token"
@@ -2109,7 +2109,7 @@
         "display": "cht",
         "name": "Chronic Token",
         "symbol": "CHT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cht.png"
         },
         "coingeckoId": "cht"
@@ -2130,7 +2130,7 @@
         "display": "cgas",
         "name": "Chronic Gas",
         "symbol": "CGAS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chronicnetwork/images/cgas.png"
         },
         "coingeckoId": "cgas"
@@ -2157,7 +2157,7 @@
         "name": "Comdex",
         "display": "cmdx",
         "symbol": "CMDX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png"
         },
         "coingeckoId": "comdex"
@@ -2184,7 +2184,7 @@
         "name": "Cosmos",
         "display": "atom",
         "symbol": "ATOM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
         },
@@ -2214,7 +2214,7 @@
         "name": "Crescent",
         "display": "cre",
         "symbol": "CRE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg"
         },
@@ -2238,7 +2238,7 @@
         "name": "Bonded Crescent",
         "display": "bcre",
         "symbol": "bCRE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg"
         },
@@ -2266,7 +2266,7 @@
         "name": "Cronos",
         "display": "cro",
         "symbol": "CRO",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/cronos.svg",
           "png": "https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/.vuepress/public/CRO_icon.png"
         },
@@ -2294,7 +2294,7 @@
         "name": "Cronos",
         "display": "cro",
         "symbol": "CRO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png"
         },
         "coingeckoId": "crypto-com-chain"
@@ -2325,7 +2325,7 @@
         "name": "Cudos",
         "display": "cudos",
         "symbol": "CUDOS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg"
         },
@@ -2355,7 +2355,7 @@
         "name": "Decentr",
         "display": "dec",
         "symbol": "DEC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.svg"
         },
@@ -2385,7 +2385,7 @@
         "name": "Desmos",
         "display": "dsm",
         "symbol": "DSM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg"
         },
@@ -2413,7 +2413,7 @@
         "name": "Dig Chain",
         "display": "dig",
         "symbol": "DIG",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png"
         },
         "coingeckoId": "dig-chain"
@@ -2440,7 +2440,7 @@
         "name": "Echelon",
         "display": "echelon",
         "symbol": "ECH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/echelon.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png"
         },
@@ -2468,7 +2468,7 @@
         "name": "e-Money",
         "display": "ngm",
         "symbol": "NGM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png"
         },
         "coingeckoId": "e-money"
@@ -2489,7 +2489,7 @@
         "name": "e-Money EUR",
         "display": "eur",
         "symbol": "EEUR",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png"
         },
         "coingeckoId": "e-money-eur"
@@ -2516,7 +2516,7 @@
         "name": "RYT",
         "display": "RYT",
         "symbol": "RYT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/ethos/images/ethos.png"
         }
@@ -2543,7 +2543,7 @@
         "name": "Evmos",
         "display": "evmos",
         "symbol": "EVMOS",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png"
         },
@@ -2571,7 +2571,7 @@
         "name": "fetch-ai",
         "display": "fet",
         "symbol": "FET",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.svg"
         },
@@ -2593,7 +2593,7 @@
         "name": "MOBIX",
         "display": "mobx",
         "symbol": "MOBX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png"
         }
@@ -2620,7 +2620,7 @@
         "name": "FirmaChain",
         "display": "fct",
         "symbol": "FCT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.svg"
         },
@@ -2648,7 +2648,7 @@
         "name": "Galaxy",
         "display": "glx",
         "symbol": "GLX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png"
         }
@@ -2675,7 +2675,7 @@
         "name": "GenesisL1",
         "display": "l1",
         "symbol": "L1",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png"
         }
@@ -2703,7 +2703,7 @@
         "display": "graviton",
         "symbol": "GRAV",
         "coingeckoId": "graviton",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg"
         },
@@ -2748,7 +2748,7 @@
             "provider": "Gravity Bridge"
           }
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
         },
@@ -2779,7 +2779,7 @@
         "name": "Wrapped Ethereum",
         "display": "gweth",
         "symbol": "WETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg"
         },
         "traces": [
@@ -2822,7 +2822,7 @@
         "name": "USD Coin",
         "display": "gusdc",
         "symbol": "USDC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg"
         },
         "traces": [
@@ -2865,7 +2865,7 @@
         "name": "Tether USD",
         "display": "gusdt",
         "symbol": "USDT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg"
         },
         "traces": [
@@ -2908,7 +2908,7 @@
         "name": "Wrapped Bitcoin",
         "display": "gwbtc",
         "symbol": "WBTC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg"
         },
@@ -2953,7 +2953,7 @@
         "name": "Dai Stablecoin",
         "display": "gdai",
         "symbol": "DAI",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg"
         },
         "traces": [
@@ -2996,7 +2996,7 @@
         "name": "Savings Dai",
         "display": "gsdai",
         "symbol": "sDAI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg"
         },
@@ -3037,7 +3037,7 @@
         "name": "OccamFi",
         "display": "gocc",
         "symbol": "OCC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png"
         },
         "traces": [
@@ -3076,7 +3076,7 @@
         "name": "Page",
         "display": "page",
         "symbol": "PAGE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg"
         },
@@ -3125,7 +3125,7 @@
         "name": "IDEP",
         "display": "IDEP",
         "symbol": "IDEP",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png"
         }
@@ -3152,7 +3152,7 @@
         "name": "IXO",
         "display": "ixo",
         "symbol": "IXO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png"
         },
         "coingeckoId": "ixo"
@@ -3179,7 +3179,7 @@
         "name": "Injective",
         "display": "inj",
         "symbol": "INJ",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg"
         },
@@ -3207,7 +3207,7 @@
         "name": "IRISnet",
         "display": "iris",
         "symbol": "IRIS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg"
         },
@@ -3235,7 +3235,7 @@
         "name": "Juno",
         "display": "juno",
         "symbol": "JUNO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg"
         },
@@ -3259,7 +3259,7 @@
         "name": "Neta",
         "display": "neta",
         "symbol": "NETA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/neta.svg"
         },
@@ -3283,7 +3283,7 @@
         "name": "Marble",
         "display": "marble",
         "symbol": "MARBLE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/marble.svg"
         },
@@ -3307,7 +3307,7 @@
         "name": "Hope Galaxy",
         "display": "hope",
         "symbol": "HOPE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hope.svg"
         },
@@ -3331,7 +3331,7 @@
         "name": "Racoon",
         "display": "rac",
         "symbol": "RAC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/rac.svg"
         },
@@ -3355,7 +3355,7 @@
         "name": "Block",
         "display": "block",
         "symbol": "BLOCK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/block.svg"
         }
@@ -3377,7 +3377,7 @@
         "name": "DHK",
         "display": "dhk",
         "symbol": "DHK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dhk.svg"
         }
@@ -3400,7 +3400,7 @@
         "name": "JunoSwap",
         "display": "raw",
         "symbol": "RAW",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/raw.png"
         },
         "coingeckoId": "junoswap-raw-dao"
@@ -3423,7 +3423,7 @@
         "name": "Another.Software Validator Token",
         "display": "asvt",
         "symbol": "ASVT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/asvt.png"
         }
       },
@@ -3445,7 +3445,7 @@
         "name": "IBC HNS (Handshake)",
         "display": "hns",
         "symbol": "HNS",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/hns.svg"
         }
       },
@@ -3467,7 +3467,7 @@
         "name": "JoeDAO",
         "display": "joe",
         "symbol": "JOE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/joe.png"
         }
       },
@@ -3489,7 +3489,7 @@
         "name": "Digital Land Acquisition DAO",
         "display": "dla",
         "symbol": "DLA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/dla.svg"
         }
@@ -3512,7 +3512,7 @@
         "name": "Gelotto",
         "display": "glto",
         "symbol": "GLTO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/glto.svg"
         }
@@ -3535,7 +3535,7 @@
         "name": "GKey",
         "display": "gkey",
         "symbol": "GKEY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/gkey.svg"
         }
@@ -3558,7 +3558,7 @@
         "name": "Blackhole",
         "display": "blkh",
         "symbol": "BLKH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/blkh.svg"
         }
@@ -3585,7 +3585,7 @@
         "name": "Kava",
         "display": "kava",
         "symbol": "KAVA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png"
         },
         "coingeckoId": "kava"
@@ -3606,7 +3606,7 @@
         "name": "Hard",
         "display": "HARD",
         "symbol": "HARD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/hard.svg"
         },
@@ -3628,7 +3628,7 @@
         "name": "Swap",
         "display": "SWP",
         "symbol": "SWP",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/swp.svg"
         },
@@ -3656,7 +3656,7 @@
         "name": "Ki",
         "display": "xki",
         "symbol": "XKI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg"
         },
@@ -3680,7 +3680,7 @@
         "name": "LVN",
         "display": "lvn",
         "symbol": "LVN",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png"
         },
         "coingeckoId": "lvn"
@@ -3707,7 +3707,7 @@
         "name": "DARC",
         "display": "darc",
         "symbol": "DARC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/darc.svg"
         },
@@ -3735,7 +3735,7 @@
         "name": "LikeCoin",
         "display": "like",
         "symbol": "LIKE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/likecoin/images/like.svg"
         },
@@ -3763,7 +3763,7 @@
         "name": "LYT",
         "display": "LYT",
         "symbol": "LYT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/logos/images/logos.png"
         }
@@ -3790,7 +3790,7 @@
         "name": "LUMEN",
         "display": "lumen",
         "symbol": "LUMEN",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png"
         }
       }
@@ -3816,7 +3816,7 @@
         "name": "Lum",
         "display": "lum",
         "symbol": "LUM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.svg"
         },
@@ -3844,7 +3844,7 @@
         "name": "MEME",
         "display": "meme",
         "symbol": "MEME",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg"
         }
@@ -3871,7 +3871,7 @@
         "display": "tick",
         "name": "Microtick",
         "symbol": "TICK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg"
         }
@@ -3898,7 +3898,7 @@
         "name": "MYT",
         "display": "MYT",
         "symbol": "MYT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/mythos/images/mythos.png"
         }
@@ -3927,7 +3927,7 @@
         "display": "octa",
         "name": "Octa",
         "symbol": "OCTA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.svg"
         }
@@ -3954,7 +3954,7 @@
         "name": "ODIN",
         "display": "odin",
         "symbol": "ODIN",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png"
         }
@@ -3975,7 +3975,7 @@
         "name": "GEO",
         "display": "geo",
         "symbol": "GEO",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png"
         }
@@ -4002,7 +4002,7 @@
         "name": "Flix",
         "display": "flix",
         "symbol": "FLIX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png"
         },
         "coingeckoId": "omniflix-network"
@@ -4029,7 +4029,7 @@
         "name": "Oraichain",
         "display": "orai",
         "symbol": "ORAI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.svg"
         },
@@ -4059,7 +4059,7 @@
         "name": "Osmosis",
         "display": "osmo",
         "symbol": "OSMO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
         },
@@ -4084,7 +4084,7 @@
         "name": "Ion",
         "display": "ion",
         "symbol": "ION",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
         },
@@ -4112,7 +4112,7 @@
         "name": "Jackal",
         "display": "jkl",
         "symbol": "JKL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg"
         },
@@ -4159,7 +4159,7 @@
         "name": "MediBloc",
         "display": "med",
         "symbol": "MED",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png"
         },
         "coingeckoId": "medibloc"
@@ -4186,7 +4186,7 @@
         "name": "Persistence",
         "display": "xprt",
         "symbol": "XPRT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg"
         },
@@ -4247,7 +4247,7 @@
           "dstChannel": "channel-38",
           "sourceDenom": "gravity0xfB5c6815cA3AC72Ce9F5006869AE67f18bF77006"
         },
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg"
         },
@@ -4277,7 +4277,7 @@
         "name": "Hash",
         "display": "hash",
         "symbol": "HASH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/hash.svg"
         },
@@ -4305,7 +4305,7 @@
         "name": "Regen Network",
         "display": "regen",
         "symbol": "REGEN",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png"
         },
         "coingeckoId": "regen"
@@ -4333,7 +4333,7 @@
         "display": "atolo",
         "symbol": "ATOLO",
         "coingeckoId": "rizon",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.svg"
         }
@@ -4360,7 +4360,7 @@
         "name": "Secret Network",
         "display": "scrt",
         "symbol": "SCRT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.svg"
         },
@@ -4388,7 +4388,7 @@
         "name": "Sentinel",
         "display": "dvpn",
         "symbol": "DVPN",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png"
         },
         "coingeckoId": "sentinel"
@@ -4415,7 +4415,7 @@
         "name": "Shentu",
         "display": "ctk",
         "symbol": "CTK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png"
         },
         "coingeckoId": "certik"
@@ -4438,7 +4438,7 @@
         "name": "Sifchain Rowan",
         "display": "rowan",
         "symbol": "ROWAN",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png"
         },
@@ -4476,7 +4476,7 @@
         "name": "Somm",
         "display": "somm",
         "symbol": "SOMM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.svg"
         },
@@ -4504,7 +4504,7 @@
         "name": "Stargaze",
         "display": "stars",
         "symbol": "STARS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png"
         },
         "coingeckoId": "stargaze"
@@ -4531,7 +4531,7 @@
         "name": "Starname",
         "display": "iov",
         "symbol": "IOV",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg"
         },
@@ -4572,7 +4572,7 @@
         "name": "Luna Classic",
         "display": "luna",
         "symbol": "LUNC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png"
         },
@@ -4607,7 +4607,7 @@
         "name": "TerraClassicUSD",
         "display": "ust",
         "symbol": "USTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ust.png"
         },
@@ -4642,7 +4642,7 @@
         "name": "TerraClassicKRW",
         "display": "krt",
         "symbol": "KRTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/krt.png"
         },
@@ -4666,7 +4666,7 @@
         "name": "Whale Token",
         "display": "whale",
         "symbol": "WHALE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png"
         },
         "coingeckoId": "white-whale"
@@ -4688,7 +4688,7 @@
         "name": "Bonded Luna",
         "display": "bluna",
         "symbol": "bLuna",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png"
         }
       },
@@ -4709,7 +4709,7 @@
         "name": "Bonded ETH",
         "display": "beth",
         "symbol": "bETH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png"
         }
       },
@@ -4730,7 +4730,7 @@
         "name": "Anchor Terra USD",
         "display": "aust",
         "symbol": "aUST",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png"
         }
       },
@@ -4751,7 +4751,7 @@
         "name": "Anchor Token",
         "display": "anc",
         "symbol": "ANC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png"
         }
       },
@@ -4772,7 +4772,7 @@
         "name": "Mirror",
         "display": "mir",
         "symbol": "MIR",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png"
         }
       },
@@ -4793,7 +4793,7 @@
         "name": "Apple Inc.",
         "display": "maapl",
         "symbol": "mAAPL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png"
         }
       },
@@ -4814,7 +4814,7 @@
         "name": "Airbnb Inc.",
         "display": "mabnb",
         "symbol": "mABNB",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png"
         }
       },
@@ -4835,7 +4835,7 @@
         "name": "AMC Entertainment Holdings Inc.",
         "display": "mamc",
         "symbol": "mAMC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png"
         }
       },
@@ -4856,7 +4856,7 @@
         "name": "Advanced Micro Devices, Inc.",
         "display": "mamd",
         "symbol": "mAMD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png"
         }
       },
@@ -4877,7 +4877,7 @@
         "name": "Amazon.com, Inc.",
         "display": "mamzn",
         "symbol": "mAMZN",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png"
         }
       },
@@ -4898,7 +4898,7 @@
         "name": "ARK Innovation ETF",
         "display": "markk",
         "symbol": "mARKK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png"
         }
       },
@@ -4919,7 +4919,7 @@
         "name": "Alibaba Group Holding Limited",
         "display": "mbaba",
         "symbol": "mBABA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png"
         }
       },
@@ -4940,7 +4940,7 @@
         "name": "Bitcoin",
         "display": "mbtc",
         "symbol": "mBTC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png"
         }
       },
@@ -4961,7 +4961,7 @@
         "name": "Coinbase Global, Inc.",
         "display": "mcoin",
         "symbol": "mCOIN",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png"
         }
       },
@@ -4982,7 +4982,7 @@
         "name": "The Walt Disney Company",
         "display": "mdis",
         "symbol": "mDIS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png"
         }
       },
@@ -5003,7 +5003,7 @@
         "name": "Polkadot",
         "display": "mdot",
         "symbol": "mDOT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png"
         }
       },
@@ -5024,7 +5024,7 @@
         "name": "Ether",
         "display": "meth",
         "symbol": "mETH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png"
         }
       },
@@ -5045,7 +5045,7 @@
         "name": "Facebook Inc.",
         "display": "mfb",
         "symbol": "mFB",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png"
         }
       },
@@ -5066,7 +5066,7 @@
         "name": "Galaxy Digital Holdings Ltd",
         "display": "mglxy",
         "symbol": "mGLXY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png"
         }
       },
@@ -5087,7 +5087,7 @@
         "name": "GameStop Corp",
         "display": "mgme",
         "symbol": "mGME",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png"
         }
       },
@@ -5108,7 +5108,7 @@
         "name": "Alphabet Inc.",
         "display": "mgoogl",
         "symbol": "mGOOGL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png"
         }
       },
@@ -5129,7 +5129,7 @@
         "name": "Goldman Sachs Group Inc.",
         "display": "mgs",
         "symbol": "mGS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png"
         }
       },
@@ -5150,7 +5150,7 @@
         "name": "Robinhood Markets, Inc.",
         "display": "mhood",
         "symbol": "mHOOD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png"
         }
       },
@@ -5171,7 +5171,7 @@
         "name": "iShares Gold Trust",
         "display": "miau",
         "symbol": "mIAU",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png"
         }
       },
@@ -5192,7 +5192,7 @@
         "name": "iShares Gold Trust",
         "display": "miau",
         "symbol": "mIAU",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png"
         }
       },
@@ -5213,7 +5213,7 @@
         "name": "Johnson & Johnson",
         "display": "mjnj",
         "symbol": "mJNJ",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png"
         }
       },
@@ -5234,7 +5234,7 @@
         "name": "Coca-Cola",
         "display": "mko",
         "symbol": "mKO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png"
         }
       },
@@ -5255,7 +5255,7 @@
         "name": "Microsoft Corporation",
         "display": "mmsft",
         "symbol": "mMSFT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png"
         }
       },
@@ -5276,7 +5276,7 @@
         "name": "Netflix, Inc.",
         "display": "mnflx",
         "symbol": "mNFLX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png"
         }
       },
@@ -5297,7 +5297,7 @@
         "name": "NIO Inc.",
         "display": "mnio",
         "symbol": "mNIO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png"
         }
       },
@@ -5318,7 +5318,7 @@
         "name": "NIKE, Inc.",
         "display": "mnke",
         "symbol": "mNKE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png"
         }
       },
@@ -5339,7 +5339,7 @@
         "name": "NVIDIA Corporation",
         "display": "mnvda",
         "symbol": "mNVDA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png"
         }
       },
@@ -5360,7 +5360,7 @@
         "name": "PayPal Holdings Inc",
         "display": "mpypl",
         "symbol": "mPYPL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png"
         }
       },
@@ -5381,7 +5381,7 @@
         "name": "Invesco QQQ Trust",
         "display": "mqqq",
         "symbol": "mQQQ",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png"
         }
       },
@@ -5402,7 +5402,7 @@
         "name": "Starbucks Corporation",
         "display": "msbux",
         "symbol": "mSBUX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png"
         }
       },
@@ -5423,7 +5423,7 @@
         "name": "iShares Silver Trust",
         "display": "mslv",
         "symbol": "mSLV",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png"
         }
       },
@@ -5444,7 +5444,7 @@
         "name": "SPDR S&P 500",
         "display": "mspy",
         "symbol": "mSPY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png"
         }
       },
@@ -5465,7 +5465,7 @@
         "name": "Square, Inc.",
         "display": "msq",
         "symbol": "mSQ",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png"
         }
       },
@@ -5486,7 +5486,7 @@
         "name": "Tesla, Inc.",
         "display": "mtsla",
         "symbol": "mTSLA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png"
         }
       },
@@ -5507,7 +5507,7 @@
         "name": "Twitter, Inc.",
         "display": "mtwtr",
         "symbol": "mTWTR",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png"
         }
       },
@@ -5528,7 +5528,7 @@
         "name": "United States Oil Fund, LP",
         "display": "muso",
         "symbol": "mUSO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png"
         }
       },
@@ -5549,7 +5549,7 @@
         "name": "ProShares VIX Short-Term Futures ETF",
         "display": "mvixy",
         "symbol": "mVIXY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png"
         }
       },
@@ -5570,7 +5570,7 @@
         "name": "ProShares VIX Short-Term Futures ETF",
         "display": "mvixy",
         "symbol": "mVIXY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png"
         }
       },
@@ -5591,7 +5591,7 @@
         "name": "loterra",
         "display": "lota",
         "symbol": "LOTA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png"
         }
       },
@@ -5612,7 +5612,7 @@
         "name": "Digipharm",
         "display": "dph",
         "symbol": "DPH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png"
         }
       },
@@ -5633,7 +5633,7 @@
         "name": "Pylon MINE Token",
         "display": "mine",
         "symbol": "MINE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png"
         }
       },
@@ -5654,7 +5654,7 @@
         "name": "Pylon bDP Token for Gateway Psi 24m Pool",
         "display": "bpsidp-24m",
         "symbol": "bPsiDP-24m",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png"
         }
       },
@@ -5675,7 +5675,7 @@
         "name": "Spectrum Token",
         "display": "spec",
         "symbol": "SPEC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png"
         }
       },
@@ -5696,7 +5696,7 @@
         "name": "LOOP token",
         "display": "loop",
         "symbol": "LOOP",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png"
         }
       },
@@ -5717,7 +5717,7 @@
         "name": "LOOPR token",
         "display": "loopr",
         "symbol": "LOOPR",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png"
         }
       },
@@ -5738,7 +5738,7 @@
         "name": "StarTerra Token",
         "display": "stt",
         "symbol": "STT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png"
         }
       },
@@ -5759,7 +5759,7 @@
         "name": "TWD Token",
         "display": "twd",
         "symbol": "TWD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png"
         }
       },
@@ -5780,7 +5780,7 @@
         "name": "xterra Token",
         "display": "xtra",
         "symbol": "XTRA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png"
         }
       },
@@ -5801,7 +5801,7 @@
         "name": "MIAW Token",
         "display": "miaw",
         "symbol": "MIAW",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png"
         }
       },
@@ -5822,7 +5822,7 @@
         "name": "Nexus Governance Token",
         "display": "psi",
         "symbol": "Psi",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png"
         }
       },
@@ -5843,7 +5843,7 @@
         "name": "Nexus nLuna Token",
         "display": "nluna",
         "symbol": "nLuna",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nluna.svg"
         }
       },
@@ -5864,7 +5864,7 @@
         "name": "Nexus nETH Token",
         "display": "neth",
         "symbol": "nETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neth.svg"
         }
       },
@@ -5885,7 +5885,7 @@
         "name": "nLuna autocompounder share representation",
         "display": "cnluna",
         "symbol": "cnLuna",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnluna.svg"
         }
       },
@@ -5906,7 +5906,7 @@
         "name": "nETH autocompounder share representation",
         "display": "cneth",
         "symbol": "cnETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cneth.svg"
         }
       },
@@ -5927,7 +5927,7 @@
         "name": "Nexus nAVAX Token",
         "display": "navax",
         "symbol": "nAVAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/navax.svg"
         }
       },
@@ -5948,7 +5948,7 @@
         "name": "Nexus nATOM Token",
         "display": "natom",
         "symbol": "nATOM",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/natom.svg"
         }
       },
@@ -5969,7 +5969,7 @@
         "name": "VKR Token",
         "display": "vkr",
         "symbol": "VKR",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png"
         }
       },
@@ -5990,7 +5990,7 @@
         "name": "Orion Money (Portal)",
         "display": "orion",
         "symbol": "ORION",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png"
         }
       },
@@ -6011,7 +6011,7 @@
         "name": "TerraLand Token",
         "display": "tland",
         "symbol": "TLAND",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png"
         }
       },
@@ -6032,7 +6032,7 @@
         "name": "Vault UST",
         "display": "vust",
         "symbol": "vUST",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png"
         }
       },
@@ -6053,7 +6053,7 @@
         "name": "Ether (Portal)",
         "display": "eth",
         "symbol": "ETH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png"
         }
       },
@@ -6074,7 +6074,7 @@
         "name": "Wrapped BTC (Portal)",
         "display": "wbtc",
         "symbol": "WBTC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png"
         }
       },
@@ -6095,7 +6095,7 @@
         "name": "SOL (Portal)",
         "display": "sol",
         "symbol": "SOL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png"
         }
       },
@@ -6116,7 +6116,7 @@
         "name": "MATIC (Portal from Ethereum)",
         "display": "maticet",
         "symbol": "MATICet",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png"
         }
       },
@@ -6137,7 +6137,7 @@
         "name": "Binance Coin (Portal)",
         "display": "bnb",
         "symbol": "BNB",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png"
         }
       },
@@ -6158,7 +6158,7 @@
         "name": "PancakeSwap Token (Portal)",
         "display": "cake",
         "symbol": "CAKE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png"
         }
       },
@@ -6179,7 +6179,7 @@
         "name": "Chainlink (Portal)",
         "display": "link",
         "symbol": "LINK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png"
         }
       },
@@ -6200,7 +6200,7 @@
         "name": "SushiToken (Portal)",
         "display": "sushi",
         "symbol": "SUSHI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png"
         }
       },
@@ -6221,7 +6221,7 @@
         "name": "Uniswap (Portal)",
         "display": "uni",
         "symbol": "UNI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png"
         }
       },
@@ -6242,7 +6242,7 @@
         "name": "Tether USD (Portal from Ethereum)",
         "display": "usdtet",
         "symbol": "USDTet",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png"
         }
       },
@@ -6263,7 +6263,7 @@
         "name": "USD Coin (Portal from Ethereum)",
         "display": "usdcet",
         "symbol": "USDCet",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png"
         }
       },
@@ -6284,7 +6284,7 @@
         "name": "Kujira Token",
         "display": "kuji",
         "symbol": "KUJI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png"
         }
       },
@@ -6305,7 +6305,7 @@
         "name": "Staked KUJI",
         "display": "skuji",
         "symbol": "sKUJI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png"
         }
       },
@@ -6326,7 +6326,7 @@
         "name": "Lido wstETH (Portal)",
         "display": "wsteth",
         "symbol": "wstETH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png"
         }
       },
@@ -6347,7 +6347,7 @@
         "name": "Lido wstSOL (Portal)",
         "display": "wstsol",
         "symbol": "wstSOL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png"
         }
       },
@@ -6368,7 +6368,7 @@
         "name": "Lido bonded SOL (Portal)",
         "display": "wsbsol",
         "symbol": "wsbSOL",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsbsol.svg"
         }
       },
@@ -6389,7 +6389,7 @@
         "name": "Lido DAO (Portal)",
         "display": "ldo",
         "symbol": "LDO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png"
         }
       },
@@ -6410,7 +6410,7 @@
         "name": "Lido Bonded ETH (Wormhole)",
         "display": "webeth",
         "symbol": "webETH",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webeth.svg"
         }
       },
@@ -6431,7 +6431,7 @@
         "name": "Lido staked Luna",
         "display": "stluna",
         "symbol": "stLuna",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png"
         }
       },
@@ -6470,7 +6470,7 @@
         "name": "Bitlocus Token",
         "display": "btl",
         "symbol": "BTL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png"
         }
       },
@@ -6491,7 +6491,7 @@
         "name": "LunaX Token",
         "display": "lunax",
         "symbol": "LunaX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png"
         }
       },
@@ -6512,7 +6512,7 @@
         "name": "LUNI",
         "display": "luni",
         "symbol": "LUNI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png"
         }
       },
@@ -6533,7 +6533,7 @@
         "name": "PlayNity Token",
         "display": "ply",
         "symbol": "PLY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png"
         }
       },
@@ -6554,7 +6554,7 @@
         "name": "TFLOKI",
         "display": "tfloki",
         "symbol": "TFLOKI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png"
         }
       },
@@ -6575,7 +6575,7 @@
         "name": "TFLOKI Genesis Ticket",
         "display": "tftic",
         "symbol": "TFTIC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png"
         }
       },
@@ -6596,7 +6596,7 @@
         "name": "TFLOKI New World Ticket",
         "display": "tfticii",
         "symbol": "TFTICII",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png"
         }
       },
@@ -6617,7 +6617,7 @@
         "name": "TFLOKI Aviator Ticket",
         "display": "tfticiii",
         "symbol": "TFTICIII",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png"
         }
       },
@@ -6638,7 +6638,7 @@
         "name": "Moon Token",
         "display": "moon",
         "symbol": "MOON",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png"
         }
       },
@@ -6659,7 +6659,7 @@
         "name": "Astroport Token",
         "display": "astro",
         "symbol": "ASTRO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/astro.png"
         }
       },
@@ -6680,7 +6680,7 @@
         "name": "Staked Astroport Token",
         "display": "xastro",
         "symbol": "xASTRO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xastro.png"
         }
       },
@@ -6701,7 +6701,7 @@
         "name": "Angel Protocol Token",
         "display": "halo",
         "symbol": "HALO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png"
         }
       },
@@ -6722,7 +6722,7 @@
         "name": "AstroPug Token",
         "display": "pug",
         "symbol": "PUG",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png"
         }
       },
@@ -6743,7 +6743,7 @@
         "name": "Orne Token",
         "display": "orne",
         "symbol": "ORNE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png"
         }
       },
@@ -6764,7 +6764,7 @@
         "name": "Terra Name Service",
         "display": "tns",
         "symbol": "TNS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png"
         }
       },
@@ -6785,7 +6785,7 @@
         "name": "Thorstarter",
         "display": "xrune",
         "symbol": "XRUNE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png"
         }
       },
@@ -6806,7 +6806,7 @@
         "name": "Alpha Pack Token",
         "display": "alot",
         "symbol": "aLOT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png"
         }
       },
@@ -6827,7 +6827,7 @@
         "name": "CurioSITY play to earn token",
         "display": "sity",
         "symbol": "SITY",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sity.svg"
         }
       },
@@ -6848,7 +6848,7 @@
         "name": "Glow Token",
         "display": "glow",
         "symbol": "GLOW",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png"
         }
       },
@@ -6869,7 +6869,7 @@
         "name": "Apollo DAO Token",
         "display": "apollo",
         "symbol": "APOLLO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png"
         }
       },
@@ -6890,7 +6890,7 @@
         "name": "Allbridge",
         "display": "abr",
         "symbol": "ABR",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/abr.svg"
         }
       },
@@ -6929,7 +6929,7 @@
         "name": "Prism Protocol Token",
         "display": "prism",
         "symbol": "PRISM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png"
         }
       },
@@ -6968,7 +6968,7 @@
         "name": "SAIL",
         "display": "whsail",
         "symbol": "whSAIL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png"
         }
       },
@@ -6989,7 +6989,7 @@
         "name": "SolanaSail Governance Token V2",
         "display": "whgsail",
         "symbol": "whgSAIL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png"
         }
       },
@@ -7010,7 +7010,7 @@
         "name": "Prism Governance Token",
         "display": "xprism",
         "symbol": "xPRISM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png"
         }
       },
@@ -7049,7 +7049,7 @@
         "name": "C2X Token",
         "display": "ctx",
         "symbol": "CTX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png"
         }
       },
@@ -7070,7 +7070,7 @@
         "name": "Prism cLuna Token",
         "display": "cluna",
         "symbol": "cLuna",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png"
         }
       },
@@ -7091,7 +7091,7 @@
         "name": "Prism pLuna Token",
         "display": "pluna",
         "symbol": "pLuna",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png"
         }
       },
@@ -7112,7 +7112,7 @@
         "name": "Prism yLuna Token",
         "display": "yluna",
         "symbol": "yLuna",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png"
         }
       },
@@ -7133,7 +7133,7 @@
         "name": "Atlo Token",
         "display": "atlo",
         "symbol": "ATLO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png"
         }
       },
@@ -7154,7 +7154,7 @@
         "name": "LOCAL Token",
         "display": "local",
         "symbol": "LOCAL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png"
         }
       },
@@ -7175,7 +7175,7 @@
         "name": "Lunaverse",
         "display": "luv",
         "symbol": "LUV",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png"
         }
       },
@@ -7196,7 +7196,7 @@
         "name": "RoboHero",
         "display": "robo",
         "symbol": "ROBO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png"
         }
       },
@@ -7217,7 +7217,7 @@
         "name": "Luart Token",
         "display": "luart",
         "symbol": "LUART",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png"
         }
       },
@@ -7238,7 +7238,7 @@
         "name": "Mars Token",
         "display": "mars",
         "symbol": "MARS",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mars.svg"
         }
       },
@@ -7259,7 +7259,7 @@
         "name": "xMars Token",
         "display": "xmars",
         "symbol": "XMARS",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xmars.svg"
         }
       },
@@ -7298,7 +7298,7 @@
         "name": "Ceres Governance Token",
         "display": "ceres",
         "symbol": "CERES",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ceres.svg"
         }
       },
@@ -7319,7 +7319,7 @@
         "name": "BENQI Staked AVAX (Portal)",
         "display": "wasavax",
         "symbol": "wasAVAX",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wasavax.svg"
         }
       },
@@ -7340,7 +7340,7 @@
         "name": "MintDAO",
         "display": "mint",
         "symbol": "MINT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mint.svg"
         }
       },
@@ -7361,7 +7361,7 @@
         "name": "Stader SD (Portal)",
         "display": "sd",
         "symbol": "SD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png"
         }
       },
@@ -7382,7 +7382,7 @@
         "name": "Stader xSD",
         "display": "xsd",
         "symbol": "xSD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png"
         }
       },
@@ -7403,7 +7403,7 @@
         "name": "Paxos Gold (Portal)",
         "display": "paxg",
         "symbol": "PAXG",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/paxg.png"
         }
       },
@@ -7424,7 +7424,7 @@
         "name": "DAO Maker",
         "display": "whdao",
         "symbol": "whDAO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png"
         }
       },
@@ -7445,7 +7445,7 @@
         "name": "ChainLink Token",
         "display": "link",
         "symbol": "LINK",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/link.png"
         }
       },
@@ -7466,7 +7466,7 @@
         "name": "Sayve Token",
         "display": "sayve",
         "symbol": "SAYVE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png"
         }
       },
@@ -7505,7 +7505,7 @@
         "name": "BRO token",
         "display": "bro",
         "symbol": "BRO",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bro.svg"
         }
       },
@@ -7526,7 +7526,7 @@
         "name": "bBRO token",
         "display": "bbro",
         "symbol": "bBRO",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bbro.svg"
         }
       },
@@ -7601,7 +7601,7 @@
         "name": "Sooah Studio Token",
         "display": "sst",
         "symbol": "SST",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png"
         }
       },
@@ -7622,7 +7622,7 @@
         "name": "Star Atlas (Portal)",
         "display": "atlas",
         "symbol": "ATLAS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png"
         }
       },
@@ -7643,7 +7643,7 @@
         "name": "Audius (Portal)",
         "display": "audio",
         "symbol": "AUDIO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png"
         }
       },
@@ -7664,7 +7664,7 @@
         "name": "AVAX (Portal)",
         "display": "avax",
         "symbol": "AVAX",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png"
         }
       },
@@ -7685,7 +7685,7 @@
         "name": "Basic Attention Token (Portal)",
         "display": "bat",
         "symbol": "BAT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png"
         }
       },
@@ -7706,7 +7706,7 @@
         "name": "Binance USD (Portal from BSC)",
         "display": "busdbs",
         "symbol": "BUSDbs",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png"
         }
       },
@@ -7727,7 +7727,7 @@
         "name": "DAI (Portal)",
         "display": "dai",
         "symbol": "DAI",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png"
         }
       },
@@ -7748,7 +7748,7 @@
         "name": "MATIC (Portal from Polygon)",
         "display": "maticpo",
         "symbol": "MATICpo",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png"
         }
       },
@@ -7769,7 +7769,7 @@
         "name": "Magic Internet Money (Portal from Ethereum)",
         "display": "mimet",
         "symbol": "MIMet",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png"
         }
       },
@@ -7790,7 +7790,7 @@
         "name": "Raydium (Portal)",
         "display": "ray",
         "symbol": "RAY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png"
         }
       },
@@ -7811,7 +7811,7 @@
         "name": "Saber (Portal)",
         "display": "sbr",
         "symbol": "SBR",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png"
         }
       },
@@ -7832,7 +7832,7 @@
         "name": "Shiba Inu (Portal)",
         "display": "shib",
         "symbol": "SHIB",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png"
         }
       },
@@ -7853,7 +7853,7 @@
         "name": "Serum (Portal from Solana)",
         "display": "srmso",
         "symbol": "SRMso",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png"
         }
       },
@@ -7874,7 +7874,7 @@
         "name": "USD Coin (Portal from Avalanche)",
         "display": "usdcav",
         "symbol": "USDCav",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png"
         }
       },
@@ -7895,7 +7895,7 @@
         "name": "USD Coin (Portal from BSC)",
         "display": "usdcbs",
         "symbol": "USDCbs",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png"
         }
       },
@@ -7916,7 +7916,7 @@
         "name": "USD Coin (Portal from Polygon)",
         "display": "usdcpo",
         "symbol": "USDCpo",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png"
         }
       },
@@ -7937,7 +7937,7 @@
         "name": "USD Coin (Portal from Solana)",
         "display": "usdcso",
         "symbol": "USDCso",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png"
         }
       },
@@ -7958,7 +7958,7 @@
         "name": "Tether USD (Portal from Avalanche)",
         "display": "usdtav",
         "symbol": "USDTav",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png"
         }
       },
@@ -7979,7 +7979,7 @@
         "name": "Tether USD (Portal from BSC)",
         "display": "usdtbs",
         "symbol": "USDTbs",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png"
         }
       },
@@ -8000,7 +8000,7 @@
         "name": "Tether USD (Portal from Solana)",
         "display": "usdtso",
         "symbol": "USDTso",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png"
         }
       },
@@ -8021,7 +8021,7 @@
         "name": "Governance OHM (Portal)",
         "display": "gohm",
         "symbol": "gOHM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png"
         }
       },
@@ -8042,7 +8042,7 @@
         "name": "Marinade staked SOL (Portal)",
         "display": "msol",
         "symbol": "mSOL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png"
         }
       },
@@ -8063,7 +8063,7 @@
         "name": "Lido Staked Ether (Portal)",
         "display": "steth",
         "symbol": "stETH",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png"
         }
       },
@@ -8084,7 +8084,7 @@
         "name": "LCT Token",
         "display": "lct",
         "symbol": "LCT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png"
         }
       },
@@ -8105,7 +8105,7 @@
         "name": "Bonded ATOM",
         "display": "batom",
         "symbol": "bATOM",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/batom.svg"
         }
       },
@@ -8126,7 +8126,7 @@
         "name": "pStake Bonded ATOM (Wormhole)",
         "display": "webatom",
         "symbol": "webATOM",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webatom.svg"
         }
       },
@@ -8147,7 +8147,7 @@
         "name": "Willisch Coin",
         "display": "wcoin",
         "symbol": "WCOIN",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wcoin.svg"
         }
       },
@@ -8168,7 +8168,7 @@
         "name": "LCT Fancard Token",
         "display": "lctfancard",
         "symbol": "LCTfancard",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png"
         }
       },
@@ -8189,7 +8189,7 @@
         "name": "Kinetic Token",
         "display": "kntc",
         "symbol": "KNTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kntc.svg"
         }
       },
@@ -8210,7 +8210,7 @@
         "name": "Kinetic kUST Token",
         "display": "kust",
         "symbol": "kUST",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kust.svg"
         }
       },
@@ -8231,7 +8231,7 @@
         "name": "Steak Token",
         "display": "steak",
         "symbol": "STEAK",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steak.svg"
         }
       },
@@ -8252,7 +8252,7 @@
         "name": "CST Token",
         "display": "cst",
         "symbol": "CST",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png"
         }
       },
@@ -8273,7 +8273,7 @@
         "name": "CST Fancard Token",
         "display": "cstfancard",
         "symbol": "CSTfancard",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png"
         }
       },
@@ -8294,7 +8294,7 @@
         "name": "Neworld Labs Develpper Token",
         "display": "nwld",
         "symbol": "NWLD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png"
         }
       },
@@ -8315,7 +8315,7 @@
         "name": "FURY",
         "display": "fury",
         "symbol": "FURY",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png"
         }
       },
@@ -8336,7 +8336,7 @@
         "name": "Reactor Token",
         "display": "rct",
         "symbol": "RCT",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rct.svg"
         }
       },
@@ -8357,7 +8357,7 @@
         "name": "Vitamin Coin",
         "display": "vitc",
         "symbol": "VITC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png"
         }
       },
@@ -8378,7 +8378,7 @@
         "name": "DragonSB",
         "display": "sb",
         "symbol": "SB",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png"
         }
       },
@@ -8399,7 +8399,7 @@
         "name": "RESToad Token",
         "display": "toad",
         "symbol": "TOAD",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/toad.svg"
         }
       },
@@ -8420,7 +8420,7 @@
         "name": "Orion Money xASTRO Derivative Token",
         "display": "orionastro",
         "symbol": "orionASTRO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png"
         }
       },
@@ -8441,7 +8441,7 @@
         "name": "Retrograde",
         "display": "retro",
         "symbol": "RETRO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png"
         }
       },
@@ -8462,7 +8462,7 @@
         "name": "TerrnadoCash",
         "display": "tnd",
         "symbol": "TND",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png"
         }
       },
@@ -8483,7 +8483,7 @@
         "name": "TerrnadoCash",
         "display": "stnd",
         "symbol": "sTND",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stnd.svg"
         }
       },
@@ -8504,7 +8504,7 @@
         "name": "Neworld Token",
         "display": "nwt",
         "symbol": "NWT",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png"
         }
       },
@@ -8537,7 +8537,7 @@
         "display": "aut",
         "name": "TerraClassicAUD",
         "symbol": "AUTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aut.png"
         }
@@ -8571,7 +8571,7 @@
         "display": "cat",
         "name": "TerraClassicCAD",
         "symbol": "CATC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cat.png"
         }
@@ -8605,7 +8605,7 @@
         "display": "cht",
         "name": "TerraClassicCHF",
         "symbol": "CHTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cht.png"
         }
@@ -8639,7 +8639,7 @@
         "display": "cnt",
         "name": "TerraClassicCNY",
         "symbol": "CNTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnt.png"
         }
@@ -8673,7 +8673,7 @@
         "display": "dkt",
         "name": "TerraClassicDKK",
         "symbol": "DKTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dkt.png"
         }
@@ -8707,7 +8707,7 @@
         "display": "eut",
         "name": "TerraClassicEUR",
         "symbol": "EUTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eut.png"
         }
@@ -8741,7 +8741,7 @@
         "display": "gbt",
         "name": "TerraClassicGBP",
         "symbol": "GBTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gbt.png"
         }
@@ -8775,7 +8775,7 @@
         "display": "hkt",
         "name": "TerraClassicHKD",
         "symbol": "HKTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/hkt.png"
         }
@@ -8809,7 +8809,7 @@
         "display": "idt",
         "name": "TerraClassicIDR",
         "symbol": "IDTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/idt.png"
         }
@@ -8843,7 +8843,7 @@
         "display": "int",
         "name": "TerraClassicINR",
         "symbol": "INTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/int.png"
         }
@@ -8877,7 +8877,7 @@
         "display": "jpt",
         "name": "TerraClassicJPY",
         "symbol": "JPTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/jpt.png"
         }
@@ -8911,7 +8911,7 @@
         "display": "mnt",
         "name": "TerraClassicMNT",
         "symbol": "MNTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnt.png"
         }
@@ -8945,7 +8945,7 @@
         "display": "myt",
         "name": "TerraClassicMYR",
         "symbol": "MYTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/myt.png"
         }
@@ -8979,7 +8979,7 @@
         "display": "not",
         "name": "TerraClassicNOK",
         "symbol": "NOTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/not.png"
         }
@@ -9013,7 +9013,7 @@
         "display": "pht",
         "name": "TerraClassicPHP",
         "symbol": "PHTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pht.png"
         }
@@ -9047,7 +9047,7 @@
         "display": "sdt",
         "name": "TerraClassicSDR",
         "symbol": "SDTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sdt.png"
         }
@@ -9081,7 +9081,7 @@
         "display": "set",
         "name": "TerraClassicSEK",
         "symbol": "SETC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/set.png"
         }
@@ -9115,7 +9115,7 @@
         "display": "sgt",
         "name": "TerraClassicSGD",
         "symbol": "SGTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sgt.png"
         }
@@ -9149,7 +9149,7 @@
         "display": "tht",
         "name": "TerraClassicTHB",
         "symbol": "THTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tht.png"
         }
@@ -9183,7 +9183,7 @@
         "display": "twt",
         "name": "TerraClassicTWD",
         "symbol": "TWTC",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twt.png"
         }
@@ -9205,7 +9205,7 @@
         "name": "Nebula Token",
         "display": "neb",
         "symbol": "NEB",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png"
         }
       }
@@ -9231,7 +9231,7 @@
         "name": "Luna",
         "display": "luna",
         "symbol": "LUNA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png"
         },
         "coingeckoId": "terra-luna-2"
@@ -9261,7 +9261,7 @@
         "name": "Stateset",
         "display": "state",
         "symbol": "STATE",
-        "logoUris": {
+        "logoURIs": {
           "jpeg": "https://app.stateset.zone/stateset.jpeg"
         }
       }
@@ -9288,7 +9288,7 @@
         "name": "Cosmos",
         "display": "atom",
         "symbol": "ATOM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/atom.png",
           "svg": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/atom.svg"
         }
@@ -9315,7 +9315,7 @@
         "name": "ULAS Network",
         "display": "ULAS",
         "symbol": "ULAS",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/ulas/images/logo.png"
         },
         "coingeckoId": "ulas"
@@ -9344,7 +9344,7 @@
         "name": "Tgrade",
         "display": "tgd",
         "symbol": "TGD",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/tgrade/images/tgrade-symbol-gradient.svg"
         },
@@ -9372,7 +9372,7 @@
         "name": "Umee",
         "display": "umee",
         "symbol": "UMEE",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png"
         },
         "coingeckoId": "umee"
@@ -9401,7 +9401,7 @@
         "name": "Vidulum",
         "display": "vdl",
         "symbol": "VDL",
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg",
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.png"
         },
@@ -9435,7 +9435,7 @@
         "name": "Neta",
         "display": "neta",
         "symbol": "NETA",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/images/neta.png"
         },
         "coingeckoId": "neta"
@@ -9462,7 +9462,7 @@
         "name": "Jackal",
         "display": "jkl",
         "symbol": "JKL",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg"
         },
@@ -9496,7 +9496,7 @@
         "name": "Nomic",
         "display": "nom",
         "symbol": "NOM",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg"
         },
@@ -9523,7 +9523,7 @@
         "name": "Nomic Bitcoin",
         "display": "nbtc",
         "symbol": "nBTC",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg"
         },
@@ -9568,7 +9568,7 @@
         "name": "Osmosis",
         "display": "osmo",
         "symbol": "OSMO",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
         },
@@ -9599,7 +9599,7 @@
         "name": "Ion",
         "display": "ion",
         "symbol": "ION",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg"
         },

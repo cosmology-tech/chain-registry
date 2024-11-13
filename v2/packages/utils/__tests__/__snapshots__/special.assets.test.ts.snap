@@ -22,7 +22,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Akash Token (AKT) is the Akash Network's native utility token, used as the primary means to govern, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "display": "akt",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg",
         },
@@ -60,7 +60,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native staking and governance token of the Cosmos Hub.",
         "display": "atom",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg",
         },
@@ -98,7 +98,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "CRO coin is the token for the Crypto.com platform.",
         "display": "cro",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png",
         },
         "name": "Cronos",
@@ -135,7 +135,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The IRIS token is the native governance token for the IrisNet chain.",
         "display": "iris",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.svg",
         },
@@ -173,7 +173,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "The native token of JUNO Chain",
         "display": "juno",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.svg",
         },
@@ -216,7 +216,7 @@ exports[`getAssetLists 1`] = `
           "dex",
           "staking",
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
         },
@@ -256,7 +256,7 @@ exports[`getAssetLists 1`] = `
         "keywords": [
           "memecoin",
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ion.svg",
         },
@@ -300,7 +300,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg",
         },
@@ -338,7 +338,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "REGEN coin is the token for the Regen Network Platform",
         "display": "regen",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/regen/images/regen.png",
         },
         "name": "Regen Network",
@@ -375,7 +375,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "DVPN is the native token of the Sentinel Hub.",
         "display": "dvpn",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png",
         },
         "name": "Sentinel",
@@ -408,7 +408,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "Rowan Token (ROWAN) is the Sifchain Network's native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.",
         "display": "rowan",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.svg",
         },
@@ -446,7 +446,7 @@ exports[`getAssetLists 1`] = `
         ],
         "description": "IOV coin is the token for the Starname (IOV) Asset Name Service",
         "display": "iov",
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.svg",
         },
@@ -490,7 +490,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
         },
@@ -537,7 +537,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.svg",
         },
@@ -579,7 +579,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg",
         },
         "name": "Wrapped Ethereum",
@@ -620,7 +620,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
         },
         "name": "USD Coin",
@@ -661,7 +661,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
         },
         "name": "Tether USD",
@@ -703,7 +703,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg",
         },
@@ -745,7 +745,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/dai.svg",
         },
         "name": "Dai Stablecoin",
@@ -791,7 +791,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/sdai.svg",
         },
@@ -837,7 +837,7 @@ exports[`getAssetLists 1`] = `
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/occamfi.png",
         },
         "name": "OccamFi",
@@ -883,7 +883,7 @@ exports[`getAssetLists 1`] = `
             "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
           },
         ],
-        "logoUris": {
+        "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/page.svg",
         },
