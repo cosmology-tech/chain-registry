@@ -10158,6 +10158,55 @@ The Injective ecosystem is powered by its native token, INJ, used for governance
         "typeAsset": "sdk.coin",
       },
       {
+        "base": "ibc/39CC7345301730045AB5F65443D7C071D0F9D945C8D0325CF73855F2DB356C06",
+        "denomUnits": [
+          {
+            "aliases": [
+              "ibc/DF8722298D192AAB85D86D0462E8166234A6A9A572DD4A2EA7996029DF4DB363",
+            ],
+            "denom": "ibc/39CC7345301730045AB5F65443D7C071D0F9D945C8D0325CF73855F2DB356C06",
+            "exponent": 0,
+          },
+          {
+            "denom": "axlwbtc",
+            "exponent": 8,
+          },
+        ],
+        "description": "IBC Axelar wbtc-satoshi through axelar-dojo-1 transfer/channel-2",
+        "display": "axlwbtc",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "wbtc-satoshi",
+              "chainName": "axelar",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
+            "theme": {
+              "primaryColorHex": "#41394d",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
+        },
+        "name": "Wrapped Bitcoin (Axelar)",
+        "symbol": "axlWBTC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "ibc/DF8722298D192AAB85D86D0462E8166234A6A9A572DD4A2EA7996029DF4DB363",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "ics20",
+      },
+      {
         "base": "ibc/81D03D8FCD6171B36317A487BF846D75D1178F252D204C01A0986AB371971FC1",
         "denomUnits": [
           {
@@ -10786,10 +10835,12 @@ ETH, as a digital currency, is used for a variety of purposes within the Ethereu
               "baseDenom": "uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -33385,10 +33436,12 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "baseDenom": "arbitrum-uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -33438,10 +33491,12 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "baseDenom": "optimism-uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -33491,10 +33546,12 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "baseDenom": "polygon-uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -44784,6 +44841,55 @@ The Injective ecosystem is powered by its native token, INJ, used for governance
         "typeAsset": "sdk.coin",
       },
       {
+        "base": "ibc/39CC7345301730045AB5F65443D7C071D0F9D945C8D0325CF73855F2DB356C06",
+        "denomUnits": [
+          {
+            "aliases": [
+              "ibc/DF8722298D192AAB85D86D0462E8166234A6A9A572DD4A2EA7996029DF4DB363",
+            ],
+            "denom": "ibc/39CC7345301730045AB5F65443D7C071D0F9D945C8D0325CF73855F2DB356C06",
+            "exponent": 0,
+          },
+          {
+            "denom": "axlwbtc",
+            "exponent": 8,
+          },
+        ],
+        "description": "IBC Axelar wbtc-satoshi through axelar-dojo-1 transfer/channel-2",
+        "display": "axlwbtc",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "wbtc-satoshi",
+              "chainName": "axelar",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
+            "theme": {
+              "primaryColorHex": "#41394d",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
+        },
+        "name": "Wrapped Bitcoin (Axelar)",
+        "symbol": "axlWBTC",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-136",
+            },
+            "counterparty": {
+              "base_denom": "ibc/DF8722298D192AAB85D86D0462E8166234A6A9A572DD4A2EA7996029DF4DB363",
+              "chain_name": "neutron",
+              "channel_id": "channel-49",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "ics20",
+      },
+      {
         "base": "ibc/81D03D8FCD6171B36317A487BF846D75D1178F252D204C01A0986AB371971FC1",
         "denomUnits": [
           {
@@ -45412,10 +45518,12 @@ ETH, as a digital currency, is used for a variety of purposes within the Ethereu
               "baseDenom": "uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -68011,10 +68119,12 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "baseDenom": "arbitrum-uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -68064,10 +68174,12 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "baseDenom": "optimism-uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -68117,10 +68229,12 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "baseDenom": "polygon-uusdt",
               "chainName": "axelar",
             },
-            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png",
-            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg",
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg",
             "theme": {
-              "primaryColorHex": "#54ac94",
+              "backgroundColorHex": "#009393",
+              "circle": true,
+              "primaryColorHex": "#009393",
             },
           },
         ],
@@ -70936,14 +71050,16 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "chainName": "osmosis",
             },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg",
             "theme": {
-              "backgroundColorHex": "#639bff",
-              "primaryColorHex": "#7b4f2f",
+              "circle": true,
+              "primaryColorHex": "#639BFF",
             },
           },
         ],
         "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg",
         },
         "name": "Shitmos",
         "symbol": "SHITMOS",
@@ -70954,6 +71070,61 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
             },
             "counterparty": {
               "base_denom": "ibc/8577E98BDDD2758FD5647A53563DAAC89921326F964EBF899B945ED05A66CA5F",
+              "chain_name": "stargaze",
+              "channel_id": "channel-287",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "ics20",
+      },
+      {
+        "base": "ibc/A84B8EDE3894BC336B154E8C13D5256F643EB87ED140B43010AF786A25E968D1",
+        "denomUnits": [
+          {
+            "aliases": [
+              "ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA",
+            ],
+            "denom": "ibc/A84B8EDE3894BC336B154E8C13D5256F643EB87ED140B43010AF786A25E968D1",
+            "exponent": 0,
+          },
+          {
+            "denom": "ygata",
+            "exponent": 6,
+          },
+        ],
+        "description": "GATA Yield DAO Governance Token",
+        "display": "ygata",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata",
+              "chainName": "omniflixhub",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg",
+            "theme": {
+              "primaryColorHex": "#7b5aff",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg",
+        },
+        "name": "Yield GATA",
+        "socials": {
+          "twitter": "https://x.com/GataHubZone",
+          "website": "https://gatahub.zone",
+        },
+        "symbol": "YGATA",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-197",
+            },
+            "counterparty": {
+              "base_denom": "ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA",
               "chain_name": "stargaze",
               "channel_id": "channel-287",
             },
@@ -73593,14 +73764,16 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
               "chainName": "osmosis",
             },
             "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg",
             "theme": {
-              "backgroundColorHex": "#639bff",
-              "primaryColorHex": "#7b4f2f",
+              "circle": true,
+              "primaryColorHex": "#639BFF",
             },
           },
         ],
         "logoURIs": {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg",
         },
         "name": "Shitmos",
         "symbol": "SHITMOS",
@@ -73611,6 +73784,61 @@ The Swap Process: After the initial deposit period, $OSMO was converted into $LA
             },
             "counterparty": {
               "base_denom": "ibc/8577E98BDDD2758FD5647A53563DAAC89921326F964EBF899B945ED05A66CA5F",
+              "chain_name": "stargaze",
+              "channel_id": "channel-287",
+            },
+            "type": "ibc",
+          },
+        ],
+        "typeAsset": "ics20",
+      },
+      {
+        "base": "ibc/A84B8EDE3894BC336B154E8C13D5256F643EB87ED140B43010AF786A25E968D1",
+        "denomUnits": [
+          {
+            "aliases": [
+              "ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA",
+            ],
+            "denom": "ibc/A84B8EDE3894BC336B154E8C13D5256F643EB87ED140B43010AF786A25E968D1",
+            "exponent": 0,
+          },
+          {
+            "denom": "ygata",
+            "exponent": 6,
+          },
+        ],
+        "description": "GATA Yield DAO Governance Token",
+        "display": "ygata",
+        "images": [
+          {
+            "imageSync": {
+              "baseDenom": "factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata",
+              "chainName": "omniflixhub",
+            },
+            "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png",
+            "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg",
+            "theme": {
+              "primaryColorHex": "#7b5aff",
+            },
+          },
+        ],
+        "logoURIs": {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg",
+        },
+        "name": "Yield GATA",
+        "socials": {
+          "twitter": "https://x.com/GataHubZone",
+          "website": "https://gatahub.zone",
+        },
+        "symbol": "YGATA",
+        "traces": [
+          {
+            "chain": {
+              "channel_id": "channel-197",
+            },
+            "counterparty": {
+              "base_denom": "ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA",
               "chain_name": "stargaze",
               "channel_id": "channel-287",
             },
