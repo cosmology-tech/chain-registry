@@ -91,10 +91,10 @@ describe('tests for calc utils', () => {
 
   it('convertBaseUnitToDollarValueByDenom' ,()=>{
     const priceMap = mapCoinGeckoPricesToDenoms(osmosisAssets, coinGeckoPrices);
-    const dolloar1 = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'uosmo', 1000000, 'osmosis');
-    expect(dolloar1).toBe('0.498124');
-    const dolloarNoPrice = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA', 1000000, 'osmosis');
-    expect(dolloarNoPrice).toBe('0');
+    const dollar1 = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'uosmo', 1000000, 'osmosis');
+    expect(dollar1).toBe('0.498124');
+    const dollarNoPrice = convertBaseUnitToDollarValueByDenom(osmosisAssets, priceMap, 'ibc/8E697BDABE97ACE8773C6DF7402B2D1D5104DD1EEABE12608E3469B7F64C15BA', 1000000, 'osmosis');
+    expect(dollarNoPrice).toBe('0');
   });
 
 
