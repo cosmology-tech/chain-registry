@@ -130,6 +130,7 @@ export * as nomic from './nomic';
 export * as nyx from './nyx';
 export * as octa from './octa';
 export * as odin from './odin';
+export * as odin1 from './odin1';
 export * as okexchain from './okexchain';
 export * as omniflixhub from './omniflixhub';
 export * as onex from './onex';

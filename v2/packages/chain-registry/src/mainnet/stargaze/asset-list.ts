@@ -543,7 +543,8 @@ const info: AssetList = {
       display: 'SHITMOS',
       symbol: 'SHITMOS',
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
       },
       traces: [{
           type: 'ibc',
@@ -564,10 +565,57 @@ const info: AssetList = {
             baseDenom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos'
           },
           theme: {
-            primaryColorHex: '#7b4f2f',
-            backgroundColorHex: '#639bff'
-          }
+            primaryColorHex: '#639BFF',
+            circle: true
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
         }]
+    },
+    {
+      description: 'GATA Yield DAO Governance Token',
+      denomUnits: [{
+          denom: 'ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA',
+          exponent: 0
+        }, {
+          denom: 'ygata',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA',
+      name: 'Yield GATA',
+      display: 'ygata',
+      symbol: 'YGATA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'omniflixhub',
+            baseDenom: 'factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata',
+            channelId: 'channel-49'
+          },
+          chain: {
+            channelId: 'channel-398',
+            path: 'transfer/channel-398/factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'omniflixhub',
+            baseDenom: 'factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg',
+          theme: {
+            primaryColorHex: '#7b5aff'
+          }
+        }],
+      socials: {
+        website: 'https://gatahub.zone',
+        twitter: 'https://x.com/GataHubZone'
+      }
     }
   ]
 };

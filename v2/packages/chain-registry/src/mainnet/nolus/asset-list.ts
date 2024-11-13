@@ -869,7 +869,9 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.svg',
           theme: {
-            primaryColorHex: '#f4941c'
+            primaryColorHex: '#f4941c',
+            backgroundColorHex: '#f4941c',
+            circle: true
           }
         }],
       logoURIs: {
@@ -912,7 +914,8 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol_circle.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/solana/images/sol_circle.svg',
           theme: {
-            primaryColorHex: '#000000'
+            circle: true,
+            backgroundColorHex: '#000000'
           }
         }],
       logoURIs: {

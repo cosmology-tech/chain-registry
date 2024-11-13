@@ -85,7 +85,7 @@ const info: Chain = {
       },
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png',
       theme: {
-        primaryColorHex: '#040404'
+        primaryColorHex: '#3d3d3d'
       }
     }, {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3face-chain-logo.png',

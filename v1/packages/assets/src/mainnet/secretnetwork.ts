@@ -9554,6 +9554,88 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Astrovault AXV',
+      denom_units: [{
+          denom: 'ibc/0E9D95B87EC0B34B0689B3E1BB9A31376BD380F22E357D21D5D6ED72B1DA7A4A',
+          exponent: 0,
+          aliases: ['cw20:neutron10dxyft3nv4vpxh5vrpn0xw8geej8dw3g39g7nqp8mrm307ypssksau29af']
+        }, {
+          denom: 'AXV',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'neutron10dxyft3nv4vpxh5vrpn0xw8geej8dw3g39g7nqp8mrm307ypssksau29af',
+      base: 'ibc/0E9D95B87EC0B34B0689B3E1BB9A31376BD380F22E357D21D5D6ED72B1DA7A4A',
+      name: 'Astrovault AXV (Neutron)',
+      display: 'AXV',
+      symbol: 'AXV',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.svg'
+        }],
+      socials: {
+        website: 'https://astrovault.io/',
+        twitter: 'https://x.com/axvdex'
+      },
+      coingecko_id: 'astrovault',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'transfer',
+            channel_id: 'channel-1950',
+            base_denom: 'cw20:neutron10dxyft3nv4vpxh5vrpn0xw8geej8dw3g39g7nqp8mrm307ypssksau29af',
+            chain_name: 'neutron'
+          },
+          chain: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-151'
+          }
+        }]
+    },
+    {
+      description: 'Astrovault xATOM on Neutron Chain',
+      denom_units: [{
+          denom: 'ibc/93CDA629E04C7E55B2A4BA99C244E0E2C3E0EB8B958FB417D07C002EFA655A9F',
+          exponent: 0,
+          aliases: ['cw20:neutron1vjl4ze7gr32lar5s4fj776v70j4ml7mlt4aqln2hwgfhqjck8xwqfhx8vj']
+        }, {
+          denom: 'xATOM',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'neutron1vjl4ze7gr32lar5s4fj776v70j4ml7mlt4aqln2hwgfhqjck8xwqfhx8vj',
+      base: 'ibc/93CDA629E04C7E55B2A4BA99C244E0E2C3E0EB8B958FB417D07C002EFA655A9F',
+      name: 'Astrovault xATOM (Neutron)',
+      display: 'xATOM',
+      symbol: 'xATOM',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'transfer',
+            channel_id: 'channel-1950',
+            base_denom: 'cw20:neutron1vjl4ze7gr32lar5s4fj776v70j4ml7mlt4aqln2hwgfhqjck8xwqfhx8vj',
+            chain_name: 'neutron'
+          },
+          chain: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-151'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.svg'
+        }],
+      coingecko_id: 'astrovault-xatom'
+    },
+    {
       description: 'The Wrapped INJ token for the Oraichain.',
       type_asset: 'cw20',
       address: 'orai19rtmkk6sn4tppvjmp5d5zj6gfsdykrl5rw2euu5gwur3luheuuusesqn49',
@@ -12940,6 +13022,88 @@ const assets: AssetList = {
             channel_id: 'channel-129'
           }
         }]
+    },
+    {
+      description: 'Astrovault AXV',
+      denom_units: [{
+          denom: 'ibc/0E9D95B87EC0B34B0689B3E1BB9A31376BD380F22E357D21D5D6ED72B1DA7A4A',
+          exponent: 0,
+          aliases: ['cw20:neutron10dxyft3nv4vpxh5vrpn0xw8geej8dw3g39g7nqp8mrm307ypssksau29af']
+        }, {
+          denom: 'AXV',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'neutron10dxyft3nv4vpxh5vrpn0xw8geej8dw3g39g7nqp8mrm307ypssksau29af',
+      base: 'ibc/0E9D95B87EC0B34B0689B3E1BB9A31376BD380F22E357D21D5D6ED72B1DA7A4A',
+      name: 'Astrovault AXV (Neutron)',
+      display: 'AXV',
+      symbol: 'AXV',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.svg'
+        }],
+      socials: {
+        website: 'https://astrovault.io/',
+        twitter: 'https://x.com/axvdex'
+      },
+      coingecko_id: 'astrovault',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'transfer',
+            channel_id: 'channel-1950',
+            base_denom: 'cw20:neutron10dxyft3nv4vpxh5vrpn0xw8geej8dw3g39g7nqp8mrm307ypssksau29af',
+            chain_name: 'neutron'
+          },
+          chain: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-151'
+          }
+        }]
+    },
+    {
+      description: 'Astrovault xATOM on Neutron Chain',
+      denom_units: [{
+          denom: 'ibc/93CDA629E04C7E55B2A4BA99C244E0E2C3E0EB8B958FB417D07C002EFA655A9F',
+          exponent: 0,
+          aliases: ['cw20:neutron1vjl4ze7gr32lar5s4fj776v70j4ml7mlt4aqln2hwgfhqjck8xwqfhx8vj']
+        }, {
+          denom: 'xATOM',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'neutron1vjl4ze7gr32lar5s4fj776v70j4ml7mlt4aqln2hwgfhqjck8xwqfhx8vj',
+      base: 'ibc/93CDA629E04C7E55B2A4BA99C244E0E2C3E0EB8B958FB417D07C002EFA655A9F',
+      name: 'Astrovault xATOM (Neutron)',
+      display: 'xATOM',
+      symbol: 'xATOM',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'transfer',
+            channel_id: 'channel-1950',
+            base_denom: 'cw20:neutron1vjl4ze7gr32lar5s4fj776v70j4ml7mlt4aqln2hwgfhqjck8xwqfhx8vj',
+            chain_name: 'neutron'
+          },
+          chain: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-151'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/xatom.svg'
+        }],
+      coingecko_id: 'astrovault-xatom'
     },
     {
       description: 'The Wrapped INJ token for the Oraichain.',

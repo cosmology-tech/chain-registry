@@ -29,6 +29,10 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'kimanetwork',
+            baseDenom: 'uKIMA'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.svg'
         }],

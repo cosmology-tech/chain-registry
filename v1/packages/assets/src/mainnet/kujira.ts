@@ -3994,7 +3994,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Staking and governance token for ODIN Protocol',
+      description: 'ODIN is the Staking and governance token for ODIN Protocol',
       denom_units: [{
           denom: 'ibc/4EFD563C64F84F60AFB4BB7A8473AAA632CF5817FDF2CF51E68E4E3EDAE66430',
           exponent: 0,
@@ -4013,13 +4013,13 @@ const assets: AssetList = {
       },
       coingecko_id: 'odin-protocol',
       images: [{
-          image_sync: {
-            chain_name: 'odin',
-            base_denom: 'loki'
-          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
         }],
+      socials: {
+        website: 'https://odinprotocol.io/',
+        twitter: 'https://twitter.com/odinprotocol'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
@@ -4052,10 +4052,6 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
       },
       images: [{
-          image_sync: {
-            chain_name: 'odin',
-            base_denom: 'mGeo'
-          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
           theme: {
@@ -4068,6 +4064,86 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-63',
             base_denom: 'mGeo',
+            chain_name: 'odin'
+          },
+          chain: {
+            channel_id: 'channel-157'
+          }
+        }]
+    },
+    {
+      description: 'DOKI the last Dragon',
+      denom_units: [{
+          denom: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
+          exponent: 0,
+          aliases: ['udoki']
+        }, {
+          denom: 'doki',
+          exponent: 6
+        }],
+      base: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
+      name: 'DOKI',
+      display: 'doki',
+      symbol: 'DOKI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
+      },
+      coingecko_id: 'doki',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png',
+          theme: {
+            primary_color_hex: '#2e2d2a'
+          }
+        }],
+      socials: {
+        website: 'https://dokicoin.io/',
+        twitter: 'https://twitter.com/doki_coin'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'udoki',
+            chain_name: 'odin'
+          },
+          chain: {
+            channel_id: 'channel-157'
+          }
+        }]
+    },
+    {
+      description: 'Myrkur the leader of OLD Order',
+      denom_units: [{
+          denom: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
+          exponent: 0,
+          aliases: ['umyrk']
+        }, {
+          denom: 'myrk',
+          exponent: 6
+        }],
+      base: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
+      name: 'MYRK',
+      display: 'myrk',
+      symbol: 'MYRK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png',
+          theme: {
+            primary_color_hex: '#0a0707'
+          }
+        }],
+      socials: {
+        twitter: 'https://twitter.com/myrkweilds'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'umyrk',
             chain_name: 'odin'
           },
           chain: {
@@ -4094,16 +4170,16 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
       },
       images: [{
-          image_sync: {
-            chain_name: 'odin',
-            base_denom: 'mO9W'
-          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg',
           theme: {
             primary_color_hex: '#040404'
           }
         }],
+      socials: {
+        website: 'https://www.odin9worlds.io/',
+        twitter: 'https://twitter.com/odin9worlds'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
@@ -5185,7 +5261,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Staking and governance token for ODIN Protocol',
+      description: 'ODIN is the Staking and governance token for ODIN Protocol',
       denom_units: [{
           denom: 'ibc/4EFD563C64F84F60AFB4BB7A8473AAA632CF5817FDF2CF51E68E4E3EDAE66430',
           exponent: 0,
@@ -5204,13 +5280,13 @@ const assets: AssetList = {
       },
       coingecko_id: 'odin-protocol',
       images: [{
-          image_sync: {
-            chain_name: 'odin',
-            base_denom: 'loki'
-          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
         }],
+      socials: {
+        website: 'https://odinprotocol.io/',
+        twitter: 'https://twitter.com/odinprotocol'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
@@ -5243,10 +5319,6 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
       },
       images: [{
-          image_sync: {
-            chain_name: 'odin',
-            base_denom: 'mGeo'
-          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
           theme: {
@@ -5259,6 +5331,86 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-63',
             base_denom: 'mGeo',
+            chain_name: 'odin'
+          },
+          chain: {
+            channel_id: 'channel-157'
+          }
+        }]
+    },
+    {
+      description: 'DOKI the last Dragon',
+      denom_units: [{
+          denom: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
+          exponent: 0,
+          aliases: ['udoki']
+        }, {
+          denom: 'doki',
+          exponent: 6
+        }],
+      base: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
+      name: 'DOKI',
+      display: 'doki',
+      symbol: 'DOKI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
+      },
+      coingecko_id: 'doki',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png',
+          theme: {
+            primary_color_hex: '#2e2d2a'
+          }
+        }],
+      socials: {
+        website: 'https://dokicoin.io/',
+        twitter: 'https://twitter.com/doki_coin'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'udoki',
+            chain_name: 'odin'
+          },
+          chain: {
+            channel_id: 'channel-157'
+          }
+        }]
+    },
+    {
+      description: 'Myrkur the leader of OLD Order',
+      denom_units: [{
+          denom: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
+          exponent: 0,
+          aliases: ['umyrk']
+        }, {
+          denom: 'myrk',
+          exponent: 6
+        }],
+      base: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
+      name: 'MYRK',
+      display: 'myrk',
+      symbol: 'MYRK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png',
+          theme: {
+            primary_color_hex: '#0a0707'
+          }
+        }],
+      socials: {
+        twitter: 'https://twitter.com/myrkweilds'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-63',
+            base_denom: 'umyrk',
             chain_name: 'odin'
           },
           chain: {
@@ -5285,16 +5437,16 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
       },
       images: [{
-          image_sync: {
-            chain_name: 'odin',
-            base_denom: 'mO9W'
-          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg',
           theme: {
             primary_color_hex: '#040404'
           }
         }],
+      socials: {
+        website: 'https://www.odin9worlds.io/',
+        twitter: 'https://twitter.com/odin9worlds'
+      },
       type_asset: 'sdk.coin',
       traces: [{
           type: 'ibc',
