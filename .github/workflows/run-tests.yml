@@ -24,6 +24,18 @@ jobs:
         run: |
           make update-fixtures
 
+          # Enter repos/chain-registry, log commits, and pop back
+          pushd repos/chain-registry
+          echo "Last 2 commits in repos/chain-registry:"
+          git log -n 2 --oneline
+          popd
+
+          # Enter repos/chain-registry-fixtures, log commits, and pop back
+          pushd repos/chain-registry-fixtures
+          echo "Last 2 commits in repos/chain-registry-fixtures:"
+          git log -n 2 --oneline
+          popd
+
       - name: Install and Build v1 🏗️
         run: |
           cd v1
