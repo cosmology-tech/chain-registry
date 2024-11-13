@@ -433,7 +433,7 @@ const chainPaths = glob(`${registryDir}/**/chain.json`).filter(
     const splitedDirs = a.split(registryDirInRepoPath);
     let dir = splitedDirs.pop();
     dir = path.basename(path.dirname(dir));
-    return !NON_INFO_DIRS.includes(dir)
+    return !NON_INFO_DIRS.includes(dir);
   }
 );
 
