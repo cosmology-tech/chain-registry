@@ -1,7 +1,3 @@
-
-import { assetLists } from '@chain-registry/v2';
-import { chains as mainNetChains } from '@chain-registry/v2/mainnet';
-
 import {
   getAssetByDenom,
   getAssetBySymbol,
@@ -18,6 +14,7 @@ import {
   getNativeAssetByChainName,
   getSymbolByDenom
 } from '../src/assets';
+import { assetLists, chains } from '../test-utils';
 
 describe('tests for assets utils', () => {
   it('getAssetByDenom', () => {
@@ -52,9 +49,9 @@ describe('tests for assets utils', () => {
   });
 
   it('getChainNameByStakingDenom', () => {
-    const chain1 = getChainNameByStakingDenom(mainNetChains, 'ucmdx');
+    const chain1 = getChainNameByStakingDenom(chains, 'ucmdx');
     expect(chain1).toEqual('comdex');
-    const chain2 = getChainNameByStakingDenom(mainNetChains, 'uatom');
+    const chain2 = getChainNameByStakingDenom(chains, 'uatom');
     expect(chain2).toEqual('cosmoshub');
   });
 
