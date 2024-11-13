@@ -683,8 +683,8 @@ const info: AssetList = {
       display: 'hmstr',
       symbol: 'HMSTR',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg',
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg'
       },
       type_asset: 'sdk.coin',
       images: [{
@@ -695,9 +695,9 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ton/images/hmstr.png',
           theme: {
-            primary_color_hex: '#f4941c',
-            background_color_hex: '#f4941c',
-            circle: true
+            circle: true,
+            primary_color_hex: '#0088CC',
+            background_color_hex: '#0088CC'
           }
         }]
     }
