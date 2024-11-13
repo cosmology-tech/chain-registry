@@ -319,15 +319,12 @@ exports[`Inquirerer prompts user and correctly processes delayed input 1`] = `
         "type": "cometbft",
         "version": "v0.37.4",
       },
-      "cosmos_sdk_version": "osmosis-labs/cosmos-sdk v0.47.5-v25-osmo-1",
       "cosmwasm": {
         "enabled": true,
         "repo": "https://github.com/osmosis-labs/wasmd",
         "tag": "v0.45.0-osmo",
         "version": "v0.45.0",
       },
-      "cosmwasm_enabled": true,
-      "cosmwasm_version": "osmosis-labs/wasmd v0.45.0-osmo",
       "genesis": {
         "genesis_url": "https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json",
         "name": "v3",
@@ -393,6 +390,12 @@ Osmosis is bringing the full centralized exchange experience to the decentralize
         "kind": "TC Network",
         "tx_page": "https://explorer.tcnetwork.io/osmosis/transaction/\${txHash}",
         "url": "https://explorer.tcnetwork.io/osmosis",
+      },
+      {
+        "account_page": "https://staking-explorer.com/account.php?chain=osmosis&addr=\${accountAddress}",
+        "kind": "staking-explorer.com",
+        "tx_page": "https://staking-explorer.com/transaction.php?chain=osmosis&tx=\${txHash}",
+        "url": "https://staking-explorer.com/explorer/osmosis",
       },
       {
         "account_page": "https://stakeflow.io/osmosis/accounts/\${accountAddress}",
