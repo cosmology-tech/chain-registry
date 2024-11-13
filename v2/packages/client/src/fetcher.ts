@@ -1,4 +1,3 @@
-import { AssetList as IAssetList, Chain as IChain, IBCData as IIBCData} from '@chain-registry/interfaces';
 import {
   AssetList,
   Chain,
@@ -107,11 +106,11 @@ export class ChainRegistryFetcher {
     return chainInfo;
   }
 
-  upsertChain(data: IChain) {
+  upsertChain(data: Chain) {
     const found = this._chains.find((chain) => {
       return (
-        chain.chainName === data.chain_name &&
-        chain.networkType === data.network_type
+        chain.chainName === data.chainName &&
+        chain.networkType === data.networkType
       );
     });
 
@@ -124,8 +123,8 @@ export class ChainRegistryFetcher {
     
     this._chains = this._chains.map((chain) => {
       if (
-        chain.chainName === data.chain_name &&
-        chain.networkType === data.network_type
+        chain.chainName === data.chainName &&
+        chain.networkType === data.networkType
       ) {
         return convertedData;
       } else {
@@ -134,9 +133,9 @@ export class ChainRegistryFetcher {
     });
   }
 
-  updateAssetList(data: IAssetList) {
+  updateAssetList(data: AssetList) {
     const found = this._assetLists.find((list) => {
-      return list.chainName === data.chain_name;
+      return list.chainName === data.chainName;
     });
 
     const convertedData: AssetList = keysToCamel(data);
@@ -147,7 +146,7 @@ export class ChainRegistryFetcher {
     }
 
     this._assetLists = this._assetLists.map((list) => {
-      if (list.chainName === data.chain_name) {
+      if (list.chainName === data.chainName) {
         return convertedData;
       } else {
         return list;
@@ -155,11 +154,11 @@ export class ChainRegistryFetcher {
     });
   }
 
-  upsertIbcData(data: IIBCData) {
+  upsertIbcData(data: IBCData) {
     const found = this._ibcData.find((info) => {
       return (
-        info.chain1.chainName === data.chain_1.chain_name &&
-        info.chain2.chainName === data.chain_2.chain_name
+        info.chain1.chainName === data.chain1.chainName &&
+        info.chain2.chainName === data.chain2.chainName
       );
     });
 
@@ -172,8 +171,8 @@ export class ChainRegistryFetcher {
 
     this._ibcData = this._ibcData.map((info) => {
       if (
-        info.chain1.chainName === data.chain_1.chain_name &&
-        info.chain2.chainName === data.chain_2.chain_name
+        info.chain1.chainName === data.chain1.chainName &&
+        info.chain2.chainName === data.chain2.chainName
       ) {
         return convertedData;
       } else {
@@ -182,18 +181,18 @@ export class ChainRegistryFetcher {
     });
   }
 
-  update(data: IChain | IAssetList | IIBCData) {
+  update(data: Chain | AssetList | IBCData) {
     if (!data.$schema) throw new Error('not a registered JSON schema type');
     const type = basename(data.$schema, '.schema.json');
     switch (type) {
     case 'chain':
-      this.upsertChain(data as IChain);
+      this.upsertChain(data as Chain);
       break;
     case 'assetlist':
-      this.updateAssetList(data as IAssetList);
+      this.updateAssetList(data as AssetList);
       break;
     case 'ibc_data':
-      this.upsertIbcData(data as IIBCData);
+      this.upsertIbcData(data as IBCData);
       break;
     default:
       throw new Error('unknown schema type');
