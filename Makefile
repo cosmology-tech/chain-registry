@@ -12,11 +12,11 @@ update-fixtures:
 
 submodule-status:
 	@echo "Checking submodule statuses..."
-	@pushd repos/chain-registry >/dev/null; \
-	echo "Last 2 commits in repos/chain-registry:"; \
-	git log -n 2 --oneline; \
-	popd >/dev/null
-	@pushd repos/chain-registry-fixtures >/dev/null; \
-	echo "Last 2 commits in repos/chain-registry-fixtures:"; \
-	git log -n 2 --oneline; \
-	popd >/dev/null
+	@cd repos/chain-registry && \
+	echo "Last 2 commits in repos/chain-registry:" && \
+	git log -n 2 --oneline && \
+	cd - >/dev/null
+	@cd repos/chain-registry-fixtures && \
+	echo "Last 2 commits in repos/chain-registry-fixtures:" && \
+	git log -n 2 --oneline && \
+	cd - >/dev/null
