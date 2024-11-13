@@ -215,22 +215,24 @@ export class Registry {
   }
 
   public validateUnique() {
-    let duplicatedChain = null as Chain
-    const hasDuplicates = this.chains.some((chain, index, array) => {
-      let existingIndex = array.findIndex(c => c.chain_name === chain.chain_name)
-      if (existingIndex !== index) {
-        duplicatedChain = chain
-        return true
-      }
-      return false
-    });
+    let chainNameCount: Record<string, number> = {};  // object to store the count of each chain_name
+    const duplicates: string[] = []
 
-    if (duplicatedChain) {
-      console.log(hasDuplicates ? "Duplicates found" : "No duplicates found");
-      throw new Error(`Duplicate chain found: ${duplicatedChain.chain_name}`)
+    this.chains.forEach(chain => {
+      let chainName = chain.chain_name
+      // If the chainName already exists in chainNameCount, it's a duplicate
+      if (chainNameCount[chainName]) {
+        chainNameCount[chainName]++
+        if (chainNameCount[chainName] === 2) { // Only add to duplicates on first repeat
+          duplicates.push(chainName)
+        }
+      } else {
+        chainNameCount[chainName] = 1;
+      }
+    })
+    if (duplicates.length > 0) {
+      throw new Error(`duplicates found: ${duplicates.join(', ')}`)
     }
-    
-    return duplicatedChain
   }
 
   public get count() {
