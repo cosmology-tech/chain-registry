@@ -134,7 +134,7 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
       theme: {
-        circle: false,
+        circle: true,
         primaryColorHex: '#fba0c1'
       }
     }]

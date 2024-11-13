@@ -13,6 +13,7 @@ import * as _akash from './akash';
 import * as _akiro from './akiro';
 import * as _althea from './althea';
 import * as _andromeda from './andromeda';
+import * as _andromeda1 from './andromeda1';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
@@ -131,6 +132,7 @@ import * as _nomic from './nomic';
 import * as _nyx from './nyx';
 import * as _octa from './octa';
 import * as _odin from './odin';
+import * as _odin1 from './odin1';
 import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
 import * as _onex from './onex';
@@ -211,6 +213,7 @@ const assetList: AssetList[] = [
   _akiro.assetList,
   _althea.assetList,
   _andromeda.assetList,
+  _andromeda1.assetList,
   _archway.assetList,
   _arkh.assetList,
   _assetmantle.assetList,
@@ -329,6 +332,7 @@ const assetList: AssetList[] = [
   _nyx.assetList,
   _octa.assetList,
   _odin.assetList,
+  _odin1.assetList,
   _okexchain.assetList,
   _omniflixhub.assetList,
   _onex.assetList,

@@ -1,10 +1,10 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
-  chainName: 'odin',
+  chainName: 'odin1',
   assets: [
     {
-      description: 'ODIN is the Staking and governance token for ODIN Protocol',
+      description: 'Staking and governance token for ODIN Protocol',
       denomUnits: [{
           denom: 'loki',
           exponent: 0
@@ -22,13 +22,13 @@ const info: AssetList = {
       },
       coingeckoId: 'odin-protocol',
       images: [{
+          imageSync: {
+            chainName: 'odin',
+            baseDenom: 'loki'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.svg'
         }],
-      socials: {
-        website: 'https://odinprotocol.io/',
-        twitter: 'https://twitter.com/odinprotocol'
-      },
       typeAsset: 'sdk.coin'
     },
     {
@@ -49,68 +49,16 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'odin',
+            baseDenom: 'mGeo'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg',
           theme: {
             primaryColorHex: '#c3ebf3'
           }
         }],
-      typeAsset: 'sdk.coin'
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denomUnits: [{
-          denom: 'udoki',
-          exponent: 0
-        }, {
-          denom: 'doki',
-          exponent: 6
-        }],
-      base: 'udoki',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      coingeckoId: 'doki',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png',
-          theme: {
-            primaryColorHex: '#2e2d2a'
-          }
-        }],
-      socials: {
-        website: 'https://dokicoin.io/',
-        twitter: 'https://twitter.com/doki_coin'
-      },
-      typeAsset: 'sdk.coin'
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denomUnits: [{
-          denom: 'umyrk',
-          exponent: 0
-        }, {
-          denom: 'myrk',
-          exponent: 6
-        }],
-      base: 'umyrk',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png',
-          theme: {
-            primaryColorHex: '#0a0707'
-          }
-        }],
-      socials: {
-        twitter: 'https://twitter.com/myrkweilds'
-      },
       typeAsset: 'sdk.coin'
     },
     {
@@ -131,16 +79,16 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
       },
       images: [{
+          imageSync: {
+            chainName: 'odin',
+            baseDenom: 'mO9W'
+          },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg',
           theme: {
             primaryColorHex: '#040404'
           }
         }],
-      socials: {
-        website: 'https://www.odin9worlds.io/',
-        twitter: 'https://twitter.com/odin9worlds'
-      },
       typeAsset: 'sdk.coin'
     }
   ]

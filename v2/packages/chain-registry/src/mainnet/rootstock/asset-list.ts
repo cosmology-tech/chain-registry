@@ -61,6 +61,19 @@ const info: AssetList = {
             baseDenom: 'sat'
           },
           provider: 'Rootstock'
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'rootstock',
+            baseDenom: 'sat'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/rootstock/images/rbtc.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/rootstock/images/rbtc.svg',
+          theme: {
+            circle: false,
+            primaryColorHex: '#FF9931',
+            backgroundColorHex: '#00000000'
+          }
         }]
     }]
 };
