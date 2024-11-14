@@ -453,6 +453,8 @@ const chainNetworkMap = {};
 
 const result = {};
 
+const statusKilledChainNames = []
+
 chainPaths.forEach((file) => {
   const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
   if (!data.$schema) {
@@ -483,6 +485,11 @@ chainPaths.forEach((file) => {
       return;
     }
 
+    if (data.status === 'killed') {
+      statusKilledChainNames.push(data.chain_name)
+      return;
+    }
+
     initChainBlock(result, data.network_type, data.chain_name);
 
     result[data.network_type][data.chain_name].chain = data;
@@ -500,6 +507,11 @@ paths.forEach((file) => {
   }
 
   if (data.$schema.endsWith('assetlist.schema.json')) {
+    if (statusKilledChainNames.includes(data.chain_name)) {
+      // assetlist with chain status of 'killed' will be excluded
+      return;
+    }
+
     const network_type = chainNetworkMap[data.chain_name];
 
     if (!network_type) {
@@ -513,7 +525,9 @@ paths.forEach((file) => {
   if (data.$schema.endsWith('ibc_data.schema.json')) {
     const network_type1 = chainNetworkMap[data.chain_1.chain_name];
 
-    if (!network_type1) {
+    if (statusKilledChainNames.includes(data.chain_1.chain_name)) {
+      // ibc data with chain status of 'killed' will be excluded
+    } else if (!network_type1) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_1.chain_name);
       initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name], 'ibc');
       result[NON_COSMOS_NETWORK_TYPE][data.chain_1.chain_name].ibc.push(data);
@@ -524,7 +538,9 @@ paths.forEach((file) => {
 
     const network_type2 = chainNetworkMap[data.chain_2.chain_name];
 
-    if (!network_type2) {
+    if (statusKilledChainNames.includes(data.chain_2.chain_name)) {
+      // ibc data with chain status of 'killed' will be excluded
+    } else if (!network_type2) {
       initChainBlock(result, NON_COSMOS_NETWORK_TYPE, data.chain_2.chain_name);
       initIBC(result[NON_COSMOS_NETWORK_TYPE][data.chain_2.chain_name], 'ibc');
       result[NON_COSMOS_NETWORK_TYPE][data.chain_2.chain_name].ibc.push(data);
@@ -534,6 +550,10 @@ paths.forEach((file) => {
     }
   }
 });
+
+statusKilledChainNames.forEach((chainName) => {
+  console.log(`The ${chainName} chain along with its assets and ibc, was stripped out from the build due to it's 'killed' chain status`)
+})
 
 const SRC_ROOT = `${__dirname}/../src`;
 fs.rmSync(SRC_ROOT, { recursive: true });

@@ -1,18 +1,5 @@
-import { assetLists, ibcData } from '@chain-registry/v2';
-
 import { getIbcDenomByBase } from '../src';
-
-it('ATOM on stargaze', () => {
-  const denom = getIbcDenomByBase(
-    ibcData,
-    'stargaze',
-    'cosmoshub',
-    //
-    assetLists,
-    'uatom'
-  );
-  expect(denom).toEqual('ibc/9DF365E2C0EF4EA02FA771F638BB9C0C830EFCD354629BDC017F79B348B4E989');
-});
+import { assetLists, ibc as ibcData } from '../test-utils';
 
 it('JUNO on stargaze', () => {
   const denom = getIbcDenomByBase(

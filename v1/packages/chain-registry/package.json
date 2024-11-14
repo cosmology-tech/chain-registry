@@ -23,7 +23,7 @@
     "copy": "copyfiles -f LICENSE README.md package.json dist",
     "clean": "rimraf dist/**",
     "prepare": "npm run build",
-    "codegen": "ts-node ./scripts/build.ts",
+    "codegen": "rimraf src/** && ts-node ./scripts/build.ts",
     "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
     "test": "jest",
     "test:watch": "jest --watch"
