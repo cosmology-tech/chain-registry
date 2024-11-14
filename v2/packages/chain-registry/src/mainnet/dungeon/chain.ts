@@ -20,20 +20,40 @@ const info: Chain = {
       }]
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc-dungeonchain.apeironnodes.com',
         provider: 'ApeironNodes'
-      }, {
+      },
+      {
         address: 'https://rpc-archive-dungeonchain.apeironnodes.com',
         provider: 'ApeironNodes (Archive)'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://dungeon_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ],
+    rest: [
+      {
         address: 'https://api-dungeonchain.apeironnodes.com',
         provider: 'ApeironNodes'
-      }, {
+      },
+      {
         address: 'https://api-archive-dungeonchain.apeironnodes.com',
         provider: 'ApeironNodes (Archive)'
-      }]
-  }
+      },
+      {
+        address: 'https://dungeon_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ]
+  },
+  explorers: [{
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/dungeon',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/dungeon/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/dungeon/account/${accountAddress}'
+    }]
 };
 export default info;
