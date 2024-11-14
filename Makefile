@@ -1,6 +1,6 @@
 .PHONY: def update-registry update-fixtures submodule-status update-json
 
-def: update-registry update-fixtures
+def: update-registry update-fixtures update-json
 
 update-registry:
 	@echo "Updating chain-registry submodule to latest in repos/registry-json"
