@@ -19,7 +19,6 @@ const info: AssetList = {
       name: 'Quasar (legacy)',
       display: 'qsr',
       symbol: 'QSR.legacy',
-      coingeckoId: 'quasar-2',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
       },

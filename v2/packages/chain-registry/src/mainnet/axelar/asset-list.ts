@@ -160,18 +160,20 @@ const info: AssetList = {
           provider: 'Axelar'
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       },
       images: [{
           imageSync: {
             chainName: 'ethereum',
             baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
           theme: {
-            primaryColorHex: '#54ac94'
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -1421,10 +1423,12 @@ const info: AssetList = {
             chainName: 'arbitrum',
             baseDenom: '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
           theme: {
-            primaryColorHex: '#54ac94'
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
           }
         }]
     },
@@ -1455,10 +1459,12 @@ const info: AssetList = {
             chainName: 'optimism',
             baseDenom: '0x94b008aA00579c1307B0EF2c499aD98a8ce58e58'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
           theme: {
-            primaryColorHex: '#54ac94'
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
           }
         }]
     },
@@ -1489,10 +1495,12 @@ const info: AssetList = {
             chainName: 'polygon',
             baseDenom: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
           theme: {
-            primaryColorHex: '#54ac94'
+            circle: true,
+            primaryColorHex: '#009393',
+            backgroundColorHex: '#009393'
           }
         }]
     },

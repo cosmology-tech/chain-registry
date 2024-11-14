@@ -526,6 +526,96 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/bglUSDC.png'
         }],
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The Cosmos Network\'s premier self-hatred memecoin.',
+      extendedDescription: 'Shitmos is a fair launched token deployed via the start.cooking liquidity bootstrapping protocol (LBP) on the Osmosis blockchain. It is powered by the Shitmos Economic Zone (SEZ), and it has been designed with the goal of uniting the Cosmos Network and interchain-at-large ecosystems by making crypto fun. The SEZ is a federation of nft collections on Stargaze that supports Shitmos by providing at least 2% of royalties towards open market purchases of Shitmos.',
+      denomUnits: [{
+          denom: 'ibc/8577E98BDDD2758FD5647A53563DAAC89921326F964EBF899B945ED05A66CA5F',
+          exponent: 0
+        }, {
+          denom: 'SHITMOS',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/8577E98BDDD2758FD5647A53563DAAC89921326F964EBF899B945ED05A66CA5F',
+      name: 'Shitmos',
+      display: 'SHITMOS',
+      symbol: 'SHITMOS',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos',
+            channelId: 'channel-75'
+          },
+          chain: {
+            channelId: 'channel-0',
+            path: 'transfer/channel-0/factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos'
+          }
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.png',
+          imageSync: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1q77cw0mmlluxu0wr29fcdd0tdnh78gzhkvhe4n6ulal9qvrtu43qtd0nh8/shitmos'
+          },
+          theme: {
+            primaryColorHex: '#639BFF',
+            circle: true
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/shitmos.svg'
+        }]
+    },
+    {
+      description: 'GATA Yield DAO Governance Token',
+      denomUnits: [{
+          denom: 'ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA',
+          exponent: 0
+        }, {
+          denom: 'ygata',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/2A56F95E2B74AB769816403D384E2199C7BC510BFD2F8352FAC6DF0294B83EBA',
+      name: 'Yield GATA',
+      display: 'ygata',
+      symbol: 'YGATA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'omniflixhub',
+            baseDenom: 'factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata',
+            channelId: 'channel-49'
+          },
+          chain: {
+            channelId: 'channel-398',
+            path: 'transfer/channel-398/factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'omniflixhub',
+            baseDenom: 'factory/omniflix1fwphj5p6qd8gtkehkzfgac38eur4uqzgz97uwvf6hsc0vjl004gqfj0xnv/ygata'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/ygata.svg',
+          theme: {
+            primaryColorHex: '#7b5aff'
+          }
+        }],
+      socials: {
+        website: 'https://gatahub.zone',
+        twitter: 'https://x.com/GataHubZone'
+      }
     }
   ]
 };
