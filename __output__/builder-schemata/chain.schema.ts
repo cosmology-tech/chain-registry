@@ -95,9 +95,6 @@ export interface Chain {
     sdk?: Sdk;
     cosmwasm?: Cosmwasm;
     ibc?: Ibc;
-    cosmosSdkVersion?: string;
-    cosmwasmVersion?: string;
-    cosmwasmEnabled?: boolean;
   };
   images?: {
     png?: string;

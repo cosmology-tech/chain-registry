@@ -23,6 +23,7 @@ jobs:
       - name: Update Git Submodules 🔄
         run: |
           make update-fixtures
+          make submodule-status
 
       - name: Install and Build v1 🏗️
         run: |

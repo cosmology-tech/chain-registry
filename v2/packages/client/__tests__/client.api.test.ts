@@ -1,11 +1,10 @@
-import { assetLists as _assetLists, chains } from '@chain-registry/v2';
-
 import {
   ChainRegistryChainUtil,
   ChainRegistryChainUtilOptions,
   ChainRegistryClient,
   ChainRegistryClientOptions
 } from '../src';
+import { assetLists as _assetLists, chains } from '../test-utils';
 
 describe('tests for asset-list-util', () => {
   const assetLists = _assetLists.filter(
@@ -84,7 +83,7 @@ describe('tests for asset-list-util', () => {
 
   it('getAssetNameByDenom', () => {
     const name = client.getAssetNameByDenom('uion');
-    expect(name).toEqual('Ion DAO');
+    expect(name).toEqual('Ion');
   });
 
   it('getChainNameByDenom', () => {

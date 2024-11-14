@@ -1,7 +1,7 @@
 import { Chain } from '@chain-registry/types';
 
-import { assets, chains } from '../test-utils'
 import { chainRegistryChainToKeplr } from '../src/';
+import { assets, chains } from '../test-utils';
 
 const testChainData = async (chainName: string, chainId: ChainInfo['chainId']) => {
   const chain = await getChainInfo(chainId);

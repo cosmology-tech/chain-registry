@@ -7,6 +7,7 @@ describe('Test client', () => {
   let client: ChainRegistryClient;
   beforeAll(() => {
     const options: ChainRegistryClientOptions = {
+      // add camelCase
       chainNames: ['osmosis']
     };
 

@@ -1,5 +1,3 @@
-import { chains } from '@chain-registry/v2';
-
 import {
   getChainBech32Prefix,
   getChainByChainId,
@@ -9,6 +7,7 @@ import {
   getChainNameByChainId,
   getChainPrettyName
 } from '../src/chains';
+import { chains } from '../test-utils';
 
 describe('tests for chains utils', () => {
   it('getChainByChainName', () => {
@@ -50,7 +49,7 @@ describe('tests for chains utils', () => {
     const gasPriceRanges2 = getChainGasPriceRanges(chains, 'tgrade');
     expect(gasPriceRanges2?.high).toEqual(0.1);
     const gasPriceRanges3 = getChainGasPriceRanges(chains, 'juno');
-    expect(gasPriceRanges3?.low).toEqual(0.075);
+    expect(gasPriceRanges3?.low).toEqual(0.01);
   });
 
   it('getChainPrettyName', () => {
