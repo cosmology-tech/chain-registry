@@ -8,12 +8,12 @@ describe('Test fetcher', () => {
   beforeAll(async () => {
     const options: ChainRegistryFetcherOptions = {
       urls: [
-        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full/osmosis/chain.json',
-        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full/osmosis/assetlist.json',
-        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full/juno/assetlist.json',
-        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full/secretnetwork/assetlist.json',
-        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full/_IBC/juno-osmosis.json',
-        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full/_IBC/osmosis-secretnetwork.json'
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/camel/osmosis/chain.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/camel/osmosis/assetlist.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/camel/juno/assetlist.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/camel/secretnetwork/assetlist.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/camel/_IBC/juno-osmosis.json',
+        'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/camel/_IBC/osmosis-secretnetwork.json'
       ]
     };
 

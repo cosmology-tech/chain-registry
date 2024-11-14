@@ -2,7 +2,7 @@ import nock from 'nock';
 
 import { assetLists, chains, ibc } from './test-utils';
 
-const baseUrl = 'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full';
+const baseUrl = 'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/camel';
 
 beforeAll(() => {
   // 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
