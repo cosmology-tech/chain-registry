@@ -1,9 +1,6 @@
 export interface Asset {
   deprecated?: boolean;
   description?: string;
-  extendedDescription?: string;
-  denomUnits: DenomUnit[];
-  typeAsset: "sdk.coin" | "cw20" | "erc20" | "ics20" | "snip20" | "snip25" | "bitcoin-like" | "evm-base" | "svm-base" | "substrate" | "unknown";
   address?: string;
   base: string;
   name: string;
@@ -15,23 +12,18 @@ export interface Asset {
     dstChannel: string;
     sourceDenom: string;
   };
-  logoURIs?: {
-    png?: string;
-    svg?: string;
-  };
   images?: {
-    imageSync?: Pointer;
     png?: string;
     svg?: string;
     theme?: {
+      circle?: boolean;
+      monochrome?: boolean;
       primaryColorHex?: string;
       backgroundColorHex?: string;
-      circle?: boolean;
       darkMode?: boolean;
-      monochrome?: boolean;
     };
+    imageSync?: Pointer;
   }[];
-  coingeckoId?: string;
   keywords?: string[];
   socials?: {
     website?: string;
@@ -42,15 +34,23 @@ export interface Asset {
     medium?: string;
     reddit?: string;
   };
+  assetType: "sdk.coin" | "cw20" | "erc20" | "ics20" | "snip20" | "snip25" | "bitcoin-like" | "evm-base" | "svm-base" | "substrate" | "unknown" | "sdk.factory" | "bitsong";
+  extendedDescription?: string;
+  denomUnits: DenomUnit[];
+  logoURIs?: {
+    png?: string;
+    svg?: string;
+  };
+  coingeckoId?: string;
+}
+export interface Pointer {
+  chainName: string;
+  baseDenom?: string;
 }
 export interface DenomUnit {
   denom: string;
   exponent: number;
   aliases?: string[];
-}
-export interface Pointer {
-  chainName: string;
-  baseDenom?: string;
 }
 export interface IbcTransition {
   type: "ibc";
@@ -68,9 +68,9 @@ export interface IbcTransition {
 export interface IbcCw20Transition {
   type: "ibc-cw20";
   counterparty: {
+    port: string;
     chainName: string;
     baseDenom: string;
-    port: string;
     channelId: string;
   };
   chain: {
@@ -83,9 +83,9 @@ export interface IbcCw20Transition {
 export interface IbcBridgeTransition {
   type: "ibc-bridge";
   counterparty: {
+    port?: string;
     chainName: string;
     baseDenom: string;
-    port?: string;
     channelId: string;
   };
   chain: {
@@ -99,9 +99,9 @@ export interface IbcBridgeTransition {
 export interface NonIbcTransition {
   type: "bridge" | "liquid-stake" | "synthetic" | "wrapped" | "additional-mintage" | "test-mintage" | "legacy-mintage";
   counterparty: {
+    contract?: string;
     chainName: string;
     baseDenom: string;
-    contract?: string;
   };
   chain?: {
     contract: string;
@@ -110,6 +110,6 @@ export interface NonIbcTransition {
 }
 export interface AssetList {
   $schema?: string;
-  chainName: string;
   assets: Asset[];
+  chainName: string;
 }

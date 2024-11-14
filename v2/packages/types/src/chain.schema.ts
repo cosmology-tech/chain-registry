@@ -17,20 +17,6 @@ export interface Explorer {
   proposalPage?: string;
   blockPage?: string;
 }
-export interface FeeToken {
-  denom: string;
-  fixedMinGasPrice?: number;
-  lowGasPrice?: number;
-  averageGasPrice?: number;
-  highGasPrice?: number;
-  gasCosts?: {
-    cosmosSend?: number;
-    ibcTransfer?: number;
-  };
-}
-export interface StakingToken {
-  denom: string;
-}
 export type Repo = string;
 export type Version = string;
 export type Tag = string;
@@ -78,30 +64,25 @@ export interface Pointer {
   chainName: string;
   baseDenom?: string;
 }
+export interface FeeToken {
+  denom: string;
+  fixedMinGasPrice?: number;
+  lowGasPrice?: number;
+  averageGasPrice?: number;
+  highGasPrice?: number;
+  gasCosts?: {
+    cosmosSend?: number;
+    ibcTransfer?: number;
+  };
+}
+export interface StakingToken {
+  denom: string;
+}
 export interface Chain {
   $schema?: string;
-  chainName: string;
-  chainType: "cosmos" | "eip155" | "bip122" | "polkadot" | "solana" | "algorand" | "arweave" | "ergo" | "fil" | "hedera" | "monero" | "reef" | "stacks" | "starknet" | "stellar" | "tezos" | "vechain" | "waves" | "xrpl" | "unknown";
-  chainId?: string;
-  preForkChainName?: string;
-  prettyName?: string;
   website?: string;
   status?: "live" | "upcoming" | "killed";
-  networkType?: "mainnet" | "testnet" | "devnet";
-  bech32Prefix?: string;
-  bech32Config?: {
-    bech32PrefixAccAddr?: string;
-    bech32PrefixAccPub?: string;
-    bech32PrefixValAddr?: string;
-    bech32PrefixValPub?: string;
-    bech32PrefixConsAddr?: string;
-    bech32PrefixConsPub?: string;
-  };
-  daemonName?: string;
-  nodeHome?: string;
-  keyAlgos?: ("secp256k1" | "ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
   slip44?: number;
-  alternativeSlip44s?: number[];
   fees?: {
     feeTokens: FeeToken[];
   };
@@ -113,17 +94,10 @@ export interface Chain {
     };
   };
   codebase?: {
-    gitRepo?: string;
-    recommendedVersion?: string;
-    compatibleVersions?: string[];
     language?: Language;
     binaries?: Binaries;
-    cosmosSdkVersion?: string;
     sdk?: Sdk;
     consensus?: Consensus;
-    cosmwasmVersion?: string;
-    cosmwasmEnabled?: boolean;
-    cosmwasmPath?: string;
     cosmwasm?: Cosmwasm;
     ibc?: Ibc;
     genesis?: {
@@ -136,38 +110,33 @@ export interface Chain {
       tag?: string;
       height?: number;
       proposal?: number;
+      language?: Language;
+      sdk?: Sdk;
+      consensus?: Consensus;
+      cosmwasm?: Cosmwasm;
+      ibc?: Ibc;
+      binaries?: Binaries;
       previousVersionName?: string;
       nextVersionName?: string;
       recommendedVersion?: string;
       compatibleVersions?: string[];
-      language?: Language;
-      cosmosSdkVersion?: string;
-      sdk?: Sdk;
-      consensus?: Consensus;
-      cosmwasmVersion?: string;
-      cosmwasmEnabled?: boolean;
-      cosmwasmPath?: string;
-      cosmwasm?: Cosmwasm;
-      ibc?: Ibc;
-      binaries?: Binaries;
     }[];
+    gitRepo?: string;
+    recommendedVersion?: string;
+    compatibleVersions?: string[];
   };
   images?: {
-    imageSync?: Pointer;
     png?: string;
     svg?: string;
     theme?: {
+      circle?: boolean;
+      monochrome?: boolean;
       primaryColorHex?: string;
       backgroundColorHex?: string;
-      circle?: boolean;
       darkMode?: boolean;
-      monochrome?: boolean;
     };
+    imageSync?: Pointer;
   }[];
-  logoURIs?: {
-    png?: string;
-    svg?: string;
-  };
   description?: string;
   peers?: {
     seeds?: Peer[];
@@ -183,5 +152,28 @@ export interface Chain {
   };
   explorers?: Explorer[];
   keywords?: string[];
+  chainName: string;
+  chainType: "cosmos" | "eip155" | "bip122" | "polkadot" | "solana" | "algorand" | "arweave" | "ergo" | "fil" | "hedera" | "monero" | "reef" | "stacks" | "starknet" | "stellar" | "tezos" | "vechain" | "waves" | "xrpl" | "unknown";
+  chainId?: string;
+  preForkChainName?: string;
+  prettyName?: string;
+  networkType?: "mainnet" | "testnet" | "devnet";
+  bech32Prefix?: string;
+  bech32Config?: {
+    bech32PrefixAccAddr?: string;
+    bech32PrefixAccPub?: string;
+    bech32PrefixValAddr?: string;
+    bech32PrefixValPub?: string;
+    bech32PrefixConsAddr?: string;
+    bech32PrefixConsPub?: string;
+  };
+  daemonName?: string;
+  nodeHome?: string;
+  keyAlgos?: ("secp256k1" | "ethsecp256k1" | "ed25519" | "sr25519" | "bn254")[];
+  alternativeSlip44s?: number[];
+  logoURIs?: {
+    png?: string;
+    svg?: string;
+  };
   extraCodecs?: ("ethermint" | "injective")[];
 }
