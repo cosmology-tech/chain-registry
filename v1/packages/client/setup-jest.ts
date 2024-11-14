@@ -1,8 +1,8 @@
 import nock from 'nock';
 
-import { assetLists, chains, ibc } from './test-utils';
+import { assets, chains, ibc } from './test-utils';
 
-const baseUrl = 'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/full';
+const baseUrl = 'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/original';
 
 beforeAll(() => {
   // 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/chain.json',
@@ -13,35 +13,35 @@ beforeAll(() => {
   // 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_IBC/osmosis-secretnetwork.json'
   nock(baseUrl)
     .get('/osmosis/chain.json')
-    .reply(200, chains.find(c => c.chainName === 'osmosis'));
+    .reply(200, chains.find(c => c.chain_name === 'osmosis'));
   nock(baseUrl)
     .get('/osmosis/assetlist.json')
-    .reply(200, assetLists.find(c => c.chainName === 'osmosis'));
+    .reply(200, assets.find(c => c.chain_name === 'osmosis'));
 
   nock(baseUrl)
     .get('/stargaze/chain.json')
-    .reply(200, chains.find(c => c.chainName === 'stargaze'));
+    .reply(200, chains.find(c => c.chain_name === 'stargaze'));
   nock(baseUrl)
     .get('/stargaze/assetlist.json')
-    .reply(200, assetLists.find(c => c.chainName === 'stargaze'));
+    .reply(200, assets.find(c => c.chain_name === 'stargaze'));
 
   nock(baseUrl)
     .get('/juno/chain.json')
-    .reply(200, chains.find(c => c.chainName === 'juno'));
+    .reply(200, chains.find(c => c.chain_name === 'juno'));
   nock(baseUrl)
     .get('/juno/assetlist.json')
-    .reply(200, assetLists.find(c => c.chainName === 'juno'));
+    .reply(200, assets.find(c => c.chain_name === 'juno'));
   
   nock(baseUrl)
     .get('/secretnetwork/assetlist.json')
-    .reply(200, assetLists.find(c => c.chainName === 'secretnetwork'));
+    .reply(200, assets.find(c => c.chain_name === 'secretnetwork'));
     
   nock(baseUrl)
     .get('/_IBC/juno-osmosis.json')
-    .reply(200, ibc.find(i => i.chain1.chainName === 'juno' && i.chain2.chainName==='osmosis'));
+    .reply(200, ibc.find(i => i.chain_1.chain_name === 'juno' && i.chain_2.chain_name==='osmosis'));
   nock(baseUrl)
     .get('/_IBC/osmosis-secretnetwork.json')
-    .reply(200, ibc.find(i => i.chain1.chainName === 'osmosis' && i.chain2.chainName==='secretnetwork'));
+    .reply(200, ibc.find(i => i.chain_1.chain_name === 'osmosis' && i.chain_2.chain_name==='secretnetwork'));
 });
 
 

@@ -3,7 +3,8 @@ import nock from 'nock';
 import { ChainRegistryClient } from '../src/registry';
 import { assets, chains } from '../test-utils';
 
-const baseUrl = 'https://raw.githubusercontent.com';
+const baseUrl = 'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/original';
+
 
 function nockByChainName(chainName: string) {
   const chainDataPath = `/cosmos/chain-registry/master/${chainName}/chain.json`;

@@ -12,7 +12,7 @@ export interface ChainRegistryClientOptions
 export class ChainRegistryClient extends ChainRegistryFetcher {
   protected _options: ChainRegistryClientOptions = {
     chainNames: [],
-    baseUrl: 'https://raw.githubusercontent.com/cosmos/chain-registry/master'
+    baseUrl: 'https://raw.githubusercontent.com/chain-registry/chain-registry/main/registries/original'
   };
 
   constructor(options: ChainRegistryClientOptions) {
