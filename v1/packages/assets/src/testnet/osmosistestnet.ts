@@ -321,47 +321,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of EntryPoint',
-      denom_units: [{
-          denom: 'ibc/8B620DE1585B38FEDEA05944B2E471D19F7208203A3E68DC2736D9B3769549FE',
-          exponent: 0,
-          aliases: ['uentry']
-        }, {
-          denom: 'entry',
-          exponent: 6,
-          aliases: []
-        }],
-      base: 'ibc/8B620DE1585B38FEDEA05944B2E471D19F7208203A3E68DC2736D9B3769549FE',
-      name: 'EntryPoint',
-      display: 'entry',
-      symbol: 'ENTRY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.svg'
-      },
-      keywords: [
-        'staking',
-        'governance',
-        'vaults'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uentry',
-            chain_name: 'entrypointtestnet'
-          },
-          chain: {
-            channel_id: 'channel-1543'
-          }
-        }]
-    },
-    {
       description: 'The INJ token is the native governance token for the Injective chain.',
       denom_units: [{
           denom: 'ibc/C53E4BB8F7975D31DC9C8BA6A6EC2EA6F1F2A77C39D4E158459BB379D14CC9B0',
@@ -1011,47 +970,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-155'
-          }
-        }]
-    },
-    {
-      description: 'The native token of EntryPoint',
-      denom_units: [{
-          denom: 'ibc/8B620DE1585B38FEDEA05944B2E471D19F7208203A3E68DC2736D9B3769549FE',
-          exponent: 0,
-          aliases: ['uentry']
-        }, {
-          denom: 'entry',
-          exponent: 6,
-          aliases: []
-        }],
-      base: 'ibc/8B620DE1585B38FEDEA05944B2E471D19F7208203A3E68DC2736D9B3769549FE',
-      name: 'EntryPoint',
-      display: 'entry',
-      symbol: 'ENTRY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.svg'
-      },
-      keywords: [
-        'staking',
-        'governance',
-        'vaults'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/entrypointtestnet/images/entry.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uentry',
-            chain_name: 'entrypointtestnet'
-          },
-          chain: {
-            channel_id: 'channel-1543'
           }
         }]
     },

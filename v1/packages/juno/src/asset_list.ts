@@ -577,42 +577,6 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: 'Native token of Dig Chain',
-      denom_units: [{
-          denom: 'ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A',
-          exponent: 0,
-          aliases: ['udig']
-        }, {
-          denom: 'dig',
-          exponent: 6
-        }],
-      base: 'ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A',
-      name: 'Dig Chain',
-      display: 'dig',
-      symbol: 'DIG',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
-          theme: {
-            primary_color_hex: '#1b1433'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'udig',
-            chain_name: 'dig'
-          },
-          chain: {
-            channel_id: 'channel-37'
-          }
-        }]
-    },
-    {
       description: 'e-Money NGM staking token. In addition to earning staking rewards the token is bought back and burned based on e-Money stablecoin inflation.',
       denom_units: [{
           denom: 'ibc/52423136339C1CE8C91F6A586DFE41591BDDD4665AE526DFFA8421F9ACF95196',
@@ -1456,42 +1420,6 @@ const asset_list: AssetList = {
           },
           chain: {
             channel_id: 'channel-81'
-          }
-        }]
-    },
-    {
-      description: 'Native token of Dig Chain',
-      denom_units: [{
-          denom: 'ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A',
-          exponent: 0,
-          aliases: ['udig']
-        }, {
-          denom: 'dig',
-          exponent: 6
-        }],
-      base: 'ibc/6842C591DC4588411A565C9FF650FB15A17DFE3F0A43201E8141E4D14B8D171A',
-      name: 'Dig Chain',
-      display: 'dig',
-      symbol: 'DIG',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
-          theme: {
-            primary_color_hex: '#1b1433'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'udig',
-            chain_name: 'dig'
-          },
-          chain: {
-            channel_id: 'channel-37'
           }
         }]
     },

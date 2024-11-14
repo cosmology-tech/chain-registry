@@ -7,7 +7,7 @@ const info: Chain = {
   website: 'https://medas-digital.io/',
   pretty_name: 'Medas Digital Network',
   chain_type: 'cosmos',
-  chain_id: 'medasdigital-1',
+  chain_id: 'medasdigital-2',
   bech32_prefix: 'medas',
   daemon_name: 'medasdigitald',
   node_home: '$HOME/.medasdigital',

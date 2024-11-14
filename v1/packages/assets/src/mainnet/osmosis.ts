@@ -3,44 +3,6 @@ const assets: AssetList = {
   chain_name: 'osmosis',
   assets: [
     {
-      description: 'The native staking token of 8ball.',
-      denom_units: [{
-          denom: 'ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F',
-          exponent: 0,
-          aliases: ['uebl']
-        }, {
-          denom: 'ebl',
-          exponent: 6
-        }],
-      base: 'ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F',
-      name: '8ball',
-      display: 'ebl',
-      symbol: 'EBL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg',
-          theme: {
-            primary_color_hex: '#dbdbdb'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-16',
-            base_denom: 'uebl',
-            chain_name: '8ball'
-          },
-          chain: {
-            channel_id: 'channel-641'
-          }
-        }]
-    },
-    {
       description: 'The native EVM, governance and staking token of the Acrechain',
       denom_units: [{
           denom: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
@@ -1346,45 +1308,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Cerberus Chain',
-      denom_units: [{
-          denom: 'ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7',
-          exponent: 0,
-          aliases: ['ucrbrus']
-        }, {
-          denom: 'crbrus',
-          exponent: 6
-        }],
-      base: 'ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7',
-      name: 'Cerberus',
-      display: 'crbrus',
-      symbol: 'CRBRUS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg'
-      },
-      coingecko_id: 'cerberus-2',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg',
-          theme: {
-            primary_color_hex: '#c6c6c9'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'ucrbrus',
-            chain_name: 'cerberus'
-          },
-          chain: {
-            channel_id: 'channel-212'
-          }
-        }]
-    },
-    {
       description: 'The native token of Chain4Energy',
       denom_units: [{
           denom: 'ibc/62118FB4D5FEDD5D2B18DC93648A745CD5E5B01D420E9B7A5FED5381CB13A7E8',
@@ -1919,49 +1842,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of the Cudos blockchain',
-      denom_units: [{
-          denom: 'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
-          exponent: 0,
-          aliases: ['acudos']
-        }, {
-          denom: 'cudos',
-          exponent: 18
-        }],
-      base: 'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
-      name: 'Cudos',
-      display: 'cudos',
-      symbol: 'CUDOS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
-      },
-      coingecko_id: 'cudos',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg',
-          theme: {
-            primary_color_hex: '#5d95ec'
-          }
-        }],
-      socials: {
-        website: 'http://www.cudos.org',
-        twitter: 'https://twitter.com/CUDOS_'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'acudos',
-            chain_name: 'cudos'
-          },
-          chain: {
-            channel_id: 'channel-298'
-          }
-        }]
-    },
-    {
       description: 'The native token of Decentr',
       denom_units: [{
           denom: 'ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84',
@@ -2079,42 +1959,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-75030'
-          }
-        }]
-    },
-    {
-      description: 'Native token of Dig Chain',
-      denom_units: [{
-          denom: 'ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D',
-          exponent: 0,
-          aliases: ['udig']
-        }, {
-          denom: 'dig',
-          exponent: 6
-        }],
-      base: 'ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D',
-      name: 'Dig Chain',
-      display: 'dig',
-      symbol: 'DIG',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
-          theme: {
-            primary_color_hex: '#1b1433'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'udig',
-            chain_name: 'dig'
-          },
-          chain: {
-            channel_id: 'channel-128'
           }
         }]
     },
@@ -4444,44 +4288,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of LumenX Network',
-      denom_units: [{
-          denom: 'ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7',
-          exponent: 0,
-          aliases: ['ulumen']
-        }, {
-          denom: 'lumen',
-          exponent: 6
-        }],
-      base: 'ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7',
-      name: 'LUMEN',
-      display: 'lumen',
-      symbol: 'LUMEN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg',
-          theme: {
-            primary_color_hex: '#cb8b40'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'ulumen',
-            chain_name: 'lumenx'
-          },
-          chain: {
-            channel_id: 'channel-286'
-          }
-        }]
-    },
-    {
       description: 'Native token of the Lum Network',
       denom_units: [{
           denom: 'ibc/8A34AF0C1943FD0DFCDE9ADBF0B2C9959C45E87E6088EA2FC6ADACD59261B8A2',
@@ -4660,44 +4466,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-238'
-          }
-        }]
-    },
-    {
-      description: 'TICK coin is the token for the Microtick Price Discovery & Oracle App',
-      denom_units: [{
-          denom: 'ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8',
-          exponent: 0,
-          aliases: ['utick']
-        }, {
-          denom: 'tick',
-          exponent: 6
-        }],
-      base: 'ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8',
-      display: 'tick',
-      name: 'Microtick',
-      symbol: 'TICK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg',
-          theme: {
-            primary_color_hex: '#6bab14'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-16',
-            base_denom: 'utick',
-            chain_name: 'microtick'
-          },
-          chain: {
-            channel_id: 'channel-39'
           }
         }]
     },
@@ -5777,44 +5545,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking token of 8ball.',
-      denom_units: [{
-          denom: 'ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F',
-          exponent: 0,
-          aliases: ['uebl']
-        }, {
-          denom: 'ebl',
-          exponent: 6
-        }],
-      base: 'ibc/8BE73A810E22F80E5E850531A688600D63AE7392E7C2770AE758CAA4FD921B7F',
-      name: '8ball',
-      display: 'ebl',
-      symbol: 'EBL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.svg',
-          theme: {
-            primary_color_hex: '#dbdbdb'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-16',
-            base_denom: 'uebl',
-            chain_name: '8ball'
-          },
-          chain: {
-            channel_id: 'channel-641'
-          }
-        }]
-    },
-    {
       description: 'The native EVM, governance and staking token of the Acrechain',
       denom_units: [{
           denom: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
@@ -7120,45 +6850,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Cerberus Chain',
-      denom_units: [{
-          denom: 'ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7',
-          exponent: 0,
-          aliases: ['ucrbrus']
-        }, {
-          denom: 'crbrus',
-          exponent: 6
-        }],
-      base: 'ibc/41999DF04D9441DAC0DF5D8291DF4333FBCBA810FFD63FDCE34FDF41EF37B6F7',
-      name: 'Cerberus',
-      display: 'crbrus',
-      symbol: 'CRBRUS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg'
-      },
-      coingecko_id: 'cerberus-2',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cerberus/images/crbrus.svg',
-          theme: {
-            primary_color_hex: '#c6c6c9'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'ucrbrus',
-            chain_name: 'cerberus'
-          },
-          chain: {
-            channel_id: 'channel-212'
-          }
-        }]
-    },
-    {
       description: 'The native token of Chain4Energy',
       denom_units: [{
           denom: 'ibc/62118FB4D5FEDD5D2B18DC93648A745CD5E5B01D420E9B7A5FED5381CB13A7E8',
@@ -7693,49 +7384,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of the Cudos blockchain',
-      denom_units: [{
-          denom: 'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
-          exponent: 0,
-          aliases: ['acudos']
-        }, {
-          denom: 'cudos',
-          exponent: 18
-        }],
-      base: 'ibc/E09ED39F390EC51FA9F3F69BEA08B5BBE6A48B3057B2B1C3467FAAE9E58B021B',
-      name: 'Cudos',
-      display: 'cudos',
-      symbol: 'CUDOS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg'
-      },
-      coingecko_id: 'cudos',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.svg',
-          theme: {
-            primary_color_hex: '#5d95ec'
-          }
-        }],
-      socials: {
-        website: 'http://www.cudos.org',
-        twitter: 'https://twitter.com/CUDOS_'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'acudos',
-            chain_name: 'cudos'
-          },
-          chain: {
-            channel_id: 'channel-298'
-          }
-        }]
-    },
-    {
       description: 'The native token of Decentr',
       denom_units: [{
           denom: 'ibc/9BCB27203424535B6230D594553F1659C77EC173E36D9CF4759E7186EE747E84',
@@ -7853,42 +7501,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-75030'
-          }
-        }]
-    },
-    {
-      description: 'Native token of Dig Chain',
-      denom_units: [{
-          denom: 'ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D',
-          exponent: 0,
-          aliases: ['udig']
-        }, {
-          denom: 'dig',
-          exponent: 6
-        }],
-      base: 'ibc/307E5C96C8F60D1CBEE269A9A86C0834E1DB06F2B3788AE4F716EDB97A48B97D',
-      name: 'Dig Chain',
-      display: 'dig',
-      symbol: 'DIG',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png',
-          theme: {
-            primary_color_hex: '#1b1433'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'udig',
-            chain_name: 'dig'
-          },
-          chain: {
-            channel_id: 'channel-128'
           }
         }]
     },
@@ -10218,44 +9830,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of LumenX Network',
-      denom_units: [{
-          denom: 'ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7',
-          exponent: 0,
-          aliases: ['ulumen']
-        }, {
-          denom: 'lumen',
-          exponent: 6
-        }],
-      base: 'ibc/FFA652599C77E853F017193E36B5AB2D4D9AFC4B54721A74904F80C9236BF3B7',
-      name: 'LUMEN',
-      display: 'lumen',
-      symbol: 'LUMEN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumenx/images/lumen.svg',
-          theme: {
-            primary_color_hex: '#cb8b40'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'ulumen',
-            chain_name: 'lumenx'
-          },
-          chain: {
-            channel_id: 'channel-286'
-          }
-        }]
-    },
-    {
       description: 'Native token of the Lum Network',
       denom_units: [{
           denom: 'ibc/8A34AF0C1943FD0DFCDE9ADBF0B2C9959C45E87E6088EA2FC6ADACD59261B8A2',
@@ -10434,44 +10008,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-238'
-          }
-        }]
-    },
-    {
-      description: 'TICK coin is the token for the Microtick Price Discovery & Oracle App',
-      denom_units: [{
-          denom: 'ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8',
-          exponent: 0,
-          aliases: ['utick']
-        }, {
-          denom: 'tick',
-          exponent: 6
-        }],
-      base: 'ibc/655BCEF3CDEBE32863FF281DBBE3B06160339E9897DC9C9C9821932A5F8BA6F8',
-      display: 'tick',
-      name: 'Microtick',
-      symbol: 'TICK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/microtick/images/tick.svg',
-          theme: {
-            primary_color_hex: '#6bab14'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-16',
-            base_denom: 'utick',
-            chain_name: 'microtick'
-          },
-          chain: {
-            channel_id: 'channel-39'
           }
         }]
     },
