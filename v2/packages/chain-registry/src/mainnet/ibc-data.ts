@@ -2,7 +2,6 @@ import { IBCData } from '@chain-registry/v2-types';
 
 import * as _ethereum from './ethereum';
 import * as _solana from './solana';
-import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
@@ -23,7 +22,6 @@ import * as _bostrom from './bostrom';
 import * as _canto from './canto';
 import * as _carbon from './carbon';
 import * as _celestia from './celestia';
-import * as _cerberus from './cerberus';
 import * as _chain4energy from './chain4energy';
 import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
@@ -36,11 +34,9 @@ import * as _cosmoshub from './cosmoshub';
 import * as _crescent from './crescent';
 import * as _cronos from './cronos';
 import * as _cryptoorgchain from './cryptoorgchain';
-import * as _cudos from './cudos';
 import * as _decentr from './decentr';
 import * as _desmos from './desmos';
 import * as _dhealth from './dhealth';
-import * as _dig from './dig';
 import * as _doravota from './doravota';
 import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
@@ -79,14 +75,12 @@ import * as _lambda from './lambda';
 import * as _lava from './lava';
 import * as _likecoin from './likecoin';
 import * as _lorenzo from './lorenzo';
-import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
 import * as _mantrachain from './mantrachain';
 import * as _mars from './mars';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
-import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
@@ -149,13 +143,11 @@ import * as _titan from './titan';
 import * as _umee from './umee';
 import * as _unification from './unification';
 import * as _uptick from './uptick';
-import * as _vidulum from './vidulum';
 import * as _xpla from './xpla';
 
 const ibcData: IBCData[] = [
   ..._ethereum.ibcData,
   ..._solana.ibcData,
-  ..._8ball.ibcData,
   ..._acrechain.ibcData,
   ..._agoric.ibcData,
   ..._aioz.ibcData,
@@ -176,7 +168,6 @@ const ibcData: IBCData[] = [
   ..._canto.ibcData,
   ..._carbon.ibcData,
   ..._celestia.ibcData,
-  ..._cerberus.ibcData,
   ..._chain4energy.ibcData,
   ..._cheqd.ibcData,
   ..._chihuahua.ibcData,
@@ -189,11 +180,9 @@ const ibcData: IBCData[] = [
   ..._crescent.ibcData,
   ..._cronos.ibcData,
   ..._cryptoorgchain.ibcData,
-  ..._cudos.ibcData,
   ..._decentr.ibcData,
   ..._desmos.ibcData,
   ..._dhealth.ibcData,
-  ..._dig.ibcData,
   ..._doravota.ibcData,
   ..._dungeon.ibcData,
   ..._dydx.ibcData,
@@ -232,14 +221,12 @@ const ibcData: IBCData[] = [
   ..._lava.ibcData,
   ..._likecoin.ibcData,
   ..._lorenzo.ibcData,
-  ..._lumenx.ibcData,
   ..._lumnetwork.ibcData,
   ..._mande.ibcData,
   ..._mantrachain.ibcData,
   ..._mars.ibcData,
   ..._medasdigital.ibcData,
   ..._meme.ibcData,
-  ..._microtick.ibcData,
   ..._migaloo.ibcData,
   ..._neutaro.ibcData,
   ..._neutron.ibcData,
@@ -302,7 +289,6 @@ const ibcData: IBCData[] = [
   ..._umee.ibcData,
   ..._unification.ibcData,
   ..._uptick.ibcData,
-  ..._vidulum.ibcData,
   ..._xpla.ibcData
 ];
 

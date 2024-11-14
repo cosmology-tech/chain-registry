@@ -5,21 +5,17 @@ import * as _rootstock from './rootstock';
 import * as _solana from './solana';
 import * as _ton from './ton';
 import * as _tron from './tron';
-import * as _8ball from './8ball';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
-import * as _akiro from './akiro';
 import * as _althea from './althea';
 import * as _andromeda from './andromeda';
-import * as _andromeda1 from './andromeda1';
 import * as _archway from './archway';
 import * as _arkh from './arkh';
 import * as _assetmantle from './assetmantle';
 import * as _atomone from './atomone';
 import * as _aura from './aura';
-import * as _aura1 from './aura1';
 import * as _axelar from './axelar';
 import * as _bandchain from './bandchain';
 import * as _beezee from './beezee';
@@ -34,14 +30,11 @@ import * as _bouachain from './bouachain';
 import * as _canto from './canto';
 import * as _carbon from './carbon';
 import * as _celestia from './celestia';
-import * as _cerberus from './cerberus';
 import * as _chain4energy from './chain4energy';
 import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
 import * as _chimba from './chimba';
-import * as _chronicnetwork from './chronicnetwork';
 import * as _cifer from './cifer';
-import * as _cifer1 from './cifer1';
 import * as _cnhostables from './cnhostables';
 import * as _comdex from './comdex';
 import * as _commercionetwork from './commercionetwork';
@@ -53,11 +46,9 @@ import * as _coss from './coss';
 import * as _crescent from './crescent';
 import * as _cronos from './cronos';
 import * as _cryptoorgchain from './cryptoorgchain';
-import * as _cudos from './cudos';
 import * as _decentr from './decentr';
 import * as _desmos from './desmos';
 import * as _dhealth from './dhealth';
-import * as _dig from './dig';
 import * as _doravota from './doravota';
 import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
@@ -106,7 +97,6 @@ import * as _logos from './logos';
 import * as _loop from './loop';
 import * as _lorenzo from './lorenzo';
 import * as _loyal from './loyal';
-import * as _lumenx from './lumenx';
 import * as _lumnetwork from './lumnetwork';
 import * as _mande from './mande';
 import * as _mantrachain from './mantrachain';
@@ -114,7 +104,6 @@ import * as _mars from './mars';
 import * as _mayachain from './mayachain';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
-import * as _microtick from './microtick';
 import * as _migaloo from './migaloo';
 import * as _mises from './mises';
 import * as _mtgbp from './mtgbp';
@@ -132,7 +121,6 @@ import * as _nomic from './nomic';
 import * as _nyx from './nyx';
 import * as _octa from './octa';
 import * as _odin from './odin';
-import * as _odin1 from './odin1';
 import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
 import * as _onex from './onex';
@@ -142,7 +130,6 @@ import * as _osmosis from './osmosis';
 import * as _paloma from './paloma';
 import * as _panacea from './panacea';
 import * as _passage from './passage';
-import * as _passage1 from './passage1';
 import * as _persistence from './persistence';
 import * as _planq from './planq';
 import * as _point from './point';
@@ -195,7 +182,6 @@ import * as _unicorn from './unicorn';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
-import * as _vidulum from './vidulum';
 import * as _xpla from './xpla';
 import * as _zetachain from './zetachain';
 
@@ -205,21 +191,17 @@ const assetList: AssetList[] = [
   _solana.assetList,
   _ton.assetList,
   _tron.assetList,
-  _8ball.assetList,
   _acrechain.assetList,
   _agoric.assetList,
   _aioz.assetList,
   _akash.assetList,
-  _akiro.assetList,
   _althea.assetList,
   _andromeda.assetList,
-  _andromeda1.assetList,
   _archway.assetList,
   _arkh.assetList,
   _assetmantle.assetList,
   _atomone.assetList,
   _aura.assetList,
-  _aura1.assetList,
   _axelar.assetList,
   _bandchain.assetList,
   _beezee.assetList,
@@ -234,14 +216,11 @@ const assetList: AssetList[] = [
   _canto.assetList,
   _carbon.assetList,
   _celestia.assetList,
-  _cerberus.assetList,
   _chain4energy.assetList,
   _cheqd.assetList,
   _chihuahua.assetList,
   _chimba.assetList,
-  _chronicnetwork.assetList,
   _cifer.assetList,
-  _cifer1.assetList,
   _cnhostables.assetList,
   _comdex.assetList,
   _commercionetwork.assetList,
@@ -253,11 +232,9 @@ const assetList: AssetList[] = [
   _crescent.assetList,
   _cronos.assetList,
   _cryptoorgchain.assetList,
-  _cudos.assetList,
   _decentr.assetList,
   _desmos.assetList,
   _dhealth.assetList,
-  _dig.assetList,
   _doravota.assetList,
   _dungeon.assetList,
   _dydx.assetList,
@@ -306,7 +283,6 @@ const assetList: AssetList[] = [
   _loop.assetList,
   _lorenzo.assetList,
   _loyal.assetList,
-  _lumenx.assetList,
   _lumnetwork.assetList,
   _mande.assetList,
   _mantrachain.assetList,
@@ -314,7 +290,6 @@ const assetList: AssetList[] = [
   _mayachain.assetList,
   _medasdigital.assetList,
   _meme.assetList,
-  _microtick.assetList,
   _migaloo.assetList,
   _mises.assetList,
   _mtgbp.assetList,
@@ -332,7 +307,6 @@ const assetList: AssetList[] = [
   _nyx.assetList,
   _octa.assetList,
   _odin.assetList,
-  _odin1.assetList,
   _okexchain.assetList,
   _omniflixhub.assetList,
   _onex.assetList,
@@ -342,7 +316,6 @@ const assetList: AssetList[] = [
   _paloma.assetList,
   _panacea.assetList,
   _passage.assetList,
-  _passage1.assetList,
   _persistence.assetList,
   _planq.assetList,
   _point.assetList,
@@ -395,7 +368,6 @@ const assetList: AssetList[] = [
   _unification.assetList,
   _ununifi.assetList,
   _uptick.assetList,
-  _vidulum.assetList,
   _xpla.assetList,
   _zetachain.assetList
 ];
