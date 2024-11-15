@@ -192,6 +192,36 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'dungeon',
+      clientId: '07-tendermint-8',
+      connectionId: 'connection-10'
+    },
+    chain2: {
+      chainName: 'neutron',
+      clientId: '07-tendermint-146',
+      connectionId: 'connection-106'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-4',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-5481',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'dydx',
       clientId: '07-tendermint-11',
       connectionId: 'connection-17'

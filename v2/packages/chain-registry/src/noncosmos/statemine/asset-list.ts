@@ -15,7 +15,15 @@ const info: AssetList = {
       name: 'Statemine',
       display: 'usdt',
       symbol: 'USDT',
-      coingeckoId: 'tether'
+      coingeckoId: 'tether',
+      traces: [{
+          type: 'additional-mintage',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+          },
+          provider: 'Tether'
+        }]
     }]
 };
 export default info;

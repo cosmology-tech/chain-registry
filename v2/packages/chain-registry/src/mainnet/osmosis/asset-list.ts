@@ -21358,50 +21358,6 @@ const info: AssetList = {
       keywords: ['osmosis_unlisted']
     },
     {
-      description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
-      denomUnits: [{
-          denom: 'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
-          exponent: 0,
-          aliases: ['shido']
-        }, {
-          denom: 'SHIDO',
-          exponent: 18
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/BBE825F7D1673E1EBF05AB02000E23E6077967B79547A3733B60AE4ED62C4D32',
-      name: 'Shido',
-      display: 'SHIDO',
-      symbol: 'SHIDO',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'shido',
-            baseDenom: 'shido',
-            channelId: 'channel-0'
-          },
-          chain: {
-            channelId: 'channel-38921',
-            path: 'transfer/channel-38921/shido'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg'
-      },
-      images: [{
-          imageSync: {
-            chainName: 'shido',
-            baseDenom: 'shido'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.svg',
-          theme: {
-            primaryColorHex: '#046ffc'
-          }
-        }],
-      keywords: ['osmosis_unlisted']
-    },
-    {
       denomUnits: [{
           denom: 'ibc/0B3C3D06228578334B66B57FBFBA4033216CEB8119B27ACDEE18D92DA5B28D43',
           exponent: 0,

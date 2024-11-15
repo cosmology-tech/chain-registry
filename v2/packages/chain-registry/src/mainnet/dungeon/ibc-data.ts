@@ -1,9 +1,10 @@
 import { IBCData } from '@chain-registry/v2-types';
-const info: IBCData[] = [{
+const info: IBCData[] = [
+  {
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'cosmoshub',
-      clientId: '07-tendermint-4',
+      clientId: '07-tendermint-1325',
       connectionId: 'connection-1057'
     },
     chain2: {
@@ -28,7 +29,38 @@ const info: IBCData[] = [{
           dex: 'osmosis'
         }
       }]
-  }, {
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'dungeon',
+      clientId: '07-tendermint-8',
+      connectionId: 'connection-10'
+    },
+    chain2: {
+      chainName: 'neutron',
+      clientId: '07-tendermint-146',
+      connectionId: 'connection-106'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-4',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-5481',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  },
+  {
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'dungeon',
@@ -37,7 +69,7 @@ const info: IBCData[] = [{
     },
     chain2: {
       chainName: 'osmosis',
-      clientId: '07-tendermint-3',
+      clientId: '07-tendermint-3325',
       connectionId: 'connection-2798'
     },
     channels: [{
@@ -57,5 +89,36 @@ const info: IBCData[] = [{
           dex: 'osmosis'
         }
       }]
-  }];
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'dungeon',
+      clientId: '07-tendermint-9',
+      connectionId: 'connection-11'
+    },
+    chain2: {
+      chainName: 'stride',
+      clientId: '07-tendermint-148',
+      connectionId: 'connection-149'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-5',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-287',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  }
+];
 export default info;

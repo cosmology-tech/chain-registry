@@ -17,9 +17,9 @@ const info: Chain = {
     feeTokens: [{
         denom: 'uKIMA',
         fixedMinGasPrice: 0,
-        lowGasPrice: 0.0025,
+        lowGasPrice: 0.01,
         averageGasPrice: 0.025,
-        highGasPrice: 0.04
+        highGasPrice: 0.05
       }]
   },
   staking: {

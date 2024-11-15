@@ -1216,7 +1216,7 @@ const info: IBCData[] = [
     },
     chain2: {
       chainName: 'osmosis',
-      clientId: '07-tendermint-3',
+      clientId: '07-tendermint-3325',
       connectionId: 'connection-2798'
     },
     channels: [{
@@ -2079,21 +2079,21 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'kimanetwork',
-      clientId: '07-tendermint-1',
-      connectionId: 'connection-0'
+      clientId: '07-tendermint-27',
+      connectionId: 'connection-17'
     },
     chain2: {
       chainName: 'osmosis',
-      clientId: '07-tendermint-3275',
-      connectionId: 'channel-83350'
+      clientId: '07-tendermint-3350',
+      connectionId: 'connection-2810'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-0',
+          channelId: 'channel-4',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-83350',
+          channelId: 'channel-86496',
           portId: 'transfer'
         },
         ordering: 'unordered',
