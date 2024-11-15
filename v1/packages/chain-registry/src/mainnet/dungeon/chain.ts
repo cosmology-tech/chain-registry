@@ -50,6 +50,11 @@ const info: Chain = {
     ]
   },
   explorers: [{
+      kind: 'Ping.Pub',
+      url: 'https://ping.pub/Dungeonchain',
+      tx_page: 'https://ping.pub/Dungeonchain/tx/${txHash}',
+      account_page: 'https://ping.pub/Dungeonchain/account/${accountAddress}'
+    }, {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/dungeon',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/dungeon/tx/${txHash}',

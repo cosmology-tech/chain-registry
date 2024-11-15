@@ -255,6 +255,42 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Dungeon native token',
+      denom_units: [{
+          denom: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
+          exponent: 0,
+          aliases: ['udgn']
+        }, {
+          denom: 'DGN',
+          exponent: 6
+        }],
+      base: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
+      name: 'Dungeon Coin',
+      display: 'DGN',
+      symbol: 'DGN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png',
+          theme: {
+            circle: true
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'udgn',
+            chain_name: 'dungeon'
+          },
+          chain: {
+            channel_id: 'channel-5481'
+          }
+        }]
+    },
+    {
       description: 'DYDX is a decentralized trading platform focused on derivatives and perpetual contracts, offering a secure and efficient trading experience without intermediaries.',
       denom_units: [{
           denom: 'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130',
@@ -1164,6 +1200,42 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-1'
+          }
+        }]
+    },
+    {
+      description: 'Dungeon native token',
+      denom_units: [{
+          denom: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
+          exponent: 0,
+          aliases: ['udgn']
+        }, {
+          denom: 'DGN',
+          exponent: 6
+        }],
+      base: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
+      name: 'Dungeon Coin',
+      display: 'DGN',
+      symbol: 'DGN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png',
+          theme: {
+            circle: true
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'udgn',
+            chain_name: 'dungeon'
+          },
+          chain: {
+            channel_id: 'channel-5481'
           }
         }]
     },

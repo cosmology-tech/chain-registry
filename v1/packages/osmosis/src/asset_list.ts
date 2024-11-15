@@ -3952,14 +3952,14 @@ const asset_list: AssetList = {
     {
       description: 'Kima is an asset-agnostic interoperability infrastructure that connects blockchain networks and legacy financial systems, enabling secure, scalable cross-chain transactions and seamless communication across ecosystems.',
       denom_units: [{
-          denom: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+          denom: 'ibc/629B5691DE993DCD07AA1B0587AD52A7FA4E8F28B77DE15BCBDF936CA6F76E6C',
           exponent: 0,
           aliases: ['uKIMA']
         }, {
           denom: 'KIMA',
           exponent: 6
         }],
-      base: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+      base: 'ibc/629B5691DE993DCD07AA1B0587AD52A7FA4E8F28B77DE15BCBDF936CA6F76E6C',
       name: 'KIMA',
       display: 'KIMA',
       symbol: 'KIMA',
@@ -3982,12 +3982,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-4',
             base_denom: 'uKIMA',
             chain_name: 'kimanetwork'
           },
           chain: {
-            channel_id: 'channel-83350'
+            channel_id: 'channel-86496'
           }
         }]
     },
@@ -9494,14 +9494,14 @@ const asset_list: AssetList = {
     {
       description: 'Kima is an asset-agnostic interoperability infrastructure that connects blockchain networks and legacy financial systems, enabling secure, scalable cross-chain transactions and seamless communication across ecosystems.',
       denom_units: [{
-          denom: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+          denom: 'ibc/629B5691DE993DCD07AA1B0587AD52A7FA4E8F28B77DE15BCBDF936CA6F76E6C',
           exponent: 0,
           aliases: ['uKIMA']
         }, {
           denom: 'KIMA',
           exponent: 6
         }],
-      base: 'ibc/A6712952E566B8A9F29D0A533F043C3CE3CF9870B01A2180E390133119C14A71',
+      base: 'ibc/629B5691DE993DCD07AA1B0587AD52A7FA4E8F28B77DE15BCBDF936CA6F76E6C',
       name: 'KIMA',
       display: 'KIMA',
       symbol: 'KIMA',
@@ -9524,12 +9524,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-4',
             base_denom: 'uKIMA',
             chain_name: 'kimanetwork'
           },
           chain: {
-            channel_id: 'channel-83350'
+            channel_id: 'channel-86496'
           }
         }]
     },

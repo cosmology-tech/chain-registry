@@ -1,9 +1,10 @@
 import { IBCInfo } from '@chain-registry/types';
-const info: IBCInfo[] = [{
+const info: IBCInfo[] = [
+  {
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'cosmoshub',
-      client_id: '07-tendermint-4',
+      client_id: '07-tendermint-1325',
       connection_id: 'connection-1057'
     },
     chain_2: {
@@ -28,7 +29,38 @@ const info: IBCInfo[] = [{
           dex: 'osmosis'
         }
       }]
-  }, {
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'dungeon',
+      client_id: '07-tendermint-8',
+      connection_id: 'connection-10'
+    },
+    chain_2: {
+      chain_name: 'neutron',
+      client_id: '07-tendermint-146',
+      connection_id: 'connection-106'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-4',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-5481',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  },
+  {
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'dungeon',
@@ -37,7 +69,7 @@ const info: IBCInfo[] = [{
     },
     chain_2: {
       chain_name: 'osmosis',
-      client_id: '07-tendermint-3',
+      client_id: '07-tendermint-3325',
       connection_id: 'connection-2798'
     },
     channels: [{
@@ -57,5 +89,36 @@ const info: IBCInfo[] = [{
           dex: 'osmosis'
         }
       }]
-  }];
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'dungeon',
+      client_id: '07-tendermint-9',
+      connection_id: 'connection-11'
+    },
+    chain_2: {
+      chain_name: 'stride',
+      client_id: '07-tendermint-148',
+      connection_id: 'connection-149'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-5',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-287',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  }
+];
 export default info;
