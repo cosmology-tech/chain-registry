@@ -340,7 +340,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Symphony',
       denom_units: [{
-          denom: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
+          denom: 'ibc/BAFA58EA4454BCA801DCDDA3321D3CC4842E65770A4AB03D8A159CF8E823468D',
           exponent: 0,
           aliases: ['note']
         }, {
@@ -349,7 +349,7 @@ const assets: AssetList = {
           aliases: ['melody']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
+      base: 'ibc/BAFA58EA4454BCA801DCDDA3321D3CC4842E65770A4AB03D8A159CF8E823468D',
       name: 'Melody',
       display: 'mld',
       symbol: 'MLD',
@@ -362,19 +362,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'note',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },
     {
       description: 'Harmonized USD',
       denom_units: [{
-          denom: 'ibc/0EB857B3B0C4FD709153532380355A87FB85F64598B595BAC937E857BE81765B',
+          denom: 'ibc/2C29606B2AA53F93F24847DC643DC02DB5C16C45BC3F63947D4DAA0BD60DB184',
           exponent: 0,
           aliases: ['uusd']
         }, {
@@ -383,7 +383,7 @@ const assets: AssetList = {
           aliases: ['harmony USD']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0EB857B3B0C4FD709153532380355A87FB85F64598B595BAC937E857BE81765B',
+      base: 'ibc/2C29606B2AA53F93F24847DC643DC02DB5C16C45BC3F63947D4DAA0BD60DB184',
       name: 'Harmony USD',
       display: 'husd',
       symbol: 'HUSD',
@@ -396,19 +396,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'uusd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },
     {
       description: 'Harmonized HKD',
       denom_units: [{
-          denom: 'ibc/51FE8794FCAE14E2BE9BB22C7C6870EA988EF42F708ED5F67A0C63FE179BDEF3',
+          denom: 'ibc/077FB12DA07DDC428B6AC6487E345837CF9201A485C1ECCFFDD475CFB7B42BB5',
           exponent: 0,
           aliases: ['ukhd']
         }, {
@@ -417,7 +417,7 @@ const assets: AssetList = {
           aliases: ['harmony HKD']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/51FE8794FCAE14E2BE9BB22C7C6870EA988EF42F708ED5F67A0C63FE179BDEF3',
+      base: 'ibc/077FB12DA07DDC428B6AC6487E345837CF9201A485C1ECCFFDD475CFB7B42BB5',
       name: 'Harmony HKD',
       display: 'hkhd',
       symbol: 'HKHD',
@@ -430,19 +430,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'ukhd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },
     {
       description: 'Harmonized VND',
       denom_units: [{
-          denom: 'ibc/D43A5B1DC1FA4821DC4A95CE7F42672013682D1B71520B37E4D5F743BAB3D426',
+          denom: 'ibc/AD310E1E8F71D4BD74414E42FFF215CD14E6164F33E2D00EE2E56316D942EFB4',
           exponent: 0,
           aliases: ['uvnd']
         }, {
@@ -451,7 +451,7 @@ const assets: AssetList = {
           aliases: ['harmony VND']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/D43A5B1DC1FA4821DC4A95CE7F42672013682D1B71520B37E4D5F743BAB3D426',
+      base: 'ibc/AD310E1E8F71D4BD74414E42FFF215CD14E6164F33E2D00EE2E56316D942EFB4',
       name: 'Harmony VND',
       display: 'hvnd',
       symbol: 'HVND',
@@ -464,12 +464,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'uvnd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },
@@ -524,7 +524,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Symphony',
       denom_units: [{
-          denom: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
+          denom: 'ibc/BAFA58EA4454BCA801DCDDA3321D3CC4842E65770A4AB03D8A159CF8E823468D',
           exponent: 0,
           aliases: ['note']
         }, {
@@ -533,7 +533,7 @@ const assets: AssetList = {
           aliases: ['melody']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/BC82BC9C0E4C0BB5E27130B22F54497245989B7D4ACE48D02FADD908DE34EE95',
+      base: 'ibc/BAFA58EA4454BCA801DCDDA3321D3CC4842E65770A4AB03D8A159CF8E823468D',
       name: 'Melody',
       display: 'mld',
       symbol: 'MLD',
@@ -546,19 +546,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'note',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },
     {
       description: 'Harmonized USD',
       denom_units: [{
-          denom: 'ibc/0EB857B3B0C4FD709153532380355A87FB85F64598B595BAC937E857BE81765B',
+          denom: 'ibc/2C29606B2AA53F93F24847DC643DC02DB5C16C45BC3F63947D4DAA0BD60DB184',
           exponent: 0,
           aliases: ['uusd']
         }, {
@@ -567,7 +567,7 @@ const assets: AssetList = {
           aliases: ['harmony USD']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/0EB857B3B0C4FD709153532380355A87FB85F64598B595BAC937E857BE81765B',
+      base: 'ibc/2C29606B2AA53F93F24847DC643DC02DB5C16C45BC3F63947D4DAA0BD60DB184',
       name: 'Harmony USD',
       display: 'husd',
       symbol: 'HUSD',
@@ -580,19 +580,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'uusd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },
     {
       description: 'Harmonized HKD',
       denom_units: [{
-          denom: 'ibc/51FE8794FCAE14E2BE9BB22C7C6870EA988EF42F708ED5F67A0C63FE179BDEF3',
+          denom: 'ibc/077FB12DA07DDC428B6AC6487E345837CF9201A485C1ECCFFDD475CFB7B42BB5',
           exponent: 0,
           aliases: ['ukhd']
         }, {
@@ -601,7 +601,7 @@ const assets: AssetList = {
           aliases: ['harmony HKD']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/51FE8794FCAE14E2BE9BB22C7C6870EA988EF42F708ED5F67A0C63FE179BDEF3',
+      base: 'ibc/077FB12DA07DDC428B6AC6487E345837CF9201A485C1ECCFFDD475CFB7B42BB5',
       name: 'Harmony HKD',
       display: 'hkhd',
       symbol: 'HKHD',
@@ -614,19 +614,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'ukhd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },
     {
       description: 'Harmonized VND',
       denom_units: [{
-          denom: 'ibc/D43A5B1DC1FA4821DC4A95CE7F42672013682D1B71520B37E4D5F743BAB3D426',
+          denom: 'ibc/AD310E1E8F71D4BD74414E42FFF215CD14E6164F33E2D00EE2E56316D942EFB4',
           exponent: 0,
           aliases: ['uvnd']
         }, {
@@ -635,7 +635,7 @@ const assets: AssetList = {
           aliases: ['harmony VND']
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/D43A5B1DC1FA4821DC4A95CE7F42672013682D1B71520B37E4D5F743BAB3D426',
+      base: 'ibc/AD310E1E8F71D4BD74414E42FFF215CD14E6164F33E2D00EE2E56316D942EFB4',
       name: 'Harmony VND',
       display: 'hvnd',
       symbol: 'HVND',
@@ -648,12 +648,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4',
+            channel_id: 'channel-2',
             base_denom: 'uvnd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-998'
+            channel_id: 'channel-1006'
           }
         }]
     },

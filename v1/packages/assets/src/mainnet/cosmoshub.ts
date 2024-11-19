@@ -2053,7 +2053,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Dungeon native token',
+      description: 'Dragon Token is the native staking and governance token of Dungeon Chain, serving as the backbone of the ecosystem. Its primary roles include staking, where users stake Dragon Tokens to secure the network, enhance its functionality, and earn rewards in return; governance, granting token holders voting rights to influence key decisions such as game onboarding, protocol updates, and community-driven initiatives; and ecosystem growth, facilitating transactions, incentivizing developers, and promoting the creation of new interchain games. Dragon Token ensures a decentralized, fair, and community-driven ecosystem, fostering the evolution of blockchain-based gaming. It plays a crucial role in driving the growth of Dungeon Chain by empowering both developers and players to participate actively in the ecosystem\'s governance and success.',
       denom_units: [{
           denom: 'ibc/C57D2C02129637EE06447A85BDF35FD84C0DF75D7493840F152889CD1ACBA90E',
           exponent: 0,
@@ -2068,6 +2068,10 @@ const assets: AssetList = {
       symbol: 'DGN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
+      },
+      socials: {
+        website: 'https://www.cryptodungeon.org',
+        twitter: 'https://twitter.com/cryptodungeonma'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png',
@@ -7891,7 +7895,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Dungeon native token',
+      description: 'Dragon Token is the native staking and governance token of Dungeon Chain, serving as the backbone of the ecosystem. Its primary roles include staking, where users stake Dragon Tokens to secure the network, enhance its functionality, and earn rewards in return; governance, granting token holders voting rights to influence key decisions such as game onboarding, protocol updates, and community-driven initiatives; and ecosystem growth, facilitating transactions, incentivizing developers, and promoting the creation of new interchain games. Dragon Token ensures a decentralized, fair, and community-driven ecosystem, fostering the evolution of blockchain-based gaming. It plays a crucial role in driving the growth of Dungeon Chain by empowering both developers and players to participate actively in the ecosystem\'s governance and success.',
       denom_units: [{
           denom: 'ibc/C57D2C02129637EE06447A85BDF35FD84C0DF75D7493840F152889CD1ACBA90E',
           exponent: 0,
@@ -7906,6 +7910,10 @@ const assets: AssetList = {
       symbol: 'DGN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
+      },
+      socials: {
+        website: 'https://www.cryptodungeon.org',
+        twitter: 'https://twitter.com/cryptodungeonma'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png',

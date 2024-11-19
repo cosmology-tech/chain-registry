@@ -60,21 +60,21 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'cosmoshubtestnet',
-      client_id: '07-tendermint-3730',
-      connection_id: 'connection-3782'
+      client_id: '07-tendermint-160',
+      connection_id: 'connection-108'
     },
     chain_2: {
       chain_name: 'symphonytestnet',
-      client_id: '07-tendermint-10',
-      connection_id: 'connection-9'
+      client_id: '07-tendermint-1',
+      connection_id: 'connection-1'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-4300',
+          channel_id: 'channel-242',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-7',
+          channel_id: 'channel-1',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -88,21 +88,21 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'junotestnet',
-      client_id: '07-tendermint-789',
-      connection_id: 'connection-868'
+      client_id: '07-tendermint-794',
+      connection_id: 'connection-872'
     },
     chain_2: {
       chain_name: 'symphonytestnet',
-      client_id: '07-tendermint-28',
-      connection_id: 'connection-13'
+      client_id: '07-tendermint-3',
+      connection_id: 'connection-3'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-943',
+          channel_id: 'channel-946',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-11',
+          channel_id: 'channel-3',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -116,8 +116,8 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-3946',
-      connection_id: 'connection-3419'
+      client_id: '07-tendermint-4155',
+      connection_id: 'connection-3614'
     },
     chain_2: {
       chain_name: 'symphonytestnet',
@@ -126,7 +126,7 @@ const info: IBCInfo[] = [
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-8743',
+          channel_id: 'channel-9540',
           port_id: 'transfer'
         },
         chain_2: {
@@ -146,21 +146,21 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'stargazetestnet',
-      client_id: '07-tendermint-952',
-      connection_id: 'connection-947'
+      client_id: '07-tendermint-962',
+      connection_id: 'connection-955'
     },
     chain_2: {
       chain_name: 'symphonytestnet',
-      client_id: '07-tendermint-4',
-      connection_id: 'connection-4'
+      client_id: '07-tendermint-2',
+      connection_id: 'connection-2'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-998',
+          channel_id: 'channel-1006',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-4',
+          channel_id: 'channel-2',
           port_id: 'transfer'
         },
         ordering: 'unordered',

@@ -896,8 +896,8 @@ const info: IBCInfo[] = [
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-3946',
-      connection_id: 'connection-3419'
+      client_id: '07-tendermint-4155',
+      connection_id: 'connection-3614'
     },
     chain_2: {
       chain_name: 'symphonytestnet',
@@ -906,7 +906,7 @@ const info: IBCInfo[] = [
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-8743',
+          channel_id: 'channel-9540',
           port_id: 'transfer'
         },
         chain_2: {

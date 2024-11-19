@@ -63,26 +63,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4300',
+            channel_id: 'channel-242',
             base_denom: 'uatom',
             chain_name: 'cosmoshubtestnet'
           },
           chain: {
-            channel_id: 'channel-7'
+            channel_id: 'channel-1'
           }
         }]
     },
     {
       description: 'The native token of JUNO Chain',
       denom_units: [{
-          denom: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
+          denom: 'ibc/2F47D21D057A18C11057037AC732F459B1B8ED32195B2FA272677B07F3753BEF',
           exponent: 0,
           aliases: ['ujunox']
         }, {
           denom: 'junox',
           exponent: 6
         }],
-      base: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
+      base: 'ibc/2F47D21D057A18C11057037AC732F459B1B8ED32195B2FA272677B07F3753BEF',
       name: 'Juno Testnet',
       display: 'junox',
       symbol: 'JUNOX',
@@ -99,12 +99,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-943',
+            channel_id: 'channel-946',
             base_denom: 'ujunox',
             chain_name: 'junotestnet'
           },
           chain: {
-            channel_id: 'channel-11'
+            channel_id: 'channel-3'
           }
         }]
     },
@@ -137,7 +137,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8743',
+            channel_id: 'channel-9540',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -173,7 +173,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8743',
+            channel_id: 'channel-9540',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
@@ -185,14 +185,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Stargaze',
       denom_units: [{
-          denom: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
+          denom: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
           exponent: 0,
           aliases: ['ustars']
         }, {
           denom: 'stars',
           exponent: 6
         }],
-      base: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
+      base: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
       name: 'Stargaze',
       display: 'stars',
       symbol: 'STARS',
@@ -207,12 +207,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-998',
+            channel_id: 'channel-1006',
             base_denom: 'ustars',
             chain_name: 'stargazetestnet'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-2'
           }
         }]
     },
@@ -277,26 +277,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-4300',
+            channel_id: 'channel-242',
             base_denom: 'uatom',
             chain_name: 'cosmoshubtestnet'
           },
           chain: {
-            channel_id: 'channel-7'
+            channel_id: 'channel-1'
           }
         }]
     },
     {
       description: 'The native token of JUNO Chain',
       denom_units: [{
-          denom: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
+          denom: 'ibc/2F47D21D057A18C11057037AC732F459B1B8ED32195B2FA272677B07F3753BEF',
           exponent: 0,
           aliases: ['ujunox']
         }, {
           denom: 'junox',
           exponent: 6
         }],
-      base: 'ibc/6AB61A083754E04354B370C022080FA50A223FE25D92896DB8DF66BC5C540014',
+      base: 'ibc/2F47D21D057A18C11057037AC732F459B1B8ED32195B2FA272677B07F3753BEF',
       name: 'Juno Testnet',
       display: 'junox',
       symbol: 'JUNOX',
@@ -313,12 +313,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-943',
+            channel_id: 'channel-946',
             base_denom: 'ujunox',
             chain_name: 'junotestnet'
           },
           chain: {
-            channel_id: 'channel-11'
+            channel_id: 'channel-3'
           }
         }]
     },
@@ -351,7 +351,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8743',
+            channel_id: 'channel-9540',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -387,7 +387,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-8743',
+            channel_id: 'channel-9540',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
@@ -399,14 +399,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Stargaze',
       denom_units: [{
-          denom: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
+          denom: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
           exponent: 0,
           aliases: ['ustars']
         }, {
           denom: 'stars',
           exponent: 6
         }],
-      base: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
+      base: 'ibc/C6469BA9DC791E65B3C1596CD2005941324C00659E2DF90D5E08D86B82E7E08B',
       name: 'Stargaze',
       display: 'stars',
       symbol: 'STARS',
@@ -421,12 +421,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-998',
+            channel_id: 'channel-1006',
             base_denom: 'ustars',
             chain_name: 'stargazetestnet'
           },
           chain: {
-            channel_id: 'channel-4'
+            channel_id: 'channel-2'
           }
         }]
     }

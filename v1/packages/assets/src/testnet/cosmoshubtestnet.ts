@@ -639,12 +639,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'note',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },
@@ -673,12 +673,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'uusd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },
@@ -707,12 +707,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'ukhd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },
@@ -741,12 +741,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'uvnd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },
@@ -1328,12 +1328,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'note',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },
@@ -1362,12 +1362,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'uusd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },
@@ -1396,12 +1396,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'ukhd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },
@@ -1430,12 +1430,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-7',
+            channel_id: 'channel-1',
             base_denom: 'uvnd',
             chain_name: 'symphonytestnet'
           },
           chain: {
-            channel_id: 'channel-4300'
+            channel_id: 'channel-242'
           }
         }]
     },

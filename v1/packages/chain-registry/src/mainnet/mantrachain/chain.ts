@@ -46,6 +46,10 @@ const info: Chain = {
       {
         address: 'https://mantra-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://mantra-mainnet-rpc.itrocket.net:443',
+        provider: 'ITRocket'
       }
     ],
     rest: [
@@ -64,6 +68,10 @@ const info: Chain = {
       {
         address: 'https://mantra-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://mantra-mainnet-api.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
     grpc: [
@@ -82,6 +90,10 @@ const info: Chain = {
       {
         address: 'mantra-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'mantra-mainnet-grpc.itrocket.net:443',
+        provider: 'ITRocket'
       }
     ]
   },
@@ -89,7 +101,12 @@ const info: Chain = {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg'
   },
-  explorers: [],
+  explorers: [{
+      kind: 'ITRocket',
+      url: 'https://mainnet.itrocket.net/mantra',
+      tx_page: 'https://mainnet.itrocket.net/mantra/transaction/${txHash}',
+      account_page: 'https://mainnet.itrocket.net/mantra/account/${accountAddress}'
+    }],
   keywords: [
     'rwa',
     'wasm',
