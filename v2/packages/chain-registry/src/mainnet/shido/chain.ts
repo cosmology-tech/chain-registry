@@ -112,7 +112,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://rest.shido.256x25.tech:443',
+        address: 'https://rpc.shido.256x25.tech:443',
         provider: '256x25'
       },
       {
@@ -138,7 +138,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://rpc.shido.256x25.tech:443',
+        address: 'https://rest.shido.256x25.tech:443',
         provider: '256x25'
       },
       {

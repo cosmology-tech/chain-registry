@@ -554,6 +554,10 @@ const info: Chain = {
       {
         address: 'https://cosmos-hub.drpc.org',
         provider: 'dRPC'
+      },
+      {
+        address: 'https://cosmoshub-mainnet-rpc.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
     rest: [
@@ -672,6 +676,10 @@ const info: Chain = {
       {
         address: 'https://cosmos-api.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://cosmoshub-mainnet-api.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
     grpc: [
@@ -754,6 +762,10 @@ const info: Chain = {
       {
         address: 'cosmos-grpc.stakeandrelax.net:15090',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'cosmoshub-mainnet-grpc.itrocket.net:443',
+        provider: 'ITRocket'
       }
     ]
   },
@@ -841,6 +853,15 @@ const info: Chain = {
       validatorPage: 'https://mainnet.whispernode.com/cosmos/staking/${validatorAddress}',
       proposalPage: 'https://mainnet.whispernode.com/cosmos/gov/${proposalId}',
       blockPage: 'https://mainnet.whispernode.com/cosmos/block/${blockHeight}'
+    },
+    {
+      kind: 'ITRocket',
+      url: 'https://mainnet.itrocket.net/cosmoshub',
+      txPage: 'https://mainnet.itrocket.net/cosmoshub/tx/${txHash}',
+      accountPage: 'https://mainnet.itrocket.net/cosmoshub/account/${accountAddress}',
+      validatorPage: 'https://mainnet.itrocket.net/cosmoshub/staking/${validatorAddress}',
+      proposalPage: 'https://mainnet.itrocket.net/cosmoshub/gov/${proposalId}',
+      blockPage: 'https://mainnet.itrocket.net/cosmoshub/block/${blockHeight}'
     }
   ],
   images: [{

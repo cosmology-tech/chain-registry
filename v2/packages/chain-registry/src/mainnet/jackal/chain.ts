@@ -260,10 +260,6 @@ const info: Chain = {
       {
         address: 'https://jackal-rpc.noders.services',
         provider: '[NODERS]TEAM'
-      },
-      {
-        address: 'https://jackal_mainnet_rpc.chain.whenmoonwhenlambo.money',
-        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -334,10 +330,6 @@ const info: Chain = {
       {
         address: 'https://jackal-api.noders.services',
         provider: '[NODERS]TEAM'
-      },
-      {
-        address: 'https://jackal_mainnet_api.chain.whenmoonwhenlambo.money',
-        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -438,12 +430,6 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/jackal',
       txPage: 'https://mainnet.whispernode.com/jackal/tx/${txHash}',
       accountPage: 'https://mainnet.whispernode.com/jackal/account/${accountAddress}'
-    },
-    {
-      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
-      url: 'https://explorer.whenmoonwhenlambo.money/jackal',
-      txPage: 'https://explorer.whenmoonwhenlambo.money/jackal/tx/${txHash}',
-      accountPage: 'https://explorer.whenmoonwhenlambo.money/jackal/account/${accountAddress}'
     }
   ],
   images: [{

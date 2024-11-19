@@ -4,7 +4,7 @@ const info: Chain = {
   chainName: 'nim',
   status: 'live',
   networkType: 'mainnet',
-  website: 'https://ai.nim.network',
+  website: 'https://nim.network',
   prettyName: 'Nim Network',
   chainType: 'cosmos',
   chainId: 'nim_1122-1',
@@ -53,23 +53,23 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://nim-mainnet-tendermint.public.blastapi.io',
-        provider: 'BlastAPI'
+        address: 'https://rpc.mainnet.nimnet.tech',
+        provider: 'NIM Foundation'
       }],
     rest: [{
-        address: 'https://nim-mainnet-rest.public.blastapi.io',
-        provider: 'BlastAPI'
+        address: 'https://rest.mainnet.nimnet.tech',
+        provider: 'NIM Foundation'
       }],
     evmHttpJsonrpc: [{
-        address: 'https://nim-mainnet.public.blastapi.io',
-        provider: 'BlastAPI'
+        address: 'https://evm-rpc.mainnet.nimnet.tech',
+        provider: 'NIM Foundation'
       }]
   },
   explorers: [{
-      kind: 'FYI',
-      url: 'https://dym.fyi/r/nim',
-      txPage: 'https://dym.fyi/r/nim/tx/${txHash}',
-      accountPage: 'https://dym.fyi/r/nim/address/${accountAddress}'
+      kind: 'Orbit Codes',
+      url: 'https://explorer.nim.network',
+      txPage: 'https://explorer.nim.network/tx/${txHash}',
+      accountPage: 'https://explorer.nim.network/account/${accountAddress}'
     }]
 };
 export default info;

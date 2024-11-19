@@ -132,21 +132,21 @@ const info: IBCData[] = [
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'stargazetestnet',
-      clientId: '07-tendermint-952',
-      connectionId: 'connection-947'
+      clientId: '07-tendermint-962',
+      connectionId: 'connection-955'
     },
     chain2: {
       chainName: 'symphonytestnet',
-      clientId: '07-tendermint-4',
-      connectionId: 'connection-4'
+      clientId: '07-tendermint-2',
+      connectionId: 'connection-2'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-998',
+          channelId: 'channel-1006',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-4',
+          channelId: 'channel-2',
           portId: 'transfer'
         },
         ordering: 'unordered',
