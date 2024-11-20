@@ -702,7 +702,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/A2DE32404B33102ECD88D3D988A2716CDFEE46ACACCD1454B959BE7654139C41',
-      name: 'Dungeon Coin',
+      name: 'Dragon',
       display: 'DGN',
       symbol: 'DGN',
       logo_URIs: {
@@ -5461,7 +5461,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/A2DE32404B33102ECD88D3D988A2716CDFEE46ACACCD1454B959BE7654139C41',
-      name: 'Dungeon Coin',
+      name: 'Dragon',
       display: 'DGN',
       symbol: 'DGN',
       logo_URIs: {

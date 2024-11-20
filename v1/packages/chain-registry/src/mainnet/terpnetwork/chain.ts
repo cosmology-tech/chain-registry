@@ -8,6 +8,7 @@ const info: Chain = {
   chain_type: 'cosmos',
   chain_id: 'morocco-1',
   bech32_prefix: 'terp',
+  slip44: 118,
   daemon_name: 'terp',
   node_home: '$HOME/.terp',
   codebase: {
@@ -106,7 +107,6 @@ const info: Chain = {
       theme: {
         primary_color_hex: '#a2cd9a'
       }
-    }],
-  slip44: 118
+    }]
 };
 export default info;

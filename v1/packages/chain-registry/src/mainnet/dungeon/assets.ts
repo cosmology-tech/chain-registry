@@ -13,7 +13,7 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'udgn',
-      name: 'Dungeon Coin',
+      name: 'Dragon',
       display: 'DGN',
       symbol: 'DGN',
       logo_URIs: {

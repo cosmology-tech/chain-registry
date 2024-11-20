@@ -4,12 +4,12 @@ const info: IBCInfo[] = [{
     chain_1: {
       chain_name: 'medasdigital',
       client_id: '07-tendermint-0',
-      connection_id: 'connection-0'
+      connection_id: 'connection-1'
     },
     chain_2: {
       chain_name: 'osmosis',
-      client_id: '07-tendermint-2372',
-      connection_id: 'connection-1869'
+      client_id: '07-tendermint-3353',
+      connection_id: 'connection-2813'
     },
     channels: [{
         chain_1: {
@@ -17,7 +17,7 @@ const info: IBCInfo[] = [{
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-519',
+          channel_id: 'channel-87042',
           port_id: 'transfer'
         },
         ordering: 'unordered',

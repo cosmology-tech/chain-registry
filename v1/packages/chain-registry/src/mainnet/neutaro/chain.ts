@@ -60,9 +60,9 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'ping.pub',
-      url: 'https://explorer.neutaro.tech/Neutaro',
-      tx_page: 'https://explorer.neutaro.tech/Neutaro/tx/${txHash}',
-      account_page: 'https://explorer.neutaro.tech/Neutaro/account/${accountAddress}'
+      url: 'https://explorer.neutaro.io/Neutaro',
+      tx_page: 'https://explorer.neutaro.io/Neutaro/tx/${txHash}',
+      account_page: 'https://explorer.neutaro.io/Neutaro/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',

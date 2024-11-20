@@ -10,6 +10,7 @@ const info: Chain = {
   chain_id: 'bbn-test3',
   pre_fork_chain_name: 'babylontestnet1',
   bech32_prefix: 'bbn',
+  slip44: 118,
   daemon_name: 'babylond',
   node_home: '$HOME/.babylond',
   key_algos: ['secp256k1'],
@@ -50,7 +51,6 @@ const info: Chain = {
     }],
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
-    }],
-  slip44: 118
+    }]
 };
 export default info;

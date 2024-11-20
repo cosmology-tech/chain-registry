@@ -9,6 +9,7 @@ const info: Chain = {
   chain_type: 'cosmos',
   chain_id: 'chimba-testnet',
   bech32_prefix: 'chimba',
+  slip44: 118,
   daemon_name: 'chimbad',
   node_home: '$HOME/.chimbad',
   fees: {
@@ -42,7 +43,6 @@ const info: Chain = {
       kind: 'bigdipper',
       url: 'https://explorer.testnet.chimba.ooo/',
       tx_page: 'https://explorer.testnet.chimba.ooo/transactions/${txHash}'
-    }],
-  slip44: 118
+    }]
 };
 export default info;

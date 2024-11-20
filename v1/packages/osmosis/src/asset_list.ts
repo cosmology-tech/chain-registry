@@ -2011,7 +2011,7 @@ const asset_list: AssetList = {
           exponent: 6
         }],
       base: 'ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995',
-      name: 'Dungeon Coin',
+      name: 'Dragon',
       display: 'DGN',
       symbol: 'DGN',
       logo_URIs: {
@@ -4398,14 +4398,14 @@ const asset_list: AssetList = {
     {
       description: 'The native token of Medas Digital Network',
       denom_units: [{
-          denom: 'ibc/01E94A5FF29B8DDEFC86F412CC3927F7330E9B523CC63A6194B1108F5276025C',
+          denom: 'ibc/FBBC35295AA037DC0A77796B08DC3003EC918E18E75D61D675A0EEAC0643F36C',
           exponent: 0,
           aliases: ['umedas']
         }, {
           denom: 'medas',
           exponent: 6
         }],
-      base: 'ibc/01E94A5FF29B8DDEFC86F412CC3927F7330E9B523CC63A6194B1108F5276025C',
+      base: 'ibc/FBBC35295AA037DC0A77796B08DC3003EC918E18E75D61D675A0EEAC0643F36C',
       name: 'Medas Digital',
       display: 'medas',
       symbol: 'MEDAS',
@@ -4430,7 +4430,7 @@ const asset_list: AssetList = {
             chain_name: 'medasdigital'
           },
           chain: {
-            channel_id: 'channel-519'
+            channel_id: 'channel-87042'
           }
         }]
     },
@@ -7557,7 +7557,7 @@ const asset_list: AssetList = {
           exponent: 6
         }],
       base: 'ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995',
-      name: 'Dungeon Coin',
+      name: 'Dragon',
       display: 'DGN',
       symbol: 'DGN',
       logo_URIs: {
@@ -9944,14 +9944,14 @@ const asset_list: AssetList = {
     {
       description: 'The native token of Medas Digital Network',
       denom_units: [{
-          denom: 'ibc/01E94A5FF29B8DDEFC86F412CC3927F7330E9B523CC63A6194B1108F5276025C',
+          denom: 'ibc/FBBC35295AA037DC0A77796B08DC3003EC918E18E75D61D675A0EEAC0643F36C',
           exponent: 0,
           aliases: ['umedas']
         }, {
           denom: 'medas',
           exponent: 6
         }],
-      base: 'ibc/01E94A5FF29B8DDEFC86F412CC3927F7330E9B523CC63A6194B1108F5276025C',
+      base: 'ibc/FBBC35295AA037DC0A77796B08DC3003EC918E18E75D61D675A0EEAC0643F36C',
       name: 'Medas Digital',
       display: 'medas',
       symbol: 'MEDAS',
@@ -9976,7 +9976,7 @@ const asset_list: AssetList = {
             chain_name: 'medasdigital'
           },
           chain: {
-            channel_id: 'channel-519'
+            channel_id: 'channel-87042'
           }
         }]
     },

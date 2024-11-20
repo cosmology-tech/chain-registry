@@ -21671,12 +21671,12 @@ const assets: AssetList = {
       name: '$bomu',
       display: 'BOMU',
       symbol: 'BOMU',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BOMU.png'
-      },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BOMU.png'
-        }]
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bomu.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/bomu.png'
+      }
     }
   ]
 };

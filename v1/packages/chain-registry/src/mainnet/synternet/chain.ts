@@ -8,6 +8,7 @@ const info: Chain = {
   pretty_name: 'Synternet',
   status: 'live',
   network_type: 'mainnet',
+  slip44: 118,
   bech32_prefix: 'synt',
   daemon_name: 'syntd',
   node_home: '$HOME/.amber',
@@ -60,7 +61,6 @@ const info: Chain = {
       theme: {
         primary_color_hex: '#272d45'
       }
-    }],
-  slip44: 118
+    }]
 };
 export default info;

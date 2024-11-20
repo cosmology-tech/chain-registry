@@ -9,6 +9,7 @@ const info: Chain = {
   chain_type: 'cosmos',
   chain_id: 'mnova_10096-1',
   bech32_prefix: 'mnova',
+  slip44: 118,
   node_home: '$HOME/.mnovad',
   daemon_name: 'mnovad',
   key_algos: ['ethsecp256k1'],
@@ -19,7 +20,6 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/metanovaversetestnet/images/mnova.png'
-    }],
-  slip44: 118
+    }]
 };
 export default info;
