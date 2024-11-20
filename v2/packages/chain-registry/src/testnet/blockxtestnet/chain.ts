@@ -9,6 +9,7 @@ const info: Chain = {
   status: 'live',
   networkType: 'testnet',
   bech32Prefix: 'blockx',
+  slip44: 118,
   daemonName: 'blockxd',
   nodeHome: '$HOME/.blockxd',
   keyAlgos: ['ethsecp256k1'],
@@ -16,7 +17,6 @@ const info: Chain = {
     stakingTokens: [{
         denom: 'abcx'
       }]
-  },
-  slip44: 118
+  }
 };
 export default info;

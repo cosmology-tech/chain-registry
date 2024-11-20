@@ -2435,12 +2435,12 @@ const info: IBCData[] = [
     chain1: {
       chainName: 'medasdigital',
       clientId: '07-tendermint-0',
-      connectionId: 'connection-0'
+      connectionId: 'connection-1'
     },
     chain2: {
       chainName: 'osmosis',
-      clientId: '07-tendermint-2372',
-      connectionId: 'connection-1869'
+      clientId: '07-tendermint-3353',
+      connectionId: 'connection-2813'
     },
     channels: [{
         chain1: {
@@ -2448,7 +2448,7 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-519',
+          channelId: 'channel-87042',
           portId: 'transfer'
         },
         ordering: 'unordered',

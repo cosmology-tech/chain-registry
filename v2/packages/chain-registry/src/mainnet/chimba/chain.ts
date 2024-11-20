@@ -9,6 +9,7 @@ const info: Chain = {
   chainType: 'cosmos',
   chainId: 'chimba',
   bech32Prefix: 'chimba',
+  slip44: 118,
   daemonName: 'chimbad',
   nodeHome: '$HOME/.chimbad',
   fees: {
@@ -63,7 +64,6 @@ const info: Chain = {
       theme: {
         primaryColorHex: '#5454a4'
       }
-    }],
-  slip44: 118
+    }]
 };
 export default info;

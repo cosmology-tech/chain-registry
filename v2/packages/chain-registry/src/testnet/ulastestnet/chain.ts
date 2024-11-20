@@ -8,6 +8,7 @@ const info: Chain = {
   chainType: 'cosmos',
   chainId: 'ulas',
   bech32Prefix: 'ulas',
+  slip44: 118,
   daemonName: 'ulasd',
   nodeHome: '$HOME/.ulas',
   codebase: {
@@ -41,7 +42,6 @@ const info: Chain = {
       kind: 'ulas-scan',
       url: 'https://testnet-explorer.ulas.network',
       txPage: 'https://testnet-explorer.ulas.network/ulas/tx/${txHash}'
-    }],
-  slip44: 118
+    }]
 };
 export default info;

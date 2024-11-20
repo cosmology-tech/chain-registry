@@ -9,6 +9,7 @@ const info: Chain = {
   chainType: 'cosmos',
   chainId: 'fiamma-testnet-1',
   bech32Prefix: 'fiamma',
+  slip44: 118,
   daemonName: 'fiammad',
   nodeHome: '$HOME/.fiamma',
   keyAlgos: ['secp256k1'],
@@ -55,7 +56,6 @@ const info: Chain = {
     }],
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/fiammatestnet/images/fiamma.svg'
-    }],
-  slip44: 118
+    }]
 };
 export default info;

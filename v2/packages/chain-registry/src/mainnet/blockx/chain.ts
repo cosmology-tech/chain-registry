@@ -9,6 +9,7 @@ const info: Chain = {
   chainType: 'cosmos',
   chainId: 'blockx_19191-1',
   bech32Prefix: 'blockx',
+  slip44: 118,
   nodeHome: '$HOME/.blockxd',
   daemonName: 'blockxd',
   keyAlgos: ['ethsecp256k1'],
@@ -53,7 +54,6 @@ const info: Chain = {
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/blockx/images/blockx.png'
-    }],
-  slip44: 118
+    }]
 };
 export default info;
