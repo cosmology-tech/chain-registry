@@ -89,9 +89,9 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'odin web',
-      url: 'https://mainnet.odinprotocol.io/',
-      tx_page: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
+      kind: 'Runa',
+      url: 'https://runa.odinprotocol.io/',
+      tx_page: 'https://runa.odinprotocol.io/transactions/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',

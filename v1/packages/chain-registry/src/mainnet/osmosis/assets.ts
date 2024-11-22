@@ -21604,7 +21604,7 @@ const info: AssetList = {
         }],
       keywords: ['meme'],
       socials: {
-        twitter: 'https://x.com/spice_coin_'
+        twitter: 'https://x.com/spiceoncosmos'
       }
     },
     {
