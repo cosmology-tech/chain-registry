@@ -30,8 +30,8 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/ODIN-PROTOCOL/odin-core',
-    recommendedVersion: 'v0.9.4',
-    compatibleVersions: ['v0.9.4'],
+    recommendedVersion: 'v0.10.2',
+    compatibleVersions: ['v0.10.2'],
     consensus: {
       type: 'cometbft',
       version: 'v0.38.10'
@@ -137,6 +137,30 @@ const info: Chain = {
           type: 'go',
           version: 'v8.3.1'
         }
+      },
+      {
+        name: 'v0.10.0',
+        proposal: 28,
+        height: 17056800,
+        recommendedVersion: 'v0.10.2',
+        compatibleVersions: [
+          'v0.10.0',
+          'v0.10.1',
+          'v0.10.2'
+        ],
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.38.10'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.50.7'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v8.3.1'
+        }
       }
     ],
     sdk: {
@@ -206,9 +230,9 @@ const info: Chain = {
   },
   explorers: [
     {
-      kind: 'odin web',
-      url: 'https://mainnet.odinprotocol.io/',
-      txPage: 'https://mainnet.odinprotocol.io/transactions/${txHash}'
+      kind: 'Runa',
+      url: 'https://runa.odinprotocol.io/',
+      txPage: 'https://runa.odinprotocol.io/transactions/${txHash}'
     },
     {
       kind: '🔥STAVR🔥',

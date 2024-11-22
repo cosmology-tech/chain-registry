@@ -116,6 +116,10 @@ const info: Chain = {
       {
         address: 'https://atomone-rpc.ibs.team:443',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://atomone-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     rest: [
@@ -154,6 +158,10 @@ const info: Chain = {
       {
         address: 'https://atomone-api.ibs.team:443',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://atomone-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
     grpc: [
@@ -176,6 +184,10 @@ const info: Chain = {
       {
         address: 'atomone-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'atomone-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ]
   },

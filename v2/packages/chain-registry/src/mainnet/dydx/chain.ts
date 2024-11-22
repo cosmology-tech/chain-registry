@@ -35,17 +35,17 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/dydxprotocol/v4-chain/',
-    recommendedVersion: 'protocol/v6.0.4',
-    compatibleVersions: ['protocol/v6.0.4'],
+    recommendedVersion: 'protocol/v7.0.1',
+    compatibleVersions: ['protocol/v7.0.1'],
     binaries: {
-      "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-amd64.tar.gz',
-      "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv6.0.4/dydxprotocold-v6.0.4-linux-arm64.tar.gz'
+      "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv7.0.1/dydxprotocold-v7.0.1-linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv7.0.1/dydxprotocold-v7.0.1-linux-arm64.tar.gz'
     },
     consensus: {
       type: 'cometbft',
       version: 'v0.38.6',
       repo: 'https://github.com/dydxprotocol/cometbft',
-      tag: 'v0.38.6-0.20240426214049-c8beeeada40a'
+      tag: 'v0.38.6-0.20241106081823-31609289f401'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json'
@@ -266,6 +266,34 @@ const info: Chain = {
           repo: 'https://github.com/dydxprotocol/cosmos-sdk',
           version: 'v0.50.6',
           tag: 'v0.50.6-0.20240808180557-4b1c1dc17703'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v8.0.0'
+        },
+        nextVersionName: 'v7.0'
+      },
+      {
+        name: 'v7.0',
+        proposal: 160,
+        height: 29950000,
+        recommendedVersion: 'protocol/v7.0.1',
+        compatibleVersions: ['protocol/v7.0.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv7.0.1/dydxprotocold-v7.0.1-linux-amd64.tar.gz',
+          "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv7.0.1/dydxprotocold-v7.0.1-linux-arm64.tar.gz'
+        },
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.38.6',
+          repo: 'https://github.com/dydxprotocol/cometbft',
+          tag: 'v0.38.6-0.20241106081823-31609289f401'
+        },
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/dydxprotocol/cosmos-sdk',
+          version: 'v0.50.6',
+          tag: 'v0.50.6-0.20241022180223-cc8c850952c5'
         },
         ibc: {
           type: 'go',
