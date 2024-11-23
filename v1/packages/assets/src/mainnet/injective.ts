@@ -410,17 +410,17 @@ const assets: AssetList = {
     {
       description: 'The token of Crowdpunk DAO',
       denom_units: [{
-          denom: 'ibc/EE335B7423D09A80A7C9DD2B6259B238553BF3AEDCB19E34EECE90958721E51A',
+          denom: 'ibc/17703FDA7DDAD0BEF33BC50DD9FD9293248E32FA95BE0558ED17B1EB7B83E275',
           exponent: 0,
-          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+          aliases: ['erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F']
         }, {
           denom: 'crowdp',
           exponent: 18
         }],
-      base: 'ibc/EE335B7423D09A80A7C9DD2B6259B238553BF3AEDCB19E34EECE90958721E51A',
+      base: 'ibc/17703FDA7DDAD0BEF33BC50DD9FD9293248E32FA95BE0558ED17B1EB7B83E275',
       name: 'Crowdpunk DAO',
       display: 'crowdp',
-      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      address: '0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
       symbol: 'CROWDP',
       type_asset: 'erc20',
       logo_URIs: {
@@ -438,7 +438,7 @@ const assets: AssetList = {
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-10',
-            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            base_denom: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
             chain_name: 'evmos'
           },
           chain: {
@@ -908,17 +908,17 @@ const assets: AssetList = {
     {
       description: 'The token of Crowdpunk DAO',
       denom_units: [{
-          denom: 'ibc/EE335B7423D09A80A7C9DD2B6259B238553BF3AEDCB19E34EECE90958721E51A',
+          denom: 'ibc/17703FDA7DDAD0BEF33BC50DD9FD9293248E32FA95BE0558ED17B1EB7B83E275',
           exponent: 0,
-          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+          aliases: ['erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F']
         }, {
           denom: 'crowdp',
           exponent: 18
         }],
-      base: 'ibc/EE335B7423D09A80A7C9DD2B6259B238553BF3AEDCB19E34EECE90958721E51A',
+      base: 'ibc/17703FDA7DDAD0BEF33BC50DD9FD9293248E32FA95BE0558ED17B1EB7B83E275',
       name: 'Crowdpunk DAO',
       display: 'crowdp',
-      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      address: '0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
       symbol: 'CROWDP',
       type_asset: 'erc20',
       logo_URIs: {
@@ -936,7 +936,7 @@ const assets: AssetList = {
           type: 'ibc',
           counterparty: {
             channel_id: 'channel-10',
-            base_denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            base_denom: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
             chain_name: 'evmos'
           },
           chain: {
