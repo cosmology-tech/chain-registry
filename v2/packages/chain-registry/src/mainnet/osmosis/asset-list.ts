@@ -15085,15 +15085,15 @@ const info: AssetList = {
     {
       description: 'The token of Crowdpunk DAO',
       denomUnits: [{
-          denom: 'ibc/B87F0F5255CC658408F167C2F7B987A8D914622E1F73BCC267406360588F2B1E',
+          denom: 'ibc/5EC896BED3EBCB2CB6F1C167582E4EFA3F6FA3385F28BA5EA92D4A489DA010C5',
           exponent: 0,
-          aliases: ['erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f']
+          aliases: ['erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F']
         }, {
           denom: 'crowdp',
           exponent: 18
         }],
       typeAsset: 'ics20',
-      base: 'ibc/B87F0F5255CC658408F167C2F7B987A8D914622E1F73BCC267406360588F2B1E',
+      base: 'ibc/5EC896BED3EBCB2CB6F1C167582E4EFA3F6FA3385F28BA5EA92D4A489DA010C5',
       name: 'Crowdpunk DAO',
       display: 'crowdp',
       symbol: 'CROWDP',
@@ -15101,12 +15101,12 @@ const info: AssetList = {
           type: 'ibc',
           counterparty: {
             chainName: 'evmos',
-            baseDenom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+            baseDenom: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
             channelId: 'channel-0'
           },
           chain: {
             channelId: 'channel-204',
-            path: 'transfer/channel-204/erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f'
+            path: 'transfer/channel-204/erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F'
           }
         }],
       logoURIs: {
@@ -15116,7 +15116,7 @@ const info: AssetList = {
       images: [{
           imageSync: {
             chainName: 'evmos',
-            baseDenom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f'
+            baseDenom: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F'
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg',
@@ -18448,10 +18448,13 @@ const info: AssetList = {
           provider: 'Router'
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/tron/images/trx.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/trx.rt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/trx.rt.svg'
       },
       images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/trx.rt.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/trx.rt.png'
+        }, {
           imageSync: {
             chainName: 'tron',
             baseDenom: 'sun'
@@ -18496,8 +18499,8 @@ const info: AssetList = {
           provider: 'Router'
         }],
       logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.png'
       },
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/usdt.rt.svg',

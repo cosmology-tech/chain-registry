@@ -139,16 +139,16 @@ const info: AssetList = {
     {
       description: 'The token of Crowdpunk DAO',
       denomUnits: [{
-          denom: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+          denom: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
           exponent: 0
         }, {
           denom: 'crowdp',
           exponent: 18
         }],
-      base: 'erc20/0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      base: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
       name: 'Crowdpunk DAO',
       display: 'crowdp',
-      address: '0xfbf4318d24a93753f11d365a6dcf8b830e98ab0f',
+      address: '0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
       symbol: 'CROWDP',
       typeAsset: 'erc20',
       logoURIs: {
