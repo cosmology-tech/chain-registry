@@ -177,6 +177,74 @@ const assets: AssetList = {
             channel_id: 'channel-0'
           }
         }]
+    },
+    {
+      description: 'The native staking and governance token of Picasso Kusama.',
+      denom_units: [{
+          denom: 'ibc/105552651B2FABE6CD87B6649876F9A4F7C0BF384F20E0D9936C1F2937BF43E9',
+          exponent: 0,
+          aliases: ['ppica']
+        }, {
+          denom: 'pica',
+          exponent: 12
+        }],
+      type_asset: 'substrate',
+      base: 'ibc/105552651B2FABE6CD87B6649876F9A4F7C0BF384F20E0D9936C1F2937BF43E9',
+      name: 'Pica',
+      display: 'pica',
+      symbol: 'PICA',
+      coingecko_id: 'picasso',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-80',
+            base_denom: 'ppica',
+            chain_name: 'picasso'
+          },
+          chain: {
+            channel_id: 'channel-7'
+          }
+        }]
+    },
+    {
+      description: 'The native staking and governance token of Picasso Kusama.',
+      denom_units: [{
+          denom: 'ibc/105552651B2FABE6CD87B6649876F9A4F7C0BF384F20E0D9936C1F2937BF43E9',
+          exponent: 0,
+          aliases: ['ppica']
+        }, {
+          denom: 'pica',
+          exponent: 12
+        }],
+      type_asset: 'substrate',
+      base: 'ibc/105552651B2FABE6CD87B6649876F9A4F7C0BF384F20E0D9936C1F2937BF43E9',
+      name: 'Pica',
+      display: 'pica',
+      symbol: 'PICA',
+      coingecko_id: 'picasso',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-80',
+            base_denom: 'ppica',
+            chain_name: 'picasso'
+          },
+          chain: {
+            channel_id: 'channel-7'
+          }
+        }]
     }
   ]
 };
