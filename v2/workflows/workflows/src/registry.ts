@@ -214,6 +214,24 @@ export class Registry {
     });
   }
 
+  public validateUnique() {
+    const seen = new Set<string>(); // set to store unique chain_names
+    const duplicates = new Set<string>(); // set to store duplicate chain_names
+
+    this.chains.forEach(chain => {
+      let chainName = chain.chain_name
+      if (seen.has(chainName)) {
+        duplicates.add(chainName)
+      } else {
+        seen.add(chainName)
+      }
+    })
+    const duplicatesArr = Array.from(duplicates)
+    if (duplicatesArr.length > 0) {
+      throw new Error(`duplicates found: ${duplicatesArr.join(', ')}`)
+    }
+  }
+
   public get count() {
     return {
       chains: this.chains.length,
