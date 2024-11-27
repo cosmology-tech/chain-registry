@@ -2065,6 +2065,7 @@ const assets: AssetList = {
       base: 'ibc/C57D2C02129637EE06447A85BDF35FD84C0DF75D7493840F152889CD1ACBA90E',
       name: 'Dragon',
       display: 'DGN',
+      coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
@@ -3557,6 +3558,71 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-566'
+          }
+        }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/30DE434D61B6C6F0E3132FE1F2413C76D2EBA63B3E18A211C4CD192A5F5580F1',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/30DE434D61B6C6F0E3132FE1F2413C76D2EBA63B3E18A211C4CD192A5F5580F1',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      coingecko_id: 'mantra-dao',
+      keywords: [
+        'rwa',
+        'wasm',
+        'staking'
+      ],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#fba0c1'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        }
+      ],
+      socials: {
+        website: 'https://www.mantrachain.io/',
+        twitter: 'https://x.com/MANTRA_Chain'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'uom',
+            chain_name: 'mantrachain'
+          },
+          chain: {
+            channel_id: 'channel-1252'
           }
         }]
     },
@@ -7907,6 +7973,7 @@ const assets: AssetList = {
       base: 'ibc/C57D2C02129637EE06447A85BDF35FD84C0DF75D7493840F152889CD1ACBA90E',
       name: 'Dragon',
       display: 'DGN',
+      coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
@@ -9399,6 +9466,71 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-566'
+          }
+        }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denom_units: [{
+          denom: 'ibc/30DE434D61B6C6F0E3132FE1F2413C76D2EBA63B3E18A211C4CD192A5F5580F1',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/30DE434D61B6C6F0E3132FE1F2413C76D2EBA63B3E18A211C4CD192A5F5580F1',
+      name: 'MANTRA Chain',
+      display: 'om',
+      symbol: 'OM',
+      coingecko_id: 'mantra-dao',
+      keywords: [
+        'rwa',
+        'wasm',
+        'staking'
+      ],
+      images: [
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primary_color_hex: '#fba0c1'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#342c2c'
+          }
+        }
+      ],
+      socials: {
+        website: 'https://www.mantrachain.io/',
+        twitter: 'https://x.com/MANTRA_Chain'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'uom',
+            chain_name: 'mantrachain'
+          },
+          chain: {
+            channel_id: 'channel-1252'
           }
         }]
     },

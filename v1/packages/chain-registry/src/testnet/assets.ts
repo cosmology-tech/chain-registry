@@ -112,6 +112,7 @@ import * as _wardenprotocoltestnet from './wardenprotocoltestnet';
 import * as _wavehashtestnet from './wavehashtestnet';
 import * as _xiontestnet from './xiontestnet';
 import * as _xplatestnet from './xplatestnet';
+import * as _zenrocktestnet from './zenrocktestnet';
 import * as _zetachaintestnet from './zetachaintestnet';
 
 const assets: AssetList[] = [
@@ -227,6 +228,7 @@ const assets: AssetList[] = [
   _wavehashtestnet.assets,
   _xiontestnet.assets,
   _xplatestnet.assets,
+  _zenrocktestnet.assets,
   _zetachaintestnet.assets
 ];
 

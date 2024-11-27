@@ -267,6 +267,7 @@ const assets: AssetList = {
       base: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
       name: 'Dragon',
       display: 'DGN',
+      coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
@@ -1220,6 +1221,7 @@ const assets: AssetList = {
       base: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
       name: 'Dragon',
       display: 'DGN',
+      coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
