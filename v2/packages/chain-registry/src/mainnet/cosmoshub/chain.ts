@@ -29,17 +29,16 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/cosmos/gaia',
-    recommendedVersion: 'v19.2.0',
-    compatibleVersions: ['v19.2.0'],
+    recommendedVersion: 'v21.0.0',
+    compatibleVersions: ['v21.0.0'],
     consensus: {
       type: 'cometbft',
       version: 'v0.38.11'
     },
     binaries: {
-      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-linux-amd64',
-      "linux/arm64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-linux-arm64',
-      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-darwin-amd64',
-      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-darwin-arm64'
+      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-amd64',
+      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-arm64',
+      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-linux-amd64'
     },
     genesis: {
       genesisUrl: 'https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz'
@@ -368,7 +367,7 @@ const info: Chain = {
           "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-darwin-amd64',
           "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v19.2.0/gaiad-v19.2.0-darwin-arm64'
         },
-        nextVersionName: '',
+        nextVersionName: 'v21',
         sdk: {
           type: 'cosmos',
           version: 'v0.50.9',
@@ -383,6 +382,38 @@ const info: Chain = {
           type: 'go',
           version: 'v8.4.0'
         }
+      },
+      {
+        name: 'v21',
+        tag: 'v21.0.0',
+        proposal: 971,
+        height: 22953640,
+        recommendedVersion: 'v21.0.0',
+        compatibleVersions: ['v21.0.0'],
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.38.11'
+        },
+        binaries: {
+          "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-amd64',
+          "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-arm64',
+          "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-linux-amd64'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          version: 'v0.50.9',
+          tag: 'v0.50.9-lsm'
+        },
+        cosmwasm: {
+          version: 'v0.53.0',
+          repo: 'https://github.com/CosmWasm/wasmd',
+          tag: 'v0.53.0'
+        },
+        ibc: {
+          type: 'go',
+          version: 'v8.5.1'
+        }
       }
     ],
     sdk: {
@@ -392,12 +423,12 @@ const info: Chain = {
     },
     ibc: {
       type: 'go',
-      version: 'v8.4.0'
+      version: 'v8.5.1'
     },
     cosmwasm: {
-      version: 'v0.51.0',
+      version: 'v0.53.0',
       repo: 'https://github.com/CosmWasm/wasmd',
-      tag: 'v0.51.0'
+      tag: 'v0.53.0'
     }
   },
   logoURIs: {

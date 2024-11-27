@@ -29,16 +29,15 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/BitCannaGlobal/bcna',
-    recommendedVersion: 'v3.1.0',
-    compatibleVersions: ['v3.1.0'],
+    recommendedVersion: 'v4.0.1',
+    compatibleVersions: ['v4.0.1'],
     binaries: {
-      "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_amd64.tar.gz',
-      "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_linux_arm64.tar.gz',
-      "darwin/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v3.1.0/bcna_darwin_arm64.tar.gz'
+      "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_arm64.tar.gz'
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.5'
+      version: 'v0.38.15'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/BitCannaGlobal/bcna/main/genesis.json'
@@ -127,7 +126,7 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.37.5'
         },
-        nextVersionName: '',
+        nextVersionName: 'stickyfingers',
         sdk: {
           type: 'cosmos',
           version: 'v0.47.11'
@@ -136,15 +135,27 @@ const info: Chain = {
           type: 'go',
           version: 'v7.4.0'
         }
+      },
+      {
+        name: 'stickyfingers',
+        proposal: 16,
+        height: 16782000,
+        recommendedVersion: 'v4.0.1',
+        compatibleVersions: ['v4.0.0', 'v4.0.1'],
+        binaries: {
+          "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_amd64.tar.gz',
+          "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_arm64.tar.gz'
+        },
+        nextVersionName: ''
       }
     ],
     sdk: {
       type: 'cosmos',
-      version: 'v0.47.11'
+      version: 'v0.50.10'
     },
     ibc: {
       type: 'go',
-      version: 'v7.4.0'
+      version: 'v8.5.2'
     }
   },
   logoURIs: {

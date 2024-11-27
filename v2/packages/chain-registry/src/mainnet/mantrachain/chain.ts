@@ -81,6 +81,10 @@ const info: Chain = {
       {
         address: 'https://mantra-mainnet-rpc.itrocket.net:443',
         provider: 'ITRocket'
+      },
+      {
+        address: 'https://mantra.rpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -103,6 +107,10 @@ const info: Chain = {
       {
         address: 'https://mantra-mainnet-api.itrocket.net',
         provider: 'ITRocket'
+      },
+      {
+        address: 'https://mantra.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -125,6 +133,10 @@ const info: Chain = {
       {
         address: 'mantra-mainnet-grpc.itrocket.net:443',
         provider: 'ITRocket'
+      },
+      {
+        address: 'mantra.grpc.m.stavr.tech:3601',
+        provider: '🔥STAVR🔥'
       }
     ]
   },
@@ -137,6 +149,11 @@ const info: Chain = {
       url: 'https://mainnet.itrocket.net/mantra',
       txPage: 'https://mainnet.itrocket.net/mantra/transaction/${txHash}',
       accountPage: 'https://mainnet.itrocket.net/mantra/account/${accountAddress}'
+    }, {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Mantra-Mainnet',
+      txPage: 'https://explorer.stavr.tech/Mantra-Mainnet/transaction/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Mantra-Mainnet/account/${accountAddress}'
     }],
   keywords: [
     'rwa',

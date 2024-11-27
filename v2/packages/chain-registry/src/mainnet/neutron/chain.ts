@@ -60,14 +60,14 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/neutron-org/neutron',
-    recommendedVersion: 'v4.2.0',
-    compatibleVersions: ['v4.2.0'],
+    recommendedVersion: 'v5.0.2',
+    compatibleVersions: ['v5.0.2'],
     binaries: {
-      "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v4.2.0/neutrond-linux-amd64'
+      "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v5.0.2/neutrond-linux-amd64'
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.38.7'
+      version: 'v0.38.15'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/neutron-org/mainnet-assets/main/neutron-1-genesis.json'
@@ -195,7 +195,7 @@ const info: Chain = {
           type: 'cometbft',
           version: 'v0.38.7'
         },
-        nextVersionName: '',
+        nextVersionName: 'v5.0.2',
         sdk: {
           type: 'cosmos',
           repo: 'https://github.com/neutron-org/cosmos-sdk',
@@ -211,20 +211,50 @@ const info: Chain = {
           type: 'go',
           version: 'v8.2.1'
         }
+      },
+      {
+        name: 'v5.0.2',
+        proposal: 3,
+        height: 17177900,
+        recommendedVersion: 'v5.0.2',
+        compatibleVersions: ['v5.0.2'],
+        binaries: {
+          "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v5.0.2/neutrond-linux-amd64'
+        },
+        consensus: {
+          type: 'cometbft',
+          version: 'v0.38.15'
+        },
+        nextVersionName: '',
+        sdk: {
+          type: 'cosmos',
+          repo: 'https://github.com/neutron-org/cosmos-sdk',
+          version: 'v0.50.10',
+          tag: 'v0.50.10-neutron'
+        },
+        cosmwasm: {
+          version: 'v0.53.0',
+          repo: 'https://github.com/neutron-org/wasmd',
+          enabled: true
+        },
+        ibc: {
+          type: 'go',
+          version: 'v8.5.2'
+        }
       }
     ],
     sdk: {
       type: 'cosmos',
       repo: 'https://github.com/neutron-org/cosmos-sdk',
-      version: 'v0.50.7',
-      tag: 'v0.50.7-neutron'
+      version: 'v0.50.10',
+      tag: 'v0.50.10-neutron'
     },
     ibc: {
       type: 'go',
-      version: 'v8.2.1'
+      version: 'v8.5.2'
     },
     cosmwasm: {
-      version: 'v0.51.0',
+      version: 'v0.53.0',
       repo: 'https://github.com/neutron-org/wasmd',
       enabled: true
     }

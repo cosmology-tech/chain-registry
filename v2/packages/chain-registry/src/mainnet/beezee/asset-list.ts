@@ -229,6 +229,46 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
       }
+    },
+    {
+      description: 'The Spice memecoin',
+      denomUnits: [{
+          denom: 'ibc/08EAEAB525E59C611D5BD8FAC4BE65DF65A69E62874377F6889BBD01A33F385F',
+          exponent: 0
+        }, {
+          denom: 'Spice',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/08EAEAB525E59C611D5BD8FAC4BE65DF65A69E62874377F6889BBD01A33F385F',
+      name: 'Spice',
+      display: 'Spice',
+      symbol: 'SPICE',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/spice.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/spice.png',
+          theme: {
+            primaryColorHex: '#e5ba44'
+          }
+        }],
+      keywords: ['meme'],
+      socials: {
+        twitter: 'https://x.com/spiceoncosmos'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/uspice',
+            channelId: 'channel-340'
+          },
+          chain: {
+            channelId: 'channel-0',
+            path: 'transfer/channel-0/factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/uspice'
+          }
+        }]
     }
   ]
 };

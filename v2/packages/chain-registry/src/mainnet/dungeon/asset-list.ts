@@ -15,6 +15,7 @@ const info: AssetList = {
       base: 'udgn',
       name: 'Dragon',
       display: 'DGN',
+      coingeckoId: 'dragon-coin-2',
       symbol: 'DGN',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
