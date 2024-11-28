@@ -37,22 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/warden-protocol/networks/main/testnets/buenavista/genesis.json'
     },
-    versions: [{
-        name: 'v0.3.0',
-        recommendedVersion: 'v0.3.0',
-        compatibleVersions: ['v0.3.0'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.38'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.50'
-        },
-        cosmwasm: {
-          enabled: false
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.50'

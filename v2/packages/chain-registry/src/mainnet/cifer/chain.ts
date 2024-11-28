@@ -32,12 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v2.0.0'],
     genesis: {
       genesisUrl: 'https://rpcmainnet.cifer.ai/genesis'
-    },
-    versions: [{
-        name: 'v2.0.0',
-        recommendedVersion: 'v2.0.0',
-        compatibleVersions: ['v2.0.0']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',

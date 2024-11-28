@@ -38,14 +38,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/palomachain/mainnet/master/tumbler/genesis.json'
     },
-    versions: [{
-        name: 'v1.15.4',
-        recommendedVersion: 'v1.15.4',
-        compatibleVersions: ['v1.15.4'],
-        binaries: {
-          "linux/amd64": 'https://github.com/palomachain/paloma/releases/download/v1.15.4/paloma_Linux_x86_64.tar.gz'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.50.6'

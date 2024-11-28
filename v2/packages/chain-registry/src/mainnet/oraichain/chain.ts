@@ -38,55 +38,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/oraichain/oraichain-static-files/master/genesis.json'
     },
-    versions: [
-      {
-        name: 'v0.40',
-        height: 2098755,
-        proposal: 32,
-        recommendedVersion: 'v0.40.3',
-        compatibleVersions: [
-          'v0.40.0',
-          'v0.40.1',
-          'v0.40.2',
-          'v0.40.3'
-        ],
-        nextVersionName: 'v0.41'
-      },
-      {
-        name: 'v0.41',
-        height: 9058418,
-        proposal: 116,
-        recommendedVersion: 'v0.41.8',
-        compatibleVersions: [
-          'v0.41.0',
-          'v0.41.1',
-          'v0.41.2',
-          'v0.41.3',
-          'v0.41.4',
-          'v0.41.5',
-          'v0.41.6',
-          'v0.41.7',
-          'v0.41.8'
-        ],
-        previousVersionName: 'v0.40',
-        nextVersionName: 'v0.42'
-      },
-      {
-        name: 'v0.42',
-        height: 21627705,
-        proposal: 234,
-        recommendedVersion: 'v0.42.4',
-        compatibleVersions: [
-          'v0.42.0',
-          'v0.42.1',
-          'v0.42.2',
-          'v0.42.3',
-          'v0.42.4'
-        ],
-        previousVersionName: 'v0.41',
-        nextVersionName: ''
-      }
-    ],
     cosmwasm: {
       version: '0.33.0',
       enabled: true

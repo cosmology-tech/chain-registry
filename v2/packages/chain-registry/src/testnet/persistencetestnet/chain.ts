@@ -36,15 +36,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/persistenceOne/genesisTransactions/master/test-core-1/final_genesis.json'
-    },
-    versions: [{
-        name: 'v6.0.0-rc5',
-        recommendedVersion: 'v6.0.0-rc5',
-        compatibleVersions: ['v6.0.0-rc5'],
-        binaries: {
-          "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/archive/refs/tags/v6.0.0-rc5.tar.gz'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [

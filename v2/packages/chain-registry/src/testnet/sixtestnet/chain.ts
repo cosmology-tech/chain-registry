@@ -37,19 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/thesixnetwork/chain-info/genesis.json'
     },
-    versions: [{
-        name: 'v3.1.1-fn',
-        recommendedVersion: 'v3.1.1-fn',
-        compatibleVersions: ['v3.1.1-fn'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

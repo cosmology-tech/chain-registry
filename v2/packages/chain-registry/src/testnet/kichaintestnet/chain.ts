@@ -24,12 +24,7 @@ const info: Chain = {
     compatibleVersions: ['Testnet-3.0.0-beta'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json'
-    },
-    versions: [{
-        name: 'Testnet-3.0.0-beta',
-        recommendedVersion: 'Testnet-3.0.0-beta',
-        compatibleVersions: ['Testnet-3.0.0-beta']
-      }]
+    }
   },
   apis: {
     rpc: [{

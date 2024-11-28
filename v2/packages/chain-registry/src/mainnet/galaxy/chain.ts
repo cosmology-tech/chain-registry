@@ -35,16 +35,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://github.com/OrbisWorlds/networks/raw/main/galaxy-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/galaxies-labs/galaxy/releases/download/v1.0.0/galaxy_v1.0.0_linux_amd64.tar.gz',
-          "darwin/amd64": 'https://github.com/galaxies-labs/galaxy/releases/download/v1.0.0/galaxy_v1.0.0_darwin_amd64.tar.gz'
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/galaxy/images/glx.png',

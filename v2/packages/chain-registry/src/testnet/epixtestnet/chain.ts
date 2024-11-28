@@ -33,25 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v12.0.0-rc4'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/EpixZone/Epix/refs/heads/main/Networks/Testnet/epix_4243-0/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v6.1.0'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [{

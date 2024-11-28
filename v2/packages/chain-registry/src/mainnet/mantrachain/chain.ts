@@ -41,24 +41,7 @@ const info: Chain = {
     cosmwasm: {
       version: '0.53',
       enabled: true
-    },
-    versions: [{
-        name: '1.0.0-rc3',
-        recommendedVersion: '1.0.0-rc3',
-        compatibleVersions: ['1.0.0-rc3'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.38'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.50.10'
-        },
-        cosmwasm: {
-          version: '0.53',
-          enabled: true
-        }
-      }]
+    }
   },
   apis: {
     rpc: [

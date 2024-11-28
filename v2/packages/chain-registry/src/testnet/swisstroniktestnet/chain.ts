@@ -37,68 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://rpc.testnet.swisstronik.com/genesis'
     },
-    versions: [
-      {
-        name: 'v0.1.11-testnet',
-        recommendedVersion: 'v0.1.11-testnet',
-        compatibleVersions: ['v0.1.11-testnet'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37'
-        },
-        nextVersionName: 'v1.0.1',
-        sdk: {
-          type: 'cosmos',
-          version: '0.47'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.2.0'
-        }
-      },
-      {
-        name: 'v1.0.1',
-        proposal: 1,
-        height: 1969786,
-        recommendedVersion: 'v1.0.1',
-        compatibleVersions: ['v1.0.1'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37'
-        },
-        nextVersionName: 'v1.0.2',
-        sdk: {
-          type: 'cosmos',
-          version: '0.47'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.2.0'
-        }
-      },
-      {
-        name: 'v1.0.2',
-        height: 5430000,
-        recommendedVersion: 'v1.0.2',
-        compatibleVersions: ['v1.0.2'],
-        binaries: {
-          "linux/amd64": 'https://github.com/SigmaGmbH/swisstronik-chain/releases/download/testnet-v1.0.2/swisstronik_1.0.2_amd64.deb.zip'
-        },
-        consensus: {
-          type: 'cometbft',
-          version: '0.37'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: '0.47'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.2.0'
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: '0.47'

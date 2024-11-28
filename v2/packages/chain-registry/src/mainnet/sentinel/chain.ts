@@ -32,34 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v0.11.2', 'v0.11.1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/sentinel-official/networks/main/sentinelhub-2/genesis.zip'
-    },
-    versions: [
-      {
-        name: 'upgrade-1',
-        recommendedVersion: 'v0.7.0',
-        compatibleVersions: ['v0.7.0']
-      },
-      {
-        name: 'upgrade-2',
-        recommendedVersion: 'v0.8.3',
-        compatibleVersions: ['v0.8.3']
-      },
-      {
-        name: 'upgrade-3',
-        recommendedVersion: 'v0.9.3',
-        compatibleVersions: ['v0.9.3']
-      },
-      {
-        name: 'upgrade-4',
-        recommendedVersion: 'v0.10.1',
-        compatibleVersions: ['v0.10.1']
-      },
-      {
-        name: 'v11',
-        recommendedVersion: 'v0.11.3',
-        compatibleVersions: ['v0.11.2', 'v0.11.1']
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',

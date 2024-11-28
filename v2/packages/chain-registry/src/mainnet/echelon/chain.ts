@@ -36,19 +36,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://gist.githubusercontent.com/echelonfoundation/ee862f58850fc1b5ee6a6fdccc3130d2/raw/55c2c4ea2fee8a9391d0dc55b2c272adb804054a/genesis.json'
-    },
-    versions: [{
-        name: 'v1.1.4',
-        recommendedVersion: 'v1.1.4',
-        compatibleVersions: ['v1.1.4', 'v1.0.3'],
-        binaries: {
-          "linux/amd64": 'https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Linux_x86_64.tar.gz',
-          "linux/arm64": 'https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Darwin_x86_64.tar.gz',
-          "darwin/arm64": 'https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/echelonfoundation/echelon/releases/download/v1.1.4/echelon_1.1.4_Windows_x86_64.zip'
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/echelon/images/logo.png',

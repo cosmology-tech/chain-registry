@@ -22,43 +22,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-2b/genesis.json'
     },
-    versions: [{
-        name: 'v0.14.0',
-        recommendedVersion: 'v0.14.0',
-        compatibleVersions: ['v0.14.0'],
-        nextVersionName: 'v0.15.0',
-        sdk: {
-          type: 'cosmos',
-          version: '0.45.11'
-        },
-        cosmwasm: {
-          version: '0.29.2',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v3.3.1'
-        }
-      }, {
-        name: 'v0.15.0',
-        proposal: 34,
-        height: 15947000,
-        recommendedVersion: 'v0.15.0',
-        compatibleVersions: ['v0.15.0'],
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: '0.45.16'
-        },
-        cosmwasm: {
-          version: '0.33.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.4.2'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.45.16'

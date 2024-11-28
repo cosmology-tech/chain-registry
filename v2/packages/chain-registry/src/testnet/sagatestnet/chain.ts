@@ -42,27 +42,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/sagaxyz/ssc-public-testnet/main/genesis.json'
     },
-    versions: [{
-        name: 'v0.1.3',
-        recommendedVersion: 'v0.1.3',
-        compatibleVersions: [
-          'v0.1.0',
-          'v0.1.1',
-          'v0.1.2',
-          'v0.1.3'
-        ],
-        consensus: {
-          type: 'tendermint',
-          version: '0.37'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.47'
-        },
-        cosmwasm: {
-          enabled: false
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.47'

@@ -24,12 +24,7 @@ const info: Chain = {
     compatibleVersions: ['v0.4.0'],
     genesis: {
       genesisUrl: 'https://github.com/Team-Kujira/networks/raw/master/testnet/harpoon-4.json'
-    },
-    versions: [{
-        name: 'v0.4.0',
-        recommendedVersion: 'v0.4.0',
-        compatibleVersions: ['v0.4.0']
-      }]
+    }
   },
   apis: {
     rpc: [{

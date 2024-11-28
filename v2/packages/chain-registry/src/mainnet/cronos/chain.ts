@@ -37,24 +37,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.3.0',
-        recommendedVersion: 'v1.3.0',
-        compatibleVersions: [
-          'v1.2.0',
-          'v1.2.1',
-          'v1.2.2',
-          'v1.3.0'
-        ],
-        binaries: {
-          "linux/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Linux_x86_64.tar.gz',
-          "linux/arm64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Darwin_x86_64.tar.gz',
-          "darwin/arm64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/crypto-org-chain/cronos/releases/download/v1.3.0/cronos_1.3.0_Windows_x86_64.tar.gz'
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cronos/images/cronos.png',

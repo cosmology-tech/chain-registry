@@ -36,27 +36,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhye-2/genesis.json'
     },
-    versions: [{
-        name: 'v1.4.5-rc2',
-        recommendedVersion: 'v1.4.5-rc2',
-        compatibleVersions: ['v1.4.5-rc2'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        cosmwasm: {
-          version: '0.29',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: '5.3.2'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46'

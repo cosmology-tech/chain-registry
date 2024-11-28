@@ -37,15 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dhealthproject/mainnet/main/genesis.json'
     },
-    versions: [{
-        name: 'v2',
-        recommendedVersion: 'v2.1.1',
-        compatibleVersions: ['v2.1.1'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.4'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       repo: 'https://github.com/cosmos/cosmos-sdk',

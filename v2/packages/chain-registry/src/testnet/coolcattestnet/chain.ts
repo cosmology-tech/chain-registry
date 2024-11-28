@@ -33,12 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v2.0.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/DigitalKitchenLabs/testnets/main/kitten-04/genesis.json'
-    },
-    versions: [{
-        name: 'v2.0.0',
-        recommendedVersion: 'v2.0.0',
-        compatibleVersions: ['v2.0.0']
-      }]
+    }
   },
   apis: {
     rpc: [{

@@ -39,30 +39,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/mars-protocol/networks/raw/main/mars-1/genesis.json'
     },
-    versions: [{
-        name: 'v1',
-        tag: 'v1.0.0',
-        height: 0,
-        recommendedVersion: 'v1.0.2',
-        compatibleVersions: ['v1.0.0', 'v1.0.2'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34.24'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46.7'
-        },
-        cosmwasm: {
-          version: '0.30.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: '6.1.0',
-          icsEnabled: ['ics20-1']
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46.7'

@@ -33,11 +33,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/airchains-network/junction/releases/download/v0.1.0/genesis.json'
     },
-    versions: [{
-        name: 'v1',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0']
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.50.3'

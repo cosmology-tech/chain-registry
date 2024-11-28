@@ -36,70 +36,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/InjectiveLabs/mainnet-config/master/10001/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v1.10',
-        recommendedVersion: 'v1.10',
-        compatibleVersions: ['v1.10'],
-        binaries: {
-          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.10.0-1679065799/linux-amd64.zip',
-          "darwin/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.10.0-1679065799/darwin-amd64.zip'
-        },
-        nextVersionName: 'v1.11'
-      },
-      {
-        name: 'v1.11',
-        proposal: 231,
-        height: 34775000,
-        recommendedVersion: 'v1.11.5-1687535916',
-        compatibleVersions: [
-          'v1.11',
-          'v1.11.3-1686246472',
-          'v1.11.4-1686608669',
-          'v1.11.5-1687535916'
-        ],
-        binaries: {
-          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/linux-amd64.zip',
-          "darwin/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.11.5-1687535916/darwin-amd64.zip'
-        },
-        nextVersionName: 'v1.12.0'
-      },
-      {
-        name: 'v1.12.0',
-        proposal: 314,
-        height: 57076000,
-        recommendedVersion: 'v1.12.1-1705909076',
-        compatibleVersions: ['v1.12.0-1704530206', 'v1.12.1-1705909076'],
-        binaries: {
-          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.12.1-1705909076/linux-amd64.zip',
-          "darwin/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.12.1-1705909076/darwin-amd64.zip'
-        },
-        nextVersionName: 'v1.13.0'
-      },
-      {
-        name: 'v1.13.0',
-        proposal: 420,
-        height: 80319200,
-        recommendedVersion: 'v1.13.0-1722157491',
-        compatibleVersions: ['v1.13.0-1722157491'],
-        binaries: {
-          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.13.0-1722157491/linux-amd64.zip'
-        },
-        nextVersionName: 'v1.13.2'
-      },
-      {
-        name: 'v1.13.2',
-        proposal: 424,
-        height: 82830000,
-        recommendedVersion: 'v1.13.2',
-        compatibleVersions: ['v1.13.2'],
-        binaries: {
-          "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.13.2-1723753267/linux-amd64.zip'
-        },
-        nextVersionName: ''
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',

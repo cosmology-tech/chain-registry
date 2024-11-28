@@ -35,12 +35,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://github.com/liftedinit/manifest-ledger/blob/main/network/manifest-1/manifest-1_genesis.json'
-    },
-    versions: [{
-        name: 'v0.0.1-alpha.12',
-        recommendedVersion: 'v0.0.1-alpha.12',
-        compatibleVersions: ['v0.0.1-alpha.12']
-      }]
+    }
   },
   apis: {
     rpc: [{

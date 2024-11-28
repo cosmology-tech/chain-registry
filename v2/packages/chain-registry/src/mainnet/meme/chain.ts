@@ -32,12 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v1.0.0'],
     genesis: {
       genesisUrl: 'https://github.com/memecosmos/mainnet/raw/main/meme-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',

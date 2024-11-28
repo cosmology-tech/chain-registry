@@ -33,12 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v1.1.4'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Pylons-tech/pylons/main/networks/pylons-mainnet-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.1.4',
-        recommendedVersion: 'v1.1.4',
-        compatibleVersions: ['v1.1.4']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'

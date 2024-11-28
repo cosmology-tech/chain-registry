@@ -28,17 +28,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/hypersign-protocol/networks/master/testnet/prajna/final_genesis.json'
-    },
-    versions: [{
-        name: 'v0.2.0',
-        recommendedVersion: 'v0.2.0',
-        compatibleVersions: ['v0.2.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/hypersign-protocol/hid-node/releases/download/v0.2.0/hid-noded-0.2.0-linux-amd64.tar.gz',
-          "linux/arm64": 'https://github.com/hypersign-protocol/hid-node/releases/download/v0.2.0/hid-noded-0.2.0-linux-arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/hypersign-protocol/hid-node/releases/download/v0.2.0/hid-noded-0.2.0-darwin-amd64.tar.gz'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [{

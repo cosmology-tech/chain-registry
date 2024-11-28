@@ -41,28 +41,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Heli-Chain/heli/main/genesis.json'
     },
-    versions: [{
-        name: 'v0.0.1',
-        recommendedVersion: 'v0.0.1',
-        compatibleVersions: ['v0.0.1'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37.2'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: '0.47.4'
-        },
-        cosmwasm: {
-          version: '0.42.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.2.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.47.4'

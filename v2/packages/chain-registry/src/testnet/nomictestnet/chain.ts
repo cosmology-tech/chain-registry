@@ -44,17 +44,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://github.com/nomic-io/nomic/blob/v9.1.0/networks/testnet.toml'
-    },
-    versions: [{
-        name: 'v9.1.0',
-        recommendedVersion: 'v9.1.0',
-        compatibleVersions: ['v9.1.0'],
-        consensus: {
-          type: 'tendermint',
-          version: 'v0.34'
-        },
-        nextVersionName: ''
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',

@@ -29,12 +29,7 @@ const info: Chain = {
     compatibleVersions: ['v0.1.0'],
     genesis: {
       genesisUrl: 'https://github.com/fiamma-chain/networks/raw/main/fiamma-testnet-1/genesis.json'
-    },
-    versions: [{
-        name: 'v0.1.0',
-        recommendedVersion: 'v0.1.0',
-        compatibleVersions: ['v0.1.0']
-      }]
+    }
   },
   logoURIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/fiammatestnet/images/fiamma.svg'

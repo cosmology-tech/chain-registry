@@ -32,29 +32,6 @@ const info: Chain = {
       name: 'plan_ethermint',
       genesisUrl: 'https://raw.githubusercontent.com/alpha-omega-labs/genesis-parameters/main/genesis_29-2/genesis.json'
     },
-    versions: [{
-        name: 'plan_ethermint',
-        tag: 'v0.3.0',
-        height: 0,
-        recommendedVersion: 'v0.5.0',
-        compatibleVersions: ['v0.3.0', 'v0.5.0'],
-        nextVersionName: 'plan_crypto',
-        sdk: {
-          type: 'cosmos',
-          version: '0.44.5'
-        }
-      }, {
-        name: 'plan_crypto',
-        tag: 'v1.0.0',
-        height: 7400000,
-        proposal: 92,
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        sdk: {
-          type: 'cosmos',
-          version: '0.46.15'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46.15'

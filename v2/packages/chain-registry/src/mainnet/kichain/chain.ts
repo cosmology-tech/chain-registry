@@ -33,12 +33,7 @@ const info: Chain = {
     compatibleVersions: ['5.0.0', '5.0.1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Mainnet/kichain-2/genesis.json'
-    },
-    versions: [{
-        name: '5.0.0',
-        recommendedVersion: '5.0.1',
-        compatibleVersions: ['5.0.0', '5.0.1']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',

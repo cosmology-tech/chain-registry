@@ -30,12 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v0.8.4'],
     genesis: {
       genesisUrl: 'https://github.com/babylonchain/networks/raw/main/bbn-test3/genesis.tar.bz2'
-    },
-    versions: [{
-        name: 'v0.8.4',
-        recommendedVersion: 'v0.8.4',
-        compatibleVersions: ['v0.8.4']
-      }]
+    }
   },
   logoURIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'

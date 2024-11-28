@@ -29,12 +29,7 @@ const info: Chain = {
     compatibleVersions: ['v0.11.2'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/stratosnet/mainnet/main/genesis/genesis.json'
-    },
-    versions: [{
-        name: 'v0.11.2',
-        recommendedVersion: 'v0.11.2',
-        compatibleVersions: ['v0.11.2']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',

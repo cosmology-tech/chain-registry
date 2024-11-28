@@ -34,42 +34,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://github.com/Sifchain/networks/blob/master/betanet/sifchain-1/genesis.json.gz?raw=true'
-    },
-    versions: [
-      {
-        name: 'v1.0.14-beta',
-        proposal: 132,
-        height: 9263818,
-        recommendedVersion: 'v1.0.14-beta',
-        compatibleVersions: ['v1.0.14-beta'],
-        binaries: {
-          "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.0.14-beta/sifnoded-v1.0.14-beta-linux-amd64.zip'
-        },
-        nextVersionName: 'v1.1.0-beta'
-      },
-      {
-        name: 'v1.1.0-beta',
-        proposal: 141,
-        height: 9663352,
-        recommendedVersion: 'v1.1.0-beta',
-        compatibleVersions: ['v1.1.0-beta'],
-        binaries: {
-          "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.1.0-beta/sifnoded-v1.1.0-beta-linux-amd64.zip'
-        },
-        nextVersionName: 'v1.2.0-beta'
-      },
-      {
-        name: 'v1.2.0-beta',
-        proposal: 144,
-        height: 14556000,
-        recommendedVersion: 'v1.2.0-beta',
-        compatibleVersions: ['v1.2.0-beta'],
-        binaries: {
-          "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.2.0-beta/sifnoded-v1.2.0-beta-linux-amd64.tar.gz'
-        },
-        nextVersionName: ''
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',

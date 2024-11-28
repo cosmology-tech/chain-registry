@@ -17,12 +17,7 @@ const info: Chain = {
     compatibleVersions: ['v0.0.1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/ulasnetwork/chain-config/main/ulas/genesis.json'
-    },
-    versions: [{
-        name: 'v0.0.1',
-        recommendedVersion: 'v0.0.1',
-        compatibleVersions: ['v0.0.1']
-      }]
+    }
   },
   apis: {
     rpc: [{

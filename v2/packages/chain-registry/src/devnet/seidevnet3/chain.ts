@@ -33,21 +33,7 @@ const info: Chain = {
     ],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/sei-protocol/testnet/main/sei-devnet-3/genesis.json'
-    },
-    versions: [{
-        name: '2.0.40beta',
-        recommendedVersion: '2.0.40beta',
-        compatibleVersions: [
-          '2.0.27beta',
-          '2.0.29eta',
-          '2.0.31beta',
-          '2.0.32beta',
-          '2.0.36beta',
-          '2.0.37beta',
-          '2.0.39beta',
-          '2.0.40beta'
-        ]
-      }]
+    }
   },
   apis: {
     rpc: [{

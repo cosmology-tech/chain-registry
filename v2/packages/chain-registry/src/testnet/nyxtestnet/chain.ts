@@ -45,19 +45,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://rpc.sandbox.nymtech.net/genesis'
     },
-    versions: [{
-        name: 'v0.43.0',
-        tag: 'v0.43.0',
-        height: 1933203,
-        recommendedVersion: 'v0.43.0',
-        compatibleVersions: ['v0.43.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
-        },
-        cosmwasm: {
-          enabled: true
-        }
-      }],
     cosmwasm: {
       enabled: true
     }

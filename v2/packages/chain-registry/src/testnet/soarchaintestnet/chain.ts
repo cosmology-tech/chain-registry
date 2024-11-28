@@ -37,47 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/soar-robotics/testnet-validator-onboard/main/release/genesis.json'
     },
-    versions: [
-      {
-        name: 'v1',
-        tag: 'v0.2.5',
-        height: 0,
-        recommendedVersion: 'v0.2.10',
-        compatibleVersions: ['v0.2.10'],
-        nextVersionName: 'v2'
-      },
-      {
-        name: 'v2',
-        tag: 'v0.2.6',
-        height: 480332,
-        recommendedVersion: 'v0.2.6',
-        compatibleVersions: ['v0.2.6'],
-        nextVersionName: 'v3'
-      },
-      {
-        name: 'v3',
-        tag: 'v0.2.8',
-        height: 871084,
-        recommendedVersion: 'v0.2.8',
-        compatibleVersions: ['v0.2.8'],
-        nextVersionName: 'v4'
-      },
-      {
-        name: 'v4',
-        tag: 'v0.2.9',
-        height: 1020400,
-        recommendedVersion: 'v0.2.9',
-        compatibleVersions: ['v0.2.9'],
-        nextVersionName: 'v5'
-      },
-      {
-        name: 'v5',
-        tag: 'v0.2.10',
-        height: 1175732,
-        recommendedVersion: 'v0.2.10',
-        compatibleVersions: ['v0.2.10']
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: '0.45.5'

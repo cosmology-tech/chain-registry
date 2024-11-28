@@ -41,10 +41,7 @@ const info: Chain = {
       txPage: 'https://explorer.neura-testnet.ankr.com/tx/${txHash}'
     }],
   codebase: {
-    versions: [{
-        name: 'v0.0.1',
-        height: 0
-      }]
+
   },
   images: [{
       imageSync: {

@@ -68,12 +68,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Int3facechain/networks/main/int3face-1/genesis.json'
     },
-    versions: [{
-        name: 'v0.2.7',
-        recommendedVersion: 'v0.2.7',
-        compatibleVersions: ['v0.2.7'],
-        nextVersionName: 'v0.2.8'
-      }],
     sdk: {
       type: 'cosmos',
       repo: 'https://github.com/cosmos/cosmos-sdk',

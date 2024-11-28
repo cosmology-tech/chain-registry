@@ -30,12 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v0.10.5'],
     genesis: {
       genesisUrl: 'https://storage.googleapis.com/fetch-ai-testnet-genesis/genesis-dorado-827201.json'
-    },
-    versions: [{
-        name: 'v0.10.5',
-        recommendedVersion: 'v0.10.5',
-        compatibleVersions: ['v0.10.5']
-      }]
+    }
   },
   apis: {
     rpc: [{

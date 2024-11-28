@@ -19,69 +19,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://storage.googleapis.com/public-snapshots-ninerealms/genesis/17562000.json'
     },
-    versions: [
-      {
-        name: 'v1.132.0',
-        recommendedVersion: 'v1.132.0',
-        compatibleVersions: ['v1.132.0'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.1'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v2.0.3'
-        }
-      },
-      {
-        name: 'v1.133.0',
-        recommendedVersion: 'v1.133.0',
-        compatibleVersions: ['v1.133.0'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.1'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v2.0.3'
-        }
-      },
-      {
-        name: 'v1.134.0',
-        recommendedVersion: 'v1.134.0',
-        compatibleVersions: ['v1.134.0'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.1'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v2.0.3'
-        }
-      },
-      {
-        name: 'v1.134.1',
-        recommendedVersion: 'v1.134.1',
-        compatibleVersions: ['v1.134.1'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.1'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v2.0.3'
-        }
-      },
-      {
-        name: 'v2.135.0',
-        recommendedVersion: 'v2.135.0',
-        compatibleVersions: ['v2.135.0'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.16'
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.45.16'

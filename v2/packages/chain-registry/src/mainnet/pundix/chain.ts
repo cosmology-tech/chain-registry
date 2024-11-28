@@ -46,34 +46,6 @@ const info: Chain = {
       type: 'tendermint',
       version: '0.34'
     },
-    versions: [{
-        name: 'pxv1',
-        tag: 'v0.1.3',
-        height: 0,
-        nextVersionName: 'pxv2',
-        recommendedVersion: 'v0.1.3',
-        compatibleVersions: ['v0.1.3'],
-        binaries: {
-          "linux/amd64": 'https://github.com/pundix/pundix/releases/download/v0.1.3/pundix_0.1.3_Linux_x86_64.tar.gz',
-          "linux/arm64": 'https://github.com/pundix/pundix/releases/download/v0.1.3/pundix_0.1.3_Linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/pundix/pundix/releases/download/v0.1.3/pundix_0.1.3_Darwin_x86_64.tar.gz',
-          "darwin/arm64": 'https://github.com/pundix/pundix/releases/download/v0.1.3/pundix_0.1.3_Darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/pundix/pundix/releases/download/v0.1.3/pundix_0.1.3_Windows_x86_64.zip'
-        }
-      }, {
-        name: 'pxv2',
-        tag: 'v0.2.3',
-        height: 6869100,
-        recommendedVersion: 'v0.2.3',
-        compatibleVersions: ['v0.2.3'],
-        binaries: {
-          "linux/amd64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Linux_x86_64.tar.gz',
-          "linux/arm64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Darwin_x86_64.tar.gz',
-          "darwin/arm64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Windows_x86_64.zip'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45.11'

@@ -30,12 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v1.0.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/LambdaIM/mainnet/main/lambda_92000-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',

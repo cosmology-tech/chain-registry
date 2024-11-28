@@ -39,15 +39,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/humansdotai/mainnets/blob/main/mainnet/1/genesis_1089-1.json'
     },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.34.27'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46.11'

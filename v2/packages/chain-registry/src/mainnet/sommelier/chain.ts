@@ -44,60 +44,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/PeggyJV/sommelier/main/contrib/mainnet/sommelier-3/genesis.json'
     },
-    versions: [
-      {
-        name: 'v5.0.0',
-        recommendedVersion: 'v5.0.0',
-        compatibleVersions: ['v5.0.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v5.0.0/sommelier_5.0.0_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v5.0.0/sommelier_5.0.0_linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v5.0.0/sommelier_5.0.0_darwin_amd64.tar.gz',
-          "darwin/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v5.0.0/sommelier_5.0.0_darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v5.0.0/sommelier_5.0.0_windows_amd64.tar.gz'
-        }
-      },
-      {
-        name: 'v6.0.0',
-        recommendedVersion: 'v6.0.0',
-        compatibleVersions: ['v6.0.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v6.0.0/sommelier_6.0.0_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v6.0.0/sommelier_6.0.0_linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v6.0.0/sommelier_6.0.0_darwin_amd64.tar.gz',
-          "darwin/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v6.0.0/sommelier_6.0.0_darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v6.0.0/sommelier_6.0.0_windows_amd64.tar.gz'
-        },
-        nextVersionName: 'v7'
-      },
-      {
-        name: 'v7',
-        proposal: 119,
-        height: 13010200,
-        recommendedVersion: 'v7.0.1',
-        compatibleVersions: ['v7.0.0', 'v7.0.1'],
-        binaries: {
-          "linux/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_darwin_amd64.tar.gz',
-          "darwin/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_windows_amd64.tar.gz'
-        },
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.28'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.46.14'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v6.2.0'
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.46.14'

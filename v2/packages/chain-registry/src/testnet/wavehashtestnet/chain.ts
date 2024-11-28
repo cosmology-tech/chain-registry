@@ -36,27 +36,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/WaveHashProtocol/testnet/main/testnet-1/genesis.json'
     },
-    versions: [{
-        name: 'v6.0.0',
-        recommendedVersion: 'v6.0.0',
-        compatibleVersions: ['v6.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.30',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: '4.3.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

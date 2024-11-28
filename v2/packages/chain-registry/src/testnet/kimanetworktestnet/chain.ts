@@ -28,18 +28,7 @@ const info: Chain = {
     compatibleVersions: ['v0.4.3'],
     genesis: {
       genesisUrl: 'http://data-testnet.kima.finance/genesis.json'
-    },
-    versions: [{
-        name: 'v0.4.3',
-        recommendedVersion: 'v0.4.3',
-        compatibleVersions: ['v0.4.3'],
-        sdk: {
-          type: 'cosmos',
-          repo: 'https://github.com/cosmos/cosmos-sdk',
-          version: 'v0.47.4',
-          tag: 'v0.47.4'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [{

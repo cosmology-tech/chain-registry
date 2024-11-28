@@ -32,12 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v3.0.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/notional-labs/composable-networks/main/banksy-testnet-3/genesis.json'
-    },
-    versions: [{
-        name: 'v3.0.0',
-        recommendedVersion: 'v3.0.0',
-        compatibleVersions: ['v3.0.0']
-      }]
+    }
   },
   apis: {
     rpc: [{

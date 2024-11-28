@@ -42,62 +42,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://archive.aioz.network/aioz_168-1/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        binaries: {
-          "linux/amd64": 'https://archive.aioz.network/aiozd-v1.0.0-linux-amd64.tar.gz',
-          "darwin/amd64": 'https://archive.aioz.network/aiozd-v1.0.0-darwin-amd64.tar.gz',
-          "windows/amd64": 'https://archive.aioz.network/aiozd-v1.0.0-windows-amd64.zip'
-        },
-        nextVersionName: 'v1.2.0'
-      },
-      {
-        name: 'v1.2.0',
-        recommendedVersion: 'v1.2.0',
-        compatibleVersions: ['v1.2.0'],
-        binaries: {
-          "linux/amd64": 'https://archive.aioz.network/aiozd-v1.2.0-linux-amd64.tar.gz',
-          "darwin/amd64": 'https://archive.aioz.network/aiozd-v1.2.0-darwin-amd64.tar.gz',
-          "windows/amd64": 'https://archive.aioz.network/aiozd-v1.2.0-windows-amd64.zip'
-        },
-        nextVersionName: 'v1.3.0'
-      },
-      {
-        name: 'v1.3.0',
-        recommendedVersion: 'v1.3.0',
-        compatibleVersions: ['v1.3.0'],
-        binaries: {
-          "linux/amd64": 'https://archive.aioz.network/aiozd-v1.3.0-linux-amd64.tar.gz',
-          "darwin/amd64": 'https://archive.aioz.network/aiozd-v1.3.0-darwin-amd64.tar.gz',
-          "windows/amd64": 'https://archive.aioz.network/aiozd-v1.3.0-windows-amd64.zip'
-        },
-        nextVersionName: 'v1.4.0'
-      },
-      {
-        name: 'v1.4',
-        recommendedVersion: 'v1.4.1',
-        compatibleVersions: ['v1.4.1', 'v1.4.0'],
-        binaries: {
-          "linux/amd64": 'https://archive.aioz.network/aiozd-v1.4.1-linux-amd64.tar.gz',
-          "darwin/amd64": 'https://archive.aioz.network/aiozd-v1.4.1-darwin-amd64.tar.gz',
-          "windows/amd64": 'https://archive.aioz.network/aiozd-v1.4.1-windows-amd64.zip'
-        }
-      },
-      {
-        name: 'v1.5',
-        recommendedVersion: 'v1.5.0',
-        compatibleVersions: ['v1.5.0'],
-        binaries: {
-          "linux/amd64": 'https://archive.aioz.network/aiozd-v1.5.0-linux-amd64',
-          "darwin/amd64": 'https://archive.aioz.network/aiozd-v1.5.0-darwin-amd64',
-          "windows/amd64": 'https://archive.aioz.network/aiozd-v1.5.0-windows-amd64.exe'
-        }
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',

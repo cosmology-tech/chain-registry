@@ -38,46 +38,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/Synternet/synternet-chain-releases/blob/main/networks/mainnet/genesis.json'
     },
-    versions: [{
-        name: 'v11',
-        tag: 'v0.11.0',
-        recommendedVersion: 'v0.11.0',
-        compatibleVersions: ['v0.11.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.5'
-        },
-        height: 1,
-        nextVersionName: 'v14',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.11'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.1.0'
-        }
-      }, {
-        name: 'v14',
-        tag: 'v0.14.0',
-        proposal: 1,
-        height: 505094,
-        recommendedVersion: 'v0.14.0',
-        compatibleVersions: ['v0.14.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.5'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.11'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.1.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.11'

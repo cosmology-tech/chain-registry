@@ -31,12 +31,7 @@ const info: Chain = {
     compatibleVersions: ['v0.3.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/AssetMantle/genesisTransactions/main/mantle-1/final_genesis.json'
-    },
-    versions: [{
-        name: 'v0.3.0',
-        recommendedVersion: 'v0.3.0',
-        compatibleVersions: ['v0.3.0']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',

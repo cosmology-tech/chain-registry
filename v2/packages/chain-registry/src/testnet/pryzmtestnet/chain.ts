@@ -37,23 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://storage.googleapis.com/pryzm-resources/indigo-1/genesis.json'
     },
-    versions: [{
-        name: 'v0.9.0',
-        recommendedVersion: 'v0.9.0',
-        compatibleVersions: ['v0.9.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.37'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.47'
-        },
-        ibc: {
-          type: 'go',
-          version: '7.3.1'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.47'

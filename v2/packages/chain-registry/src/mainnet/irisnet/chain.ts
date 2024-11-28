@@ -31,27 +31,7 @@ const info: Chain = {
     compatibleVersions: ['v2.0.3'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/irisnet/mainnet/master/config/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v1.3.0',
-        nextVersionName: 'v1.4.1',
-        recommendedVersion: 'v1.3.0',
-        compatibleVersions: ['v1.3.0']
-      },
-      {
-        name: 'v1.4.1',
-        nextVersionName: 'v2.0.0',
-        recommendedVersion: 'v1.4.1',
-        compatibleVersions: ['v1.4.1']
-      },
-      {
-        name: 'v2.0.0',
-        nextVersionName: 'v2.1.0',
-        recommendedVersion: 'v2.0.3',
-        compatibleVersions: ['v2.0.3']
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',

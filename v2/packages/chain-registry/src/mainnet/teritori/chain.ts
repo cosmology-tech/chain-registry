@@ -36,47 +36,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/TERITORI/teritori-chain/raw/mainnet/mainnet/teritori-1/genesis.json'
     },
-    versions: [
-      {
-        name: 'v1.3.1',
-        recommendedVersion: 'v1.3.1',
-        compatibleVersions: ['v1.3.1'],
-        nextVersionName: 'v1.4.0'
-      },
-      {
-        name: 'v1.4.0',
-        proposal: 34,
-        height: 3699425,
-        recommendedVersion: 'v1.4.0',
-        compatibleVersions: ['v1.4.0'],
-        nextVersionName: 'v2.0.0'
-      },
-      {
-        name: 'v2.0.0',
-        proposal: 38,
-        height: 7199342,
-        recommendedVersion: 'v2.0.6',
-        compatibleVersions: ['v2.0.6'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.2'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.6'
-        },
-        cosmwasm: {
-          version: 'v0.41.0',
-          path: '$HOME/.teritorid/data/wasm',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.3.1'
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.6'

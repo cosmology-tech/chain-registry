@@ -37,39 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/evmos/testnets/raw/main/evmos_9000-4/genesis.zip'
     },
-    versions: [{
-        name: 'v11.0.0-rc3',
-        recommendedVersion: 'v11.0.0-rc3',
-        compatibleVersions: ['v11.0.0-rc3'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v6.1.0'
-        }
-      }, {
-        name: 'v12.0.0',
-        recommendedVersion: 'v12.0.0-rc4',
-        compatibleVersions: ['v12.0.0-rc4'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v6.1.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46'

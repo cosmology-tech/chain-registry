@@ -26,10 +26,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-    versions: [{
-        name: 'v0.0.1',
-        height: 0
-      }]
+
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neura/images/neura.png',

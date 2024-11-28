@@ -28,15 +28,7 @@ const info: Chain = {
     compatibleVersions: ['v1.9.3'],
     genesis: {
       genesisUrl: 'https://rpc.pulsar3.scrttestnet.com/genesis'
-    },
-    versions: [{
-        name: 'v1.9.3',
-        recommendedVersion: 'v1.9.3',
-        compatibleVersions: ['v1.9.3'],
-        binaries: {
-          "linux/amd64": 'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.9.3/secretnetwork_1.9.3_testnet_goleveldb_amd64.deb'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [{

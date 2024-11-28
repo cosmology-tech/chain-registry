@@ -40,34 +40,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://gitlab.com/api/v4/projects/42057472/packages/generic/joltify-linux-amd64-v0.1.0-rc1/v0.1.0-rc1/joltify'
     },
-    versions: [{
-        name: 'v0.1.0-rc1',
-        tag: 'v0.1.0-rc1',
-        height: 0,
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.3'
-        },
-        binaries: {
-          "linux/amd64": 'https://gitlab.com/api/v4/projects/42057472/packages/generic/joltify-linux-amd64-v0.1.0-rc1/v0.1.0-rc1/joltify'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.5'
-        },
-        language: {
-          type: 'go',
-          version: '1.22.3'
-        },
-        cosmwasm: {
-          enabled: false
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.3.0',
-          icsEnabled: ['ics20-1']
-        }
-      }],
     language: {
       type: 'go',
       version: '1.22.3'

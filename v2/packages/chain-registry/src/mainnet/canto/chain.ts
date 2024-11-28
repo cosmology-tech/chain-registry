@@ -32,29 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v7.0.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Canto-Network/Canto/genesis/Networks/Mainnet/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v5.0.0',
-        recommendedVersion: 'v5.0.0',
-        compatibleVersions: ['v5.0.0'],
-        nextVersionName: 'v6.0.0'
-      },
-      {
-        name: 'v6.0.0',
-        recommendedVersion: 'v6.0.0',
-        compatibleVersions: ['v6.0.0'],
-        nextVersionName: 'v7.0.0'
-      },
-      {
-        name: 'v7.0.0',
-        recommendedVersion: 'v7.0.0',
-        compatibleVersions: ['v7.0.0'],
-        proposal: 113,
-        height: 6055770,
-        nextVersionName: ''
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',

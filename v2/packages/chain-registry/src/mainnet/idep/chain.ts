@@ -28,15 +28,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://github.com/IDEP-network/Antora/raw/main/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/IDEP-network/Antora/raw/main/iond'
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',

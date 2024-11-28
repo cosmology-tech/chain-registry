@@ -38,23 +38,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Source-Protocol-Cosmos/mainnet/master/source-1/genesis.json'
     },
-    versions: [{
-        name: 'v3.0.0',
-        recommendedVersion: 'v3.0.3',
-        compatibleVersions: ['v3.0.3'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.30',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

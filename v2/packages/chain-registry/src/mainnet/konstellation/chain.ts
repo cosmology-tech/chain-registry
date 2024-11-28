@@ -18,12 +18,7 @@ const info: Chain = {
     compatibleVersions: ['v0.6.2'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Konstellation/konstellation/master/config/genesis.json'
-    },
-    versions: [{
-        name: 'v0.6.2',
-        recommendedVersion: 'v0.6.2',
-        compatibleVersions: ['v0.6.2']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'

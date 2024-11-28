@@ -25,12 +25,7 @@ const info: Chain = {
     compatibleVersions: ['v1.2.2', 'v1.6.1.1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/okx/mainnet/main/genesis.json'
-    },
-    versions: [{
-        name: 'v1.6.1.1',
-        recommendedVersion: 'v1.6.1.1',
-        compatibleVersions: ['v1.2.2', 'v1.6.1.1']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'

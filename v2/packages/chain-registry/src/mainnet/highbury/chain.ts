@@ -32,12 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v0.4.1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Four4Two/fury/mainnet/networks/genesis.json'
-    },
-    versions: [{
-        name: 'v0.4.1',
-        recommendedVersion: 'v0.4.1',
-        compatibleVersions: ['v0.4.1']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',

@@ -33,12 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v1.1.1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/ArableProtocol/acrechain/main/networks/mainnet/acre_9052-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.1.1',
-        recommendedVersion: 'v1.1.1',
-        compatibleVersions: ['v1.1.1']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',

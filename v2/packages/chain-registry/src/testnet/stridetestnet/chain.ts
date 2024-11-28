@@ -34,23 +34,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Stride-Labs/mainnet/main/testnet/genesis.json'
     },
-    versions: [{
-        name: 'v8.0.0-testnet',
-        recommendedVersion: 'v8.0.0-testnet',
-        compatibleVersions: ['v8.0.0-testnet'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        ibc: {
-          type: 'go',
-          version: '5.1.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46'

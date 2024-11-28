@@ -44,26 +44,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/nomic-io/nomic/develop/genesis/stakenet-3.json'
-    },
-    versions: [{
-        name: 'v8.0.0',
-        recommendedVersion: 'v8.0.0',
-        compatibleVersions: ['v8.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: 'v0.32.0'
-        },
-        nextVersionName: 'v9.0.0'
-      }, {
-        name: 'v9.0.0',
-        recommendedVersion: 'v9.0.0',
-        compatibleVersions: ['v9.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: 'v0.34.0'
-        },
-        nextVersionName: ''
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',

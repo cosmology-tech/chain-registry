@@ -36,23 +36,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-5/genesis.json'
     },
-    versions: [{
-        name: 'v0.27',
-        recommendedVersion: 'v0.27',
-        compatibleVersions: ['v0.27'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.27',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

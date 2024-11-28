@@ -45,52 +45,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://nymtech.net/genesis/genesis.json'
     },
-    versions: [
-      {
-        name: 'v0.31.1',
-        tag: 'v0.31.1',
-        height: 7710000,
-        proposal: 8,
-        recommendedVersion: 'v0.31.1',
-        compatibleVersions: ['v0.31.1'],
-        binaries: {
-          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.31.1'
-        },
-        nextVersionName: 'v0.32.0',
-        cosmwasm: {
-          enabled: true
-        }
-      },
-      {
-        name: 'v0.32.0',
-        tag: 'v0.32.0',
-        height: 8010500,
-        proposal: 9,
-        recommendedVersion: 'v0.32.0',
-        compatibleVersions: ['v0.32.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.32.0'
-        },
-        nextVersionName: 'v0.43.0',
-        cosmwasm: {
-          enabled: true
-        }
-      },
-      {
-        name: 'v0.43.0',
-        tag: 'v0.43.0',
-        height: 9912345,
-        proposal: 10,
-        recommendedVersion: 'v0.43.0',
-        compatibleVersions: ['v0.43.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
-        },
-        cosmwasm: {
-          enabled: true
-        }
-      }
-    ],
     cosmwasm: {
       enabled: true
     }

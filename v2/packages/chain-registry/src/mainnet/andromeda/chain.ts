@@ -40,53 +40,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://snapshots.lavenderfive.com/genesis/andromeda/genesis.json'
     },
-    versions: [{
-        name: 'andromeda-1-v0.1.0',
-        height: 1696401,
-        tag: 'andromeda-1-v0.1.0',
-        recommendedVersion: 'andromeda-1-v0.1.0',
-        compatibleVersions: ['andromeda-1-v0.1.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.2'
-        },
-        nextVersionName: 'v0.1.1',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.5'
-        },
-        cosmwasm: {
-          version: 'v0.41.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.3.0'
-        }
-      }, {
-        name: 'v0.1.1',
-        proposal: 5,
-        height: 2363000,
-        tag: 'v0.1.1-patch',
-        recommendedVersion: 'v0.1.1-patch',
-        compatibleVersions: ['v0.1.1-patch'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.4'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.8'
-        },
-        cosmwasm: {
-          version: 'v0.41.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.4.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.8'

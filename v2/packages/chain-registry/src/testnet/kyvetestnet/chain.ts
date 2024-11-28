@@ -38,18 +38,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/KYVENetwork/networks/main/kaon-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0-rc0',
-        recommendedVersion: 'v1.0.0-rc0',
-        compatibleVersions: ['v1.0.0-rc0'],
-        binaries: {
-          "linux/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_amd64.tar.gz',
-          "linux/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_arm64.tar.gz',
-          "darwin/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_amd64.tar.gz',
-          "darwin/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_arm64.tar.gz'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [

@@ -31,41 +31,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/rebuschain/rebus.core',
     recommendedVersion: 'v0.4.0',
     compatibleVersions: ['v0.4.0'],
-    versions: [
-      {
-        name: 'v0.1.2',
-        tag: 'v0.1.2',
-        height: 0,
-        nextVersionName: 'v0.2.0'
-      },
-      {
-        name: 'v0.2.0',
-        tag: 'v0.2.3',
-        proposal: 18,
-        height: 473400,
-        recommendedVersion: 'v0.2.3',
-        compatibleVersions: ['v0.2.3'],
-        nextVersionName: 'v0.3.0'
-      },
-      {
-        name: 'v0.3.0',
-        tag: 'v0.3.0',
-        proposal: 25,
-        height: 4167000,
-        recommendedVersion: 'v0.3.0',
-        compatibleVersions: ['v0.3.0'],
-        nextVersionName: 'v0.3.0'
-      },
-      {
-        name: 'v0.4.0',
-        tag: 'v0.4.0',
-        proposal: 31,
-        height: 9464700,
-        recommendedVersion: 'v0.4.0',
-        compatibleVersions: ['v0.4.0'],
-        nextVersionName: ''
-      }
-    ],
     genesis: {
       genesisUrl: 'https://github.com/rebuschain/rebus.mainnet/raw/master/reb_1111-1/genesis.zip'
     }

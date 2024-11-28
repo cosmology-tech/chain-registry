@@ -24,12 +24,7 @@ const info: Chain = {
     compatibleVersions: ['v1.0.0-rc1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/empowerchain/empowerchain/main/testnets/circulus-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0-rc1',
-        recommendedVersion: 'v1.0.0-rc1',
-        compatibleVersions: ['v1.0.0-rc1']
-      }]
+    }
   },
   apis: {
     rpc: [

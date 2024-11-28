@@ -30,17 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v0.11.7'],
     genesis: {
       genesisUrl: 'https://gist.githubusercontent.com/davepuchyr/6bea7bf369064d118195e9b15ea08a0f/raw/genesis.json'
-    },
-    versions: [{
-        name: 'v0.10',
-        recommendedVersion: 'v0.10.18',
-        compatibleVersions: ['v0.10.17', 'v0.10.18'],
-        nextVersionName: 'v0.11'
-      }, {
-        name: 'v0.11',
-        recommendedVersion: 'v0.11.7',
-        compatibleVersions: ['v0.11.7']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',

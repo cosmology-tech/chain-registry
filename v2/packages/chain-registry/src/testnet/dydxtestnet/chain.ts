@@ -34,15 +34,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dydxprotocol/v4-testnets/main/dydx-testnet-4/genesis.json'
     },
-    versions: [{
-        name: 'v2',
-        recommendedVersion: 'v2.0.0',
-        compatibleVersions: ['v2.0.0'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.4'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.4'

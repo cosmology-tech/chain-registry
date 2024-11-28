@@ -34,23 +34,6 @@ const info: Chain = {
       type: 'cometbft',
       version: '0.37'
     },
-    versions: [{
-        name: '1.0.0',
-        recommendedVersion: '1.0.0',
-        compatibleVersions: ['1.0.0'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.47.3'
-        },
-        cosmwasm: {
-          version: '0.41',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.47.3'

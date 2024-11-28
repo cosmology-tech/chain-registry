@@ -42,23 +42,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/White-Whale-Defi-Platform/migaloo-chain/release/v2.0.x/networks/testnet/genesis.json'
     },
-    versions: [{
-        name: 'v3.0.4',
-        recommendedVersion: 'v3.0.4',
-        compatibleVersions: ['v3.0.4'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.28',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

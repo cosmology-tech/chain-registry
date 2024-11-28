@@ -16,12 +16,7 @@ const info: Chain = {
     compatibleVersions: ['v1.1.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/CudoVentures/cudos-builders/cudos-master/docker/config/genesis.testnet.public.json'
-    },
-    versions: [{
-        name: 'v1.1.0',
-        recommendedVersion: 'v1.1.0',
-        compatibleVersions: ['v1.1.0']
-      }]
+    }
   },
   apis: {
     rpc: [

@@ -30,18 +30,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://rpc.stateset.zone/genesis'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/stateset/core/releases/download/v1.0.0/statesetd-1.0.0-linux-amd64',
-          "linux/arm64": 'https://github.com/stateset/core/releases/download/v1.0.0/statesetd-1.0.0-linux-arm64',
-          "darwin/amd64": 'https://github.com/stateset/core/releases/download/v1.0.0/statesetd-1.0.0-darwin-amd64',
-          "windows/amd64": 'https://github.com/stateset/core/releases/download/v1.0.0/statesetd-1.0.0-windows-amd64.exe'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [{

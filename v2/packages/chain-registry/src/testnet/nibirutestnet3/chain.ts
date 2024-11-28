@@ -47,65 +47,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/NibiruChain/Networks/main/Testnet/nibiru-testnet-2/genesis.json'
     },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        tag: 'v1.0.0',
-        height: 1,
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.2'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.0/nibid_1.0.0_linux_arm64.tar.gz'
-        },
-        nextVersionName: 'v1.0.1',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.5'
-        },
-        cosmwasm: {
-          version: 'v0.44.0',
-          path: '$HOME/.nibid/data/wasm',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.3.1'
-        }
-      }, {
-        name: 'v1.0.1',
-        recommendedVersion: 'v1.0.1',
-        compatibleVersions: ['v1.0.1'],
-        tag: 'v1.0.1',
-        binaries: {
-          "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_amd64.tar.gz',
-          "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_arm64.tar.gz'
-        },
-        proposal: 2,
-        height: 2753803,
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.4'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.7'
-        },
-        cosmwasm: {
-          version: 'v0.44.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.3.1'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.7'

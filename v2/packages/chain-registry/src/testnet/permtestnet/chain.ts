@@ -36,47 +36,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Loop-Protocol/testnet/main/genesis.json'
     },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.30',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: '4.3.0'
-        }
-      }, {
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.30',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: '4.3.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

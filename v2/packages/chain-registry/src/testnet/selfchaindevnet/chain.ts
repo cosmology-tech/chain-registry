@@ -24,12 +24,7 @@ const info: Chain = {
     compatibleVersions: ['0.2.2'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/hotcrosscom/selfchain-genesis/main/networks/devnet/genesis.json'
-    },
-    versions: [{
-        name: '0.2.2',
-        recommendedVersion: '0.2.2',
-        compatibleVersions: ['0.2.2']
-      }]
+    }
   },
   apis: {
     rpc: [{

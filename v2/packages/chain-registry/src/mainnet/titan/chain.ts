@@ -39,31 +39,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/titantkx/titan-mainnet/main/public/genesis.json'
     },
-    versions: [{
-        name: 'v2.0.1',
-        tag: 'v2.0.1',
-        height: 0,
-        recommendedVersion: 'v2.0.1',
-        compatibleVersions: ['v2.0.1'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37.4'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.47.6',
-          tag: '0.47.6-titan.4'
-        },
-        cosmwasm: {
-          version: '0.45.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: '7.3.0',
-          icsEnabled: ['ics20-1', 'ics27-1']
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.47.6',

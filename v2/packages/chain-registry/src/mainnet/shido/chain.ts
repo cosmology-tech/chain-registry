@@ -42,47 +42,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/ShidoGlobal/mainnetShidoNodeSync/main/genesis.json'
     },
-    versions: [{
-        name: 'v1.0.0',
-        tag: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.2'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/ShidoGlobal/mainnetShidoNodeSync/releases/download/v1.0.0/ubuntu_22.04.tar.gz'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.4'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.3.0'
-        }
-      }, {
-        name: 'v2.0.0',
-        tag: 'v2.0.0',
-        recommendedVersion: 'v2.0.0',
-        compatibleVersions: ['v2.0.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.4'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/ShidoGlobal/mainnetShidoNodeSync/releases/download/v2.0.0/ubuntu_22.04.tar.gz'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.4'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.4.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.4'

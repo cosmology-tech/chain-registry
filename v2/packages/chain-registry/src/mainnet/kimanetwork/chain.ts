@@ -33,18 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v0.4.3'],
     genesis: {
       genesisUrl: 'https://archive.kima.network/genesis.json'
-    },
-    versions: [{
-        name: 'v0.4.3',
-        recommendedVersion: 'v0.4.3',
-        compatibleVersions: ['v0.4.3'],
-        sdk: {
-          type: 'cosmos',
-          repo: 'https://github.com/cosmos/cosmos-sdk',
-          version: 'v0.47.4',
-          tag: 'v0.47.4'
-        }
-      }]
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.png',

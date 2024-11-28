@@ -45,31 +45,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/planq-network/networks/main/atlas-testnet/genesis.json'
     },
-    versions: [{
-        name: 'v1.1.2',
-        recommendedVersion: 'v1.1.2',
-        compatibleVersions: ['v1.1.2'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.34.33'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.2/planq_1.1.2_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.2/planq_1.1.2_linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.2/planq_1.1.2_darwin_amd64.tar.gz',
-          "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.2/planq_1.1.2_darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.2/planq_1.1.2_windows_amd64.zip'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.46.3'
-        },
-        ibc: {
-          type: 'go',
-          version: '5.0.2'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.46.3'

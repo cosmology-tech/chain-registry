@@ -34,14 +34,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/confio/tgrade-networks/main/mainnet-1/config/genesis.json'
     },
-    versions: [{
-        name: 'v2.0.4',
-        recommendedVersion: 'v2.0.4',
-        compatibleVersions: ['v2.0.4'],
-        cosmwasm: {
-          enabled: true
-        }
-      }],
     cosmwasm: {
       enabled: true
     }

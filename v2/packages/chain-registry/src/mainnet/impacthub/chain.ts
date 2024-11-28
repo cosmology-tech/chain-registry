@@ -38,68 +38,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/ixofoundation/genesis/raw/bc042e1223d551b22d55c155de06e662ca24d2f2/ixo-5/genesis.json.tar.gz'
     },
-    versions: [
-      {
-        name: 'v0.20.0',
-        proposal: 403,
-        height: 1254500,
-        recommendedVersion: 'v0.20.1',
-        compatibleVersions: ['v0.20.0', 'v0.20.1'],
-        consensus: {
-          type: 'tendermint',
-          version: 'v0.34.24'
-        },
-        nextVersionName: 'v2',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.12'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.3.0'
-        }
-      },
-      {
-        name: 'v2',
-        proposal: 439,
-        height: 2383000,
-        recommendedVersion: 'v2.0.0',
-        compatibleVersions: ['v2.0.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.27'
-        },
-        nextVersionName: 'v3',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.16'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.4.1'
-        }
-      },
-      {
-        name: 'v3',
-        proposal: 447,
-        height: 6556300,
-        recommendedVersion: 'v3.0.0',
-        compatibleVersions: ['v3.0.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.27'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.16'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.4.1'
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.45.16'

@@ -50,54 +50,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Gravity-Bridge/Gravity-Docs/main/genesis.json'
-    },
-    versions: [
-      {
-        name: 'pleiades2',
-        recommendedVersion: 'v1.8.0',
-        compatibleVersions: ['v1.8.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-linux-amd64',
-          "linux/arm64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-linux-arm64',
-          "darwin/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-darwin-amd64',
-          "windows/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.8.0/gravity-windows-amd64.exe'
-        },
-        nextVersionName: 'orion'
-      },
-      {
-        name: 'orion',
-        height: 6698820,
-        recommendedVersion: 'v1.9.1',
-        proposal: 172,
-        compatibleVersions: ['v1.9.0', 'v1.9.1'],
-        binaries: {
-          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.9.1/gravity-linux-amd64'
-        },
-        nextVersionName: 'antares'
-      },
-      {
-        name: 'antares',
-        height: 7440250,
-        recommendedVersion: 'v1.10.2',
-        proposal: 183,
-        compatibleVersions: ['v1.10.0', 'v1.10.2'],
-        binaries: {
-          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.10.2/gravity-linux-amd64'
-        },
-        nextVersionName: 'apollo'
-      },
-      {
-        name: 'apollo',
-        height: 9244100,
-        recommendedVersion: 'v1.11.1',
-        proposal: 212,
-        compatibleVersions: ['v1.11.1'],
-        binaries: {
-          "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.11.1/gravity-linux-amd64'
-        },
-        nextVersionName: ''
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',

@@ -45,51 +45,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/bandprotocol/launch/master/laozi-mainnet/genesis.json'
     },
-    versions: [{
-        name: 'v2_4',
-        tag: 'v2.4.1',
-        proposal: 9,
-        height: 11525000,
-        recommendedVersion: 'v2.4.1',
-        compatibleVersions: ['v2.4.0', 'v2.4.1'],
-        consensus: {
-          type: 'tendermint',
-          version: 'v0.34.22'
-        },
-        nextVersionName: 'v2_5',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.10'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v3.3.1'
-        }
-      }, {
-        name: 'v2_5',
-        tag: 'v2.5.4',
-        proposal: 11,
-        height: 16562500,
-        recommendedVersion: 'v2.5.4',
-        compatibleVersions: [
-          'v2.5.2',
-          'v2.5.3',
-          'v2.5.4'
-        ],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.29'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: '0.45.16'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.3.1'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45.16'

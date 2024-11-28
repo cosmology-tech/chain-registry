@@ -44,12 +44,7 @@ const info: Chain = {
       genesisUrl: 'https://github.com/Nim-Network-Foundation/mainnet/raw/main/genesis.json'
     },
     recommendedVersion: 'v2.1.3-rc02',
-    compatibleVersions: ['v2.1.3-rc02'],
-    versions: [{
-        name: 'v2.1',
-        recommendedVersion: 'v2.1.3-rc02',
-        compatibleVersions: ['v2.1.3-rc02']
-      }]
+    compatibleVersions: ['v2.1.3-rc02']
   },
   apis: {
     rpc: [{

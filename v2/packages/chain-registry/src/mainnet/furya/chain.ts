@@ -31,45 +31,7 @@ const info: Chain = {
     compatibleVersions: ['v1.0.0', 'v2.0.0'],
     genesis: {
       genesisUrl: 'https://github.com/furysport/furya-chain/blob/main/network/mainnet/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        proposal: -1,
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: 'v0.37.2'
-        },
-        nextVersionName: 'v2.0.0',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.7'
-        },
-        cosmwasm: {
-          version: 'v0.20.0',
-          enabled: true
-        }
-      }, {
-        name: 'v2.0.0',
-        proposal: 3,
-        height: 2839877,
-        recommendedVersion: 'v2.0.0',
-        compatibleVersions: ['v1.0.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.4'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.8'
-        },
-        cosmwasm: {
-          version: 'v0.41.0',
-          enabled: true
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.png',

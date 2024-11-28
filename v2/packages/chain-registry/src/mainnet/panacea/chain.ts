@@ -33,12 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v2.0.5'],
     genesis: {
       genesisUrl: 'https://github.com/medibloc/panacea-mainnet/raw/master/panacea-3/genesis.json'
-    },
-    versions: [{
-        name: 'v2.0.6',
-        recommendedVersion: 'v2.0.6',
-        compatibleVersions: ['v2.0.5']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',

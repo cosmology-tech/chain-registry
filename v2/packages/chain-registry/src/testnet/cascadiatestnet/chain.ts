@@ -42,7 +42,6 @@ const info: Chain = {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/CascadiaFoundation/chain-configuration/master/testnet/genesis.json'
     },
-    versions: [],
     sdk: {
       type: 'cosmos',
       version: '0.46.10'

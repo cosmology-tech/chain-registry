@@ -33,13 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v1.0.0'],
     genesis: {
       genesisUrl: 'http://154.26.153.186/genesis.json'
-    },
-    versions: [{
-        name: 'Neutaro1',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        nextVersionName: ''
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutaro/images/neutaro.png',

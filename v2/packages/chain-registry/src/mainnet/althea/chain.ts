@@ -44,11 +44,6 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/AltheaFoundation/althea-L1/releases/download/v1.3.0/althea-linux-amd64'
     },
-    versions: [{
-        name: 'v1',
-        recommendedVersion: 'v1.3.0',
-        compatibleVersions: ['v1.3.0']
-      }],
     genesis: {
       genesisUrl: 'https://github.com/AltheaFoundation/althea-L1-docs/blob/main/althea-l1-mainnet-genesis.json'
     }

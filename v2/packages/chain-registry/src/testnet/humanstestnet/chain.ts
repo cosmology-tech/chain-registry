@@ -24,12 +24,7 @@ const info: Chain = {
     compatibleVersions: ['v1.0.0'],
     genesis: {
       genesisUrl: 'https://rpc-testnet.humans.zone/genesis'
-    },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0']
-      }]
+    }
   },
   apis: {
     rpc: [{

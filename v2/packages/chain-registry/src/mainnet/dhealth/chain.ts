@@ -41,33 +41,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/dhealthproject/mainnet/main/genesis.json'
     },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/dhealthproject/dhealth/releases/download/v1.0.0/dhealthd-1.0.0-linux-amd64'
-        },
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.37.2'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          repo: 'https://github.com/cosmos/cosmos-sdk',
-          version: 'v0.47.4'
-        },
-        cosmwasm: {
-          version: 'v0.41.0',
-          path: '$HOME/.dhealth/wasm',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.2.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       repo: 'https://github.com/cosmos/cosmos-sdk',

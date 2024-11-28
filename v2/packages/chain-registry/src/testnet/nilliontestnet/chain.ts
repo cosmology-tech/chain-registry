@@ -36,26 +36,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/NillionNetwork/networks/main/nillion-chain-testnet-1/genesis.json'
     },
-    versions: [{
-        name: 'v0.1.1',
-        recommendedVersion: 'v0.1.1',
-        compatibleVersions: ['v0.1.1'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.38.6'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.50.6'
-        },
-        cosmwasm: {
-          enabled: false
-        },
-        ibc: {
-          type: 'go',
-          version: 'v8.2.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.50.6'

@@ -29,16 +29,7 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-Linux',
       "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-macOS'
-    },
-    versions: [{
-        name: 'v1.2.2-alpha.1',
-        recommendedVersion: 'v1.2.2-alpha.1',
-        compatibleVersions: ['v1.2.2-alpha.1'],
-        binaries: {
-          "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-Linux',
-          "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v1.2.2-alpha.1/canined-macOS'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [{

@@ -24,12 +24,7 @@ const info: Chain = {
     compatibleVersions: ['v1.2.0'],
     genesis: {
       genesisUrl: 'https://server.gitopia.com/raw/gitopia/testnets/master/gitopia-janus-testnet-2/genesis.json.gz'
-    },
-    versions: [{
-        name: 'v1.2.0',
-        recommendedVersion: 'v1.2.0',
-        compatibleVersions: ['v1.2.0']
-      }]
+    }
   },
   apis: {
     rpc: [{

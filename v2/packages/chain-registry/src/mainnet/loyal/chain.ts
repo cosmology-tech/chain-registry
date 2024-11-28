@@ -30,12 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v0.25.3'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/LoyalLabs/net/main/mainnet/genesis.json'
-    },
-    versions: [{
-        name: 'v0.25.3',
-        recommendedVersion: 'v0.25.3',
-        compatibleVersions: ['v0.25.3']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',

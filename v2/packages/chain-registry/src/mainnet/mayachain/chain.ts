@@ -18,12 +18,7 @@ const info: Chain = {
     compatibleVersions: ['V1.103.3'],
     genesis: {
       genesisUrl: 'https://tendermint.mayachain.info/genesis'
-    },
-    versions: [{
-        name: 'V1.103.3',
-        recommendedVersion: 'V1.103.3',
-        compatibleVersions: ['V1.103.3']
-      }]
+    }
   },
   apis: {
     rpc: [{

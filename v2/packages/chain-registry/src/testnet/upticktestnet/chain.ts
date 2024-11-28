@@ -33,22 +33,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/UptickNetwork/uptick-testnet/main/uptick_7000-2/genesis.json'
     },
-    versions: [{
-        name: 'v0.2.6',
-        recommendedVersion: 'v0.2.6',
-        compatibleVersions: ['v0.2.6'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34.23'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/UptickNetwork/uptick/releases/download/v0.2.6/uptick-linux-amd64-v0.2.6.tar.gz'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46.5'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46.5'

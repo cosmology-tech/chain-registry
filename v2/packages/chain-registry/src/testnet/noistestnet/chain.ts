@@ -42,25 +42,6 @@ const info: Chain = {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/noislabs/networks/nois-testnet-005/nois-testnet-005/genesis.json'
     },
-    versions: [{
-        name: 'v1',
-        tag: 'v1.0.1',
-        height: 0,
-        recommendedVersion: 'v1.0.1',
-        compatibleVersions: ['v1.0.1'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.30',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

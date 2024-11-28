@@ -39,22 +39,6 @@ const info: Chain = {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/onomyprotocol/onex/main/chain/onex-mainnet-1/genesis-with-ccv.json'
     },
-    versions: [{
-        name: 'v1.1.0',
-        tag: 'v1.1.0',
-        recommendedVersion: 'v1.1.0',
-        compatibleVersions: ['v1.1.0'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.34.28'
-        },
-        height: 0,
-        nextVersionName: 'v1.2.0',
-        sdk: {
-          type: 'cosmos',
-          version: '0.45.16'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45.16'

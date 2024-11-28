@@ -42,25 +42,6 @@ const info: Chain = {
       name: 'v1',
       genesisUrl: 'https://raw.githubusercontent.com/noislabs/networks/nois1.final.1/nois-1/genesis.json'
     },
-    versions: [{
-        name: 'v1',
-        tag: 'v1.0.4',
-        height: 0,
-        recommendedVersion: 'v1.0.4',
-        compatibleVersions: ['v1.0.0', 'v1.0.4'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.29'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.15'
-        },
-        cosmwasm: {
-          version: 'v0.31.0',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.45.15'

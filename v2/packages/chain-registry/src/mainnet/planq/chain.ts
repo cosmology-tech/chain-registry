@@ -45,47 +45,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/planq-network/networks/main/mainnet/genesis.json'
     },
-    versions: [{
-        name: 'v1.0.3',
-        recommendedVersion: 'v1.0.3',
-        compatibleVersions: [
-          'v1.0.0',
-          'v1.0.1',
-          'v1.0.2',
-          'v1.0.3'
-        ],
-        binaries: {
-          "linux/amd64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Linux_x86_64.tar.gz',
-          "linux/arm64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Darwin_x86_64.tar.gz',
-          "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.0.3/planq_1.0.3_Windows_x86_64.zip'
-        }
-      }, {
-        name: 'v1.0.7',
-        recommendedVersion: 'v1.1.0',
-        compatibleVersions: ['v1.1.0'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.34.26'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_amd64.tar.gz',
-          "linux/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_amd64.tar.gz',
-          "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_windows_amd64.zip'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.46.3'
-        },
-        ibc: {
-          type: 'go',
-          version: '5.0.2'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.46.3'

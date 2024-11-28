@@ -36,22 +36,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://zetachain-athens.blockpi.network/rpc/v1/public/genesis'
     },
-    versions: [{
-        name: 'v8.3.3',
-        recommendedVersion: 'v8.3.3',
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v6.1.0'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46'

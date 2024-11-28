@@ -30,18 +30,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://s.imversed.com/test-net/genesis.json'
-    },
-    versions: [{
-        name: 'v2.4.0',
-        recommendedVersion: 'v2.4.0',
-        compatibleVersions: ['v2.4.0'],
-        binaries: {
-          "linux/amd64": 'https://s.imversed.com/imversed_linux_amd64.tar.gz',
-          "darwin/arm64": 'https://s.imversed.com/imversed_darwin_arm64.tar.gz',
-          "darwin/amd64": 'https://s.imversed.com/imversed_darwin_amd64.tar.gz',
-          "windows/amd64": 'https://s.imversed.com/imversed_windows_amd64.tar.gz'
-        }
-      }]
+    }
   },
   apis: {
     rpc: [{

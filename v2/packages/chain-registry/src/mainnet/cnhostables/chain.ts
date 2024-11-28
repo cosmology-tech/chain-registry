@@ -33,18 +33,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/alashooinc/ChainCNHO/master/mainnet/genesis.json'
     },
-    versions: [{
-        name: 'v1',
-        recommendedVersion: 'v1',
-        compatibleVersions: ['v1'],
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.46.7'
-        },
-        cosmwasm: {
-          enabled: false
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.46.7'

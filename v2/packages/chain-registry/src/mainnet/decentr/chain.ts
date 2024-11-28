@@ -32,12 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v1.5.7'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Decentr-net/mainnets/master/3.0/genesis.json'
-    },
-    versions: [{
-        name: 'v1.5.7',
-        recommendedVersion: 'v1.5.7',
-        compatibleVersions: ['v1.5.7']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',

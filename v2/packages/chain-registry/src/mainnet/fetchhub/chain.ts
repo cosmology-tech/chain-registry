@@ -30,12 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v0.10.5'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/fetchai/genesis-fetchhub/fetchhub-4/fetchhub-4/data/genesis_migrated_5300200.json'
-    },
-    versions: [{
-        name: 'v0.10.5',
-        recommendedVersion: 'v0.10.5',
-        compatibleVersions: ['v0.10.5']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',

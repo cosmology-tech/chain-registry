@@ -39,65 +39,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/envadiv/mainnet/main/passage-2/genesis.json'
     },
-    versions: [
-      {
-        name: 'v2.0.0',
-        recommendedVersion: 'v2.0.1',
-        compatibleVersions: ['v2.0.1'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.27'
-        },
-        nextVersionName: 'v2.2.0',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.16'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.4.2'
-        }
-      },
-      {
-        name: 'v2.2.0',
-        recommendedVersion: 'v2.2.0',
-        compatibleVersions: ['v2.2.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.27'
-        },
-        nextVersionName: 'v2.4.0',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.16'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.4.2'
-        }
-      },
-      {
-        name: 'v2.4.0',
-        recommendedVersion: 'v2.4.0',
-        compatibleVersions: ['v2.4.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.27'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.16'
-        },
-        cosmwasm: {
-          version: 'v0.31.0'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v4.4.2'
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.45.16'

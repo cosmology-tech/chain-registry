@@ -33,12 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v1.2.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/chain4energy/c4e-chains/main/babajaga-1/genesis.json'
-    },
-    versions: [{
-        name: 'v1.2.0',
-        recommendedVersion: 'v1.2.0',
-        compatibleVersions: ['v1.2.0']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'

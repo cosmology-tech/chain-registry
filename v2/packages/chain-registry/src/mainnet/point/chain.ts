@@ -30,12 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v8.0.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/pointnetwork/point-chain-config/main/mainnet-1/genesis.json'
-    },
-    versions: [{
-        name: 'v8.0.0',
-        recommendedVersion: 'v8.0.0',
-        compatibleVersions: ['v8.0.0']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',

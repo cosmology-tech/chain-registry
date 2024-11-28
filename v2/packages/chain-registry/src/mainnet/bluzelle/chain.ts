@@ -41,58 +41,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://a.client.sentry.net.bluzelle.com:26657/genesis'
     },
-    versions: [
-      {
-        name: 'v2.0',
-        recommendedVersion: 'v2.0',
-        compatibleVersions: ['v2.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34.14'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.44.3'
-        }
-      },
-      {
-        name: 'v9.0',
-        recommendedVersion: 'v9.0',
-        compatibleVersions: ['v9.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34.23'
-        },
-        nextVersionName: '10.0',
-        sdk: {
-          type: 'cosmos',
-          version: '0.45.11'
-        }
-      },
-      {
-        name: '10.0',
-        recommendedVersion: 'v10.0',
-        compatibleVersions: ['v10.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/bluzelle/bluzelle-public/releases/download/v10.0/curiumd'
-        },
-        proposal: 1,
-        height: 3333333,
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.34.23'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.45.11'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v3.4.0'
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.45.11'

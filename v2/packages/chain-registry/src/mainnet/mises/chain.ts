@@ -30,12 +30,7 @@ const info: Chain = {
     compatibleVersions: ['v1.0.4'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/mises-id/mainnet/master/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.4',
-        recommendedVersion: 'v1.0.4',
-        compatibleVersions: ['v1.0.4']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'

@@ -23,29 +23,7 @@ const info: Chain = {
     compatibleVersions: ['v5.1.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/commercionetwork/chains/master/commercio-3/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v4.0.0',
-        recommendedVersion: 'v4.1.0',
-        compatibleVersions: ['v4.0.0', 'v4.1.0']
-      },
-      {
-        name: 'v4.2.0',
-        recommendedVersion: 'v4.2.1',
-        compatibleVersions: ['v4.2.0', 'v4.2.1']
-      },
-      {
-        name: 'v5.0.0',
-        recommendedVersion: 'v5.0.0',
-        compatibleVersions: ['v5.0.0']
-      },
-      {
-        name: 'v5.1.0',
-        recommendedVersion: 'v5.1.0',
-        compatibleVersions: ['v5.1.0']
-      }
-    ]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',

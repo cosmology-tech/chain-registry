@@ -37,15 +37,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://static.imversed.com/mainnet/genesis.json'
-    },
-    versions: [{
-        name: 'v3.11',
-        recommendedVersion: 'v3.11',
-        compatibleVersions: ['v3.11'],
-        binaries: {
-          "linux/amd64": 'https://github.com/imversed/imversed/releases/download/v3.11/imversed_3.11_Linux_amd64.tar.gz'
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',

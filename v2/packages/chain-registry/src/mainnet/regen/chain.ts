@@ -43,30 +43,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/regen-network/mainnet/main/regen-1/genesis.json'
     },
-    versions: [{
-        name: 'v5.0.0',
-        recommendedVersion: 'v5.0.0',
-        compatibleVersions: ['v5.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        binaries: {
-          "linux/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_amd64.zip',
-          "linux/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_arm64.zip',
-          "darwin/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_amd64.zip',
-          "darwin/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_arm64.zip'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        ibc: {
-          type: 'go',
-          version: '5.2',
-          icsEnabled: ['ics20-1', 'ics27-1']
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46'

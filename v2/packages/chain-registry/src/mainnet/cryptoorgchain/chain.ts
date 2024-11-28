@@ -39,19 +39,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://github.com/crypto-org-chain/mainnet/raw/main/crypto-org-chain-mainnet-1/genesis.json'
-    },
-    versions: [{
-        name: 'v4.2.9',
-        recommendedVersion: 'v4.2.9',
-        compatibleVersions: ['v4.2.9'],
-        binaries: {
-          "linux/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Linux_x86_64.tar.gz',
-          "linux/arm64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Linux_arm64.tar.gz',
-          "darwin/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Darwin_x86_64.tar.gz',
-          "darwin/arm64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Darwin_arm64.tar.gz',
-          "windows/amd64": 'https://github.com/crypto-org-chain/chain-main/releases/download/v4.2.9/chain-main_4.2.9_Windows_x86_64.zip'
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cryptoorgchain/images/cronos.png'

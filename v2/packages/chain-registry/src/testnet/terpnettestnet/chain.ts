@@ -40,36 +40,7 @@ const info: Chain = {
     binaries: {
       "linux/amd64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-amd64',
       "linux/arm64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-arm64'
-    },
-    versions: [
-      {
-        name: 'v4.2.0',
-        recommendedVersion: 'v4.2.0',
-        compatibleVersions: [],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37.2'
-        }
-      },
-      {
-        name: 'v4.2.1',
-        recommendedVersion: 'v4.2.1',
-        compatibleVersions: [],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37.2'
-        }
-      },
-      {
-        name: 'v4.2.2',
-        recommendedVersion: 'v4.2.2',
-        compatibleVersions: [],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37.2'
-        }
-      }
-    ]
+    }
   },
   apis: {
     rpc: [{

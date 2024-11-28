@@ -40,24 +40,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/testnet/rila-1/genesis.json'
     },
-    versions: [{
-        name: 'v0.3.0',
-        recommendedVersion: 'v0.3.0',
-        compatibleVersions: [],
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.31',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: '4.3.0',
-          icsEnabled: ['ics20-1', 'ics27-1']
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

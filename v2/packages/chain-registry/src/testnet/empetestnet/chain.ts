@@ -42,24 +42,6 @@ const info: Chain = {
       name: 'v0.1.0',
       genesisUrl: 'https://raw.githubusercontent.com/empe-io/empe-chain/main/testnet-2/genesis.json'
     },
-    versions: [{
-        name: 'v0.1.0',
-        tag: 'v0.1.0',
-        height: 0,
-        recommendedVersion: 'v0.1.0',
-        compatibleVersions: ['v0.1.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47'
-        },
-        cosmwasm: {
-          enabled: false
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.47'

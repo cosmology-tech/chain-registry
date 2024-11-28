@@ -44,12 +44,7 @@ const info: Chain = {
       genesisUrl: 'https://github.com/mande-labs/mainnet/raw/main/genesis.json'
     },
     recommendedVersion: 'v2.2.0',
-    compatibleVersions: ['v2.2.0'],
-    versions: [{
-        name: 'v2.2.0',
-        recommendedVersion: 'v2.2.0',
-        compatibleVersions: ['v2.2.0']
-      }]
+    compatibleVersions: ['v2.2.0']
   },
   apis: {
     rpc: [{

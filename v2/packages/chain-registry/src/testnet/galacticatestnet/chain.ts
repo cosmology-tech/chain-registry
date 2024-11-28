@@ -37,22 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/Galactica-corp/networks/main/galactica_9301-1/genesis.json'
     },
-    versions: [{
-        name: 'v0.1.1',
-        recommendedVersion: 'v0.1.1',
-        compatibleVersions: ['v0.1.1'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.46'
-        },
-        cosmwasm: {
-          enabled: false
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.46'

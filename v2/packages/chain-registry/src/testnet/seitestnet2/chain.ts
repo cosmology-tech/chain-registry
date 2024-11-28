@@ -29,17 +29,7 @@ const info: Chain = {
     ],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/sei-protocol/testnet/main/atlantic-2/genesis.json'
-    },
-    versions: [{
-        name: 'v5.7.5',
-        recommendedVersion: 'v5.7.5',
-        compatibleVersions: [
-          '2.0.34beta',
-          '2.0.37beta',
-          '2.0.39beta',
-          '2.0.40beta'
-        ]
-      }]
+    }
   },
   apis: {
     rpc: [{

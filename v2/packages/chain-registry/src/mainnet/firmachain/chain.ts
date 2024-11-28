@@ -33,12 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v0.3.5-patch'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/FirmaChain/mainnet/main/colosseum-1/genesis.json'
-    },
-    versions: [{
-        name: 'v0.3.5',
-        recommendedVersion: 'v0.3.5-patch',
-        compatibleVersions: ['v0.3.5-patch']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',

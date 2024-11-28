@@ -32,17 +32,7 @@ const info: Chain = {
     compatibleVersions: ['5.1.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/desmos-labs/morpheus/master/morpheus-apollo-3/genesis.json'
-    },
-    versions: [{
-        name: 'v4.8.0',
-        recommendedVersion: 'v4.8.1',
-        compatibleVersions: ['v4.8.0', 'v4.8.1'],
-        nextVersionName: 'v5.0.0'
-      }, {
-        name: 'v5.0.0',
-        recommendedVersion: 'v5.1.0',
-        compatibleVersions: ['v5.1.0']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',

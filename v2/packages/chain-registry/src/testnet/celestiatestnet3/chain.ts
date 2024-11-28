@@ -32,32 +32,7 @@ const info: Chain = {
     ],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/celestiaorg/networks/master/mocha-4/genesis.json'
-    },
-    versions: [{
-        name: 'v1',
-        recommendedVersion: 'v1.14.0',
-        compatibleVersions: [
-          'v1.3.0',
-          'v1.6.0',
-          'v1.7.0',
-          'v1.9.0',
-          'v1.10.0',
-          'v1.10.1',
-          'v1.11.0',
-          'v1.12.0',
-          'v1.13.0',
-          'v1.14.0'
-        ]
-      }, {
-        name: 'v2',
-        recommendedVersion: 'v2.1.2',
-        compatibleVersions: [
-          'v2.0.0',
-          'v2.1.0',
-          'v2.1.1',
-          'v2.1.2'
-        ]
-      }]
+    }
   },
   apis: {
     rpc: [

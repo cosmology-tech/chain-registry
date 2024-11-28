@@ -37,23 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://rpc.testnet.symphonychain.org/genesis'
     },
-    versions: [{
-        name: 'v23.0.5-rc1',
-        recommendedVersion: 'v23.0.5-rc1',
-        compatibleVersions: ['v23.0.5-rc1'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.37.4'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.47.8'
-        },
-        cosmwasm: {
-          version: '0.29',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.47.8'

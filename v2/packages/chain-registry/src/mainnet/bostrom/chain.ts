@@ -35,18 +35,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://cloudflare-ipfs.com/ipfs/QmYubyVNfghD4xCrTFj26zBwrF9s5GJhi1TmxvrwmJCipr'
     },
-    versions: [{
-        name: 'v0.3.0',
-        recommendedVersion: 'v0.3.0',
-        compatibleVersions: ['v0.3.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_linux-amd64.tar.gz',
-          "darwin/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_darwin-amd64.tar.gz'
-        },
-        cosmwasm: {
-          enabled: true
-        }
-      }],
     cosmwasm: {
       enabled: true
     }

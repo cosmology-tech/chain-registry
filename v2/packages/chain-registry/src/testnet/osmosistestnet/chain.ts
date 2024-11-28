@@ -37,59 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://genesis.osmotest5.osmosis.zone/genesis.json'
     },
-    versions: [
-      {
-        name: 'v14.0.0-rc1',
-        recommendedVersion: 'v14.0.0-rc1',
-        compatibleVersions: ['v14.0.0-rc1'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.29',
-          enabled: true
-        }
-      },
-      {
-        name: 'v15.0.0-rc3',
-        recommendedVersion: 'v15.0.0-rc3',
-        compatibleVersions: ['v15.0.0-rc3'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.29',
-          enabled: true
-        }
-      },
-      {
-        name: 'v15.0.0',
-        recommendedVersion: 'v15.0.0',
-        compatibleVersions: ['v15.0.0-rc3'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.30',
-          enabled: true
-        }
-      }
-    ],
     sdk: {
       type: 'cosmos',
       version: '0.45'

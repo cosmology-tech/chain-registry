@@ -31,23 +31,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/public-awesome/testnets/blob/main/elgafar-1/genesis/genesis.tar.gz?raw=true'
     },
-    versions: [{
-        name: 'v7.0.0',
-        recommendedVersion: 'v7.0.0',
-        compatibleVersions: ['v7.0.0'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45'
-        },
-        cosmwasm: {
-          version: '0.28',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.45'

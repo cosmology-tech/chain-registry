@@ -31,12 +31,7 @@ const info: Chain = {
     compatibleVersions: ['v0.0.2-bebf2e98'],
     genesis: {
       genesisUrl: 'https://gitlab.com/dysonproject/dyson-deploy/-/raw/develop/genesis.json'
-    },
-    versions: [{
-        name: 'v0.0.2-bebf2e98',
-        recommendedVersion: 'v0.0.2-bebf2e98',
-        compatibleVersions: ['v0.0.2-bebf2e98']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dyson.png',

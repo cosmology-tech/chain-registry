@@ -63,12 +63,7 @@ const info: Chain = {
     compatibleVersions: ['v1.1.3'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/e-money/networks/master/emoney-3/genesis.json'
-    },
-    versions: [{
-        name: 'v1.1.3',
-        recommendedVersion: 'v1.1.3',
-        compatibleVersions: ['v1.1.3']
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',

@@ -45,47 +45,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json'
     },
-    versions: [{
-        name: 'v1',
-        recommendedVersion: 'v1.13.0',
-        compatibleVersions: [
-          'v1.3.0',
-          'v1.6.0',
-          'v1.7.0',
-          'v1.9.0',
-          'v1.10.1',
-          'v1.11.0',
-          'v1.13.0'
-        ],
-        consensus: {
-          type: 'tendermint',
-          version: 'v1.35.0',
-          repo: 'https://github.com/celestiaorg/celestia-core',
-          tag: 'v1.35.0-tm-v0.34.29'
-        },
-        nextVersionName: 'v2',
-        sdk: {
-          type: 'cosmos',
-          repo: 'https://github.com/celestiaorg/cosmos-sdk',
-          version: 'v1.23.0',
-          tag: 'v1.23.0-sdk-v0.46.16'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v6.2.1'
-        }
-      }, {
-        name: 'v2',
-        height: 2371495,
-        recommendedVersion: 'v2.1.2',
-        compatibleVersions: [
-          'v2.0.0',
-          'v2.1.0',
-          'v2.1.1',
-          'v2.1.2'
-        ],
-        nextVersionName: ''
-      }],
     sdk: {
       type: 'cosmos',
       repo: 'https://github.com/celestiaorg/cosmos-sdk',

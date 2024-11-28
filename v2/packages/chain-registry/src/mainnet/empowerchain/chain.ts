@@ -33,11 +33,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/EmpowerPlastic/empowerchain/raw/main/mainnet/empowerchain-1/genesis.tar.gz'
     },
-    versions: [{
-        name: 'v1.0.0',
-        recommendedVersion: 'v1.0.0',
-        compatibleVersions: ['v1.0.0']
-      }],
     cosmwasm: {
       version: '0.45',
       enabled: true

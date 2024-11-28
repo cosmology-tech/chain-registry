@@ -38,23 +38,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://github.com/TucanaProtocol/testnets/raw/main/tucana_712-1/genesis.json'
     },
-    versions: [{
-        name: 'v8.1.0',
-        recommendedVersion: 'v8.1.0',
-        compatibleVersions: ['v8.1.0'],
-        consensus: {
-          type: 'cometbft',
-          version: 'v0.38.9'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.50.8'
-        },
-        ibc: {
-          type: 'go',
-          version: 'v8.3.2'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.50.8'

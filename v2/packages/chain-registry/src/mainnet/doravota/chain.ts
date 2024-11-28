@@ -32,24 +32,7 @@ const info: Chain = {
     compatibleVersions: ['v11.0.0'],
     genesis: {
       genesisUrl: 'https://github.com/DoraFactory/doravota/blob/main/config/mainnet/genesis.json'
-    },
-    versions: [
-      {
-        name: 'v9.0.1',
-        recommendedVersion: 'v9.0.1',
-        compatibleVersions: ['v9.0.1']
-      },
-      {
-        name: 'v10.0.1',
-        recommendedVersion: 'v10.0.1',
-        compatibleVersions: ['v10.0.1']
-      },
-      {
-        name: 'v11',
-        recommendedVersion: 'v11.0.0',
-        compatibleVersions: ['v11.0.0']
-      }
-    ]
+    }
   },
   apis: {
     rpc: [

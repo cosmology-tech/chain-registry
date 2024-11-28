@@ -37,39 +37,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/quasar-finance/questnet/main/v04/definitive-genesis.json'
     },
-    versions: [{
-        name: 'v1.0.1-rc-testnet',
-        recommendedVersion: 'v1.0.1-rc-testnet',
-        compatibleVersions: ['v1.0.1-rc-testnet'],
-        consensus: {
-          type: 'tendermint',
-          version: '0.34.27'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.45.16'
-        },
-        cosmwasm: {
-          version: '0.31',
-          enabled: true
-        }
-      }, {
-        name: 'v2.0.0-rc',
-        recommendedVersion: 'v2.0.0-rc',
-        compatibleVersions: ['v2.0.0-rc'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37.6'
-        },
-        sdk: {
-          type: 'cosmos',
-          version: '0.47.12'
-        },
-        cosmwasm: {
-          version: '0.45.0',
-          enabled: true
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: '0.47.12'

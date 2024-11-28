@@ -41,28 +41,6 @@ const info: Chain = {
     genesis: {
       genesisUrl: 'https://images.aura.network/aura_6321-3-genesis.tar.gz'
     },
-    versions: [{
-        name: 'v0.8.0-euphoria',
-        recommendedVersion: 'v0.8.0-euphoria',
-        compatibleVersions: ['v0.8.0-euphoria'],
-        consensus: {
-          type: 'cometbft',
-          version: '0.37.4'
-        },
-        nextVersionName: '',
-        sdk: {
-          type: 'cosmos',
-          version: 'v0.47.8'
-        },
-        cosmwasm: {
-          version: '0.42.0',
-          enabled: true
-        },
-        ibc: {
-          type: 'go',
-          version: 'v7.3.1'
-        }
-      }],
     sdk: {
       type: 'cosmos',
       version: 'v0.47.8'

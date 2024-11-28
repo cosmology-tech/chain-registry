@@ -33,18 +33,7 @@ const info: Chain = {
     compatibleVersions: ['v2.1.1'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/cvn-network/cvn/release/v2.1.x/networks/mainnet/config/genesis.json'
-    },
-    versions: [{
-        name: 'v1.0.3',
-        recommendedVersion: 'v1.0.4',
-        compatibleVersions: ['v1.0.3'],
-        nextVersionName: 'v2.1.1'
-      }, {
-        name: 'v2.1.1',
-        recommendedVersion: 'v2.1.1',
-        compatibleVersions: ['v2.1.1'],
-        nextVersionName: ''
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',

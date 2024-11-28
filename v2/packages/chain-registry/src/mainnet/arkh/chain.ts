@@ -37,16 +37,7 @@ const info: Chain = {
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/vincadian/arkh-blockchain/master/genesis/genesis.json'
-    },
-    versions: [{
-        name: 'v2.0.0',
-        recommendedVersion: 'v2.0.0',
-        compatibleVersions: ['v2.0.0'],
-        binaries: {
-          "linux/amd64": 'https://github.com/vincadian/arkh-blockchain/releases/download/latest/arkh-blockchain_latest_linux_amd64.tar.gz',
-          "darwin/amd64": 'https://github.com/vincadian/arkh-blockchain/releases/download/latest/arkh-blockchain_latest_darwin_amd64.tar.gz'
-        }
-      }]
+    }
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/arkh/images/arkh.png',
