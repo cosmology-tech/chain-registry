@@ -1306,6 +1306,33 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/amATOM.svg'
         }],
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Liquid Staked USDC',
+      denomUnits: [{
+          denom: 'factory/neutron1mdy5fhtwdjagp5eallsdhlx6gxylm8rxqk72wjzg6y5d5kt44ysqprkduw/JSD',
+          exponent: 0
+        }, {
+          denom: 'JSD',
+          exponent: 6
+        }],
+      base: 'factory/neutron1mdy5fhtwdjagp5eallsdhlx6gxylm8rxqk72wjzg6y5d5kt44ysqprkduw/JSD',
+      name: 'Jade',
+      display: 'JSD',
+      symbol: 'JSD',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jsd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jsd.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jsd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/jsd.svg'
+        }],
+      socials: {
+        website: 'https://Jade.Money',
+        twitter: 'https://x.com/jadedotmoney'
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };

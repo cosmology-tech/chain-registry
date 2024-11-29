@@ -118,6 +118,49 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fxcore/images/fx.svg'
       }
+    },
+    {
+      description: 'The token of Crowdpunk DAO',
+      denomUnits: [{
+          denom: 'ibc/74C4FE1EC3BDD66B02C691496371DDBB86DDE512C5BC072D76262C6C9B4B20D1',
+          exponent: 0,
+          aliases: ['erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F']
+        }, {
+          denom: 'crowdp',
+          exponent: 18
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/74C4FE1EC3BDD66B02C691496371DDBB86DDE512C5BC072D76262C6C9B4B20D1',
+      name: 'Crowdpunk DAO',
+      display: 'crowdp',
+      symbol: 'CROWDP',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'evmos',
+            baseDenom: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F',
+            channelId: 'channel-3'
+          },
+          chain: {
+            channelId: 'channel-292',
+            path: 'transfer/channel-292/erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'evmos',
+            baseDenom: 'erc20/0xfbF4318d24a93753F11d365A6dcF8b830e98Ab0F'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/crowdp.svg',
+          theme: {
+            primaryColorHex: '#04fbfb'
+          }
+        }]
     }
   ]
 };
