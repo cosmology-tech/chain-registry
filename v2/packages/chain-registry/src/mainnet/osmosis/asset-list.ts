@@ -21934,6 +21934,31 @@ const info: AssetList = {
       name: 'Earn CDT Vault',
       display: 'earnCDT',
       symbol: 'earnCDT'
+    },
+    {
+      description: 'The Sherpa memecoin',
+      denomUnits: [{
+          denom: 'factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/usherpa',
+          exponent: 0
+        }, {
+          denom: 'Sherpa',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/usherpa',
+      name: 'Sherpa',
+      display: 'Sherpa',
+      symbol: 'SHERPA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/sherpa.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/sherpa.png',
+          theme: {
+            primaryColorHex: '#fe9cdf'
+          }
+        }],
+      keywords: ['meme']
     }
   ]
 };

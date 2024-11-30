@@ -174,6 +174,10 @@ const info: Chain = {
       {
         address: 'https://juno.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://juno-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -272,6 +276,10 @@ const info: Chain = {
       {
         address: 'https://juno.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://juno-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -358,6 +366,10 @@ const info: Chain = {
       {
         address: 'https://juno.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'juno-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -428,6 +440,12 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/juno',
       txPage: 'https://mainnet.whispernode.com/juno/tx/${txHash}',
       accountPage: 'https://mainnet.whispernode.com/juno/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/juno',
+      txPage: 'https://explorer.chainroot.io/juno/transactions/${txHash}',
+      accountPage: 'https://explorer.chainroot.io/juno/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -115,6 +115,10 @@ const info: Chain = {
       {
         address: 'https://teritori_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://teritori-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -173,6 +177,10 @@ const info: Chain = {
       {
         address: 'https://teritori_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://teritori-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -207,6 +215,10 @@ const info: Chain = {
       {
         address: 'teritori-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'teritori-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -270,6 +282,12 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/teritori',
       txPage: 'https://explorer.whenmoonwhenlambo.money/teritori/tx/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/teritori/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/teritori',
+      txPage: 'https://explorer.chainroot.io/teritori/transactions/${txHash}',
+      accountPage: 'https://explorer.chainroot.io/teritori/accounts/${accountAddress}'
     }
   ],
   images: [{

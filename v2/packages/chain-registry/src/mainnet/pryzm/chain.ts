@@ -151,6 +151,10 @@ const info: Chain = {
       {
         address: 'https://pryzm-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://pryzm-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -165,6 +169,10 @@ const info: Chain = {
       {
         address: 'https://pryzm-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://pryzm-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -179,6 +187,10 @@ const info: Chain = {
       {
         address: 'pryzm-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'pryzm-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -210,6 +222,12 @@ const info: Chain = {
       url: 'https://staking-explorer.com/explorer/pryzm',
       txPage: 'https://staking-explorer.com/transaction.php?chain=pryzm&tx=${txHash}',
       accountPage: 'https://staking-explorer.com/account.php?chain=pryzm&addr=${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/pryzm',
+      txPage: 'https://explorer.chainroot.io/pryzm/transactions/${txHash}',
+      accountPage: 'https://explorer.chainroot.io/pryzm/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -123,6 +123,10 @@ const info: Chain = {
       {
         address: 'https://quasar-rpc.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://quasar-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -173,6 +177,10 @@ const info: Chain = {
       {
         address: 'https://quasar-api.genznodes.dev',
         provider: 'genznodes'
+      },
+      {
+        address: 'https://quasar-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -211,6 +219,10 @@ const info: Chain = {
       {
         address: 'quasar-grpc.genznodes.dev:29090',
         provider: 'genznodes'
+      },
+      {
+        address: 'quasar-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -238,6 +250,12 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/quasar',
       txPage: 'https://mainnet.whispernode.com/quasar/tx/${txHash}',
       accountPage: 'https://mainnet.whispernode.com/quasar/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/quasar',
+      txPage: 'https://explorer.chainroot.io/quasar/transactions/${txHash}',
+      accountPage: 'https://explorer.chainroot.io/quasar/accounts/${accountAddress}'
     }
   ],
   keywords: ['mainnet'],

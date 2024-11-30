@@ -207,6 +207,10 @@ const info: Chain = {
       {
         address: 'https://osmosis.drpc.org',
         provider: 'dRPC'
+      },
+      {
+        address: 'https://osmosis-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -309,6 +313,10 @@ const info: Chain = {
       {
         address: 'https://osmosis-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://osmosis-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -379,6 +387,10 @@ const info: Chain = {
       {
         address: 'osmosis-grpc.noders.services:10090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'osmosis-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -449,6 +461,12 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/osmosis',
       txPage: 'https://mainnet.whispernode.com/osmosis/tx/${txHash}',
       accountPage: 'https://mainnet.whispernode.com/osmosis/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/osmosis',
+      txPage: 'https://explorer.chainroot.io/osmosis/transactions/${txHash}',
+      accountPage: 'https://explorer.chainroot.io/osmosis/accounts/${accountAddress}'
     }
   ],
   keywords: ['dex']
