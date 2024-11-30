@@ -70,6 +70,10 @@ const info: Chain = {
       {
         address: 'https://shentu-rpc.kleomedes.network',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://shentu-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -112,6 +116,10 @@ const info: Chain = {
       {
         address: 'https://shentu-api.kleomedes.network',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://shentu-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -146,6 +154,10 @@ const info: Chain = {
       {
         address: 'shentu-grpc.panthea.eu:16700',
         provider: 'Panthea EU'
+      },
+      {
+        address: 'shentu-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -200,6 +212,12 @@ const info: Chain = {
       kind: 'Stakeflow',
       url: 'https://stakeflow.io/shentu',
       account_page: 'https://stakeflow.io/shentu/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/shentu',
+      tx_page: 'https://explorer.chainroot.io/shentu/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/shentu/accounts/${accountAddress}'
     }
   ],
   images: [{

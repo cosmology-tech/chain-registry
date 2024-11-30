@@ -143,6 +143,10 @@ const info: Chain = {
       {
         address: 'https://archway-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://archway-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -241,6 +245,10 @@ const info: Chain = {
       {
         address: 'https://archway-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://archway-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -331,6 +339,10 @@ const info: Chain = {
       {
         address: 'archway-grpc.noders.services:13090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'archway-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -393,6 +405,12 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/archway',
       tx_page: 'https://mainnet.whispernode.com/archway/tx/${txHash}',
       account_page: 'https://mainnet.whispernode.com/archway/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/archway',
+      tx_page: 'https://explorer.chainroot.io/archway/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/archway/accounts/${accountAddress}'
     }
   ],
   images: [{

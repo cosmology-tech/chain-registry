@@ -93,6 +93,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/coreum/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://coreum-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -123,6 +127,10 @@ const info: Chain = {
       {
         address: 'coreum-grpc.genznodes.dev:35090',
         provider: 'genznodes'
+      },
+      {
+        address: 'coreum-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -157,6 +165,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/coreum/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://coreum-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -208,6 +220,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/coreum',
       tx_page: 'https://ezstaking.app/coreum/txs/${txHash}',
       account_page: 'https://ezstaking.app/coreum/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/coreum',
+      tx_page: 'https://explorer.chainroot.io/coreum/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/coreum/accounts/${accountAddress}'
     }
   ],
   keywords: [

@@ -111,6 +111,10 @@ const info: Chain = {
       {
         address: 'https://stargaze-rpc.kleomedes.network',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://stargaze-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -189,6 +193,10 @@ const info: Chain = {
       {
         address: 'https://stargaze-api.kleomedes.network',
         provider: 'Kleomedes'
+      },
+      {
+        address: 'https://stargaze-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -231,6 +239,10 @@ const info: Chain = {
       {
         address: 'https://grpc.stargaze.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'stargaze-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -275,6 +287,12 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/stargaze',
       tx_page: 'https://mainnet.whispernode.com/stargaze/tx/${txHash}',
       account_page: 'https://mainnet.whispernode.com/stargaze/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/stargaze',
+      tx_page: 'https://explorer.chainroot.io/stargaze/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/stargaze/accounts/${accountAddress}'
     }
   ],
   images: [{

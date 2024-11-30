@@ -91,6 +91,10 @@ const info: Chain = {
       {
         address: 'https://comdex-rpc.bluestake.net:443',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://comdex-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -149,6 +153,10 @@ const info: Chain = {
       {
         address: 'https://comdex-api.bluestake.net',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://comdex-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -199,6 +207,10 @@ const info: Chain = {
       {
         address: 'https://grpc-comdex.blockval.io:443',
         provider: 'Blockval'
+      },
+      {
+        address: 'comdex-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -258,6 +270,12 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/comdex',
       tx_page: 'https://mainnet.whispernode.com/comdex/tx/${txHash}',
       account_page: 'https://mainnet.whispernode.com/comdex/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/comdex',
+      tx_page: 'https://explorer.chainroot.io/comdex/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/comdex/accounts/${accountAddress}'
     }
   ],
   images: [{

@@ -69,6 +69,10 @@ const info: Chain = {
       {
         address: 'https://saga-rpc.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://saga-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -103,6 +107,10 @@ const info: Chain = {
       {
         address: 'https://saga-api.stakeandrelax.net',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'https://saga-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -133,6 +141,10 @@ const info: Chain = {
       {
         address: 'http://saga-grpc.stakeandrelax.net:24990',
         provider: 'Stake&Relax 🦥'
+      },
+      {
+        address: 'saga-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -165,6 +177,12 @@ const info: Chain = {
       url: 'https://explorer.nodestake.org/saga',
       tx_page: 'https://explorer.nodestake.org/saga/tx/${txHash}',
       account_page: 'https://explorer.nodestake.org/saga/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/saga',
+      tx_page: 'https://explorer.chainroot.io/saga/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/saga/accounts/${accountAddress}'
     }
   ],
   images: [{
