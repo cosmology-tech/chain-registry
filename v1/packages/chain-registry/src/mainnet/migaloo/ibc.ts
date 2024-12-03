@@ -90,6 +90,35 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'dungeon',
+      client_id: '07-tendermint-10',
+      connection_id: 'connection-12'
+    },
+    chain_2: {
+      chain_name: 'migaloo',
+      client_id: '07-tendermint-139',
+      connection_id: 'connection-109'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-6',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-142',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'injective',
       client_id: '07-tendermint-154',
       connection_id: 'connection-123'

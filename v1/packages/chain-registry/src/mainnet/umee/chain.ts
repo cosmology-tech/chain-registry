@@ -106,6 +106,10 @@ const info: Chain = {
       {
         address: 'https://umee-rpc.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://umee_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -176,6 +180,10 @@ const info: Chain = {
       {
         address: 'https://umee-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://umee_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -301,6 +309,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/umee',
       tx_page: 'https://ezstaking.app/umee/txs/${txHash}',
       account_page: 'https://ezstaking.app/umee/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/umee',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/umee/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/umee/account/${accountAddress}'
     }
   ],
   images: [{

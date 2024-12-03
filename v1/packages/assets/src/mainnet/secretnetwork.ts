@@ -1708,6 +1708,91 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'NYX Token (NYX) is the Nym Network\'s native staking and governance token.',
+      denom_units: [{
+          denom: 'ibc/D08C48DD2EC0510E9B4610ECE180AB104DDFF69FB42497E187058E2D42B9C71B',
+          exponent: 0,
+          aliases: ['unyx']
+        }, {
+          denom: 'nyx',
+          exponent: 6
+        }],
+      base: 'ibc/D08C48DD2EC0510E9B4610ECE180AB104DDFF69FB42497E187058E2D42B9C71B',
+      name: 'NYX',
+      display: 'nyx',
+      symbol: 'NYX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png',
+          theme: {
+            primary_color_hex: '#f45135'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom: 'unyx',
+            chain_name: 'nyx'
+          },
+          chain: {
+            channel_id: 'channel-174'
+          }
+        }]
+    },
+    {
+      description: 'NYM Token (NYM) is the Nym Network\'s native utility token, used as the primary means to incentivize mixnet node operators.',
+      denom_units: [{
+          denom: 'ibc/3D94B1D3EA1E52407BC69A78BC0A52D2440F0524F5268B899B67F18DEACB0B5F',
+          exponent: 0,
+          aliases: ['unym']
+        }, {
+          denom: 'nym',
+          exponent: 6
+        }],
+      base: 'ibc/3D94B1D3EA1E52407BC69A78BC0A52D2440F0524F5268B899B67F18DEACB0B5F',
+      name: 'NYM',
+      display: 'nym',
+      symbol: 'NYM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg'
+      },
+      coingecko_id: 'nym',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#151525'
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#141424'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom: 'unym',
+            chain_name: 'nyx'
+          },
+          chain: {
+            channel_id: 'channel-174'
+          }
+        }]
+    },
+    {
       description: 'The native token of Oraichain',
       denom_units: [{
           denom: 'ibc/C3515C07AFFA077FA302B02BC71BE165342311F52C03D03E4985A74F81801305',
@@ -3700,6 +3785,91 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-146'
+          }
+        }]
+    },
+    {
+      description: 'NYX Token (NYX) is the Nym Network\'s native staking and governance token.',
+      denom_units: [{
+          denom: 'ibc/D08C48DD2EC0510E9B4610ECE180AB104DDFF69FB42497E187058E2D42B9C71B',
+          exponent: 0,
+          aliases: ['unyx']
+        }, {
+          denom: 'nyx',
+          exponent: 6
+        }],
+      base: 'ibc/D08C48DD2EC0510E9B4610ECE180AB104DDFF69FB42497E187058E2D42B9C71B',
+      name: 'NYX',
+      display: 'nyx',
+      symbol: 'NYX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nyx.png',
+          theme: {
+            primary_color_hex: '#f45135'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom: 'unyx',
+            chain_name: 'nyx'
+          },
+          chain: {
+            channel_id: 'channel-174'
+          }
+        }]
+    },
+    {
+      description: 'NYM Token (NYM) is the Nym Network\'s native utility token, used as the primary means to incentivize mixnet node operators.',
+      denom_units: [{
+          denom: 'ibc/3D94B1D3EA1E52407BC69A78BC0A52D2440F0524F5268B899B67F18DEACB0B5F',
+          exponent: 0,
+          aliases: ['unym']
+        }, {
+          denom: 'nym',
+          exponent: 6
+        }],
+      base: 'ibc/3D94B1D3EA1E52407BC69A78BC0A52D2440F0524F5268B899B67F18DEACB0B5F',
+      name: 'NYM',
+      display: 'nym',
+      symbol: 'NYM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg'
+      },
+      coingecko_id: 'nym',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_light.svg',
+          theme: {
+            dark_mode: false,
+            circle: true,
+            primary_color_hex: '#151525'
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyx/images/nym_token_dark.svg',
+          theme: {
+            dark_mode: true,
+            circle: true,
+            primary_color_hex: '#141424'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-12',
+            base_denom: 'unym',
+            chain_name: 'nyx'
+          },
+          chain: {
+            channel_id: 'channel-174'
           }
         }]
     },

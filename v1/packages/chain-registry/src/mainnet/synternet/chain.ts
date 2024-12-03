@@ -39,22 +39,37 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.synternet.com/',
         provider: 'Synternet'
+      }, {
+        address: 'https://synternet_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://api.synternet.com/',
         provider: 'Synternet'
+      }, {
+        address: 'https://synternet_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'Big Dipper',
       url: 'https://explorer.synternet.com/',
       tx_page: 'https://explorer.synternet.com/transactions/${txHash}'
-    }, {
+    },
+    {
       kind: 'staking-explorer.com',
       url: 'https://staking-explorer.com/explorer/synternet',
       tx_page: 'https://staking-explorer.com/transaction.php?chain=synternet&tx=${txHash}',
       account_page: 'https://staking-explorer.com/account.php?chain=synternet&addr=${accountAddress}'
-    }],
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/synternet',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/synternet/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/synternet/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.svg',
