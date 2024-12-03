@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chainName: 'chimbatestnet',
   assets: [{
-      description: 'The first blokchain in colombia',
+      description: 'The first blockchain in colombia',
       denomUnits: [{
           denom: 'ucmba',
           exponent: 0
