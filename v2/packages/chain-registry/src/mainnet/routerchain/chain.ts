@@ -73,6 +73,10 @@ const info: Chain = {
       {
         address: 'https://router-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://routerchain_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -91,6 +95,10 @@ const info: Chain = {
       {
         address: 'https://router-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://routerchain_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -111,13 +119,20 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       }
     ],
-    evmHttpJsonrpc: [{
+    evmHttpJsonrpc: [
+      {
         address: 'https://sentry.evm.rpc.routerprotocol.com',
         provider: 'Router'
-      }, {
+      },
+      {
         address: 'https://router-rpc-evm.genznodes.dev',
         provider: 'genznodes'
-      }]
+      },
+      {
+        address: 'https://routerchain_mainnet_evm.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ]
   },
   explorers: [
     {
@@ -146,6 +161,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/router/',
       txPage: 'https://explorer.nodeshub.online/router/tx/${txHash}',
       accountPage: 'https://explorer.nodeshub.online/router/accounts/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/routerchain',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/routerchain/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/routerchain/account/${accountAddress}'
     }
   ],
   images: [{

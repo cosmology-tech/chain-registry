@@ -40,20 +40,34 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.svg'
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc.gopanacea.org',
         provider: 'medibloc'
-      }, {
+      },
+      {
         address: 'https://panacea-rpc.staketab.org:443',
         provider: 'Staketab'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://panacea_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ],
+    rest: [
+      {
         address: 'https://api.gopanacea.org',
         provider: 'medibloc'
-      }, {
+      },
+      {
         address: 'https://panacea-rest.staketab.org',
         provider: 'Staketab'
-      }],
+      },
+      {
+        address: 'https://panacea_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      }
+    ],
     grpc: [{
         address: 'services.staketab.com:9400',
         provider: 'Staketab'
@@ -76,6 +90,12 @@ const info: Chain = {
       kind: 'bigdipper',
       url: 'https://explorer.gopanacea.org',
       txPage: 'https://explorer.gopanacea.org/transactions/${txHash}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/panacea',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/panacea/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/panacea/account/${accountAddress}'
     }
   ],
   images: [{
