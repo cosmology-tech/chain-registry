@@ -105,6 +105,7 @@ import * as _mayachain from './mayachain';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
 import * as _migaloo from './migaloo';
+import * as _milkyway from './milkyway';
 import * as _mises from './mises';
 import * as _mtgbp from './mtgbp';
 import * as _mun from './mun';
@@ -291,6 +292,7 @@ const assets: AssetList[] = [
   _medasdigital.assets,
   _meme.assets,
   _migaloo.assets,
+  _milkyway.assets,
   _mises.assets,
   _mtgbp.assets,
   _mun.assets,

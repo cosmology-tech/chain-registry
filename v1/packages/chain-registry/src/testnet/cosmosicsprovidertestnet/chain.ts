@@ -32,55 +32,55 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.provider-sentry-01.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-sentry-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rpc.provider-sentry-02.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-sentry-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rpc.provider-state-sync-01.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-state-sync-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rpc.provider-state-sync-02.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       }
     ],
     rest: [
       {
-        address: 'https://rest.provider-sentry-01.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-sentry-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rest.provider-sentry-02.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-sentry-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rest.provider-state-sync-01.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-state-sync-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rest.provider-state-sync-02.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       }
     ],
     grpc: [
       {
-        address: 'https://grpc.provider-sentry-01.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-sentry-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://grpc.provider-sentry-02.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-sentry-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://grpc.provider-state-sync-01.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-state-sync-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://grpc.provider-state-sync-02.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       }
     ]
@@ -91,8 +91,8 @@ const info: Chain = {
       tx_page: 'https://mintscan.io/ics-testnet-provider/tx/${txHash}'
     }, {
       kind: 'Ping.pub',
-      url: 'https://explorer.rs-testnet.polypore.xyz/provider',
-      tx_page: 'https://explorer.rs-testnet.polypore.xyz/provider/tx/${txHash}'
+      url: 'https://explorer.polypore.xyz/provider',
+      tx_page: 'https://explorer.polypore.xyz/provider/tx/${txHash}'
     }]
 };
 export default info;
