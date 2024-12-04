@@ -14262,6 +14262,46 @@ const info: AssetList = {
         }]
     },
     {
+      description: 'An alloy of XRP asset variants on Osmosis.',
+      extendedDescription: 'Multiple Ripple variants on Osmosis comprise the liquidity backing of a tokenized transmuter pool to create an alloy of XRP.',
+      denomUnits: [{
+          denom: 'factory/osmo1qnglc04tmhg32uc4kxlxh55a5cmhj88cpa3rmtly484xqu82t79sfv94w0/alloyed/allXRP',
+          exponent: 0
+        }, {
+          denom: 'allXRP',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'osmo1qnglc04tmhg32uc4kxlxh55a5cmhj88cpa3rmtly484xqu82t79sfv94w0',
+      base: 'factory/osmo1qnglc04tmhg32uc4kxlxh55a5cmhj88cpa3rmtly484xqu82t79sfv94w0/alloyed/allXRP',
+      name: 'Ripple',
+      display: 'allXRP',
+      symbol: 'XRP',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'xrpl',
+            baseDenom: 'drop'
+          },
+          provider: 'Osmosis'
+        }],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'xrpl',
+            baseDenom: 'drop'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/xrpl/images/xrp.png',
+          theme: {
+            primaryColorHex: '#040404'
+          }
+        }]
+    },
+    {
       description: 'The Original Meme Coin of SEI Network',
       denomUnits: [{
           denom: 'ibc/86074B8DF625A75C25D52FA6112E3FD5446BA41FE418880C168CA99D10E22F05',

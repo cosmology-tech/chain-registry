@@ -28,16 +28,16 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/cosmos/gaia',
-    recommendedVersion: 'v21.0.0',
-    compatibleVersions: ['v21.0.0'],
+    recommendedVersion: 'v21.0.1',
+    compatibleVersions: ['v21.0.1'],
     consensus: {
       type: 'cometbft',
       version: 'v0.38.11'
     },
     binaries: {
-      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-linux-amd64',
-      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-amd64',
-      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-arm64'
+      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.1/gaiad-v21.0.1-linux-amd64',
+      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.1/gaiad-v21.0.1-darwin-amd64',
+      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v21.0.1/gaiad-v21.0.1-darwin-arm64'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/cosmos/testnets/master/interchain-security/provider/provider-genesis.json'
@@ -55,55 +55,55 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.provider-sentry-01.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-sentry-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rpc.provider-sentry-02.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-sentry-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rpc.provider-state-sync-01.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-state-sync-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rpc.provider-state-sync-02.rs-testnet.polypore.xyz',
+        address: 'https://rpc.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       }
     ],
     rest: [
       {
-        address: 'https://rest.provider-sentry-01.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-sentry-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rest.provider-sentry-02.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-sentry-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rest.provider-state-sync-01.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-state-sync-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://rest.provider-state-sync-02.rs-testnet.polypore.xyz',
+        address: 'https://rest.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       }
     ],
     grpc: [
       {
-        address: 'https://grpc.provider-sentry-01.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-sentry-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://grpc.provider-sentry-02.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-sentry-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://grpc.provider-state-sync-01.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-state-sync-01.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       },
       {
-        address: 'https://grpc.provider-state-sync-02.rs-testnet.polypore.xyz',
+        address: 'https://grpc.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
       }
     ]
@@ -114,8 +114,8 @@ const info: Chain = {
       txPage: 'https://mintscan.io/ics-testnet-provider/tx/${txHash}'
     }, {
       kind: 'Ping.pub',
-      url: 'https://explorer.rs-testnet.polypore.xyz/provider',
-      txPage: 'https://explorer.rs-testnet.polypore.xyz/provider/tx/${txHash}'
+      url: 'https://explorer.polypore.xyz/provider',
+      txPage: 'https://explorer.polypore.xyz/provider/tx/${txHash}'
     }]
 };
 export default info;

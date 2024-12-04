@@ -789,6 +789,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted principal token for ATOM with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:uatom:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pATOM31Dec2026',
+          exponent: 6
+        }],
+      base: 'p:uatom:31Dec2026',
+      name: 'pAtom (31Dec2026)',
+      display: 'pATOM31Dec2026',
+      symbol: 'pATOM-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAtom.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted principal token for OSMO with maturity of 30Sep2024',
       denomUnits: [{
           denom: 'p:uosmo:30Sep2024',
@@ -847,6 +870,29 @@ const info: AssetList = {
       name: 'pOsmo (31Dec2025)',
       display: 'pOSMO31Dec2025',
       symbol: 'pOSMO-31Dec2025',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for OSMO with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:uosmo:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pOSMO31Dec2026',
+          exponent: 6
+        }],
+      base: 'p:uosmo:31Dec2026',
+      name: 'pOsmo (31Dec2026)',
+      display: 'pOSMO31Dec2026',
+      symbol: 'pOSMO-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pOsmo.svg'
@@ -927,6 +973,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted principal token for INJ with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:inj:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pINJ31Dec2026',
+          exponent: 18
+        }],
+      base: 'p:inj:31Dec2026',
+      name: 'pInj (31Dec2026)',
+      display: 'pINJ31Dec2026',
+      symbol: 'pINJ-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pInj.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted principal token for LUNA with maturity of 30Sep2024',
       denomUnits: [{
           denom: 'p:uluna:30Sep2024',
@@ -962,6 +1031,29 @@ const info: AssetList = {
       name: 'pLuna (31Dec2024)',
       display: 'pLUNA31Dec2024',
       symbol: 'pLUNA-31Dec2024',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for LUNA with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:uluna:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pLUNA31Dec2026',
+          exponent: 6
+        }],
+      base: 'p:uluna:31Dec2026',
+      name: 'pLuna (31Dec2026)',
+      display: 'pLUNA31Dec2026',
+      symbol: 'pLUNA-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pLuna.svg'
@@ -1065,6 +1157,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted principal token for AUUU with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:uauuu:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pAUUU31Dec2026',
+          exponent: 6
+        }],
+      base: 'p:uauuu:31Dec2026',
+      name: 'pAuuu (31Dec2026)',
+      display: 'pAUUU31Dec2026',
+      symbol: 'pAUUU-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pAuuu.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted principal token for stTIA with maturity of 30Sep2024',
       denomUnits: [{
           denom: 'p:stutia:30Sep2024',
@@ -1123,6 +1238,29 @@ const info: AssetList = {
       name: 'pstTia (31Dec2025)',
       display: 'pstTIA31Dec2025',
       symbol: 'pstTIA-31Dec2025',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for stTIA with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:stutia:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pstTIA31Dec2026',
+          exponent: 6
+        }],
+      base: 'p:stutia:31Dec2026',
+      name: 'pstTia (31Dec2026)',
+      display: 'pstTIA31Dec2026',
+      symbol: 'pstTIA-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstTia.svg'
@@ -1203,6 +1341,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted principal token for stDYDX with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:stadydx:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pstDYDX31Dec2026',
+          exponent: 18
+        }],
+      base: 'p:stadydx:31Dec2026',
+      name: 'pstDydx (31Dec2026)',
+      display: 'pstDYDX31Dec2026',
+      symbol: 'pstDYDX-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pstDydx.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2024',
       denomUnits: [{
           denom: 'p:udatom:31Dec2024',
@@ -1272,6 +1433,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted principal token for dATOM with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:udatom:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pdATOM31Dec2026',
+          exponent: 6
+        }],
+      base: 'p:udatom:31Dec2026',
+      name: 'pdAtom (31Dec2026)',
+      display: 'pdATOM31Dec2026',
+      symbol: 'pdATOM-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pdAtom.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted principal token for TIA with maturity of 31Dec2024',
       denomUnits: [{
           denom: 'p:utia:31Dec2024',
@@ -1307,6 +1491,29 @@ const info: AssetList = {
       name: 'pTia (31Dec2025)',
       display: 'pTIA31Dec2025',
       symbol: 'pTIA-31Dec2025',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for TIA with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'p:utia:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'pTIA31Dec2026',
+          exponent: 6
+        }],
+      base: 'p:utia:31Dec2026',
+      name: 'pTia (31Dec2026)',
+      display: 'pTIA31Dec2026',
+      symbol: 'pTIA-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pTia.svg'
@@ -1387,6 +1594,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted yield token for ATOM with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:uatom:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'yATOM31Dec2026',
+          exponent: 6
+        }],
+      base: 'y:uatom:31Dec2026',
+      name: 'yAtom (31Dec2026)',
+      display: 'yATOM31Dec2026',
+      symbol: 'yATOM-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAtom.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted yield token for OSMO with maturity of 30Sep2024',
       denomUnits: [{
           denom: 'y:uosmo:30Sep2024',
@@ -1445,6 +1675,29 @@ const info: AssetList = {
       name: 'yOsmo (31Dec2025)',
       display: 'yOSMO31Dec2025',
       symbol: 'yOSMO-31Dec2025',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for OSMO with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:uosmo:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'yOSMO31Dec2026',
+          exponent: 6
+        }],
+      base: 'y:uosmo:31Dec2026',
+      name: 'yOsmo (31Dec2026)',
+      display: 'yOSMO31Dec2026',
+      symbol: 'yOSMO-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yOsmo.svg'
@@ -1525,6 +1778,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted yield token for INJ with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:inj:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'yINJ31Dec2026',
+          exponent: 18
+        }],
+      base: 'y:inj:31Dec2026',
+      name: 'yInj (31Dec2026)',
+      display: 'yINJ31Dec2026',
+      symbol: 'yINJ-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yInj.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted yield token for LUNA with maturity of 30Sep2024',
       denomUnits: [{
           denom: 'y:uluna:30Sep2024',
@@ -1583,6 +1859,29 @@ const info: AssetList = {
       name: 'yLuna (31Dec2025)',
       display: 'yLUNA31Dec2025',
       symbol: 'yLUNA-31Dec2025',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for LUNA with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:uluna:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'yLUNA31Dec2026',
+          exponent: 6
+        }],
+      base: 'y:uluna:31Dec2026',
+      name: 'yLuna (31Dec2026)',
+      display: 'yLUNA31Dec2026',
+      symbol: 'yLUNA-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yLuna.svg'
@@ -1663,6 +1962,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted yield token for AUUU with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:uauuu:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'yAUUU31Dec2026',
+          exponent: 6
+        }],
+      base: 'y:uauuu:31Dec2026',
+      name: 'yAuuu (31Dec2026)',
+      display: 'yAUUU31Dec2026',
+      symbol: 'yAUUU-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yAuuu.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted yield token for stTIA with maturity of 30Sep2024',
       denomUnits: [{
           denom: 'y:stutia:30Sep2024',
@@ -1732,13 +2054,36 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted yield token for stTIA with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:stutia:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'ystTIA31Dec2026',
+          exponent: 6
+        }],
+      base: 'y:stutia:31Dec2026',
+      name: 'ystTia (31Dec2026)',
+      display: 'ystTIA31Dec2026',
+      symbol: 'ystTIA-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystTia.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 30Sep2024',
       denomUnits: [{
           denom: 'y:stadydx:30Sep2024',
           exponent: 0
         }, {
           denom: 'ystDYDX30Sep2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'y:stadydx:30Sep2024',
       name: 'ystDydx (30Sep2024)',
@@ -1761,7 +2106,7 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'ystDYDX31Dec2024',
-          exponent: 6
+          exponent: 18
         }],
       base: 'y:stadydx:31Dec2024',
       name: 'ystDydx (31Dec2024)',
@@ -1784,12 +2129,35 @@ const info: AssetList = {
           exponent: 0
         }, {
           denom: 'ystDYDX31Dec2025',
-          exponent: 6
+          exponent: 18
         }],
       base: 'y:stadydx:31Dec2025',
       name: 'ystDydx (31Dec2025)',
       display: 'ystDYDX31Dec2025',
       symbol: 'ystDYDX-31Dec2025',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for stDYDX with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:stadydx:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'ystDYDX31Dec2026',
+          exponent: 18
+        }],
+      base: 'y:stadydx:31Dec2026',
+      name: 'ystDydx (31Dec2026)',
+      display: 'ystDYDX31Dec2026',
+      symbol: 'ystDYDX-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ystDydx.svg'
@@ -1870,6 +2238,29 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
+      description: 'Pryzm\'s refracted yield token for dATOM with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:udatom:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'ydATOM31Dec2026',
+          exponent: 6
+        }],
+      base: 'y:udatom:31Dec2026',
+      name: 'ydAtom (31Dec2026)',
+      display: 'ydATOM31Dec2026',
+      symbol: 'ydATOM-31Dec2026',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/ydAtom.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'Pryzm\'s refracted yield token for TIA with maturity of 31Dec2024',
       denomUnits: [{
           denom: 'y:utia:31Dec2024',
@@ -1905,6 +2296,29 @@ const info: AssetList = {
       name: 'yTia (31Dec2025)',
       display: 'yTIA31Dec2025',
       symbol: 'yTIA-31Dec2025',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for TIA with maturity of 31Dec2026',
+      denomUnits: [{
+          denom: 'y:utia:31Dec2026',
+          exponent: 0
+        }, {
+          denom: 'yTIA31Dec2026',
+          exponent: 6
+        }],
+      base: 'y:utia:31Dec2026',
+      name: 'yTia (31Dec2026)',
+      display: 'yTIA31Dec2026',
+      symbol: 'yTIA-31Dec2026',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yTia.svg'

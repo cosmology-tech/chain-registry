@@ -82,6 +82,7 @@ import * as _mars from './mars';
 import * as _medasdigital from './medasdigital';
 import * as _meme from './meme';
 import * as _migaloo from './migaloo';
+import * as _milkyway from './milkyway';
 import * as _neutaro from './neutaro';
 import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
@@ -228,6 +229,7 @@ const ibcData: IBCData[] = [
   ..._medasdigital.ibcData,
   ..._meme.ibcData,
   ..._migaloo.ibcData,
+  ..._milkyway.ibcData,
   ..._neutaro.ibcData,
   ..._neutron.ibcData,
   ..._nibiru.ibcData,
