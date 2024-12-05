@@ -8,7 +8,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'devnet',
   bech32_prefix: 'kyve',
-  daemon_name: 'chaind',
+  daemon_name: 'kyved',
   node_home: '$HOME/.kyve',
   key_algos: ['secp256k1'],
   slip44: 118,
@@ -32,9 +32,10 @@ const info: Chain = {
       }]
   },
   explorers: [{
-      kind: 'explorers.guru',
-      url: 'https://kyve.explorers.guru/',
-      tx_page: 'https://kyve.explorers.guru/transaction/${txHash}'
+      kind: 'KYVE Explorer',
+      url: 'https://explorer.kyve.network/korellia',
+      tx_page: 'https://explorer.kyve.network/korellia/tx/${txHash}',
+      account_page: 'https://explorer.kyve.network/korellia/account/${accountAddress}'
     }]
 };
 export default info;

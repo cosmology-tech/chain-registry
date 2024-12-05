@@ -8037,6 +8037,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'XION is the first walletless L1 blockchain purpose built for consumer adoption through chain abstraction.',
+      denom_units: [{
+          denom: 'ibc/E7D78F7EEF80EC9B57BB833298FD0E2928CF41F3019D2A125AFF90F43298E46B',
+          exponent: 0,
+          aliases: ['uxion']
+        }, {
+          denom: 'XION',
+          exponent: 6,
+          aliases: ['xion']
+        }],
+      base: 'ibc/E7D78F7EEF80EC9B57BB833298FD0E2928CF41F3019D2A125AFF90F43298E46B',
+      display: 'XION',
+      name: 'xion',
+      symbol: 'XION',
+      coingecko_id: 'xion-2',
+      type_asset: 'sdk.coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+        }],
+      socials: {
+        website: 'https://xion.burnt.com/',
+        twitter: 'https://twitter.com/burnt_xion'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uxion',
+            chain_name: 'xion'
+          },
+          chain: {
+            channel_id: 'channel-113'
+          }
+        }]
+    },
+    {
       description: 'OmniFlix is a decentralized media platform that enables content creators to distribute, monetize, and manage their digital content using blockchain technology.',
       denom_units: [{
           denom: 'ibc/C3CC3C026E4185943767E7D519704C2AAE9CCB908663EDDD159D1A34F6B62CC6',
@@ -12225,6 +12264,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-51'
+          }
+        }]
+    },
+    {
+      description: 'XION is the first walletless L1 blockchain purpose built for consumer adoption through chain abstraction.',
+      denom_units: [{
+          denom: 'ibc/E7D78F7EEF80EC9B57BB833298FD0E2928CF41F3019D2A125AFF90F43298E46B',
+          exponent: 0,
+          aliases: ['uxion']
+        }, {
+          denom: 'XION',
+          exponent: 6,
+          aliases: ['xion']
+        }],
+      base: 'ibc/E7D78F7EEF80EC9B57BB833298FD0E2928CF41F3019D2A125AFF90F43298E46B',
+      display: 'XION',
+      name: 'xion',
+      symbol: 'XION',
+      coingecko_id: 'xion-2',
+      type_asset: 'sdk.coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+        }],
+      socials: {
+        website: 'https://xion.burnt.com/',
+        twitter: 'https://twitter.com/burnt_xion'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-2',
+            base_denom: 'uxion',
+            chain_name: 'xion'
+          },
+          chain: {
+            channel_id: 'channel-113'
           }
         }]
     },

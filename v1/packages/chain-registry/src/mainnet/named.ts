@@ -181,5 +181,6 @@ export * as unicorn from './unicorn';
 export * as unification from './unification';
 export * as ununifi from './ununifi';
 export * as uptick from './uptick';
+export * as xion from './xion';
 export * as xpla from './xpla';
 export * as zetachain from './zetachain';

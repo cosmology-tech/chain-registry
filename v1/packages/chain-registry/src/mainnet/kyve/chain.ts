@@ -38,7 +38,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-eu-1.kyve.network',
+        address: 'https://rpc.kyve.network',
         provider: 'kyve'
       },
       {
@@ -92,7 +92,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api-eu-1.kyve.network',
+        address: 'https://api.kyve.network',
         provider: 'kyve'
       },
       {
@@ -231,6 +231,18 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/kyve',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/kyve/txs/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/kyve/account/${accountAddress}'
+    },
+    {
+      kind: 'KYVE Explorer',
+      url: 'https://explorer.kyve.network/kyve',
+      tx_page: 'https://explorer.kyve.network/kyve/tx/${txHash}',
+      account_page: 'https://explorer.kyve.network/kyve/account/${accountAddress}'
+    },
+    {
+      kind: 'Viewblock',
+      url: 'https://viewblock.io/kyve',
+      tx_page: 'https://viewblock.io/kyve/tx/${txHash}',
+      account_page: 'https://viewblock.io/kyve/address/${accountAddress}'
     }
   ],
   images: [{

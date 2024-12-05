@@ -32,7 +32,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-eu-1.kaon.kyve.network',
+        address: 'https://rpc.kaon.kyve.network',
         provider: 'kyve'
       },
       {
@@ -46,7 +46,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api-eu-1.kaon.kyve.network',
+        address: 'https://api.kaon.kyve.network',
         provider: 'kyve'
       },
       {
@@ -64,6 +64,11 @@ const info: Chain = {
       url: 'https://mintscan.io/kyve-testnet',
       tx_page: 'https://mintscan.io/kyve-testnet/txs/${txHash}',
       account_page: 'https://mintscan.io/kyve-testnet/account/${accountAddress}'
+    }, {
+      kind: 'KYVE Explorer',
+      url: 'https://explorer.kyve.network/kaon',
+      tx_page: 'https://explorer.kyve.network/kaon/tx/${txHash}',
+      account_page: 'https://explorer.kyve.network/kaon/account/${accountAddress}'
     }]
 };
 export default info;

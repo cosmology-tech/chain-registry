@@ -16,10 +16,10 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'uxion',
-        fixed_min_gas_price: 0,
-        low_gas_price: 0,
-        average_gas_price: 0.025,
-        high_gas_price: 0.04
+        fixed_min_gas_price: 0.001,
+        low_gas_price: 0.001,
+        average_gas_price: 0.001,
+        high_gas_price: 0.01
       }]
   },
   staking: {
@@ -33,12 +33,16 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc.xion-testnet-1.burnt.com',
+        provider: '🔥BurntLabs🔥'
+      },
+      {
         address: 'https://testnet-burnt-rpc.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://xion-testnet-rpc.polkachu.com',
-        provider: 'polkachu'
+        provider: 'Polkachu'
       },
       {
         address: 'https://burnt-testnet-rpc.itrocket.net',
@@ -47,12 +51,16 @@ const info: Chain = {
     ],
     rest: [
       {
+        address: 'https://api.xion-testnet-1.burnt.com',
+        provider: '🔥BurntLabs🔥'
+      },
+      {
         address: 'https://testnet-burnt-api.lavenderfive.com',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'https://xion-testnet-api.polkachu.com',
-        provider: 'polkachu'
+        provider: 'Polkachu'
       },
       {
         address: 'https://burnt-testnet-api.itrocket.net',
@@ -61,12 +69,16 @@ const info: Chain = {
     ],
     grpc: [
       {
+        address: 'grpc.xion-testnet-1.burnt.com:443',
+        provider: '🔥BurntLabs🔥'
+      },
+      {
         address: 'testnet-burnt-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
         address: 'xion-testnet-grpc.polkachu.com:22390',
-        provider: 'polkachu'
+        provider: 'Polkachu'
       },
       {
         address: 'burnt-testnet-grpc.itrocket.net:443',
@@ -74,24 +86,16 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [
-    {
+  explorers: [{
       url: 'https://explorer.burnt.com/xion-testnet-1',
       tx_page: 'https://explorer.burnt.com/xion-testnet-1/tx/${txHash}',
       account_page: 'https://explorer.burnt.com/xion-testnet-1/account/${accountAddress}'
-    },
-    {
-      url: 'https://testnet.xion.explorers.guru',
-      tx_page: 'https://testnet.xion.explorers.guru/transaction/${txHash}',
-      account_page: 'https://testnet.xion.explorers.guru/account/${accountAddress}'
-    },
-    {
+    }, {
       kind: 'ITRocket',
       url: 'https://testnet.itrocket.net/burnt',
       tx_page: 'https://testnet.itrocket.net/burnt/tx/${txHash}',
       account_page: 'https://testnet.itrocket.net/burnt/account/${accountAddress}'
-    }
-  ],
+    }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
     }],

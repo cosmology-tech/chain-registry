@@ -831,6 +831,35 @@ const info: IBCInfo[] = [
     $schema: '../ibc_data.schema.json',
     chain_1: {
       chain_name: 'injective',
+      client_id: '07-tendermint-279',
+      connection_id: 'connection-282'
+    },
+    chain_2: {
+      chain_name: 'xion',
+      client_id: '07-tendermint-4',
+      connection_id: 'connection-4'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-387',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-4',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
+      chain_name: 'injective',
       client_id: '07-tendermint-197',
       connection_id: 'connection-182'
     },
