@@ -183,6 +183,7 @@ import * as _unicorn from './unicorn';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
+import * as _xion from './xion';
 import * as _xpla from './xpla';
 import * as _zetachain from './zetachain';
 
@@ -370,6 +371,7 @@ const assetList: AssetList[] = [
   _unification.assetList,
   _ununifi.assetList,
   _uptick.assetList,
+  _xion.assetList,
   _xpla.assetList,
   _zetachain.assetList
 ];

@@ -144,6 +144,7 @@ import * as _titan from './titan';
 import * as _umee from './umee';
 import * as _unification from './unification';
 import * as _uptick from './uptick';
+import * as _xion from './xion';
 import * as _xpla from './xpla';
 
 const ibcData: IBCData[] = [
@@ -291,6 +292,7 @@ const ibcData: IBCData[] = [
   ..._umee.ibcData,
   ..._unification.ibcData,
   ..._uptick.ibcData,
+  ..._xion.ibcData,
   ..._xpla.ibcData
 ];
 

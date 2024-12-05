@@ -37,10 +37,10 @@ const info: Chain = {
       tag: 'v0.38.7-kyve-rpc-fix-rc0'
     },
     binaries: {
-      "linux/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_linux_amd64.tar.gz',
-      "linux/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_linux_arm64.tar.gz',
-      "darwin/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_darwin_amd64.tar.gz',
-      "darwin/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_darwin_arm64.tar.gz'
+      "linux/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_linux_amd64',
+      "linux/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_linux_arm64',
+      "darwin/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_darwin_amd64',
+      "darwin/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_darwin_arm64'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/KYVENetwork/networks/main/kyve-1/genesis.json'
@@ -63,7 +63,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-eu-1.kyve.network',
+        address: 'https://rpc.kyve.network',
         provider: 'kyve'
       },
       {
@@ -117,7 +117,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api-eu-1.kyve.network',
+        address: 'https://api.kyve.network',
         provider: 'kyve'
       },
       {
@@ -256,6 +256,18 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/kyve',
       txPage: 'https://explorer.whenmoonwhenlambo.money/kyve/txs/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/kyve/account/${accountAddress}'
+    },
+    {
+      kind: 'KYVE Explorer',
+      url: 'https://explorer.kyve.network/kyve',
+      txPage: 'https://explorer.kyve.network/kyve/tx/${txHash}',
+      accountPage: 'https://explorer.kyve.network/kyve/account/${accountAddress}'
+    },
+    {
+      kind: 'Viewblock',
+      url: 'https://viewblock.io/kyve',
+      txPage: 'https://viewblock.io/kyve/tx/${txHash}',
+      accountPage: 'https://viewblock.io/kyve/address/${accountAddress}'
     }
   ],
   images: [{

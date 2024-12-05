@@ -28,13 +28,13 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/KYVENetwork/chain',
-    recommendedVersion: 'v1.0.0-rc0',
-    compatibleVersions: ['v1.0.0-rc0'],
+    recommendedVersion: 'v1.5.0',
+    compatibleVersions: ['v1.5.0'],
     binaries: {
-      "linux/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_amd64.tar.gz',
-      "linux/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_linux_arm64.tar.gz',
-      "darwin/amd64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_amd64.tar.gz',
-      "darwin/arm64": 'https://files.kyve.network/chain/v1.0.0-rc0/kyved_darwin_arm64.tar.gz'
+      "linux/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_kaon_linux_amd64',
+      "linux/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_kaon_linux_arm64',
+      "darwin/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_kaon_darwin_amd64',
+      "darwin/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_kaon_darwin_arm64'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/KYVENetwork/networks/main/kaon-1/genesis.json'
@@ -43,7 +43,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-eu-1.kaon.kyve.network',
+        address: 'https://rpc.kaon.kyve.network',
         provider: 'kyve'
       },
       {
@@ -57,7 +57,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api-eu-1.kaon.kyve.network',
+        address: 'https://api.kaon.kyve.network',
         provider: 'kyve'
       },
       {
@@ -75,6 +75,11 @@ const info: Chain = {
       url: 'https://mintscan.io/kyve-testnet',
       txPage: 'https://mintscan.io/kyve-testnet/txs/${txHash}',
       accountPage: 'https://mintscan.io/kyve-testnet/account/${accountAddress}'
+    }, {
+      kind: 'KYVE Explorer',
+      url: 'https://explorer.kyve.network/kaon',
+      txPage: 'https://explorer.kyve.network/kaon/tx/${txHash}',
+      accountPage: 'https://explorer.kyve.network/kaon/account/${accountAddress}'
     }]
 };
 export default info;

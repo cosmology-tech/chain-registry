@@ -118,6 +118,7 @@ const info: AssetList = {
       name: 'Noble USDC Token',
       display: 'usdc',
       symbol: 'USDC',
+      coingeckoId: 'usd-coin',
       traces: [{
           type: 'ibc',
           counterparty: {
