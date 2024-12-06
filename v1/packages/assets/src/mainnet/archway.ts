@@ -830,6 +830,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
+      denom_units: [{
+          denom: 'ibc/3F882513A0CCD1C4110ACB7C6C761AC7B48974C9D2D439CD6F652F9B44362518',
+          exponent: 0,
+          aliases: ['uwhale']
+        }, {
+          denom: 'whale',
+          exponent: 6
+        }],
+      base: 'ibc/3F882513A0CCD1C4110ACB7C6C761AC7B48974C9D2D439CD6F652F9B44362518',
+      name: 'Whale',
+      display: 'whale',
+      symbol: 'WHALE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg'
+      },
+      coingecko_id: 'white-whale',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+          theme: {
+            primary_color_hex: '#1c1c1c'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-141',
+            base_denom: 'uwhale',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-184'
+          }
+        }]
+    },
+    {
       description: 'Neutron is a smart contract blockchain within the Cosmos ecosystem, leveraging the Cosmos Hub\'s security to provide cross-chain DeFi applications.',
       denom_units: [{
           denom: 'ibc/9E3CDA65E02637E219B43802452D6B37D782F466CF76ECB9F47A2E00C07C4769',
@@ -2064,6 +2103,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-11'
+          }
+        }]
+    },
+    {
+      description: 'Migaloo is a cosmwasm-powered, permissionless blockchain designed to build decentralized applications with a focus on interchain liquidity solutions.',
+      denom_units: [{
+          denom: 'ibc/3F882513A0CCD1C4110ACB7C6C761AC7B48974C9D2D439CD6F652F9B44362518',
+          exponent: 0,
+          aliases: ['uwhale']
+        }, {
+          denom: 'whale',
+          exponent: 6
+        }],
+      base: 'ibc/3F882513A0CCD1C4110ACB7C6C761AC7B48974C9D2D439CD6F652F9B44362518',
+      name: 'Whale',
+      display: 'whale',
+      symbol: 'WHALE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg'
+      },
+      coingecko_id: 'white-whale',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+          theme: {
+            primary_color_hex: '#1c1c1c'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-141',
+            base_denom: 'uwhale',
+            chain_name: 'migaloo'
+          },
+          chain: {
+            channel_id: 'channel-184'
           }
         }]
     },

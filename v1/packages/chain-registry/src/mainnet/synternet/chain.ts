@@ -36,20 +36,34 @@ const info: Chain = {
   },
   description: 'Synternet is the backbone of the Data Layer, a protocol serving as the customizable execution layer between all blockchains. It enables builders to See, Interpret and Act on any data from any chain, supercharging their applications.',
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc.synternet.com/',
         provider: 'Synternet'
-      }, {
+      },
+      {
         address: 'https://synternet_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://synternet-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      }
+    ],
+    rest: [
+      {
         address: 'https://api.synternet.com/',
         provider: 'Synternet'
-      }, {
+      },
+      {
         address: 'https://synternet_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }]
+      },
+      {
+        address: 'https://synternet-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      }
+    ]
   },
   explorers: [
     {

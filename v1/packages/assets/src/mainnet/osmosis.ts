@@ -4036,6 +4036,223 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of kopi',
+      denom_units: [{
+          denom: 'ibc/CC5F27D641567D2E767E01BF454A9683FA181A9B313ABF9A7FC70DB798C073CD',
+          exponent: 0,
+          aliases: ['ukopi']
+        }, {
+          denom: 'XKP',
+          exponent: 6
+        }],
+      base: 'ibc/CC5F27D641567D2E767E01BF454A9683FA181A9B313ABF9A7FC70DB798C073CD',
+      name: 'XKP',
+      display: 'XKP',
+      symbol: 'XKP',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kopi.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kopi.svg'
+        }],
+      keywords: [
+        'dex',
+        'mm',
+        'staking',
+        'automations'
+      ],
+      socials: {
+        twitter: 'https://x.com/kopi_money',
+        discord: 'https://discord.gg/kopi-money'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'ukopi',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'A MM deposit receipt of the Stablecoin native to the Kopi blockchain',
+      denom_units: [{
+          denom: 'ibc/E91C14A0ED6061BE8C6949493DAD740BEF24CACCC952B384D6E6F58C0329366B',
+          exponent: 0,
+          aliases: ['uckusd']
+        }, {
+          denom: 'ckUSD',
+          exponent: 6
+        }],
+      base: 'ibc/E91C14A0ED6061BE8C6949493DAD740BEF24CACCC952B384D6E6F58C0329366B',
+      name: 'ckUSD',
+      display: 'ckUSD',
+      symbol: 'CKUSD',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      socials: {
+        twitter: 'https://x.com/kopi_money',
+        discord: 'https://discord.gg/kopi-money'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uckusd',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'A MM deposit receipt of the Stablecoin USDC from noble Chain',
+      denom_units: [{
+          denom: 'ibc/9435C57004AE348291983C502CF1812A8DBE94284FEB95917621BCB2300C5F4A',
+          exponent: 0,
+          aliases: ['ucusdc']
+        }, {
+          denom: 'cUSDC',
+          exponent: 6
+        }],
+      base: 'ibc/9435C57004AE348291983C502CF1812A8DBE94284FEB95917621BCB2300C5F4A',
+      name: 'cUSDC',
+      display: 'cUSDC',
+      symbol: 'CUSDC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'ucusdc',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'A MM deposit receipt of the Stablecoin USDT from Injective Chain',
+      denom_units: [{
+          denom: 'ibc/13F23BA89C172DDA3B3080DCFD3ED56C00344116443F8A7E98D8F73727CCD04A',
+          exponent: 0,
+          aliases: ['ucusdtinj']
+        }, {
+          denom: 'cUSDT.inj',
+          exponent: 6
+        }],
+      base: 'ibc/13F23BA89C172DDA3B3080DCFD3ED56C00344116443F8A7E98D8F73727CCD04A',
+      name: 'cUSDT.inj',
+      display: 'cUSDT.inj',
+      symbol: 'CUSDT.inj',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'ucusdtinj',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'arbitrage receipt token of cUSDT',
+      denom_units: [{
+          denom: 'ibc/BB37C44D66572FFDA9523D69893104D2E54075C92FA50C092C799BDF5527A927',
+          exponent: 0,
+          aliases: ['uasusdtinj']
+        }, {
+          denom: 'asusdtinj',
+          exponent: 6
+        }],
+      base: 'ibc/BB37C44D66572FFDA9523D69893104D2E54075C92FA50C092C799BDF5527A927',
+      name: 'asUSDT.inj',
+      display: 'asusdtinj',
+      symbol: 'ASUSDT.inj',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uasusdtinj',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'arbitrage receipt token of cUSDC',
+      denom_units: [{
+          denom: 'ibc/B07F764DF1DCF1BB8B4A01FBBA3FE9FC71CDA2A483AB79468037175BD3126E06',
+          exponent: 0,
+          aliases: ['uasusdc']
+        }, {
+          denom: 'asUSDC',
+          exponent: 6
+        }],
+      base: 'ibc/B07F764DF1DCF1BB8B4A01FBBA3FE9FC71CDA2A483AB79468037175BD3126E06',
+      name: 'asUSDC',
+      display: 'asUSDC',
+      symbol: 'ASUSDC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uasusdc',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
       description: 'Kujira is a decentralized finance (DeFi) platform offering a suite of tools and services for managing and optimizing digital assets and investments.',
       denom_units: [{
           denom: 'ibc/BB6BCDB515050BAE97516111873CCD7BCF1FD0CCB723CC12F3C4F704D6C646CE',
@@ -9622,6 +9839,223 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-171'
+          }
+        }]
+    },
+    {
+      description: 'The native token of kopi',
+      denom_units: [{
+          denom: 'ibc/CC5F27D641567D2E767E01BF454A9683FA181A9B313ABF9A7FC70DB798C073CD',
+          exponent: 0,
+          aliases: ['ukopi']
+        }, {
+          denom: 'XKP',
+          exponent: 6
+        }],
+      base: 'ibc/CC5F27D641567D2E767E01BF454A9683FA181A9B313ABF9A7FC70DB798C073CD',
+      name: 'XKP',
+      display: 'XKP',
+      symbol: 'XKP',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kopi.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kopi.svg'
+        }],
+      keywords: [
+        'dex',
+        'mm',
+        'staking',
+        'automations'
+      ],
+      socials: {
+        twitter: 'https://x.com/kopi_money',
+        discord: 'https://discord.gg/kopi-money'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'ukopi',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'A MM deposit receipt of the Stablecoin native to the Kopi blockchain',
+      denom_units: [{
+          denom: 'ibc/E91C14A0ED6061BE8C6949493DAD740BEF24CACCC952B384D6E6F58C0329366B',
+          exponent: 0,
+          aliases: ['uckusd']
+        }, {
+          denom: 'ckUSD',
+          exponent: 6
+        }],
+      base: 'ibc/E91C14A0ED6061BE8C6949493DAD740BEF24CACCC952B384D6E6F58C0329366B',
+      name: 'ckUSD',
+      display: 'ckUSD',
+      symbol: 'CKUSD',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      socials: {
+        twitter: 'https://x.com/kopi_money',
+        discord: 'https://discord.gg/kopi-money'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uckusd',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'A MM deposit receipt of the Stablecoin USDC from noble Chain',
+      denom_units: [{
+          denom: 'ibc/9435C57004AE348291983C502CF1812A8DBE94284FEB95917621BCB2300C5F4A',
+          exponent: 0,
+          aliases: ['ucusdc']
+        }, {
+          denom: 'cUSDC',
+          exponent: 6
+        }],
+      base: 'ibc/9435C57004AE348291983C502CF1812A8DBE94284FEB95917621BCB2300C5F4A',
+      name: 'cUSDC',
+      display: 'cUSDC',
+      symbol: 'CUSDC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'ucusdc',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'A MM deposit receipt of the Stablecoin USDT from Injective Chain',
+      denom_units: [{
+          denom: 'ibc/13F23BA89C172DDA3B3080DCFD3ED56C00344116443F8A7E98D8F73727CCD04A',
+          exponent: 0,
+          aliases: ['ucusdtinj']
+        }, {
+          denom: 'cUSDT.inj',
+          exponent: 6
+        }],
+      base: 'ibc/13F23BA89C172DDA3B3080DCFD3ED56C00344116443F8A7E98D8F73727CCD04A',
+      name: 'cUSDT.inj',
+      display: 'cUSDT.inj',
+      symbol: 'CUSDT.inj',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'ucusdtinj',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'arbitrage receipt token of cUSDT',
+      denom_units: [{
+          denom: 'ibc/BB37C44D66572FFDA9523D69893104D2E54075C92FA50C092C799BDF5527A927',
+          exponent: 0,
+          aliases: ['uasusdtinj']
+        }, {
+          denom: 'asusdtinj',
+          exponent: 6
+        }],
+      base: 'ibc/BB37C44D66572FFDA9523D69893104D2E54075C92FA50C092C799BDF5527A927',
+      name: 'asUSDT.inj',
+      display: 'asusdtinj',
+      symbol: 'ASUSDT.inj',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uasusdtinj',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
+          }
+        }]
+    },
+    {
+      description: 'arbitrage receipt token of cUSDC',
+      denom_units: [{
+          denom: 'ibc/B07F764DF1DCF1BB8B4A01FBBA3FE9FC71CDA2A483AB79468037175BD3126E06',
+          exponent: 0,
+          aliases: ['uasusdc']
+        }, {
+          denom: 'asUSDC',
+          exponent: 6
+        }],
+      base: 'ibc/B07F764DF1DCF1BB8B4A01FBBA3FE9FC71CDA2A483AB79468037175BD3126E06',
+      name: 'asUSDC',
+      display: 'asUSDC',
+      symbol: 'ASUSDC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        }],
+      keywords: ['dex', 'mm'],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uasusdc',
+            chain_name: 'kopi'
+          },
+          chain: {
+            channel_id: 'channel-88475'
           }
         }]
     },
