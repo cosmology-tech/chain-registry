@@ -346,6 +346,49 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/guppy.png'
       }
+    },
+    {
+      description: 'The native token of Migaloo Chain',
+      denomUnits: [{
+          denom: 'ibc/FA7112322CE7656DC84D441E49BAEAB9DC0AB3C7618A178A212CDE8B3F17C70B',
+          exponent: 0,
+          aliases: ['uwhale']
+        }, {
+          denom: 'whale',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/FA7112322CE7656DC84D441E49BAEAB9DC0AB3C7618A178A212CDE8B3F17C70B',
+      name: 'Migaloo',
+      display: 'whale',
+      symbol: 'WHALE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'migaloo',
+            baseDenom: 'uwhale',
+            channelId: 'channel-10'
+          },
+          chain: {
+            channelId: 'channel-39',
+            path: 'transfer/channel-39/uwhale'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'migaloo',
+            baseDenom: 'uwhale'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+          theme: {
+            primaryColorHex: '#1c1c1c'
+          }
+        }]
     }
   ]
 };

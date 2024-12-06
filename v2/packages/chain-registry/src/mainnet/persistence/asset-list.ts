@@ -38,7 +38,7 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'PSTAKE Liquid-Staked ATOM',
+      description: '(Deprecated) PSTAKE Liquid-Staked ATOM',
       denomUnits: [{
           denom: 'stk/uatom',
           exponent: 0,
@@ -48,6 +48,7 @@ const info: AssetList = {
           exponent: 6,
           aliases: ['stk/atom']
         }],
+      deprecated: true,
       base: 'stk/uatom',
       name: 'PSTAKE staked ATOM',
       display: 'stkatom',
@@ -310,7 +311,7 @@ const info: AssetList = {
       }
     },
     {
-      description: 'PSTAKE Liquid-Staked OSMO',
+      description: '(Deprecated) PSTAKE Liquid-Staked OSMO',
       denomUnits: [{
           denom: 'stk/uosmo',
           exponent: 0,
@@ -320,6 +321,7 @@ const info: AssetList = {
           exponent: 6,
           aliases: ['stk/osmo']
         }],
+      deprecated: true,
       base: 'stk/uosmo',
       name: 'PSTAKE staked OSMO',
       display: 'stkosmo',
@@ -347,7 +349,7 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'PSTAKE Liquid-Staked DYDX',
+      description: '(Deprecated) PSTAKE Liquid-Staked DYDX',
       denomUnits: [{
           denom: 'stk/adydx',
           exponent: 0,
@@ -357,6 +359,7 @@ const info: AssetList = {
           exponent: 18,
           aliases: ['stk/dydx']
         }],
+      deprecated: true,
       base: 'stk/adydx',
       name: 'PSTAKE staked DYDX',
       display: 'stkdydx',
@@ -383,7 +386,7 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'PSTAKE Liquid-Staked STARS',
+      description: '(Deprecated) PSTAKE Liquid-Staked STARS',
       denomUnits: [{
           denom: 'stk/ustars',
           exponent: 0,
@@ -393,6 +396,7 @@ const info: AssetList = {
           exponent: 6,
           aliases: ['stk/stars']
         }],
+      deprecated: true,
       base: 'stk/ustars',
       name: 'PSTAKE staked STARS',
       display: 'stkstars',
@@ -506,7 +510,7 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'PSTAKE Liquid-Staked HUAHUA',
+      description: '(Deprecated) PSTAKE Liquid-Staked HUAHUA',
       denomUnits: [{
           denom: 'stk/uhuahua',
           exponent: 0,
@@ -516,6 +520,7 @@ const info: AssetList = {
           exponent: 6,
           aliases: ['stk/huahua']
         }],
+      deprecated: true,
       base: 'stk/uhuahua',
       name: 'PSTAKE staked HUAHUA',
       display: 'stkhuahua',
@@ -584,7 +589,7 @@ const info: AssetList = {
       }
     },
     {
-      description: 'PSTAKE Liquid-Staked XPRT',
+      description: '(Deprecated) PSTAKE Liquid-Staked XPRT',
       denomUnits: [{
           denom: 'stk/uxprt',
           exponent: 0,
@@ -594,6 +599,7 @@ const info: AssetList = {
           exponent: 6,
           aliases: ['stk/xprt']
         }],
+      deprecated: true,
       base: 'stk/uxprt',
       name: 'PSTAKE staked XPRT',
       display: 'stkxprt',

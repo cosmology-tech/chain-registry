@@ -50,6 +50,14 @@ const info: Chain = {
       {
         address: 'https://xion-rpc.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://xion-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://xion_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -68,6 +76,14 @@ const info: Chain = {
       {
         address: 'https://xion-api.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://xion-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://xion_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -82,6 +98,10 @@ const info: Chain = {
       {
         address: 'xion-grpc.polkachu.com:22390',
         provider: 'Polkachu'
+      },
+      {
+        address: 'xion-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake 🛡️ Slash Protected'
       }
     ]
   },
@@ -89,6 +109,11 @@ const info: Chain = {
       url: 'https://explorer.burnt.com/xion-mainnet-1',
       txPage: 'https://explorer.burnt.com/xion-mainnet-1/tx/${txHash}',
       accountPage: 'https://explorer.burnt.com/xion-mainnet-1/account/${accountAddress}'
+    }, {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/xion',
+      txPage: 'https://explorer.whenmoonwhenlambo.money/xion/tx/${txHash}',
+      accountPage: 'https://explorer.whenmoonwhenlambo.money/xion/account/${accountAddress}'
     }],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'

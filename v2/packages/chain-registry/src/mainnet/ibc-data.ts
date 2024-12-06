@@ -69,6 +69,7 @@ import * as _kava from './kava';
 import * as _kichain from './kichain';
 import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
+import * as _kopi from './kopi';
 import * as _kujira from './kujira';
 import * as _kyve from './kyve';
 import * as _lambda from './lambda';
@@ -217,6 +218,7 @@ const ibcData: IBCData[] = [
   ..._kichain.ibcData,
   ..._kimanetwork.ibcData,
   ..._konstellation.ibcData,
+  ..._kopi.ibcData,
   ..._kujira.ibcData,
   ..._kyve.ibcData,
   ..._lambda.ibcData,

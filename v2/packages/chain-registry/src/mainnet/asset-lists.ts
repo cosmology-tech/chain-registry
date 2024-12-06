@@ -5,6 +5,7 @@ import * as _rootstock from './rootstock';
 import * as _solana from './solana';
 import * as _ton from './ton';
 import * as _tron from './tron';
+import * as _aaronetwork from './aaronetwork';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
@@ -88,6 +89,7 @@ import * as _kava from './kava';
 import * as _kichain from './kichain';
 import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
+import * as _kopi from './kopi';
 import * as _kujira from './kujira';
 import * as _kyve from './kyve';
 import * as _lambda from './lambda';
@@ -193,6 +195,7 @@ const assetList: AssetList[] = [
   _solana.assetList,
   _ton.assetList,
   _tron.assetList,
+  _aaronetwork.assetList,
   _acrechain.assetList,
   _agoric.assetList,
   _aioz.assetList,
@@ -276,6 +279,7 @@ const assetList: AssetList[] = [
   _kichain.assetList,
   _kimanetwork.assetList,
   _konstellation.assetList,
+  _kopi.assetList,
   _kujira.assetList,
   _kyve.assetList,
   _lambda.assetList,

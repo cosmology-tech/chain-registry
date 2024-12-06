@@ -343,6 +343,49 @@ const info: AssetList = {
             primaryColorHex: '#000000'
           }
         }]
+    },
+    {
+      description: 'The native token of Migaloo Chain',
+      denomUnits: [{
+          denom: 'ibc/3F882513A0CCD1C4110ACB7C6C761AC7B48974C9D2D439CD6F652F9B44362518',
+          exponent: 0,
+          aliases: ['uwhale']
+        }, {
+          denom: 'whale',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/3F882513A0CCD1C4110ACB7C6C761AC7B48974C9D2D439CD6F652F9B44362518',
+      name: 'Migaloo',
+      display: 'whale',
+      symbol: 'WHALE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'migaloo',
+            baseDenom: 'uwhale',
+            channelId: 'channel-141'
+          },
+          chain: {
+            channelId: 'channel-184',
+            path: 'transfer/channel-184/uwhale'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'migaloo',
+            baseDenom: 'uwhale'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/white-whale.svg',
+          theme: {
+            primaryColorHex: '#1c1c1c'
+          }
+        }]
     }
   ]
 };

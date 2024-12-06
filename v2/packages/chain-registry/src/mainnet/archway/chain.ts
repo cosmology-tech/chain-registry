@@ -32,31 +32,31 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/archway-network/archway',
-    recommendedVersion: 'v8.0.0',
-    compatibleVersions: ['v8.0.0'],
+    recommendedVersion: 'v9.0.0',
+    compatibleVersions: ['v9.0.0'],
     binaries: {
-      "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_linux_amd64',
-      "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_linux_arm64',
-      "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_amd64',
-      "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v8.0.0/archwayd_darwin_arm64'
+      "linux/amd64": 'https://github.com/archway-network/archway/releases/download/v9.0.0/archwayd_linux_amd64',
+      "linux/arm64": 'https://github.com/archway-network/archway/releases/download/v9.0.0/archwayd_linux_arm64',
+      "darwin/amd64": 'https://github.com/archway-network/archway/releases/download/v9.0.0/archwayd_darwin_amd64',
+      "darwin/arm64": 'https://github.com/archway-network/archway/releases/download/v9.0.0/archwayd_darwin_arm64'
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.5'
+      version: 'v0.38.12'
     },
     genesis: {
       genesisUrl: 'https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz'
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.47.11'
+      version: 'v0.50.6'
     },
     ibc: {
       type: 'go',
-      version: 'v7.4.0'
+      version: 'v8.4.0'
     },
     cosmwasm: {
-      version: 'v0.45.0',
+      version: 'v0.51.0',
       enabled: true
     }
   },
