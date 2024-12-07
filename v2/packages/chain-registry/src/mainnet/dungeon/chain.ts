@@ -22,6 +22,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://rpc-dungeon-1.seraphim.zone',
+        provider: 'Seraphim'
+      },
+      {
         address: 'https://rpc-dungeonchain.apeironnodes.com',
         provider: 'ApeironNodes'
       },
@@ -35,6 +39,10 @@ const info: Chain = {
       }
     ],
     rest: [
+      {
+        address: 'https://api-dungeon-1.seraphim.zone',
+        provider: 'Seraphim'
+      },
       {
         address: 'https://api-dungeonchain.apeironnodes.com',
         provider: 'ApeironNodes'
