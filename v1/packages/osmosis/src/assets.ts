@@ -21323,6 +21323,7 @@ const assets: AssetList = {
             primary_color_hex: '#e5ba44'
           }
         }],
+      coingecko_id: 'spice-2',
       keywords: ['meme'],
       socials: {
         twitter: 'https://x.com/spiceoncosmos'
