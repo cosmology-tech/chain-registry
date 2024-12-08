@@ -28,6 +28,7 @@ import * as _desmostestnet from './desmostestnet';
 import * as _dhealthtestnet from './dhealthtestnet';
 import * as _doravotatestnet from './doravotatestnet';
 import * as _dydxtestnet from './dydxtestnet';
+import * as _dymensionplaygroundtestnet from './dymensionplaygroundtestnet';
 import * as _elystestnet from './elystestnet';
 import * as _empetestnet from './empetestnet';
 import * as _empowertestnet from './empowertestnet';
@@ -145,6 +146,7 @@ const assetList: AssetList[] = [
   _dhealthtestnet.assetList,
   _doravotatestnet.assetList,
   _dydxtestnet.assetList,
+  _dymensionplaygroundtestnet.assetList,
   _elystestnet.assetList,
   _empetestnet.assetList,
   _empowertestnet.assetList,
