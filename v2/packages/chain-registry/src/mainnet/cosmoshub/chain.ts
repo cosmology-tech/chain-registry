@@ -216,6 +216,10 @@ const info: Chain = {
       {
         address: 'https://cosmoshub-mainnet-rpc.itrocket.net',
         provider: 'ITRocket'
+      },
+      {
+        address: 'https://cosmoshub.rpc.quasarstaking.ai',
+        provider: 'Quasar'
       }
     ],
     rest: [
@@ -338,6 +342,10 @@ const info: Chain = {
       {
         address: 'https://cosmoshub-mainnet-api.itrocket.net',
         provider: 'ITRocket'
+      },
+      {
+        address: 'https://cosmoshub.api.quasarstaking.ai',
+        provider: 'Quasar'
       }
     ],
     grpc: [
@@ -424,6 +432,10 @@ const info: Chain = {
       {
         address: 'cosmoshub-mainnet-grpc.itrocket.net:443',
         provider: 'ITRocket'
+      },
+      {
+        address: 'cosmoshub.grpc.quasarstaking.ai',
+        provider: 'Quasar'
       }
     ]
   },

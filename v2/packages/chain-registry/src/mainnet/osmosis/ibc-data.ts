@@ -1126,7 +1126,7 @@ const info: IBCData[] = [
     },
     chain2: {
       chainName: 'osmosis',
-      clientId: '07-tendermint-3205',
+      clientId: '07-tendermint-3357',
       connectionId: 'connection-2662'
     },
     channels: [{

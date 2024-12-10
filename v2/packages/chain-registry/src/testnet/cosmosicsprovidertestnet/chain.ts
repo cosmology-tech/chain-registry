@@ -69,6 +69,10 @@ const info: Chain = {
       {
         address: 'https://rpc.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
+      },
+      {
+        address: 'https://cosmos-testnet-rpc.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
     rest: [
@@ -87,6 +91,10 @@ const info: Chain = {
       {
         address: 'https://rest.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
+      },
+      {
+        address: 'https://cosmos-testnet-api.itrocket.net',
+        provider: 'ITRocket'
       }
     ],
     grpc: [
@@ -105,17 +113,33 @@ const info: Chain = {
       {
         address: 'https://grpc.provider-state-sync-02.ics-testnet.polypore.xyz',
         provider: 'Hypha'
+      },
+      {
+        address: 'https://cosmos-testnet-grpc.itrocket.net',
+        provider: 'ITRocket'
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       kind: 'Mintscan',
       url: 'https://mintscan.io/ics-testnet-provider',
       txPage: 'https://mintscan.io/ics-testnet-provider/tx/${txHash}'
-    }, {
+    },
+    {
       kind: 'Ping.pub',
       url: 'https://explorer.polypore.xyz/provider',
       txPage: 'https://explorer.polypore.xyz/provider/tx/${txHash}'
-    }]
+    },
+    {
+      kind: 'ITRocket',
+      url: 'https://testnet.itrocket.net/cosmos',
+      txPage: 'https://testnet.itrocket.net/cosmos/tx/${txHash}',
+      accountPage: 'https://testnet.itrocket.net/cosmos/account/${accountAddress}',
+      validatorPage: 'https://testnet.itrocket.net/cosmos/staking/${validatorAddress}',
+      proposalPage: 'https://testnet.itrocket.net/cosmos/gov/${proposalId}',
+      blockPage: 'https://testnet.itrocket.net/cosmos/block/${blockHeight}'
+    }
+  ]
 };
 export default info;
