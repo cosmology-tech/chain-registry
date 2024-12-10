@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.71.57 (2024-12-10)
+
+**Note:** Version bump only for package @chain-registry/v2
+
+
+
+
+
 ## 1.71.56 (2024-12-09)
 
 **Note:** Version bump only for package @chain-registry/v2
