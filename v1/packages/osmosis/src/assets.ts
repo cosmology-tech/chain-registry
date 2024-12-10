@@ -8456,9 +8456,9 @@ const assets: AssetList = {
         }],
       type_asset: 'ics20',
       base: 'ibc/18FB5C09D9D2371F659D4846A956FA56225E377EE3C3652A2BF3542BF809159D',
-      name: 'Filecoin',
+      name: 'Filecoin (Axelar)',
       display: 'fil',
-      symbol: 'FIL',
+      symbol: 'FIL.axl',
       traces: [
         {
           type: 'wrapped',
@@ -8490,16 +8490,16 @@ const assets: AssetList = {
         }
       ],
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.svg'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/fil.axl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/fil.axl.svg'
       },
       images: [{
           image_sync: {
             chain_name: 'filecoin',
             base_denom: 'attoFIL'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/fil.axl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/fil.axl.svg',
           theme: {
             primary_color_hex: '#0493fc'
           }
@@ -21998,6 +21998,49 @@ const assets: AssetList = {
           }
         }],
       keywords: ['meme']
+    },
+    {
+      description: 'An alloy of FIL asset variants on Osmosis.',
+      extended_description: 'Multiple Filecoin variants on Osmosis comprise the liquidity backing of a tokenized transmuter pool to create an alloy of FIL.',
+      denom_units: [{
+          denom: 'factory/osmo1ss0n3ghv5rr4z4y54fnkprc69tegmdm3ejlkgr2z4utnyg7eljgs9pztvs/alloyed/allFIL',
+          exponent: 0
+        }, {
+          denom: 'allFIL',
+          exponent: 12
+        }],
+      type_asset: 'sdk.coin',
+      address: 'osmo1ss0n3ghv5rr4z4y54fnkprc69tegmdm3ejlkgr2z4utnyg7eljgs9pztvs',
+      base: 'factory/osmo1ss0n3ghv5rr4z4y54fnkprc69tegmdm3ejlkgr2z4utnyg7eljgs9pztvs/alloyed/allFIL',
+      name: 'Filecoin',
+      display: 'allFIL',
+      symbol: 'FIL',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chain_name: 'filecoin',
+            base_denom: 'attoFIL'
+          },
+          provider: 'Osmosis'
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.png'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'filecoin',
+            base_denom: 'attoFIL'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/filecoin/images/fil.png',
+          theme: {
+            primary_color_hex: '#0493fc'
+          }
+        }, {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allFIL.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allFIL.png'
+        }]
     }
   ]
 };

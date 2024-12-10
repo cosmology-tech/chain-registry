@@ -31,10 +31,16 @@ const info: Chain = {
     rpc: [{
         address: 'https://mainnet-rpc.aaronetwork.xyz',
         provider: 'Aaron Network Foundation'
+      }, {
+        address: 'https://aaronetwork_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     rest: [{
         address: 'https://mainnet-api.aaronetwork.xyz',
         provider: 'Aaron Network Foundation'
+      }, {
+        address: 'https://aaronetwork_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }]
   },
   explorers: [{
@@ -42,6 +48,11 @@ const info: Chain = {
       url: 'https://explorer.aaronetwork.xyz',
       tx_page: 'https://explorer.aaronetwork.xyz/hash/${txHash}',
       account_page: 'https://explorer.aaronetwork.xyz/address/${accountAddress}'
+    }, {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/aaronetwork',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/aaronetwork/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/aaronetwork/account/${accountAddress}'
     }]
 };
 export default info;
