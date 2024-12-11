@@ -7,7 +7,7 @@ const info: Chain = {
   pretty_name: 'Int3face',
   status: 'live',
   network_type: 'mainnet',
-  website: 'https://int3face.io/',
+  website: 'https://int3face.zone/',
   bech32_prefix: 'int3',
   daemon_name: 'int3',
   node_home: '$HOME/.int3faced',
@@ -49,6 +49,13 @@ const info: Chain = {
         low_gas_price: 0.001,
         average_gas_price: 0.0025,
         high_gas_price: 0.004
+      },
+      {
+        denom: 'factory/int31zlefkpe3g0vvm9a4h0jf9000lmqutlh99h7fsd/ton-ton',
+        fixed_min_gas_price: 0.0001,
+        low_gas_price: 0.0001,
+        average_gas_price: 0.00025,
+        high_gas_price: 0.0004
       }
     ]
   },
