@@ -20607,6 +20607,58 @@ const info: AssetList = {
         }]
     },
     {
+      description: 'TON on Int3face',
+      denomUnits: [{
+          denom: 'ibc/DDE1238DCBC338C0FD0700A72CBD64C017B7A646C4A46789ADFB5D47F1E52E38',
+          exponent: 0,
+          aliases: ['factory/int31zlefkpe3g0vvm9a4h0jf9000lmqutlh99h7fsd/ton-ton']
+        }, {
+          denom: 'ton',
+          exponent: 9
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/DDE1238DCBC338C0FD0700A72CBD64C017B7A646C4A46789ADFB5D47F1E52E38',
+      name: 'TON (Int3)',
+      display: 'ton',
+      symbol: 'TON.int3',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'ton',
+            baseDenom: 'nanoton'
+          },
+          provider: 'Int3face'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'int3face',
+            baseDenom: 'factory/int31zlefkpe3g0vvm9a4h0jf9000lmqutlh99h7fsd/ton-ton',
+            channelId: 'channel-0'
+          },
+          chain: {
+            channelId: 'channel-82819',
+            path: 'transfer/channel-82819/factory/int31zlefkpe3g0vvm9a4h0jf9000lmqutlh99h7fsd/ton-ton'
+          }
+        }],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ton.int3.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ton.int3.png'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ton.int3.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ton.int3.png'
+        }, {
+          imageSync: {
+            chainName: 'int3face',
+            baseDenom: 'factory/int31zlefkpe3g0vvm9a4h0jf9000lmqutlh99h7fsd/ton-ton'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3ton.png',
+          theme: {
+            primaryColorHex: '#3d3d3d'
+          }
+        }]
+    },
+    {
       description: 'Tether\'s USD stablecoin from Arbitrum on Axelar',
       denomUnits: [{
           denom: 'ibc/57B63A0795B6BC0AC4EFD0D4DEE9FE71FCC1D0FFA87F6280C9CDEF4F6727A173',

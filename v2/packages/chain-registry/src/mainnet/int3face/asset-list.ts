@@ -158,6 +158,38 @@ const info: AssetList = {
           }
         }],
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'TON on Int3face',
+      denomUnits: [{
+          denom: 'factory/int31zlefkpe3g0vvm9a4h0jf9000lmqutlh99h7fsd/ton-ton',
+          exponent: 0
+        }, {
+          denom: 'ton',
+          exponent: 9
+        }],
+      base: 'factory/int31zlefkpe3g0vvm9a4h0jf9000lmqutlh99h7fsd/ton-ton',
+      name: 'TON',
+      display: 'ton',
+      symbol: 'TON',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'ton',
+            baseDenom: 'nanoton'
+          },
+          provider: 'Int3face'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3ton.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3ton.png',
+          theme: {
+            primaryColorHex: '#3d3d3d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };
