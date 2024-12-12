@@ -412,50 +412,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Nois',
-      denom_units: [{
-          denom: 'ibc/1FD48481DAA1B05575FE6D3E35929264437B8424A73243B207BCB67401C7F1FD',
-          exponent: 0,
-          aliases: ['unois']
-        }, {
-          denom: 'nois',
-          exponent: 6
-        }],
-      base: 'ibc/1FD48481DAA1B05575FE6D3E35929264437B8424A73243B207BCB67401C7F1FD',
-      name: 'Nois',
-      display: 'nois',
-      symbol: 'NOIS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
-      },
-      keywords: [
-        'nois',
-        'randomness',
-        'drand',
-        'wasm'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg',
-          theme: {
-            primary_color_hex: '#0c0c14'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-16',
-            base_denom: 'unois',
-            chain_name: 'nois'
-          },
-          chain: {
-            channel_id: 'channel-3'
-          }
-        }]
-    },
-    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
@@ -992,50 +948,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-9'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Nois',
-      denom_units: [{
-          denom: 'ibc/1FD48481DAA1B05575FE6D3E35929264437B8424A73243B207BCB67401C7F1FD',
-          exponent: 0,
-          aliases: ['unois']
-        }, {
-          denom: 'nois',
-          exponent: 6
-        }],
-      base: 'ibc/1FD48481DAA1B05575FE6D3E35929264437B8424A73243B207BCB67401C7F1FD',
-      name: 'Nois',
-      display: 'nois',
-      symbol: 'NOIS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
-      },
-      keywords: [
-        'nois',
-        'randomness',
-        'drand',
-        'wasm'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg',
-          theme: {
-            primary_color_hex: '#0c0c14'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-16',
-            base_denom: 'unois',
-            chain_name: 'nois'
-          },
-          chain: {
-            channel_id: 'channel-3'
           }
         }]
     },

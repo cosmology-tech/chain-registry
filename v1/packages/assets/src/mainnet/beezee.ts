@@ -171,6 +171,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Jackal Network is a decentralized storage platform that aims to provide secure, private, and efficient data storage solutions on the blockchain.',
+      denom_units: [{
+          denom: 'ibc/4AA3B163580B4377250CD4486FB6AD098EB27822EE056949EC4A39B09C5E3B4E',
+          exponent: 0,
+          aliases: ['ujkl']
+        }, {
+          denom: 'jkl',
+          exponent: 6
+        }],
+      base: 'ibc/4AA3B163580B4377250CD4486FB6AD098EB27822EE056949EC4A39B09C5E3B4E',
+      name: 'Jackal',
+      display: 'jkl',
+      symbol: 'JKL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
+      },
+      coingecko_id: 'jackal-protocol',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg',
+          theme: {
+            primary_color_hex: '#dbdbcb'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-142',
+            base_denom: 'ujkl',
+            chain_name: 'jackal'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [{
           denom: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
@@ -286,6 +325,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-3'
+          }
+        }]
+    },
+    {
+      description: 'OmniFlix is a decentralized media platform that enables content creators to distribute, monetize, and manage their digital content using blockchain technology.',
+      denom_units: [{
+          denom: 'ibc/FF39851E73089ACBD0B09BDF62FA3C67FBD77A2CD97CD159DBCE9C770561F8AF',
+          exponent: 0,
+          aliases: ['uflix']
+        }, {
+          denom: 'flix',
+          exponent: 6
+        }],
+      base: 'ibc/FF39851E73089ACBD0B09BDF62FA3C67FBD77A2CD97CD159DBCE9C770561F8AF',
+      name: 'Flix',
+      display: 'flix',
+      symbol: 'FLIX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
+      },
+      coingecko_id: 'omniflix-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg',
+          theme: {
+            primary_color_hex: '#c33635'
+          }
+        }],
+      socials: {
+        website: 'https://omniflix.network/',
+        twitter: 'https://twitter.com/OmniFlixNetwork'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-50',
+            base_denom: 'uflix',
+            chain_name: 'omniflixhub'
+          },
+          chain: {
+            channel_id: 'channel-5'
           }
         }]
     },
@@ -378,6 +460,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Jackal Network is a decentralized storage platform that aims to provide secure, private, and efficient data storage solutions on the blockchain.',
+      denom_units: [{
+          denom: 'ibc/4AA3B163580B4377250CD4486FB6AD098EB27822EE056949EC4A39B09C5E3B4E',
+          exponent: 0,
+          aliases: ['ujkl']
+        }, {
+          denom: 'jkl',
+          exponent: 6
+        }],
+      base: 'ibc/4AA3B163580B4377250CD4486FB6AD098EB27822EE056949EC4A39B09C5E3B4E',
+      name: 'Jackal',
+      display: 'jkl',
+      symbol: 'JKL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
+      },
+      coingecko_id: 'jackal-protocol',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg',
+          theme: {
+            primary_color_hex: '#dbdbcb'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-142',
+            base_denom: 'ujkl',
+            chain_name: 'jackal'
+          },
+          chain: {
+            channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [{
           denom: 'ibc/0CC1485F7DF4F335F6F416C46EDB77B09557EC7E5B7215BED40EB741D45FD6C8',
@@ -493,6 +614,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-3'
+          }
+        }]
+    },
+    {
+      description: 'OmniFlix is a decentralized media platform that enables content creators to distribute, monetize, and manage their digital content using blockchain technology.',
+      denom_units: [{
+          denom: 'ibc/FF39851E73089ACBD0B09BDF62FA3C67FBD77A2CD97CD159DBCE9C770561F8AF',
+          exponent: 0,
+          aliases: ['uflix']
+        }, {
+          denom: 'flix',
+          exponent: 6
+        }],
+      base: 'ibc/FF39851E73089ACBD0B09BDF62FA3C67FBD77A2CD97CD159DBCE9C770561F8AF',
+      name: 'Flix',
+      display: 'flix',
+      symbol: 'FLIX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
+      },
+      coingecko_id: 'omniflix-network',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg',
+          theme: {
+            primary_color_hex: '#c33635'
+          }
+        }],
+      socials: {
+        website: 'https://omniflix.network/',
+        twitter: 'https://twitter.com/OmniFlixNetwork'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-50',
+            base_denom: 'uflix',
+            chain_name: 'omniflixhub'
+          },
+          chain: {
+            channel_id: 'channel-5'
           }
         }]
     },

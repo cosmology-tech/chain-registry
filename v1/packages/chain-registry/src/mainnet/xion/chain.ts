@@ -55,6 +55,10 @@ const info: Chain = {
       {
         address: 'https://xion_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://rpc.xion.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     rest: [
@@ -81,6 +85,10 @@ const info: Chain = {
       {
         address: 'https://xion_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://api.xion.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     grpc: [
@@ -99,19 +107,38 @@ const info: Chain = {
       {
         address: 'xion-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://grpc.xion.nodestake.org:443',
+        provider: 'NodeStake'
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       url: 'https://explorer.burnt.com/xion-mainnet-1',
       tx_page: 'https://explorer.burnt.com/xion-mainnet-1/tx/${txHash}',
       account_page: 'https://explorer.burnt.com/xion-mainnet-1/account/${accountAddress}'
-    }, {
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/xion',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/xion/tx/${txHash}',
       account_page: 'https://explorer.whenmoonwhenlambo.money/xion/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'staking-explorer.com',
+      url: 'https://staking-explorer.com/explorer/xion',
+      tx_page: 'https://staking-explorer.com/transaction.php?chain=xion&tx=${txHash}',
+      account_page: 'https://staking-explorer.com/account.php?chain=xion&addr=${accountAddress}'
+    },
+    {
+      kind: 'NodeStake',
+      url: 'https://explorer.nodestake.org/xion',
+      tx_page: 'https://explorer.nodestake.org/xion/tx/${txHash}',
+      account_page: 'https://explorer.nodestake.org/xion/account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
     }],

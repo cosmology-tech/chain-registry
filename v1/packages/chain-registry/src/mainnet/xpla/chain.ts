@@ -51,6 +51,10 @@ const info: Chain = {
       {
         address: 'https://xpla-rpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://xpla.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -73,11 +77,18 @@ const info: Chain = {
       {
         address: 'https://xpla-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://xpla.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [{
         address: 'xpla-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      }, {
+        address: 'xpla.grpc.m.stavr.tech:112',
+        provider: '🔥STAVR🔥'
       }],
     "evm-http-jsonrpc": [{
         address: 'https://dimension-evm-rpc.xpla.dev',
@@ -120,6 +131,12 @@ const info: Chain = {
       url: 'https://ezstaking.app/xpla',
       tx_page: 'https://ezstaking.app/xpla/txs/${txHash}',
       account_page: 'https://ezstaking.app/xpla/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Xpla-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/Xpla-Mainnet/${txHash}',
+      account_page: 'https://explorer.stavr.tech/Xpla-Mainnet/account/${accountAddress}'
     }
   ],
   images: [{

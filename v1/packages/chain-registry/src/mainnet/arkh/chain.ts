@@ -50,19 +50,11 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }],
     grpc: [{
-        address: 'grpc.arkh.nodestake.top:443',
-        provider: 'NodeStake'
-      }, {
         address: 'https://grpc.arkh.nodexcapital.com:443',
         provider: 'NodeX Validator'
       }]
   },
   explorers: [
-    {
-      kind: 'NodeStake Explorer',
-      url: 'https://explorer.nodestake.top/arkh',
-      tx_page: 'https://explorer.nodestake.top/arkh/tx/${txHash}'
-    },
     {
       kind: 'Kynraze Explorer',
       url: 'https://explorer.kynraze.com/arkhadian',

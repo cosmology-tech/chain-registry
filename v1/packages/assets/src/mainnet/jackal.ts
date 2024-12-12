@@ -130,6 +130,49 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'BeeZee network native coin',
+      denom_units: [{
+          denom: 'ibc/A213930E29508227C1E7FE9083EFA1C15E98485126064169FC19A64B666512C7',
+          exponent: 0,
+          aliases: ['ubze']
+        }, {
+          denom: 'bze',
+          exponent: 6
+        }],
+      base: 'ibc/A213930E29508227C1E7FE9083EFA1C15E98485126064169FC19A64B666512C7',
+      name: 'BeeZee',
+      display: 'bze',
+      symbol: 'BZE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+      },
+      coingecko_id: 'bzedge',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+          theme: {
+            primary_color_hex: '#079fd7'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'ubze',
+            chain_name: 'beezee'
+          },
+          chain: {
+            channel_id: 'channel-142'
+          }
+        }]
+    },
+    {
       description: 'The native token of Crescent',
       denom_units: [{
           denom: 'ibc/FF1A8C50966D7CFA19D7D2E513E6938D77ED272B12BB8696B9953520826BD738',
@@ -330,6 +373,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-49'
+          }
+        }]
+    },
+    {
+      description: 'BeeZee network native coin',
+      denom_units: [{
+          denom: 'ibc/A213930E29508227C1E7FE9083EFA1C15E98485126064169FC19A64B666512C7',
+          exponent: 0,
+          aliases: ['ubze']
+        }, {
+          denom: 'bze',
+          exponent: 6
+        }],
+      base: 'ibc/A213930E29508227C1E7FE9083EFA1C15E98485126064169FC19A64B666512C7',
+      name: 'BeeZee',
+      display: 'bze',
+      symbol: 'BZE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg'
+      },
+      coingecko_id: 'bzedge',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/bze.svg',
+          theme: {
+            primary_color_hex: '#079fd7'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      socials: {
+        website: 'https://getbze.com/',
+        twitter: 'https://x.com/BZEdgeCoin'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'ubze',
+            chain_name: 'beezee'
+          },
+          chain: {
+            channel_id: 'channel-142'
           }
         }]
     },

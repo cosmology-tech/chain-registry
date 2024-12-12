@@ -1141,50 +1141,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Nois',
-      denom_units: [{
-          denom: 'ibc/A399023C1ACCA397C485D5A9EAC9EFEC32C2664A99A1D9E41C758D8863FF21EC',
-          exponent: 0,
-          aliases: ['unois']
-        }, {
-          denom: 'nois',
-          exponent: 6
-        }],
-      base: 'ibc/A399023C1ACCA397C485D5A9EAC9EFEC32C2664A99A1D9E41C758D8863FF21EC',
-      name: 'Nois',
-      display: 'nois',
-      symbol: 'NOIS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
-      },
-      keywords: [
-        'nois',
-        'randomness',
-        'drand',
-        'wasm'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg',
-          theme: {
-            primary_color_hex: '#0c0c14'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-21',
-            base_denom: 'unois',
-            chain_name: 'nois'
-          },
-          chain: {
-            channel_id: 'channel-17'
-          }
-        }]
-    },
-    {
       description: 'OmniFlix is a decentralized media platform that enables content creators to distribute, monetize, and manage their digital content using blockchain technology.',
       denom_units: [{
           denom: 'ibc/8E6E7AB89246F87DA936F0EEA0A40654E7FB6B0C3E834F447EB444AAD95A106F',
@@ -2414,50 +2370,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-29'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Nois',
-      denom_units: [{
-          denom: 'ibc/A399023C1ACCA397C485D5A9EAC9EFEC32C2664A99A1D9E41C758D8863FF21EC',
-          exponent: 0,
-          aliases: ['unois']
-        }, {
-          denom: 'nois',
-          exponent: 6
-        }],
-      base: 'ibc/A399023C1ACCA397C485D5A9EAC9EFEC32C2664A99A1D9E41C758D8863FF21EC',
-      name: 'Nois',
-      display: 'nois',
-      symbol: 'NOIS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg'
-      },
-      keywords: [
-        'nois',
-        'randomness',
-        'drand',
-        'wasm'
-      ],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.svg',
-          theme: {
-            primary_color_hex: '#0c0c14'
-          }
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-21',
-            base_denom: 'unois',
-            chain_name: 'nois'
-          },
-          chain: {
-            channel_id: 'channel-17'
           }
         }]
     },

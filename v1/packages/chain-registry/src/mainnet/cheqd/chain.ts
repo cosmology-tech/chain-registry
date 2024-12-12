@@ -48,7 +48,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'https://rpc.cheqd.nodestake.top',
+        address: 'https://rpc.cheqd.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -98,7 +98,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://api.cheqd.nodestake.top',
+        address: 'https://api.cheqd.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -144,7 +144,7 @@ const info: Chain = {
         provider: 'Notional'
       },
       {
-        address: 'grpc.cheqd.nodestake.top:443',
+        address: 'grpc.cheqd.nodestake.org:443',
         provider: 'NodeStake'
       },
       {

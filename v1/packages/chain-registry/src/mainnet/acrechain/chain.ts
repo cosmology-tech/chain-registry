@@ -37,10 +37,6 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.acre.nodestake.top',
-        provider: 'nodestake'
-      },
-      {
         address: 'https://rpc-acre.synergynodes.com',
         provider: 'Synergy Nodes'
       },
@@ -85,10 +81,6 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'grpc.acre.nodestake.top:443',
-        provider: 'Nodestake'
-      },
-      {
         address: 'acrechain-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
@@ -109,10 +101,6 @@ const info: Chain = {
       {
         address: 'https://rpc2-acre.synergynodes.com',
         provider: 'Synergy Nodes'
-      },
-      {
-        address: 'https://jsonrpc.acre.nodestake.top',
-        provider: 'Nodestake'
       },
       {
         address: 'https://acre-rpc-evm.genznodes.dev/',

@@ -22,6 +22,10 @@ const info: Chain = {
   apis: {
     rpc: [
       {
+        address: 'https://dungeon.rpc.quasarstaking.ai',
+        provider: 'Quasar'
+      },
+      {
         address: 'https://rpc-dungeon-1.seraphim.zone',
         provider: 'Seraphim'
       },
@@ -40,6 +44,10 @@ const info: Chain = {
     ],
     rest: [
       {
+        address: 'https://dungeon.api.quasarstaking.ai',
+        provider: 'Quasar'
+      },
+      {
         address: 'https://api-dungeon-1.seraphim.zone',
         provider: 'Seraphim'
       },
@@ -55,7 +63,11 @@ const info: Chain = {
         address: 'https://dungeon_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
-    ]
+    ],
+    grpc: [{
+        address: 'dungeon.grpc.quasarstaking.ai',
+        provider: 'Quasar'
+      }]
   },
   explorers: [{
       kind: 'Ping.Pub',

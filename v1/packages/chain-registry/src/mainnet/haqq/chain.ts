@@ -46,7 +46,7 @@ const info: Chain = {
         provider: 'kioqq'
       },
       {
-        address: 'https://rpc.haqq.nodestake.top',
+        address: 'https://rpc.haqq.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -72,6 +72,10 @@ const info: Chain = {
       {
         address: 'https://haqq.drpc.org',
         provider: 'dRPC'
+      },
+      {
+        address: 'https://haqq.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -84,7 +88,7 @@ const info: Chain = {
         provider: 'kioqq'
       },
       {
-        address: 'https://api.haqq.nodestake.top',
+        address: 'https://api.haqq.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -110,6 +114,10 @@ const info: Chain = {
       {
         address: 'https://haqq-api.noders.services',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://haqq.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -126,7 +134,7 @@ const info: Chain = {
         provider: '[NODERS]TEAM'
       },
       {
-        address: 'https://grpc.haqq.nodestake.top:443',
+        address: 'https://grpc.haqq.nodestake.org:443',
         provider: 'NodeStake'
       },
       {
@@ -164,7 +172,7 @@ const info: Chain = {
         provider: 'kioqq'
       },
       {
-        address: 'https://jsonrpc.haqq.nodestake.top',
+        address: 'https://jsonrpc.haqq.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -213,8 +221,8 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake Explorer',
-      url: 'https://explorer.nodestake.top/haqq',
-      tx_page: 'https://explorer.nodestake.top/haqq/tx/${txHash}'
+      url: 'https://explorer.nodestake.org/haqq',
+      tx_page: 'https://explorer.nodestake.org/haqq/tx/${txHash}'
     },
     {
       kind: 'KonsorTech Explorer',
@@ -225,6 +233,11 @@ const info: Chain = {
       kind: 'Palamar Explorer',
       url: 'https://explorer.palamar.io/haqq',
       tx_page: 'https://explorer.palamar.io/haqq/tx/${txHash}'
+    },
+    {
+      kind: '🔥STAVR🔥 Explorer',
+      url: 'https://explorer.stavr.tech/HAQQ-Mainnet',
+      tx_page: 'https://explorer.stavr.tech/HAQQ-Mainnet/tx/${txHash}'
     }
   ],
   images: [{

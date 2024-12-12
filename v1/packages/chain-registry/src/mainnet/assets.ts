@@ -118,7 +118,6 @@ import * as _neutron from './neutron';
 import * as _nibiru from './nibiru';
 import * as _nim from './nim';
 import * as _noble from './noble';
-import * as _nois from './nois';
 import * as _nolus from './nolus';
 import * as _nomic from './nomic';
 import * as _nyx from './nyx';
@@ -308,7 +307,6 @@ const assets: AssetList[] = [
   _nibiru.assets,
   _nim.assets,
   _noble.assets,
-  _nois.assets,
   _nolus.assets,
   _nomic.assets,
   _nyx.assets,

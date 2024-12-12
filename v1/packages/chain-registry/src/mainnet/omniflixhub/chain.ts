@@ -41,7 +41,7 @@ const info: Chain = {
         provider: 'kingnodes 👑'
       },
       {
-        address: 'https://rpc.omniflix.nodestake.top',
+        address: 'https://rpc.omniflix.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -103,7 +103,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api.omniflix.nodestake.top',
+        address: 'https://api.omniflix.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -169,7 +169,7 @@ const info: Chain = {
         provider: 'kingnodes 👑'
       },
       {
-        address: 'grpc.omniflix.nodestake.top:443',
+        address: 'grpc.omniflix.nodestake.org:443',
         provider: 'NodeStake'
       },
       {

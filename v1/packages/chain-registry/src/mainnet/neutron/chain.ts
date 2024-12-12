@@ -93,7 +93,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'http://rpc.neutron.nodestake.top',
+        address: 'http://rpc.neutron.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -135,7 +135,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'http://api.neutron.nodestake.top',
+        address: 'http://api.neutron.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -177,7 +177,7 @@ const info: Chain = {
         provider: 'Cosmos Spaces'
       },
       {
-        address: 'grpc.neutron.nodestake.top:9090',
+        address: 'grpc.neutron.nodestake.org:443',
         provider: 'NodeStake'
       },
       {

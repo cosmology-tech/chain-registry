@@ -44,8 +44,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://rpc.sge.nodestake.top/',
-        provider: 'Nodestake'
+        address: 'https://rpc.sge.nodestake.org/',
+        provider: 'NodeStake'
       },
       {
         address: 'https://rpc.sge.roomit.xyz/',
@@ -102,8 +102,8 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://api.sge.nodestake.top/',
-        provider: 'Nostake'
+        address: 'https://api.sge.nodestake.org',
+        provider: 'NodeStake'
       },
       {
         address: 'https://api-sge.nodeist.net/',
@@ -156,7 +156,7 @@ const info: Chain = {
         provider: 'Lavenderfive'
       },
       {
-        address: 'https://grpc.sge.nodestake.top/',
+        address: 'https://grpc.sge.nodestake.org:443',
         provider: 'Nodestake'
       },
       {
@@ -200,9 +200,9 @@ const info: Chain = {
       tx_page: 'https://blockexplorer.sgenetwork.io/sge/tx/${txHash}'
     },
     {
-      kind: 'nodestake.top',
-      url: 'https://explorer.nodestake.top/sge',
-      tx_page: 'https://explorer.nodestake.top/sge/tx/${txHash}'
+      kind: 'NodeStake',
+      url: 'https://explorer.nodestake.org/sge',
+      tx_page: 'https://explorer.nodestake.org/sge/tx/${txHash}'
     },
     {
       kind: 'stakerhouse',

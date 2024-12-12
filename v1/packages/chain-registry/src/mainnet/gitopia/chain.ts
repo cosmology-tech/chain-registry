@@ -51,7 +51,7 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://rpc.gitopia.nodestake.top:443',
+        address: 'https://rpc.gitopia.nodestake.org:443',
         provider: 'nodestake'
       },
       {
@@ -169,7 +169,7 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://api.gitopia.nodestake.top:443',
+        address: 'https://api.gitopia.nodestake.org:443',
         provider: 'nodestake'
       },
       {
@@ -303,7 +303,7 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://grpc.gitopia.nodestake.top:443',
+        address: 'https://grpc.gitopia.nodestake.org:443',
         provider: 'nodestake'
       },
       {
@@ -455,9 +455,9 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake',
-      url: 'https://explorer.nodestake.top/gitopia',
-      tx_page: 'https://explorer.nodestake.top/gitopia/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/gitopia/account/${accountAddress}'
+      url: 'https://explorer.nodestake.org/gitopia',
+      tx_page: 'https://explorer.nodestake.org/gitopia/tx/${txHash}',
+      account_page: 'https://explorer.nodestake.org/gitopia/account/${accountAddress}'
     },
     {
       kind: 'Roomit',

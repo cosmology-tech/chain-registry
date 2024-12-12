@@ -43,22 +43,33 @@ const info: Chain = {
       {
         address: 'https://stratos-rpc.noders.services:443',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'https://rpc.stratos.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
-    rest: [{
+    rest: [
+      {
         address: 'https://rest.thestratos.org',
         provider: 'thestratos.org'
-      }, {
+      },
+      {
         address: 'https://stratos-api.noders.services:443',
         provider: '[NODERS]TEAM'
-      }],
+      },
+      {
+        address: 'https://api.stratos.nodestake.org',
+        provider: 'NodeStake'
+      }
+    ],
     grpc: [
       {
         address: 'https://grpc.thestratos.org',
         provider: 'thestratos.org'
       },
       {
-        address: 'https://grpc.stratos.nodestake.top',
+        address: 'https://grpc.stratos.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -76,7 +87,7 @@ const info: Chain = {
         provider: 'thestratos.org'
       },
       {
-        address: 'https://jsonrpc.stratos.nodestake.top',
+        address: 'https://jsonrpc.stratos.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -100,9 +111,9 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake',
-      url: 'https://explorer.nodestake.top/stratos',
-      tx_page: 'https://explorer.nodestake.top/stratos/tx/${txHash}',
-      account_page: 'https://explorer.nodestake.top/stratos/accounts/${accountAddress}'
+      url: 'https://explorer.nodestake.org/stratos',
+      tx_page: 'https://explorer.nodestake.org/stratos/tx/${txHash}',
+      account_page: 'https://explorer.nodestake.org/stratos/accounts/${accountAddress}'
     },
     {
       kind: 'staking-explorer.com',
