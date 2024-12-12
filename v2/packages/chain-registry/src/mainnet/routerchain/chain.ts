@@ -77,6 +77,10 @@ const info: Chain = {
       {
         address: 'https://routerchain_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://rpc.router.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     rest: [
@@ -99,6 +103,10 @@ const info: Chain = {
       {
         address: 'https://routerchain_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://api.router.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     grpc: [
@@ -117,6 +125,10 @@ const info: Chain = {
       {
         address: 'router-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'grpc.router.nodestake.org:443',
+        provider: 'NodeStake'
       }
     ],
     evmHttpJsonrpc: [

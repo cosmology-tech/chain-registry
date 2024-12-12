@@ -75,6 +75,10 @@ const info: Chain = {
       {
         address: 'https://zeta-chain.drpc.org',
         provider: 'dRPC'
+      },
+      {
+        address: 'https://zeta.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -101,6 +105,10 @@ const info: Chain = {
       {
         address: 'https://zetachain.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://zeta.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ],
     grpc: [
@@ -119,6 +127,10 @@ const info: Chain = {
       {
         address: 'https://zetachain.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'zeta.grpc.m.stavr.tech',
+        provider: '🔥STAVR🔥'
       }
     ]
   },
@@ -149,6 +161,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/zetachain/',
       txPage: 'https://explorer.nodeshub.online/zetachain/tx/${txHash}',
       accountPage: 'https://explorer.nodeshub.online/zetachain/accounts/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Zetachain-Mainnet',
+      txPage: 'https://explorer.stavr.tech/Zetachain-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Zetachain-Mainnet/accounts/${accountAddress}'
     }
   ]
 };

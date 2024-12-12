@@ -80,7 +80,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://rpc.agoric.nodestake.top',
+        address: 'https://rpc.agoric.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -129,7 +129,7 @@ const info: Chain = {
         address: 'https://main.api.agoric.net:443'
       },
       {
-        address: 'https://api.agoric.nodestake.top',
+        address: 'https://api.agoric.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -179,7 +179,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'grpc.agoric.nodestake.top:443',
+        address: 'grpc.agoric.nodestake.org:443',
         provider: 'NodeStake'
       },
       {

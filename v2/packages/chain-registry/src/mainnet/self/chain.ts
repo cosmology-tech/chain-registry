@@ -56,6 +56,14 @@ const info: Chain = {
       {
         address: 'https://selfchain-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://rpc.selfchain.nodestake.org',
+        provider: 'NodeStake'
+      },
+      {
+        address: 'https://selfchain.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
       }
     ],
     rest: [
@@ -86,6 +94,10 @@ const info: Chain = {
       {
         address: 'https://selfchain-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://api.selfchain.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     grpc: [
@@ -104,6 +116,10 @@ const info: Chain = {
       {
         address: 'selfchain-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://grpc.selfchain.nodestake.org:443',
+        provider: 'NodeStake'
       }
     ]
   },

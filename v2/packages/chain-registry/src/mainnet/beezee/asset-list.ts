@@ -269,6 +269,92 @@ const info: AssetList = {
             path: 'transfer/channel-0/factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/uspice'
           }
         }]
+    },
+    {
+      description: 'JKL from Jackal Network',
+      denomUnits: [{
+          denom: 'ibc/4AA3B163580B4377250CD4486FB6AD098EB27822EE056949EC4A39B09C5E3B4E',
+          exponent: 0
+        }, {
+          denom: 'jkl',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/4AA3B163580B4377250CD4486FB6AD098EB27822EE056949EC4A39B09C5E3B4E',
+      name: 'Jackal',
+      display: 'jkl',
+      symbol: 'JKL',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'jackal',
+            baseDenom: 'ujkl',
+            channelId: 'channel-142'
+          },
+          chain: {
+            channelId: 'channel-4',
+            path: 'transfer/channel-4/ujkl'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'jackal',
+            baseDenom: 'ujkl'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg',
+          theme: {
+            primaryColorHex: '#dbdbcb'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/jackal/images/jkl.svg'
+      }
+    },
+    {
+      description: 'FLIX from OmniFlix Network',
+      denomUnits: [{
+          denom: 'ibc/FF39851E73089ACBD0B09BDF62FA3C67FBD77A2CD97CD159DBCE9C770561F8AF',
+          exponent: 0
+        }, {
+          denom: 'flix',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/FF39851E73089ACBD0B09BDF62FA3C67FBD77A2CD97CD159DBCE9C770561F8AF',
+      name: 'Flix',
+      display: 'flix',
+      symbol: 'FLIX',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'omniflixhub',
+            baseDenom: 'uflix',
+            channelId: 'channel-50'
+          },
+          chain: {
+            channelId: 'channel-5',
+            path: 'transfer/channel-5/uflix'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'omniflixhub',
+            baseDenom: 'uflix'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg',
+          theme: {
+            primaryColorHex: '#c33635'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
+      }
     }
   ]
 };

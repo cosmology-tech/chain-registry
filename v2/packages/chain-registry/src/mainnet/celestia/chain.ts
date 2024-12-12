@@ -76,7 +76,7 @@ const info: Chain = {
         provider: 'Lunar Oasis'
       },
       {
-        address: 'https://rpc.celestia.nodestake.top',
+        address: 'https://rpc.celestia.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -198,7 +198,7 @@ const info: Chain = {
         provider: 'Lunar Oasis'
       },
       {
-        address: 'https://api.celestia.nodestake.top',
+        address: 'https://api.celestia.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -288,7 +288,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://grpc.celestia.nodestake.top',
+        address: 'https://grpc.celestia.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -392,9 +392,9 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake',
-      url: 'https://explorer.nodestake.top/celestia/',
-      txPage: 'https://explorer.nodestake.top/celestia/txs/${txHash}',
-      accountPage: 'https://explorer.nodestake.top/celestia/account/${accountAddress}'
+      url: 'https://explorer.nodestake.org/celestia/',
+      txPage: 'https://explorer.nodestake.org/celestia/txs/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/celestia/account/${accountAddress}'
     },
     {
       kind: 'Stakeflow',

@@ -43,7 +43,7 @@ const info: Chain = {
         provider: 'Point Network'
       },
       {
-        address: 'https://rpc.point.nodestake.top',
+        address: 'https://rpc.point.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -65,7 +65,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://api.point.nodestake.top',
+        address: 'https://api.point.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -75,7 +75,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'grpc.point.nodestake.top:443',
+        address: 'grpc.point.nodestake.org:443',
         provider: 'NodeStake'
       },
       {
@@ -95,7 +95,7 @@ const info: Chain = {
         address: 'https://rpc-mainnet-1.point.space',
         provider: 'Point Network'
       }, {
-        address: 'https://jsonrpc.point.nodestake.top',
+        address: 'https://jsonrpc.point.nodestake.org',
         provider: 'NodeStake'
       }]
   },

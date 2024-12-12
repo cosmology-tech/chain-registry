@@ -62,7 +62,7 @@ const info: Chain = {
         provider: 'StaFiHub'
       },
       {
-        address: 'https://rpc.stafihub.nodestake.top:443',
+        address: 'https://rpc.stafihub.nodestake.org:443',
         provider: 'NodeStake'
       }
     ],
@@ -76,7 +76,7 @@ const info: Chain = {
         provider: 'StaFiHub'
       },
       {
-        address: 'https://api.stafihub.nodestake.top',
+        address: 'https://api.stafihub.nodestake.org',
         provider: 'NodeStake'
       }
     ],
@@ -90,7 +90,7 @@ const info: Chain = {
         provider: 'StaFiHub'
       },
       {
-        address: 'grpc.stafihub.nodestake.top:443',
+        address: 'grpc.stafihub.nodestake.org:443',
         provider: 'NodeStake'
       },
       {

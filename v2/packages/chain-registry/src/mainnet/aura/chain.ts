@@ -210,10 +210,6 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://grpc.aura.nodestake.top',
-        provider: 'NodeStake'
-      },
-      {
         address: 'aura.mainnet.grpc.nodersteam.com:9100/',
         provider: '[NODERS]TEAM'
       },
@@ -298,9 +294,9 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake Explorer',
-      url: 'https://explorer.nodestake.top/aura',
-      txPage: 'https://explorer.nodestake.top/aura/tx/${txHash}',
-      accountPage: 'https://explorer.nodestake.top/aura/account/${accountAddress}'
+      url: 'https://explorer.nodestake.org/aura',
+      txPage: 'https://explorer.nodestake.org/aura/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/aura/account/${accountAddress}'
     },
     {
       kind: 'TC Network',

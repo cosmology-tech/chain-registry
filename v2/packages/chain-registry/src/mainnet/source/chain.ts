@@ -50,7 +50,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.source.nodestake.top',
+        address: 'https://rpc.source.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -128,7 +128,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api.source.nodestake.top',
+        address: 'https://api.source.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -226,7 +226,7 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://grpc.source.nodestake.top:443',
+        address: 'https://grpc.source.nodestake.org:443',
         provider: 'NodeStake'
       },
       {
@@ -284,9 +284,9 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake',
-      url: 'https://explorer.nodestake.top/source',
-      txPage: 'https://explorer.nodestake.top/source/tx/${txHash}',
-      accountPage: 'https://explorer.nodestake.top/source/accounts/${accountAddress}'
+      url: 'https://explorer.nodestake.org/source',
+      txPage: 'https://explorer.nodestake.org/source/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/source/accounts/${accountAddress}'
     },
     {
       kind: 'Sr20de',

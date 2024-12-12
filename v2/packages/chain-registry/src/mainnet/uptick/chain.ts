@@ -70,7 +70,7 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
-        address: 'https://rpc.uptick.nodestake.top',
+        address: 'https://rpc.uptick.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -120,7 +120,7 @@ const info: Chain = {
         provider: 'Brochain'
       },
       {
-        address: 'https://api.uptick.nodestake.top',
+        address: 'https://api.uptick.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -166,7 +166,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://grpc.uptick.nodestake.top',
+        address: 'https://grpc.uptick.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -216,7 +216,7 @@ const info: Chain = {
     ],
     evmHttpJsonrpc: [
       {
-        address: 'https://jsonrpc.uptick.nodestake.top',
+        address: 'https://jsonrpc.uptick.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -247,8 +247,8 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake Explorer',
-      url: 'https://explorer.nodestake.top/uptick',
-      txPage: 'https://explorer.nodestake.top/uptick/tx/${txHash}'
+      url: 'https://explorer.nodestake.org/uptick',
+      txPage: 'https://explorer.nodestake.org/uptick/tx/${txHash}'
     },
     {
       kind: 'BccNodes Explorer',

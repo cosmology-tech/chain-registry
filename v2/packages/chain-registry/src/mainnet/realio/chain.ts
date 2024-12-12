@@ -178,7 +178,7 @@ const info: Chain = {
         provider: 'Nodeist'
       },
       {
-        address: 'https://grpc.realio.nodestake.top:443',
+        address: 'https://grpc.realio.nodestake.org:443',
         provider: 'NodeStake'
       },
       {
@@ -212,7 +212,7 @@ const info: Chain = {
         provider: 'genznodes'
       },
       {
-        address: 'https://jsonrpc.realio.nodestake.top',
+        address: 'https://jsonrpc.realio.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -242,9 +242,9 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake Explorer',
-      url: 'https://explorer.nodestake.top/realio',
-      txPage: 'https://explorer.nodestake.top/realio/tx/${txHash}',
-      accountPage: 'https://explorer.nodestake.top/realio/account/{$accountAddress}'
+      url: 'https://explorer.nodestake.org/realio',
+      txPage: 'https://explorer.nodestake.org/realio/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/realio/account/{$accountAddress}'
     },
     {
       kind: 'Sr20de Explorer',

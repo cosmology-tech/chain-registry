@@ -74,7 +74,7 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
-        address: 'https://rpc.jackal.nodestake.top',
+        address: 'https://rpc.jackal.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -144,7 +144,7 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://api.jackal.nodestake.top',
+        address: 'https://api.jackal.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -218,7 +218,7 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'grpc.jackal.nodestake.top:443',
+        address: 'grpc.jackal.nodestake.org:443',
         provider: 'NodeStake'
       },
       {
@@ -265,8 +265,8 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake',
-      url: 'https://explorer.nodestake.top/jackal',
-      txPage: 'https://explorer.nodestake.top/jackal/tx/${txHash}'
+      url: 'https://explorer.nodestake.org/jackal',
+      txPage: 'https://explorer.nodestake.org/jackal/tx/${txHash}'
     },
     {
       kind: 'BccNodes',

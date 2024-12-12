@@ -96,10 +96,6 @@ const info: Chain = {
         provider: 'cryptech'
       },
       {
-        address: 'https://rpc.archway.nodestake.top',
-        provider: 'NodeStake'
-      },
-      {
         address: 'https://rpc-archway.theamsolutions.info',
         provider: 'AM Solutions'
       },
@@ -206,10 +202,6 @@ const info: Chain = {
         provider: 'cryptech'
       },
       {
-        address: 'https://api.archway.nodestake.top',
-        provider: 'NodeStake'
-      },
-      {
         address: 'https://rest-archway.theamsolutions.info',
         provider: 'AM Solutions'
       },
@@ -294,10 +286,6 @@ const info: Chain = {
       {
         address: 'https://grpc-archway.cryptech.com.ua',
         provider: 'cryptech'
-      },
-      {
-        address: 'https://grpc.archway.nodestake.top:443',
-        provider: 'NodeStake'
       },
       {
         address: 'grpc-archway.theamsolutions.info:443',
@@ -406,9 +394,9 @@ const info: Chain = {
     },
     {
       kind: 'NodeStake Explorer',
-      url: 'https://explorer.nodestake.top/archway/',
-      txPage: 'https://explorer.nodestake.top/archway/txs/${txHash}',
-      accountPage: 'https://explorer.nodestake.top/archway/account/${accountAddress}'
+      url: 'https://explorer.nodestake.org/archway/',
+      txPage: 'https://explorer.nodestake.org/archway/txs/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/archway/account/${accountAddress}'
     },
     {
       kind: 'Exploreme',

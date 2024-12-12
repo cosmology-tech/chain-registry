@@ -51,7 +51,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.humans.nodestake.top',
+        address: 'https://rpc.humans.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -113,7 +113,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api.humans.nodestake.top',
+        address: 'https://api.humans.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -171,7 +171,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'https://grpc.humans.nodestake.top:443',
+        address: 'https://grpc.humans.nodestake.org:443',
         provider: 'NodeStake'
       },
       {
@@ -217,7 +217,7 @@ const info: Chain = {
     ],
     evmHttpJsonrpc: [
       {
-        address: 'https://jsonrpc.humans.nodestake.top/',
+        address: 'https://jsonrpc.humans.nodestake.org/',
         provider: 'NodeStake'
       },
       {
@@ -294,6 +294,12 @@ const info: Chain = {
       url: 'https://explorer.posthuman.digital/humans',
       txPage: 'https://explorer.posthuman.digital/humans/tx/${txHash}',
       accountPage: 'https://explorer.posthuman.digital/humans/account/${accountAddress}'
+    },
+    {
+      kind: 'NodeStake',
+      url: 'https://explorer.nodestake.org/humans/staking',
+      txPage: 'https://explorer.nodestake.org/humans/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/humans/account/${accountAddress}'
     }
   ],
   images: [{

@@ -49,7 +49,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://rpc.assetmantle.nodestake.top',
+        address: 'https://rpc.assetmantle.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -75,7 +75,7 @@ const info: Chain = {
         provider: 'AssetMantle'
       },
       {
-        address: 'https://api.assetmantle.nodestake.top',
+        address: 'https://api.assetmantle.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -101,7 +101,7 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'grpc.assetmantle.nodestake.top:443',
+        address: 'grpc.assetmantle.nodestake.org:443',
         provider: 'NodeStake'
       },
       {

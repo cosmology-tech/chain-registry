@@ -118,6 +118,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'beezee',
+      clientId: '07-tendermint-11',
+      connectionId: 'connection-5'
+    },
+    chain2: {
+      chainName: 'omniflixhub',
+      clientId: '07-tendermint-75',
+      connectionId: 'connection-55'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-5',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-50',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'cosmoshub',
       clientId: '07-tendermint-656',
       connectionId: 'connection-501'

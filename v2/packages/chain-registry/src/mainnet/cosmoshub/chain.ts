@@ -142,7 +142,7 @@ const info: Chain = {
         provider: 'Easy 2 Stake'
       },
       {
-        address: 'https://rpc.cosmos.nodestake.top',
+        address: 'https://rpc.cosmos.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -280,7 +280,7 @@ const info: Chain = {
         provider: 'Easy 2 Stake'
       },
       {
-        address: 'https://api.cosmos.nodestake.top',
+        address: 'https://api.cosmos.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -382,7 +382,7 @@ const info: Chain = {
         provider: 'Stakin'
       },
       {
-        address: 'https://grpc.cosmos.nodestake.top',
+        address: 'https://grpc.cosmos.nodestake.org',
         provider: 'NodeStake'
       },
       {
@@ -532,6 +532,15 @@ const info: Chain = {
       validatorPage: 'https://mainnet.itrocket.net/cosmoshub/staking/${validatorAddress}',
       proposalPage: 'https://mainnet.itrocket.net/cosmoshub/gov/${proposalId}',
       blockPage: 'https://mainnet.itrocket.net/cosmoshub/block/${blockHeight}'
+    },
+    {
+      kind: 'NodeStake',
+      url: 'https://explorer.nodestake.org/cosmos',
+      txPage: 'https://explorer.nodestake.org/cosmos/tx/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/cosmos/account/${accountAddress}',
+      validatorPage: 'https://explorer.nodestake.org/cosmos/staking/${validatorAddress}',
+      proposalPage: 'https://explorer.nodestake.org/cosmos/gov/${proposalId}',
+      blockPage: 'https://explorer.nodestake.org/cosmos/block/${blockHeight}'
     }
   ],
   images: [{
