@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'assetmantle',
   assets: [{
-      description: 'The native token of Asset Mantle',
+      description: 'The native token of AssetMantle',
       denom_units: [{
           denom: 'umntl',
           exponent: 0
@@ -24,7 +24,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
           theme: {
-            primary_color_hex: '#edb548'
+            primary_color_hex: '#fbab30'
           }
         }],
       socials: {

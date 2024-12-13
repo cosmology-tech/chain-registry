@@ -15,7 +15,7 @@ const info: Chain = {
   fees: {
     fee_tokens: [{
         denom: 'umntl',
-        low_gas_price: 0.01,
+        low_gas_price: 0,
         average_gas_price: 0.025,
         high_gas_price: 0.04
       }]
@@ -29,10 +29,10 @@ const info: Chain = {
 
   },
   logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo_Dark.svg'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg'
   },
-  description: 'AssetMantle’s suite of products is focused on the NFT ecosystem, helping you up your game with digital asset ownership.',
+  description: 'AssetMantle is building the native web3 assets for Real World Asset Tokenization & Enterprise Asset Tokenization',
   apis: {
     rpc: [
       {
@@ -165,10 +165,10 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/AM_Logo_Dark.svg',
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
       theme: {
-        primary_color_hex: '#f6b620'
+        primary_color_hex: '#fbab30'
       }
     }]
 };

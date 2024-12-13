@@ -464,7 +464,7 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: 'The native token of Asset Mantle',
+      description: 'The native token of AssetMantle',
       denom_units: [{
           denom: 'ibc/CBA34207E969623D95D057D9B11B0C8B32B89A71F170577D982FDDE623813FFC',
           exponent: 0,
@@ -486,7 +486,7 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
           theme: {
-            primary_color_hex: '#edb548'
+            primary_color_hex: '#fbab30'
           }
         }],
       socials: {
@@ -6227,7 +6227,7 @@ const asset_list: AssetList = {
         }]
     },
     {
-      description: 'The native token of Asset Mantle',
+      description: 'The native token of AssetMantle',
       denom_units: [{
           denom: 'ibc/CBA34207E969623D95D057D9B11B0C8B32B89A71F170577D982FDDE623813FFC',
           exponent: 0,
@@ -6249,7 +6249,7 @@ const asset_list: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
           theme: {
-            primary_color_hex: '#edb548'
+            primary_color_hex: '#fbab30'
           }
         }],
       socials: {

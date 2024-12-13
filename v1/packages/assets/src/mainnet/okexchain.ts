@@ -3,7 +3,7 @@ const assets: AssetList = {
   chain_name: 'okexchain',
   assets: [
     {
-      description: 'The native token of Asset Mantle',
+      description: 'The native token of AssetMantle',
       denom_units: [{
           denom: 'ibc/046F0F324A413BCE45651A98FBD82400B03F332F9ABCDC4755228573C86E24A4',
           exponent: 0,
@@ -25,7 +25,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
           theme: {
-            primary_color_hex: '#edb548'
+            primary_color_hex: '#fbab30'
           }
         }],
       socials: {
@@ -205,7 +205,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Asset Mantle',
+      description: 'The native token of AssetMantle',
       denom_units: [{
           denom: 'ibc/046F0F324A413BCE45651A98FBD82400B03F332F9ABCDC4755228573C86E24A4',
           exponent: 0,
@@ -227,7 +227,7 @@ const assets: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.svg',
           theme: {
-            primary_color_hex: '#edb548'
+            primary_color_hex: '#fbab30'
           }
         }],
       socials: {
