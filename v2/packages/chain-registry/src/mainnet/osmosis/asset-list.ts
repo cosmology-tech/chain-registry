@@ -22095,6 +22095,43 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allFIL.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allFIL.png'
         }]
+    },
+    {
+      description: 'Internet Computer bridged via Omnity Network.',
+      denomUnits: [{
+          denom: 'factory/osmo10c4y9csfs8q7mtvfg4p9gd8d0acx0hpc2mte9xqzthd7rd3348tsfhaesm/sICP-native-ICP',
+          exponent: 0,
+          aliases: ['e8s']
+        }, {
+          denom: 'icp',
+          exponent: 8
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'osmo10c4y9csfs8q7mtvfg4p9gd8d0acx0hpc2mte9xqzthd7rd3348tsfhaesm',
+      base: 'factory/osmo10c4y9csfs8q7mtvfg4p9gd8d0acx0hpc2mte9xqzthd7rd3348tsfhaesm/sICP-native-ICP',
+      name: 'Internet Computer',
+      display: 'icp',
+      symbol: 'ICP',
+      traces: [{
+          type: 'bridge',
+          counterparty: {
+            chainName: 'internetcomputer',
+            baseDenom: 'e8s'
+          },
+          provider: 'Omnity Network'
+        }],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/icp.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/icp.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'internetcomputer',
+            baseDenom: 'e8s'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/icp.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/icp.png'
+        }]
     }
   ]
 };

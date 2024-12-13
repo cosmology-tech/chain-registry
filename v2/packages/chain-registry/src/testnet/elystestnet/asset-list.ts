@@ -69,14 +69,14 @@ const info: AssetList = {
     {
       description: 'USDC from Noble',
       denomUnits: [{
-          denom: 'ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65',
+          denom: 'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
           exponent: 0
         }, {
           denom: 'usdc',
           exponent: 6
         }],
       typeAsset: 'ics20',
-      base: 'ibc/2180E84E20F5679FCC760D8C165B60F42065DEF7F46A72B447CFF1B7DC6C0A65',
+      base: 'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
       name: 'Noble USD Coin',
       display: 'usdc',
       symbol: 'USDC',
@@ -85,11 +85,11 @@ const info: AssetList = {
           counterparty: {
             chainName: 'nobletestnet',
             baseDenom: 'uusdc',
-            channelId: 'channel-19'
+            channelId: 'channel-287'
           },
           chain: {
-            channelId: 'channel-12',
-            path: 'transfer/channel-12/uusdc'
+            channelId: 'channel-2',
+            path: 'transfer/channel-2/uusdc'
           }
         }],
       images: [{
@@ -111,14 +111,14 @@ const info: AssetList = {
     },
     {
       denomUnits: [{
-          denom: 'ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4',
+          denom: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
           exponent: 0
         }, {
           denom: 'atom',
           exponent: 6
         }],
       typeAsset: 'ics20',
-      base: 'ibc/E2D2F6ADCC68AA3384B2F5DFACCA437923D137C14E86FB8A10207CF3BED0C8D4',
+      base: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
       name: 'ATOM on Elys',
       display: 'atom',
       symbol: 'ATOM',
@@ -127,11 +127,11 @@ const info: AssetList = {
           counterparty: {
             chainName: 'cosmoshubtestnet',
             baseDenom: 'uatom',
-            channelId: 'channel-3302'
+            channelId: 'channel-290'
           },
           chain: {
-            channelId: 'channel-16',
-            path: 'transfer/channel-16/uatom'
+            channelId: 'channel-1',
+            path: 'transfer/channel-1/uatom'
           }
         }],
       images: [{
