@@ -6,7 +6,7 @@ const info: Chain = {
   networkType: 'testnet',
   prettyName: 'Saga Testnet',
   chainType: 'cosmos',
-  chainId: 'ssc-testnet-1',
+  chainId: 'ssc-testnet-2',
   bech32Prefix: 'saga',
   daemonName: 'sscd',
   nodeHome: '$HOME/.ssc',
@@ -28,12 +28,14 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/sagaxyz/ssc',
-    recommendedVersion: 'v0.1.3',
+    recommendedVersion: 'v0.1.5',
     compatibleVersions: [
       'v0.1.0',
       'v0.1.1',
       'v0.1.2',
-      'v0.1.3'
+      'v0.1.3',
+      'v0.1.4',
+      'v0.1.5'
     ],
     consensus: {
       type: 'tendermint',

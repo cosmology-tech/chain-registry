@@ -56,6 +56,7 @@ import * as _dydx from './dydx';
 import * as _dymension from './dymension';
 import * as _dyson from './dyson';
 import * as _echelon from './echelon';
+import * as _elys from './elys';
 import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
 import * as _epix from './epix';
@@ -245,6 +246,7 @@ const assetList: AssetList[] = [
   _dymension.assetList,
   _dyson.assetList,
   _echelon.assetList,
+  _elys.assetList,
   _emoney.assetList,
   _empowerchain.assetList,
   _epix.assetList,

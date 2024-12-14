@@ -125,6 +125,38 @@ const info: AssetList = {
       }
     },
     {
+      description: 'AXV',
+      extendedDescription: 'AXV is the Astrovault token.',
+      socials: {
+        website: 'https://astrovault.io/',
+        twitter: 'https://x.com/axvdex'
+      },
+      denomUnits: [{
+          denom: 'tf/nibi1vetfuua65frvf6f458xgtjerf0ra7wwjykrdpuyn0jur5x07awxsfka0ga/axv',
+          exponent: 0
+        }, {
+          denom: 'AXV',
+          exponent: 6
+        }],
+      base: 'tf/nibi1vetfuua65frvf6f458xgtjerf0ra7wwjykrdpuyn0jur5x07awxsfka0ga/axv',
+      name: 'AXV',
+      display: 'AXV',
+      symbol: 'AXV',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'neutron',
+            baseDenom: 'cw20:neutron10dxyft3nv4vpxh5vrpn0xw8geej8dw3g39g7nqp8mrm307ypssksau29af'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/axv.svg'
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
       description: 'uoprek',
       denomUnits: [{
           denom: 'tf/nibi149m52kn7nvsg5nftvv4fh85scsavpdfxp5nr7zasz97dum89dp5qkyhy0t/uoprek',

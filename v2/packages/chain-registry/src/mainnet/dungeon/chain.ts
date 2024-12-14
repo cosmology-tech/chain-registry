@@ -34,10 +34,6 @@ const info: Chain = {
         provider: 'ApeironNodes'
       },
       {
-        address: 'https://rpc-archive-dungeonchain.apeironnodes.com',
-        provider: 'ApeironNodes (Archive)'
-      },
-      {
         address: 'https://dungeon_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }

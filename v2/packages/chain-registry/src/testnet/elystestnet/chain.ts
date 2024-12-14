@@ -47,11 +47,11 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/elys-network/elys',
-    recommendedVersion: 'v0.12.0',
-    compatibleVersions: ['v0.12.0'],
+    recommendedVersion: 'v1.0.0',
+    compatibleVersions: ['v1.0.0'],
     consensus: {
       type: 'cometbft',
-      version: '0.37.2'
+      version: '0.38.12'
     },
     genesis: {
       genesisUrl: 'https://github.com/elys-network/networks/blob/main/testnet/elysicstestnet-1/genesis.json'
@@ -62,7 +62,7 @@ const info: Chain = {
     },
     ibc: {
       type: 'go',
-      version: 'v7.3.0'
+      version: 'v8.5.1'
     },
     cosmwasm: {
       enabled: false
@@ -101,8 +101,9 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'ping.pub',
-      url: 'https://testnet.elys.network/elys',
-      txPage: 'https://testnet.elys.network/elys/tx/${txHash}'
+      url: 'https://testnet.ping.pub/elys',
+      txPage: 'https://testnet.ping.pub/elys/tx/${txHash}',
+      accountPage: 'https://testnet.ping.pub/elys/account/${accountAddress}'
     }, {
       kind: 'itrocket',
       url: 'https://testnet.itrocket.net/elys',

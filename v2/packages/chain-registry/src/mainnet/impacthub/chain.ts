@@ -29,22 +29,22 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/ixofoundation/ixo-blockchain',
-    recommendedVersion: 'v3.0.0',
-    compatibleVersions: ['v3.0.0'],
+    recommendedVersion: 'v4.0.0',
+    compatibleVersions: ['v4.0.0'],
     consensus: {
       type: 'cometbft',
-      version: 'v0.34.27'
+      version: 'v0.38.12'
     },
     genesis: {
       genesisUrl: 'https://github.com/ixofoundation/genesis/raw/bc042e1223d551b22d55c155de06e662ca24d2f2/ixo-5/genesis.json.tar.gz'
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.45.16'
+      version: 'v0.50.10'
     },
     ibc: {
       type: 'go',
-      version: 'v4.4.1'
+      version: 'v8.5.1'
     }
   },
   logoURIs: {
@@ -169,12 +169,6 @@ const info: Chain = {
       url: 'https://atomscan.com/ixo',
       txPage: 'https://atomscan.com/ixo/transactions/${txHash}',
       accountPage: 'https://atomscan.com/ixo/accounts/${accountAddress}'
-    },
-    {
-      kind: 'Mintscan',
-      url: 'https://www.mintscan.io/ixo',
-      txPage: 'https://www.mintscan.io/ixo/transactions/${txHash}',
-      accountPage: 'https://www.mintscan.io/ixo/accounts/${accountAddress}'
     },
     {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',

@@ -3,7 +3,7 @@ const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chainName: 'impacthub',
   assets: [{
-      description: 'The native token of IXO Chain',
+      description: 'The native token of the Internet of Impacts of inter-connected networks, powered by IXO Protocol blockchains.',
       denomUnits: [{
           denom: 'uixo',
           exponent: 0
