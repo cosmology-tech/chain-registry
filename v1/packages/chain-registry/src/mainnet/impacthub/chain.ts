@@ -154,12 +154,6 @@ const info: Chain = {
       account_page: 'https://atomscan.com/ixo/accounts/${accountAddress}'
     },
     {
-      kind: 'Mintscan',
-      url: 'https://www.mintscan.io/ixo',
-      tx_page: 'https://www.mintscan.io/ixo/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/ixo/accounts/${accountAddress}'
-    },
-    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/ixo',
       tx_page: 'https://explorer.whenmoonwhenlambo.money/ixo/tx/${txHash}',

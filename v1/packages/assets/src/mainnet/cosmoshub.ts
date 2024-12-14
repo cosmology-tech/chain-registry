@@ -2792,7 +2792,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of IXO Chain',
+      description: 'The native token of the Internet of Impacts of inter-connected networks, powered by IXO Protocol blockchains.',
       denom_units: [{
           denom: 'ibc/B2B5AEE174062FA7804AC95223D8169852F8F58962C51C66391C272C838258B7',
           exponent: 0,
@@ -9544,7 +9544,7 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of IXO Chain',
+      description: 'The native token of the Internet of Impacts of inter-connected networks, powered by IXO Protocol blockchains.',
       denom_units: [{
           denom: 'ibc/B2B5AEE174062FA7804AC95223D8169852F8F58962C51C66391C272C838258B7',
           exponent: 0,

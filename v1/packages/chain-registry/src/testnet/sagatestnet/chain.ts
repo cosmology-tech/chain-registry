@@ -6,7 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   pretty_name: 'Saga Testnet',
   chain_type: 'cosmos',
-  chain_id: 'ssc-testnet-1',
+  chain_id: 'ssc-testnet-2',
   bech32_prefix: 'saga',
   daemon_name: 'sscd',
   node_home: '$HOME/.ssc',

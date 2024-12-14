@@ -296,7 +296,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Saga Testnet',
       denom_units: [{
-          denom: 'ibc/3E96BBF51B2CAA39358DE0432CDCF2745EFEBB67AABE1FDEF5DC20E5FE26745C',
+          denom: 'ibc/82BB1EFF20BD5247B84B1BC14F24444E4A09ACB58EBA068786380844ECBACDE7',
           exponent: 0,
           aliases: ['utsaga']
         }, {
@@ -304,7 +304,7 @@ const assets: AssetList = {
           exponent: 6,
           aliases: []
         }],
-      base: 'ibc/3E96BBF51B2CAA39358DE0432CDCF2745EFEBB67AABE1FDEF5DC20E5FE26745C',
+      base: 'ibc/82BB1EFF20BD5247B84B1BC14F24444E4A09ACB58EBA068786380844ECBACDE7',
       name: 'Saga',
       display: 'tsaga',
       symbol: 'TSAGA',
@@ -320,12 +320,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-9',
+            channel_id: 'channel-3',
             base_denom: 'utsaga',
             chain_name: 'sagatestnet'
           },
           chain: {
-            channel_id: 'channel-370'
+            channel_id: 'channel-566'
           }
         }]
     },
@@ -666,7 +666,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Saga Testnet',
       denom_units: [{
-          denom: 'ibc/3E96BBF51B2CAA39358DE0432CDCF2745EFEBB67AABE1FDEF5DC20E5FE26745C',
+          denom: 'ibc/82BB1EFF20BD5247B84B1BC14F24444E4A09ACB58EBA068786380844ECBACDE7',
           exponent: 0,
           aliases: ['utsaga']
         }, {
@@ -674,7 +674,7 @@ const assets: AssetList = {
           exponent: 6,
           aliases: []
         }],
-      base: 'ibc/3E96BBF51B2CAA39358DE0432CDCF2745EFEBB67AABE1FDEF5DC20E5FE26745C',
+      base: 'ibc/82BB1EFF20BD5247B84B1BC14F24444E4A09ACB58EBA068786380844ECBACDE7',
       name: 'Saga',
       display: 'tsaga',
       symbol: 'TSAGA',
@@ -690,12 +690,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-9',
+            channel_id: 'channel-3',
             base_denom: 'utsaga',
             chain_name: 'sagatestnet'
           },
           chain: {
-            channel_id: 'channel-370'
+            channel_id: 'channel-566'
           }
         }]
     },

@@ -81,8 +81,9 @@ const info: Chain = {
   },
   explorers: [{
       kind: 'ping.pub',
-      url: 'https://testnet.elys.network/elys',
-      tx_page: 'https://testnet.elys.network/elys/tx/${txHash}'
+      url: 'https://testnet.ping.pub/elys',
+      tx_page: 'https://testnet.ping.pub/elys/tx/${txHash}',
+      account_page: 'https://testnet.ping.pub/elys/account/${accountAddress}'
     }, {
       kind: 'itrocket',
       url: 'https://testnet.itrocket.net/elys',
