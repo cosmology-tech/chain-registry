@@ -484,19 +484,19 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'Bonded GopLend STARS',
-      extendedDescription: 'bglSTARS (Bonded GopLend STARS) is issued in exchange for STARS for the deposit period. These tokens are liquid and generate income in the amount of the set APR on the platform',
+      description: 'OLD Bonded GopLend STARS',
+      extendedDescription: 'OLD | bglSTARS (Bonded GopLend STARS) is issued in exchange for STARS for the deposit period. These tokens are liquid and generate income in the amount of the set APR on the platform',
       denomUnits: [{
           denom: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglSTARS',
           exponent: 0
         }, {
-          denom: 'bglSTARS',
+          denom: 'OLDbglSTARS',
           exponent: 6
         }],
       base: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglSTARS',
-      name: 'bglSTARS',
-      display: 'bglSTARS',
-      symbol: 'bglSTARS',
+      name: 'OLDbglSTARS',
+      display: 'OLDbglSTARS',
+      symbol: 'OLDbglSTARS',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/bglSTARS.png'
       },
@@ -506,19 +506,19 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'Bonded GopLend USDC',
-      extendedDescription: 'bglUSDC (Bonded GopLend USDC) is issued in exchange for USDC for the deposit period. These tokens are liquid and generate income in the amount of the set APR on the platform',
+      description: 'OLD Bonded GopLend USDC',
+      extendedDescription: 'OLD | bglUSDC (Bonded GopLend USDC) is issued in exchange for USDC for the deposit period. These tokens are liquid and generate income in the amount of the set APR on the platform',
       denomUnits: [{
           denom: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglUSDC',
           exponent: 0
         }, {
-          denom: 'bglUSDC',
+          denom: 'OLDbglUSDC',
           exponent: 6
         }],
       base: 'factory/stars1ur79p98rmpn456esgzjernaxy7v25mlwqsv8uhymzxahfw77427syk2h9j/bglUSDC',
-      name: 'bglUSDC',
-      display: 'bglUSDC',
-      symbol: 'bglUSDC',
+      name: 'OLDbglUSDC',
+      display: 'OLDbglUSDC',
+      symbol: 'OLDbglUSDC',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/bglUSDC.png'
       },

@@ -187,6 +187,7 @@ import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
 import * as _xion from './xion';
 import * as _xpla from './xpla';
+import * as _zenrock from './zenrock';
 import * as _zetachain from './zetachain';
 
 const assetList: AssetList[] = [
@@ -377,6 +378,7 @@ const assetList: AssetList[] = [
   _uptick.assetList,
   _xion.assetList,
   _xpla.assetList,
+  _zenrock.assetList,
   _zetachain.assetList
 ];
 

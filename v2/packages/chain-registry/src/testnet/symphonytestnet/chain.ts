@@ -6,7 +6,7 @@ const info: Chain = {
   networkType: 'testnet',
   prettyName: 'Symphony Testnet',
   chainType: 'cosmos',
-  chainId: 'symphony-testnet-3',
+  chainId: 'symphony-testnet-4',
   bech32Prefix: 'symphony',
   daemonName: 'symphonyd',
   nodeHome: '$HOME/.symphonyd',

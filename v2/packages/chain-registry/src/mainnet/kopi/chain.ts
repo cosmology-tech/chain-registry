@@ -84,6 +84,10 @@ const info: Chain = {
       {
         address: 'https://kopi-rpc.polkachu.com/',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://rpc.kopi.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     rest: [
@@ -130,6 +134,10 @@ const info: Chain = {
       {
         address: 'https://kopi-api.polkachu.com/',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://api.kopi.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     grpc: [
@@ -156,6 +164,10 @@ const info: Chain = {
       {
         address: 'kopi-grpc.polkachu.com:27690',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://grpc.kopi.nodestake.org:443',
+        provider: 'NodeStake'
       }
     ]
   },
@@ -201,6 +213,12 @@ const info: Chain = {
       url: 'https://cosmoscan.com/kopi',
       txPage: 'https://cosmoscan.com/kopi/txs/${txHash}',
       accountPage: 'https://cosmoscan.com/kopi/account/${accountAddress}'
+    },
+    {
+      kind: 'NodeStake Explorer',
+      url: 'https://explorer.nodestake.org/kopi/',
+      txPage: 'https://explorer.nodestake.org/kopi/txs/${txHash}',
+      accountPage: 'https://explorer.nodestake.org/kopi/account/${accountAddress}'
     }
   ],
   images: [{

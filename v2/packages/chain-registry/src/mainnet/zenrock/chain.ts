@@ -1,13 +1,13 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
-  $schema: '../../chain.schema.json',
-  chainName: 'zenrocktestnet',
+  $schema: '../chain.schema.json',
+  chainName: 'zenrock',
   status: 'live',
   website: 'https://zenrocklabs.io',
-  networkType: 'testnet',
+  networkType: 'mainnet',
   chainType: 'cosmos',
-  prettyName: 'Zenrock Testnet',
-  chainId: 'gardia-2',
+  prettyName: 'Zenrock Mainnet',
+  chainId: 'diamond-1',
   bech32Prefix: 'zen',
   daemonName: 'zenrockd',
   nodeHome: '$HOME/.zenrockd',
@@ -30,7 +30,7 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/zenrock-foundation/zrchain',
     genesis: {
-      genesisUrl: 'https://rpc.gardia.zenrocklabs.io/genesis'
+      genesisUrl: 'https://rpc.diamond.zenrocklabs.io/genesis'
     },
     recommendedVersion: '5.3.8',
     compatibleVersions: ['5.3.8'],
@@ -53,31 +53,25 @@ const info: Chain = {
     }
   },
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zenrocktestnet/images/zenrock.png'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.png'
     }],
   apis: {
     rpc: [{
-        address: 'https://rpc.gardia.zenrocklabs.io/',
+        address: 'https://rpc.diamond.zenrocklabs.io/',
         provider: 'zenrock'
       }],
     rest: [{
-        address: 'https://api.gardia.zenrocklabs.io/',
+        address: 'https://api.diamond.zenrocklabs.io/',
         provider: 'zenrock'
       }],
     grpc: [{
-        address: 'https://grpc.gardia.zenrocklabs.io/',
+        address: 'https://grpc.diamond.zenrocklabs.io/',
         provider: 'zenrock'
       }]
   },
-  explorers: [{
-      kind: 'Big Dipper',
-      url: 'https://explorer.gardia.zenrocklabs.io/',
-      txPage: 'https://explorer.gardia.zenrocklabs.io/tx/${txHash}',
-      accountPage: 'https://explorer.gardia.zenrocklabs.io/account/${accountAddress}'
-    }],
   logoURIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/zenrocktestnet/images/zenrock.png'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.png'
   },
-  keywords: ['mpc', 'testnet']
+  keywords: ['mpc']
 };
 export default info;

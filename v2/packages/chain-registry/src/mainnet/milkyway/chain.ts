@@ -17,31 +17,31 @@ const info: Chain = {
     feeTokens: [
       {
         denom: 'ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F',
-        fixedMinGasPrice: 0.02,
-        lowGasPrice: 0.025,
-        averageGasPrice: 0.03,
-        highGasPrice: 0.035
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.003,
+        highGasPrice: 0.0035
       },
       {
         denom: 'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5',
-        fixedMinGasPrice: 0.02,
-        lowGasPrice: 0.025,
-        averageGasPrice: 0.03,
-        highGasPrice: 0.035
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.003,
+        highGasPrice: 0.0035
       },
       {
         denom: 'ibc/8D4FC51F696E03711B9B37A5787FB89BD2DDBAF788813478B002D552A12F9157',
-        fixedMinGasPrice: 0.02,
-        lowGasPrice: 0.025,
-        averageGasPrice: 0.03,
-        highGasPrice: 0.035
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.003,
+        highGasPrice: 0.0035
       },
       {
         denom: 'ibc/F1183DB3D428313A6FD329DF18219F9D6B83257D07D292EA9EC1D877E89EC2B0',
-        fixedMinGasPrice: 0.02,
-        lowGasPrice: 0.025,
-        averageGasPrice: 0.03,
-        highGasPrice: 0.035
+        fixedMinGasPrice: 0.002,
+        lowGasPrice: 0.0025,
+        averageGasPrice: 0.003,
+        highGasPrice: 0.0035
       }
     ]
   },
