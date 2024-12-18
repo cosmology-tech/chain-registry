@@ -185,4 +185,5 @@ export * as ununifi from './ununifi';
 export * as uptick from './uptick';
 export * as xion from './xion';
 export * as xpla from './xpla';
+export * as zenrock from './zenrock';
 export * as zetachain from './zetachain';

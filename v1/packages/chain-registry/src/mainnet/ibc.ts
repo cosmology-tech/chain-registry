@@ -146,6 +146,7 @@ import * as _unification from './unification';
 import * as _uptick from './uptick';
 import * as _xion from './xion';
 import * as _xpla from './xpla';
+import * as _zenrock from './zenrock';
 
 const ibc: IBCInfo[] = [
   ..._ethereum.ibc,
@@ -293,7 +294,8 @@ const ibc: IBCInfo[] = [
   ..._unification.ibc,
   ..._uptick.ibc,
   ..._xion.ibc,
-  ..._xpla.ibc
+  ..._xpla.ibc,
+  ..._zenrock.ibc
 ];
 
 export default ibc;

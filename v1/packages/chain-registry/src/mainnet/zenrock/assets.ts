@@ -1,7 +1,7 @@
 import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
-  $schema: '../../assetlist.schema.json',
-  chain_name: 'zenrocktestnet',
+  $schema: '../assetlist.schema.json',
+  chain_name: 'zenrock',
   assets: [{
       description: 'The native token of zenrock',
       denom_units: [{

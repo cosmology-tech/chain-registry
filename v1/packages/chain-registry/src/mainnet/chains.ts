@@ -187,6 +187,7 @@ import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
 import * as _xion from './xion';
 import * as _xpla from './xpla';
+import * as _zenrock from './zenrock';
 import * as _zetachain from './zetachain';
 
 const chains: Chain[] = [
@@ -377,6 +378,7 @@ const chains: Chain[] = [
   _uptick.chain,
   _xion.chain,
   _xpla.chain,
+  _zenrock.chain,
   _zetachain.chain
 ];
 

@@ -26,7 +26,6 @@ export * as desmostestnet from './desmostestnet';
 export * as dhealthtestnet from './dhealthtestnet';
 export * as doravotatestnet from './doravotatestnet';
 export * as dydxtestnet from './dydxtestnet';
-export * as dymensionplaygroundtestnet from './dymensionplaygroundtestnet';
 export * as elystestnet from './elystestnet';
 export * as empetestnet from './empetestnet';
 export * as empowertestnet from './empowertestnet';

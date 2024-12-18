@@ -8,7 +8,7 @@ const info: Chain = {
   chain_type: 'cosmos',
   pretty_name: 'Zenrock Testnet',
   chain_id: 'gardia-2',
-  bech32_prefix: 'rock',
+  bech32_prefix: 'zen',
   daemon_name: 'zenrockd',
   node_home: '$HOME/.zenrockd',
   key_algos: ['secp256k1'],

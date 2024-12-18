@@ -69,6 +69,14 @@ const info: Chain = {
       {
         address: 'https://rpc.elys.nodestake.org:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://elys.rpc.liveraven.net:443',
+        provider: 'LiveRaveN'
+      },
+      {
+        address: 'https://community.nuxian-node.ch:6797/elys/trpc',
+        provider: 'PRO Delegators'
       }
     ],
     rest: [
@@ -91,6 +99,14 @@ const info: Chain = {
       {
         address: 'https://api.elys.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://elys.api.liveraven.net',
+        provider: 'LiveRaveN'
+      },
+      {
+        address: 'https://community.nuxian-node.ch:6797/elys/crpc',
+        provider: 'PRO Delegators'
       }
     ],
     grpc: [
@@ -113,6 +129,10 @@ const info: Chain = {
       {
         address: 'grpc.elys.nodestake.org:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'elys.grpc.liveraven.net:443',
+        provider: 'LiveRaveN'
       }
     ]
   },

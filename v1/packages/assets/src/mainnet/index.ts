@@ -143,4 +143,5 @@ export * as umee from './umee';
 export * as unification from './unification';
 export * as uptick from './uptick';
 export * as xion from './xion';
-export * as xpla from './xpla'
+export * as xpla from './xpla';
+export * as zenrock from './zenrock'

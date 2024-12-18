@@ -1666,6 +1666,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of zenrock',
+      denom_units: [{
+          denom: 'ibc/FA0FFABCBE79011771B811DA987A0B728FB6A469544BAB320CD74C19FA794D46',
+          exponent: 0,
+          aliases: ['urock']
+        }, {
+          denom: 'rock',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/FA0FFABCBE79011771B811DA987A0B728FB6A469544BAB320CD74C19FA794D46',
+      name: 'Zenrock',
+      display: 'rock',
+      symbol: 'ROCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.svg'
+      },
+      keywords: ['mpc'],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'urock',
+            chain_name: 'zenrock'
+          },
+          chain: {
+            channel_id: 'channel-78'
+          }
+        }]
+    },
+    {
       description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/4730171FEEAD8629E5C22670ECA090258649B06BE7533E16E83F32BC9028F20B',
@@ -1705,6 +1742,43 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-11'
+          }
+        }]
+    },
+    {
+      description: 'The native token of zenrock',
+      denom_units: [{
+          denom: 'ibc/FA0FFABCBE79011771B811DA987A0B728FB6A469544BAB320CD74C19FA794D46',
+          exponent: 0,
+          aliases: ['urock']
+        }, {
+          denom: 'rock',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/FA0FFABCBE79011771B811DA987A0B728FB6A469544BAB320CD74C19FA794D46',
+      name: 'Zenrock',
+      display: 'rock',
+      symbol: 'ROCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.svg'
+      },
+      keywords: ['mpc'],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-3',
+            base_denom: 'urock',
+            chain_name: 'zenrock'
+          },
+          chain: {
+            channel_id: 'channel-78'
           }
         }]
     }
