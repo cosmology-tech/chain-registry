@@ -28,6 +28,7 @@ import * as _desmostestnet from './desmostestnet';
 import * as _dhealthtestnet from './dhealthtestnet';
 import * as _doravotatestnet from './doravotatestnet';
 import * as _dydxtestnet from './dydxtestnet';
+import * as _dymensiontestnet1 from './dymensiontestnet1';
 import * as _elystestnet from './elystestnet';
 import * as _empetestnet from './empetestnet';
 import * as _empowertestnet from './empowertestnet';
@@ -145,6 +146,7 @@ const chains: Chain[] = [
   _dhealthtestnet.chain,
   _doravotatestnet.chain,
   _dydxtestnet.chain,
+  _dymensiontestnet1.chain,
   _elystestnet.chain,
   _empetestnet.chain,
   _empowertestnet.chain,

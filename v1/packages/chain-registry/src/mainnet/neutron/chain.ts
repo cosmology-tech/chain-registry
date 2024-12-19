@@ -115,6 +115,10 @@ const info: Chain = {
       {
         address: 'https://neutron.drpc.org',
         provider: 'dRPC'
+      },
+      {
+        address: 'https://neutron-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -153,6 +157,10 @@ const info: Chain = {
       {
         address: 'https://api.neutron.quokkastake.io',
         provider: '🐹 Quokka Stake'
+      },
+      {
+        address: 'https://neutron-api.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [

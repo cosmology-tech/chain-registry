@@ -40,10 +40,6 @@ const info: Chain = {
         provider: 'MoonBridge'
       },
       {
-        address: 'https://source-testnet-rpc.stake-town.com:443',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://rpc-testnet-source.sr20de.xyz',
         provider: 'SR20DE'
       },
@@ -66,10 +62,6 @@ const info: Chain = {
         provider: 'MoonBridge'
       },
       {
-        address: 'https://source-testnet-api.stake-town.com:443',
-        provider: 'StakeTown'
-      },
-      {
         address: 'https://api-testnet-source.sr20de.xyz',
         provider: 'SR20DE'
       },
@@ -83,9 +75,6 @@ const info: Chain = {
       }
     ],
     grpc: [{
-        address: 'source-testnet-grpc.stake-town.com:443',
-        provider: 'StakeTown'
-      }, {
         address: 'grpc-testnet-source.sr20de.xyz/',
         provider: 'SR20DE'
       }]

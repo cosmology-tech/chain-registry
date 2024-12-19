@@ -288,6 +288,91 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Elys Network',
+      denom_units: [
+        {
+          denom: 'ibc/1ED07AEE532D385F800D329BE8960C688D2AA4597156CF536EC4B37DED40B2FC',
+          exponent: 0,
+          aliases: ['uelys']
+        },
+        {
+          denom: 'melys',
+          exponent: 3,
+          aliases: ['millielys']
+        },
+        {
+          denom: 'elys',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/1ED07AEE532D385F800D329BE8960C688D2AA4597156CF536EC4B37DED40B2FC',
+      name: 'Elys Network',
+      display: 'elys',
+      symbol: 'ELYS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
+      },
+      coingecko_id: 'elys',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'uelys',
+            chain_name: 'elys'
+          },
+          chain: {
+            channel_id: 'channel-129'
+          }
+        }]
+    },
+    {
+      description: 'Eden token definition',
+      denom_units: [
+        {
+          denom: 'ibc/4029F7E9CD67C53675F4C384C5A4C2DA971A90FBF800483FA36356DDC3302BC8',
+          exponent: 0,
+          aliases: ['ueden']
+        },
+        {
+          denom: 'meden',
+          exponent: 3,
+          aliases: ['millieden']
+        },
+        {
+          denom: 'eden',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/4029F7E9CD67C53675F4C384C5A4C2DA971A90FBF800483FA36356DDC3302BC8',
+      name: 'Eden',
+      display: 'eden',
+      symbol: 'EDEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/eden.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/eden.png'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'ueden',
+            chain_name: 'elys'
+          },
+          chain: {
+            channel_id: 'channel-129'
+          }
+        }]
+    },
+    {
       description: 'The IRIS token is the native governance token for the IrisNet chain.',
       denom_units: [{
           denom: 'ibc/D3B29CFA1D8935DB99D71C6542BC38127EC4E7CE402755B774B8E1CC588E58BF',
@@ -1160,6 +1245,91 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-125'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Elys Network',
+      denom_units: [
+        {
+          denom: 'ibc/1ED07AEE532D385F800D329BE8960C688D2AA4597156CF536EC4B37DED40B2FC',
+          exponent: 0,
+          aliases: ['uelys']
+        },
+        {
+          denom: 'melys',
+          exponent: 3,
+          aliases: ['millielys']
+        },
+        {
+          denom: 'elys',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/1ED07AEE532D385F800D329BE8960C688D2AA4597156CF536EC4B37DED40B2FC',
+      name: 'Elys Network',
+      display: 'elys',
+      symbol: 'ELYS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
+      },
+      coingecko_id: 'elys',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'uelys',
+            chain_name: 'elys'
+          },
+          chain: {
+            channel_id: 'channel-129'
+          }
+        }]
+    },
+    {
+      description: 'Eden token definition',
+      denom_units: [
+        {
+          denom: 'ibc/4029F7E9CD67C53675F4C384C5A4C2DA971A90FBF800483FA36356DDC3302BC8',
+          exponent: 0,
+          aliases: ['ueden']
+        },
+        {
+          denom: 'meden',
+          exponent: 3,
+          aliases: ['millieden']
+        },
+        {
+          denom: 'eden',
+          exponent: 6,
+          aliases: []
+        }
+      ],
+      base: 'ibc/4029F7E9CD67C53675F4C384C5A4C2DA971A90FBF800483FA36356DDC3302BC8',
+      name: 'Eden',
+      display: 'eden',
+      symbol: 'EDEN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/eden.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/eden.png'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'ueden',
+            chain_name: 'elys'
+          },
+          chain: {
+            channel_id: 'channel-129'
           }
         }]
     },

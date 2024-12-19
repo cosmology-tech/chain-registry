@@ -6,7 +6,7 @@ const info: Chain = {
   network_type: 'testnet',
   website: 'https://liftedinit.org/',
   pretty_name: 'Manifest Testnet',
-  chain_id: 'manifest-ledger-beta',
+  chain_id: 'manifest-ledger-testnet',
   chain_type: 'cosmos',
   bech32_prefix: 'manifest',
   daemon_name: 'manifest',
@@ -31,28 +31,22 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://nodes.chandrastation.com/rpc/manifest/',
-        provider: 'Chandra Station'
-      }, {
-        address: 'https://manifest-beta-rpc.liftedinit.tech/',
-        provider: 'Lifted Initiative'
+        address: 'https://nodes.liftedinit.tech/manifest/testnet/rpc',
+        provider: 'The Lifted Initiative'
       }],
     rest: [{
-        address: 'https://nodes.chandrastation.com/api/manifest/',
-        provider: 'Chandra Station'
-      }, {
-        address: 'https://manifest-beta-rest.liftedinit.tech/',
-        provider: 'Lifted Initiative'
+        address: 'https://nodes.liftedinit.tech/manifest/testnet/api',
+        provider: 'The Lifted Initiative'
       }],
     grpc: [{
-        address: 'https://manifest-beta-grpc.liftedinit.tech/',
-        provider: 'Lifted Initiative'
+        address: 'https://manifest-testnet-grpc.liftedinit.tech',
+        provider: 'The Lifted Initiative'
       }]
   },
   explorers: [{
       kind: 'Default Explorer',
-      url: 'https://manifest-explorer.vercel.app/',
-      tx_page: 'https://manifest-explorer.vercel.app/manifest/tx'
+      url: 'https://testnet.manifest.explorers.guru/',
+      tx_page: 'https://testnet.manifest.explorers.guru/transactions'
     }]
 };
 export default info;

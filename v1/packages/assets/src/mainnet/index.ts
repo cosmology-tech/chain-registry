@@ -41,6 +41,7 @@ export * as dydx from './dydx';
 export * as dymension from './dymension';
 export * as dyson from './dyson';
 export * as echelon from './echelon';
+export * as elys from './elys';
 export * as emoney from './emoney';
 export * as empowerchain from './empowerchain';
 export * as evmos from './evmos';

@@ -58,7 +58,7 @@ const info: Chain = {
       },
       {
         address: 'https://titan-rpc.ibs.team',
-        provider: 'ibs.team'
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -80,7 +80,7 @@ const info: Chain = {
       },
       {
         address: 'https://titan-api.ibs.team',
-        provider: 'ibs.team'
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [
