@@ -220,6 +220,10 @@ const info: Chain = {
       {
         address: 'https://cosmoshub.rpc.quasarstaking.ai',
         provider: 'Quasar'
+      },
+      {
+        address: 'https://cosmos-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -346,6 +350,10 @@ const info: Chain = {
       {
         address: 'https://cosmoshub.api.quasarstaking.ai',
         provider: 'Quasar'
+      },
+      {
+        address: 'https://cosmos-api.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [

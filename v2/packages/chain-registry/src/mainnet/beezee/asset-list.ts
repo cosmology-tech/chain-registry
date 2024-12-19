@@ -355,6 +355,43 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.svg'
       }
+    },
+    {
+      description: 'The Sherpa memecoin',
+      denomUnits: [{
+          denom: 'ibc/02EE50AB3A4B7540FA001B24CB75E688016F65547CABE885EA184338440080B2',
+          exponent: 0
+        }, {
+          denom: 'Sherpa',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/02EE50AB3A4B7540FA001B24CB75E688016F65547CABE885EA184338440080B2',
+      name: 'Sherpa',
+      display: 'Sherpa',
+      symbol: 'SHERPA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/sherpa.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/sherpa.png',
+          theme: {
+            primaryColorHex: '#fe9cdf'
+          }
+        }],
+      keywords: ['meme'],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/usherpa',
+            channelId: 'channel-340'
+          },
+          chain: {
+            channelId: 'channel-0',
+            path: 'transfer/channel-0/factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/usherpa'
+          }
+        }]
     }
   ]
 };

@@ -97,6 +97,26 @@ const info: Chain = {
       {
         address: 'https://community.nuxian-node.ch:6797/elys/trpc',
         provider: 'PRO Delegators'
+      },
+      {
+        address: 'https://elys-rpc.highstakes.ch',
+        provider: 'High Stakes'
+      },
+      {
+        address: 'https://elys-rpc.stake-town.com:443',
+        provider: 'StakeTown'
+      },
+      {
+        address: 'https://elys.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://elys-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://elys-rpc.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️'
       }
     ],
     rest: [
@@ -127,6 +147,26 @@ const info: Chain = {
       {
         address: 'https://community.nuxian-node.ch:6797/elys/crpc',
         provider: 'PRO Delegators'
+      },
+      {
+        address: 'https://elys-api.highstakes.ch',
+        provider: 'High Stakes'
+      },
+      {
+        address: 'https://elys-api.stake-town.com:443',
+        provider: 'StakeTown'
+      },
+      {
+        address: 'https://elys.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://elys-api.ibs.team',
+        provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://elys-api.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️'
       }
     ],
     grpc: [
@@ -153,6 +193,14 @@ const info: Chain = {
       {
         address: 'elys.grpc.liveraven.net:443',
         provider: 'LiveRaveN'
+      },
+      {
+        address: 'elys-grpc.stake-town.com:443',
+        provider: 'StakeTown'
+      },
+      {
+        address: 'elys-grpc.cogwheel.zone:443',
+        provider: 'Cogwheel ⚙️'
       }
     ]
   },
@@ -180,6 +228,12 @@ const info: Chain = {
       url: 'https://mainnet.itrocket.net/elys',
       txPage: 'https://mainnet.itrocket.net/elys/staking/tx/${txHash}',
       accountPage: 'https://mainnet.itrocket.net/elys/account/${accountAddress}'
+    },
+    {
+      kind: '🔥STAVR🔥',
+      url: 'https://explorer.stavr.tech/Elys-Mainnet',
+      txPage: 'https://explorer.stavr.tech/Elys-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Elys-Mainnet/account/${accountAddress}'
     }
   ]
 };

@@ -1,62 +1,6 @@
 import { IBCData } from '@chain-registry/v2-types';
 const info: IBCData[] = [
   {
-    $schema: '../ibc_data.schema.json',
-    chain1: {
-      chainName: 'cosmoshubtestnet',
-      clientId: '07-tendermint-2522',
-      connectionId: 'connection-2881'
-    },
-    chain2: {
-      chainName: 'elystestnet',
-      clientId: '07-tendermint-19',
-      connectionId: 'connection-17'
-    },
-    channels: [{
-        chain1: {
-          channelId: 'channel-3302',
-          portId: 'transfer'
-        },
-        chain2: {
-          channelId: 'channel-16',
-          portId: 'transfer'
-        },
-        ordering: 'unordered',
-        version: 'ics20-1',
-        tags: {
-          status: 'live'
-        }
-      }]
-  },
-  {
-    $schema: '../ibc_data.schema.json',
-    chain1: {
-      chainName: 'cosmoshubtestnet',
-      clientId: '07-tendermint-3748',
-      connectionId: 'connection-3798'
-    },
-    chain2: {
-      chainName: 'symphonytestnet',
-      clientId: '07-tendermint-29',
-      connectionId: 'connection-14'
-    },
-    channels: [{
-        chain1: {
-          channelId: 'channel-4320',
-          portId: 'transfer'
-        },
-        chain2: {
-          channelId: 'channel-12',
-          portId: 'transfer'
-        },
-        ordering: 'unordered',
-        version: 'ics20-1',
-        tags: {
-          status: 'live'
-        }
-      }]
-  },
-  {
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'celestiatestnet3',
@@ -82,6 +26,34 @@ const info: IBCData[] = [
         tags: {
           status: 'live',
           preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'cosmoshubtestnet',
+      clientId: '07-tendermint-2522',
+      connectionId: 'connection-2881'
+    },
+    chain2: {
+      chainName: 'elystestnet',
+      clientId: '07-tendermint-19',
+      connectionId: 'connection-17'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-3302',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-16',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
         }
       }]
   },

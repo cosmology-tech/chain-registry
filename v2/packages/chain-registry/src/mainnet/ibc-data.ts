@@ -43,6 +43,7 @@ import * as _dydx from './dydx';
 import * as _dymension from './dymension';
 import * as _dyson from './dyson';
 import * as _echelon from './echelon';
+import * as _elys from './elys';
 import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
 import * as _evmos from './evmos';
@@ -192,6 +193,7 @@ const ibcData: IBCData[] = [
   ..._dymension.ibcData,
   ..._dyson.ibcData,
   ..._echelon.ibcData,
+  ..._elys.ibcData,
   ..._emoney.ibcData,
   ..._empowerchain.ibcData,
   ..._evmos.ibcData,

@@ -389,6 +389,37 @@ const info: AssetList = {
             primaryColorHex: '#1c1c1c'
           }
         }]
+    },
+    {
+      description: 'Chihuahua coin',
+      extendedDescription: 'Chihuahua.baby! Chihuahuas may be small, but they possess a mighty spirit and strong energy. These little dogs are known for their boldness. They are confident, sassy, and full of spunk. They are not afraid to take on much larger adversaries when their loved ones are at stake. Chihuahuas thrive on human companionship and enjoy cuddling up with their owners, providing an abundance of love and affection! Woof woof woof...',
+      denomUnits: [{
+          denom: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/Chihuahua',
+          exponent: 0
+        }, {
+          denom: 'Chihuahua',
+          exponent: 6
+        }],
+      base: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/Chihuahua',
+      name: 'Chihuahua',
+      display: 'Chihuahua',
+      symbol: 'CHIHUAHUA',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/chihuahua.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/chihuahua.png',
+          theme: {
+            primaryColorHex: '#444444',
+            backgroundColorHex: '#FFBF38',
+            circle: true
+          }
+        }],
+      socials: {
+        website: 'https://chihuahua.baby/',
+        twitter: 'https://x.com/chihuahuacoinx'
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };
