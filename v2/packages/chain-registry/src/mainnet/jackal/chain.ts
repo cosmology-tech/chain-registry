@@ -248,6 +248,10 @@ const info: Chain = {
       {
         address: 'jackal-grpc.noders.services:26090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'grpc.jackal.mathnodes.com:443',
+        provider: 'MathNodes'
       }
     ]
   },

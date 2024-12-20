@@ -108,6 +108,10 @@ const info: Chain = {
       {
         address: 'https://realio_rio_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://realio-rpc.moonbridge.org',
+        provider: 'Moonbridge'
       }
     ],
     rest: [
@@ -158,6 +162,10 @@ const info: Chain = {
       {
         address: 'https://realio_rio_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://realio-api.moonbridge.org',
+        provider: 'Moonbridge'
       }
     ],
     grpc: [
@@ -275,6 +283,12 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/realio',
       txPage: 'https://explorer.whenmoonwhenlambo.money/realio/tx/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/realio/account/${accountAddress}'
+    },
+    {
+      kind: 'Moonbridge',
+      url: 'https://explorer.moonbridge.org/realio',
+      txPage: 'https://explorer.moonbridge.org/realio/tx/${txHash}',
+      accountPage: 'https://explorer.moonbridge.org/realio/account/${accountAddress}'
     }
   ],
   images: [{

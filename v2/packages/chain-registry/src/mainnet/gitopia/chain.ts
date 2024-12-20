@@ -129,7 +129,7 @@ const info: Chain = {
         provider: 'Roomit'
       },
       {
-        address: 'https://gitopia.rpc.moonbridge.team',
+        address: 'https://gitopia-rpc.moonbridge.org',
         provider: 'Moonbridge'
       },
       {
@@ -251,7 +251,7 @@ const info: Chain = {
         provider: 'Roomit'
       },
       {
-        address: 'https://gitopia.api.moonbridge.team',
+        address: 'https://gitopia-api.moonbridge.org',
         provider: 'Moonbridge'
       },
       {
@@ -373,7 +373,7 @@ const info: Chain = {
         provider: 'Roomit'
       },
       {
-        address: 'https://gitopia.grpc.moonbridge.team',
+        address: 'gitopia-grpc.moonbridge.org:443',
         provider: 'Moonbridge'
       },
       {
@@ -485,9 +485,9 @@ const info: Chain = {
     },
     {
       kind: 'Moonbridge',
-      url: 'https://explorer.moonbridge.team/gitopia',
-      txPage: 'https://explorer.moonbridge.team/gitopia/tx/${txHash}',
-      accountPage: 'https://explorer.moonbridge.team/gitopia/account/${accountAddress}'
+      url: 'https://explorer.moonbridge.org/gitopia',
+      txPage: 'https://explorer.moonbridge.org/gitopia/tx/${txHash}',
+      accountPage: 'https://explorer.moonbridge.org/gitopia/account/${accountAddress}'
     },
     {
       kind: 'KonsorTech',

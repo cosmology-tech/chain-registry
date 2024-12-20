@@ -54,7 +54,7 @@ const info: Chain = {
         provider: 'Stakerhouse'
       },
       {
-        address: 'https://kopi.rpc.moonbridge.team',
+        address: 'https://kopi-rpc.moonbridge.org',
         provider: 'Moonbridge'
       },
       {
@@ -108,7 +108,7 @@ const info: Chain = {
         provider: 'Stakerhouse'
       },
       {
-        address: 'https://kopi.api.moonbridge.team',
+        address: 'https://kopi-api.moonbridge.org',
         provider: 'Moonbridge'
       },
       {
@@ -154,7 +154,7 @@ const info: Chain = {
         provider: 'Stakerhouse'
       },
       {
-        address: 'https://kopi.grpc.moonbridge.team',
+        address: 'kopi-grpc.moonbridge.org:443',
         provider: 'Moonbridge'
       },
       {
@@ -204,9 +204,9 @@ const info: Chain = {
     },
     {
       kind: 'Moonbridge Explorer',
-      url: 'https://explorer.moonbridge.team/kopi/',
-      txPage: 'https://explorer.moonbridge.team/kopi/txs/${txHash}',
-      accountPage: 'https://explorer.moonbridge.team/kopi/account/${accountAddress}'
+      url: 'https://explorer.moonbridge.org/kopi',
+      txPage: 'https://explorer.moonbridge.org/kopi/txs/${txHash}',
+      accountPage: 'https://explorer.moonbridge.org/kopi/account/${accountAddress}'
     },
     {
       kind: 'Cosmoscan Explorer',

@@ -79,6 +79,10 @@ const info: Chain = {
       {
         address: 'https://zeta.rpc.m.stavr.tech:443',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://zetachain-mainnet-rpc.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes'
       }
     ],
     rest: [
@@ -109,6 +113,10 @@ const info: Chain = {
       {
         address: 'https://zeta.api.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://zetachain-mainnet-rest.cosmonautstakes.com',
+        provider: 'Cosmonaut Stakes'
       }
     ],
     grpc: [
@@ -131,6 +139,10 @@ const info: Chain = {
       {
         address: 'zeta.grpc.m.stavr.tech',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'zetachain-mainnet-grpc.cosmonautstakes.com:15190',
+        provider: 'Cosmonaut Stakes'
       }
     ]
   },
