@@ -41,8 +41,8 @@ const info: Chain = {
         provider: 'BccNodes'
       },
       {
-        address: 'https://source.rpc.moonbridge.team/',
-        provider: 'MoonBridge'
+        address: 'https://source-rpc.moonbridge.org',
+        provider: 'Moonbridge'
       },
       {
         address: 'https://source.rpc.m.stavr.tech',
@@ -135,8 +135,8 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://source.api.moonbridge.team/',
-        provider: 'MoonBridge'
+        address: 'https://source-api.moonbridge.org',
+        provider: 'Moonbridge'
       },
       {
         address: 'https://api-source.sr20de.xyz',
@@ -243,6 +243,10 @@ const info: Chain = {
       {
         address: 'https://source.declab.pro:9003',
         provider: 'Decloud Nodes Lab'
+      },
+      {
+        address: 'source-grpc.moonbridge.org:443',
+        provider: 'Moonbridge'
       }
     ]
   },
@@ -260,10 +264,10 @@ const info: Chain = {
       account_page: 'https://exp.nodeist.net/source/accounts/${accountAddress}'
     },
     {
-      kind: 'MoonBridge',
-      url: 'https://explorer.moonbridge.team/source',
-      tx_page: 'https://explorer.moonbridge.team/source/tx/${txHash}',
-      account_page: 'https://explorer.moonbridge.team/source/accounts/${accountAddress}'
+      kind: 'Moonbridge',
+      url: 'https://explorer.moonbridge.org/source',
+      tx_page: 'https://explorer.moonbridge.org/source/tx/${txHash}',
+      account_page: 'https://explorer.moonbridge.org/source/accounts/${accountAddress}'
     },
     {
       kind: 'NodeStake',

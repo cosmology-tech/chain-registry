@@ -86,6 +86,10 @@ const info: Chain = {
       {
         address: 'https://empower-rpc.bluestake.net:443',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://empower-rpc.moonbridge.org',
+        provider: 'Moonbridge'
       }
     ],
     rest: [
@@ -140,6 +144,10 @@ const info: Chain = {
       {
         address: 'https://empower-api.bluestake.net',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://empower-api.moonbridge.org',
+        provider: 'Moonbridge'
       }
     ],
     grpc: [
@@ -186,6 +194,10 @@ const info: Chain = {
       {
         address: 'empower-grpc.noders.services:25090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'empower-grpc.moonbridge.org:443',
+        provider: 'Moonbridge'
       }
     ]
   },
@@ -225,6 +237,12 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/empowerchain',
       tx_page: 'https://mainnet.whispernode.com/empowerchain/tx/${txHash}',
       account_page: 'https://mainnet.whispernode.com/empowerchain/account/${accountAddress}'
+    },
+    {
+      kind: 'Moonbridge',
+      url: 'https://explorer.moonbridge.org/empower',
+      tx_page: 'https://explorer.moonbridge.org/empower/tx/${txHash}',
+      account_page: 'https://explorer.moonbridge.org/empower/account/${accountAddress}'
     }
   ],
   images: [{

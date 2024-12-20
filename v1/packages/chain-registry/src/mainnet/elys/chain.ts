@@ -97,6 +97,14 @@ const info: Chain = {
       {
         address: 'https://elys-rpc.cogwheel.zone:443',
         provider: 'Cogwheel ⚙️'
+      },
+      {
+        address: 'https://elys.rpc.quasarstaking.ai:443',
+        provider: 'Quasar'
+      },
+      {
+        address: 'https://elys-rpc.moonbridge.org:443',
+        provider: 'Moonbridge'
       }
     ],
     rest: [
@@ -147,6 +155,14 @@ const info: Chain = {
       {
         address: 'https://elys-api.cogwheel.zone:443',
         provider: 'Cogwheel ⚙️'
+      },
+      {
+        address: 'https://elys.api.quasarstaking.ai:443',
+        provider: 'Quasar'
+      },
+      {
+        address: 'https://elys-api.moonbridge.org',
+        provider: 'Moonbridge'
       }
     ],
     grpc: [
@@ -181,6 +197,14 @@ const info: Chain = {
       {
         address: 'elys-grpc.cogwheel.zone:443',
         provider: 'Cogwheel ⚙️'
+      },
+      {
+        address: 'elys.grpc.quasarstaking.ai:443',
+        provider: 'Quasar'
+      },
+      {
+        address: 'elys-grpc.moonbridge.org:443',
+        provider: 'Moonbridge'
       }
     ]
   },
@@ -214,6 +238,12 @@ const info: Chain = {
       url: 'https://explorer.stavr.tech/Elys-Mainnet',
       tx_page: 'https://explorer.stavr.tech/Elys-Mainnet/tx/${txHash}',
       account_page: 'https://explorer.stavr.tech/Elys-Mainnet/account/${accountAddress}'
+    },
+    {
+      kind: 'Moonbridge',
+      url: 'https://explorer.moonbridge.org/elys',
+      tx_page: 'https://explorer.moonbridge.org/elys/tx/${txHash}',
+      account_page: 'https://explorer.moonbridge.org/elys/account/${accountAddress}'
     }
   ]
 };

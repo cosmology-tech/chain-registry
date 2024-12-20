@@ -2780,6 +2780,12 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg'
       },
+      socials: {
+        website: 'https://mobix.ai',
+        twitter: 'https://twitter.com/mobixwallet',
+        telegram: 'https://t.me/mobix_ai',
+        github: 'https://github.com/MOBIX-ai'
+      },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg',
@@ -8670,6 +8676,12 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.svg'
+      },
+      socials: {
+        website: 'https://mobix.ai',
+        twitter: 'https://twitter.com/mobixwallet',
+        telegram: 'https://t.me/mobix_ai',
+        github: 'https://github.com/MOBIX-ai'
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/mobx.png',

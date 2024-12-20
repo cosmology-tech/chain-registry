@@ -30,10 +30,6 @@ const info: Chain = {
         provider: 'Seraphim'
       },
       {
-        address: 'https://rpc-dungeonchain.apeironnodes.com',
-        provider: 'ApeironNodes'
-      },
-      {
         address: 'https://dungeon_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
@@ -46,10 +42,6 @@ const info: Chain = {
       {
         address: 'https://api-dungeon-1.seraphim.zone',
         provider: 'Seraphim'
-      },
-      {
-        address: 'https://api-dungeonchain.apeironnodes.com',
-        provider: 'ApeironNodes'
       },
       {
         address: 'https://api-archive-dungeonchain.apeironnodes.com',

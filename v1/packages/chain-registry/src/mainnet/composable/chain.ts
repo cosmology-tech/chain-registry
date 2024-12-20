@@ -73,7 +73,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://composable.rpc.moonbridge.team',
+        address: 'https://picasso-rpc.moonbridge.org',
         provider: 'Moonbridge'
       },
       {
@@ -123,7 +123,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://composable.api.moonbridge.team',
+        address: 'https://picasso-api.moonbridge.org',
         provider: 'Moonbridge'
       },
       {
@@ -189,7 +189,7 @@ const info: Chain = {
         provider: 'Bro_n_Bro'
       },
       {
-        address: 'https://composable.grpc.moonbridge.team',
+        address: 'https://picasso-grpc.moonbridge.org',
         provider: 'Moonbridge'
       },
       {
@@ -231,6 +231,11 @@ const info: Chain = {
       url: 'https://mainnet.whispernode.com/picasso',
       tx_page: 'https://mainnet.whispernode.com/picasso/tx/${txHash}',
       account_page: 'https://mainnet.whispernode.com/picasso/account/${accountAddress}'
+    },
+    {
+      kind: 'Moonbridge',
+      url: 'https://explorer.moonbridge.org/picasso',
+      tx_page: 'https://explorer.moonbridge.org/picasso/tx/${txHash}'
     }
   ],
   images: [{

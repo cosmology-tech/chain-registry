@@ -53,10 +53,6 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://xion_mainnet_rpc.chain.whenmoonwhenlambo.money',
-        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      },
-      {
         address: 'https://rpc.xion.nodestake.org',
         provider: 'NodeStake'
       }
@@ -81,10 +77,6 @@ const info: Chain = {
       {
         address: 'https://xion-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'https://xion_mainnet_api.chain.whenmoonwhenlambo.money',
-        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
         address: 'https://api.xion.nodestake.org',
@@ -119,12 +111,6 @@ const info: Chain = {
       url: 'https://explorer.burnt.com/xion-mainnet-1',
       tx_page: 'https://explorer.burnt.com/xion-mainnet-1/tx/${txHash}',
       account_page: 'https://explorer.burnt.com/xion-mainnet-1/account/${accountAddress}'
-    },
-    {
-      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
-      url: 'https://explorer.whenmoonwhenlambo.money/xion',
-      tx_page: 'https://explorer.whenmoonwhenlambo.money/xion/tx/${txHash}',
-      account_page: 'https://explorer.whenmoonwhenlambo.money/xion/account/${accountAddress}'
     },
     {
       kind: 'staking-explorer.com',
