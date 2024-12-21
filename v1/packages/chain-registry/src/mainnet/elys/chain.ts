@@ -105,6 +105,10 @@ const info: Chain = {
       {
         address: 'https://elys-rpc.moonbridge.org:443',
         provider: 'Moonbridge'
+      },
+      {
+        address: 'https://elys_mainnet_rpc.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     rest: [
@@ -163,6 +167,10 @@ const info: Chain = {
       {
         address: 'https://elys-api.moonbridge.org',
         provider: 'Moonbridge'
+      },
+      {
+        address: 'https://elys_mainnet_api.chain.whenmoonwhenlambo.money',
+        provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       }
     ],
     grpc: [
@@ -244,6 +252,12 @@ const info: Chain = {
       url: 'https://explorer.moonbridge.org/elys',
       tx_page: 'https://explorer.moonbridge.org/elys/tx/${txHash}',
       account_page: 'https://explorer.moonbridge.org/elys/account/${accountAddress}'
+    },
+    {
+      kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
+      url: 'https://explorer.whenmoonwhenlambo.money/elys',
+      tx_page: 'https://explorer.whenmoonwhenlambo.money/elys/tx/${txHash}',
+      account_page: 'https://explorer.whenmoonwhenlambo.money/elys/account/${accountAddress}'
     }
   ]
 };
