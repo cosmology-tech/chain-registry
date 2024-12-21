@@ -1380,6 +1380,40 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/bglUSDC.png'
         }],
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Drop staked TIA',
+      extendedDescription: 'Drop protocol token for the interchain liquidity',
+      denomUnits: [{
+          denom: 'factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia',
+          exponent: 0
+        }, {
+          denom: 'dTIA',
+          exponent: 6
+        }],
+      base: 'factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia',
+      name: 'dTIA',
+      display: 'dTIA',
+      symbol: 'dTIA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'celestia',
+            baseDenom: 'utia'
+          },
+          provider: 'Drop Protocol'
+        }],
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dTIA.svg'
+        }],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dTIA.svg'
+      },
+      socials: {
+        website: 'https://www.drop.money/',
+        twitter: 'https://x.com/Dropdotmoney'
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };
