@@ -22,7 +22,10 @@ const info: Chain = {
   staking: {
     stakingTokens: [{
         denom: 'uaaron'
-      }]
+      }],
+    lockDuration: {
+      time: '86400s'
+    }
   },
   codebase: {
     gitRepo: 'https://github.com/aaronetwork/aaronetwork-chain',
@@ -33,31 +36,67 @@ const info: Chain = {
     }
   },
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://mainnet-rpc.aaronetwork.xyz',
         provider: 'Aaron Network Foundation'
-      }, {
+      },
+      {
         address: 'https://aaronetwork_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://aaron.rpc.nodeshub.online',
+        provider: 'NodesHub'
+      }
+    ],
+    rest: [
+      {
         address: 'https://mainnet-api.aaronetwork.xyz',
         provider: 'Aaron Network Foundation'
-      }, {
+      },
+      {
         address: 'https://aaronetwork_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
-      }]
+      },
+      {
+        address: 'https://aaron.api.nodeshub.online',
+        provider: 'NodesHub'
+      }
+    ]
   },
-  explorers: [{
+  explorers: [
+    {
+      kind: 'Ping.pub',
+      url: 'https://ping.pub/Aaron%20Network',
+      txPage: 'https://ping.pub/Aaron%20Network/tx/${txHash}',
+      accountPage: 'https://ping.pub/Aaron%20Network/account/${accountAddress}'
+    },
+    {
       kind: 'Aaron Network',
       url: 'https://explorer.aaronetwork.xyz',
       txPage: 'https://explorer.aaronetwork.xyz/hash/${txHash}',
       accountPage: 'https://explorer.aaronetwork.xyz/address/${accountAddress}'
-    }, {
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/aaronetwork',
       txPage: 'https://explorer.whenmoonwhenlambo.money/aaronetwork/tx/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/aaronetwork/account/${accountAddress}'
-    }]
+    },
+    {
+      kind: 'NodesHub',
+      url: 'https://explorer.nodeshub.online/aaron',
+      txPage: 'https://explorer.nodeshub.online/aaron/tx/${txHash}',
+      accountPage: 'https://explorer.nodeshub.online/aaron/${accountAddress}'
+    }
+  ],
+  keywords: [
+    'social',
+    'chat',
+    'reputation',
+    'score',
+    'messaging'
+  ]
 };
 export default info;

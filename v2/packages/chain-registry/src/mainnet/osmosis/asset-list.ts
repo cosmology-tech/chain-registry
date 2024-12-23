@@ -22132,6 +22132,47 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/icp.svg',
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/internetcomputer/images/icp.png'
         }]
+    },
+    {
+      description: 'Aaron Network is an innovative platform for secure and private messaging, integrated into the blockchain ecosystem. We also offer a unique address reputation scoring system, ensuring that every user can interact with others confidently.',
+      denomUnits: [{
+          denom: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+          exponent: 0,
+          aliases: ['uaaron']
+        }, {
+          denom: 'AARON',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+      name: 'Aaron Network',
+      display: 'AARON',
+      symbol: 'AARON',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'aaronetwork',
+            baseDenom: 'uaaron',
+            channelId: 'channel-6'
+          },
+          chain: {
+            channelId: 'channel-91254',
+            path: 'transfer/channel-91254/uaaron'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aaronetwork/images/aaron.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'aaronetwork',
+            baseDenom: 'uaaron'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aaronetwork/images/aaron.png',
+          theme: {
+            circle: false
+          }
+        }]
     }
   ]
 };

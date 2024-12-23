@@ -2,6 +2,7 @@ import { IBCData } from '@chain-registry/v2-types';
 
 import * as _ethereum from './ethereum';
 import * as _solana from './solana';
+import * as _aaronetwork from './aaronetwork';
 import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
@@ -152,6 +153,7 @@ import * as _zenrock from './zenrock';
 const ibcData: IBCData[] = [
   ..._ethereum.ibcData,
   ..._solana.ibcData,
+  ..._aaronetwork.ibcData,
   ..._acrechain.ibcData,
   ..._agoric.ibcData,
   ..._aioz.ibcData,
