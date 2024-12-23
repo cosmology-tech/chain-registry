@@ -200,6 +200,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/stride/rpc',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://stride-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -266,6 +270,10 @@ const info: Chain = {
       {
         address: 'https://public.stakewolle.com/cosmos/stride/rest',
         provider: 'Stakewolle'
+      },
+      {
+        address: 'https://stride-api.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [

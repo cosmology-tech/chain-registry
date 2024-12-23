@@ -3,6 +3,54 @@ const asset_list: AssetList = {
   chain_name: 'osmosis',
   assets: [
     {
+      description: 'Aaron Network is an innovative platform for secure and private messaging, integrated into the blockchain ecosystem. We also offer a unique address reputation scoring system, ensuring that every user can interact with others confidently.',
+      denom_units: [{
+          denom: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+          exponent: 0,
+          aliases: ['uaaron']
+        }, {
+          denom: 'AARON',
+          exponent: 6
+        }],
+      base: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+      name: 'Aaron Network',
+      display: 'AARON',
+      symbol: 'AARON',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aaronetwork/images/aaron.png'
+      },
+      socials: {
+        website: 'https://aaronetwork.xyz',
+        twitter: 'https://x.com/aaronetwork',
+        discord: 'https://discord.gg/HezQu22zxZ'
+      },
+      keywords: [
+        'social',
+        'chat',
+        'reputation',
+        'score',
+        'messaging'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aaronetwork/images/aaron.png',
+          theme: {
+            circle: false
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uaaron',
+            chain_name: 'aaronetwork'
+          },
+          chain: {
+            channel_id: 'channel-91254'
+          }
+        }]
+    },
+    {
       description: 'The native EVM, governance and staking token of the Acrechain',
       denom_units: [{
           denom: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
@@ -2226,7 +2274,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
       },
-      coingecko_id: 'elys',
+      coingecko_id: 'elys-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
         }],
@@ -5900,6 +5948,54 @@ const asset_list: AssetList = {
         }]
     },
     {
+      description: 'Aaron Network is an innovative platform for secure and private messaging, integrated into the blockchain ecosystem. We also offer a unique address reputation scoring system, ensuring that every user can interact with others confidently.',
+      denom_units: [{
+          denom: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+          exponent: 0,
+          aliases: ['uaaron']
+        }, {
+          denom: 'AARON',
+          exponent: 6
+        }],
+      base: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+      name: 'Aaron Network',
+      display: 'AARON',
+      symbol: 'AARON',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aaronetwork/images/aaron.png'
+      },
+      socials: {
+        website: 'https://aaronetwork.xyz',
+        twitter: 'https://x.com/aaronetwork',
+        discord: 'https://discord.gg/HezQu22zxZ'
+      },
+      keywords: [
+        'social',
+        'chat',
+        'reputation',
+        'score',
+        'messaging'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aaronetwork/images/aaron.png',
+          theme: {
+            circle: false
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-6',
+            base_denom: 'uaaron',
+            chain_name: 'aaronetwork'
+          },
+          chain: {
+            channel_id: 'channel-91254'
+          }
+        }]
+    },
+    {
       description: 'The native EVM, governance and staking token of the Acrechain',
       denom_units: [{
           denom: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
@@ -8123,7 +8219,7 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
       },
-      coingecko_id: 'elys',
+      coingecko_id: 'elys-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
         }],

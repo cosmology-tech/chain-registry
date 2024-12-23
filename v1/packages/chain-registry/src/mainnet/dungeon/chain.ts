@@ -32,6 +32,10 @@ const info: Chain = {
       {
         address: 'https://dungeon_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://dungeon-rpc.ibs;team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -50,6 +54,10 @@ const info: Chain = {
       {
         address: 'https://dungeon_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://dungeon-api.ibs;team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [{
