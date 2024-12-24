@@ -29,8 +29,12 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/BitCannaGlobal/bcna',
-    recommendedVersion: 'v4.0.1',
-    compatibleVersions: ['v4.0.1'],
+    recommendedVersion: 'v4.0.3',
+    compatibleVersions: [
+      'v4.0.1',
+      'v4.0.2',
+      'v4.0.3'
+    ],
     binaries: {
       "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_amd64.tar.gz',
       "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_arm64.tar.gz'
