@@ -31,29 +31,29 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/realiotech/realio-network',
-    recommendedVersion: 'v0.9.3',
-    compatibleVersions: ['v0.9.3'],
+    recommendedVersion: 'v1.0.2',
+    compatibleVersions: ['v1.0.2'],
     binaries: {
-      "linux/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Linux_x86_64.tar.gz',
-      "linux/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Linux_arm64.tar.gz',
-      "darwin/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Darwin_x86_64.tar.gz',
-      "darwin/arm64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Darwin_arm64.tar.gz',
-      "windows/amd64": 'https://github.com/realiotech/realio-network/releases/download/v0.9.3/realio-network_Windows_x86_64.zip'
+      "linux/amd64": 'https://github.com/realiotech/realio-network/releases/download/v1.0.2/realio-network_Linux_x86_64.tar.gz',
+      "linux/arm64": 'https://github.com/realiotech/realio-network/releases/download/v1.0.2/realio-network_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/realiotech/realio-network/releases/download/v1.0.2/realio-network_Darwin_x86_64.tar.gz',
+      "darwin/arm64": 'https://github.com/realiotech/realio-network/releases/download/v1.0.2/realio-network_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/realiotech/realio-network/releases/download/v1.0.2/realio-network_Windows_x86_64.zip'
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.34.27'
+      version: 'v0.38.12'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/realiotech/mainnet/main/realionetwork_3301-1/genesis.json'
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.46.12'
+      version: 'v0.50'
     },
     ibc: {
       type: 'go',
-      version: 'v6.1.1'
+      version: 'v8.5.1'
     }
   },
   logoURIs: {

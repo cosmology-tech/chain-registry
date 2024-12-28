@@ -34,7 +34,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://dungeon-rpc.ibs;team',
+        address: 'https://dungeon-rpc.ibs.team',
         provider: 'Inter Blockchain Services'
       }
     ],
@@ -56,7 +56,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://dungeon-api.ibs;team',
+        address: 'https://dungeon-api.ibs.team',
         provider: 'Inter Blockchain Services'
       }
     ],
