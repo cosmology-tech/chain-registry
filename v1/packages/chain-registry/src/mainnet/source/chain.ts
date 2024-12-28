@@ -172,7 +172,7 @@ const info: Chain = {
       },
       {
         address: 'https://source.api.staking-explorer.com',
-        provider: 'Daily DROP | 3% Fee'
+        provider: 'staking-explorer.com | 3% Fee'
       },
       {
         address: 'https://source.declab.pro:443',

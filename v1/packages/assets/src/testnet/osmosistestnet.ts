@@ -1803,6 +1803,90 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'TTNT is the native token of the Titan Network testnet, serving as a medium of value, staking token, and transparency mechanism for the ecosystem.',
+      denom_units: [{
+          denom: 'ibc/C46DB64CBA325B311FA2595F70B2C99DAA4CE86483F28213AC81838E754E5DF0',
+          exponent: 0,
+          aliases: ['uttnt']
+        }, {
+          denom: 'ttnt',
+          exponent: 6
+        }],
+      base: 'ibc/C46DB64CBA325B311FA2595F70B2C99DAA4CE86483F28213AC81838E754E5DF0',
+      name: 'Titan Testnet TTNT',
+      display: 'ttnt',
+      symbol: 'TTNT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      socials: {
+        website: 'https://titannet.io',
+        twitter: 'https://twitter.com/Titannet_dao'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'uttnt',
+            chain_name: 'titannettestnet'
+          },
+          chain: {
+            channel_id: 'channel-9941'
+          }
+        }]
+    },
+    {
+      description: 'TNT4 is the incentive token of the Titan Network\'s Galileo testnet, rewarding contributors who provide bandwidth resources for commercial use.',
+      denom_units: [{
+          denom: 'ibc/1CAED08A9A93AE357DDF458058FFDD7C9CC70EF67C0E4C2375B8E4414AAE2686',
+          exponent: 0,
+          aliases: ['utnt4']
+        }, {
+          denom: 'tnt4',
+          exponent: 2
+        }],
+      base: 'ibc/1CAED08A9A93AE357DDF458058FFDD7C9CC70EF67C0E4C2375B8E4414AAE2686',
+      name: 'Titan Testnet TNT4',
+      display: 'tnt4',
+      symbol: 'TNT4',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      socials: {
+        website: 'https://titannet.io',
+        twitter: 'https://twitter.com/Titannet_dao'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'utnt4',
+            chain_name: 'titannettestnet'
+          },
+          chain: {
+            channel_id: 'channel-9941'
+          }
+        }]
+    },
+    {
       description: 'The native token of the Titan network.',
       denom_units: [
         {
@@ -2375,6 +2459,90 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-9152'
+          }
+        }]
+    },
+    {
+      description: 'TTNT is the native token of the Titan Network testnet, serving as a medium of value, staking token, and transparency mechanism for the ecosystem.',
+      denom_units: [{
+          denom: 'ibc/C46DB64CBA325B311FA2595F70B2C99DAA4CE86483F28213AC81838E754E5DF0',
+          exponent: 0,
+          aliases: ['uttnt']
+        }, {
+          denom: 'ttnt',
+          exponent: 6
+        }],
+      base: 'ibc/C46DB64CBA325B311FA2595F70B2C99DAA4CE86483F28213AC81838E754E5DF0',
+      name: 'Titan Testnet TTNT',
+      display: 'ttnt',
+      symbol: 'TTNT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      socials: {
+        website: 'https://titannet.io',
+        twitter: 'https://twitter.com/Titannet_dao'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'uttnt',
+            chain_name: 'titannettestnet'
+          },
+          chain: {
+            channel_id: 'channel-9941'
+          }
+        }]
+    },
+    {
+      description: 'TNT4 is the incentive token of the Titan Network\'s Galileo testnet, rewarding contributors who provide bandwidth resources for commercial use.',
+      denom_units: [{
+          denom: 'ibc/1CAED08A9A93AE357DDF458058FFDD7C9CC70EF67C0E4C2375B8E4414AAE2686',
+          exponent: 0,
+          aliases: ['utnt4']
+        }, {
+          denom: 'tnt4',
+          exponent: 2
+        }],
+      base: 'ibc/1CAED08A9A93AE357DDF458058FFDD7C9CC70EF67C0E4C2375B8E4414AAE2686',
+      name: 'Titan Testnet TNT4',
+      display: 'tnt4',
+      symbol: 'TNT4',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/tnt4.svg',
+          theme: {
+            primary_color_hex: '#272d45'
+          }
+        }],
+      socials: {
+        website: 'https://titannet.io',
+        twitter: 'https://twitter.com/Titannet_dao'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-5',
+            base_denom: 'utnt4',
+            chain_name: 'titannettestnet'
+          },
+          chain: {
+            channel_id: 'channel-9941'
           }
         }]
     },

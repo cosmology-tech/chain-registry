@@ -27,6 +27,18 @@ const info: Chain = {
         denom: 'adym'
       }]
   },
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+  },
+  description: 'Dymension is a network of easily deployable and lightning fast modular blockchains called RollApps.',
+  images: [{
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg',
+      theme: {
+        primary_color_hex: '#f4e4d4'
+      }
+    }],
   codebase: {
 
   },

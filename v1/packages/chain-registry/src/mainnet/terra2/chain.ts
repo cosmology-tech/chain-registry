@@ -87,6 +87,10 @@ const info: Chain = {
       {
         address: 'https://terra-rpc.cosmosrescue.dev:8443',
         provider: 'cosmosrescue'
+      },
+      {
+        address: 'https://terra-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -129,6 +133,10 @@ const info: Chain = {
       {
         address: 'https://terra-api.cosmosrescue.dev:8443',
         provider: 'cosmosrescue'
+      },
+      {
+        address: 'https://terra-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -163,6 +171,10 @@ const info: Chain = {
       {
         address: 'https://terra2.tdrsys.com:2083',
         provider: 'TdrSys'
+      },
+      {
+        address: 'terra-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -195,6 +207,12 @@ const info: Chain = {
       url: 'https://www.mintscan.io/terra',
       tx_page: 'https://www.mintscan.io/terra/transactions/${txHash}',
       account_page: 'https://www.mintscan.io/terra/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/terra',
+      tx_page: 'https://explorer.chainroot.io/terra/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/terra/accounts/${accountAddress}'
     }
   ],
   images: [{

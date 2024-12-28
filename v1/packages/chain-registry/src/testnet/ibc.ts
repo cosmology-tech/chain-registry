@@ -38,6 +38,7 @@ import * as _swisstroniktestnet from './swisstroniktestnet';
 import * as _symphonytestnet from './symphonytestnet';
 import * as _synternettestnet from './synternettestnet';
 import * as _terra2testnet from './terra2testnet';
+import * as _titannettestnet from './titannettestnet';
 import * as _titantestnet from './titantestnet';
 import * as _xiontestnet from './xiontestnet';
 
@@ -80,6 +81,7 @@ const ibc: IBCInfo[] = [
   ..._symphonytestnet.ibc,
   ..._synternettestnet.ibc,
   ..._terra2testnet.ibc,
+  ..._titannettestnet.ibc,
   ..._titantestnet.ibc,
   ..._xiontestnet.ibc
 ];

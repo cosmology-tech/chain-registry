@@ -139,10 +139,6 @@ const info: Chain = {
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
       },
       {
-        address: 'https://nibiru.api.staking-explorer.com',
-        provider: 'Daily DROP | 2% Fee'
-      },
-      {
         address: 'https://nibiru-api.noders.services',
         provider: '[NODERS]TEAM'
       },
