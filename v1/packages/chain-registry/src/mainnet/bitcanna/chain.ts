@@ -45,10 +45,6 @@ const info: Chain = {
         provider: 'Inter Blockchain Services'
       },
       {
-        address: 'https://bitcanna-rpc.panthea.eu/',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'https://rpc.bitcanna.sgtstake.com/',
         provider: 'SGTstake'
       },
@@ -95,10 +91,6 @@ const info: Chain = {
       {
         address: 'https://bitcanna-rpc.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://rpc.bitcanna.safeblock.space',
-        provider: 'Safe Block'
       },
       {
         address: 'https://bitcanna.nodejumper.io:443',
@@ -183,10 +175,6 @@ const info: Chain = {
         provider: 'MMS'
       },
       {
-        address: 'grpc.bitcanna.safeblock.space:9090',
-        provider: 'Safe Block'
-      },
-      {
         address: 'mainnet-bitcanna-grpc.konsortech.xyz:27090',
         provider: 'KonsorTech'
       },
@@ -211,10 +199,6 @@ const info: Chain = {
         provider: 'Indonode'
       },
       {
-        address: 'bitcanna-grpc.panthea.eu:16710',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'bitcanna-grpc.validatornode.com:443',
         provider: 'ValidatorNode'
       },
@@ -235,10 +219,6 @@ const info: Chain = {
       {
         address: 'https://lcd.bitcanna.io',
         provider: 'bitcanna'
-      },
-      {
-        address: 'https://bitcanna-api.panthea.eu',
-        provider: 'Panthea EU'
       },
       {
         address: 'https://api.bitcanna.sgtstake.com/',
@@ -287,10 +267,6 @@ const info: Chain = {
       {
         address: 'https://bitcanna-api.polkachu.com',
         provider: 'Polkachu'
-      },
-      {
-        address: 'https://api.bitcanna.safeblock.space',
-        provider: 'Safe Block'
       },
       {
         address: 'https://bitcanna.nodejumper.io:1317',
@@ -391,11 +367,6 @@ const info: Chain = {
       kind: 'ValidatorNode Explorer',
       url: 'https://explorer.validatornode.com/bitcanna',
       tx_page: 'https://explorer.validatornode.com/bitcanna/tx/${txHash}'
-    },
-    {
-      kind: 'Safe Block Explorer Pruned',
-      url: 'https://explorer.safeblock.space/bitcanna',
-      tx_page: 'https://explorer.safeblock.space/bitcanna/tx/${txHash}'
     },
     {
       kind: 'AlxVoy ⚡ ANODE.TEAM',
