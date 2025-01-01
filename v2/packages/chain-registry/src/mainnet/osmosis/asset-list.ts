@@ -22136,7 +22136,7 @@ const info: AssetList = {
     {
       description: 'Aaron Network is an innovative platform for secure and private messaging, integrated into the blockchain ecosystem. We also offer a unique address reputation scoring system, ensuring that every user can interact with others confidently.',
       denomUnits: [{
-          denom: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+          denom: 'ibc/D28B585D6B67E2F1479BBA3E949C687289C94D33FFA0720E3A8CB0B244AD8BC6',
           exponent: 0,
           aliases: ['uaaron']
         }, {
@@ -22144,7 +22144,7 @@ const info: AssetList = {
           exponent: 6
         }],
       typeAsset: 'ics20',
-      base: 'ibc/BE2B0A9FC3A122C92883D3258098D7C6BB02F8F887E8A0BDE58609E7CA2649B2',
+      base: 'ibc/D28B585D6B67E2F1479BBA3E949C687289C94D33FFA0720E3A8CB0B244AD8BC6',
       name: 'Aaron Network',
       display: 'AARON',
       symbol: 'AARON',
@@ -22153,11 +22153,11 @@ const info: AssetList = {
           counterparty: {
             chainName: 'aaronetwork',
             baseDenom: 'uaaron',
-            channelId: 'channel-6'
+            channelId: 'channel-7'
           },
           chain: {
-            channelId: 'channel-91254',
-            path: 'transfer/channel-91254/uaaron'
+            channelId: 'channel-91942',
+            path: 'transfer/channel-91942/uaaron'
           }
         }],
       logoURIs: {
@@ -22171,6 +22171,49 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aaronetwork/images/aaron.png',
           theme: {
             circle: false
+          }
+        }]
+    },
+    {
+      description: 'Chihuahua coin',
+      denomUnits: [{
+          denom: 'ibc/794CF0A448ECA518B9FEAB3356BD283E8762460F8FE87A013E6F9DBA6C53601C',
+          exponent: 0,
+          aliases: ['factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/Chihuahua']
+        }, {
+          denom: 'Chihuahua',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/794CF0A448ECA518B9FEAB3356BD283E8762460F8FE87A013E6F9DBA6C53601C',
+      name: 'Chihuahua',
+      display: 'Chihuahua',
+      symbol: 'CHIHUAHUA',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'chihuahua',
+            baseDenom: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/Chihuahua',
+            channelId: 'channel-7'
+          },
+          chain: {
+            channelId: 'channel-113',
+            path: 'transfer/channel-113/factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/Chihuahua'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/chihuahua.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'chihuahua',
+            baseDenom: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/Chihuahua'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/chihuahua.png',
+          theme: {
+            primaryColorHex: '#444444',
+            backgroundColorHex: '#FFBF38',
+            circle: true
           }
         }]
     }
