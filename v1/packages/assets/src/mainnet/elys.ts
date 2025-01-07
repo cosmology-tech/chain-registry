@@ -554,6 +554,57 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Saga is a blockchain platform focused on providing customizable blockchain solutions with a strong emphasis on security and scalability.',
+      denom_units: [{
+          denom: 'ibc/B88C39AD6C8550716DFD64C3AD28F355633554821249AC9F8BCC21341641CD18',
+          exponent: 0,
+          aliases: ['usaga']
+        }, {
+          denom: 'saga',
+          exponent: 6
+        }],
+      base: 'ibc/B88C39AD6C8550716DFD64C3AD28F355633554821249AC9F8BCC21341641CD18',
+      name: 'Saga',
+      display: 'saga',
+      symbol: 'SAGA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
+      },
+      coingecko_id: 'saga-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            dark_mode: false
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.svg',
+          theme: {
+            primary_color_hex: '#FFFFFF',
+            dark_mode: true
+          }
+        }],
+      socials: {
+        website: 'https://www.saga.xyz/',
+        twitter: 'https://twitter.com/Sagaxyz__'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-35',
+            base_denom: 'usaga',
+            chain_name: 'saga'
+          },
+          chain: {
+            channel_id: 'channel-9'
+          }
+        }]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [{
           denom: 'ibc/825446D2FFB7DD0FE55C78C9C6D4855F253136BE596FE20E3AFCB856A86340AE',
@@ -757,6 +808,57 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-6'
+          }
+        }]
+    },
+    {
+      description: 'Saga is a blockchain platform focused on providing customizable blockchain solutions with a strong emphasis on security and scalability.',
+      denom_units: [{
+          denom: 'ibc/B88C39AD6C8550716DFD64C3AD28F355633554821249AC9F8BCC21341641CD18',
+          exponent: 0,
+          aliases: ['usaga']
+        }, {
+          denom: 'saga',
+          exponent: 6
+        }],
+      base: 'ibc/B88C39AD6C8550716DFD64C3AD28F355633554821249AC9F8BCC21341641CD18',
+      name: 'Saga',
+      display: 'saga',
+      symbol: 'SAGA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg'
+      },
+      coingecko_id: 'saga-2',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg',
+          theme: {
+            primary_color_hex: '#000000',
+            dark_mode: false
+          }
+        }, {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.svg',
+          theme: {
+            primary_color_hex: '#FFFFFF',
+            dark_mode: true
+          }
+        }],
+      socials: {
+        website: 'https://www.saga.xyz/',
+        twitter: 'https://twitter.com/Sagaxyz__'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-35',
+            base_denom: 'usaga',
+            chain_name: 'saga'
+          },
+          chain: {
+            channel_id: 'channel-9'
           }
         }]
     }

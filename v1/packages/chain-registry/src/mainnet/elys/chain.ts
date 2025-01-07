@@ -48,6 +48,10 @@ const info: Chain = {
   codebase: {
 
   },
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'
+  },
+  description: 'Your premier DeFi proof-of-stake chain. Simplified, CEX-like interface with endless possibilities. Swap, stake, Derivative trading, all your DeFi needs, in one place.',
   apis: {
     rpc: [
       {
@@ -109,6 +113,10 @@ const info: Chain = {
       {
         address: 'https://elys_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://elys-mainnet-rpc.autostake.com:443',
+        provider: 'AutoStake'
       }
     ],
     rest: [
@@ -171,6 +179,10 @@ const info: Chain = {
       {
         address: 'https://elys_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://elys-mainnet-lcd.autostake.com:443',
+        provider: 'AutoStaked'
       }
     ],
     grpc: [
@@ -213,6 +225,10 @@ const info: Chain = {
       {
         address: 'elys-grpc.moonbridge.org:443',
         provider: 'Moonbridge'
+      },
+      {
+        address: 'elys-mainnet-grpc.autostake.com:443',
+        provider: 'AutoStake'
       }
     ]
   },

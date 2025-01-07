@@ -1,0 +1,24 @@
+import { AssetList } from '@chain-registry/types';
+const info: AssetList = {
+  $schema: '../assetlist.schema.json',
+  chain_name: 'opct',
+  assets: [{
+      type_asset: 'sdk.coin',
+      description: 'The native token of OPCT Chain for Web3 Fitness GRIT Protocol',
+      denom_units: [{
+          denom: 'opct',
+          exponent: 0
+        }, {
+          denom: 'OPCT',
+          exponent: 6
+        }],
+      base: 'opct',
+      name: 'OPCT',
+      display: 'OPCT',
+      symbol: 'OPCT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/opct/images/opct.png'
+      }
+    }]
+};
+export default info;

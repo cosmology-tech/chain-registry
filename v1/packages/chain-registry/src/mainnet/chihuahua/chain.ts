@@ -91,6 +91,10 @@ const info: Chain = {
       {
         address: 'https://chihuahua.rpc.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://chihuahua-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -145,6 +149,10 @@ const info: Chain = {
       {
         address: 'https://chihuahua.api.nodeshub.online:443',
         provider: 'Nodes Hub 🛡️ 100% Slash Protected 🛡️ | Restake ✅'
+      },
+      {
+        address: 'https://chihuahua-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -183,6 +191,10 @@ const info: Chain = {
       {
         address: 'chihuahua.grpc.nodeshub.online',
         provider: 'Nodes Hub'
+      },
+      {
+        address: 'chihuahua-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -226,6 +238,12 @@ const info: Chain = {
       url: 'https://explorer.nodeshub.online/chihuahua/',
       tx_page: 'https://explorer.nodeshub.online/chihuahua/tx/${txHash}',
       account_page: 'https://explorer.nodeshub.online/chihuahua/accounts/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/chihuahua',
+      tx_page: 'https://explorer.chainroot.io/chihuahua/transactions/${txHash}',
+      account_page: 'https://explorer.chainroot.io/chihuahua/accounts/${accountAddress}'
     }
   ],
   images: [{
