@@ -128,6 +128,7 @@ import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
 import * as _onex from './onex';
 import * as _onomy from './onomy';
+import * as _opct from './opct';
 import * as _oraichain from './oraichain';
 import * as _osmosis from './osmosis';
 import * as _paloma from './paloma';
@@ -185,6 +186,7 @@ import * as _unicorn from './unicorn';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
+import * as _vector from './vector';
 import * as _xion from './xion';
 import * as _xpla from './xpla';
 import * as _zenrock from './zenrock';
@@ -319,6 +321,7 @@ const assetList: AssetList[] = [
   _omniflixhub.assetList,
   _onex.assetList,
   _onomy.assetList,
+  _opct.assetList,
   _oraichain.assetList,
   _osmosis.assetList,
   _paloma.assetList,
@@ -376,6 +379,7 @@ const assetList: AssetList[] = [
   _unification.assetList,
   _ununifi.assetList,
   _uptick.assetList,
+  _vector.assetList,
   _xion.assetList,
   _xpla.assetList,
   _zenrock.assetList,

@@ -392,6 +392,47 @@ const info: AssetList = {
             path: 'transfer/channel-0/factory/osmo1n6asrjy9754q8y9jsxqf557zmsv3s3xa5m9eg5/usherpa'
           }
         }]
+    },
+    {
+      description: 'AtomOne native coin',
+      denomUnits: [{
+          denom: 'ibc/B2219CA05421EA988F83E5E824BF69362E80A6A87503EFD18B92C91C9E03763D',
+          exponent: 0,
+          aliases: ['uatone']
+        }, {
+          denom: 'atone',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/B2219CA05421EA988F83E5E824BF69362E80A6A87503EFD18B92C91C9E03763D',
+      name: 'Atone',
+      display: 'atone',
+      symbol: 'ATONE',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'atomone',
+            baseDenom: 'uatone',
+            channelId: 'channel-1'
+          },
+          chain: {
+            channelId: 'channel-6',
+            path: 'transfer/channel-6/uatone'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'atomone',
+            baseDenom: 'uatone'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
+      }
     }
   ]
 };

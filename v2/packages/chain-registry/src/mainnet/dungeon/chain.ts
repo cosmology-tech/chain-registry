@@ -22,7 +22,7 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://dungeon.rpc.quasarstaking.ai',
+        address: 'https://dungeon-wallet.rpc.quasarstaking.ai',
         provider: 'Quasar'
       },
       {
@@ -40,7 +40,7 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://dungeon.api.quasarstaking.ai',
+        address: 'https://dungeon-wallet.api.quasarstaking.ai',
         provider: 'Quasar'
       },
       {

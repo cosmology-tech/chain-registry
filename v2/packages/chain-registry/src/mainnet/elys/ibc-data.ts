@@ -188,6 +188,35 @@ const info: IBCData[] = [
           preferred: true
         }
       }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'elys',
+      clientId: '07-tendermint-12',
+      connectionId: 'connection-12'
+    },
+    chain2: {
+      chainName: 'saga',
+      clientId: '07-tendermint-26',
+      connectionId: 'connection-21'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-9',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-35',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
   }
 ];
 export default info;

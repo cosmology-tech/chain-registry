@@ -22216,6 +22216,32 @@ const info: AssetList = {
             circle: true
           }
         }]
+    },
+    {
+      description: 'ashION - Burned ION',
+      extendedDescription: 'ashION - receipt token recieved when burning ION via ASH DAOs Furnace',
+      denomUnits: [{
+          denom: 'factory/osmo1svj5kd8kzj7xxtrd6ftjk0856ffpyj4egz7f9pd9dge5wr4kwansmefq07/ion.ash',
+          exponent: 0
+        }, {
+          denom: 'ashION',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'osmo1svj5kd8kzj7xxtrd6ftjk0856ffpyj4egz7f9pd9dge5wr4kwansmefq07',
+      base: 'factory/osmo1svj5kd8kzj7xxtrd6ftjk0856ffpyj4egz7f9pd9dge5wr4kwansmefq07/ion.ash',
+      name: 'Burned ION',
+      display: 'ashION',
+      symbol: 'ashION',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ashion.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/ashion.png',
+          theme: {
+            primaryColorHex: '#ebb093'
+          }
+        }]
     }
   ]
 };

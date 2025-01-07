@@ -128,6 +128,7 @@ import * as _okexchain from './okexchain';
 import * as _omniflixhub from './omniflixhub';
 import * as _onex from './onex';
 import * as _onomy from './onomy';
+import * as _opct from './opct';
 import * as _oraichain from './oraichain';
 import * as _osmosis from './osmosis';
 import * as _paloma from './paloma';
@@ -185,6 +186,7 @@ import * as _unicorn from './unicorn';
 import * as _unification from './unification';
 import * as _ununifi from './ununifi';
 import * as _uptick from './uptick';
+import * as _vector from './vector';
 import * as _xion from './xion';
 import * as _xpla from './xpla';
 import * as _zenrock from './zenrock';
@@ -319,6 +321,7 @@ const chains: Chain[] = [
   _omniflixhub.chain,
   _onex.chain,
   _onomy.chain,
+  _opct.chain,
   _oraichain.chain,
   _osmosis.chain,
   _paloma.chain,
@@ -376,6 +379,7 @@ const chains: Chain[] = [
   _unification.chain,
   _ununifi.chain,
   _uptick.chain,
+  _vector.chain,
   _xion.chain,
   _xpla.chain,
   _zenrock.chain,

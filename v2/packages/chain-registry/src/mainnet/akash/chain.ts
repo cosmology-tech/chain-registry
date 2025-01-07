@@ -222,6 +222,10 @@ const info: Chain = {
       {
         address: 'https://grpc.akash.bronbro.io:443',
         provider: 'Bro_n_Bro'
+      },
+      {
+        address: 'akash-mainnet-grpc.cosmonautstakes.com:14090',
+        provider: 'Cosmonaut Stakes'
       }
     ]
   },

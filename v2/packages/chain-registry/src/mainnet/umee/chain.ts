@@ -135,6 +135,10 @@ const info: Chain = {
       {
         address: 'https://umee_mainnet_rpc.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://ux-rpc.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     rest: [
@@ -209,6 +213,10 @@ const info: Chain = {
       {
         address: 'https://umee_mainnet_api.chain.whenmoonwhenlambo.money',
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
+      },
+      {
+        address: 'https://ux-api.chainroot.io',
+        provider: 'Chainroot'
       }
     ],
     grpc: [
@@ -275,6 +283,10 @@ const info: Chain = {
       {
         address: 'umee-grpc.noders.services:32090',
         provider: '[NODERS]TEAM'
+      },
+      {
+        address: 'umee-grpc.chainroot.io:443',
+        provider: 'Chainroot'
       }
     ]
   },
@@ -340,6 +352,12 @@ const info: Chain = {
       url: 'https://explorer.whenmoonwhenlambo.money/umee',
       txPage: 'https://explorer.whenmoonwhenlambo.money/umee/tx/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/umee/account/${accountAddress}'
+    },
+    {
+      kind: 'Chainroot',
+      url: 'https://explorer.chainroot.io/ux',
+      txPage: 'https://explorer.chainroot.io/ux/transactions/${txHash}',
+      accountPage: 'https://explorer.chainroot.io/ux/accounts/${accountAddress}'
     }
   ],
   images: [{
