@@ -605,6 +605,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'XION is the first walletless L1 blockchain purpose built for consumer adoption through chain abstraction.',
+      denom_units: [{
+          denom: 'ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A',
+          exponent: 0,
+          aliases: ['uxion']
+        }, {
+          denom: 'XION',
+          exponent: 6,
+          aliases: ['xion']
+        }],
+      base: 'ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A',
+      display: 'XION',
+      name: 'xion',
+      symbol: 'XION',
+      coingecko_id: 'xion-2',
+      type_asset: 'sdk.coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+        }],
+      socials: {
+        website: 'https://xion.burnt.com/',
+        twitter: 'https://twitter.com/burnt_xion'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom: 'uxion',
+            chain_name: 'xion'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
       description: 'The permissioned staking asset for Noble Chain',
       denom_units: [{
           denom: 'ibc/825446D2FFB7DD0FE55C78C9C6D4855F253136BE596FE20E3AFCB856A86340AE',
@@ -859,6 +898,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-9'
+          }
+        }]
+    },
+    {
+      description: 'XION is the first walletless L1 blockchain purpose built for consumer adoption through chain abstraction.',
+      denom_units: [{
+          denom: 'ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A',
+          exponent: 0,
+          aliases: ['uxion']
+        }, {
+          denom: 'XION',
+          exponent: 6,
+          aliases: ['xion']
+        }],
+      base: 'ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A',
+      display: 'XION',
+      name: 'xion',
+      symbol: 'XION',
+      coingecko_id: 'xion-2',
+      type_asset: 'sdk.coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+        }],
+      socials: {
+        website: 'https://xion.burnt.com/',
+        twitter: 'https://twitter.com/burnt_xion'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-9',
+            base_denom: 'uxion',
+            chain_name: 'xion'
+          },
+          chain: {
+            channel_id: 'channel-8'
           }
         }]
     }
