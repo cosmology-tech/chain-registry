@@ -213,6 +213,10 @@ const info: Chain = {
       {
         address: 'https://osmosis-rpc.chainroot.io',
         provider: 'Chainroot'
+      },
+      {
+        address: 'https://osmosis.rpc.quasarstaking.ai:443',
+        provider: 'Quasar'
       }
     ],
     rest: [
@@ -319,6 +323,10 @@ const info: Chain = {
       {
         address: 'https://osmosis-api.chainroot.io',
         provider: 'Chainroot'
+      },
+      {
+        address: 'https://osmosis.api.quasarstaking.ai:443',
+        provider: 'Quasar'
       }
     ],
     grpc: [
@@ -393,6 +401,10 @@ const info: Chain = {
       {
         address: 'osmosis-grpc.chainroot.io:443',
         provider: 'Chainroot'
+      },
+      {
+        address: 'osmosis.grpc.quasarstaking.ai:443',
+        provider: 'Quasar'
       }
     ]
   },

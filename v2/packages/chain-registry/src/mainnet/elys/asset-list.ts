@@ -158,8 +158,7 @@ const info: AssetList = {
           aliases: ['microaxl']
         }, {
           denom: 'axl',
-          exponent: 6,
-          aliases: []
+          exponent: 6
         }],
       typeAsset: 'ics20',
       base: 'ibc/9463E39D230614B313B487836D13A392BD1731928713D4C8427A083627048DB3',
@@ -192,6 +191,184 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg'
+      }
+    },
+    {
+      description: 'Akash Network Token',
+      denomUnits: [{
+          denom: 'ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098',
+          exponent: 0,
+          aliases: ['uakt']
+        }, {
+          denom: 'akt',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098',
+      name: 'Akash',
+      display: 'akt',
+      symbol: 'AKT',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'akash',
+            baseDenom: 'uakt',
+            channelId: 'channel-129'
+          },
+          chain: {
+            channelId: 'channel-5',
+            path: 'transfer/channel-5/uakt'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'akash',
+            baseDenom: 'uakt'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg',
+          theme: {
+            primaryColorHex: '#bc342c'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.svg'
+      }
+    },
+    {
+      description: 'Celestia Network Token',
+      denomUnits: [{
+          denom: 'ibc/45D6B52CAD911A15BD9C2F5FFDA80E26AFCB05C7CD520070790ABC86D2B24229',
+          exponent: 0,
+          aliases: ['utia']
+        }, {
+          denom: 'tia',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/45D6B52CAD911A15BD9C2F5FFDA80E26AFCB05C7CD520070790ABC86D2B24229',
+      name: 'Celestia',
+      display: 'tia',
+      symbol: 'TIA',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'celestia',
+            baseDenom: 'utia',
+            channelId: 'channel-50'
+          },
+          chain: {
+            channelId: 'channel-4',
+            path: 'transfer/channel-4/utia'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'celestia',
+            baseDenom: 'utia'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+          theme: {
+            primaryColorHex: '#7c2cfb'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+      }
+    },
+    {
+      description: 'Xion Network Token',
+      denomUnits: [{
+          denom: 'ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A',
+          exponent: 0,
+          aliases: ['uxion']
+        }, {
+          denom: 'xion',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A',
+      name: 'Xion',
+      display: 'xion',
+      symbol: 'XION',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'xion',
+            baseDenom: 'uxion',
+            channelId: 'channel-9'
+          },
+          chain: {
+            channelId: 'channel-8',
+            path: 'transfer/channel-8/uxion'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'xion',
+            baseDenom: 'uxion'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png',
+          theme: {
+            primaryColorHex: '#1c1c1c'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
+      }
+    },
+    {
+      description: 'Saga Network Token',
+      denomUnits: [{
+          denom: 'ibc/B88C39AD6C8550716DFD64C3AD28F355633554821249AC9F8BCC21341641CD18',
+          exponent: 0,
+          aliases: ['usaga']
+        }, {
+          denom: 'saga',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/B88C39AD6C8550716DFD64C3AD28F355633554821249AC9F8BCC21341641CD18',
+      name: 'Saga',
+      display: 'saga',
+      symbol: 'SAGA',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'saga',
+            baseDenom: 'usaga',
+            channelId: 'channel-35'
+          },
+          chain: {
+            channelId: 'channel-9',
+            path: 'transfer/channel-9/usaga'
+          }
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.svg',
+          theme: {
+            primaryColorHex: '#FFFFFF',
+            darkMode: true
+          }
+        }, {
+          imageSync: {
+            chainName: 'saga',
+            baseDenom: 'usaga'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga.svg',
+          theme: {
+            primaryColorHex: '#000000',
+            darkMode: false
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/saga/images/saga_white.svg'
       }
     }
   ]
