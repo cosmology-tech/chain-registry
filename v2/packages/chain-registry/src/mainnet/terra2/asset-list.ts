@@ -1454,6 +1454,36 @@ const info: AssetList = {
             primaryColorHex: '#1c1c1c'
           }
         }]
+    },
+    {
+      description: 'ERIS Arbitrage LUNA',
+      typeAsset: 'cw20',
+      address: 'terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+      denomUnits: [{
+          denom: 'cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+          exponent: 0
+        }, {
+          denom: 'arbLUNA',
+          exponent: 6
+        }],
+      base: 'cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+      name: 'ERIS Arb LUNA',
+      display: 'arbLUNA',
+      symbol: 'arbLUNA',
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+        }],
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'terra2',
+            baseDenom: 'uluna'
+          },
+          provider: 'ERIS Protocol'
+        }]
     }
   ]
 };
