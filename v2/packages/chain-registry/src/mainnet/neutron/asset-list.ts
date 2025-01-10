@@ -1414,6 +1414,47 @@ const info: AssetList = {
         twitter: 'https://x.com/Dropdotmoney'
       },
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'IBC NEPT, Neptune Protocol token, on Neutron chain',
+      denomUnits: [{
+          denom: 'ibc/C084B31AB4906CD6CC65CB779B1527A66B6C98629259E3548B2F20D2753D5837',
+          exponent: 0
+        }, {
+          denom: 'NEPT',
+          exponent: 6
+        }],
+      base: 'ibc/C084B31AB4906CD6CC65CB779B1527A66B6C98629259E3548B2F20D2753D5837',
+      name: 'Neptune Finance',
+      display: 'NEPT',
+      symbol: 'NEPT',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+            channelId: 'channel-177'
+          },
+          chain: {
+            channelId: 'channel-60',
+            path: 'transfer/channel-60/factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nept.png',
+          theme: {
+            primaryColorHex: '#21549f'
+          }
+        }],
+      socials: {
+        website: 'https://nept.finance/',
+        twitter: 'https://x.com/neptune_finance'
+      },
+      typeAsset: 'ics20'
     }
   ]
 };

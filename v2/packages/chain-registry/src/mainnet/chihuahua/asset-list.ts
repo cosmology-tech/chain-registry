@@ -420,6 +420,37 @@ const info: AssetList = {
         twitter: 'https://x.com/chihuahuacoinx'
       },
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'WLF coin',
+      extendedDescription: '$WLF Wire Liberty Fence meme coin! Wirelibertyfence.xyz',
+      denomUnits: [{
+          denom: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/wirelibertyfence',
+          exponent: 0
+        }, {
+          denom: 'WLF',
+          exponent: 6
+        }],
+      base: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/wirelibertyfence',
+      name: 'wirelibertyfence',
+      display: 'WLF',
+      symbol: 'WLF',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/wirelibertyfence.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/wirelibertyfence.png',
+          theme: {
+            primaryColorHex: '#BD963D',
+            backgroundColorHex: '#6C165E',
+            circle: true
+          }
+        }],
+      socials: {
+        website: 'https://wirelibertyfence.xyz/',
+        twitter: 'https://x.com/Wirelibertyfence_CTO'
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };

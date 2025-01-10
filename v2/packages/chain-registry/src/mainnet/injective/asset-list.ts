@@ -1005,6 +1005,118 @@ const info: AssetList = {
             primaryColorHex: '#1c1c1c'
           }
         }]
+    },
+    {
+      description: 'A receipt token for lent USDC issued by the Neptune Protocol.',
+      denomUnits: [{
+          denom: 'inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz',
+          exponent: 0
+        }, {
+          denom: 'nUSDC',
+          exponent: 6
+        }],
+      base: 'inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz',
+      name: 'Neptune Receipt USDC',
+      display: 'nUSDC',
+      symbol: 'nUSDC',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E',
+            contract: 'inj1nc7gjkf2mhp34a6gquhurg8qahnw5kxs5u3s4u'
+          },
+          provider: 'Neptune'
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nusdc.png',
+          theme: {
+            primaryColorHex: '#2775ca'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Bridge Solana on Injective chain via Wormhole gateway IBC channel',
+      denomUnits: [{
+          denom: 'ibc/A8B0B746B5AB736C2D8577259B510D56B8AF598008F68041E3D634BCDE72BE97',
+          exponent: 0
+        }, {
+          denom: 'sol',
+          exponent: 8
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/A8B0B746B5AB736C2D8577259B510D56B8AF598008F68041E3D634BCDE72BE97',
+      name: 'Solana',
+      display: 'sol',
+      symbol: 'SOL',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'gateway',
+            baseDenom: 'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA',
+            channelId: 'channel-13'
+          },
+          chain: {
+            channelId: 'channel-183',
+            path: 'transfer/channel-183/factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/8sYgCzLRJC3J7qPn2bNbx6PiGcarhyx8rBhVaNnfvHCA'
+          }
+        }]
+    },
+    {
+      description: 'A receipt token for lent SOL issued by the Neptune Protocol.',
+      denomUnits: [{
+          denom: 'inj1zcwr03uqw57g88nqvgpwfkazwutpqz9kplny4s',
+          exponent: 0
+        }, {
+          denom: 'nSOL',
+          exponent: 8
+        }],
+      base: 'inj1zcwr03uqw57g88nqvgpwfkazwutpqz9kplny4s',
+      name: 'Neptune Receipt SOL',
+      display: 'nSOL',
+      symbol: 'nSOL',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'ibc/A8B0B746B5AB736C2D8577259B510D56B8AF598008F68041E3D634BCDE72BE97',
+            contract: 'inj1nc7gjkf2mhp34a6gquhurg8qahnw5kxs5u3s4u'
+          },
+          provider: 'Neptune'
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nsol.png',
+          theme: {
+            primaryColorHex: '#7964ea'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The native governance and staking token for the Neptune Finance protocol',
+      denomUnits: [{
+          denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+          exponent: 0
+        }, {
+          denom: 'NEPT',
+          exponent: 6
+        }],
+      base: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+      name: 'Neptune Finance',
+      display: 'NEPT',
+      symbol: 'NEPT',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/nept.png',
+          theme: {
+            primaryColorHex: '#21549f'
+          }
+        }],
+      socials: {
+        website: 'https://nept.finance/',
+        twitter: 'https://x.com/neptune_finance'
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };

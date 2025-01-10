@@ -22242,6 +22242,49 @@ const info: AssetList = {
             primaryColorHex: '#ebb093'
           }
         }]
+    },
+    {
+      description: 'WLF coin',
+      denomUnits: [{
+          denom: 'ibc/3D00ACF371FC6B7BC871399B1909DDE18749FA19DE6B7A4F74E1D96BC073B3BC',
+          exponent: 0,
+          aliases: ['factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/wirelibertyfence']
+        }, {
+          denom: 'wirelibertyfence',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/3D00ACF371FC6B7BC871399B1909DDE18749FA19DE6B7A4F74E1D96BC073B3BC',
+      name: 'wirelibertyfence',
+      display: 'wirelibertyfence',
+      symbol: 'WLF',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'chihuahua',
+            baseDenom: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/wirelibertyfence',
+            channelId: 'channel-7'
+          },
+          chain: {
+            channelId: 'channel-113',
+            path: 'transfer/channel-113/factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/wirelibertyfence'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/wirelibertyfence.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'chihuahua',
+            baseDenom: 'factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/wirelibertyfence'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/wirelibertyfence.png',
+          theme: {
+            primaryColorHex: '#BD963D',
+            backgroundColorHex: '#6C165E',
+            circle: true
+          }
+        }]
     }
   ]
 };

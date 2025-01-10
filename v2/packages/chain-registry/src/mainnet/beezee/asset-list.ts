@@ -433,6 +433,54 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
       }
+    },
+    {
+      description: 'PHMN from Osmosis',
+      denomUnits: [{
+          denom: 'ibc/12C0B8B561AFCFDA3C73DEE0F7F84AA2B860D48493C27E8E81A5D14724FAB08B',
+          exponent: 0,
+          aliases: ['cw20:juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l']
+        }, {
+          denom: 'phmn',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/12C0B8B561AFCFDA3C73DEE0F7F84AA2B860D48493C27E8E81A5D14724FAB08B',
+      name: 'POSTHUMAN',
+      display: 'phmn',
+      symbol: 'PHMN',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'ibc/D3B574938631B0A1BA704879020C696E514CFADAA7643CDE4BD5EB010BDE327B',
+            channelId: 'channel-340'
+          },
+          chain: {
+            channelId: 'channel-0',
+            path: 'transfer/channel-0/transfer/channel-169/cw20:juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'juno',
+            baseDenom: 'cw20:juno1rws84uz7969aaa7pej303udhlkt3j9ca0l3egpcae98jwak9quzq8szn2l'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/phmn.svg',
+          theme: {
+            primaryColorHex: '#bbc2c6'
+          }
+        }],
+      socials: {
+        website: 'https://posthuman.digital/',
+        twitter: 'https://twitter.com/POSTHUMAN_DVS'
+      }
     }
   ]
 };
