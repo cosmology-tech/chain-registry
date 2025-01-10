@@ -11427,6 +11427,42 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'ERIS Arbitrage LUNA',
+      type_asset: 'cw20',
+      address: 'terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+      denom_units: [{
+          denom: 'ibc/9D5A1DCC543A59EA1802437F33316EE273D35A092CCD84B5CBFD34B89AA28E85',
+          exponent: 0,
+          aliases: ['cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490']
+        }, {
+          denom: 'arbLUNA',
+          exponent: 6
+        }],
+      base: 'ibc/9D5A1DCC543A59EA1802437F33316EE273D35A092CCD84B5CBFD34B89AA28E85',
+      name: 'ERIS Arb LUNA',
+      display: 'arbLUNA',
+      symbol: 'arbLUNA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
       description: 'The native token cw20 for SIENNA on Secret Network',
       denom_units: [{
           denom: 'ibc/D8536583D4A5F7EBDD5D80056E6085501B4685C67C89930A5FD2F0C3A2EFB228',
@@ -20152,6 +20188,42 @@ const assets: AssetList = {
             port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
             channel_id: 'channel-87',
             base_denom: 'cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-2'
+          }
+        }]
+    },
+    {
+      description: 'ERIS Arbitrage LUNA',
+      type_asset: 'cw20',
+      address: 'terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+      denom_units: [{
+          denom: 'ibc/9D5A1DCC543A59EA1802437F33316EE273D35A092CCD84B5CBFD34B89AA28E85',
+          exponent: 0,
+          aliases: ['cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490']
+        }, {
+          denom: 'arbLUNA',
+          exponent: 6
+        }],
+      base: 'ibc/9D5A1DCC543A59EA1802437F33316EE273D35A092CCD84B5CBFD34B89AA28E85',
+      name: 'ERIS Arb LUNA',
+      display: 'arbLUNA',
+      symbol: 'arbLUNA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
             chain_name: 'terra2'
           },
           chain: {

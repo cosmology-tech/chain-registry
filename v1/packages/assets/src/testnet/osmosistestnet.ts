@@ -462,6 +462,76 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Manifest testnet native token',
+      denom_units: [{
+          denom: 'ibc/8402769A51AEE1CDF35223998D284E937EBF03F4A2CE43EC10BB028BB5AD29C8',
+          exponent: 0,
+          aliases: ['umfx']
+        }, {
+          denom: 'mfx',
+          exponent: 6
+        }],
+      base: 'ibc/8402769A51AEE1CDF35223998D284E937EBF03F4A2CE43EC10BB028BB5AD29C8',
+      name: 'Manifest Testnet Token',
+      display: 'mfx',
+      symbol: 'MFX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'umfx',
+            chain_name: 'manifesttestnet'
+          },
+          chain: {
+            channel_id: 'channel-10016'
+          }
+        }]
+    },
+    {
+      description: 'Proof of Authority token for the Manifest testnet',
+      denom_units: [{
+          denom: 'ibc/A9339AC5FDA8086F277935ED905B4B0FCF1824DBACAB11B80EFA8E0F889FF45E',
+          exponent: 0,
+          aliases: ['upoa']
+        }, {
+          denom: 'poa',
+          exponent: 6
+        }],
+      base: 'ibc/A9339AC5FDA8086F277935ED905B4B0FCF1824DBACAB11B80EFA8E0F889FF45E',
+      name: 'Manifest Testnet Token',
+      display: 'poa',
+      symbol: 'POA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'upoa',
+            chain_name: 'manifesttestnet'
+          },
+          chain: {
+            channel_id: 'channel-10016'
+          }
+        }]
+    },
+    {
       description: 'The native token of Mars Protocol',
       denom_units: [{
           denom: 'ibc/66A7ADA623D33D0B66C6890FE3E1AF3D638D56CE2B56F8BDA210B2AA62016216',
@@ -1111,6 +1181,76 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4357'
+          }
+        }]
+    },
+    {
+      description: 'Manifest testnet native token',
+      denom_units: [{
+          denom: 'ibc/8402769A51AEE1CDF35223998D284E937EBF03F4A2CE43EC10BB028BB5AD29C8',
+          exponent: 0,
+          aliases: ['umfx']
+        }, {
+          denom: 'mfx',
+          exponent: 6
+        }],
+      base: 'ibc/8402769A51AEE1CDF35223998D284E937EBF03F4A2CE43EC10BB028BB5AD29C8',
+      name: 'Manifest Testnet Token',
+      display: 'mfx',
+      symbol: 'MFX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'umfx',
+            chain_name: 'manifesttestnet'
+          },
+          chain: {
+            channel_id: 'channel-10016'
+          }
+        }]
+    },
+    {
+      description: 'Proof of Authority token for the Manifest testnet',
+      denom_units: [{
+          denom: 'ibc/A9339AC5FDA8086F277935ED905B4B0FCF1824DBACAB11B80EFA8E0F889FF45E',
+          exponent: 0,
+          aliases: ['upoa']
+        }, {
+          denom: 'poa',
+          exponent: 6
+        }],
+      base: 'ibc/A9339AC5FDA8086F277935ED905B4B0FCF1824DBACAB11B80EFA8E0F889FF45E',
+      name: 'Manifest Testnet Token',
+      display: 'poa',
+      symbol: 'POA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'upoa',
+            chain_name: 'manifesttestnet'
+          },
+          chain: {
+            channel_id: 'channel-10016'
           }
         }]
     },
