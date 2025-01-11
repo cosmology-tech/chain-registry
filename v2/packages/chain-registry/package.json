@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/v2",
-  "version": "1.71.88",
+  "version": "1.71.89",
   "description": "Cosmos chain registry ⚛️",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry/tree/master/packages/chain-registry#readme",
