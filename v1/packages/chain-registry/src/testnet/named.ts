@@ -73,6 +73,7 @@ export * as nomictestnet from './nomictestnet';
 export * as nyxtestnet from './nyxtestnet';
 export * as okp4testnet from './okp4testnet';
 export * as osmosistestnet from './osmosistestnet';
+export * as pelltestnet from './pelltestnet';
 export * as permtestnet from './permtestnet';
 export * as persistencetestnet from './persistencetestnet';
 export * as persistencetestnet2 from './persistencetestnet2';

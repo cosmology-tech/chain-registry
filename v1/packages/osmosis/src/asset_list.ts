@@ -557,14 +557,14 @@ const asset_list: AssetList = {
     {
       description: 'The native staking and governance token of AtomOne',
       denom_units: [{
-          denom: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+          denom: 'ibc/BC26A7A805ECD6822719472BCB7842A48EF09DF206182F8F259B2593EB5D23FB',
           exponent: 0,
           aliases: ['uatone']
         }, {
           denom: 'atone',
           exponent: 6
         }],
-      base: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+      base: 'ibc/BC26A7A805ECD6822719472BCB7842A48EF09DF206182F8F259B2593EB5D23FB',
       name: 'Atone',
       display: 'atone',
       symbol: 'ATONE',
@@ -584,12 +584,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-2',
             base_denom: 'uatone',
             chain_name: 'atomone'
           },
           chain: {
-            channel_id: 'channel-85309'
+            channel_id: 'channel-94814'
           }
         }]
     },
@@ -6502,14 +6502,14 @@ const asset_list: AssetList = {
     {
       description: 'The native staking and governance token of AtomOne',
       denom_units: [{
-          denom: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+          denom: 'ibc/BC26A7A805ECD6822719472BCB7842A48EF09DF206182F8F259B2593EB5D23FB',
           exponent: 0,
           aliases: ['uatone']
         }, {
           denom: 'atone',
           exponent: 6
         }],
-      base: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+      base: 'ibc/BC26A7A805ECD6822719472BCB7842A48EF09DF206182F8F259B2593EB5D23FB',
       name: 'Atone',
       display: 'atone',
       symbol: 'ATONE',
@@ -6529,12 +6529,12 @@ const asset_list: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-0',
+            channel_id: 'channel-2',
             base_denom: 'uatone',
             chain_name: 'atomone'
           },
           chain: {
-            channel_id: 'channel-85309'
+            channel_id: 'channel-94814'
           }
         }]
     },

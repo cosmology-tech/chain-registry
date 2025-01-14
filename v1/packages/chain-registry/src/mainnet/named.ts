@@ -68,6 +68,7 @@ export * as fxcore from './fxcore';
 export * as galaxy from './galaxy';
 export * as gateway from './gateway';
 export * as genesisl1 from './genesisl1';
+export * as ggezchain from './ggezchain';
 export * as gitopia from './gitopia';
 export * as govgen from './govgen';
 export * as gravitybridge from './gravitybridge';
