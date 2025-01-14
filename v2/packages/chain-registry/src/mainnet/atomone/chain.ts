@@ -97,6 +97,18 @@ const info: Chain = {
       {
         address: 'https://atomone-mainnet-rpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://rpc.atomone-1.atomone.aviaone.com:443',
+        provider: 'AVIAONE.com 🟢'
+      },
+      {
+        address: 'https://atomone.rpc.m.stavr.tech:443',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://rpc.atomone.citizenweb3.com:443',
+        provider: 'Citizen Web3'
       }
     ],
     rest: [
@@ -139,6 +151,18 @@ const info: Chain = {
       {
         address: 'https://atomone-mainnet-lcd.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'https://api.atomone-1.atomone.aviaone.com',
+        provider: 'AVIAONE.com 🟢'
+      },
+      {
+        address: 'https://atomone.api.m.stavr.tech',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://api.atomone.citizenweb3.com',
+        provider: 'Citizen Web3'
       }
     ],
     grpc: [
@@ -165,6 +189,18 @@ const info: Chain = {
       {
         address: 'atomone-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'http://grpc.atomone-1.atomone.aviaone.com:9102',
+        provider: 'AVIAONE.com 🟢'
+      },
+      {
+        address: 'atomone.grpc.m.stavr.tech:7201',
+        provider: '🔥STAVR🔥'
+      },
+      {
+        address: ' grpc.atomone.citizenweb3.com',
+        provider: 'Citizen Web3'
       }
     ]
   },
@@ -188,10 +224,22 @@ const info: Chain = {
       accountPage: 'https://explorer.ist/atomone/account/${accountAddress}'
     },
     {
+      kind: '🔥STAVR🔥 Explorer',
+      url: 'https://explorer.stavr.tech/Atomone-Mainnet',
+      txPage: 'https://explorer.stavr.tech/Atomone-Mainnet/tx/${txHash}',
+      accountPage: 'https://explorer.stavr.tech/Atomone-Mainnet/account/${accountAddress}'
+    },
+    {
       kind: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥',
       url: 'https://explorer.whenmoonwhenlambo.money/atomone',
       txPage: 'https://explorer.whenmoonwhenlambo.money/atomone/tx/${txHash}',
       accountPage: 'https://explorer.whenmoonwhenlambo.money/atomone/account/${accountAddress}'
+    },
+    {
+      kind: 'AVIAONE.com 🟢',
+      url: 'https://mainnet.explorer.aviaone.com/atomone',
+      txPage: 'https://mainnet.explorer.aviaone.com/atomone/tx/${txHash}',
+      accountPage: 'https://mainnet.explorer.aviaone.com/atomone/account/${accountAddress}'
     }
   ],
   images: [{

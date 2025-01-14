@@ -72,6 +72,10 @@ const info: Chain = {
       {
         address: 'https://kava.drpc.org',
         provider: 'dRPC'
+      },
+      {
+        address: 'https://rpc.kava.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     rest: [
@@ -102,6 +106,10 @@ const info: Chain = {
       {
         address: 'https://kava-rest.publicnode.com',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://api.kava.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     grpc: [
@@ -128,6 +136,10 @@ const info: Chain = {
       {
         address: 'kava-grpc.publicnode.com:443',
         provider: 'Allnodes ⚡️ Nodes & Staking'
+      },
+      {
+        address: 'https://grpc.kava.nodestake.org',
+        provider: 'NodeStake'
       }
     ],
     evmHttpJsonrpc: [
@@ -142,6 +154,10 @@ const info: Chain = {
       {
         address: 'https://kava.api.onfinality.io/public',
         provider: 'OnFinality'
+      },
+      {
+        address: 'https://evmrpc.kava.nodestake.org',
+        provider: 'NodeStake'
       }
     ]
   },

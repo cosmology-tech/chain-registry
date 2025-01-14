@@ -59,14 +59,23 @@ const info: Chain = {
     rpc: [{
         address: 'https://rpc.diamond.zenrocklabs.io/',
         provider: 'zenrock'
+      }, {
+        address: 'https://rpc.zenrock.nodestake.org',
+        provider: 'NodeStake'
       }],
     rest: [{
         address: 'https://api.diamond.zenrocklabs.io/',
         provider: 'zenrock'
+      }, {
+        address: 'https://api.zenrock.nodestake.org',
+        provider: 'NodeStake'
       }],
     grpc: [{
         address: 'https://grpc.diamond.zenrocklabs.io/',
         provider: 'zenrock'
+      }, {
+        address: 'https://grpc.zenrock.nodestake.org',
+        provider: 'NodeStake'
       }]
   },
   logoURIs: {

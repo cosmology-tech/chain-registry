@@ -70,6 +70,7 @@ import * as _fxcore from './fxcore';
 import * as _galaxy from './galaxy';
 import * as _gateway from './gateway';
 import * as _genesisl1 from './genesisl1';
+import * as _ggezchain from './ggezchain';
 import * as _gitopia from './gitopia';
 import * as _govgen from './govgen';
 import * as _gravitybridge from './gravitybridge';
@@ -263,6 +264,7 @@ const assetList: AssetList[] = [
   _galaxy.assetList,
   _gateway.assetList,
   _genesisl1.assetList,
+  _ggezchain.assetList,
   _gitopia.assetList,
   _govgen.assetList,
   _gravitybridge.assetList,

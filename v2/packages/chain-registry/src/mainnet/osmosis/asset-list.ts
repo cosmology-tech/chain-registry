@@ -22285,6 +22285,78 @@ const info: AssetList = {
             circle: true
           }
         }]
+    },
+    {
+      description: 'Ninja Blaze is a decentralized multi-chain gaming platform powered by Injective Blockchain.',
+      extendedDescription: 'The only truly decentralized gaming platform. Shape the future of gaming by owning Ninja Blaze tokens.',
+      denomUnits: [{
+          denom: 'ibc/DC1DF96AB7F5109433C3D5FDADE83F8EC2D522B80FAB0593BC1A2781F36AD633',
+          exponent: 0,
+          aliases: ['uNBZ']
+        }, {
+          denom: 'NBZ',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/DC1DF96AB7F5109433C3D5FDADE83F8EC2D522B80FAB0593BC1A2781F36AD633',
+      name: 'Ninja Blaze Token',
+      display: 'NBZ',
+      symbol: 'NBZ',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz/NBZ',
+            channelId: 'channel-8'
+          },
+          chain: {
+            channelId: 'channel-122',
+            path: 'transfer/channel-122/factory/inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz/NBZ'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz/NBZ'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.svg',
+          theme: {
+            primaryColorHex: '#9890f9'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.svg'
+      },
+      socials: {
+        website: 'https://blaze.ninja',
+        twitter: 'https://x.com/NinjaBlazeApp'
+      }
+    },
+    {
+      description: 'CULT - Less Brainwashing, More Utility',
+      extendedDescription: 'CULT - Less Brainwashing, More Utility\n\n$CULT is more than a token; it\'s your key to ascend within the Order of Architects. Each token empowers you to mint and upgrade Architect NFTs, navigating through rites that elevate their mystical powers. Engage directly in our unique Streamswap process, beginning with a USDC deposit, transitioning smoothly into $CULT.\n\nFair Launch: Our token launch excludes whitelists and bots, ensuring a transparent and equitable distribution for all. Streamswap Mechanics: Deposit $USDC during the 72-hour Bootstrapping Phase, followed by a 1-hour Streaming Phase to convert into $CULT, ensuring a smooth and fair token distribution.',
+      denomUnits: [{
+          denom: 'factory/osmo1qdvwftqd8ml6t9w6dmj97m03ck5ghqqmd8y7cm/cult',
+          exponent: 0,
+          aliases: ['ucult']
+        }, {
+          denom: 'CULT',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'osmo1qdvwftqd8ml6t9w6dmj97m03ck5ghqqmd8y7cm',
+      base: 'factory/osmo1qdvwftqd8ml6t9w6dmj97m03ck5ghqqmd8y7cm/cult',
+      name: 'CULT',
+      display: 'CULT',
+      symbol: 'CULT',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/cult.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/cult.png'
+        }]
     }
   ]
 };

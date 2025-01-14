@@ -644,45 +644,36 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'Ninja Blaze Token',
+      name: 'Ninja Blaze',
+      description: 'Ninja Blaze is a decentralized multi-chain gaming platform powered by Injective Blockchain.',
+      extendedDescription: 'The only truly decentralized gaming platform. Shape the future of gaming by owning Ninja Blaze tokens.',
       denomUnits: [{
-          denom: 'ibc/1011E4D6D4800DA9B8F21D7C207C0B0C18E54E614A8576037F066B775210709D',
+          denom: 'factory/inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz/NBZ',
           exponent: 0,
           aliases: ['uNBZ']
         }, {
           denom: 'NBZ',
           exponent: 6
         }],
-      typeAsset: 'ics20',
-      base: 'ibc/1011E4D6D4800DA9B8F21D7C207C0B0C18E54E614A8576037F066B775210709D',
-      name: 'Ninja Blaze Token',
+      base: 'factory/inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz/NBZ',
       display: 'NBZ',
       symbol: 'NBZ',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'neutron',
-            baseDenom: 'factory/neutron1a6ydq8urdj0gkvjw9e9e5y9r5ce2qegm9m4xufpt96kcm60kmuass0mqq4/nbz',
-            channelId: 'channel-60'
-          },
-          chain: {
-            channelId: 'channel-177',
-            path: 'transfer/channel-177/factory/neutron1a6ydq8urdj0gkvjw9e9e5y9r5ce2qegm9m4xufpt96kcm60kmuass0mqq4/nbz'
-          }
-        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.svg'
+      },
       images: [{
-          imageSync: {
-            chainName: 'neutron',
-            baseDenom: 'factory/neutron1a6ydq8urdj0gkvjw9e9e5y9r5ce2qegm9m4xufpt96kcm60kmuass0mqq4/nbz'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/NBZ.svg',
           theme: {
             primaryColorHex: '#9890f9'
           }
         }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/NBZ.png'
-      }
+      socials: {
+        website: 'https://blaze.ninja',
+        twitter: 'https://x.com/NinjaBlazeApp'
+      },
+      typeAsset: 'sdk.coin'
     },
     {
       description: 'Talis governance token',

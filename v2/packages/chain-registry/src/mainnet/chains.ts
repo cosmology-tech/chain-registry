@@ -70,6 +70,7 @@ import * as _fxcore from './fxcore';
 import * as _galaxy from './galaxy';
 import * as _gateway from './gateway';
 import * as _genesisl1 from './genesisl1';
+import * as _ggezchain from './ggezchain';
 import * as _gitopia from './gitopia';
 import * as _govgen from './govgen';
 import * as _gravitybridge from './gravitybridge';
@@ -263,6 +264,7 @@ const chains: Chain[] = [
   _galaxy.chain,
   _gateway.chain,
   _genesisl1.chain,
+  _ggezchain.chain,
   _gitopia.chain,
   _govgen.chain,
   _gravitybridge.chain,

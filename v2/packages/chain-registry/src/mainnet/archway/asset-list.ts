@@ -386,6 +386,45 @@ const info: AssetList = {
             primaryColorHex: '#1c1c1c'
           }
         }]
+    },
+    {
+      description: 'CULT - Less Brainwashing, More Utility',
+      extendedDescription: 'CULT - Less Brainwashing, More Utility\n\n$CULT is more than a token; it\'s your key to ascend within the Order of Architects. Each token empowers you to mint and upgrade Architect NFTs, navigating through rites that elevate their mystical powers. Engage directly in our unique Streamswap process, beginning with a USDC deposit, transitioning smoothly into $CULT.\n\nFair Launch: Our token launch excludes whitelists and bots, ensuring a transparent and equitable distribution for all. Streamswap Mechanics: Deposit $USDC during the 72-hour Bootstrapping Phase, followed by a 1-hour Streaming Phase to convert into $CULT, ensuring a smooth and fair token distribution.',
+      denomUnits: [{
+          denom: 'ibc/7364C29ED876F05A82628B738AA2F0D53724991FD0220858570D7A3844B67F58',
+          exponent: 0,
+          aliases: ['ucult']
+        }, {
+          denom: 'CULT',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/7364C29ED876F05A82628B738AA2F0D53724991FD0220858570D7A3844B67F58',
+      name: 'CULT',
+      display: 'CULT',
+      symbol: 'CULT',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/cult.png'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1qdvwftqd8ml6t9w6dmj97m03ck5ghqqmd8y7cm/cult',
+            channelId: 'channel-1429'
+          },
+          chain: {
+            channelId: 'channel-1',
+            path: 'transfer/channel-1/factory/osmo1qdvwftqd8ml6t9w6dmj97m03ck5ghqqmd8y7cm/cult'
+          }
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/cult.png',
+          imageSync: {
+            chainName: 'osmosis',
+            baseDenom: 'factory/osmo1qdvwftqd8ml6t9w6dmj97m03ck5ghqqmd8y7cm/cult'
+          }
+        }]
     }
   ]
 };

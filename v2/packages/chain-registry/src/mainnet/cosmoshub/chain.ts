@@ -224,6 +224,10 @@ const info: Chain = {
       {
         address: 'https://cosmos-rpc.ibs.team',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://rpc.cosmoshub-4-archive.citizenweb3.com:443',
+        provider: 'Citizen Web3'
       }
     ],
     rest: [
@@ -354,6 +358,10 @@ const info: Chain = {
       {
         address: 'https://cosmos-api.ibs.team',
         provider: 'Inter Blockchain Services'
+      },
+      {
+        address: 'https://api.cosmoshub-4-archive.citizenweb3.com:443',
+        provider: 'Citizen Web3'
       }
     ],
     grpc: [
@@ -444,6 +452,10 @@ const info: Chain = {
       {
         address: 'cosmoshub.grpc.quasarstaking.ai',
         provider: 'Quasar'
+      },
+      {
+        address: 'grpc.cosmoshub-4-archive.citizenweb3.com',
+        provider: 'Citizen Web3'
       }
     ]
   },
