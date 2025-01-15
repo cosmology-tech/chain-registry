@@ -719,6 +719,36 @@ const info: IBCData[] = [
     },
     chain2: {
       chainName: 'osmosistestnet',
+      clientId: '07-tendermint-3711',
+      connectionId: 'connection-3235'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-0',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-8272',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true,
+          dex: 'osmosis'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'nolustestnet1',
+      clientId: '07-tendermint-0',
+      connectionId: 'connection-0'
+    },
+    chain2: {
+      chainName: 'osmosistestnet',
       clientId: '07-tendermint-102',
       connectionId: 'connection-120'
     },

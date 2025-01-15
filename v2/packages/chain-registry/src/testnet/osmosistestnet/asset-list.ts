@@ -800,6 +800,46 @@ const info: AssetList = {
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
         }]
+    },
+    {
+      description: 'Manifest Testnet Token',
+      denomUnits: [{
+          denom: 'ibc/8402769A51AEE1CDF35223998D284E937EBF03F4A2CE43EC10BB028BB5AD29C8',
+          exponent: 0,
+          aliases: ['umfx']
+        }, {
+          denom: 'mfx',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/8402769A51AEE1CDF35223998D284E937EBF03F4A2CE43EC10BB028BB5AD29C8',
+      name: 'Manifest Testnet',
+      display: 'mfx',
+      symbol: 'MFX',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'manifesttestnet',
+            baseDenom: 'umfx',
+            channelId: 'channel-0'
+          },
+          chain: {
+            channelId: 'channel-10016',
+            path: 'transfer/channel-10016/umfx'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/mfx.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/mfx.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'manifesttestnet',
+            baseDenom: 'umfx'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/mfx.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/mfx.svg'
+        }]
     }
   ]
 };

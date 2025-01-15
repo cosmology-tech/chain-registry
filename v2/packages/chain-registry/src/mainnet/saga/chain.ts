@@ -32,28 +32,28 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/sagaxyz/ssc',
     genesis: {
-      name: 'v0.1.5',
+      name: 'v0.2.1',
       genesisUrl: 'https://raw.githubusercontent.com/sagaxyz/mainnet/main/genesis/genesis.json'
     },
-    recommendedVersion: 'v0.1.5',
-    compatibleVersions: ['v0.1.5'],
+    recommendedVersion: 'v0.2.1',
+    compatibleVersions: ['v0.2.1'],
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.2',
-      repo: 'https://github.com/osmosis-labs/cometbft'
+      version: 'v0.38.12',
+      repo: 'https://github.com/cometbft/cometbft'
     },
     language: {
       type: 'go',
-      version: '1.21'
+      version: '1.22'
     },
     sdk: {
       type: 'cosmos',
       repo: 'https://github.com/osmosis-labs/cosmos-sdk',
-      version: 'v0.47.5'
+      version: 'v0.50.11'
     },
     ibc: {
       type: 'go',
-      version: 'v7.3.1',
+      version: 'v8.3.2',
       icsEnabled: ['ics20-1']
     },
     cosmwasm: {

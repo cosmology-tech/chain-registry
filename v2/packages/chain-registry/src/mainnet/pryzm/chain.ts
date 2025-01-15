@@ -105,13 +105,13 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/pryzm-finance/pryzm-core',
-    recommendedVersion: 'v0.21.0',
-    compatibleVersions: ['v0.21.0'],
+    recommendedVersion: 'v0.22.1',
+    compatibleVersions: ['v0.22.1', 'v0.22.0'],
     binaries: {
-      "darwin/amd64": 'https://storage.googleapis.com/pryzm-zone/core/0.21.0/pryzmd-0.21.0-darwin-amd64',
-      "darwin/arm64": 'https://storage.googleapis.com/pryzm-zone/core/0.21.0/pryzmd-0.21.0-darwin-arm64',
-      "linux/amd64": 'https://storage.googleapis.com/pryzm-zone/core/0.21.0/pryzmd-0.21.0-linux-amd64',
-      "linux/arm64": 'https://storage.googleapis.com/pryzm-zone/core/0.21.0/pryzmd-0.21.0-linux-arm64'
+      "darwin/amd64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-darwin-amd64',
+      "darwin/arm64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-darwin-arm64',
+      "linux/amd64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-linux-amd64',
+      "linux/arm64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-linux-arm64'
     },
     consensus: {
       type: 'cometbft',
@@ -126,7 +126,7 @@ const info: Chain = {
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.47.14'
+      version: 'v0.47.15'
     },
     ibc: {
       type: 'go',

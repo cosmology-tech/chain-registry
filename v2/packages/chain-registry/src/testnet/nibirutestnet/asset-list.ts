@@ -39,6 +39,44 @@ const info: AssetList = {
           }
         }],
       typeAsset: 'sdk.coin'
+    }, {
+      description: 'Liquid Staked Nibiru (Eris)',
+      extendedDescription: 'Liquid Staked Nibiru, powered by Eris Protocol\'s amplifier contracts. Nibiru is a smart contract ecosystem with a high-performance, EVM-equivalent execution layer. Nibiru is engineered to meet the growing demand for versatile, scalable, and easy-to-use Web3 applications.',
+      socials: {
+        website: 'https://nibiru.fi/docs/learn/liquid-stake/',
+        twitter: 'https://x.com/eris_protocol'
+      },
+      denomUnits: [{
+          denom: 'tf/nibi1xsvylys33m0y3dpyz6he3xuv2rcdwtk843wg2xdvqhdty8wmr0wq9au5px/ampNIBIT',
+          exponent: 0
+        }, {
+          denom: 'stNIBI',
+          exponent: 6
+        }],
+      base: 'tf/nibi1xsvylys33m0y3dpyz6he3xuv2rcdwtk843wg2xdvqhdty8wmr0wq9au5px/ampNIBIT',
+      name: 'Liquid Staked Nibiru (Eris)',
+      display: 'stNIBI',
+      symbol: 'stNIBI',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/stnibi-logo-circle-500x500.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/stnibi-logo-circle-500x500.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/stnibi-logo-circle-500x500.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/stnibi-logo-circle-500x500.svg',
+          theme: {
+            primaryColorHex: '#14c0ce'
+          }
+        }],
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'nibiru',
+            baseDenom: 'unibi'
+          },
+          provider: 'Eris Protocol'
+        }],
+      typeAsset: 'sdk.coin'
     }]
 };
 export default info;

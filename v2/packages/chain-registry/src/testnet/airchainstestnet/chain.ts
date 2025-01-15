@@ -170,6 +170,10 @@ const info: Chain = {
       {
         address: 'https://rest1.airchains.t.cosmostaking.com/',
         provider: 'Cosmostaking'
+      },
+      {
+        address: 'https://airchains-testnet-rest.cosmonautstakes.com/',
+        provider: 'Cosmonaut Stakes'
       }
     ],
     grpc: [
@@ -192,6 +196,10 @@ const info: Chain = {
       {
         address: 'http://grpc1.airchains.t.cosmostaking.com/',
         provider: 'Cosmostaking'
+      },
+      {
+        address: 'airchains-testnet-grpc.cosmonautstakes.com:14190',
+        provider: 'Cosmonaut Stakes'
       }
     ]
   },

@@ -7,7 +7,7 @@ const info: Chain = {
   networkType: 'testnet',
   prettyName: 'Nolus Testnet',
   chainType: 'cosmos',
-  chainId: 'rila-1',
+  chainId: 'rila-3',
   bech32Prefix: 'nolus',
   daemonName: 'nolusd',
   nodeHome: '$HOME/.nolusd',
@@ -31,26 +31,26 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/nolus-protocol/nolus-core',
-    recommendedVersion: 'v0.4.0',
+    recommendedVersion: '0.6.8-rc',
     compatibleVersions: [],
     consensus: {
-      type: 'tendermint',
-      version: '0.34'
+      type: 'cometbft',
+      version: 'v0.38.11'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/testnet/rila-1/genesis.json'
     },
     sdk: {
       type: 'cosmos',
-      version: '0.45'
+      version: '0.50.9'
     },
     ibc: {
       type: 'go',
-      version: '4.3.0',
+      version: '8.5.1',
       icsEnabled: ['ics20-1', 'ics27-1']
     },
     cosmwasm: {
-      version: '0.31',
+      version: '0.53.0',
       enabled: true
     }
   },
@@ -60,23 +60,23 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://rila-cl.nolus.network:26657',
+        address: 'https://rila-rpc.nolus.network',
         provider: 'NolusProtocol'
       }],
     rest: [{
-        address: 'https://rila-cl.nolus.network:1317',
+        address: 'https://rila-lcd.nolus.network',
         provider: 'NolusProtocol'
       }],
     grpc: [{
-        address: 'https://rila-cl.nolus.network:9090',
+        address: 'https://rila-grpc.nolus.network',
         provider: 'NolusProtocol'
       }]
   },
   explorers: [{
       kind: 'Nolus Explorer',
-      url: 'https://explorer-rila.nolus.io/rila-1/',
-      txPage: 'https://explorer-rila.nolus.io/rila-1/tx/${txHash}',
-      accountPage: 'https://explorer-rila.nolus.io/rila-1/account/${accountAddress}'
+      url: 'https://testnet.ping.pub/nolus/',
+      txPage: 'https://testnet.ping.pub/nolus/tx/${txHash}',
+      accountPage: 'https://testnet.ping.pub/nolus/account/${accountAddress}'
     }],
   keywords: ['testnet'],
   images: [{

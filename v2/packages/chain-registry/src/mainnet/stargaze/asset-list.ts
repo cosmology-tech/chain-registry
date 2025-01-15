@@ -698,6 +698,70 @@ const info: AssetList = {
             baseDenom: 'factory/osmo1qdvwftqd8ml6t9w6dmj97m03ck5ghqqmd8y7cm/cult'
           }
         }]
+    },
+    {
+      description: 'The native token of MANTRA',
+      denomUnits: [{
+          denom: 'ibc/3BD86E80E000B52DA57C474A6A44E37F73D34E38A1FA79EE678E08D119FC555B',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/3BD86E80E000B52DA57C474A6A44E37F73D34E38A1FA79EE678E08D119FC555B',
+      name: 'MANTRA',
+      display: 'om',
+      symbol: 'OM',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'mantrachain',
+            baseDenom: 'uom',
+            channelId: 'channel-4'
+          },
+          chain: {
+            channelId: 'channel-406',
+            path: 'transfer/channel-406/uom'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg'
+      },
+      images: [
+        {
+          imageSync: {
+            chainName: 'mantrachain',
+            baseDenom: 'uom'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            primaryColorHex: '#fba0c1'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Darkmatt.svg',
+          theme: {
+            darkMode: true,
+            circle: true,
+            primaryColorHex: '#342c2c'
+          }
+        },
+        {
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-WHT.svg',
+          theme: {
+            darkMode: false,
+            circle: true,
+            primaryColorHex: '#342c2c'
+          }
+        }
+      ]
     }
   ]
 };
