@@ -5,14 +5,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Neutron chain',
       denom_units: [{
-          denom: 'ibc/712F900E327780AAB33B9204DB5257FB1D6FACCF9CD7B70A0EFB31ED4C1255C4',
+          denom: 'ibc/0C698C8970DB4C539455E5225665A804F6338753211319E44BAD39758B238695',
           exponent: 0,
           aliases: ['untrn']
         }, {
           denom: 'ntrn',
           exponent: 6
         }],
-      base: 'ibc/712F900E327780AAB33B9204DB5257FB1D6FACCF9CD7B70A0EFB31ED4C1255C4',
+      base: 'ibc/0C698C8970DB4C539455E5225665A804F6338753211319E44BAD39758B238695',
       name: 'Neutron Testnet',
       display: 'ntrn',
       symbol: 'NTRN',
@@ -28,26 +28,26 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-208',
+            channel_id: 'channel-1061',
             base_denom: 'untrn',
             chain_name: 'neutrontestnet'
           },
           chain: {
-            channel_id: 'channel-1990'
+            channel_id: 'channel-1'
           }
         }]
     },
     {
       description: 'The native token of Neutron chain',
       denom_units: [{
-          denom: 'ibc/712F900E327780AAB33B9204DB5257FB1D6FACCF9CD7B70A0EFB31ED4C1255C4',
+          denom: 'ibc/0C698C8970DB4C539455E5225665A804F6338753211319E44BAD39758B238695',
           exponent: 0,
           aliases: ['untrn']
         }, {
           denom: 'ntrn',
           exponent: 6
         }],
-      base: 'ibc/712F900E327780AAB33B9204DB5257FB1D6FACCF9CD7B70A0EFB31ED4C1255C4',
+      base: 'ibc/0C698C8970DB4C539455E5225665A804F6338753211319E44BAD39758B238695',
       name: 'Neutron Testnet',
       display: 'ntrn',
       symbol: 'NTRN',
@@ -63,12 +63,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-208',
+            channel_id: 'channel-1061',
             base_denom: 'untrn',
             chain_name: 'neutrontestnet'
           },
           chain: {
-            channel_id: 'channel-1990'
+            channel_id: 'channel-1'
           }
         }]
     },
@@ -101,7 +101,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-110',
+            channel_id: 'channel-8272',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -137,7 +137,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-110',
+            channel_id: 'channel-8272',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },
@@ -175,7 +175,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-110',
+            channel_id: 'channel-8272',
             base_denom: 'uosmo',
             chain_name: 'osmosistestnet'
           },
@@ -211,7 +211,7 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-110',
+            channel_id: 'channel-8272',
             base_denom: 'uion',
             chain_name: 'osmosistestnet'
           },

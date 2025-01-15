@@ -38,17 +38,60 @@ const info: AssetList = {
     {
       description: 'The native token of the Celestia blockchain.',
       denom_units: [{
+          denom: 'ibc/F1183DB3D428313A6FD329DF18219F9D6B83257D07D292EA9EC1D877E89EC2B0',
+          exponent: 0,
+          aliases: ['utia']
+        }, {
+          denom: 'TIA',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/F1183DB3D428313A6FD329DF18219F9D6B83257D07D292EA9EC1D877E89EC2B0',
+      name: 'TIA',
+      display: 'TIA',
+      symbol: 'TIA',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'celestia',
+            base_denom: 'utia',
+            channel_id: 'channel-49'
+          },
+          chain: {
+            channel_id: 'channel-1',
+            path: 'transfer/channel-1/utia'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'celestia',
+            base_denom: 'utia'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
+          theme: {
+            primary_color_hex: '#7c2cfb'
+          }
+        }]
+    },
+    {
+      description: 'The native token of the Celestia blockchain.',
+      denom_units: [{
           denom: 'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5',
           exponent: 0,
           aliases: ['utia']
         }, {
-          denom: 'tia',
+          denom: 'TIA',
           exponent: 6
         }],
       type_asset: 'ics20',
       base: 'ibc/6C349F0EB135C5FA99301758F35B87DB88403D690E5E314AB080401FEE4066E5',
       name: 'Celestia',
-      display: 'tia',
+      display: 'TIA',
       symbol: 'TIA',
       traces: [{
           type: 'ibc',
@@ -66,7 +109,7 @@ const info: AssetList = {
           counterparty: {
             chain_name: 'osmosis',
             base_denom: 'ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877',
-            channel_id: 'channel-0'
+            channel_id: 'channel-89298'
           },
           chain: {
             channel_id: 'channel-0',
@@ -94,7 +137,7 @@ const info: AssetList = {
       denom_units: [{
           denom: 'ibc/16065EE5282C5217685C8F084FC44864C25C706AC37356B0D62811D50B96920F',
           exponent: 0,
-          aliases: ['umilktia']
+          aliases: ['factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA']
         }, {
           denom: 'milkTIA',
           exponent: 6
@@ -116,7 +159,7 @@ const info: AssetList = {
           counterparty: {
             chain_name: 'osmosis',
             base_denom: 'factory/osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0/umilkTIA',
-            channel_id: 'channel-0'
+            channel_id: 'channel-89298'
           },
           chain: {
             channel_id: 'channel-0',
@@ -148,7 +191,7 @@ const info: AssetList = {
         }],
       type_asset: 'ics20',
       base: 'ibc/8D4FC51F696E03711B9B37A5787FB89BD2DDBAF788813478B002D552A12F9157',
-      name: 'Stride Staked TIA',
+      name: 'stTIA',
       display: 'stTIA',
       symbol: 'stTIA',
       traces: [
@@ -177,7 +220,7 @@ const info: AssetList = {
           counterparty: {
             chain_name: 'osmosis',
             base_denom: 'ibc/698350B8A61D575025F3ED13E9AC9C0F45C89DEFE92F76D5838F1D3C1A7FF7C9',
-            channel_id: 'channel-0'
+            channel_id: 'channel-89298'
           },
           chain: {
             channel_id: 'channel-0',
@@ -202,46 +245,63 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'The native token of the Celestia blockchain.',
+      description: 'Drop\'s liquid staked TIA',
       denom_units: [{
-          denom: 'ibc/F1183DB3D428313A6FD329DF18219F9D6B83257D07D292EA9EC1D877E89EC2B0',
+          denom: 'ibc/4795C86F72EC2CB54E885A4A5B401BED9C333E008311ED9C4DE01BF546B44A21',
           exponent: 0,
-          aliases: ['utia']
+          aliases: ['udtia']
         }, {
-          denom: 'tia',
+          denom: 'dTIA',
           exponent: 6
         }],
       type_asset: 'ics20',
-      base: 'ibc/F1183DB3D428313A6FD329DF18219F9D6B83257D07D292EA9EC1D877E89EC2B0',
-      name: 'Celestia',
-      display: 'tia',
-      symbol: 'TIA',
-      traces: [{
-          type: 'ibc',
+      base: 'ibc/4795C86F72EC2CB54E885A4A5B401BED9C333E008311ED9C4DE01BF546B44A21',
+      name: 'dTIA',
+      display: 'dTIA',
+      symbol: 'dTIA',
+      traces: [
+        {
+          type: 'liquid-stake',
           counterparty: {
-            chain_name: 'celestia',
-            base_denom: 'utia',
-            channel_id: 'channel-1'
-          },
-          chain: {
-            channel_id: 'channel-1',
-            path: 'transfer/channel-1/utia'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg'
-      },
-      images: [{
-          image_sync: {
             chain_name: 'celestia',
             base_denom: 'utia'
           },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-          theme: {
-            primary_color_hex: '#7c2cfb'
+          provider: 'Drop Protocol'
+        },
+        {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia',
+            channel_id: 'channel-10'
+          },
+          chain: {
+            channel_id: 'channel-874',
+            path: 'transfer/channel-874/factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia'
           }
+        },
+        {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'osmosis',
+            base_denom: 'ibc/C7A810C6ED1FC3FFC7C834A534D400EADC94FF7D3BE13DDD4C042AEF1816DFB4',
+            channel_id: 'channel-89298'
+          },
+          chain: {
+            channel_id: 'channel-0',
+            path: 'transfer/channel-0/transfer/channel-874/factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia'
+          }
+        }
+      ],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dTIA.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dTIA.svg'
         }]
     }
   ]

@@ -693,14 +693,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Nolus chain',
       denom_units: [{
-          denom: 'ibc/95359FD9C5D15DBD7B9A6B7271F5E769776999590DE138ED62B6E89D5D010B7C',
+          denom: 'ibc/EF145240FE393A1CEC9C35ED1866A235D23176EA9B32069F714C9309FEA55718',
           exponent: 0,
           aliases: ['unls']
         }, {
           denom: 'nls',
           exponent: 6
         }],
-      base: 'ibc/95359FD9C5D15DBD7B9A6B7271F5E769776999590DE138ED62B6E89D5D010B7C',
+      base: 'ibc/EF145240FE393A1CEC9C35ED1866A235D23176EA9B32069F714C9309FEA55718',
       name: 'Nolus',
       display: 'nls',
       symbol: 'NLS',
@@ -721,7 +721,7 @@ const assets: AssetList = {
             chain_name: 'nolustestnet'
           },
           chain: {
-            channel_id: 'channel-110'
+            channel_id: 'channel-8272'
           }
         }]
     },
@@ -1416,14 +1416,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Nolus chain',
       denom_units: [{
-          denom: 'ibc/95359FD9C5D15DBD7B9A6B7271F5E769776999590DE138ED62B6E89D5D010B7C',
+          denom: 'ibc/EF145240FE393A1CEC9C35ED1866A235D23176EA9B32069F714C9309FEA55718',
           exponent: 0,
           aliases: ['unls']
         }, {
           denom: 'nls',
           exponent: 6
         }],
-      base: 'ibc/95359FD9C5D15DBD7B9A6B7271F5E769776999590DE138ED62B6E89D5D010B7C',
+      base: 'ibc/EF145240FE393A1CEC9C35ED1866A235D23176EA9B32069F714C9309FEA55718',
       name: 'Nolus',
       display: 'nls',
       symbol: 'NLS',
@@ -1444,7 +1444,7 @@ const assets: AssetList = {
             chain_name: 'nolustestnet'
           },
           chain: {
-            channel_id: 'channel-110'
+            channel_id: 'channel-8272'
           }
         }]
     },

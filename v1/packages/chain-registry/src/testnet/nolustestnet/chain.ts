@@ -7,7 +7,7 @@ const info: Chain = {
   network_type: 'testnet',
   pretty_name: 'Nolus Testnet',
   chain_type: 'cosmos',
-  chain_id: 'rila-1',
+  chain_id: 'rila-3',
   bech32_prefix: 'nolus',
   daemon_name: 'nolusd',
   node_home: '$HOME/.nolusd',
@@ -38,23 +38,23 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'https://rila-cl.nolus.network:26657',
+        address: 'https://rila-rpc.nolus.network',
         provider: 'NolusProtocol'
       }],
     rest: [{
-        address: 'https://rila-cl.nolus.network:1317',
+        address: 'https://rila-lcd.nolus.network',
         provider: 'NolusProtocol'
       }],
     grpc: [{
-        address: 'https://rila-cl.nolus.network:9090',
+        address: 'https://rila-grpc.nolus.network',
         provider: 'NolusProtocol'
       }]
   },
   explorers: [{
       kind: 'Nolus Explorer',
-      url: 'https://explorer-rila.nolus.io/rila-1/',
-      tx_page: 'https://explorer-rila.nolus.io/rila-1/tx/${txHash}',
-      account_page: 'https://explorer-rila.nolus.io/rila-1/account/${accountAddress}'
+      url: 'https://testnet.ping.pub/nolus/',
+      tx_page: 'https://testnet.ping.pub/nolus/tx/${txHash}',
+      account_page: 'https://testnet.ping.pub/nolus/account/${accountAddress}'
     }],
   keywords: ['testnet'],
   images: [{

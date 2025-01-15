@@ -2,7 +2,8 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chain_name: 'manifesttestnet',
-  assets: [{
+  assets: [
+    {
       description: 'Manifest testnet native token',
       denom_units: [{
           denom: 'umfx',
@@ -24,7 +25,8 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
         }],
       type_asset: 'sdk.coin'
-    }, {
+    },
+    {
       description: 'Proof of Authority token for the Manifest testnet',
       denom_units: [{
           denom: 'upoa',
@@ -46,6 +48,46 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
         }],
       type_asset: 'sdk.coin'
-    }]
+    },
+    {
+      description: 'Osmosis token on Manifest Ledger Testnet',
+      denom_units: [{
+          denom: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+          exponent: 0
+        }, {
+          denom: 'osmo',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518',
+      name: 'Osmosis',
+      display: 'osmo',
+      symbol: 'OSMO',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'osmosistestnet',
+            base_denom: 'uosmo',
+            channel_id: 'channel-10016'
+          },
+          chain: {
+            channel_id: 'channel-0',
+            path: 'transfer/channel-0/uosmo'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'osmosistestnet',
+            base_denom: 'uosmo'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg'
+      }
+    }
+  ]
 };
 export default info;

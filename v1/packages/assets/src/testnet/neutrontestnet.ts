@@ -46,14 +46,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Nolus chain',
       denom_units: [{
-          denom: 'ibc/C9F36A5FCF5FBD26661F9A09900301755C8B042696E4F456ACD73FAA7AFA6551',
+          denom: 'ibc/E808FAAE7ADDA37453A8F0F67D74669F6580CBA5EF0F7889D46FB02D282098E3',
           exponent: 0,
           aliases: ['unls']
         }, {
           denom: 'nls',
           exponent: 6
         }],
-      base: 'ibc/C9F36A5FCF5FBD26661F9A09900301755C8B042696E4F456ACD73FAA7AFA6551',
+      base: 'ibc/E808FAAE7ADDA37453A8F0F67D74669F6580CBA5EF0F7889D46FB02D282098E3',
       name: 'Nolus',
       display: 'nls',
       symbol: 'NLS',
@@ -69,12 +69,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1990',
+            channel_id: 'channel-1',
             base_denom: 'unls',
             chain_name: 'nolustestnet'
           },
           chain: {
-            channel_id: 'channel-208'
+            channel_id: 'channel-1061'
           }
         }]
     },
@@ -196,14 +196,14 @@ const assets: AssetList = {
     {
       description: 'The native token of Nolus chain',
       denom_units: [{
-          denom: 'ibc/C9F36A5FCF5FBD26661F9A09900301755C8B042696E4F456ACD73FAA7AFA6551',
+          denom: 'ibc/E808FAAE7ADDA37453A8F0F67D74669F6580CBA5EF0F7889D46FB02D282098E3',
           exponent: 0,
           aliases: ['unls']
         }, {
           denom: 'nls',
           exponent: 6
         }],
-      base: 'ibc/C9F36A5FCF5FBD26661F9A09900301755C8B042696E4F456ACD73FAA7AFA6551',
+      base: 'ibc/E808FAAE7ADDA37453A8F0F67D74669F6580CBA5EF0F7889D46FB02D282098E3',
       name: 'Nolus',
       display: 'nls',
       symbol: 'NLS',
@@ -219,12 +219,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-1990',
+            channel_id: 'channel-1',
             base_denom: 'unls',
             chain_name: 'nolustestnet'
           },
           chain: {
-            channel_id: 'channel-208'
+            channel_id: 'channel-1061'
           }
         }]
     },

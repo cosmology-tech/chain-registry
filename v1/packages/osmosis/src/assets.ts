@@ -21315,7 +21315,7 @@ const assets: AssetList = {
     {
       description: 'The native staking and governance token of AtomOne',
       denom_units: [{
-          denom: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+          denom: 'ibc/BC26A7A805ECD6822719472BCB7842A48EF09DF206182F8F259B2593EB5D23FB',
           exponent: 0,
           aliases: ['uatone']
         }, {
@@ -21323,7 +21323,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'ics20',
-      base: 'ibc/715283E4A955EB803AB1DD30B488587A4D63BF0B51BADA537053DEE479BA10D6',
+      base: 'ibc/BC26A7A805ECD6822719472BCB7842A48EF09DF206182F8F259B2593EB5D23FB',
       name: 'AtomOne',
       display: 'atone',
       symbol: 'ATONE',
@@ -21332,11 +21332,11 @@ const assets: AssetList = {
           counterparty: {
             chain_name: 'atomone',
             base_denom: 'uatone',
-            channel_id: 'channel-0'
+            channel_id: 'channel-2'
           },
           chain: {
-            channel_id: 'channel-85309',
-            path: 'transfer/channel-85309/uatone'
+            channel_id: 'channel-94814',
+            path: 'transfer/channel-94814/uatone'
           }
         }],
       logo_URIs: {
@@ -22354,6 +22354,51 @@ const assets: AssetList = {
       },
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/cult.png'
+        }]
+    },
+    {
+      description: 'Drop staked TIA',
+      denom_units: [{
+          denom: 'ibc/C7A810C6ED1FC3FFC7C834A534D400EADC94FF7D3BE13DDD4C042AEF1816DFB4',
+          exponent: 0,
+          aliases: ['factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia']
+        }, {
+          denom: 'dTIA',
+          exponent: 6
+        }],
+      type_asset: 'ics20',
+      base: 'ibc/C7A810C6ED1FC3FFC7C834A534D400EADC94FF7D3BE13DDD4C042AEF1816DFB4',
+      name: 'dTIA',
+      display: 'dTIA',
+      symbol: 'dTIA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chain_name: 'celestia',
+            base_denom: 'utia'
+          },
+          provider: 'Drop Protocol'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia',
+            channel_id: 'channel-10'
+          },
+          chain: {
+            channel_id: 'channel-874',
+            path: 'transfer/channel-874/factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia'
+          }
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dTIA.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dTIA.svg'
         }]
     }
   ]

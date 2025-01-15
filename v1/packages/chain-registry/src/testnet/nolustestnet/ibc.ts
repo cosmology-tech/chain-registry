@@ -3,21 +3,21 @@ const info: IBCInfo[] = [{
     $schema: '../../ibc_data.schema.json',
     chain_1: {
       chain_name: 'neutrontestnet',
-      client_id: '07-tendermint-143',
-      connection_id: 'connection-130'
+      client_id: '07-tendermint-338',
+      connection_id: 'connection-237'
     },
     chain_2: {
       chain_name: 'nolustestnet',
-      client_id: '07-tendermint-2',
+      client_id: '07-tendermint-1',
       connection_id: 'connection-1'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-208',
+          channel_id: 'channel-1061',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-1990',
+          channel_id: 'channel-1',
           port_id: 'transfer'
         },
         ordering: 'unordered',
@@ -35,8 +35,8 @@ const info: IBCInfo[] = [{
     },
     chain_2: {
       chain_name: 'osmosistestnet',
-      client_id: '07-tendermint-102',
-      connection_id: 'connection-120'
+      client_id: '07-tendermint-3711',
+      connection_id: 'connection-3235'
     },
     channels: [{
         chain_1: {
@@ -44,7 +44,7 @@ const info: IBCInfo[] = [{
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-110',
+          channel_id: 'channel-8272',
           port_id: 'transfer'
         },
         ordering: 'unordered',
