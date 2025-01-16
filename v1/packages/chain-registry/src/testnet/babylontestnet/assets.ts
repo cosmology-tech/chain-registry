@@ -9,7 +9,7 @@ const info: AssetList = {
       denom: 'ubbn',
       exponent: 0
     }, {
-      denom: 'bbn',
+      denom: 'BABY',
       exponent: 6
     }],
     base: 'ubbn',
