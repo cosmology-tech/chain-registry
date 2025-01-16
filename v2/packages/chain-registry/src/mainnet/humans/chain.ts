@@ -108,7 +108,7 @@ const info: Chain = {
       },
       {
         address: 'https://humans-mainnet-rpc.cosmonautstakes.com',
-        provider: 'Cosmonaut Stakes 🤖'
+        provider: 'Cosmonaut Stakes'
       }
     ],
     rest: [
@@ -166,7 +166,7 @@ const info: Chain = {
       },
       {
         address: 'https://humans-mainnet-rest.cosmonautstakes.com',
-        provider: 'Cosmonaut Stakes 🤖'
+        provider: 'Cosmonaut Stakes'
       }
     ],
     grpc: [
@@ -211,8 +211,8 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'humans-mainnet-grpc.cosmonautstakes.com:9190',
-        provider: 'Cosmonaut Stakes 🤖'
+        address: 'humans-mainnet-grpc.cosmonautstakes.com:14890',
+        provider: 'Cosmonaut Stakes'
       }
     ],
     evmHttpJsonrpc: [
