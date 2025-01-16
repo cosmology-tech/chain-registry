@@ -14,7 +14,7 @@ const info: AssetList = {
     }],
     base: 'ubbn',
     name: 'Babylon Testnet',
-    display: 'bbn',
+    display: 'BABY',
     symbol: 'BABY',
     logoURIs: {
       png: 'https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/bbn-test/chain.png'
