@@ -6,7 +6,7 @@ const info: Chain = {
   status: 'live',
   website: 'https://babylonlabs.io/',
   network_type: 'testnet',
-  pretty_name: 'Babylon Phase-2 Testnet',
+  pretty_name: 'Babylon Testnet',
   chain_type: 'cosmos',
   chain_id: 'bbn-test-5',
   pre_fork_chain_name: 'babylontestnet1',

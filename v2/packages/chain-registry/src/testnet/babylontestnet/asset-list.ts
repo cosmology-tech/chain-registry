@@ -13,7 +13,7 @@ const info: AssetList = {
       exponent: 6
     }],
     base: 'ubbn',
-    name: 'Babylon Phase-2 Testnet',
+    name: 'Babylon Testnet',
     display: 'bbn',
     symbol: 'BABY',
     logoURIs: {
