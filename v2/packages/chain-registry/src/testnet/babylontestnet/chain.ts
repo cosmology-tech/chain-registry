@@ -30,8 +30,8 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/babylonlabs-io/babylon/releases',
-    recommendedVersion: 'v0.18.2',
-    compatibleVersions: ['v0.18.2'],
+    recommendedVersion: 'v1.0.0-rc.3',
+    compatibleVersions: ['v1.0.0-rc.3'],
   },
   logoURIs: {
     png: 'https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/bbn-test/chain.png'
