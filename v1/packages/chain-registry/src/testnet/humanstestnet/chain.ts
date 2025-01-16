@@ -27,25 +27,25 @@ const info: Chain = {
         provider: 'NODEJUMPER'
       }, {
         address: 'https://humans-testnet-rpc.cosmonautstakes.com',
-        provider: 'Cosmonaut Stakes 🤖'
+        provider: 'Cosmonaut Stakes'
       }],
     rest: [{
         address: 'https://humans-testnet.nodejumper.io:1317',
         provider: 'NODEJUMPER'
       }, {
         address: 'https://humans-testnet-rest.cosmonautstakes.com',
-        provider: 'Cosmonaut Stakes 🤖'
+        provider: 'Cosmonaut Stakes'
       }],
     grpc: [{
         address: 'https://humans-testnet.nodejumper.io:9090',
         provider: 'NODEJUMPER'
       }, {
-        address: 'humans-testnet-grpc.cosmonautstakes.com:9090',
-        provider: 'Cosmonaut Stakes 🤖'
+        address: 'humans-testnet-grpc.cosmonautstakes.com:14990',
+        provider: 'Cosmonaut Stakes'
       }],
     "evm-http-jsonrpc": [{
         address: 'humans-testnet-evm.cosmonautstakes.com',
-        provider: 'Cosmonaut Stakes 🤖'
+        provider: 'Cosmonaut Stakes'
       }]
   },
   explorers: [{
