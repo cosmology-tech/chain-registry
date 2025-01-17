@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/v2-utils",
-  "version": "1.52.94",
+  "version": "1.52.95",
   "description": "Chain Registry Utils",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/cosmology-tech/chain-registry",
@@ -32,8 +32,8 @@
     "@types/sha.js": "^2.4.0"
   },
   "dependencies": {
-    "@chain-registry/v2": "^1.71.94",
-    "@chain-registry/v2-types": "^0.53.49",
+    "@chain-registry/v2": "^1.71.95",
+    "@chain-registry/v2-types": "^0.53.50",
     "bignumber.js": "9.1.2",
     "sha.js": "^2.4.11"
   },
