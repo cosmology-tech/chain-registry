@@ -21316,6 +21316,7 @@ const info: AssetList = {
     },
     {
       description: 'The native staking and governance token of AtomOne',
+      extendedDescription: 'AtomOne is a community-driven fork of the Cosmos Hub, originating from concerns raised around Cosmos Hub Proposal 82 and Proposal 848. AtomOne aims to provide a security-conscious, constitutionally governed, streamlined IBC/ICS hub, preserving the foundational ethos of the Cosmos Hub.',
       denomUnits: [{
           denom: 'ibc/BC26A7A805ECD6822719472BCB7842A48EF09DF206182F8F259B2593EB5D23FB',
           exponent: 0,
@@ -21352,7 +21353,11 @@ const info: AssetList = {
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.svg'
-        }]
+        }],
+      socials: {
+        website: 'https://atom.one',
+        twitter: 'https://x.com/_atomone'
+      }
     },
     {
       description: 'The Spice memecoin',
@@ -22405,7 +22410,7 @@ const info: AssetList = {
     },
     {
       description: 'A multi-chain dogecoin twin, trustlessly created by chain-key cryptography and Internet Computer smart contracts that directly hold raw dogecoin.',
-      extendedDescription: 'Chain-key Dogecoin (ckDOGE) is a bridge token that is backed 1:1 by DOGE held 100% on the ICP mainnet. ckDOGEdoes not rely on a centralized bridge to facilitate the conversion between DOGE and ckDOGE, which makes it substantially more secure when compared to other traditional \'wrapped\' tokens.',
+      extendedDescription: 'Chain-key Dogecoin (ckDOGE) is a bridge token that is backed 1:1 by DOGE held 100% on the ICP mainnet. ckDOGE does not rely on a centralized bridge to facilitate the conversion between DOGE and ckDOGE, which makes it substantially more secure when compared to other traditional \'wrapped\' tokens.',
       denomUnits: [{
           denom: 'factory/osmo10c4y9csfs8q7mtvfg4p9gd8d0acx0hpc2mte9xqzthd7rd3348tsfhaesm/dogecoin-native-DOGE',
           exponent: 0,
@@ -22442,6 +22447,43 @@ const info: AssetList = {
         website: 'https://internetcomputer.org',
         twitter: 'https://x.com/dfinity'
       }
+    },
+    {
+      description: 'Tek ovah!',
+      extendedDescription: 'Free yourself from your self. Embrace your status as a $PLEB.',
+      denomUnits: [{
+          denom: 'ibc/EA0C8F1121425943740B2D1B1DC5BDD717D49A9D5A639DC7074C10E9212CC794',
+          exponent: 0,
+          aliases: ['factory/stars1k7qsxdxh8calmt4txk75e6hdntefslegwddqnlwjjqgjkmcfqy0qa97sn8/pleb']
+        }, {
+          denom: 'PLEB',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/EA0C8F1121425943740B2D1B1DC5BDD717D49A9D5A639DC7074C10E9212CC794',
+      name: 'Pleb Coin',
+      display: 'PLEB',
+      symbol: 'PLEB',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'stargaze',
+            baseDenom: 'factory/stars1k7qsxdxh8calmt4txk75e6hdntefslegwddqnlwjjqgjkmcfqy0qa97sn8/pleb',
+            channelId: 'channel-0'
+          },
+          chain: {
+            channelId: 'channel-75',
+            path: 'transfer/channel-75/factory/stars1k7qsxdxh8calmt4txk75e6hdntefslegwddqnlwjjqgjkmcfqy0qa97sn8/pleb'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/pleb.png'
+      },
+      socials: {
+        website: 'https://www.stargaze.zone/m/stargazepleb/tokens',
+        twitter: 'https://x.com/Pixl_Plebs'
+      },
+      keywords: ['meme']
     }
   ]
 };
