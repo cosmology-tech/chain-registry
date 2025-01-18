@@ -924,6 +924,51 @@ const info: AssetList = {
       }
     },
     {
+      description: 'OM transferred from the Osmosis mainnet that is supported on the Nolus chain',
+      denomUnits: [{
+          denom: 'ibc/B92B80E837E4B1665024B7674D382AF07FE5D8D89797A0FEAF5356C8F173425C',
+          exponent: 0,
+          aliases: ['uom']
+        }, {
+          denom: 'om',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/B92B80E837E4B1665024B7674D382AF07FE5D8D89797A0FEAF5356C8F173425C',
+      name: 'Mantra OM',
+      display: 'om',
+      symbol: 'OM',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'ibc/164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795',
+            channelId: 'channel-783'
+          },
+          chain: {
+            channelId: 'channel-0',
+            path: 'transfer/channel-0/transfer/channel-85077/uom'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'osmosis',
+            baseDenom: 'ibc/164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg',
+          theme: {
+            circle: true,
+            backgroundColorHex: '#fba0c1'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mantrachain/images/OM-Prim-Col.svg'
+      }
+    },
+    {
       description: 'NTRN transferred from the Neutron mainnet that is supported on the Nolus chain',
       denomUnits: [{
           denom: 'ibc/3D6BC6E049CAEB905AC97031A42800588C58FB471EBDC7A3530FFCD0C3DC9E09',

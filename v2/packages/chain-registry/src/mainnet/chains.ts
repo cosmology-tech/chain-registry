@@ -10,6 +10,7 @@ import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
+import * as _allora from './allora';
 import * as _althea from './althea';
 import * as _andromeda from './andromeda';
 import * as _archway from './archway';
@@ -204,6 +205,7 @@ const chains: Chain[] = [
   _agoric.chain,
   _aioz.chain,
   _akash.chain,
+  _allora.chain,
   _althea.chain,
   _andromeda.chain,
   _archway.chain,

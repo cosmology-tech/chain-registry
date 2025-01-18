@@ -1,7 +1,7 @@
 import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
-  $schema: '../../assetlist.schema.json',
-  chainName: 'alloratestnet',
+  $schema: '../assetlist.schema.json',
+  chainName: 'allora',
   assets: [{
       description: 'Allora Token (ALLO) is the Allora Network\'s native utility token, used as the primary means to govern, secure the blockchain, and incentivize network participants.',
       denomUnits: [{
