@@ -36,4 +36,3 @@ jobs:
           lerna publish minor --force-publish=@chain-registry/v2 --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
-          OLDGH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}

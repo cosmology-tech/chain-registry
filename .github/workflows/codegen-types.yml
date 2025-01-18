@@ -71,4 +71,3 @@ jobs:
           echo $GIT_RESULT
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_SECRET}}
-          OLDGH_TOKEN: ${{ secrets.GH_LERNA_PUBLISH_TOKEN }}
