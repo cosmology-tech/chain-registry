@@ -427,7 +427,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.50.15](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/cli@1.50.14...@chain-registry/cli@1.50.15) (2024-10-10)
+## [1.50.15](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/cli@1.50.14...@chain-registry/cli@1.50.15) (2024-10-10)
 
 **Note:** Version bump only for package @chain-registry/cli
 
@@ -1331,7 +1331,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.48.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/cli@1.48.0...@chain-registry/cli@1.48.1) (2024-06-04)
+## [1.48.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/cli@1.48.0...@chain-registry/cli@1.48.1) (2024-06-04)
 
 **Note:** Version bump only for package @chain-registry/cli
 
@@ -1667,7 +1667,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.32.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/cli@1.31.0...@chain-registry/cli@1.32.0) (2024-04-30)
+# [1.32.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/cli@1.31.0...@chain-registry/cli@1.32.0) (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/cli
 
@@ -1675,7 +1675,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.31.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/cli@1.30.5...@chain-registry/cli@1.31.0) (2024-04-30)
+# [1.31.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/cli@1.30.5...@chain-registry/cli@1.31.0) (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/cli
 
@@ -1731,7 +1731,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.29.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/cli@1.28.0...@chain-registry/cli@1.29.0) (2024-04-24)
+# [1.29.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/cli@1.28.0...@chain-registry/cli@1.29.0) (2024-04-24)
 
 **Note:** Version bump only for package @chain-registry/cli
 

@@ -59,7 +59,7 @@ ${header('AUTHOR')}
     ${normal('Written by Dan Lynch.')}
 
 ${header('REPORTING BUGS')}
-    ${normal('Report bugs at')} ${chalk.underline('https://github.com/cosmology-tech/chain-registry/issues')}
+    ${normal('Report bugs at')} ${chalk.underline('https://github.com/hyperweb-io/chain-registry/issues')}
 
 ${header('COPYRIGHT')}
     ${normal('Copyright 2024 Interweb, Inc. Licensed under MIT.')}

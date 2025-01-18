@@ -5,18 +5,18 @@
 </p>
 
 <p align="center" width="100%">
-  <a href="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml">
-    <img height="20" src="https://github.com/cosmology-tech/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
+  <a href="https://github.com/hyperweb-io/chain-registry/actions/workflows/run-tests.yml">
+    <img height="20" src="https://github.com/hyperweb-io/chain-registry/actions/workflows/run-tests.yml/badge.svg" />
   </a>
-  <a href="https://github.com/cosmology-tech/lib-count">
-  <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcosmology-tech%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Ftotal.json" />  
+  <a href="https://github.com/hyperweb-io/lib-count">
+  <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhyperweb-io%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Ftotal.json" />  
   </a>
-  <a href="https://github.com/cosmology-tech/lib-count">
-    <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcosmology-tech%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Fmonthly.json" />
+  <a href="https://github.com/hyperweb-io/lib-count">
+    <img height="20" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhyperweb-io%2Flib-count%2Fmain%2Foutput%2Fbadges%2Fproducts%2Fchain-registry%2Fmonthly.json" />
   </a>
   <br />
-  <a href="https://github.com/cosmology-tech/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-  <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/cosmology-tech/chain-registry?filename=v1/packages%2Fchain-registry%2Fpackage.json"></a>
+  <a href="https://github.com/hyperweb-io/chain-registry/blob/main/LICENSE"><img height="20" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="https://www.npmjs.com/package/chain-registry"><img height="20" src="https://img.shields.io/github/package-json/v/hyperweb-io/chain-registry?filename=v1/packages%2Fchain-registry%2Fpackage.json"></a>
 </p>
 
 The npm package for the Official Cosmos [chain registry](https://github.com/cosmos/chain-registry)
@@ -30,11 +30,11 @@ A unified store of chains info, assets, asset lists, and IBC channels for the Co
 
 ## Features 
 
-- 🌐 **Dynamic Loading via [ChainRegistryClient](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/client)** - Utilize the client for dynamic data fetching.
+- 🌐 **Dynamic Loading via [ChainRegistryClient](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/client)** - Utilize the client for dynamic data fetching.
 - 📦 **Tree-Shaking Support** - Optimize your bundles and [include only what you need](#tree-shaking-imports-from-chain-registry).
 - 🔌 **Module Compatibility** - Supports both CommonJS and ES Module formats, ensuring compatibility with various JavaScript environments and tools.
-- 🛠 **Utilities for Working with Assets and Chains** - [Comprehensive tools](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/client) to manage assets and chains efficiently.
-- 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](ttps://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/assets) across all chains.
+- 🛠 **Utilities for Working with Assets and Chains** - [Comprehensive tools](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/client) to manage assets and chains efficiently.
+- 🌎 **Pre-generated Asset Lists with IBC Denominations for All Chains** - Access ready-to-use [asset lists](ttps://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/assets) across all chains.
 - 🔄 **Conversions for Keplr, Cosmostation** - Easily convert data for use with Keplr and Cosmostation wallets.
 
 ## Versions
@@ -172,35 +172,35 @@ import { assets } from 'chain-registry/noncosmos';
 
 ## Packages
 
-#### [chain-registry](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/chain-registry)
+#### [chain-registry](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/chain-registry)
 
 An npm module for the Official `chain-registry` for the Cosmos ⚛️
 
-#### [@chain-registry/client](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/client)
+#### [@chain-registry/client](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/client)
 
 A Client for `chain-registry` that allows you to dynamically fetch data.
 
-#### [@chain-registry/types](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/types)
+#### [@chain-registry/types](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/types)
 
 Types for `chain-registry`.
 
-#### [@chain-registry/keplr](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/keplr)
+#### [@chain-registry/keplr](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/keplr)
 
 Keplr integration for the chain-registry returning keplr's `ChainInfo` type from `@chain-registry/types` `Chain` type.
 
-#### [@chain-registry/assets](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/assets)
+#### [@chain-registry/assets](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/assets)
 
 Asset lists for the Cosmos ⚛️
 
-#### [@chain-registry/osmosis](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/osmosis)
+#### [@chain-registry/osmosis](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/osmosis)
 
 Chain Registry info for Osmosis, including asset lists.
 
-#### [@chain-registry/juno](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/juno)
+#### [@chain-registry/juno](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/juno)
 
 Chain Registry info for Juno, including asset lists.
 
-#### [@chain-registry/utils](https://github.com/cosmology-tech/chain-registry/tree/main/v1/packages/utils)
+#### [@chain-registry/utils](https://github.com/hyperweb-io/chain-registry/tree/main/v1/packages/utils)
 
 Utility functions for `chain-registry`.
 
@@ -210,7 +210,7 @@ Checkout the repository run yarn to initialize the workspace:
 
 ```sh
 # Clone the repo.
-git clone https://github.com/cosmology-tech/chain-registry
+git clone https://github.com/hyperweb-io/chain-registry
 yarn
 ```
 ### Building
@@ -256,7 +256,7 @@ Use the following Makefile commands to update the data in the submodules. These 
 make update-registry
 ```
 
-- **update-fixtures**: Updates the submodule to the latest commits of the `cosmology-tech/chain-registry-fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
+- **update-fixtures**: Updates the submodule to the latest commits of the `hyperweb-io/chain-registry-fixtures` repository. Use this for testing purposes to ensure that your tests are running against stable, controlled data sets.
 
 ```
 make update-fixtures
@@ -266,17 +266,17 @@ make update-fixtures
 
 Checkout these related projects:
 
-* [@cosmology/telescope](https://github.com/cosmology-tech/telescope) Your Frontend Companion for Building with TypeScript with Cosmos SDK Modules.
+* [telescope](https://github.com/hyperweb-io/telescope) Your Frontend Companion for Building with TypeScript with Cosmos SDK Modules.
 * [@cosmwasm/ts-codegen](https://github.com/CosmWasm/ts-codegen) Convert your CosmWasm smart contracts into dev-friendly TypeScript classes.
-* [chain-registry](https://github.com/cosmology-tech/chain-registry) Everything from token symbols, logos, and IBC denominations for all assets you want to support in your application.
-* [cosmos-kit](https://github.com/cosmology-tech/cosmos-kit) Experience the convenience of connecting with a variety of web3 wallets through a single, streamlined interface.
-* [create-cosmos-app](https://github.com/cosmology-tech/create-cosmos-app) Set up a modern Cosmos app by running one command.
-* [interchain-ui](https://github.com/cosmology-tech/interchain-ui) The Interchain Design System, empowering developers with a flexible, easy-to-use UI kit.
-* [starship](https://github.com/cosmology-tech/starship) Unified Testing and Development for the Interchain.
+* [chain-registry](https://github.com/hyperweb-io/chain-registry) Everything from token symbols, logos, and IBC denominations for all assets you want to support in your application.
+* [cosmos-kit](https://github.com/hyperweb-io/cosmos-kit) Experience the convenience of connecting with a variety of web3 wallets through a single, streamlined interface.
+* [create-cosmos-app](https://github.com/hyperweb-io/create-cosmos-app) Set up a modern Cosmos app by running one command.
+* [interchain-ui](https://github.com/hyperweb-io/interchain-ui) The Interchain Design System, empowering developers with a flexible, easy-to-use UI kit.
+* [starship](https://github.com/hyperweb-io/starship) Unified Testing and Development for the Interchain.
 
 ## Credits
 
-🛠 Built by Cosmology — if you like our tools, please consider delegating to [our validator ⚛️](https://cosmology.zone/validator)
+🛠 Built by Hyperweb (formerly Cosmology) — if you like our tools, please checkout and contribute to [our github ⚛️](https://github.com/hyperweb-io)
 
 
 ## Disclaimer

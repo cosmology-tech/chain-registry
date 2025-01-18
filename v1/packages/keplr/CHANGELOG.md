@@ -619,7 +619,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.74.18](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.74.17...@chain-registry/keplr@1.74.18) (2024-10-31)
+## [1.74.18](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.74.17...@chain-registry/keplr@1.74.18) (2024-10-31)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -803,7 +803,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.69.17](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.69.16...@chain-registry/keplr@1.69.17) (2024-10-10)
+## [1.69.17](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.69.16...@chain-registry/keplr@1.69.17) (2024-10-10)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -859,7 +859,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.69.10](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.69.9...@chain-registry/keplr@1.69.10) (2024-10-07)
+## [1.69.10](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.69.9...@chain-registry/keplr@1.69.10) (2024-10-07)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -867,7 +867,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.69.9](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.69.8...@chain-registry/keplr@1.69.9) (2024-10-06)
+## [1.69.9](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.69.8...@chain-registry/keplr@1.69.9) (2024-10-06)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -955,7 +955,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.106](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.105...@chain-registry/keplr@1.68.106) (2024-09-30)
+## [1.68.106](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.105...@chain-registry/keplr@1.68.106) (2024-09-30)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1019,7 +1019,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.98](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.97...@chain-registry/keplr@1.68.98) (2024-09-22)
+## [1.68.98](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.97...@chain-registry/keplr@1.68.98) (2024-09-22)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1067,7 +1067,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.92](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.91...@chain-registry/keplr@1.68.92) (2024-09-16)
+## [1.68.92](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.91...@chain-registry/keplr@1.68.92) (2024-09-16)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1075,7 +1075,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.91](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.90...@chain-registry/keplr@1.68.91) (2024-09-15)
+## [1.68.91](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.90...@chain-registry/keplr@1.68.91) (2024-09-15)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1171,7 +1171,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.79](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.78...@chain-registry/keplr@1.68.79) (2024-09-03)
+## [1.68.79](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.78...@chain-registry/keplr@1.68.79) (2024-09-03)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1179,7 +1179,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.78](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.77...@chain-registry/keplr@1.68.78) (2024-09-02)
+## [1.68.78](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.77...@chain-registry/keplr@1.68.78) (2024-09-02)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1187,7 +1187,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.77](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.76...@chain-registry/keplr@1.68.77) (2024-09-01)
+## [1.68.77](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.76...@chain-registry/keplr@1.68.77) (2024-09-01)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1235,7 +1235,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.71](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.70...@chain-registry/keplr@1.68.71) (2024-08-26)
+## [1.68.71](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.70...@chain-registry/keplr@1.68.71) (2024-08-26)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1243,7 +1243,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.70](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.69...@chain-registry/keplr@1.68.70) (2024-08-25)
+## [1.68.70](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.69...@chain-registry/keplr@1.68.70) (2024-08-25)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1291,7 +1291,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.64](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.63...@chain-registry/keplr@1.68.64) (2024-08-19)
+## [1.68.64](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.63...@chain-registry/keplr@1.68.64) (2024-08-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1299,7 +1299,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.63](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.62...@chain-registry/keplr@1.68.63) (2024-08-18)
+## [1.68.63](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.62...@chain-registry/keplr@1.68.63) (2024-08-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1411,7 +1411,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.49](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.48...@chain-registry/keplr@1.68.49) (2024-08-04)
+## [1.68.49](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.48...@chain-registry/keplr@1.68.49) (2024-08-04)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1419,7 +1419,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.48](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.47...@chain-registry/keplr@1.68.48) (2024-08-03)
+## [1.68.48](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.47...@chain-registry/keplr@1.68.48) (2024-08-03)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1459,7 +1459,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.43](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.42...@chain-registry/keplr@1.68.43) (2024-07-29)
+## [1.68.43](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.42...@chain-registry/keplr@1.68.43) (2024-07-29)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1515,7 +1515,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.36](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.35...@chain-registry/keplr@1.68.36) (2024-07-22)
+## [1.68.36](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.35...@chain-registry/keplr@1.68.36) (2024-07-22)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1523,7 +1523,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.35](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.34...@chain-registry/keplr@1.68.35) (2024-07-21)
+## [1.68.35](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.34...@chain-registry/keplr@1.68.35) (2024-07-21)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1579,7 +1579,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.28](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.27...@chain-registry/keplr@1.68.28) (2024-07-14)
+## [1.68.28](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.27...@chain-registry/keplr@1.68.28) (2024-07-14)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1627,7 +1627,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.22](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.21...@chain-registry/keplr@1.68.22) (2024-07-08)
+## [1.68.22](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.21...@chain-registry/keplr@1.68.22) (2024-07-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1739,7 +1739,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.8](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.7...@chain-registry/keplr@1.68.8) (2024-06-24)
+## [1.68.8](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.7...@chain-registry/keplr@1.68.8) (2024-06-24)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1747,7 +1747,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.7](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.6...@chain-registry/keplr@1.68.7) (2024-06-23)
+## [1.68.7](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.6...@chain-registry/keplr@1.68.7) (2024-06-23)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1795,7 +1795,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.68.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.68.0...@chain-registry/keplr@1.68.1) (2024-06-17)
+## [1.68.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.68.0...@chain-registry/keplr@1.68.1) (2024-06-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1827,7 +1827,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.67.11](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.67.10...@chain-registry/keplr@1.67.11) (2024-06-14)
+## [1.67.11](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.67.10...@chain-registry/keplr@1.67.11) (2024-06-14)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1875,7 +1875,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.67.5](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.67.4...@chain-registry/keplr@1.67.5) (2024-06-09)
+## [1.67.5](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.67.4...@chain-registry/keplr@1.67.5) (2024-06-09)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1883,7 +1883,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.67.4](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.67.3...@chain-registry/keplr@1.67.4) (2024-06-08)
+## [1.67.4](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.67.3...@chain-registry/keplr@1.67.4) (2024-06-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1931,7 +1931,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.66.11](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.66.10...@chain-registry/keplr@1.66.11) (2024-06-03)
+## [1.66.11](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.66.10...@chain-registry/keplr@1.66.11) (2024-06-03)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -1939,7 +1939,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.66.10](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.66.9...@chain-registry/keplr@1.66.10) (2024-06-02)
+## [1.66.10](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.66.9...@chain-registry/keplr@1.66.10) (2024-06-02)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2059,7 +2059,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.64.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.64.1...@chain-registry/keplr@1.64.2) (2024-05-20)
+## [1.64.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.64.1...@chain-registry/keplr@1.64.2) (2024-05-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2179,7 +2179,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.10](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.9...@chain-registry/keplr@1.52.10) (2024-05-17)
+## [1.52.10](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.9...@chain-registry/keplr@1.52.10) (2024-05-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2187,7 +2187,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.9](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.8...@chain-registry/keplr@1.52.9) (2024-05-16)
+## [1.52.9](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.8...@chain-registry/keplr@1.52.9) (2024-05-16)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2211,7 +2211,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.6](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.5...@chain-registry/keplr@1.52.6) (2024-05-14)
+## [1.52.6](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.5...@chain-registry/keplr@1.52.6) (2024-05-14)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2219,7 +2219,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.5](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.4...@chain-registry/keplr@1.52.5) (2024-05-13)
+## [1.52.5](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.4...@chain-registry/keplr@1.52.5) (2024-05-13)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2227,7 +2227,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.4](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.3...@chain-registry/keplr@1.52.4) (2024-05-12)
+## [1.52.4](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.3...@chain-registry/keplr@1.52.4) (2024-05-12)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2235,7 +2235,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.3](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.2...@chain-registry/keplr@1.52.3) (2024-05-11)
+## [1.52.3](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.2...@chain-registry/keplr@1.52.3) (2024-05-11)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2243,7 +2243,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.1...@chain-registry/keplr@1.52.2) (2024-05-10)
+## [1.52.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.1...@chain-registry/keplr@1.52.2) (2024-05-10)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2251,7 +2251,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.52.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.52.0...@chain-registry/keplr@1.52.1) (2024-05-09)
+## [1.52.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.52.0...@chain-registry/keplr@1.52.1) (2024-05-09)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2275,7 +2275,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.51.7](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.51.6...@chain-registry/keplr@1.51.7) (2024-05-06)
+## [1.51.7](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.51.6...@chain-registry/keplr@1.51.7) (2024-05-06)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2331,7 +2331,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.51.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.50.6...@chain-registry/keplr@1.51.0) (2024-04-30)
+# [1.51.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.50.6...@chain-registry/keplr@1.51.0) (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2355,7 +2355,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.50.4](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.50.3...@chain-registry/keplr@1.50.4) (2024-04-28)
+## [1.50.4](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.50.3...@chain-registry/keplr@1.50.4) (2024-04-28)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2435,7 +2435,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.46.8](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.46.7...@chain-registry/keplr@1.46.8) (2024-04-22)
+## [1.46.8](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.46.7...@chain-registry/keplr@1.46.8) (2024-04-22)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2491,7 +2491,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.46.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.46.0...@chain-registry/keplr@1.46.1) (2024-04-15)
+## [1.46.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.46.0...@chain-registry/keplr@1.46.1) (2024-04-15)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2539,7 +2539,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.42.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.41.1...@chain-registry/keplr@1.42.0) (2024-04-12)
+# [1.42.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.41.1...@chain-registry/keplr@1.42.0) (2024-04-12)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2603,7 +2603,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.23](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.22...@chain-registry/keplr@1.38.23) (2024-04-08)
+## [1.38.23](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.22...@chain-registry/keplr@1.38.23) (2024-04-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2611,7 +2611,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.22](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.21...@chain-registry/keplr@1.38.22) (2024-04-07)
+## [1.38.22](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.21...@chain-registry/keplr@1.38.22) (2024-04-07)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2659,7 +2659,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.16](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.15...@chain-registry/keplr@1.38.16) (2024-04-01)
+## [1.38.16](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.15...@chain-registry/keplr@1.38.16) (2024-04-01)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2699,7 +2699,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.11](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.10...@chain-registry/keplr@1.38.11) (2024-03-27)
+## [1.38.11](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.10...@chain-registry/keplr@1.38.11) (2024-03-27)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2707,7 +2707,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.10](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.9...@chain-registry/keplr@1.38.10) (2024-03-27)
+## [1.38.10](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.9...@chain-registry/keplr@1.38.10) (2024-03-27)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2715,7 +2715,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.9](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.8...@chain-registry/keplr@1.38.9) (2024-03-25)
+## [1.38.9](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.8...@chain-registry/keplr@1.38.9) (2024-03-25)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2723,7 +2723,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.8](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.7...@chain-registry/keplr@1.38.8) (2024-03-22)
+## [1.38.8](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.7...@chain-registry/keplr@1.38.8) (2024-03-22)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2731,7 +2731,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.7](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.6...@chain-registry/keplr@1.38.7) (2024-03-22)
+## [1.38.7](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.6...@chain-registry/keplr@1.38.7) (2024-03-22)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2739,7 +2739,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.6](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.5...@chain-registry/keplr@1.38.6) (2024-03-21)
+## [1.38.6](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.5...@chain-registry/keplr@1.38.6) (2024-03-21)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2747,7 +2747,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.5](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.4...@chain-registry/keplr@1.38.5) (2024-03-21)
+## [1.38.5](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.4...@chain-registry/keplr@1.38.5) (2024-03-21)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2755,7 +2755,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.4](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.3...@chain-registry/keplr@1.38.4) (2024-03-21)
+## [1.38.4](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.3...@chain-registry/keplr@1.38.4) (2024-03-21)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2771,7 +2771,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.1...@chain-registry/keplr@1.38.2) (2024-03-20)
+## [1.38.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.1...@chain-registry/keplr@1.38.2) (2024-03-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2779,7 +2779,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.38.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.38.0...@chain-registry/keplr@1.38.1) (2024-03-20)
+## [1.38.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.38.0...@chain-registry/keplr@1.38.1) (2024-03-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2787,7 +2787,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.38.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.37.1...@chain-registry/keplr@1.38.0) (2024-03-20)
+# [1.38.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.37.1...@chain-registry/keplr@1.38.0) (2024-03-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
@@ -2803,349 +2803,349 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.37.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.36.0...@chain-registry/keplr@1.37.0) (2024-03-19)
+# [1.37.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.36.0...@chain-registry/keplr@1.37.0) (2024-03-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.36.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.35.0...@chain-registry/keplr@1.36.0) (2024-03-18)
+# [1.36.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.35.0...@chain-registry/keplr@1.36.0) (2024-03-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.35.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.34.1...@chain-registry/keplr@1.35.0) (2024-03-14)
+# [1.35.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.34.1...@chain-registry/keplr@1.35.0) (2024-03-14)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.34.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.34.0...@chain-registry/keplr@1.34.1) (2024-03-10)
+## [1.34.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.34.0...@chain-registry/keplr@1.34.1) (2024-03-10)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.34.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.7...@chain-registry/keplr@1.34.0) (2024-03-08)
+# [1.34.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.7...@chain-registry/keplr@1.34.0) (2024-03-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.33.7](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.6...@chain-registry/keplr@1.33.7) (2024-03-06)
+## [1.33.7](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.6...@chain-registry/keplr@1.33.7) (2024-03-06)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.33.6](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.5...@chain-registry/keplr@1.33.6) (2024-02-28)
+## [1.33.6](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.5...@chain-registry/keplr@1.33.6) (2024-02-28)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.33.5](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.4...@chain-registry/keplr@1.33.5) (2024-02-27)
+## [1.33.5](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.4...@chain-registry/keplr@1.33.5) (2024-02-27)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.33.4](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.3...@chain-registry/keplr@1.33.4) (2024-02-27)
+## [1.33.4](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.3...@chain-registry/keplr@1.33.4) (2024-02-27)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.33.3](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.2...@chain-registry/keplr@1.33.3) (2024-02-26)
+## [1.33.3](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.2...@chain-registry/keplr@1.33.3) (2024-02-26)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.33.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.1...@chain-registry/keplr@1.33.2) (2024-02-26)
+## [1.33.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.1...@chain-registry/keplr@1.33.2) (2024-02-26)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.33.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.33.0...@chain-registry/keplr@1.33.1) (2024-02-11)
+## [1.33.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.33.0...@chain-registry/keplr@1.33.1) (2024-02-11)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.33.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.32.0...@chain-registry/keplr@1.33.0) (2024-01-31)
+# [1.33.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.32.0...@chain-registry/keplr@1.33.0) (2024-01-31)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.32.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.31.0...@chain-registry/keplr@1.32.0) (2024-01-25)
+# [1.32.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.31.0...@chain-registry/keplr@1.32.0) (2024-01-25)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.31.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.30.4...@chain-registry/keplr@1.31.0) (2024-01-25)
+# [1.31.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.30.4...@chain-registry/keplr@1.31.0) (2024-01-25)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.30.4](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.30.3...@chain-registry/keplr@1.30.4) (2024-01-19)
+## [1.30.4](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.30.3...@chain-registry/keplr@1.30.4) (2024-01-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.30.3](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.30.2...@chain-registry/keplr@1.30.3) (2024-01-19)
+## [1.30.3](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.30.2...@chain-registry/keplr@1.30.3) (2024-01-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.30.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.30.1...@chain-registry/keplr@1.30.2) (2024-01-19)
+## [1.30.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.30.1...@chain-registry/keplr@1.30.2) (2024-01-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.30.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.30.0...@chain-registry/keplr@1.30.1) (2024-01-17)
+## [1.30.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.30.0...@chain-registry/keplr@1.30.1) (2024-01-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.30.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.29.1...@chain-registry/keplr@1.30.0) (2023-12-20)
+# [1.30.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.29.1...@chain-registry/keplr@1.30.0) (2023-12-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.29.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.29.0...@chain-registry/keplr@1.29.1) (2023-12-15)
+## [1.29.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.29.0...@chain-registry/keplr@1.29.1) (2023-12-15)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.29.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.28.0...@chain-registry/keplr@1.29.0) (2023-12-15)
+# [1.29.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.28.0...@chain-registry/keplr@1.29.0) (2023-12-15)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.28.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.27.0...@chain-registry/keplr@1.28.0) (2023-12-15)
+# [1.28.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.27.0...@chain-registry/keplr@1.28.0) (2023-12-15)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.27.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.26.0...@chain-registry/keplr@1.27.0) (2023-12-15)
+# [1.27.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.26.0...@chain-registry/keplr@1.27.0) (2023-12-15)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.26.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.25.1...@chain-registry/keplr@1.26.0) (2023-12-12)
+# [1.26.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.25.1...@chain-registry/keplr@1.26.0) (2023-12-12)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.25.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.25.0...@chain-registry/keplr@1.25.1) (2023-09-27)
+## [1.25.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.25.0...@chain-registry/keplr@1.25.1) (2023-09-27)
 
 ### Bug Fixes
 
-- keplr cleanVer containing repo ([356eabc](https://github.com/cosmology-tech/chain-registry/commit/356eabc3d4bf832e9336a40c457f4f0be0915b6e))
+- keplr cleanVer containing repo ([356eabc](https://github.com/hyperweb-io/chain-registry/commit/356eabc3d4bf832e9336a40c457f4f0be0915b6e))
 
-# [1.25.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.24.0...@chain-registry/keplr@1.25.0) (2023-09-27)
-
-**Note:** Version bump only for package @chain-registry/keplr
-
-# [1.24.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.23.0...@chain-registry/keplr@1.24.0) (2023-09-15)
+# [1.25.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.24.0...@chain-registry/keplr@1.25.0) (2023-09-27)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.23.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.22.1...@chain-registry/keplr@1.23.0) (2023-08-16)
+# [1.24.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.23.0...@chain-registry/keplr@1.24.0) (2023-09-15)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.22.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.22.0...@chain-registry/keplr@1.22.1) (2023-07-30)
+# [1.23.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.22.1...@chain-registry/keplr@1.23.0) (2023-08-16)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.22.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.21.1...@chain-registry/keplr@1.22.0) (2023-07-16)
+## [1.22.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.22.0...@chain-registry/keplr@1.22.1) (2023-07-30)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.21.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.21.0...@chain-registry/keplr@1.21.1) (2023-07-12)
+# [1.22.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.21.1...@chain-registry/keplr@1.22.0) (2023-07-16)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.21.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.20.0...@chain-registry/keplr@1.21.0) (2023-07-11)
+## [1.21.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.21.0...@chain-registry/keplr@1.21.1) (2023-07-12)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.20.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.19.0...@chain-registry/keplr@1.20.0) (2023-07-08)
+# [1.21.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.20.0...@chain-registry/keplr@1.21.0) (2023-07-11)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.19.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.18.0...@chain-registry/keplr@1.19.0) (2023-06-27)
+# [1.20.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.19.0...@chain-registry/keplr@1.20.0) (2023-07-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.18.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.17.0...@chain-registry/keplr@1.18.0) (2023-05-24)
+# [1.19.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.18.0...@chain-registry/keplr@1.19.0) (2023-06-27)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.17.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.16.1...@chain-registry/keplr@1.17.0) (2023-04-20)
+# [1.18.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.17.0...@chain-registry/keplr@1.18.0) (2023-05-24)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.16.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.16.0...@chain-registry/keplr@1.16.1) (2023-04-20)
+# [1.17.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.16.1...@chain-registry/keplr@1.17.0) (2023-04-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.16.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.15.1...@chain-registry/keplr@1.16.0) (2023-04-18)
+## [1.16.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.16.0...@chain-registry/keplr@1.16.1) (2023-04-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.15.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.15.0...@chain-registry/keplr@1.15.1) (2023-04-18)
+# [1.16.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.15.1...@chain-registry/keplr@1.16.0) (2023-04-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.15.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.14.0...@chain-registry/keplr@1.15.0) (2023-04-18)
+## [1.15.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.15.0...@chain-registry/keplr@1.15.1) (2023-04-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.14.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.13.0...@chain-registry/keplr@1.14.0) (2023-03-29)
+# [1.15.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.14.0...@chain-registry/keplr@1.15.0) (2023-04-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.13.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.12.0...@chain-registry/keplr@1.13.0) (2023-03-02)
+# [1.14.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.13.0...@chain-registry/keplr@1.14.0) (2023-03-29)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.12.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.11.0...@chain-registry/keplr@1.12.0) (2023-02-23)
+# [1.13.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.12.0...@chain-registry/keplr@1.13.0) (2023-03-02)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.11.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.10.1...@chain-registry/keplr@1.11.0) (2023-02-08)
+# [1.12.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.11.0...@chain-registry/keplr@1.12.0) (2023-02-23)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.10.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.10.0...@chain-registry/keplr@1.10.1) (2023-01-17)
+# [1.11.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.10.1...@chain-registry/keplr@1.11.0) (2023-02-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.10.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.9.0...@chain-registry/keplr@1.10.0) (2022-12-08)
+## [1.10.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.10.0...@chain-registry/keplr@1.10.1) (2023-01-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.9.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.8.0...@chain-registry/keplr@1.9.0) (2022-12-08)
+# [1.10.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.9.0...@chain-registry/keplr@1.10.0) (2022-12-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.8.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.7.0...@chain-registry/keplr@1.8.0) (2022-11-16)
+# [1.9.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.8.0...@chain-registry/keplr@1.9.0) (2022-12-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.7.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.6.0...@chain-registry/keplr@1.7.0) (2022-11-10)
+# [1.8.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.7.0...@chain-registry/keplr@1.8.0) (2022-11-16)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.6.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.5.0...@chain-registry/keplr@1.6.0) (2022-11-10)
+# [1.7.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.6.0...@chain-registry/keplr@1.7.0) (2022-11-10)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.5.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.4.0...@chain-registry/keplr@1.5.0) (2022-11-05)
+# [1.6.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.5.0...@chain-registry/keplr@1.6.0) (2022-11-10)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.4.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.3.1...@chain-registry/keplr@1.4.0) (2022-11-03)
+# [1.5.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.4.0...@chain-registry/keplr@1.5.0) (2022-11-05)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.3.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.3.0...@chain-registry/keplr@1.3.1) (2022-10-27)
+# [1.4.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.3.1...@chain-registry/keplr@1.4.0) (2022-11-03)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.3.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.2.0...@chain-registry/keplr@1.3.0) (2022-10-26)
+## [1.3.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.3.0...@chain-registry/keplr@1.3.1) (2022-10-27)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.2.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.1.0...@chain-registry/keplr@1.2.0) (2022-10-20)
+# [1.3.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.2.0...@chain-registry/keplr@1.3.0) (2022-10-26)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.1.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.0.1...@chain-registry/keplr@1.1.0) (2022-10-20)
+# [1.2.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.1.0...@chain-registry/keplr@1.2.0) (2022-10-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [1.0.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@1.0.0...@chain-registry/keplr@1.0.1) (2022-10-20)
+# [1.1.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.0.1...@chain-registry/keplr@1.1.0) (2022-10-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [1.0.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.12.0...@chain-registry/keplr@1.0.0) (2022-09-29)
+## [1.0.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@1.0.0...@chain-registry/keplr@1.0.1) (2022-10-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.12.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.11.2...@chain-registry/keplr@0.12.0) (2022-09-20)
+# [1.0.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.12.0...@chain-registry/keplr@1.0.0) (2022-09-29)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.11.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.11.1...@chain-registry/keplr@0.11.2) (2022-09-19)
+# [0.12.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.11.2...@chain-registry/keplr@0.12.0) (2022-09-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.11.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.11.0...@chain-registry/keplr@0.11.1) (2022-09-19)
+## [0.11.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.11.1...@chain-registry/keplr@0.11.2) (2022-09-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.11.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.10.0...@chain-registry/keplr@0.11.0) (2022-09-19)
+## [0.11.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.11.0...@chain-registry/keplr@0.11.1) (2022-09-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.10.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.9.0...@chain-registry/keplr@0.10.0) (2022-09-16)
+# [0.11.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.10.0...@chain-registry/keplr@0.11.0) (2022-09-19)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.9.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.8.3...@chain-registry/keplr@0.9.0) (2022-09-14)
+# [0.10.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.9.0...@chain-registry/keplr@0.10.0) (2022-09-16)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.8.3](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.8.2...@chain-registry/keplr@0.8.3) (2022-09-08)
+# [0.9.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.8.3...@chain-registry/keplr@0.9.0) (2022-09-14)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.8.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.8.1...@chain-registry/keplr@0.8.2) (2022-09-08)
+## [0.8.3](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.8.2...@chain-registry/keplr@0.8.3) (2022-09-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.8.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.8.0...@chain-registry/keplr@0.8.1) (2022-09-07)
+## [0.8.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.8.1...@chain-registry/keplr@0.8.2) (2022-09-08)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.8.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.7.3...@chain-registry/keplr@0.8.0) (2022-09-06)
+## [0.8.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.8.0...@chain-registry/keplr@0.8.1) (2022-09-07)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.7.3](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.7.2...@chain-registry/keplr@0.7.3) (2022-08-31)
+# [0.8.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.7.3...@chain-registry/keplr@0.8.0) (2022-09-06)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.7.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.7.1...@chain-registry/keplr@0.7.2) (2022-08-31)
+## [0.7.3](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.7.2...@chain-registry/keplr@0.7.3) (2022-08-31)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.7.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.7.0...@chain-registry/keplr@0.7.1) (2022-08-31)
+## [0.7.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.7.1...@chain-registry/keplr@0.7.2) (2022-08-31)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.7.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.6.1...@chain-registry/keplr@0.7.0) (2022-08-31)
+## [0.7.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.7.0...@chain-registry/keplr@0.7.1) (2022-08-31)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.6.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.6.0...@chain-registry/keplr@0.6.1) (2022-08-23)
+# [0.7.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.6.1...@chain-registry/keplr@0.7.0) (2022-08-31)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.6.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.5.0...@chain-registry/keplr@0.6.0) (2022-08-23)
+## [0.6.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.6.0...@chain-registry/keplr@0.6.1) (2022-08-23)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.5.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.7...@chain-registry/keplr@0.5.0) (2022-08-20)
+# [0.6.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.5.0...@chain-registry/keplr@0.6.0) (2022-08-23)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.4.7](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.6...@chain-registry/keplr@0.4.7) (2022-08-18)
+# [0.5.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.7...@chain-registry/keplr@0.5.0) (2022-08-20)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.4.6](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.5...@chain-registry/keplr@0.4.6) (2022-08-18)
+## [0.4.7](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.6...@chain-registry/keplr@0.4.7) (2022-08-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.4.5](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.4...@chain-registry/keplr@0.4.5) (2022-08-18)
+## [0.4.6](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.5...@chain-registry/keplr@0.4.6) (2022-08-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.4.4](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.3...@chain-registry/keplr@0.4.4) (2022-08-17)
+## [0.4.5](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.4...@chain-registry/keplr@0.4.5) (2022-08-18)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.4.3](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.2...@chain-registry/keplr@0.4.3) (2022-08-17)
+## [0.4.4](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.3...@chain-registry/keplr@0.4.4) (2022-08-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.4.2](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.1...@chain-registry/keplr@0.4.2) (2022-08-17)
+## [0.4.3](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.2...@chain-registry/keplr@0.4.3) (2022-08-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.4.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.4.0...@chain-registry/keplr@0.4.1) (2022-08-17)
+## [0.4.2](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.1...@chain-registry/keplr@0.4.2) (2022-08-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.4.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.3.1...@chain-registry/keplr@0.4.0) (2022-08-14)
+## [0.4.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.4.0...@chain-registry/keplr@0.4.1) (2022-08-17)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-## [0.3.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.3.0...@chain-registry/keplr@0.3.1) (2022-08-13)
+# [0.4.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.3.1...@chain-registry/keplr@0.4.0) (2022-08-14)
 
 **Note:** Version bump only for package @chain-registry/keplr
 
-# [0.3.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/keplr@0.2.1...@chain-registry/keplr@0.3.0) (2022-08-13)
+## [0.3.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.3.0...@chain-registry/keplr@0.3.1) (2022-08-13)
+
+**Note:** Version bump only for package @chain-registry/keplr
+
+# [0.3.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/keplr@0.2.1...@chain-registry/keplr@0.3.0) (2022-08-13)
 
 **Note:** Version bump only for package @chain-registry/keplr
 

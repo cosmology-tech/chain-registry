@@ -427,7 +427,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [0.49.15](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/generate-types@0.49.14...@chain-registry/generate-types@0.49.15) (2024-10-10)
+## [0.49.15](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/generate-types@0.49.14...@chain-registry/generate-types@0.49.15) (2024-10-10)
 
 **Note:** Version bump only for package @chain-registry/generate-types
 
@@ -1331,7 +1331,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [0.47.1](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/generate-types@0.47.0...@chain-registry/generate-types@0.47.1) (2024-06-04)
+## [0.47.1](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/generate-types@0.47.0...@chain-registry/generate-types@0.47.1) (2024-06-04)
 
 **Note:** Version bump only for package @chain-registry/generate-types
 

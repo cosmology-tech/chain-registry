@@ -659,7 +659,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.71.13](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/v2@1.71.12...@chain-registry/v2@1.71.13) (2024-10-27)
+## [1.71.13](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/v2@1.71.12...@chain-registry/v2@1.71.13) (2024-10-27)
 
 **Note:** Version bump only for package @chain-registry/v2
 
@@ -803,7 +803,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.66.15](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/v2@1.66.14...@chain-registry/v2@1.66.15) (2024-10-10)
+## [1.66.15](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/v2@1.66.14...@chain-registry/v2@1.66.15) (2024-10-10)
 
 **Note:** Version bump only for package @chain-registry/v2
 
@@ -1643,7 +1643,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.64.9](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/v2@1.64.8...@chain-registry/v2@1.64.9) (2024-06-14)
+## [1.64.9](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/v2@1.64.8...@chain-registry/v2@1.64.9) (2024-06-14)
 
 **Note:** Version bump only for package @chain-registry/v2
 
@@ -2043,7 +2043,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.48.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/v2@1.47.0...@chain-registry/v2@1.48.0) (2024-04-30)
+# [1.48.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/v2@1.47.0...@chain-registry/v2@1.48.0) (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/v2
 
@@ -2051,7 +2051,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [1.47.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/v2@1.46.0...@chain-registry/v2@1.47.0) (2024-04-30)
+# [1.47.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/v2@1.46.0...@chain-registry/v2@1.47.0) (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/v2
 

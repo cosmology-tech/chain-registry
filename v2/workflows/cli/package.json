@@ -3,7 +3,7 @@
   "version": "1.53.50",
   "description": "Chain Registry CLI",
   "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/cosmology-tech/chain-registry",
+  "homepage": "https://github.com/hyperweb-io/chain-registry",
   "license": "SEE LICENSE IN LICENSE",
   "main": "index.js",
   "module": "esm/index.js",
@@ -18,10 +18,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/chain-registry"
+    "url": "https://github.com/hyperweb-io/chain-registry"
   },
   "bugs": {
-    "url": "https://github.com/cosmology-tech/chain-registry/issues"
+    "url": "https://github.com/hyperweb-io/chain-registry/issues"
   },
   "scripts": {
     "copy": "copyfiles -f LICENSE README.md package.json dist",

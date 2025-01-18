@@ -1,11 +1,11 @@
 {
-  "name": "@cosmology/chain-registry",
+  "name": "@hyperweb/chain-registry",
   "version": "0.0.1",
-  "author": "Cosmology <developers@cosmology.zone>",
+  "author": "Hyperweb <developers@hyperweb.io>",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/chain-registry"
+    "url": "https://github.com/hyperweb-io/chain-registry"
   },
   "license": "SEE LICENSE IN LICENSE",
   "publishConfig": {

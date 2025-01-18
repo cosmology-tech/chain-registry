@@ -1651,7 +1651,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [0.31.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/interfaces@0.30.0...@chain-registry/interfaces@0.31.0) (2024-04-30)
+# [0.31.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/interfaces@0.30.0...@chain-registry/interfaces@0.31.0) (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/interfaces
 
@@ -1659,7 +1659,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [0.30.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/interfaces@0.29.5...@chain-registry/interfaces@0.30.0) (2024-04-30)
+# [0.30.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/interfaces@0.29.5...@chain-registry/interfaces@0.30.0) (2024-04-30)
 
 **Note:** Version bump only for package @chain-registry/interfaces
 
@@ -1715,7 +1715,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [0.28.0](https://github.com/cosmology-tech/chain-registry/compare/@chain-registry/interfaces@0.27.0...@chain-registry/interfaces@0.28.0) (2024-04-24)
+# [0.28.0](https://github.com/hyperweb-io/chain-registry/compare/@chain-registry/interfaces@0.27.0...@chain-registry/interfaces@0.28.0) (2024-04-24)
 
 **Note:** Version bump only for package @chain-registry/interfaces
 
