@@ -5,7 +5,7 @@ const info: Chain = {
   status: 'live',
   network_type: 'testnet',
   website: 'https://allora.network',
-  pretty_name: 'Allora-Testnet-1',
+  pretty_name: 'Allora Testnet',
   chain_type: 'cosmos',
   chain_id: 'allora-testnet-1',
   bech32_prefix: 'allo',
@@ -30,8 +30,8 @@ const info: Chain = {
 
   },
   logo_URIs: {
-    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/images/allora-token.png',
-    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/images/allora-token.svg'
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/allora/images/allora.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/allora/images/allora.svg'
   },
   apis: {
     rpc: [
@@ -99,8 +99,8 @@ const info: Chain = {
     }
   ],
   images: [{
-      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/alloratestnet/images/allora.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/alloratestnet/images/allora.svg'
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/allora/images/allora.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/allora/images/allora.svg'
     }]
 };
 export default info;
