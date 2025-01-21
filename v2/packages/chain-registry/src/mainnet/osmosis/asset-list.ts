@@ -21938,7 +21938,7 @@ const info: AssetList = {
     },
     {
       description: 'ashLAB - Burned LAB',
-      extendedDescription: 'ashLAB - receipt token recieved when burning LAB via ASH DAOs Furnace',
+      extendedDescription: 'ashLAB - receipt token received when burning LAB via ASH DAOs Furnace',
       denomUnits: [{
           denom: 'factory/osmo1svj5kd8kzj7xxtrd6ftjk0856ffpyj4egz7f9pd9dge5wr4kwansmefq07/lab.ash',
           exponent: 0

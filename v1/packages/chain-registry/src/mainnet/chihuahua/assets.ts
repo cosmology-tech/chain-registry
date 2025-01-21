@@ -243,7 +243,7 @@ const info: AssetList = {
     },
     {
       description: 'ashHUAHUA - Burned HUAHUA',
-      extended_description: 'ashHUAHUA - receipt token recieved when burning HUAHUA via ASH DAOs Furnace',
+      extended_description: 'ashHUAHUA - receipt token received when burning HUAHUA via ASH DAOs Furnace',
       denom_units: [{
           denom: 'factory/chihuahua1hplyuj2hzxd75q8686g9vm3uzrrny9ggvt8aza2csupgdp98vg2sp0e3h0/uhuahua.ash',
           exponent: 0
