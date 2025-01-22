@@ -447,19 +447,6 @@ chainPaths.forEach((file) => {
 
   if (data.$schema.endsWith('chain.schema.json')) {
     if (!data.slip44) data.slip44 = 118;
-    // if (data.codebase) {
-    //   const newCodebase = {};
-    //   if ('cosmos_sdk_version' in data.codebase) {
-    //     newCodebase.cosmos_sdk_version = data.codebase.cosmos_sdk_version;
-    //   }
-    //   if ('cosmwasm_enabled' in data.codebase) {
-    //     newCodebase.cosmwasm_enabled = data.codebase.cosmwasm_enabled;
-    //   }
-    //   if ('cosmwasm_version' in data.codebase) {
-    //     newCodebase.cosmwasm_version = data.codebase.cosmwasm_version;
-    //   }
-    //   data.codebase = newCodebase;
-    // }
     delete data.peers;
 
     if (!data.chain_name) {
