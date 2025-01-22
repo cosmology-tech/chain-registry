@@ -90,6 +90,35 @@ const info: IBCInfo[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain_1: {
+      chain_name: 'chihuahua',
+      client_id: '07-tendermint-212',
+      connection_id: 'connection-139'
+    },
+    chain_2: {
+      chain_name: 'dymension',
+      client_id: '07-tendermint-57',
+      connection_id: 'connection-43'
+    },
+    channels: [{
+        chain_1: {
+          channel_id: 'channel-208',
+          port_id: 'transfer'
+        },
+        chain_2: {
+          channel_id: 'channel-58',
+          port_id: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain_1: {
       chain_name: 'cosmoshub',
       client_id: '07-tendermint-1205',
       connection_id: 'connection-933'

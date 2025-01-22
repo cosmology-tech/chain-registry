@@ -3,6 +3,49 @@ const assets: AssetList = {
   chain_name: 'chihuahua',
   assets: [
     {
+      description: 'The native governance and staking token of the Dymension Hub',
+      denom_units: [{
+          denom: 'ibc/BFAA5FC8AAC1A59A7577865BA6FC22E8FCC375A4DFD1EEF53D7640F64DCFA682',
+          exponent: 0,
+          aliases: ['adym']
+        }, {
+          denom: 'dym',
+          exponent: 18
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/BFAA5FC8AAC1A59A7577865BA6FC22E8FCC375A4DFD1EEF53D7640F64DCFA682',
+      name: 'Dymension',
+      display: 'dym',
+      symbol: 'DYM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+      },
+      coingecko_id: 'dymension',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg',
+          theme: {
+            primary_color_hex: '#f4e4d4'
+          }
+        }],
+      socials: {
+        website: 'https://portal.dymension.xyz',
+        twitter: 'https://twitter.com/dymension'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-58',
+            base_denom: 'adym',
+            chain_name: 'dymension'
+          },
+          chain: {
+            channel_id: 'channel-208'
+          }
+        }]
+    },
+    {
       description: 'The native token of JUNO Chain',
       denom_units: [{
           denom: 'ibc/89C79BD28DCCF300B9EE87740B061011AD870EC480777FAB95D85B3ED36BC06C',
@@ -478,6 +521,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-25'
+          }
+        }]
+    },
+    {
+      description: 'The native governance and staking token of the Dymension Hub',
+      denom_units: [{
+          denom: 'ibc/BFAA5FC8AAC1A59A7577865BA6FC22E8FCC375A4DFD1EEF53D7640F64DCFA682',
+          exponent: 0,
+          aliases: ['adym']
+        }, {
+          denom: 'dym',
+          exponent: 18
+        }],
+      type_asset: 'sdk.coin',
+      base: 'ibc/BFAA5FC8AAC1A59A7577865BA6FC22E8FCC375A4DFD1EEF53D7640F64DCFA682',
+      name: 'Dymension',
+      display: 'dym',
+      symbol: 'DYM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg'
+      },
+      coingecko_id: 'dymension',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dymension/images/dymension-logo.svg',
+          theme: {
+            primary_color_hex: '#f4e4d4'
+          }
+        }],
+      socials: {
+        website: 'https://portal.dymension.xyz',
+        twitter: 'https://twitter.com/dymension'
+      },
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-58',
+            base_denom: 'adym',
+            chain_name: 'dymension'
+          },
+          chain: {
+            channel_id: 'channel-208'
           }
         }]
     },

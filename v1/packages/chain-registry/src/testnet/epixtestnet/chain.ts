@@ -7,7 +7,7 @@ const info: Chain = {
   website: 'https://epix.zone/',
   pretty_name: 'Epix Testnet',
   chain_type: 'cosmos',
-  chain_id: 'epix_4243-1',
+  chain_id: 'epix_1917-1',
   bech32_prefix: 'epix',
   daemon_name: 'epixd',
   node_home: '$HOME/.epixd',

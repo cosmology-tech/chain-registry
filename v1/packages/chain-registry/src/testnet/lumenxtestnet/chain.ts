@@ -26,9 +26,6 @@ const info: Chain = {
         denom: 'ulumen'
       }]
   },
-  codebase: {
-
-  },
   apis: {
     rpc: [{
         address: 'https://testnet-rpc.lumenx.chaintools.tech/',

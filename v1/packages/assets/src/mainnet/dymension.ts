@@ -173,6 +173,45 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
+      denom_units: [{
+          denom: 'ibc/7B1E1EFA6808065DA759354B6F21433156F4BF5DF2CF96DCBBC91738683748AF',
+          exponent: 0,
+          aliases: ['uhuahua']
+        }, {
+          denom: 'huahua',
+          exponent: 6
+        }],
+      base: 'ibc/7B1E1EFA6808065DA759354B6F21433156F4BF5DF2CF96DCBBC91738683748AF',
+      name: 'Chihuahua',
+      display: 'huahua',
+      symbol: 'HUAHUA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+      },
+      coingecko_id: 'chihuahua-token',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+          theme: {
+            primary_color_hex: '#343434'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-208',
+            base_denom: 'uhuahua',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            channel_id: 'channel-58'
+          }
+        }]
+    },
+    {
       description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
@@ -382,6 +421,45 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4'
+          }
+        }]
+    },
+    {
+      description: 'Chihuahua is a community-driven blockchain project focused on creating a fun and engaging ecosystem with an emphasis on social interactions and community building.',
+      denom_units: [{
+          denom: 'ibc/7B1E1EFA6808065DA759354B6F21433156F4BF5DF2CF96DCBBC91738683748AF',
+          exponent: 0,
+          aliases: ['uhuahua']
+        }, {
+          denom: 'huahua',
+          exponent: 6
+        }],
+      base: 'ibc/7B1E1EFA6808065DA759354B6F21433156F4BF5DF2CF96DCBBC91738683748AF',
+      name: 'Chihuahua',
+      display: 'huahua',
+      symbol: 'HUAHUA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg'
+      },
+      coingecko_id: 'chihuahua-token',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg',
+          theme: {
+            primary_color_hex: '#343434'
+          }
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-208',
+            base_denom: 'uhuahua',
+            chain_name: 'chihuahua'
+          },
+          chain: {
+            channel_id: 'channel-58'
           }
         }]
     },
