@@ -31,7 +31,13 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/Bouachain/bouachain.git',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v0.9.0'],
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://github.com/Bouachain/bouachain/raw/master/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bouachain/images/bouachain.png',

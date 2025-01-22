@@ -26,7 +26,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Loop-Protocol/perm.git',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Loop-Protocol/testnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    ibc: {
+      type: 'go',
+      version: '4.3.0'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

@@ -28,7 +28,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/zenrock-foundation/zrchain',
+    genesis: {
+      genesis_url: 'https://rpc.diamond.zenrocklabs.io/genesis'
+    },
+    recommended_version: '5.3.8',
+    compatible_versions: ['5.3.8'],
+    binaries: {
+      "linux/arm64": 'https://github.com/zenrocklabs/zrchain/releases/download/v5.3.8/zenrockd'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.38'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/zenrocklabs/cosmos-sdk',
+      version: 'v0.50.10',
+      tag: 'v0.50.10-zenrock'
+    },
+    cosmwasm: {
+      version: 'v0.53.0',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/zenrock/images/zenrock.png'

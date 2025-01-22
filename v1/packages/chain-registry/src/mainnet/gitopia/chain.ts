@@ -31,7 +31,25 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/gitopia/gitopia',
+    genesis: {
+      genesis_url: 'https://github.com/gitopia/mainnet/raw/master/genesis.tar.gz'
+    },
+    recommended_version: 'v4.0.0',
+    compatible_versions: ['v4.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.6'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.13'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.6.0',
+      ics_enabled: ['ics20-1']
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gitopia/images/gitopia.png',

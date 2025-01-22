@@ -27,7 +27,16 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/akash-network/node',
+    recommended_version: 'v0.22.0',
+    compatible_versions: ['v0.22.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.22.0/akash_0.22.0_linux_amd64.zip',
+      "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.22.0/akash_0.22.0_linux_arm64.zip'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/akash-network/net/master/sandbox/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',

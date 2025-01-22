@@ -46,7 +46,27 @@ const info: Chain = {
     ]
   },
   codebase: {
-
+    git_repo: 'https://github.com/elys-network/elys',
+    recommended_version: 'v1.4.0',
+    compatible_versions: ['v1.4.0'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.38.12'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/elys-network/networks/blob/main/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.9'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.1'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/elys/images/elys.png'

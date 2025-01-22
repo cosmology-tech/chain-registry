@@ -31,7 +31,32 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/nolus-protocol/nolus-core',
+    recommended_version: 'v0.6.3',
+    compatible_versions: ['v0.6.3'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.11'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/mainnet/pirin-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/nolus-protocol/cosmos-sdk',
+      version: 'v0.50.7',
+      tag: 'v0.50.7-nolus-rc1'
+    },
+    ibc: {
+      type: 'go',
+      version: '8.2.1',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: 'v0.51.0',
+      repo: 'https://github.com/neutron-org/wasmd',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nolus/images/nolus.png',

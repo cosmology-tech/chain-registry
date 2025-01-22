@@ -24,7 +24,25 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cosmic-horizon/QWOYN',
+    recommended_version: 'v5.2.0',
+    compatible_versions: ['v5.2.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/cosmic-horizon/testnets/main/higgs-boson-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.3'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.0.1',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    }
   },
   apis: {
     rpc: [{

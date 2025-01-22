@@ -135,7 +135,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Team-Kujira/core',
+    recommended_version: 'v1.1.0',
+    compatible_versions: ['v1.1.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/Team-Kujira/networks/raw/master/mainnet/kaiyo-1.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.12'
+    },
+    ibc: {
+      type: 'go',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   description: 'A decentralized ecosystem for protocols, builders and web3 users seeking sustainable FinTech.',
   apis: {

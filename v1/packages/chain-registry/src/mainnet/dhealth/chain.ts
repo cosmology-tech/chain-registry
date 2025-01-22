@@ -28,7 +28,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/dhealthproject/dhealth',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/dhealthproject/dhealth/releases/download/v1.0.0/dhealthd-1.0.0-linux-amd64'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.2'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/dhealthproject/mainnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/cosmos/cosmos-sdk',
+      version: 'v0.47.4'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.2.0'
+    },
+    cosmwasm: {
+      version: 'v0.41.0',
+      path: '$HOME/.dhealth/wasm',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dhealth/images/dhp.png',

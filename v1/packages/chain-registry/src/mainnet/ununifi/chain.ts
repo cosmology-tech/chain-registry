@@ -31,7 +31,35 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/UnUniFi/chain',
+    recommended_version: 'v4.0.2',
+    compatible_versions: ['v4.0.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.2/ununifid'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.2'
+    },
+    genesis: {
+      name: 'beta-v1',
+      genesis_url: 'https://raw.githubusercontent.com/UnUniFi/network/main/launch/ununifi-beta-v1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/ununifi/cosmos-sdk',
+      version: 'v0.47.3',
+      tag: 'v0.47.3-custom-bank-1'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: 'v0.40.1',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ununifi/images/ununifi.png',

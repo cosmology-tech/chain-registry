@@ -23,7 +23,20 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/UptickNetwork/uptick',
+    recommended_version: 'v0.2.6',
+    compatible_versions: ['v0.2.6'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34.23'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/UptickNetwork/uptick-testnet/main/uptick_7000-2/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.5'
+    }
   },
   apis: {
     rpc: [{

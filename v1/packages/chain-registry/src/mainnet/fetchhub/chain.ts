@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/fetchai/fetchd',
+    recommended_version: 'v0.10.5',
+    compatible_versions: ['v0.10.5'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/fetchai/genesis-fetchhub/fetchhub-4/fetchhub-4/data/genesis_migrated_5300200.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/fetchhub/images/fet.png',

@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/kima-finance/kima-blockchain',
+    recommended_version: 'v0.4.3',
+    compatible_versions: ['v0.4.3'],
+    genesis: {
+      genesis_url: 'https://archive.kima.network/genesis.json'
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kimanetwork/images/kima.png',

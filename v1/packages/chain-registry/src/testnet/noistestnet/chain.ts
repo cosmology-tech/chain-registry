@@ -31,7 +31,25 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/noislabs/noisd',
+    recommended_version: 'v1.0.1',
+    compatible_versions: ['v1.0.1'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://raw.githubusercontent.com/noislabs/networks/nois-testnet-005/nois-testnet-005/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nois/images/nois.png',

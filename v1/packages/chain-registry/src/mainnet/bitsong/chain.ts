@@ -13,7 +13,27 @@ const info: Chain = {
   daemon_name: 'bitsongd',
   node_home: '$HOME/.bitsongd',
   codebase: {
-
+    git_repo: 'https://github.com/bitsongofficial/go-bitsong',
+    recommended_version: 'v0.15.0',
+    compatible_versions: ['v0.15.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/bitsongofficial/go-bitsong/releases/download/v0.15.0/bitsongd'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-2b/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.4.2'
+    },
+    cosmwasm: {
+      version: '0.33.0',
+      enabled: true
+    }
   },
   fees: {
     fee_tokens: [{

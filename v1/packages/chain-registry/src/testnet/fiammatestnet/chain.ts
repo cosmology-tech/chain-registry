@@ -24,7 +24,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/fiamma-chain/fiamma',
+    recommended_version: 'v0.1.0',
+    compatible_versions: ['v0.1.0'],
+    genesis: {
+      genesis_url: 'https://github.com/fiamma-chain/networks/raw/main/fiamma-testnet-1/genesis.json'
+    }
   },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/fiammatestnet/images/fiamma.svg'

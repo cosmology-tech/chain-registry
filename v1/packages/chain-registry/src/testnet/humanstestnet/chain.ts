@@ -19,7 +19,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/humansdotai/humans',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    genesis: {
+      genesis_url: 'https://rpc-testnet.humans.zone/genesis'
+    }
   },
   apis: {
     rpc: [{

@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ChimbaBlockchain/chimba',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    genesis: {
+      genesis_url: 'https://rpc.mainnet.chimba.ooo/genesis'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chimba/images/chimba-blue.png',

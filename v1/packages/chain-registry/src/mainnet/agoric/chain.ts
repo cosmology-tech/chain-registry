@@ -32,7 +32,38 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Agoric/agoric-sdk/',
+    genesis: {
+      genesis_url: 'https://main.agoric.net/genesis.json'
+    },
+    recommended_version: 'agoric-upgrade-18',
+    compatible_versions: ['agoric-upgrade-18'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.30',
+      repo: 'https://github.com/agoric-labs/cometbft',
+      tag: 'v0.34.30-alpha.agoric.2'
+    },
+    cosmwasm: {
+      enabled: false
+    },
+    language: {
+      type: 'go',
+      version: '1.20.2'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/agoric-labs/cosmos-sdk',
+      version: 'v0.46.16',
+      tag: 'v0.46.16-alpha.agoric.2.5'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.3.1',
+      repo: 'https://github.com/agoric-labs/ibc-go',
+      tag: 'v6.3.1-alpha.agoric.2',
+      ics_enabled: ['ics20-1']
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/agoric/images/Agoric-logo-color.png',

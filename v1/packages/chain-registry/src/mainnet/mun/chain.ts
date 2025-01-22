@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/munblockchain/mun-node',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    genesis: {
+      genesis_url: 'https://mainnet1rpc.mun.money/genesis'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mun/images/mun.png',

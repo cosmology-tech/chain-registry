@@ -19,7 +19,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://docs.selfchain.xyz/nodes-and-validators/releases',
+    recommended_version: '0.2.2',
+    compatible_versions: ['0.2.2'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/hotcrosscom/selfchain-genesis/main/networks/devnet/genesis.json'
+    }
   },
   apis: {
     rpc: [{

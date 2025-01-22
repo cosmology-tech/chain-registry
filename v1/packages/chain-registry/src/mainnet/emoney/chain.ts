@@ -58,7 +58,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/e-money/em-ledger',
+    recommended_version: 'v1.1.3',
+    compatible_versions: ['v1.1.3'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/e-money/networks/master/emoney-3/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',

@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/archway-network/archway'
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/archwaytestnet/images/ArchwayBrandmark.png',

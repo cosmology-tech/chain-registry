@@ -32,7 +32,33 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/lavanet/lava',
+    recommended_version: 'v1.0.1',
+    compatible_versions: ['v1.0.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/lavanet/lava/releases/download/v1.0.1/lavad-v1.0.1-linux-amd64'
+    },
+    consensus: {
+      type: 'tendermint',
+      version: '0.37'
+    },
+    genesis: {
+      name: 'v0.21.1.2',
+      genesis_url: 'https://raw.githubusercontent.com/lavanet/lava-config/main/testnet-2/genesis_json/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.7'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.2.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: false
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/lavatestnet/images/lava-icon.png',

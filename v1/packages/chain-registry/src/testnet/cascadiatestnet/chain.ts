@@ -31,7 +31,25 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/CascadiaFoundation/cascadia',
+    recommended_version: 'v0.1.2',
+    compatible_versions: ['v0.1.1'],
+    consensus: {
+      type: 'tendermint',
+      version: 'v0.34.26'
+    },
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://raw.githubusercontent.com/CascadiaFoundation/chain-configuration/master/testnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.10'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/cascadiatestnet/images/cascadia.png',

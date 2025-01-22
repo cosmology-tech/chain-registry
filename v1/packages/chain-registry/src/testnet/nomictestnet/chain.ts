@@ -35,7 +35,16 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/nomic-io/nomic',
+    recommended_version: 'v9.1.0',
+    compatible_versions: ['v9.1.0'],
+    consensus: {
+      type: 'tendermint',
+      version: 'v0.34'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/nomic-io/nomic/blob/v9.1.0/networks/testnet.toml'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',

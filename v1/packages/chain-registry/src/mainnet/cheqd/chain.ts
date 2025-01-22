@@ -27,7 +27,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cheqd/cheqd-node',
+    recommended_version: 'v3.0.1',
+    compatible_versions: ['v3.0.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/cheqd/cheqd-node/releases/download/v3.0.1/cheqd-noded-3.0.1-linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/cheqd/cheqd-node/releases/download/v3.0.1/cheqd-noded-3.0.1-linux-arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/cheqd/cheqd-node/releases/download/v3.0.1/cheqd-noded-3.0.1-darwin-amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/cheqd/cheqd-node/releases/download/v3.0.1/cheqd-noded-3.0.1-darwin-arm64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/cheqd/cheqd-node/main/networks/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/cheqd/cosmos-sdk',
+      version: 'v0.47.10',
+      tag: 'v0.47.10-height-mismatch'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    }
   },
   apis: {
     rpc: [

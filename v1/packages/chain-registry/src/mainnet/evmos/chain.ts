@@ -29,7 +29,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/evmos/evmos',
+    recommended_version: 'v19.1.0',
+    compatible_versions: ['v19.1.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.9'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/evmos/evmos/releases/download/v19.1.0/evmos_19.1.0_Linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/evmos/evmos/releases/download/v19.1.0/evmos_19.1.0_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/evmos/evmos/releases/download/v19.1.0/evmos_19.1.0_Darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/evmos/evmos/releases/download/v19.1.0/evmos_19.1.0_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/evmos/evmos/releases/download/v19.1.0/evmos_19.1.0_Windows_amd64.zip'
+    },
+    genesis: {
+      genesis_url: 'https://archive.evmos.org/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/evmos/cosmos-sdk',
+      version: 'v0.47.12',
+      tag: 'v0.47.12-evmos.2'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.6.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.png',

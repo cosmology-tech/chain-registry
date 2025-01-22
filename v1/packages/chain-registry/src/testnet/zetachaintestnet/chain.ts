@@ -27,7 +27,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/zeta-chain/node',
+    recommended_version: 'v8.3.3',
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://zetachain-athens.blockpi.network/rpc/v1/public/genesis'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.1.0'
+    }
   },
   apis: {
     rpc: [{

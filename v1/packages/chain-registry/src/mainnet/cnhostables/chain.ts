@@ -27,7 +27,19 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/alashooinc/ChainCNHO/',
+    recommended_version: 'v1',
+    compatible_versions: ['v1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/alashooinc/ChainCNHO/master/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.46.7'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cnhostables/images/chain.png',

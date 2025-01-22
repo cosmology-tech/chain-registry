@@ -28,7 +28,26 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/oraichain/orai',
+    recommended_version: 'v0.42.4',
+    compatible_versions: [
+      'v0.42.0',
+      'v0.42.1',
+      'v0.42.2',
+      'v0.42.3',
+      'v0.42.4'
+    ],
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/oraichain/oraichain-static-files/master/genesis.json'
+    },
+    cosmwasm: {
+      version: '0.33.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/orai.png',

@@ -128,7 +128,27 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Stride-Labs/stride',
+    recommended_version: 'v24.0.0',
+    compatible_versions: ['v24.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Stride-Labs/mainnet/main/mainnet/genesis.json',
+      ics_ccv_url: 'https://raw.githubusercontent.com/Stride-Labs/mainnet/main/ics-instructions/ccv.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/Stride-Labs/cosmos-sdk',
+      version: 'v0.47.10',
+      tag: 'v0.47.10-stride-distribution-fix-0-mempool-verbose-error-1'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.4.0'
+    }
   },
   description: 'Stride is a blockchain that provides liquidity for staked tokens. Using Stride, you can earn both taking and DeFi yields across the Cosmos IBC ecosystem.',
   apis: {

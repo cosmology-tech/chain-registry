@@ -38,7 +38,15 @@ const info: Chain = {
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/althea/images/althea.svg'
     }],
   codebase: {
-
+    git_repo: 'https://github.com/AltheaFoundation/althea-L1',
+    recommended_version: 'v1.3.0',
+    compatible_versions: ['v1.3.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/AltheaFoundation/althea-L1/releases/download/v1.3.0/althea-linux-amd64'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/AltheaFoundation/althea-L1-docs/blob/main/althea-l1-mainnet-genesis.json'
+    }
   },
   apis: {
     rest: [

@@ -27,7 +27,26 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/dhealthproject/dhealth-testnet',
+    recommended_version: 'v2.1.1',
+    compatible_versions: ['v2.1.1'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.2'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/dhealthproject/mainnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/cosmos/cosmos-sdk',
+      version: 'v0.47.4'
+    },
+    cosmwasm: {
+      version: 'v0.41.0',
+      path: '$HOME/.dhealth/wasm',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

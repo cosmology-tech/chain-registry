@@ -34,7 +34,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/dydxprotocol/v4-chain/',
+    recommended_version: 'protocol/v7.0.1',
+    compatible_versions: ['protocol/v7.0.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv7.0.1/dydxprotocold-v7.0.1-linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/dydxprotocol/v4-chain/releases/download/protocol%2Fv7.0.1/dydxprotocold-v7.0.1-linux-arm64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.6',
+      repo: 'https://github.com/dydxprotocol/cometbft',
+      tag: 'v0.38.6-0.20241106081823-31609289f401'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/dydxprotocol/cosmos-sdk',
+      version: 'v0.50.6',
+      tag: 'v0.50.6-0.20241022180223-cc8c850952c5'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.0.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png',

@@ -28,7 +28,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/atomone-hub/govgen',
+    recommended_version: 'v1.0.1',
+    compatible_versions: ['v1.0.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/atomone-hub/govgen/releases/download/v1.0.1/govgend-v1.0.1-linux-amd64',
+      "linux/arm64": 'https://github.com/atomone-hub/govgen/releases/download/v1.0.1/govgend-v1.0.1-linux-arm64',
+      "darwin/amd64": 'https://github.com/atomone-hub/govgen/releases/download/v1.0.1/govgend-v1.0.1-darwin-amd64',
+      "darwin/arm64": 'https://github.com/atomone-hub/govgen/releases/download/v1.0.1/govgend-v1.0.1-darwin-arm64',
+      "windows/amd64": 'https://github.com/atomone-hub/govgen/releases/download/v1.0.1/govgend-v1.0.1-windows-amd64.exe',
+      "windows/arm64": 'https://github.com/atomone-hub/govgen/releases/download/v1.0.1/govgend-v1.0.1-windows-arm64.exe'
+    },
+    genesis: {
+      genesis_url: 'https://atomone.fra1.digitaloceanspaces.com/govgen/govgen-1/genesis.json'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.29'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/govgen/images/govgen.png',

@@ -104,7 +104,39 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/pryzm-finance/pryzm-core',
+    recommended_version: 'v0.22.1',
+    compatible_versions: ['v0.22.1', 'v0.22.0'],
+    binaries: {
+      "darwin/amd64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-darwin-amd64',
+      "darwin/arm64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-darwin-arm64',
+      "linux/amd64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-linux-amd64',
+      "linux/arm64": 'https://storage.googleapis.com/pryzm-zone/core/0.22.1/pryzmd-0.22.1-linux-arm64'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://storage.googleapis.com/pryzm-zone/pryzm-1/genesis.json'
+    },
+    language: {
+      type: 'go',
+      version: '1.22'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.15'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.4.1',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: 'v0.46.0',
+      enabled: true
+    }
   },
   apis: {
     rpc: [

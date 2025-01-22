@@ -28,7 +28,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ChihuahuaChain/chihuahua/',
+    recommended_version: 'v7.0.2',
+    compatible_versions: ['v7.0.2'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/ChihuahuaChain/chihuahua/main/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.41.0',
+      path: '$HOME/.chihuahuad/data/wasm',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.png',

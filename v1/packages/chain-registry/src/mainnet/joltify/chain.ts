@@ -27,7 +27,35 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/joltify-finance/joltify_lending',
+    genesis: {
+      genesis_url: 'https://ewr1.vultrobjects.com/joltify-mainnet/genesis_file/genesis.json'
+    },
+    recommended_version: 'v0.1.0-rc1',
+    compatible_versions: ['v0.1.0-rc1'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.3'
+    },
+    binaries: {
+      "linux/amd64": 'https://gitlab.com/api/v4/projects/42057472/packages/generic/joltify-linux-amd64-v0.1.0-rc1/v0.1.0-rc1/joltify'
+    },
+    language: {
+      type: 'go',
+      version: '1.22.3'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.5'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/joltify/images/jolt.png',

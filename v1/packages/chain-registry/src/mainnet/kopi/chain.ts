@@ -26,7 +26,11 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/kopi-money/kopi',
+    recommended_version: 'v0.6.5.1',
+    genesis: {
+      genesis_url: 'https://data.kopi.money/genesis.json'
+    }
   },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kopi.svg'

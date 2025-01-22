@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Decentr-net/decentr',
+    recommended_version: 'v1.5.7',
+    compatible_versions: ['v1.5.7'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Decentr-net/mainnets/master/3.0/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/decentr/images/dec.png',

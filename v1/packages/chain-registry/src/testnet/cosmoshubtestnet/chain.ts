@@ -27,7 +27,20 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cosmos/gaia',
+    recommended_version: 'v14.1.0',
+    compatible_versions: ['v14.1.0-rc0', 'v14.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v14.1.0/gaiad-v14.1.0-linux-amd64',
+      "linux/arm64": 'https://github.com/cosmos/gaia/releases/download/v14.1.0/gaiad-v14.1.0-linux-arm64',
+      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v14.1.0/gaiad-v14.1.0-darwin-amd64',
+      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v14.1.0/gaiad-v14.1.0-darwin-arm64',
+      "windows/amd64": 'https://github.com/cosmos/gaia/releases/download/v14.1.0/gaiad-v14.1.0-windows-amd64.exe',
+      "windows/arm64": 'https://github.com/cosmos/gaia/releases/download/v14.1.0/gaiad-v14.1.0-windows-arm64.exe'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/cosmos/testnets/raw/master/public/genesis.json.gz'
+    }
   },
   apis: {
     rpc: [

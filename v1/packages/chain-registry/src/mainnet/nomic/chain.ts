@@ -35,7 +35,16 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/nomic-io/nomic',
+    recommended_version: 'v9.0.0',
+    compatible_versions: ['v9.0.0'],
+    consensus: {
+      type: 'tendermint',
+      version: 'v0.34.0'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/nomic-io/nomic/develop/genesis/stakenet-3.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.png',

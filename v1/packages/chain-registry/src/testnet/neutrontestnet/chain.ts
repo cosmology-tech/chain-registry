@@ -21,7 +21,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/neutron-org/neutron',
+    recommended_version: 'v4.2.2-testnet',
+    compatible_versions: ['v4.2.2-testnet'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.38.11'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/cosmos/testnets/raw/master/replicated-security/pion-1/pion-1-genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.50'
+    },
+    ibc: {
+      type: 'go',
+      version: '8.2.1'
+    },
+    cosmwasm: {
+      version: '0.51',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/neutron-black-logo.png',

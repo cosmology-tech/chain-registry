@@ -32,7 +32,35 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/persistenceOne/persistenceCore',
+    recommended_version: 'v11.14.0',
+    compatible_versions: ['v11.14.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/releases/download/v11.14.0/persistenceCore-v11.14.0-linux-amd64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/persistenceOne/genesisTransactions/master/core-1/final_genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/persistenceOne/cosmos-sdk',
+      version: 'v0.47.10',
+      tag: 'v0.47.10-lsm-rc0'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      path: '$HOME/.persistenceCore/wasm',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',

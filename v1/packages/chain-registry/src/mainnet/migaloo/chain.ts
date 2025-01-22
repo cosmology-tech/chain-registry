@@ -32,7 +32,28 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/migaloo-light.svg'
   },
   codebase: {
-
+    git_repo: 'https://github.com/White-Whale-Defi-Platform/migaloo-chain',
+    recommended_version: 'v4.1.3',
+    compatible_versions: ['v4.1.3'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/White-Whale-Defi-Platform/migaloo-chain/release/v2.0.x/networks/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.7'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   apis: {
     rpc: [

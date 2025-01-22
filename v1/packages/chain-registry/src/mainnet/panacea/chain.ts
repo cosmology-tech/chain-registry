@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/medibloc/panacea-core',
+    recommended_version: 'v2.0.6',
+    compatible_versions: ['v2.0.5'],
+    genesis: {
+      genesis_url: 'https://github.com/medibloc/panacea-mainnet/raw/master/panacea-3/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/panacea/images/med.png',

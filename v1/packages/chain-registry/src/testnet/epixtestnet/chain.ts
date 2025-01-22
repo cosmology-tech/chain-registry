@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/EpixZone/Epix',
+    recommended_version: 'v12.0.0-rc4',
+    compatible_versions: ['v12.0.0-rc4'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/EpixZone/Epix/refs/heads/main/Networks/Testnet/epix_1917-0/genesis.json'
+    }
   },
   apis: {
     rpc: [{

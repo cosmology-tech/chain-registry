@@ -32,7 +32,17 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/AIOZNetwork/go-aioz',
+    recommended_version: 'v1.5.0',
+    compatible_versions: ['v1.5.0'],
+    binaries: {
+      "linux/amd64": 'https://archive.aioz.network/aiozd-v1.5.0-linux-amd64',
+      "darwin/amd64": 'https://archive.aioz.network/aiozd-v1.5.0-darwin-amd64',
+      "windows/amd64": 'https://archive.aioz.network/aiozd-v1.5.0-windows-amd64.exe'
+    },
+    genesis: {
+      genesis_url: 'https://archive.aioz.network/aioz_168-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aioz/images/aioz.png',

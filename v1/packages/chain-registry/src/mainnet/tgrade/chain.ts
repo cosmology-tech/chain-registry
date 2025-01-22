@@ -28,7 +28,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/confio/tgrade',
+    recommended_version: 'v2.0.4',
+    compatible_versions: ['v2.0.4'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/confio/tgrade-networks/main/mainnet-1/config/genesis.json'
+    },
+    cosmwasm: {
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

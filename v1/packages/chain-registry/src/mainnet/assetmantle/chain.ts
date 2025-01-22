@@ -26,7 +26,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/AssetMantle/node.git',
+    recommended_version: 'v0.3.0',
+    compatible_versions: ['v0.3.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/AssetMantle/genesisTransactions/main/mantle-1/final_genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/assetmantle/images/mntl.png',

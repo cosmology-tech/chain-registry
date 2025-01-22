@@ -27,7 +27,26 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sunriselayer/sunrise',
+    recommended_version: 'v0.1.2',
+    compatible_versions: ['v0.1.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/sunriselayer/sunrise/releases/download/v0.1.2/sunrised'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.0.5',
+      repo: 'https://github.com/sunriselayer/sunrise-core',
+      tag: 'v0.0.5-cmt-v0.38.2'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.50.2'
+    },
+    ibc: {
+      type: 'go',
+      version: '8.0.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.png',

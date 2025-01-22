@@ -27,7 +27,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/pryzm-finance/pryzm-core',
+    recommended_version: 'v0.9.0',
+    compatible_versions: ['v0.9.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.37'
+    },
+    genesis: {
+      genesis_url: 'https://storage.googleapis.com/pryzm-resources/indigo-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.1'
+    }
   },
   apis: {
     rpc: [{

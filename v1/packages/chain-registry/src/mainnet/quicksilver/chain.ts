@@ -27,7 +27,27 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ingenuity-build/quicksilver',
+    recommended_version: 'v1.6.3',
+    compatible_versions: ['v1.6.3'],
+    binaries: {
+      "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.6.3/quicksilverd-v1.6.3-amd64'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.33'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/ingenuity-build/mainnet/raw/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.46.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.3.1'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',

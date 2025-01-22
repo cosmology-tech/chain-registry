@@ -24,7 +24,27 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/SigmaGmbH/swisstronik-chain',
+    recommended_version: 'v1.0.2',
+    compatible_versions: ['v1.0.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/SigmaGmbH/swisstronik-chain/releases/download/testnet-v1.0.2/swisstronik_1.0.2_amd64.deb.zip'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    genesis: {
+      genesis_url: 'https://rpc.testnet.swisstronik.com/genesis'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.2.0'
+    }
   },
   apis: {
     rpc: [

@@ -13,7 +13,12 @@ const info: Chain = {
   node_home: '$HOME/.knstld',
   slip44: 118,
   codebase: {
-
+    git_repo: 'https://github.com/knstl/konstellation',
+    recommended_version: 'v0.6.2',
+    compatible_versions: ['v0.6.2'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Konstellation/konstellation/master/config/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/konstellation/images/Konstellation-dark.png'

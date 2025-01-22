@@ -26,7 +26,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/TERITORI/teritori-chain',
+    recommended_version: 'v2.0.6',
+    compatible_versions: ['v2.0.6'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.2'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/TERITORI/teritori-chain/raw/mainnet/mainnet/teritori-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.6'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1'
+    },
+    cosmwasm: {
+      version: 'v0.41.0',
+      path: '$HOME/.teritorid/data/wasm',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/chain.png',

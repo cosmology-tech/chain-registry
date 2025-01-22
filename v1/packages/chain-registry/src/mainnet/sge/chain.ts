@@ -27,7 +27,26 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sge-network/sge',
+    recommended_version: 'v1.7.2',
+    compatible_versions: ['v1.7.2'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/sge-network/networks/master/mainnet/sgenet-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/sge-network/cosmos-sdk',
+      version: 'v0.47.9',
+      tag: 'v0.47.9-0.20240409081440-054c8c413d45'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png',

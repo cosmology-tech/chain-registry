@@ -26,7 +26,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/CosmWasm/wasmd',
+    recommended_version: 'v0.27',
+    compatible_versions: ['v0.27'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-5/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.27',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

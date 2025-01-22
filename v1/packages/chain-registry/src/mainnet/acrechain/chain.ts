@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ArableProtocol/acrechain',
+    recommended_version: 'v1.1.1',
+    compatible_versions: ['v1.1.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/ArableProtocol/acrechain/main/networks/mainnet/acre_9052-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',

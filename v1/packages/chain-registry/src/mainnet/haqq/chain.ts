@@ -29,7 +29,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/haqq-network/haqq',
+    recommended_version: 'v1.8.0',
+    compatible_versions: ['v1.8.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/haqq-network/haqq/releases/download/v1.8.0/haqq_1.8.0_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/haqq-network/haqq/releases/download/v1.8.0/haqq_1.8.0_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/haqq-network/haqq/releases/download/v1.8.0/haqq_1.8.0_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/haqq-network/haqq/releases/download/v1.8.0/haqq_1.8.0_darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/haqq-network/haqq/releases/download/v1.8.0/haqq_1.8.0_windows_amd64.zip'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.9'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/haqq-network/mainnet/master/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/evmos/cosmos-sdk',
+      version: 'v0.47.12',
+      tag: 'v0.47.12-evmos.2'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.4.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/haqq/images/haqq.png',

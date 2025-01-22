@@ -29,7 +29,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/tenet-org/tenet-mainnet',
+    recommended_version: 'v11.2.1',
+    compatible_versions: ['v11.2.0', 'v11.2.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Windows_amd64.zip'
+    },
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/tenet-org/tenet-mainnet/master/config/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.1.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/tenet/images/tenet.png',

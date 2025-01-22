@@ -65,7 +65,30 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Int3facechain/bridge',
+    recommended_version: 'v0.2.7',
+    compatible_versions: ['v0.2.7'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.10'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Int3facechain/networks/main/int3face-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/cosmos/cosmos-sdk',
+      version: 'v0.50.8',
+      tag: 'v0.50.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.50.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'

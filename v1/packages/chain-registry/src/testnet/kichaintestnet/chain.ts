@@ -19,7 +19,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/KiFoundation/ki-tools',
+    recommended_version: 'Testnet-3.0.0-beta',
+    compatible_versions: ['Testnet-3.0.0-beta'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json'
+    }
   },
   apis: {
     rpc: [{

@@ -36,7 +36,18 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/nymtech/nyxd',
+    recommended_version: 'v0.43.0',
+    compatible_versions: ['v0.43.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/nymtech/nyxd/releases/tag/v0.43.0'
+    },
+    genesis: {
+      genesis_url: 'https://rpc.sandbox.nymtech.net/genesis'
+    },
+    cosmwasm: {
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nyxtestnet/images/nym_token_light.png',

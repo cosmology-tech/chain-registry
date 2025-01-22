@@ -26,7 +26,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://gitlab.com/dysonproject/dyson',
+    recommended_version: 'v0.0.2-bebf2e98',
+    compatible_versions: ['v0.0.2-bebf2e98'],
+    genesis: {
+      genesis_url: 'https://gitlab.com/dysonproject/dyson-deploy/-/raw/develop/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dyson.png',

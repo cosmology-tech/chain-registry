@@ -29,7 +29,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/scrtlabs/SecretNetwork',
+    recommended_version: 'v1.12.1',
+    compatible_versions: ['v1.12.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.12.1/secretnetwork_1.12.1_mainnet_goleveldb_amd64.deb'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.2.0/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/scrt.png',

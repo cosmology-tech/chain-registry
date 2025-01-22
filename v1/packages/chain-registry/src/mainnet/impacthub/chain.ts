@@ -28,7 +28,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ixofoundation/ixo-blockchain',
+    recommended_version: 'v4.0.0',
+    compatible_versions: ['v4.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.12'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/ixofoundation/genesis/raw/bc042e1223d551b22d55c155de06e662ca24d2f2/ixo-5/genesis.json.tar.gz'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.1'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',

@@ -61,7 +61,48 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/milkyway-labs/milkyway',
+    genesis: {
+      name: 'v2',
+      genesis_url: 'https://github.com/milkyway-labs/networks/raw/main/mainnet/genesis.json'
+    },
+    recommended_version: '2.0.3',
+    compatible_versions: [
+      '2.0.0',
+      '2.0.1',
+      '2.0.2',
+      '2.0.3'
+    ],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.15',
+      repo: 'https://github.com/cometbft/cometbft',
+      tag: 'v0.38.15'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/milkyway-labs/milkyway/releases/download/v2.0.0/milkywayd-2.0.0-linux-amd64'
+    },
+    language: {
+      type: 'go',
+      version: '1.23'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/cosmos/cosmos-sdk',
+      version: 'v0.50.10',
+      tag: 'v0.50.10'
+    },
+    ibc: {
+      type: 'go',
+      version: '8.5.2',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: 'v0.53.0',
+      repo: 'https://github.com/CosmWasm/wasmd',
+      tag: 'v0.53.0',
+      enabled: true
+    }
   },
   images: [{
       image_sync: {

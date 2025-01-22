@@ -40,7 +40,7 @@ const info: Chain = {
       }
     }],
   codebase: {
-
+    git_repo: 'https://github.com/dymensionxyz/dymension'
   },
   apis: {
     rpc: [{

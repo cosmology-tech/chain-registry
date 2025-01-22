@@ -31,7 +31,42 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/likecoin/likecoin-chain',
+    recommended_version: 'v4.2.0',
+    compatible_versions: [
+      'v4.0.0',
+      'v4.0.1',
+      'v4.0.2',
+      'v4.1.1',
+      'v4.2.0'
+    ],
+    binaries: {
+      "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_x86_64.tar.gz',
+      "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Darwin_x86_64.tar.gz',
+      "darwin/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Windows_x86_64.zip'
+    },
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      name: 'fotan-1.0',
+      genesis_url: 'https://raw.githubusercontent.com/likecoin/mainnet/master/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.3.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [

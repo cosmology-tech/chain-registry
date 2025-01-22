@@ -28,7 +28,34 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/desmos-labs/desmos',
+    recommended_version: 'v7.1.0',
+    compatible_versions: ['v7.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/desmos-labs/desmos/releases/download/v7.1.0/desmos-v7.1.0-linux-amd64'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/desmos-labs/mainnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/desmos-labs/cosmos-sdk',
+      version: 'v0.47.10',
+      tag: 'v0.47.10-desmos'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      path: '$HOME/.desmos/data/wasm',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',

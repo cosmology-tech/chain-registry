@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/iov-one/starnamed',
+    recommended_version: 'v0.11.7',
+    compatible_versions: ['v0.11.7'],
+    genesis: {
+      genesis_url: 'https://gist.githubusercontent.com/davepuchyr/6bea7bf369064d118195e9b15ea08a0f/raw/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/starname/images/iov.png',

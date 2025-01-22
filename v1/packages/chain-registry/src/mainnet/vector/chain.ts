@@ -31,7 +31,28 @@ const info: Chain = {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/vector/images/vector-light-logo.svg'
   },
   codebase: {
-
+    git_repo: 'https://github.com/vector-org/vector-chain',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.15'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/vector-org/vector-chain/blob/main/networks/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.2'
+    },
+    cosmwasm: {
+      version: 'v0.53.2',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

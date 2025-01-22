@@ -31,7 +31,24 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/bluzelle/bluzelle-public',
+    recommended_version: 'v10.0',
+    compatible_versions: ['v10.0'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.34.23'
+    },
+    genesis: {
+      genesis_url: 'https://a.client.sentry.net.bluzelle.com:26657/genesis'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v3.4.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.png',

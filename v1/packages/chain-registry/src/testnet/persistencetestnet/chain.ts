@@ -28,7 +28,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/persistenceOne/persistenceCore',
+    recommended_version: 'v6.0.0-rc5',
+    compatible_versions: ['v6.0.0-rc5'],
+    binaries: {
+      "linux/amd64": 'https://github.com/persistenceOne/persistenceCore/archive/refs/tags/v6.0.0-rc5.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/persistenceOne/genesisTransactions/master/test-core-1/final_genesis.json'
+    }
   },
   apis: {
     rpc: [

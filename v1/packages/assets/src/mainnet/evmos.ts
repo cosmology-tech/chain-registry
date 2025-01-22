@@ -464,6 +464,102 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'SARA is the utility native token of the Pulsara ecosystem. The burn or mint of the $SARA token will be decided by the community through proposals and voting.',
+      denom_units: [{
+          denom: 'ibc/91710C035F768866E5FE56086FD34A2BF09675AF920B88A8C483412EC3896E32',
+          exponent: 0,
+          aliases: ['usara-core1r9gc0rnxnzpq33u82f44aufgdwvyxv4wyepyck98m9v2pxua6naqr8h03z']
+        }, {
+          denom: 'sara',
+          exponent: 6
+        }],
+      base: 'ibc/91710C035F768866E5FE56086FD34A2BF09675AF920B88A8C483412EC3896E32',
+      name: 'Sara',
+      display: 'sara',
+      symbol: 'SARA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.svg'
+      },
+      coingecko_id: 'pulsara',
+      keywords: [
+        'dex',
+        'staking',
+        'assets'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.svg',
+          theme: {
+            primary_color_hex: '#0517b1'
+          }
+        }],
+      socials: {
+        website: 'https://www.pulsara.io',
+        twitter: 'https://twitter.com/pulsara_io'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'usara-core1r9gc0rnxnzpq33u82f44aufgdwvyxv4wyepyck98m9v2pxua6naqr8h03z',
+            chain_name: 'coreum'
+          },
+          chain: {
+            channel_id: 'channel-87'
+          }
+        }]
+    },
+    {
+      description: 'Liquid staking asset for COREUM, by Pulsara',
+      denom_units: [{
+          denom: 'ibc/1F5375D99CC65EF418660CE5F4C72A383C5C2C5D03838B2A747FC14C874B97ED',
+          exponent: 0,
+          aliases: ['ulicore-core13gza3msdh8hegqxhgezll9quucsr63s0gp43k274xwt66k4e8pmq5zpnm9']
+        }, {
+          denom: 'licore',
+          exponent: 6
+        }],
+      base: 'ibc/1F5375D99CC65EF418660CE5F4C72A383C5C2C5D03838B2A747FC14C874B97ED',
+      name: 'liCORE',
+      display: 'licore',
+      symbol: 'LICORE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.svg'
+      },
+      coingecko_id: 'licore',
+      keywords: [
+        'dex',
+        'staking',
+        'assets'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.svg',
+          theme: {
+            primary_color_hex: '#ea00c5'
+          }
+        }],
+      socials: {
+        website: 'https://www.pulsara.io',
+        twitter: 'https://twitter.com/pulsara_io'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'ulicore-core13gza3msdh8hegqxhgezll9quucsr63s0gp43k274xwt66k4e8pmq5zpnm9',
+            chain_name: 'coreum'
+          },
+          chain: {
+            channel_id: 'channel-87'
+          }
+        }]
+    },
+    {
       description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
       denom_units: [{
           denom: 'ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701',
@@ -1171,6 +1267,102 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-8',
             base_denom: 'ucore',
+            chain_name: 'coreum'
+          },
+          chain: {
+            channel_id: 'channel-87'
+          }
+        }]
+    },
+    {
+      description: 'SARA is the utility native token of the Pulsara ecosystem. The burn or mint of the $SARA token will be decided by the community through proposals and voting.',
+      denom_units: [{
+          denom: 'ibc/91710C035F768866E5FE56086FD34A2BF09675AF920B88A8C483412EC3896E32',
+          exponent: 0,
+          aliases: ['usara-core1r9gc0rnxnzpq33u82f44aufgdwvyxv4wyepyck98m9v2pxua6naqr8h03z']
+        }, {
+          denom: 'sara',
+          exponent: 6
+        }],
+      base: 'ibc/91710C035F768866E5FE56086FD34A2BF09675AF920B88A8C483412EC3896E32',
+      name: 'Sara',
+      display: 'sara',
+      symbol: 'SARA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.svg'
+      },
+      coingecko_id: 'pulsara',
+      keywords: [
+        'dex',
+        'staking',
+        'assets'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/sara.svg',
+          theme: {
+            primary_color_hex: '#0517b1'
+          }
+        }],
+      socials: {
+        website: 'https://www.pulsara.io',
+        twitter: 'https://twitter.com/pulsara_io'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'usara-core1r9gc0rnxnzpq33u82f44aufgdwvyxv4wyepyck98m9v2pxua6naqr8h03z',
+            chain_name: 'coreum'
+          },
+          chain: {
+            channel_id: 'channel-87'
+          }
+        }]
+    },
+    {
+      description: 'Liquid staking asset for COREUM, by Pulsara',
+      denom_units: [{
+          denom: 'ibc/1F5375D99CC65EF418660CE5F4C72A383C5C2C5D03838B2A747FC14C874B97ED',
+          exponent: 0,
+          aliases: ['ulicore-core13gza3msdh8hegqxhgezll9quucsr63s0gp43k274xwt66k4e8pmq5zpnm9']
+        }, {
+          denom: 'licore',
+          exponent: 6
+        }],
+      base: 'ibc/1F5375D99CC65EF418660CE5F4C72A383C5C2C5D03838B2A747FC14C874B97ED',
+      name: 'liCORE',
+      display: 'licore',
+      symbol: 'LICORE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.svg'
+      },
+      coingecko_id: 'licore',
+      keywords: [
+        'dex',
+        'staking',
+        'assets'
+      ],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/licore.svg',
+          theme: {
+            primary_color_hex: '#ea00c5'
+          }
+        }],
+      socials: {
+        website: 'https://www.pulsara.io',
+        twitter: 'https://twitter.com/pulsara_io'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-8',
+            base_denom: 'ulicore-core13gza3msdh8hegqxhgezll9quucsr63s0gp43k274xwt66k4e8pmq5zpnm9',
             chain_name: 'coreum'
           },
           chain: {

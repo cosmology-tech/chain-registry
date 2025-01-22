@@ -27,7 +27,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/warden-protocol/wardenprotocol',
+    recommended_version: 'v0.3.0',
+    compatible_versions: ['v0.3.0'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.38'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/warden-protocol/networks/main/testnets/buenavista/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.50'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

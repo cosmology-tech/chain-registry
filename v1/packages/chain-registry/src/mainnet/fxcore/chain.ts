@@ -29,7 +29,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/functionx/fx-core',
+    recommended_version: 'v7.5.0',
+    compatible_versions: ['v7.5.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/FunctionX/fx-core/releases/download/v7.5.0/fxcored-v7.5.0-linux-amd64',
+      "linux/arm64": 'https://github.com/FunctionX/fx-core/releases/download/v7.5.0/fxcored-v7.5.0-linux-arm64',
+      "darwin/amd64": 'https://github.com/FunctionX/fx-core/releases/download/v7.5.0/fxcored-v7.5.0-darwin-amd64',
+      "darwin/arm64": 'https://github.com/FunctionX/fx-core/releases/download/v7.5.0/fxcored-v7.5.0-darwin-amd64',
+      "windows/amd64": 'https://github.com/FunctionX/fx-core/releases/download/v7.5.0/fxcored-v7.5.0-windows-amd64.exe'
+    },
+    genesis: {
+      name: 'fxv1',
+      genesis_url: 'https://github.com/functionx/fx-core/raw/main/public/mainnet/genesis.json'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.9'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.13',
+      tag: 'v0.47.13'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.6.0'
+    }
   },
   apis: {
     rpc: [{

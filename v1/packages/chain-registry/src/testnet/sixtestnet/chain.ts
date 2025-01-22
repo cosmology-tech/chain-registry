@@ -27,7 +27,20 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/thesixnetwork/six-protocol',
+    recommended_version: 'v3.1.1-fn',
+    compatible_versions: ['v3.1.1-fn'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/thesixnetwork/chain-info/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    }
   },
   apis: {
     rpc: [{

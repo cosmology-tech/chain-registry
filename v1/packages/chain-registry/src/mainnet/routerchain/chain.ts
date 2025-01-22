@@ -29,7 +29,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    recommended_version: 'v2.2.4',
+    compatible_versions: ['v2.2.4'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.5'
+    },
+    binaries: {
+      "linux/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.4/linux/routerd.tar.gz',
+      "darwin/amd64": 'https://raw.githubusercontent.com/router-protocol/router-chain-binary-release/v2.2.4/debian/routerd.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://sentry.tm.rpc.routerprotocol.com/genesis'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      path: '$HOME/.routerd/wasm',
+      enabled: true
+    }
   },
   apis: {
     rpc: [

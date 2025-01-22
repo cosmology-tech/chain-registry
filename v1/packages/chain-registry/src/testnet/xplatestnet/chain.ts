@@ -28,7 +28,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/xpladev/xpla',
+    recommended_version: 'v1.6.0',
+    compatible_versions: ['v1.6.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/xpladev/testnets/blob/main/cube_47-5/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/xpladev/cosmos-sdk',
+      version: 'v0.47.13',
+      tag: 'v0.47.13-xpla'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.7.0'
+    },
+    cosmwasm: {
+      version: 'v0.46.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xpla/images/xpla.png',

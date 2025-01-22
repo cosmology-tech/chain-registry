@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sentinel-official/hub',
+    recommended_version: 'v0.11.3',
+    compatible_versions: ['v0.11.2', 'v0.11.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/sentinel-official/networks/main/sentinelhub-2/genesis.zip'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',

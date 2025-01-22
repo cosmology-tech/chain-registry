@@ -29,7 +29,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ShidoGlobal/shidochain',
+    recommended_version: 'v2.0.0',
+    compatible_versions: ['v2.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/ShidoGlobal/mainnetShidoNodeSync/releases/download/v2.0.0/ubuntu_22.04.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/ShidoGlobal/mainnetShidoNodeSync/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.4'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shido/images/shido.png',

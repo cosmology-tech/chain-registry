@@ -13,7 +13,12 @@ const info: Chain = {
   node_home: '$HOME/.mayanode',
   slip44: 931,
   codebase: {
-
+    git_repo: 'https://gitlab.com/mayachain/mayanode',
+    recommended_version: 'V1.103.3',
+    compatible_versions: ['V1.103.3'],
+    genesis: {
+      genesis_url: 'https://tendermint.mayachain.info/genesis'
+    }
   },
   apis: {
     rpc: [{

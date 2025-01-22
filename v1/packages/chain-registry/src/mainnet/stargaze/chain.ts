@@ -27,7 +27,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/public-awesome/stargaze',
+    recommended_version: 'v14.0.0',
+    compatible_versions: ['v14.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.6'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/public-awesome/mainnet/main/stargaze-1/genesis.tar.gz'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.12'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.6.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',

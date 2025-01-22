@@ -28,7 +28,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Synternet/synternet-chain-releases',
+    recommended_version: 'v0.14.0',
+    compatible_versions: ['v0.14.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/Synternet/synternet-chain-releases/blob/main/networks/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.1.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/synternet/images/synt.png',

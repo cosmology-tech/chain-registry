@@ -28,7 +28,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/lum-network/chain',
+    recommended_version: 'v1.6.7',
+    compatible_versions: ['v1.6.7'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/lum-network/chain/releases/download/v1.6.7/lumd_ubuntu-latest_amd64.zip',
+      "linux/arm64": 'https://github.com/lum-network/chain/releases/download/v1.6.7/lumd_ubuntu-latest_arm64.zip',
+      "darwin/amd64": 'https://github.com/lum-network/chain/releases/download/v1.6.7/lumd_macos-latest_amd64.zip',
+      "darwin/arm64": 'https://github.com/lum-network/chain/releases/download/v1.6.7/lumd_macos-latest_arm64.zip',
+      "windows/amd64": 'https://github.com/lum-network/chain/releases/download/v1.6.7/lumd_windows-latest_amd64.zip',
+      "windows/arm64": 'https://github.com/lum-network/chain/releases/download/v1.6.7/lumd_windows-latest_arm64.zip'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/lum-network/mainnet/master/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lumnetwork/images/lum.png',

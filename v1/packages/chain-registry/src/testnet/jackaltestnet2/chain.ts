@@ -20,7 +20,16 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/JackalLabs/canine-chain',
+    recommended_version: 'v4.0.0-alpha.3',
+    compatible_versions: ['v4.0.0-alpha.3'],
+    genesis: {
+      genesis_url: 'https://static.brocha.in/jackal-testnet-v4/genesis.json'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.0-alpha.3/canined-Linux',
+      "darwin/amd64": 'https://github.com/JackalLabs/canine-chain/releases/download/v4.0.0-alpha.3/canined-macOS'
+    }
   },
   apis: {
     rpc: [{

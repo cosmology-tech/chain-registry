@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Pylons-tech/pylons.git',
+    recommended_version: 'v1.1.4',
+    compatible_versions: ['v1.1.4'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Pylons-tech/pylons/main/networks/pylons-mainnet-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pylons/images/pylons.png'

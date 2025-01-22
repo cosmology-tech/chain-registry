@@ -11,7 +11,12 @@ const info: Chain = {
   key_algos: ['secp256k1'],
   slip44: 118,
   codebase: {
-
+    git_repo: 'https://github.com/CudoVentures/cudos-node',
+    recommended_version: 'v1.1.0',
+    compatible_versions: ['v1.1.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/CudoVentures/cudos-builders/cudos-master/docker/config/genesis.testnet.public.json'
+    }
   },
   apis: {
     rpc: [

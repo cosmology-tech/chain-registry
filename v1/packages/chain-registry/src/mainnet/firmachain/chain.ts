@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/firmachain/firmachain',
+    recommended_version: 'v0.3.5-patch',
+    compatible_versions: ['v0.3.5-patch'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/FirmaChain/mainnet/main/colosseum-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/firmachain/images/fct.png',

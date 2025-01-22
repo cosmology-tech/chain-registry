@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/LambdaIM/lambdavm',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/LambdaIM/mainnet/main/lambda_92000-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lambda/images/lambda.png',

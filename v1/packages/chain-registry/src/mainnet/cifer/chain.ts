@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cifer-ai/cifer',
+    recommended_version: 'v2.0.0',
+    compatible_versions: ['v2.0.0'],
+    genesis: {
+      genesis_url: 'https://rpcmainnet.cifer.ai/genesis'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cifer/images/cif.png',

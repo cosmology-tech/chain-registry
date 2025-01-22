@@ -19,7 +19,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Team-Kujira/core',
+    recommended_version: 'v0.4.0',
+    compatible_versions: ['v0.4.0'],
+    genesis: {
+      genesis_url: 'https://github.com/Team-Kujira/networks/raw/master/testnet/harpoon-4.json'
+    }
   },
   apis: {
     rpc: [{

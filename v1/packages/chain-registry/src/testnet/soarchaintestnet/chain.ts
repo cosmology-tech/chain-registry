@@ -27,7 +27,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/soar-robotics/soarchain-core',
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/soar-robotics/testnet-validator-onboard/main/release/genesis.json'
+    },
+    recommended_version: 'v0.2.10',
+    compatible_versions: ['v0.2.10'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34.19'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45.5'
+    },
+    ibc: {
+      type: 'go',
+      version: '3.0.1'
+    },
+    cosmwasm: {
+      version: '0.27',
+      enabled: true
+    }
   },
   keywords: ['DePin'],
   images: [{

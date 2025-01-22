@@ -31,7 +31,34 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/strangelove-ventures/noble',
+    recommended_version: 'v4.0.0-beta1',
+    compatible_versions: [
+      'v4.0.0-alpha1',
+      'v4.0.0-alpha2',
+      'v4.0.0-alpha3',
+      'v4.0.0-beta1'
+    ],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      name: 'v0.3.0',
+      genesis_url: 'https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/testnet/grand-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v3.4.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

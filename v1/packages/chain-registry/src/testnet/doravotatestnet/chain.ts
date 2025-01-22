@@ -24,7 +24,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/dorafactory/doravota',
+    recommended_version: 'v11.0.0',
+    compatible_versions: ['v11.0.0'],
+    genesis: {
+      genesis_url: 'https://github.com/DoraFactory/doravota/blob/main/config/testnet/genesis.json'
+    }
   },
   apis: {
     rpc: [{

@@ -20,7 +20,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sge-network/sge',
+    recommended_version: 'v1.0.1',
+    compatible_versions: ['v1.0.1']
   },
   apis: {
     rpc: [

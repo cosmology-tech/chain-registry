@@ -26,7 +26,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/irisnet/irishub',
+    recommended_version: 'v2.0.3',
+    compatible_versions: ['v2.0.3'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/irisnet/mainnet/master/config/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/irisnet/images/iris.png',

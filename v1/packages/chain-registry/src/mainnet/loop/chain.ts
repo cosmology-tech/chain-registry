@@ -28,7 +28,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/LoopFans/loop-chain',
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://github.com/LoopFans/loop-chain/blob/main/network/loop-1/genesis.json'
+    },
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/LoopFans/loop-chain/releases/download/v1.0.0/loopchain_1.0.0_linux_amd64.tar.gz'
+    },
+    language: {
+      type: 'go',
+      version: '1.21'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loop/images/loop.png',

@@ -28,7 +28,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/planq-network/planq',
+    recommended_version: 'v1.1.0',
+    compatible_versions: ['v1.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_windows_amd64.zip'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.34.26'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/planq-network/networks/main/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.46.3'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.0.2'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png',

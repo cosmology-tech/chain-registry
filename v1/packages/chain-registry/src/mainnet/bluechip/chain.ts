@@ -29,7 +29,19 @@ const info: Chain = {
   },
   description: 'Stake to the BlueChip chain, interact with the creator pools, and subscribe through the creator subscription contracts.',
   codebase: {
-
+    git_repo: 'https://github.com/Bluechip23/bluechip/tree/main',
+    recommended_version: 'v1',
+    compatible_versions: ['v1'],
+    genesis: {
+      genesis_url: 'https://github.com/Bluechip23/bluechip/blob/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.11'
+    },
+    cosmwasm: {
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bluechip/images/bluechip.png',

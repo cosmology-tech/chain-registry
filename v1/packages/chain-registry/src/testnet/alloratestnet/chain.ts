@@ -27,7 +27,20 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/allora-network/allora-chain',
+    recommended_version: 'v0.8.0',
+    compatible_versions: ['v0.8.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/allora-network/allora-chain/releases/download/v0.8.0/allorad_linux_amd64',
+      "linux/arm64": 'https://github.com/allora-network/allora-chain/releases/download/v0.8.0/allorad_linux_arm64',
+      "darwin/amd64": 'https://github.com/allora-network/allora-chain/releases/download/v0.8.0/allorad_darwin_amd64',
+      "darwin/arm64": 'https://github.com/allora-network/allora-chain/releases/download/v0.8.0/allorad_darwin_arm64',
+      "windows/amd64": 'https://github.com/allora-network/allora-chain/releases/download/v0.8.0/allorad_windows_amd64.exe',
+      "windows/arm64": 'https://github.com/allora-network/allora-chain/releases/download/v0.8.0/allorad_windows_arm64.exe'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/allora-network/networks/blob/main/allora-testnet-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/allora/images/allora.png',

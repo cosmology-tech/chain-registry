@@ -31,7 +31,39 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/finschia/finschia',
+    recommended_version: 'v2.0.1',
+    compatible_versions: ['v2.0.0', 'v2.0.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-linux-amd64',
+      "linux/arm64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-linux-arm64',
+      "darwin/amd64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-amd64',
+      "darwin/arm64": 'https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-darwin-arm64'
+    },
+    genesis: {
+      name: 'v2',
+      genesis_url: 'https://vos.line-scdn.net/finschia-2-fileshare/datafile/finschia-prod-2/finschia-2-genesis.tgz'
+    },
+    language: {
+      type: 'go',
+      version: '1.20'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/Finschia/finschia-sdk',
+      version: 'v0.48.1'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.3.1',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: 'v0.2.0',
+      path: '$HOME/.finschia/wasm/wasm',
+      enabled: true,
+      repo: 'https://github.com/Finschia/wasmd'
+    }
   },
   description: 'Finschia (formerly LINE Blockchain Mainnet) aims to build a sustainable token model and create token demand to become a blockchain with 1 billion users.',
   apis: {

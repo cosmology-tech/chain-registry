@@ -31,7 +31,24 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/empe-io/empe-chain',
+    recommended_version: 'v0.1.0',
+    compatible_versions: ['v0.1.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      name: 'v0.1.0',
+      genesis_url: 'https://raw.githubusercontent.com/empe-io/empe-chain/main/testnet-2/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

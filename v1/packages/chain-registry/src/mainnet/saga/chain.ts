@@ -30,7 +30,35 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sagaxyz/ssc',
+    genesis: {
+      name: 'v0.2.1',
+      genesis_url: 'https://raw.githubusercontent.com/sagaxyz/mainnet/main/genesis/genesis.json'
+    },
+    recommended_version: 'v0.2.1',
+    compatible_versions: ['v0.2.1'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.12',
+      repo: 'https://github.com/cometbft/cometbft'
+    },
+    language: {
+      type: 'go',
+      version: '1.22'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/osmosis-labs/cosmos-sdk',
+      version: 'v0.50.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.3.2',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [

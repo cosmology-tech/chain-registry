@@ -13,7 +13,27 @@ const info: Chain = {
   bech32_prefix: 'omniflix',
   slip44: 118,
   codebase: {
-
+    git_repo: 'https://github.com/OmniFlix/omniflixhub',
+    recommended_version: 'v4.1.1',
+    compatible_versions: ['v4.1.1'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/OmniFlix/mainnet/main/omniflixhub-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/omniflixhub/images/flix.png',

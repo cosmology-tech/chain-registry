@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/pointnetwork/point-chain',
+    recommended_version: 'v8.0.0',
+    compatible_versions: ['v8.0.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/pointnetwork/point-chain-config/main/mainnet-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',

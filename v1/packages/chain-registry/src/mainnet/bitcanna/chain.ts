@@ -28,7 +28,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/BitCannaGlobal/bcna',
+    recommended_version: 'v4.0.3',
+    compatible_versions: [
+      'v4.0.0',
+      'v4.0.1',
+      'v4.0.2',
+      'v4.0.3'
+    ],
+    binaries: {
+      "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v4.0.1/bcnad_linux_arm64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.15'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/BitCannaGlobal/bcna/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.11'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.2'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.png',

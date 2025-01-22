@@ -29,7 +29,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ODIN-PROTOCOL/odin-core',
+    recommended_version: 'v0.10.2',
+    compatible_versions: [
+      'v0.10.0',
+      'v0.10.1',
+      'v0.10.2'
+    ],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.10'
+    },
+    genesis: {
+      genesis_url: 'https://snapshots.polkachu.com/genesis/odin/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.7'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.3.1'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png',

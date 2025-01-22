@@ -24,7 +24,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Stride-Labs/stride',
+    recommended_version: 'v8.0.0-testnet',
+    compatible_versions: ['v8.0.0-testnet'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Stride-Labs/mainnet/main/testnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.1.0'
+    }
   },
   apis: {
     rpc: [{

@@ -29,7 +29,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/imversed/imversed',
+    recommended_version: 'v3.11',
+    compatible_versions: ['v3.11'],
+    binaries: {
+      "linux/amd64": 'https://github.com/imversed/imversed/releases/download/v3.11/imversed_3.11_Linux_amd64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://static.imversed.com/mainnet/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/imversed/images/imversed.png',

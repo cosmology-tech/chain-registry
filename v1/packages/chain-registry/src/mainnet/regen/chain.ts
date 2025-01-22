@@ -27,7 +27,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/regen-network/regen-ledger',
+    recommended_version: 'v5.0.0',
+    compatible_versions: ['v5.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_amd64.zip',
+      "linux/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_linux_arm64.zip',
+      "darwin/amd64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_amd64.zip',
+      "darwin/arm64": 'https://github.com/regen-network/regen-ledger/releases/download/v5.0.0/regen-ledger_5.0.0_darwin_arm64.zip'
+    },
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/regen-network/mainnet/main/regen-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.2',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    }
   },
   description: 'Regen Network, a platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects.',
   apis: {

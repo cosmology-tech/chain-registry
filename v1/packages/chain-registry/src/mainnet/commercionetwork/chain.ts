@@ -18,7 +18,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/commercionetwork/commercionetwork',
+    recommended_version: 'v5.1.0',
+    compatible_versions: ['v5.1.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/commercionetwork/chains/master/commercio-3/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/commercionetwork/images/com.png',

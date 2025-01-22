@@ -19,7 +19,21 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sei-protocol/sei-chain',
+    recommended_version: '2.0.40beta',
+    compatible_versions: [
+      '2.0.27beta',
+      '2.0.29eta',
+      '2.0.31beta',
+      '2.0.32beta',
+      '2.0.36beta',
+      '2.0.37beta',
+      '2.0.39beta',
+      '2.0.40beta'
+    ],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/sei-protocol/testnet/main/sei-devnet-3/genesis.json'
+    }
   },
   apis: {
     rpc: [{

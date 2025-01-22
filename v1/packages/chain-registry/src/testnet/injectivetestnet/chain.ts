@@ -28,7 +28,16 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/InjectiveLabs/testnet',
+    recommended_version: 'v1.11.1',
+    compatible_versions: ['v1.11.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/linux-amd64.zip',
+      "darwin/amd64": 'https://github.com/InjectiveLabs/testnet/releases/download/v1.11.1-1685205489/darwin-amd64.zip'
+    },
+    genesis: {
+      genesis_url: 'https://injective-snapshots.s3.amazonaws.com/testnet/genesis.json'
+    }
   },
   apis: {
     rpc: [

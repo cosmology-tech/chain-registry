@@ -25,7 +25,27 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/palomachain/paloma',
+    recommended_version: 'v1.15.4',
+    compatible_versions: ['v1.15.4'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.6'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/palomachain/paloma/releases/download/v1.15.4/paloma_Linux_x86_64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/palomachain/mainnet/master/tumbler/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.6'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.2.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/paloma/images/paloma.png',

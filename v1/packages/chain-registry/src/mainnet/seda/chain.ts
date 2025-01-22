@@ -28,7 +28,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sedaprotocol/seda-chain',
+    recommended_version: 'v0.1.1',
+    compatible_versions: ['v0.1.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.1/sedad-amd64',
+      "linux/arm64": 'https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.1/sedad-arm64'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.6'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/sedaprotocol/seda-networks/main/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.5'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.2.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/seda/images/seda.png',

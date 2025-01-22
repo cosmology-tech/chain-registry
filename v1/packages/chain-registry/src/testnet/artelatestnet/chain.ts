@@ -26,7 +26,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/artela-network/artela',
+    recommended_version: 'v0.4.2-beta',
+    compatible_versions: ['v0.4.2-beta'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    genesis: {
+      genesis_url: 'https://docs.artela.network/assets/files/genesis-697a2db4ef7e20dbdb8bdc1cd9d1633a.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.1.0'
+    }
   },
   apis: {
     rpc: [{

@@ -34,7 +34,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/GGEZLabs/ggezchain',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.12'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/GGEZLabs/ggezchain/releases/download/v1.0.0/ggezchaind'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/GGEZLabs/ggez-mainnet/refs/heads/main/genesis/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.10',
+      tag: 'v0.50.10-lsm'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.2.0'
+    },
+    cosmwasm: {
+      version: 'v0.51.0',
+      repo: 'https://github.com/CosmWasm/wasmd',
+      tag: 'v0.51.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/ggezchain/images/chain.png',

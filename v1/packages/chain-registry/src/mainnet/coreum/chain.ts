@@ -31,7 +31,29 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/CoreumFoundation/coreum',
+    recommended_version: 'v3.0.3',
+    compatible_versions: ['v3.0.3'],
+    binaries: {
+      "linux/amd64": 'https://github.com/CoreumFoundation/coreum/releases/download/v3.0.3/cored-linux-amd64?checksum=sha256:1719a32e6f8e8813d00cd86e1d8d02e893324d4f59fa7a1b8cedc5836140ecef',
+      "linux/arm64": 'https://github.com/CoreumFoundation/coreum/releases/download/v3.0.3/cored-linux-arm64?checksum=sha256:cfbbad6803c0327407e4dd222a108505e6ff9e294d7c86e34b6b895b96b61bbd'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://raw.githubusercontent.com/CoreumFoundation/coreum/master/genesis/coreum-mainnet-1.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    cosmwasm: {
+      version: '0.44',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coreum/images/coreum.png',

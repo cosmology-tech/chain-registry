@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Canto-Network/Canto',
+    recommended_version: 'v7.0.0',
+    compatible_versions: ['v7.0.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Canto-Network/Canto/genesis/Networks/Mainnet/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png',

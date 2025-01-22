@@ -32,7 +32,32 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/aura-nw/aura',
+    recommended_version: 'v0.9.3',
+    compatible_versions: ['v0.9.3'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4',
+      repo: 'https://github.com/aura-nw/cometbft',
+      tag: 'v0.37.4-aura.2'
+    },
+    genesis: {
+      genesis_url: 'https://images.aura.network/aura_6322-2-genesis.tar.gz'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/evmos/cosmos-sdk',
+      version: 'v0.47.12',
+      tag: 'v0.47.12-evmos'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.6.0'
+    },
+    cosmwasm: {
+      version: 'v0.42.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',

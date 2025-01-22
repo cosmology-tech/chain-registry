@@ -29,7 +29,30 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/titantkx/titan',
+    recommended_version: 'v2.0.1',
+    compatible_versions: ['v2.0.1'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/titantkx/titan-mainnet/main/public/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.6',
+      tag: '0.47.6-titan.4'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.0',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.45.0',
+      enabled: true
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/titan/images/chain.png',

@@ -59,7 +59,34 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/neutron-org/neutron',
+    recommended_version: 'v5.0.2',
+    compatible_versions: ['v5.0.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/neutron-org/neutron/releases/download/v5.0.2/neutrond-linux-amd64'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.15'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/neutron-org/mainnet-assets/main/neutron-1-genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/neutron-org/cosmos-sdk',
+      version: 'v0.50.10',
+      tag: 'v0.50.10-neutron'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.2'
+    },
+    cosmwasm: {
+      version: 'v0.53.0',
+      repo: 'https://github.com/neutron-org/wasmd',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron-raw.png',

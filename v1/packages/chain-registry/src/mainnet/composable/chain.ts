@@ -28,7 +28,30 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/composable/composable-cosmos',
+    recommended_version: 'v6.5.3',
+    compatible_versions: ['v6.5.3'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.2',
+      repo: 'https://github.com/composablefi/cometbft',
+      tag: 'v0.37.2-fixed-len-vote-time-tag'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/notional-labs/composable-networks/main/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/rust-ninja/cosmos-sdk',
+      version: 'v0.47.5',
+      tag: 'v0.47.5-patch-validators-trim-tag'
+    },
+    ibc: {
+      type: 'go',
+      repo: 'https://github.com/notional-labs/ibc-go',
+      version: 'v7.2.1',
+      tag: 'v7.2.1-0.20231010040541-6cf43006971f'
+    }
   },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/composable/images/pica.svg'

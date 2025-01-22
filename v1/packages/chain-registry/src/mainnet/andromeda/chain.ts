@@ -30,7 +30,28 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/andromedaprotocol/andromedad',
+    recommended_version: 'v0.1.1-patch',
+    compatible_versions: ['v0.1.1-patch'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://snapshots.lavenderfive.com/genesis/andromeda/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.41.0',
+      enabled: true
+    }
   },
   apis: {
     rpc: [

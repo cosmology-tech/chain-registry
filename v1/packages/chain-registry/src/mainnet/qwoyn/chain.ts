@@ -29,7 +29,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cosmic-horizon/QWOYN',
+    recommended_version: 'v5.4.1',
+    compatible_versions: ['v5.4.1'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.2'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/cosmic-horizon/mainnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.6'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.1',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.40.0'
+    }
   },
   apis: {
     rpc: [

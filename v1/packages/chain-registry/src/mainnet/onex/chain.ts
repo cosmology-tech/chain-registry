@@ -28,7 +28,21 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/onomyprotocol/onex',
+    recommended_version: 'v1.1.0',
+    compatible_versions: ['v1.1.0'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.34.28'
+    },
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://raw.githubusercontent.com/onomyprotocol/onex/main/chain/onex-mainnet-1/genesis-with-ccv.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45.16'
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/onex/images/onex.png',

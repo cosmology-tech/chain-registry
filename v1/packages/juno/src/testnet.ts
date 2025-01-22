@@ -26,7 +26,28 @@ const testnet: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/CosmosContracts/juno',
+    recommended_version: 'v15.0.0-alpha.2',
+    compatible_versions: ['v15.0.0', 'v15.0.0-alpha.2'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-6/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    ibc: {
+      type: 'go',
+      version: '4.3.1'
+    },
+    cosmwasm: {
+      version: '0.31',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

@@ -28,7 +28,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/kleomedes/prysm',
+    recommended_version: 'v0.1.0-devnet',
+    compatible_versions: ['v0.1.0-devnet'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.10'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/kleomedes/prysm/refs/heads/main/network/prysm-devnet-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.4.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/prysmdevnet/images/prysm.png',

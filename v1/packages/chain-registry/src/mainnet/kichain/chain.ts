@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/KiFoundation/ki-tools',
+    recommended_version: '5.0.1',
+    compatible_versions: ['5.0.0', '5.0.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Mainnet/kichain-2/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',

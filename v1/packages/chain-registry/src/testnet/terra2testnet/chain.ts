@@ -27,7 +27,13 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/terra-money/core/',
+    recommended_version: 'v2.4.0-rc5',
+    compatible_versions: ['v2.4.0-rc4', 'v2.4.0-rc5'],
+    genesis: {
+      name: 'v2.0',
+      genesis_url: 'https://tfl-pisco-1.s3.amazonaws.com/genesis.json'
+    }
   },
   apis: {
     rpc: [{

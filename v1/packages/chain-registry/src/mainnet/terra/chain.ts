@@ -159,7 +159,13 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/classic-terra/core',
+    recommended_version: 'v2.1.1',
+    compatible_versions: ['v2.1.1'],
+    genesis: {
+      name: '1.0.5',
+      genesis_url: 'https://tfl-columbus-5.s3.amazonaws.com/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luna.png',

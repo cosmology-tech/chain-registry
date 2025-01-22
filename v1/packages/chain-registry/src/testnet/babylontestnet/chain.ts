@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/babylonchain/babylon',
+    recommended_version: 'v0.8.4',
+    compatible_versions: ['v0.8.4'],
+    genesis: {
+      genesis_url: 'https://github.com/babylonchain/networks/raw/main/bbn-test3/genesis.tar.bz2'
+    }
   },
   logo_URIs: {
     svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'

@@ -27,7 +27,16 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/EmpowerPlastic/empowerchain',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    genesis: {
+      genesis_url: 'https://github.com/EmpowerPlastic/empowerchain/raw/main/mainnet/empowerchain-1/genesis.tar.gz'
+    },
+    cosmwasm: {
+      version: '0.45',
+      enabled: true
+    }
   },
   apis: {
     rpc: [

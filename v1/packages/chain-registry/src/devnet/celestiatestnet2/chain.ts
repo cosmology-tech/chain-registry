@@ -22,7 +22,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/celestiaorg/celestia-app',
+    recommended_version: 'v2.1.2',
+    compatible_versions: [
+      'v2.0.0',
+      'v2.1.0',
+      'v2.1.1',
+      'v2.1.2'
+    ],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/celestiaorg/networks/master/arabica-11/genesis.json'
+    }
   },
   apis: {
     rpc: [{

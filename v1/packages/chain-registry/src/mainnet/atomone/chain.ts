@@ -28,7 +28,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/atomone-hub/atomone',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-linux-amd64',
+      "linux/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-linux-arm64',
+      "darwin/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-darwin-amd64',
+      "darwin/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-darwin-arm64',
+      "windows/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-windows-amd64.exe',
+      "windows/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-windows-arm64.exe'
+    },
+    genesis: {
+      genesis_url: 'https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.5'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.13'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/atomone/images/atomone.png',

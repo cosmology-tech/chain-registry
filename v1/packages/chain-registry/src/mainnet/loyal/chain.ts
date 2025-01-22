@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/LoyalLabs/loyal',
+    recommended_version: 'v0.25.3',
+    compatible_versions: ['v0.25.3'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/LoyalLabs/net/main/mainnet/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.png',

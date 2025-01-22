@@ -27,7 +27,21 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/MANTRA-Chain/mantrachain',
+    recommended_version: '1.0.0-rc3',
+    compatible_versions: ['1.0.0-rc3'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.38'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.50.10'
+    },
+    cosmwasm: {
+      version: '0.53',
+      enabled: true
+    }
   },
   apis: {
     rpc: [

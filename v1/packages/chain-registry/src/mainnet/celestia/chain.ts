@@ -28,7 +28,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/celestiaorg/celestia-app',
+    recommended_version: 'v2.1.2',
+    compatible_versions: [
+      'v2.0.0',
+      'v2.1.0',
+      'v2.1.1',
+      'v2.1.2'
+    ],
+    consensus: {
+      type: 'tendermint',
+      version: 'v1.40.0',
+      repo: 'https://github.com/celestiaorg/celestia-core',
+      tag: 'v1.40.0-tm-v0.34.29'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/celestiaorg/cosmos-sdk',
+      version: 'v1.24.1',
+      tag: 'v1.24.1-sdk-v0.46.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.2.1'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png',

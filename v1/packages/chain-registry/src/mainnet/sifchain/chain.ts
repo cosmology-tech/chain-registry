@@ -26,7 +26,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Sifchain/sifnode.git',
+    recommended_version: 'v1.2.0-beta',
+    compatible_versions: ['v1.2.0-beta'],
+    binaries: {
+      "linux/amd64": 'https://github.com/Sifchain/sifnode/releases/download/v1.2.0-beta/sifnoded-v1.2.0-beta-linux-amd64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/Sifchain/networks/blob/master/betanet/sifchain-1/genesis.json.gz?raw=true'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sifchain/images/rowan.png',

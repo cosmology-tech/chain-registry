@@ -34,7 +34,12 @@ const info: Chain = {
   },
   description: 'Lorenzo aims to be the premier Bitcoin platform for yield-bearing token issuance, trading, and settlement.',
   codebase: {
-
+    git_repo: 'https://github.com/Lorenzo-Protocol/lorenzo',
+    recommended_version: 'v3.0.0',
+    compatible_versions: ['v3.0.0'],
+    genesis: {
+      genesis_url: 'https://github.com/Lorenzo-Protocol/lorenzo-genesis/blob/main/mainnet/lorenzo/genesis.json'
+    }
   },
   apis: {
     rpc: [{

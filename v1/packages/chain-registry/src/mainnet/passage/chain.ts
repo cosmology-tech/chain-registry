@@ -29,7 +29,27 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/envadiv/Passage3D',
+    recommended_version: 'v2.4.0',
+    compatible_versions: ['v2.4.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.27'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/envadiv/mainnet/main/passage-2/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.4.2'
+    },
+    cosmwasm: {
+      version: 'v0.31.0'
+    }
   },
   apis: {
     rpc: [

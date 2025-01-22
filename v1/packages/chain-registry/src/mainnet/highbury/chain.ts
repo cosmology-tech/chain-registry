@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Four4Two/fury/',
+    recommended_version: 'v0.4.1',
+    compatible_versions: ['v0.4.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Four4Two/fury/mainnet/networks/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/highbury/images/fury.png',

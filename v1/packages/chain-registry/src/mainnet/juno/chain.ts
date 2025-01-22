@@ -34,7 +34,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/CosmosContracts/juno',
+    recommended_version: 'v24.0.0',
+    compatible_versions: ['v24.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/CosmosContracts/juno/releases/download/v24.0.0/junod'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.8'
+    },
+    genesis: {
+      genesis_url: 'https://download.dimi.sh/juno-phoenix2-genesis.tar.gz'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.12'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.6.0'
+    },
+    cosmwasm: {
+      version: 'v0.46.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png',

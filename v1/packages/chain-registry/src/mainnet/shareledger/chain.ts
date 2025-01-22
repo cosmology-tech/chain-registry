@@ -28,7 +28,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ShareRing/Shareledger/',
+    recommended_version: '1.4.1',
+    compatible_versions: ['1.4.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/ShareRing/Shareledger/releases/download/v1.4.1/shareledger'
+    },
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://github.com/ShareRing/Shareledger/releases/download/v1.2.0/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    ibc: {
+      type: 'go',
+      version: '3.0.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: '0.27',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

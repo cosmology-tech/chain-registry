@@ -27,7 +27,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/evmos/evmos',
+    recommended_version: 'v12.0.0-rc4',
+    compatible_versions: ['v12.0.0-rc4'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/evmos/testnets/raw/main/evmos_9000-4/genesis.zip'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.1.0'
+    }
   },
   apis: {
     rpc: [

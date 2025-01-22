@@ -27,7 +27,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/axelarnetwork/axelar-core'
   },
   apis: {
     rpc: [

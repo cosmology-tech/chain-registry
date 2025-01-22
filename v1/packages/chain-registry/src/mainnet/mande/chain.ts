@@ -39,7 +39,12 @@ const info: Chain = {
       }
     }],
   codebase: {
-
+    git_repo: 'https://github.com/mande-labs',
+    genesis: {
+      genesis_url: 'https://github.com/mande-labs/mainnet/raw/main/genesis.json'
+    },
+    recommended_version: 'v2.2.0',
+    compatible_versions: ['v2.2.0']
   },
   apis: {
     rpc: [{

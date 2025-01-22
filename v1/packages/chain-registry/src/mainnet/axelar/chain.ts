@@ -28,7 +28,35 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/axelarnetwork/axelar-core',
+    recommended_version: 'v1.0.2',
+    compatible_versions: ['v1.0.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-linux-amd64-v1.0.2',
+      "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-amd64-v1.0.2',
+      "darwin/arm64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-arm64-v1.0.2'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.31'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/axelarnetwork/cosmos-sdk',
+      version: 'v0.45.17',
+      tag: 'v0.45.17-0.20240321205000-47c0c80e20ca'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.6.0'
+    },
+    cosmwasm: {
+      version: 'v0.33.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png',

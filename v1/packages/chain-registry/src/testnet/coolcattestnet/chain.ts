@@ -28,7 +28,12 @@ const info: Chain = {
   node_home: '$HOME/.coolcat',
   slip44: 118,
   codebase: {
-
+    git_repo: 'https://github.com/DigitalKitchenLabs/coolcat',
+    recommended_version: 'v2.0.0',
+    compatible_versions: ['v2.0.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/DigitalKitchenLabs/testnets/main/kitten-04/genesis.json'
+    }
   },
   apis: {
     rpc: [{

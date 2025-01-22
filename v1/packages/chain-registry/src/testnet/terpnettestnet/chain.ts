@@ -27,7 +27,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/terpnetwork/terp-core',
+    recommended_version: 'v4.2.2',
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.2'
+    },
+    compatible_versions: [
+      'v4.2.0',
+      'v4.2.1',
+      'v4.2.2'
+    ],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/terpnetwork/networks/main/testnet/90u-4/genesis.json'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-amd64',
+      "linux/arm64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-arm64'
+    }
   },
   apis: {
     rpc: [{

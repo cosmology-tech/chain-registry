@@ -28,7 +28,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/airchains-network/junction',
+    recommended_version: 'v0.1.0',
+    genesis: {
+      genesis_url: 'https://github.com/airchains-network/junction/releases/download/v0.1.0/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.50.3'
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/airchainstestnet/images/airchains-logo.png',

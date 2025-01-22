@@ -20,7 +20,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sei-protocol/sei-chain',
+    recommended_version: '1.0.6beta',
+    compatible_versions: ['1.0.6beta'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/sei-protocol/testnet/main/sei-incentivized-testnet/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',

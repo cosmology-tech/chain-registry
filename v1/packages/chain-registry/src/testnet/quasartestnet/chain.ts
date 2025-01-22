@@ -27,7 +27,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/quasar-finance/quasar',
+    recommended_version: 'v2.0.0-rc',
+    compatible_versions: ['v2.0.0-rc'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.6'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/quasar-finance/questnet/main/v04/definitive-genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.12'
+    },
+    cosmwasm: {
+      version: '0.45.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png',

@@ -21,7 +21,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/public-awesome/stargaze',
+    recommended_version: 'v7.0.0',
+    compatible_versions: ['v7.0.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/public-awesome/testnets/blob/main/elgafar-1/genesis/genesis.tar.gz?raw=true'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.28',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

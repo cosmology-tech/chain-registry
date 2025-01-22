@@ -31,7 +31,35 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/NibiruChain/nibiru',
+    recommended_version: 'v1.0.1',
+    compatible_versions: ['v1.0.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/NibiruChain/nibiru/releases/download/v1.0.1/nibid_1.0.1_darwin_arm64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.7'
+    },
+    cosmwasm: {
+      version: 'v0.44.0',
+      path: '$HOME/.nibid/data/wasm',
+      enabled: true
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/NibiruChain/Networks/main/Testnet/nibiru-devnet-2/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.png',

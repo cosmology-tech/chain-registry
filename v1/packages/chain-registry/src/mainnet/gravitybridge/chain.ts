@@ -42,7 +42,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Gravity-Bridge/Gravity-Bridge',
+    recommended_version: 'v1.11.1',
+    compatible_versions: ['v1.11.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.11.1/gravity-linux-amd64'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Gravity-Bridge/Gravity-Docs/main/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.png',

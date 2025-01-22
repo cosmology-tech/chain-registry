@@ -29,7 +29,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/mars-protocol/hub',
+    recommended_version: 'v1.0.2',
+    compatible_versions: ['v1.0.0', 'v1.0.2'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34.24'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/mars-protocol/networks/raw/main/mars-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.7'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.1.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      version: '0.30.0',
+      enabled: true
+    }
   },
   description: 'Lend, borrow and earn with an autonomous credit protocol in the Cosmos universe. Open to all, closed to none.',
   apis: {

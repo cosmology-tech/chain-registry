@@ -26,7 +26,28 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/WaveHashProtocol/wavehash',
+    recommended_version: 'v6.0.0',
+    compatible_versions: ['v6.0.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/WaveHashProtocol/testnet/main/testnet-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    ibc: {
+      type: 'go',
+      version: '4.3.0'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

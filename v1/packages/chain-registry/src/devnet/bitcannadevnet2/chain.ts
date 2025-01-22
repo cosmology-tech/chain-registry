@@ -19,7 +19,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/BitCannaGlobal/bcna',
+    recommended_version: 'v2.0.0-beta',
+    compatible_versions: ['v2.0.0-beta'],
+    binaries: {
+      "linux/amd64": 'https://github.com/BitCannaGlobal/bcna/releases/download/v2.0.0-beta/bcna_linux_amd64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/BitCannaGlobal/testnet-bcna-cosmos/main/instructions/bitcanna-dev-6/genesis.json'
+    }
   },
   apis: {
     rpc: [{

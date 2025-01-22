@@ -29,7 +29,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/strangelove-ventures/noble',
+    recommended_version: 'v6.0.0',
+    compatible_versions: ['v6.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.27'
+    },
+    genesis: {
+      name: 'v1.0.0',
+      genesis_url: 'https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/noble-assets/cosmos-sdk',
+      version: 'v0.45.16',
+      tag: 'v0.45.16-send-restrictions'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.6.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png',

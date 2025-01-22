@@ -20,7 +20,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/IDEP-network/ion',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/IDEP-network/Antora/raw/main/iond'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/IDEP-network/Antora/raw/main/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.png',

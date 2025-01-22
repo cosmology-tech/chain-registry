@@ -28,7 +28,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/provenance-io/provenance',
+    recommended_version: 'v1.17.0',
+    compatible_versions: ['v1.17.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34.29'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/provenance-io/provenance/releases/download/v1.17.0/provenance-linux-amd64-v1.17.0.zip'
+    },
+    genesis: {
+      name: 'v1.0.1',
+      genesis_url: 'https://raw.githubusercontent.com/provenance-io/mainnet/main/pio-mainnet-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.13'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.2.0',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png',

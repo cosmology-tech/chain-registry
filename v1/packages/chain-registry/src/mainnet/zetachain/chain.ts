@@ -27,7 +27,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/zeta-chain/node',
+    recommended_version: 'v20.0.0',
+    compatible_versions: ['v20.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/zeta-chain/network-config/main/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    }
   },
   apis: {
     rpc: [

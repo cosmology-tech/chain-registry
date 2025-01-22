@@ -28,7 +28,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ixofoundation/ixo-blockchain',
+    recommended_version: 'v0.20.0',
+    compatible_versions: ['v0.20.0']
   },
   apis: {
     rpc: [{

@@ -27,7 +27,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Source-Protocol-Cosmos/source',
+    recommended_version: 'v3.0.1',
+    compatible_versions: ['v3.0.1'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Source-Protocol-Cosmos/testnets/master/sourcetest-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45'
+    },
+    cosmwasm: {
+      version: '0.30',
+      enabled: true
+    }
   },
   apis: {
     rpc: [

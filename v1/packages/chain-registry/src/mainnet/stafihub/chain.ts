@@ -31,7 +31,25 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/stafihub/stafihub',
+    recommended_version: 'v0.5.0',
+    compatible_versions: ['v0.5.0'],
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/stafihub/network/main/mainnets/stafihub-1(dragonberry)/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    ibc: {
+      type: 'go',
+      version: '5.2.1',
+      ics_enabled: ['ics20-1']
+    }
   },
   apis: {
     rpc: [

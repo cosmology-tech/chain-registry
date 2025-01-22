@@ -20,7 +20,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/okex/exchain',
+    recommended_version: 'v1.6.1.1',
+    compatible_versions: ['v1.2.2', 'v1.6.1.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/okx/mainnet/main/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/okexchain/images/okc.png'

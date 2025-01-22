@@ -298,7 +298,16 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Switcheo/carbon-bootstrap',
+    recommended_version: 'v2.53.1',
+    compatible_versions: ['v2.53.0', 'v2.53.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.53.1/carbond-mainnet.linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.53.1/carbond-mainnet.linux-arm64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/Switcheo/carbon-bootstrap/raw/master/carbon-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/swth.png',

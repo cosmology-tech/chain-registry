@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/fetchai/fetchd',
+    recommended_version: 'v0.10.5',
+    compatible_versions: ['v0.10.5'],
+    genesis: {
+      genesis_url: 'https://storage.googleapis.com/fetch-ai-testnet-genesis/genesis-dorado-827201.json'
+    }
   },
   apis: {
     rpc: [{

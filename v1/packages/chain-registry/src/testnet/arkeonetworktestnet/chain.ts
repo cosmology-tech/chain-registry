@@ -23,7 +23,7 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/arkeonetwork/arkeo'
   },
   apis: {
     rpc: [

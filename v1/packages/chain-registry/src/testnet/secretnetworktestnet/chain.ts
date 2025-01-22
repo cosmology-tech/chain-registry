@@ -20,7 +20,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/scrtlabs/SecretNetwork',
+    recommended_version: 'v1.9.3',
+    binaries: {
+      "linux/amd64": 'https://github.com/scrtlabs/SecretNetwork/releases/download/v1.9.3/secretnetwork_1.9.3_testnet_goleveldb_amd64.deb'
+    },
+    compatible_versions: ['v1.9.3'],
+    genesis: {
+      genesis_url: 'https://rpc.pulsar3.scrttestnet.com/genesis'
+    }
   },
   apis: {
     rpc: [{

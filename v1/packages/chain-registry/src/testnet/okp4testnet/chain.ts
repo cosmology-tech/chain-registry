@@ -28,7 +28,16 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/okp4/okp4d',
+    recommended_version: 'v4.1.0',
+    compatible_versions: ['v4.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/okp4/okp4d/releases/download/v4.1.0/okp4d-4.1.0-linux-amd64',
+      "linux/arm64": 'https://github.com/okp4/okp4d/releases/download/v4.1.0/okp4d-4.1.0-linux-arm64'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/okp4testnet/images/okp4.png'

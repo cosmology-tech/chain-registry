@@ -3,8 +3,8 @@ const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'xiontestnet',
   chain_id: 'xion-testnet-1',
-  pretty_name: 'Xion Testnet',
-  website: 'https://burnt.com',
+  pretty_name: 'Xion Testnet 1',
+  website: 'https://xion.burnt.com',
   status: 'live',
   network_type: 'testnet',
   chain_type: 'cosmos',
@@ -28,24 +28,27 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/burnt-labs/xion',
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/burnt-labs/burnt-networks/main/testnets/xion-testnet-1/genesis.json'
+    }
   },
   apis: {
     rpc: [
       {
-        address: 'https://rpc.xion-testnet-1.burnt.com',
+        address: 'https://rpc.xion-testnet-1.burnt.com:443',
         provider: '🔥BurntLabs🔥'
       },
       {
-        address: 'https://testnet-burnt-rpc.lavenderfive.com',
+        address: 'https://testnet-burnt-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://xion-testnet-rpc.polkachu.com',
+        address: 'https://xion-testnet-rpc.polkachu.com:443',
         provider: 'Polkachu'
       },
       {
-        address: 'https://burnt-testnet-rpc.itrocket.net',
+        address: 'https://burnt-testnet-rpc.itrocket.net:443',
         provider: 'ITRocket'
       }
     ],
@@ -86,22 +89,32 @@ const info: Chain = {
       }
     ]
   },
-  explorers: [{
+  explorers: [
+    {
       url: 'https://explorer.burnt.com/xion-testnet-1',
       tx_page: 'https://explorer.burnt.com/xion-testnet-1/tx/${txHash}',
       account_page: 'https://explorer.burnt.com/xion-testnet-1/account/${accountAddress}'
-    }, {
+    },
+    {
       kind: 'ITRocket',
       url: 'https://testnet.itrocket.net/burnt',
       tx_page: 'https://testnet.itrocket.net/burnt/tx/${txHash}',
       account_page: 'https://testnet.itrocket.net/burnt/account/${accountAddress}'
-    }],
+    },
+    {
+      kind: 'Nodes.Guru',
+      url: 'https://testnet.xion.explorers.guru',
+      tx_page: 'https://testnet.xion.explorers.guru/transactions/${txHash}',
+      account_page: 'https://testnet.xion.explorers.guru//account/${accountAddress}'
+    }
+  ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
     }],
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt.png'
   },
+  description: 'XION is the first walletless L1 blockchain purpose built for consumer adoption through chain abstraction.',
   keywords: [
     'xion',
     'burnt',

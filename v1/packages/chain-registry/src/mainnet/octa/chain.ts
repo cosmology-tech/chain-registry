@@ -19,7 +19,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    genesis: {
+      genesis_url: 'https://octa-coin-assets.s3.eu-central-1.amazonaws.com/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/octa/images/octa.png',

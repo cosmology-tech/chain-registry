@@ -27,7 +27,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/terra-money/core/',
+    recommended_version: 'v2.12.4',
+    compatible_versions: ['v2.12.4'],
+    binaries: {
+      "linux/arm64": 'https://github.com/terra-money/core/releases/download/v2.12.4/terra_2.12.4_Linux_arm64.tar.gz',
+      "linux/amd64": 'https://github.com/terra-money/core/releases/download/v2.12.4/terra_2.12.4_Linux_x86_64.tar.gz'
+    },
+    genesis: {
+      name: 'v2.0',
+      genesis_url: 'https://tfl-phoenix-1.s3.amazonaws.com/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/luna.png',

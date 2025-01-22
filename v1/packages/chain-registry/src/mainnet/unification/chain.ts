@@ -31,7 +31,32 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/unification-com/mainchain',
+    recommended_version: 'v1.10.1',
+    compatible_versions: ['v1.10.0', 'v1.10.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/unification-com/mainchain/releases/download/v1.10.1/und_v1.10.1_linux_x86_64.tar.gz',
+      "darwin/amd64": 'https://github.com/unification-com/mainchain/releases/download/v1.10.1/und_v1.10.1_darwin_x86_64.tar.gz',
+      "windows/amd64": 'https://github.com/unification-com/mainchain/releases/download/v1.10.1/und_v1.10.1_windows_x86_64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/unification-com/mainnet/master/latest/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.13'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.7.0'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/unification/images/fund.png',

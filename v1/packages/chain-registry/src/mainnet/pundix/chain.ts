@@ -28,7 +28,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/pundix/pundix',
+    recommended_version: 'v0.2.3',
+    compatible_versions: ['v0.2.3'],
+    binaries: {
+      "linux/amd64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Linux_x86_64.tar.gz',
+      "linux/arm64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Darwin_x86_64.tar.gz',
+      "darwin/arm64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/pundix/pundix/releases/download/v0.2.3/pundix_0.2.3_Windows_x86_64.zip'
+    },
+    genesis: {
+      name: 'pxv1',
+      genesis_url: 'https://raw.githubusercontent.com/pundix/pundix/main/public/mainnet/genesis.json'
+    },
+    consensus: {
+      type: 'tendermint',
+      version: '0.34'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.45.11'
+    },
+    ibc: {
+      type: 'go',
+      version: '6.1.0'
+    }
   },
   description: 'Pundi X Chain is a dedicated payment-focused blockchain in the Function X network. It is specially designed to perform high throughput transactions with low latency and low transaction fees. In addition, it provides room for future compliance requirement upgrades, hardware (XPOS) integration, and Point-of-Sales compatibility, with tokenonomics that offer incentives to merchants and payment processors.',
   apis: {

@@ -27,7 +27,30 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/onomyprotocol/onomy',
+    recommended_version: 'v1.1.4',
+    compatible_versions: ['v1.1.4'],
+    binaries: {
+      "linux/amd64": 'https://github.com/onomyprotocol/onomy/releases/download/v1.1.4/onomyd',
+      "linux/arm64": 'https://github.com/onomyprotocol/onomy/releases/download/v1.1.4/onomyd-arm'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.28'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/onomyprotocol/onomy/main/genesis/mainnet/genesis-mainnet-1.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/onomyprotocol/onomy-sdk',
+      version: 'v0.45.16',
+      tag: 'v0.45.16-onomy-dev'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.4.2'
+    }
   },
   apis: {
     rpc: [{

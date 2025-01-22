@@ -29,7 +29,20 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/humansdotai/',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.34.27'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/humansdotai/mainnets/blob/main/mainnet/1/genesis_1089-1.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.11'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/humans/images/heart-dark-mode.png',

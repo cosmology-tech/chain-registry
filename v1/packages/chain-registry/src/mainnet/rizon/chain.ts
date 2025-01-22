@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/rizon-world/rizon',
+    recommended_version: 'v0.4.1',
+    compatible_versions: ['v0.4.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/rizon-world/mainnet/master/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rizon/images/atolo.png',

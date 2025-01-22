@@ -28,7 +28,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/pokt-network/poktroll',
+    recommended_version: 'v0.0.11-rc',
+    compatible_versions: ['v0.0.11-rc'],
+    binaries: {
+      "linux/amd64": 'https://github.com/pokt-network/poktroll/releases/download/v0.0.11-rc/poktroll_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/pokt-network/poktroll/releases/download/v0.0.11-rc/poktroll_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/pokt-network/poktroll/releases/download/v0.0.11-rc/poktroll_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/pokt-network/poktroll/releases/download/v0.0.11-rc/poktroll_darwin_arm64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.10'
+    },
+    genesis: {
+      name: 'v0.0.11-rc',
+      genesis_url: 'https://github.com/pokt-network/pocket-network-genesis/blob/master/shannon/testnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.9'
+    },
+    ibc: {
+      type: 'go'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/pocket/images/pokt-icon.svg'

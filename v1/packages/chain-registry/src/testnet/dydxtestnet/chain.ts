@@ -28,7 +28,19 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/dydxprotocol/v4-chain/',
+    recommended_version: 'v2.0.0',
+    compatible_versions: ['v2.0.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/dydxprotocol/v4-testnets/main/dydx-testnet-4/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.4'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   description: 'Our goal is to build open source code that can power a first class product and trading experience.',
   apis: {

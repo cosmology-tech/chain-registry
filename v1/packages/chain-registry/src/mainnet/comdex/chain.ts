@@ -25,7 +25,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/comdex-official/comdex',
+    recommended_version: 'v14.1.0',
+    compatible_versions: ['v14.1.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-linux-amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/comdex-official/comdex/releases/download/v14.1.0/comdex-darwin-arm64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.5'
+    },
+    genesis: {
+      genesis_url: 'https://comdex-mainnet-genesis.s3.ap-southeast-1.amazonaws.com/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.9'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   daemon_name: 'comdex',
   node_home: '$HOME/.comdex',

@@ -13,7 +13,19 @@ const info: Chain = {
   node_home: '$HOME/.thornode',
   slip44: 931,
   codebase: {
-
+    git_repo: 'https://gitlab.com/thorchain/thornode',
+    recommended_version: 'v2.135.0',
+    compatible_versions: ['v2.135.0'],
+    genesis: {
+      genesis_url: 'https://storage.googleapis.com/public-snapshots-ninerealms/genesis/17562000.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [],

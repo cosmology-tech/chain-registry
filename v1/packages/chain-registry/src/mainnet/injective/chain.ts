@@ -28,7 +28,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/InjectiveFoundation/injective-core/',
+    recommended_version: 'v1.13.2',
+    compatible_versions: ['v1.13.2'],
+    binaries: {
+      "linux/amd64": 'https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.13.2-1723753267/linux-amd64.zip'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/InjectiveLabs/mainnet-config/master/10001/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png',

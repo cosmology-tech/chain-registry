@@ -26,7 +26,27 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/NillionNetwork/nilchain',
+    recommended_version: 'v0.1.1',
+    compatible_versions: ['v0.1.1'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.6'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/NillionNetwork/networks/main/nillion-chain-testnet-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.6'
+    },
+    ibc: {
+      type: 'go',
+      version: '8.2.0'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [

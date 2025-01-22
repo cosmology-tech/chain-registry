@@ -25,7 +25,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/mises-id/mises-tm',
+    recommended_version: 'v1.0.4',
+    compatible_versions: ['v1.0.4'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/mises-id/mainnet/master/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mises/images/mises.png'

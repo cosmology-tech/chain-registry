@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/notional-labs/composable-centauri',
+    recommended_version: 'v3.0.0',
+    compatible_versions: ['v3.0.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/notional-labs/composable-networks/main/banksy-testnet-3/genesis.json'
+    }
   },
   apis: {
     rpc: [{

@@ -29,7 +29,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/EpixZone/Epix',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/EpixZone/Epix/refs/heads/main/Networks/Mainnet/epix_1916-0/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/epix/images/epix.png',

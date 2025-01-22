@@ -27,7 +27,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/liftedinit/manifest-ledger',
+    recommended_version: 'v0.0.1-rc.1',
+    compatible_versions: ['v0.0.1-rc.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/liftedinit/manifest-ledger/releases/download/v0.0.1-rc.1/manifest-ledger-v0.0.1-rc.1-linux-amd64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/liftedinit/manifest-ledger/blob/main/network/manifest-1/manifest-1_genesis.json'
+    }
   },
   apis: {
     rpc: [{

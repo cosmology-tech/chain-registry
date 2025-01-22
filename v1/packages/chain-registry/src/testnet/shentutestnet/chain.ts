@@ -27,7 +27,22 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/ShentuChain/shentu',
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/shentufoundation/testnet/refs/heads/master/yulei-2.1/genesis.json'
+    },
+    recommended_version: 'v2.11.0',
+    compatible_versions: ['v2.11.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_linux_amd64',
+      "darwin/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_arm64_macos',
+      "windows/amd64": 'https://github.com/shentufoundation/shentu/releases/download/v2.11.0/shentud_2.11.0_win_x86_64.exe'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0',
+      ics_enabled: ['ics20-1']
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png',

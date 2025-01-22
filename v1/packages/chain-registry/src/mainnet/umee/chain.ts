@@ -27,7 +27,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/umee-network/umee',
+    recommended_version: 'v6.3.0',
+    compatible_versions: ['v6.3.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/umee-network/umee/releases/download/v6.3.0/umeed-v6.3.0-linux-amd64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    genesis: {
+      name: 'v1.0.1',
+      genesis_url: 'https://raw.githubusercontent.com/umee-network/mainnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.2'
+    },
+    cosmwasm: {
+      version: '0.43',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png',

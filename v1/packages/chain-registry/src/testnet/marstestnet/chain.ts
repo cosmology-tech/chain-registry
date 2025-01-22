@@ -25,7 +25,9 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/mars-protocol/networks/main/ares-1/genesis.json'
+    }
   },
   apis: {
     rpc: [{

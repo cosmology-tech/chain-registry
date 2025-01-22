@@ -19,7 +19,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/empowerchain/empowerchain',
+    recommended_version: 'v1.0.0-rc1',
+    compatible_versions: ['v1.0.0-rc1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/empowerchain/empowerchain/main/testnets/circulus-1/genesis.json'
+    }
   },
   apis: {
     rpc: [

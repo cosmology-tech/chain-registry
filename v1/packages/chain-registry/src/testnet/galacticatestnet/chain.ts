@@ -27,7 +27,23 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Galactica-corp/galactica',
+    recommended_version: 'v0.1.1',
+    compatible_versions: ['v0.1.1'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Galactica-corp/networks/main/galactica_9301-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

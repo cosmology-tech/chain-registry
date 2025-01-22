@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/chain4energy/c4e-chain',
+    recommended_version: 'v1.3.1',
+    compatible_versions: ['v1.3.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/chain4energy/c4e-chains/main/perun-1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chain4energy/images/c4e.png'

@@ -27,7 +27,30 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sagaxyz/ssc',
+    recommended_version: 'v0.1.5',
+    compatible_versions: [
+      'v0.1.0',
+      'v0.1.1',
+      'v0.1.2',
+      'v0.1.3',
+      'v0.1.4',
+      'v0.1.5'
+    ],
+    consensus: {
+      type: 'tendermint',
+      version: '0.37'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/sagaxyz/ssc-public-testnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47'
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   apis: {
     rpc: [{

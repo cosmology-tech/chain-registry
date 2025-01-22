@@ -27,7 +27,31 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/PeggyJV/sommelier',
+    recommended_version: 'v7.0.1',
+    compatible_versions: ['v7.0.0', 'v7.0.1'],
+    binaries: {
+      "linux/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_darwin_arm64.tar.gz',
+      "windows/amd64": 'https://github.com/PeggyJV/sommelier/releases/download/v7.0.1/sommelier_7.0.1_windows_amd64.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.28'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/PeggyJV/sommelier/main/contrib/mainnet/sommelier-3/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.46.14'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v6.2.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sommelier/images/somm.png',

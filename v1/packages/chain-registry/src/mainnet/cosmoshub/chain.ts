@@ -28,7 +28,35 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cosmos/gaia',
+    recommended_version: 'v21.0.0',
+    compatible_versions: ['v21.0.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.11'
+    },
+    binaries: {
+      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-amd64',
+      "darwin/arm64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-darwin-arm64',
+      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v21.0.0/gaiad-v21.0.0-linux-amd64'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.9',
+      tag: 'v0.50.9-lsm'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.1'
+    },
+    cosmwasm: {
+      version: 'v0.53.0',
+      repo: 'https://github.com/CosmWasm/wasmd',
+      tag: 'v0.53.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',

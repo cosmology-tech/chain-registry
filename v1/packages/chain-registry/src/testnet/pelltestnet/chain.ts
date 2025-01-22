@@ -19,7 +19,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/0xPellNetwork/network-config',
+    recommended_version: 'v1.1.6',
+    compatible_versions: ['v1.1.6'],
+    genesis: {
+      genesis_url: 'https://pell-testnet-rpc.cosmonautstakes.com/genesis'
+    }
   },
   apis: {
     rpc: [

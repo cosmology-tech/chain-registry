@@ -27,7 +27,15 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Synternet/synternet-chain-releases',
+    recommended_version: 'v0.8.0',
+    compatible_versions: ['v0.8.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/Synternet/synternet-chain-releases/releases/download/v0.8.0/amberd-linux-amd64-v0.8.0-testnet'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/Synternet/synternet-chain-releases/blob/main/networks/testnet/genesis.json'
+    }
   },
   apis: {
     rpc: [{

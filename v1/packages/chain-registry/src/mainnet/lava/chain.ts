@@ -31,7 +31,37 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/lavanet/lava',
+    recommended_version: 'v3.1.0',
+    compatible_versions: ['v3.1.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/lavanet/lava-config/main/mainnet-1/genesis_json/genesis.json'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/lavanet/lava/releases/download/v3.1.0/lavad-v3.1.0-linux-amd64'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.5'
+    },
+    language: {
+      type: 'go',
+      version: '1.20'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/lavanet/cosmos-sdk',
+      version: 'v0.47.13',
+      tag: 'v0.47.13-lava-cosmos'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.4.0',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      enabled: false
+    }
   },
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/lava/images/lava.png',

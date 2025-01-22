@@ -28,7 +28,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/sei-protocol/sei-chain',
+    recommended_version: 'v5.9.0',
+    compatible_versions: ['v5.9.0'],
+    consensus: {
+      type: 'sei-tendermint',
+      version: 'v0.3.8'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/sei-protocol/testnet/main/pacific-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/sei-protocol/sei-cosmos',
+      version: 'v0.3.37'
+    },
+    ibc: {
+      type: 'go',
+      repo: 'https://github.com/sei-protocol/sei-ibc-go',
+      version: 'v3.3.2'
+    },
+    cosmwasm: {
+      version: 'v0.2.4',
+      repo: 'https://github.com/sei-protocol/sei-wasmd',
+      path: '$HOME/.sei/wasm',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/sei.png',

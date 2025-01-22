@@ -19,7 +19,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://gitopia.com/gitopia',
+    recommended_version: 'v1.2.0',
+    compatible_versions: ['v1.2.0'],
+    genesis: {
+      genesis_url: 'https://server.gitopia.com/raw/gitopia/testnets/master/gitopia-janus-testnet-2/genesis.json.gz'
+    }
   },
   apis: {
     rpc: [{

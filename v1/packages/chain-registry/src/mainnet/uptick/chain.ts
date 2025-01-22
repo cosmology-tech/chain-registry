@@ -28,7 +28,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/UptickNetwork/uptick',
+    recommended_version: 'v0.2.19',
+    compatible_versions: ['v0.2.19'],
+    binaries: {
+      "linux/amd64": 'https://github.com/UptickNetwork/uptick/archive/refs/tags/v0.2.19.tar.gz'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.37.3',
+      tag: 'v0.37.3-0.20230920093934-46df7b597e3c'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/uptick-network/mainnet/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.5'
+    },
+    ibc: {
+      type: 'go',
+      version: '7.3.0'
+    },
+    cosmwasm: {
+      version: 'v0.45.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/uptick/images/uptick.png',

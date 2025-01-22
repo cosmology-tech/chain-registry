@@ -28,7 +28,33 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/Titannet-dao/titan-chain',
+    genesis: {
+      genesis_url: 'https://github.com/Titannet-dao/titan-chain/releases/download/v0.3.0/genesis.json'
+    },
+    recommended_version: 'v0.3.0',
+    compatible_versions: ['v0.3.0'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.38.15'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/Titannet-dao/titan-chain/releases/download/v0.3.0/titand_0.3.0-1_g167b7fd6.tar.gz'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.10',
+      tag: 'v0.50.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.1'
+    },
+    cosmwasm: {
+      version: 'v0.53.0',
+      repo: 'https://github.com/CosmWasm/wasmd',
+      tag: 'v0.53.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titannettestnet/images/ttnt.png',

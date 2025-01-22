@@ -31,7 +31,28 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/Heli-Chain/heli',
+    recommended_version: 'v0.0.1',
+    compatible_versions: ['v0.0.1'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.2'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/Heli-Chain/heli/main/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.47.4'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.2.0'
+    },
+    cosmwasm: {
+      version: '0.42.0',
+      enabled: true
+    }
   },
   apis: {
     rpc: [{

@@ -28,7 +28,24 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/TucanaProtocol/Tucana',
+    recommended_version: 'v8.1.0',
+    compatible_versions: ['v8.1.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.9'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/TucanaProtocol/testnets/raw/main/tucana_712-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.3.2'
+    }
   },
   apis: {
     rpc: [{

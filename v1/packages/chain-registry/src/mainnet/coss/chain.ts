@@ -44,7 +44,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/coss-inscription/coss',
+    recommended_version: 'v0.1.0',
+    compatible_versions: ['v0.1.0'],
+    genesis: {
+      genesis_url: 'https://github.com/coss-inscription/networks/blob/main/mainnet/v1/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/coss/images/coss.png',

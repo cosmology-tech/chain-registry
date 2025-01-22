@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/rebuschain/rebus.core',
+    recommended_version: 'v0.4.0',
+    compatible_versions: ['v0.4.0'],
+    genesis: {
+      genesis_url: 'https://github.com/rebuschain/rebus.mainnet/raw/master/reb_1111-1/genesis.zip'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',

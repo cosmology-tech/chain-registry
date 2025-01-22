@@ -27,7 +27,29 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/bitbadges/bitbadgeschain/',
+    recommended_version: 'v1.0-bb-mainnet',
+    compatible_versions: ['v1.0-bb-mainnet'],
+    binaries: {
+      "linux/amd64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-amd64',
+      "linux/arm64": 'https://github.com/BitBadges/bitbadgeschain/releases/download/v1.0-bb-mainnet/bitbadgeschain-linux-arm64'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.10'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.3.2'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.12',
+      repo: 'https://github.com/cometbft/cometbft'
+    },
+    genesis: {
+      genesis_url: 'https://github.com/BitBadges/bitbadgeschain/blob/master/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitbadges/images/bitbadgeslogo.png'

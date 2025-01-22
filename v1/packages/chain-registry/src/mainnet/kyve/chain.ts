@@ -28,7 +28,32 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/KYVENetwork/chain',
+    recommended_version: 'v1.5.0',
+    compatible_versions: ['v1.5.0'],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.7',
+      tag: 'v0.38.7-kyve-rpc-fix-rc0'
+    },
+    binaries: {
+      "linux/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_linux_amd64.tar.gz',
+      "linux/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_linux_arm64.tar.gz',
+      "darwin/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_darwin_amd64.tar.gz',
+      "darwin/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_mainnet_darwin_arm64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/KYVENetwork/networks/main/kyve-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.50.7',
+      tag: 'v0.50.7-kyve-rc0'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.3.1'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.png',

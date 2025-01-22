@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/kava-Labs/kava/',
+    recommended_version: 'v0.26.0',
+    compatible_versions: ['v0.26.0'],
+    genesis: {
+      genesis_url: 'https://kava-genesis-files.s3.us-east-1.amazonaws.com/kava_2222-10/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.png',

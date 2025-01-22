@@ -31,7 +31,28 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/aura-nw/aura',
+    recommended_version: 'v0.8.0-euphoria',
+    compatible_versions: ['v0.8.0-euphoria'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.4'
+    },
+    genesis: {
+      genesis_url: 'https://images.aura.network/aura_6321-3-genesis.tar.gz'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.47.8'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v7.3.1'
+    },
+    cosmwasm: {
+      version: '0.42.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.png',

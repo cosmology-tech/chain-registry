@@ -24,7 +24,12 @@ const info: Chain = {
   },
   description: 'STOS coin is the native token for the Stratos Blockchain. Stratos is a pioneering decentralized infrastructure service provider, revolutionizing AI and DePIN with advanced decentralized solutions in storage, computing, databases, and blockchain services. We empower Web 3.0 developpers and dApps through our scalable, reliable, and high-performance networks.',
   codebase: {
-
+    git_repo: 'https://github.com/stratosnet/stratos-chain',
+    recommended_version: 'v0.11.2',
+    compatible_versions: ['v0.11.2'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/stratosnet/mainnet/main/genesis/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stratos/images/stratos.png',

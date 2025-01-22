@@ -25,7 +25,19 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cybercongress/go-cyber',
+    recommended_version: 'v0.3.0',
+    compatible_versions: ['v0.3.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_linux-amd64.tar.gz',
+      "darwin/amd64": 'https://github.com/cybercongress/go-cyber/releases/download/v0.2.0/cyber_v0.2.0_darwin-amd64.tar.gz'
+    },
+    genesis: {
+      genesis_url: 'https://cloudflare-ipfs.com/ipfs/QmYubyVNfghD4xCrTFj26zBwrF9s5GJhi1TmxvrwmJCipr'
+    },
+    cosmwasm: {
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',

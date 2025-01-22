@@ -27,7 +27,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/desmos-labs/desmos',
+    recommended_version: '5.1.0',
+    compatible_versions: ['5.1.0'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/desmos-labs/morpheus/master/morpheus-apollo-3/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.png',

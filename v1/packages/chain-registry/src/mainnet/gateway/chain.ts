@@ -23,7 +23,34 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/wormhole-foundation/wormhole',
+    recommended_version: 'v2.23.0',
+    consensus: {
+      type: 'tendermint',
+      version: 'v0.34.24',
+      repo: 'https://github.com/tendermint/tendermint'
+    },
+    genesis: {
+      name: 'v1',
+      genesis_url: 'https://github.com/wormhole-foundation/wormhole/blob/main/wormchain/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      repo: 'https://github.com/wormhole-foundation/cosmos-sdk',
+      version: 'v0.45.9',
+      tag: 'v0.45.9-wormhole-2'
+    },
+    ibc: {
+      type: 'go',
+      version: '4.2.2',
+      ics_enabled: ['ics20-1']
+    },
+    cosmwasm: {
+      repo: 'https://github.com/wormhole-foundation/wasmd',
+      version: 'v0.30.0',
+      tag: 'v0.30.0-wormchain-2',
+      enabled: true
+    }
   },
   images: [{
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/gateway/images/wormhole_icon.svg',

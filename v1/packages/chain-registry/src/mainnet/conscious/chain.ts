@@ -28,7 +28,12 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/cvn-network/cvn',
+    recommended_version: 'v2.1.1',
+    compatible_versions: ['v2.1.1'],
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/cvn-network/cvn/release/v2.1.x/networks/mainnet/config/genesis.json'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/conscious/images/cvn.png',

@@ -25,7 +25,17 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/alpha-omega-labs/genesis-crypto',
+    recommended_version: 'v1.0.0',
+    compatible_versions: ['v1.0.0'],
+    genesis: {
+      name: 'plan_ethermint',
+      genesis_url: 'https://raw.githubusercontent.com/alpha-omega-labs/genesis-parameters/main/genesis_29-2/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.46.15'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/genesisl1/images/l1.png',

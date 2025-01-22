@@ -27,7 +27,30 @@ const info: Chain = {
       }]
   },
   codebase: {
-
+    git_repo: 'https://github.com/akash-network/node/',
+    recommended_version: 'v0.36.0',
+    compatible_versions: ['v0.36.0'],
+    binaries: {
+      "linux/amd64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_amd64.zip',
+      "linux/arm64": 'https://github.com/akash-network/node/releases/download/v0.36.0/akash_linux_arm64.zip'
+    },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.27',
+      repo: 'https://github.com/akash-network/cometbft',
+      tag: 'v0.34.27-akash'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/akash-network/net/master/mainnet/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: 'v0.45.16'
+    },
+    ibc: {
+      type: 'go',
+      version: 'v4.6.0'
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/akash/images/akt.png',

@@ -30,7 +30,29 @@ const info: Chain = {
     }
   },
   codebase: {
-
+    git_repo: 'https://github.com/nolus-protocol/nolus-core',
+    recommended_version: '0.6.8-rc',
+    compatible_versions: [],
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.38.11'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/nolus-protocol/nolus-networks/main/testnet/rila-1/genesis.json'
+    },
+    sdk: {
+      type: 'cosmos',
+      version: '0.50.9'
+    },
+    ibc: {
+      type: 'go',
+      version: '8.5.1',
+      ics_enabled: ['ics20-1', 'ics27-1']
+    },
+    cosmwasm: {
+      version: '0.53.0',
+      enabled: true
+    }
   },
   logo_URIs: {
     png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/nolustestnet/images/nolus.png',
