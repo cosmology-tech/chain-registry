@@ -29,7 +29,7 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/KYVENetwork/chain',
     recommendedVersion: 'v1.5.0',
-    compatibleVersions: ['v1.5.0'],
+    compatibleVersions: ['v1.0.0-rc0', 'v1.5.0'],
     binaries: {
       "linux/amd64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_kaon_linux_amd64',
       "linux/arm64": 'https://github.com/KYVENetwork/chain/releases/download/v1.5.0/kyved_kaon_linux_arm64',

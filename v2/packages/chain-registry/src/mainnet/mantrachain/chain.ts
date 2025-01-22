@@ -28,8 +28,8 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/MANTRA-Chain/mantrachain',
-    recommendedVersion: '1.0.0',
-    compatibleVersions: ['1.0.0'],
+    recommendedVersion: '1.0.0-rc3',
+    compatibleVersions: ['1.0.0-rc3'],
     consensus: {
       type: 'cometbft',
       version: '0.38'

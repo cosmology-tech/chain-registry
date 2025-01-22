@@ -28,7 +28,7 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/desmos-labs/desmos',
-    recommendedVersion: 'v5.1.0',
+    recommendedVersion: '5.1.0',
     compatibleVersions: ['5.1.0'],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/desmos-labs/morpheus/master/morpheus-apollo-3/genesis.json'

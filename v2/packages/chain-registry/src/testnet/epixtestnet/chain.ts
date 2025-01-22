@@ -7,7 +7,7 @@ const info: Chain = {
   website: 'https://epix.zone/',
   prettyName: 'Epix Testnet',
   chainType: 'cosmos',
-  chainId: 'epix_4243-1',
+  chainId: 'epix_1917-1',
   bech32Prefix: 'epix',
   daemonName: 'epixd',
   nodeHome: '$HOME/.epixd',
@@ -32,7 +32,7 @@ const info: Chain = {
     recommendedVersion: 'v12.0.0-rc4',
     compatibleVersions: ['v12.0.0-rc4'],
     genesis: {
-      genesisUrl: 'https://raw.githubusercontent.com/EpixZone/Epix/refs/heads/main/Networks/Testnet/epix_4243-0/genesis.json'
+      genesisUrl: 'https://raw.githubusercontent.com/EpixZone/Epix/refs/heads/main/Networks/Testnet/epix_1917-0/genesis.json'
     }
   },
   apis: {

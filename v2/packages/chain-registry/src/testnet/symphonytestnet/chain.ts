@@ -29,7 +29,7 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/Orchestra-Labs/symphony',
     recommendedVersion: 'v23.0.5',
-    compatibleVersions: ['v23.0.5'],
+    compatibleVersions: ['v23.0.5-rc1', 'v23.0.5'],
     consensus: {
       type: 'tendermint',
       version: '0.37.4'

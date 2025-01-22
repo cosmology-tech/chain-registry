@@ -44,7 +44,7 @@ const info: Chain = {
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.47.5'
+      version: '0.47.5'
     },
     ibc: {
       type: 'go',

@@ -50,7 +50,7 @@ const info: Chain = {
     },
     cosmwasm: {
       version: 'v0.2.4',
-      repo: 'https://github.com/sei-wasmd',
+      repo: 'https://github.com/sei-protocol/sei-wasmd',
       path: '$HOME/.sei/wasm',
       enabled: true
     }

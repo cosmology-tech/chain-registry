@@ -28,14 +28,14 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/terpnetwork/terp-core',
-    recommendedVersion: 'v4.1.testnet',
-    consensus: {
-      type: 'cometbft',
-      version: 'v0.37.2'
-    },
-    compatibleVersions: [],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/terpnetwork/test-net/master/90u-2/genesis.json'
+    },
+    recommendedVersion: 'v4.1.testnet',
+    compatibleVersions: ['v4.1.testnet'],
+    consensus: {
+      type: 'cometbft',
+      version: '0.37.2'
     },
     binaries: {
       "linux/amd64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.1.testnet/terpd-linux-amd64',

@@ -19,7 +19,6 @@ const info: Chain = {
       }]
   },
   codebase: {
-    compatibleVersions: [],
     genesis: {
       genesisUrl: 'https://octa-coin-assets.s3.eu-central-1.amazonaws.com/genesis.json'
     }

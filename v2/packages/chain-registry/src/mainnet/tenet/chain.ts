@@ -31,7 +31,7 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/tenet-org/tenet-mainnet',
     recommendedVersion: 'v11.2.1',
-    compatibleVersions: ['v11.2.1'],
+    compatibleVersions: ['v11.2.0', 'v11.2.1'],
     binaries: {
       "linux/amd64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_amd64.tar.gz',
       "linux/arm64": 'https://github.com/tenet-org/tenet-mainnet/releases/download/v11.2.1/tenet-mainnet_11.2.1_Linux_arm64.tar.gz',

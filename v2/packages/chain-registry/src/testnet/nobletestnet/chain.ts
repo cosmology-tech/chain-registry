@@ -34,9 +34,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/strangelove-ventures/noble',
     recommendedVersion: 'v4.0.0-beta1',
     compatibleVersions: [
-      'v0.3.0',
-      'v0.4.1',
-      'v0.5.0',
       'v4.0.0-alpha1',
       'v4.0.0-alpha2',
       'v4.0.0-alpha3',

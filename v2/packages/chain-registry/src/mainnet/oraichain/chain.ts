@@ -30,7 +30,13 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/oraichain/orai',
     recommendedVersion: 'v0.42.4',
-    compatibleVersions: ['v0.42.4'],
+    compatibleVersions: [
+      'v0.42.0',
+      'v0.42.1',
+      'v0.42.2',
+      'v0.42.3',
+      'v0.42.4'
+    ],
     sdk: {
       type: 'cosmos',
       version: 'v0.45.16'

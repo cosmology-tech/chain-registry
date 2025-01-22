@@ -31,9 +31,13 @@ const info: Chain = {
     recommendedVersion: 'v4.2.2',
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.2'
+      version: '0.37.2'
     },
-    compatibleVersions: [],
+    compatibleVersions: [
+      'v4.2.0',
+      'v4.2.1',
+      'v4.2.2'
+    ],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/terpnetwork/networks/main/testnet/90u-4/genesis.json'
     },

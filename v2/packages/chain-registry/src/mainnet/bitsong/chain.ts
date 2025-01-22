@@ -24,14 +24,14 @@ const info: Chain = {
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.45.16'
+      version: '0.45.16'
     },
     ibc: {
       type: 'go',
       version: 'v4.4.2'
     },
     cosmwasm: {
-      version: 'v0.33.0',
+      version: '0.33.0',
       enabled: true
     }
   },

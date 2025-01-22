@@ -56,7 +56,7 @@ const info: Chain = {
     compatibleVersions: ['v3.0.0'],
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.6'
+      version: 'v0.38.11'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/quasar-finance/networks/main/quasar-1/definitive-genesis.json'

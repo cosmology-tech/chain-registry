@@ -37,7 +37,7 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/nomic-io/nomic',
     recommendedVersion: 'v9.0.0',
-    compatibleVersions: ['v9.0.0', 'v8.0.0'],
+    compatibleVersions: ['v9.0.0'],
     consensus: {
       type: 'tendermint',
       version: 'v0.34.0'

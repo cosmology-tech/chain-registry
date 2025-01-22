@@ -45,7 +45,7 @@ const info: Chain = {
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.6'
+      version: 'v0.37.9'
     },
     sdk: {
       type: 'cosmos',

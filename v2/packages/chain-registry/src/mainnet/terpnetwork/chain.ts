@@ -13,14 +13,19 @@ const info: Chain = {
   nodeHome: '$HOME/.terp',
   codebase: {
     gitRepo: 'https://github.com/terpnetwork/terp-core.git',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/terpnetwork/networks/main/mainnet/morocco-1/genesis.json'
+    },
     recommendedVersion: 'v4.2.2',
+    compatibleVersions: [
+      'v4.1.0',
+      'v4.2.0',
+      'v4.2.1',
+      'v4.2.2'
+    ],
     consensus: {
       type: 'cometbft',
       version: '0.37.2'
-    },
-    compatibleVersions: ['v4.2.0'],
-    genesis: {
-      genesisUrl: 'https://raw.githubusercontent.com/terpnetwork/networks/main/mainnet/morocco-1/genesis.json'
     },
     binaries: {
       "linux/amd64": 'https://github.com/terpnetwork/terp-core/releases/download/v4.2.2/terpd-linux-amd64',

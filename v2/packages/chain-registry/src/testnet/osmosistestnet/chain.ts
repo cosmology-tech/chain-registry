@@ -29,7 +29,7 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/osmosis-labs/osmosis',
     recommendedVersion: 'v15.0.0',
-    compatibleVersions: ['v15.0.0'],
+    compatibleVersions: ['v15.0.0-rc3', 'v15.0.0'],
     consensus: {
       type: 'tendermint',
       version: '0.34'

@@ -31,6 +31,7 @@ const info: Chain = {
     gitRepo: 'https://github.com/BitCannaGlobal/bcna',
     recommendedVersion: 'v4.0.3',
     compatibleVersions: [
+      'v4.0.0',
       'v4.0.1',
       'v4.0.2',
       'v4.0.3'
@@ -48,7 +49,7 @@ const info: Chain = {
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.50.10'
+      version: 'v0.50.11'
     },
     ibc: {
       type: 'go',

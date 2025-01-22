@@ -27,10 +27,6 @@ const info: Chain = {
   codebase: {
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/mars-protocol/networks/main/ares-1/genesis.json'
-    },
-    ibc: {
-      type: 'go',
-      icsEnabled: ['ics20-1']
     }
   },
   apis: {

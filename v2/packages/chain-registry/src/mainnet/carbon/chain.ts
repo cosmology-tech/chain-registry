@@ -299,11 +299,11 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/Switcheo/carbon-bootstrap',
-    recommendedVersion: 'v2.53.0',
-    compatibleVersions: ['v2.53.0'],
+    recommendedVersion: 'v2.53.1',
+    compatibleVersions: ['v2.53.0', 'v2.53.1'],
     binaries: {
-      "linux/amd64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.48.0/carbond-mainnet.linux-amd64.tar.gz',
-      "linux/arm64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.48.0/carbond-mainnet.linux-arm64.tar.gz'
+      "linux/amd64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.53.1/carbond-mainnet.linux-amd64.tar.gz',
+      "linux/arm64": 'https://github.com/Switcheo/carbon-bootstrap/releases/download/v2.53.1/carbond-mainnet.linux-arm64.tar.gz'
     },
     genesis: {
       genesisUrl: 'https://github.com/Switcheo/carbon-bootstrap/raw/master/carbon-1/genesis.json'

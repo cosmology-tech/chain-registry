@@ -66,11 +66,12 @@ const info: Chain = {
       name: 'v2',
       genesisUrl: 'https://github.com/milkyway-labs/networks/raw/main/mainnet/genesis.json'
     },
-    recommendedVersion: 'v2.0.2',
+    recommendedVersion: '2.0.3',
     compatibleVersions: [
-      'v2.0.0',
-      'v2.0.1',
-      'v2.0.2'
+      '2.0.0',
+      '2.0.1',
+      '2.0.2',
+      '2.0.3'
     ],
     consensus: {
       type: 'cometbft',
@@ -93,7 +94,7 @@ const info: Chain = {
     },
     ibc: {
       type: 'go',
-      version: 'v8.5.2',
+      version: '8.5.2',
       icsEnabled: ['ics20-1']
     },
     cosmwasm: {

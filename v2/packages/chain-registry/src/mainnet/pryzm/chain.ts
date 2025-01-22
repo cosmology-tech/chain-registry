@@ -115,7 +115,7 @@ const info: Chain = {
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.5'
+      version: '0.37.5'
     },
     genesis: {
       genesisUrl: 'https://storage.googleapis.com/pryzm-zone/pryzm-1/genesis.json'
@@ -130,7 +130,7 @@ const info: Chain = {
     },
     ibc: {
       type: 'go',
-      version: 'v7.4.1',
+      version: '7.4.1',
       icsEnabled: ['ics20-1', 'ics27-1']
     },
     cosmwasm: {

@@ -28,7 +28,7 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/furysport/furya-chain',
     recommendedVersion: 'v2.0.0',
-    compatibleVersions: ['v1.0.0', 'v2.0.0'],
+    compatibleVersions: ['v2.0.0'],
     genesis: {
       genesisUrl: 'https://github.com/furysport/furya-chain/blob/main/network/mainnet/genesis.json'
     }

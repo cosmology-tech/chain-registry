@@ -31,7 +31,11 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/ODIN-PROTOCOL/odin-core',
     recommendedVersion: 'v0.10.2',
-    compatibleVersions: ['v0.10.2'],
+    compatibleVersions: [
+      'v0.10.0',
+      'v0.10.1',
+      'v0.10.2'
+    ],
     consensus: {
       type: 'cometbft',
       version: 'v0.38.10'

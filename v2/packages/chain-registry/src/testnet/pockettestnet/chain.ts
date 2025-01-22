@@ -50,8 +50,7 @@ const info: Chain = {
       version: 'v0.50.9'
     },
     ibc: {
-      type: 'go',
-      icsEnabled: []
+      type: 'go'
     },
     cosmwasm: {
       enabled: false

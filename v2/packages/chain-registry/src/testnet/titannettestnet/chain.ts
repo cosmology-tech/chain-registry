@@ -29,6 +29,9 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/Titannet-dao/titan-chain',
+    genesis: {
+      genesisUrl: 'https://github.com/Titannet-dao/titan-chain/releases/download/v0.3.0/genesis.json'
+    },
     recommendedVersion: 'v0.3.0',
     compatibleVersions: ['v0.3.0'],
     consensus: {
@@ -37,9 +40,6 @@ const info: Chain = {
     },
     binaries: {
       "linux/amd64": 'https://github.com/Titannet-dao/titan-chain/releases/download/v0.3.0/titand_0.3.0-1_g167b7fd6.tar.gz'
-    },
-    genesis: {
-      genesisUrl: 'https://github.com/Titannet-dao/titan-chain/releases/download/v0.3.0/genesis.json'
     },
     sdk: {
       type: 'cosmos',

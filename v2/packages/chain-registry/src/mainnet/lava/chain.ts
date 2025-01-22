@@ -42,7 +42,7 @@ const info: Chain = {
     },
     consensus: {
       type: 'cometbft',
-      version: '0.37.4'
+      version: '0.37.5'
     },
     language: {
       type: 'go',

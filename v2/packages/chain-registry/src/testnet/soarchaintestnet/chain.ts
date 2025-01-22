@@ -28,14 +28,14 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/soar-robotics/soarchain-core',
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/soar-robotics/testnet-validator-onboard/main/release/genesis.json'
+    },
     recommendedVersion: 'v0.2.10',
     compatibleVersions: ['v0.2.10'],
     consensus: {
       type: 'tendermint',
       version: '0.34.19'
-    },
-    genesis: {
-      genesisUrl: 'https://raw.githubusercontent.com/soar-robotics/testnet-validator-onboard/main/release/genesis.json'
     },
     sdk: {
       type: 'cosmos',

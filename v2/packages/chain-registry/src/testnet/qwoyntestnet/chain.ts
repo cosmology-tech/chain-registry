@@ -27,9 +27,6 @@ const info: Chain = {
     gitRepo: 'https://github.com/cosmic-horizon/QWOYN',
     recommendedVersion: 'v5.2.0',
     compatibleVersions: ['v5.2.0'],
-    binaries: {
-      "linux/amd64": 'https://github.com/cosmic-horizon/QWOYN/releases/download/v1.0.0/qwoynd_1.0.0_linux_amd64.zip'
-    },
     consensus: {
       type: 'tendermint',
       version: '0.34'

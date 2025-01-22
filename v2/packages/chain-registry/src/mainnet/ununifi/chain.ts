@@ -35,7 +35,7 @@ const info: Chain = {
     recommendedVersion: 'v4.0.2',
     compatibleVersions: ['v4.0.2'],
     binaries: {
-      "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.1/ununifid'
+      "linux/amd64": 'https://github.com/UnUniFi/chain/releases/download/v4.0.2/ununifid'
     },
     consensus: {
       type: 'cometbft',

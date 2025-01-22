@@ -33,7 +33,13 @@ const info: Chain = {
   codebase: {
     gitRepo: 'https://github.com/likecoin/likecoin-chain',
     recommendedVersion: 'v4.2.0',
-    compatibleVersions: ['v4.2.0'],
+    compatibleVersions: [
+      'v4.0.0',
+      'v4.0.1',
+      'v4.0.2',
+      'v4.1.1',
+      'v4.2.0'
+    ],
     binaries: {
       "linux/amd64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_x86_64.tar.gz',
       "linux/arm64": 'https://github.com/likecoin/likecoin-chain/releases/download/v4.2.0/likecoin-chain_4.2.0_Linux_arm64.tar.gz',

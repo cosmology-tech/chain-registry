@@ -42,7 +42,7 @@ const info: Chain = {
     },
     ibc: {
       type: 'go',
-      version: '5.3.2'
+      version: '8.2.0'
     },
     cosmwasm: {
       enabled: false

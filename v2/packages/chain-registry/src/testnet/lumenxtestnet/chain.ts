@@ -26,12 +26,6 @@ const info: Chain = {
         denom: 'ulumen'
       }]
   },
-  codebase: {
-    ibc: {
-      type: 'go',
-      icsEnabled: ['ics20-1']
-    }
-  },
   apis: {
     rpc: [{
         address: 'https://testnet-rpc.lumenx.chaintools.tech/',
