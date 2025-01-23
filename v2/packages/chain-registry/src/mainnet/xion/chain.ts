@@ -4,8 +4,8 @@ const info: Chain = {
   chainName: 'xion',
   chainId: 'xion-mainnet-1',
   chainType: 'cosmos',
-  prettyName: 'Xion Mainnet',
-  website: 'https://burnt.com',
+  prettyName: 'Xion',
+  website: 'https://xion.burnt.com',
   networkType: 'mainnet',
   status: 'live',
   bech32Prefix: 'xion',
@@ -36,19 +36,19 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc.xion-mainnet-1.burnt.com',
+        address: 'https://rpc.xion-mainnet-1.burnt.com:443',
         provider: '🔥BurntLabs🔥'
       },
       {
-        address: 'https://xion-rpc.lavenderfive.com',
+        address: 'https://xion-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://rpc-burnt.imperator.co/',
+        address: 'https://rpc-burnt.imperator.co:443',
         provider: 'Imperator.co'
       },
       {
-        address: 'https://xion-rpc.polkachu.com',
+        address: 'https://xion-rpc.polkachu.com:443',
         provider: 'Polkachu'
       },
       {
@@ -56,7 +56,7 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://rpc.xion.nodestake.org',
+        address: 'https://rpc.xion.nodestake.org:443',
         provider: 'NodeStake'
       }
     ],
@@ -70,7 +70,7 @@ const info: Chain = {
         provider: 'Lavender.Five Nodes 🐝'
       },
       {
-        address: 'https://lcd-burnt.imperator.co/',
+        address: 'https://lcd-burnt.imperator.co',
         provider: 'Imperator.co'
       },
       {
@@ -78,7 +78,7 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://xion-mainnet-lcd.autostake.com:443',
+        address: 'https://xion-mainnet-lcd.autostake.com',
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
@@ -104,13 +104,20 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'https://grpc.xion.nodestake.org:443',
+        address: 'grpc.xion.nodestake.org:443',
         provider: 'NodeStake'
       }
     ]
   },
   explorers: [
     {
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/xion',
+      txPage: 'https://www.mintscan.io/xion/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/xion/accounts/${accountAddress}'
+    },
+    {
+      kind: 'ping.pub',
       url: 'https://explorer.burnt.com/xion-mainnet-1',
       txPage: 'https://explorer.burnt.com/xion-mainnet-1/tx/${txHash}',
       accountPage: 'https://explorer.burnt.com/xion-mainnet-1/account/${accountAddress}'
@@ -126,6 +133,12 @@ const info: Chain = {
       url: 'https://explorer.nodestake.org/xion',
       txPage: 'https://explorer.nodestake.org/xion/tx/${txHash}',
       accountPage: 'https://explorer.nodestake.org/xion/account/${accountAddress}'
+    },
+    {
+      kind: 'Nodes.Guru',
+      url: 'https://xion.explorers.guru',
+      txPage: 'https://xion.explorers.guru/transactions/${txHash}',
+      accountPage: 'https://xion.explorers.guru//account/${accountAddress}'
     }
   ],
   images: [{
