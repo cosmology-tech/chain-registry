@@ -1,6 +1,6 @@
 {
   "name": "chain-registry",
-  "version": "1.69.102",
+  "version": "1.69.103",
   "description": "Cosmos chain registry ⚛️",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/hyperweb-io/chain-registry/tree/master/packages/chain-registry#readme",
@@ -29,11 +29,11 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@chain-registry/utils": "^1.51.55",
+    "@chain-registry/utils": "^1.51.56",
     "deepmerge": "^4.2.2"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.50.55"
+    "@chain-registry/types": "^0.50.56"
   },
   "keywords": [
     "chain-registry",
