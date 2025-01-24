@@ -95,6 +95,7 @@ export * as kujira from './kujira';
 export * as kyve from './kyve';
 export * as lambda from './lambda';
 export * as lava from './lava';
+export * as lefeef from './lefeef';
 export * as likecoin from './likecoin';
 export * as logos from './logos';
 export * as loop from './loop';
