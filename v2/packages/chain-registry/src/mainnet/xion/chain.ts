@@ -58,6 +58,10 @@ const info: Chain = {
       {
         address: 'https://rpc.xion.nodestake.org:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://xion-rpc.kingnodes.com:443',
+        provider: 'kingnodes 👑'
       }
     ],
     rest: [
@@ -84,6 +88,10 @@ const info: Chain = {
       {
         address: 'https://api.xion.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://xion-rest.kingnodes.com',
+        provider: 'kingnodes 👑'
       }
     ],
     grpc: [
@@ -106,6 +114,10 @@ const info: Chain = {
       {
         address: 'grpc.xion.nodestake.org:443',
         provider: 'NodeStake'
+      },
+      {
+        address: 'xion-grpc.kingnodes.com:443',
+        provider: 'kingnodes 👑'
       }
     ]
   },

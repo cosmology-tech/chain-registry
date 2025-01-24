@@ -97,6 +97,7 @@ import * as _kujira from './kujira';
 import * as _kyve from './kyve';
 import * as _lambda from './lambda';
 import * as _lava from './lava';
+import * as _lefeef from './lefeef';
 import * as _likecoin from './likecoin';
 import * as _logos from './logos';
 import * as _loop from './loop';
@@ -292,6 +293,7 @@ const assetList: AssetList[] = [
   _kyve.assetList,
   _lambda.assetList,
   _lava.assetList,
+  _lefeef.assetList,
   _likecoin.assetList,
   _logos.assetList,
   _loop.assetList,

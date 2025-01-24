@@ -97,6 +97,7 @@ import * as _kujira from './kujira';
 import * as _kyve from './kyve';
 import * as _lambda from './lambda';
 import * as _lava from './lava';
+import * as _lefeef from './lefeef';
 import * as _likecoin from './likecoin';
 import * as _logos from './logos';
 import * as _loop from './loop';
@@ -292,6 +293,7 @@ const chains: Chain[] = [
   _kyve.chain,
   _lambda.chain,
   _lava.chain,
+  _lefeef.chain,
   _likecoin.chain,
   _logos.chain,
   _loop.chain,

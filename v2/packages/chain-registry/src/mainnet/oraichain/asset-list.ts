@@ -700,6 +700,29 @@ const info: AssetList = {
             backgroundColorHex: '#0088CC'
           }
         }]
+    },
+    {
+      description: 'The SAM token is a native memecoin on Oraichain.',
+      denomUnits: [{
+          denom: 'factory/orai15rmny3cxv33rnzdr2lfdhjtslyzmrr0vdd28kp/SAM',
+          exponent: 0
+        }, {
+          denom: 'sam',
+          exponent: 6
+        }],
+      typeAsset: 'sdk.coin',
+      base: 'factory/orai15rmny3cxv33rnzdr2lfdhjtslyzmrr0vdd28kp/SAM',
+      name: 'SAM',
+      display: 'sam',
+      symbol: 'SAM',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/sam.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/sam.svg'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/sam.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/sam.svg'
+      }
     }
   ]
 };
