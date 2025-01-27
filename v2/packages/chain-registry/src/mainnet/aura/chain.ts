@@ -98,10 +98,6 @@ const info: Chain = {
         provider: 'Staketab'
       },
       {
-        address: 'https://rpc.aura.safeblock.space',
-        provider: 'Safe Block'
-      },
-      {
         address: 'https://rpc.aura.silentvalidator.com',
         provider: 'silent'
       },
@@ -166,10 +162,6 @@ const info: Chain = {
       {
         address: 'https://aura-rest.staketab.org',
         provider: 'Staketab'
-      },
-      {
-        address: 'https://api.aura.safeblock.space',
-        provider: 'Safe Block'
       },
       {
         address: 'https://api.aura.silentvalidator.com',
@@ -250,10 +242,6 @@ const info: Chain = {
         provider: 'StakeTown'
       },
       {
-        address: 'grpc.aura.safeblock.space:9090',
-        provider: 'Safe Block'
-      },
-      {
         address: 'aura-grpc.palamar.io:443',
         provider: 'Palamar'
       },
@@ -309,12 +297,6 @@ const info: Chain = {
       url: 'https://explorer.stake-take.com/aura',
       txPage: 'https://explorer.stake-take.com/aura/tx/${txHash}',
       accountPage: 'https://explorer.stake-take.com/aura/account/${accountAddress}'
-    },
-    {
-      kind: 'Safe Block',
-      url: 'https://explorer.safeblock.space/aura',
-      txPage: 'https://explorer.safeblock.space/aura/tx/${txHash}',
-      accountPage: 'https://explorer.safeblock.space/aura/account/${accountAddress}'
     },
     {
       kind: 'STAKR.space explorer',
