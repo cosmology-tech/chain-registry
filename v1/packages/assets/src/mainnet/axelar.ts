@@ -6997,6 +6997,49 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
+      denom_units: [{
+          denom: 'ibc/0BAF18A6E6D2F9886005DC2C365E142074DF47094FB1E621ED3089BD8B02D15B',
+          exponent: 0,
+          aliases: ['udvpn']
+        }, {
+          denom: 'dvpn',
+          exponent: 6
+        }],
+      base: 'ibc/0BAF18A6E6D2F9886005DC2C365E142074DF47094FB1E621ED3089BD8B02D15B',
+      name: 'Sentinel',
+      display: 'dvpn',
+      symbol: 'DVPN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
+      },
+      coingecko_id: 'sentinel',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg',
+          theme: {
+            primary_color_hex: '#10a7ef'
+          }
+        }],
+      socials: {
+        website: 'https://www.sentinel.co/',
+        twitter: 'https://x.com/SentinelDVPN'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-96',
+            base_denom: 'udvpn',
+            chain_name: 'sentinel'
+          },
+          chain: {
+            channel_id: 'channel-165'
+          }
+        }]
+    },
+    {
       description: 'The native EVM and Wasm, governance and staking token of the Shido Chain',
       denom_units: [{
           denom: 'ibc/69610BB9AA825ED55EC650937F3AD9FD94FEFE7488354C0824C65C9DD04D4511',
@@ -13632,6 +13675,49 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-157'
+          }
+        }]
+    },
+    {
+      description: 'Sentinel is a decentralized VPN (dVPN) network that provides private and secure internet access by leveraging blockchain technology.',
+      denom_units: [{
+          denom: 'ibc/0BAF18A6E6D2F9886005DC2C365E142074DF47094FB1E621ED3089BD8B02D15B',
+          exponent: 0,
+          aliases: ['udvpn']
+        }, {
+          denom: 'dvpn',
+          exponent: 6
+        }],
+      base: 'ibc/0BAF18A6E6D2F9886005DC2C365E142074DF47094FB1E621ED3089BD8B02D15B',
+      name: 'Sentinel',
+      display: 'dvpn',
+      symbol: 'DVPN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg'
+      },
+      coingecko_id: 'sentinel',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sentinel/images/dvpn.svg',
+          theme: {
+            primary_color_hex: '#10a7ef'
+          }
+        }],
+      socials: {
+        website: 'https://www.sentinel.co/',
+        twitter: 'https://x.com/SentinelDVPN'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-96',
+            base_denom: 'udvpn',
+            chain_name: 'sentinel'
+          },
+          chain: {
+            channel_id: 'channel-165'
           }
         }]
     },
