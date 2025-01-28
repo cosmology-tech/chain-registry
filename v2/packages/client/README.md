@@ -30,7 +30,7 @@ The `@chain-registry/client` package provides a client for dynamically fetching 
     - [fetch](#fetch)
     - [Asset Lists](#asset-lists)
     - [Chain Info](#chain-info)
-- [Related Projects](#related)
+- [Stack](#interchain-javascript-stack-️)
 - [Credits](#credits)
 - [Disclaimer](#disclaimer)
 

@@ -29,7 +29,7 @@ This module provides utility functions for working with the data in the chain-re
   - [Calculation](#calculation-utilities)
     - [Examples](#calculation-examples)
     - [Functions](#calculation-functions)
-- [Related](#related)
+- [Stack](#interchain-javascript-stack-️)
 - [Credits](#credits)
 - [Disclaimer](#disclaimer)
 

@@ -41,7 +41,7 @@ yarn add @chain-registry/cli
   - [Info](#info)
   - [Validate](#validate)
   - [Codegen](#codegen)
-- [Related Projects](#related)
+- [Stack](#interchain-javascript-stack-️)
 - [Credits](#credits)
 - [Disclaimer](#disclaimer)
 
