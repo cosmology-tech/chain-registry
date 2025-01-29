@@ -249,7 +249,11 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {

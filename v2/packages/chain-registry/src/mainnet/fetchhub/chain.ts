@@ -101,6 +101,10 @@ const info: Chain = {
       {
         address: 'https://fetchai-rpc.bluestake.net:443',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://fetch-rpc.panthea.eu:443',
+        provider: 'Panthea EU'
       }
     ],
     rest: [
@@ -167,6 +171,10 @@ const info: Chain = {
       {
         address: 'https://fetchai-api.bluestake.net',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://fetch-api.panthea.eu:443',
+        provider: 'Panthea EU'
       }
     ],
     grpc: [
@@ -213,6 +221,10 @@ const info: Chain = {
       {
         address: 'grpc.fetchhub-4.fetch.aviaone.com:9094',
         provider: 'AVIAONE 🟢'
+      },
+      {
+        address: 'fetch-grpc.panthea.eu:16710',
+        provider: 'Panthea EU'
       }
     ]
   },

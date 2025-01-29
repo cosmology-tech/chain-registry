@@ -87,10 +87,10 @@ const info: AssetList = {
       display: 'ckUSD',
       symbol: 'CKUSD',
       logoURIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/ckusd.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/ckusd.svg'
         }],
       keywords: ['dex', 'mm'],
       socials: {
@@ -113,10 +113,10 @@ const info: AssetList = {
       display: 'cUSDC',
       symbol: 'CUSDC',
       logoURIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdc.svg'
         }],
       keywords: ['dex', 'mm'],
       typeAsset: 'sdk.coin'
@@ -133,12 +133,12 @@ const info: AssetList = {
       base: 'ucusdtinj',
       name: 'cUSDT.inj',
       display: 'cUSDT.inj',
-      symbol: 'CUSDT.inj',
+      symbol: 'cUSDT.inj',
       logoURIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdt.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdt.svg'
         }],
       keywords: ['dex', 'mm'],
       typeAsset: 'sdk.coin'
@@ -359,12 +359,12 @@ const info: AssetList = {
       base: 'uasusdtinj',
       name: 'asUSDT.inj',
       display: 'asusdtinj',
-      symbol: 'ASUSDT.inj',
+      symbol: 'asUSDT.inj',
       logoURIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdt.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdt.svg'
         }],
       keywords: ['dex', 'mm'],
       typeAsset: 'sdk.coin'
@@ -383,10 +383,10 @@ const info: AssetList = {
       display: 'asUSDC',
       symbol: 'ASUSDC',
       logoURIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdc.svg'
         }],
       keywords: ['dex', 'mm'],
       typeAsset: 'sdk.coin'

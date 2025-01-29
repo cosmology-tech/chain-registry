@@ -259,6 +259,45 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/fantom/images/ftm.png'
       },
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'The native token of Manifest Ledger',
+      denomUnits: [{
+          denom: 'ibc/EAC654CC560CC03D82AE4BAA808BD0B6E06E9F29F62194B46C0502D967349E24',
+          exponent: 0
+        }, {
+          denom: 'mfx',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/EAC654CC560CC03D82AE4BAA808BD0B6E06E9F29F62194B46C0502D967349E24',
+      name: 'Manifest',
+      display: 'mfx',
+      symbol: 'MFX',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'manifesttestnet',
+            baseDenom: 'umfx',
+            channelId: 'channel-3'
+          },
+          chain: {
+            channelId: 'channel-590',
+            path: 'transfer/channel-590/umfx'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'manifesttestnet',
+            baseDenom: 'umfx'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifest/images/manifest.svg'
+      }
     }
   ]
 };

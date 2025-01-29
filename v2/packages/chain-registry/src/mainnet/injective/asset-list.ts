@@ -1108,6 +1108,119 @@ const info: AssetList = {
         twitter: 'https://x.com/neptune_finance'
       },
       typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Cosmos Bitcoin',
+      denomUnits: [{
+          denom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BITCOIN',
+          exponent: 0
+        }, {
+          denom: 'BITCOIN',
+          exponent: 6
+        }],
+      base: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BITCOIN',
+      name: 'Cosmos Bitcoin',
+      display: 'BITCOIN',
+      symbol: 'BITCOIN',
+      coingeckoId: ' ',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/bitcoin.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/bitcoin.png',
+          theme: {
+            primaryColorHex: '#1DB5E1'
+          }
+        }],
+      socials: {
+        website: 'https://getbitcoinmeme.com',
+        twitter: 'https://getbitcoinmeme'
+      },
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Crypto',
+      denomUnits: [{
+          denom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/CRYPTO',
+          exponent: 0
+        }, {
+          denom: 'CRYPTO',
+          exponent: 6
+        }],
+      base: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/CRYPTO',
+      name: 'Crypto',
+      display: 'CRYPTO',
+      symbol: 'CRYPTO',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/crypto.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/crypto.png',
+          theme: {
+            primaryColorHex: '#F79017'
+          }
+        }],
+      socials: {
+        website: 'https://getcryptomeme.com',
+        twitter: 'https://x.com/getcryptomeme'
+      },
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Bricscoin',
+      denomUnits: [{
+          denom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BRICS',
+          exponent: 0
+        }, {
+          denom: 'BRICS',
+          exponent: 6
+        }],
+      base: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BRICS',
+      name: 'Bricscoin',
+      display: 'BRICS',
+      symbol: 'BRICS',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/brics.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/brics.png',
+          theme: {
+            primaryColorHex: '#F79017'
+          }
+        }],
+      socials: {
+        website: 'https://bricscoin.cash',
+        twitter: 'https://x.com/bricscoincash'
+      },
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Instant Noodles Coin',
+      denomUnits: [{
+          denom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/INC',
+          exponent: 0
+        }, {
+          denom: 'INC',
+          exponent: 6
+        }],
+      base: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/INC',
+      name: 'Instant Noodles Coin',
+      display: 'INC',
+      symbol: 'INC',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inc.png',
+          theme: {
+            primaryColorHex: '#37BEFF'
+          }
+        }],
+      socials: {
+        website: 'https://instantnoodles.xyz',
+        twitter: 'https://x.com/instantnoodlesinc'
+      },
+      typeAsset: 'sdk.coin'
     }
   ]
 };

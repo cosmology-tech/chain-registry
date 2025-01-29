@@ -303,6 +303,80 @@ const info: AssetList = {
           },
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/dTIA.svg'
         }]
+    },
+    {
+      description: 'USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.',
+      denomUnits: [{
+          denom: 'ibc/F5FABF52B54E65064B57BF6DBD8E5FAD22CEE9F4B8A57ADBB20CCD0173AA72A4',
+          exponent: 0,
+          aliases: ['microusdc', 'uusdc']
+        }, {
+          denom: 'USDC',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/F5FABF52B54E65064B57BF6DBD8E5FAD22CEE9F4B8A57ADBB20CCD0173AA72A4',
+      name: 'USDC',
+      display: 'USDC',
+      symbol: 'USDC',
+      traces: [
+        {
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'forex',
+            baseDenom: 'USD'
+          },
+          provider: 'Circle'
+        },
+        {
+          type: 'additional-mintage',
+          counterparty: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          provider: 'Circle'
+        },
+        {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'noble',
+            baseDenom: 'uusdc',
+            channelId: 'channel-1'
+          },
+          chain: {
+            channelId: 'channel-750',
+            path: 'transfer/channel-750/uusdc'
+          }
+        },
+        {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'osmosis',
+            baseDenom: 'ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4',
+            channelId: 'channel-89298'
+          },
+          chain: {
+            channelId: 'channel-0',
+            path: 'transfer/channel-0/transfer/channel-750/uusdc'
+          }
+        }
+      ],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
+        }]
     }
   ]
 };

@@ -6771,7 +6771,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -7299,7 +7299,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -7393,7 +7393,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -7573,7 +7573,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -10095,7 +10095,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -16357,7 +16357,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -16459,7 +16459,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -16510,7 +16510,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }]
     },
@@ -22813,6 +22813,597 @@ const info: AssetList = {
       socials: {
         website: 'https://www.stargaze.zone/m/stargazepleb/tokens',
         twitter: 'https://x.com/Pixl_Plebs'
+      },
+      keywords: ['meme']
+    },
+    {
+      description: 'An alloy of SUI asset variants on Osmosis.',
+      denomUnits: [{
+          denom: 'factory/osmo1nqu7rc5mj5p2cgyfp7gl3lw7kw99cltple3xtzl2cs5fyw0r2tasr7xv48/alloyed/allSUI',
+          exponent: 0
+        }, {
+          denom: 'sui',
+          exponent: 8
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'osmo1nqu7rc5mj5p2cgyfp7gl3lw7kw99cltple3xtzl2cs5fyw0r2tasr7xv48',
+      base: 'factory/osmo1nqu7rc5mj5p2cgyfp7gl3lw7kw99cltple3xtzl2cs5fyw0r2tasr7xv48/alloyed/allSUI',
+      name: 'Sui',
+      display: 'sui',
+      symbol: 'SUI',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'sui',
+            baseDenom: '0x2::sui::SUI'
+          },
+          provider: 'Osmosis'
+        }],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/sui/images/sui.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'sui',
+            baseDenom: '0x2::sui::SUI'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/sui/images/sui.svg',
+          theme: {
+            primaryColorHex: '#6fbcef'
+          }
+        }]
+    },
+    {
+      description: 'An alloy of APTOS asset variants on Osmosis.',
+      denomUnits: [{
+          denom: 'factory/osmo1zynnzvwdu72zc4mxqnnp348ksfmayldqyfs8khdud3myr7m5h8nsqwta2v/alloyed/allAPT',
+          exponent: 0
+        }, {
+          denom: 'APT',
+          exponent: 8
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'osmo1zynnzvwdu72zc4mxqnnp348ksfmayldqyfs8khdud3myr7m5h8nsqwta2v',
+      base: 'factory/osmo1zynnzvwdu72zc4mxqnnp348ksfmayldqyfs8khdud3myr7m5h8nsqwta2v/alloyed/allAPT',
+      name: 'Aptos Coin',
+      display: 'APT',
+      symbol: 'APT',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'aptos',
+            baseDenom: '0x1::aptos_coin::AptosCoin'
+          },
+          provider: 'Osmosis'
+        }],
+      logoURIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/aptos/images/aptos.svg'
+      },
+      images: [
+        {
+          imageSync: {
+            chainName: 'aptos',
+            baseDenom: '0x1::aptos_coin::AptosCoin'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/aptos/images/aptos.svg',
+          theme: {
+            primaryColorHex: '#ffffff',
+            darkMode: false
+          }
+        },
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/aptos/images/apt-dm.svg',
+          theme: {
+            darkMode: true
+          }
+        },
+        {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allAPT.svg',
+          theme: {
+            circle: true,
+            darkMode: true,
+            primaryColorHex: '#ffffff'
+          }
+        }
+      ]
+    },
+    {
+      description: 'An alloy of BNB asset variants on Osmosis.',
+      denomUnits: [{
+          denom: 'factory/osmo1zetxzc5nka4jm203ljjtjf933jwjh45ge6spfeef447rnnhqxc4qrazrcz/alloyed/allBNB',
+          exponent: 0
+        }, {
+          denom: 'bnb',
+          exponent: 12
+        }],
+      typeAsset: 'sdk.coin',
+      address: 'osmo1zetxzc5nka4jm203ljjtjf933jwjh45ge6spfeef447rnnhqxc4qrazrcz',
+      base: 'factory/osmo1zetxzc5nka4jm203ljjtjf933jwjh45ge6spfeef447rnnhqxc4qrazrcz/alloyed/allBNB',
+      name: 'Binance Coin',
+      display: 'bnb',
+      symbol: 'BNB',
+      traces: [{
+          type: 'synthetic',
+          counterparty: {
+            chainName: 'binancesmartchain',
+            baseDenom: 'wei'
+          },
+          provider: 'Osmosis'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'binancesmartchain',
+            baseDenom: 'wei'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/bnb.svg',
+          theme: {
+            primaryColorHex: '#f0b90b'
+          }
+        }, {
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allBNB.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/allBNB.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#f0b90b'
+          }
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked ARCH',
+      denomUnits: [{
+          denom: 'ibc/BA47828ADDC3700F50B35696390F4C53E35CBB42E84FF768BB75C3F6BAEFD9F1',
+          exponent: 0,
+          aliases: ['aqarch']
+        }, {
+          denom: 'qarch',
+          exponent: 18,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/BA47828ADDC3700F50B35696390F4C53E35CBB42E84FF768BB75C3F6BAEFD9F1',
+      name: 'Quicksilver Liquid Staked ARCH',
+      display: 'qarch',
+      symbol: 'qARCH',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'archway',
+            baseDenom: 'aarch'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'quicksilver',
+            baseDenom: 'aqarch',
+            channelId: 'channel-2'
+          },
+          chain: {
+            channelId: 'channel-522',
+            path: 'transfer/channel-522/aqarch'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'quicksilver',
+            baseDenom: 'aqarch'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked TIA',
+      denomUnits: [{
+          denom: 'ibc/E8CB12995A190336CA7A647B618E97DF6CA1E1A3FD7685B1AA9C1C80FC63858E',
+          exponent: 0,
+          aliases: ['uqtia']
+        }, {
+          denom: 'qtia',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/E8CB12995A190336CA7A647B618E97DF6CA1E1A3FD7685B1AA9C1C80FC63858E',
+      name: 'Quicksilver Liquid Staked TIA',
+      display: 'qtia',
+      symbol: 'qTIA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'celestia',
+            baseDenom: 'utia'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'quicksilver',
+            baseDenom: 'uqtia',
+            channelId: 'channel-2'
+          },
+          chain: {
+            channelId: 'channel-522',
+            path: 'transfer/channel-522/uqtia'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'quicksilver',
+            baseDenom: 'uqtia'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked PICA',
+      denomUnits: [{
+          denom: 'ibc/C66CF6F56DC47AECFA2C593C371D5D6218CF9DF709B6F0DAB7C33A9766889E55',
+          exponent: 0,
+          aliases: ['pqpica']
+        }, {
+          denom: 'qpica',
+          exponent: 12,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/C66CF6F56DC47AECFA2C593C371D5D6218CF9DF709B6F0DAB7C33A9766889E55',
+      name: 'Quicksilver Liquid Staked PICA',
+      display: 'qpica',
+      symbol: 'qPICA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'composable',
+            baseDenom: 'ppica'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'quicksilver',
+            baseDenom: 'pqpica',
+            channelId: 'channel-2'
+          },
+          chain: {
+            channelId: 'channel-522',
+            path: 'transfer/channel-522/pqpica'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'quicksilver',
+            baseDenom: 'pqpica'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked INJ',
+      denomUnits: [{
+          denom: 'ibc/3C85C44DCB6BCC4FFB9D295EE79ED412E1FAD5D775C99E6AA51CCEF5CA32409C',
+          exponent: 0,
+          aliases: ['qinj']
+        }, {
+          denom: 'qINJ',
+          exponent: 18,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/3C85C44DCB6BCC4FFB9D295EE79ED412E1FAD5D775C99E6AA51CCEF5CA32409C',
+      name: 'Quicksilver Liquid Staked INJ',
+      display: 'qinj',
+      symbol: 'qINJ',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'inj'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'quicksilver',
+            baseDenom: 'qinj',
+            channelId: 'channel-2'
+          },
+          chain: {
+            channelId: 'channel-522',
+            path: 'transfer/channel-522/qinj'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'quicksilver',
+            baseDenom: 'qinj'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked FLIX',
+      denomUnits: [{
+          denom: 'ibc/9880C90A843C647E7A5D7C108CBB3D6E3D671F3F6BB930558F81B3B24D334162',
+          exponent: 0,
+          aliases: ['uqflix']
+        }, {
+          denom: 'qflix',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/9880C90A843C647E7A5D7C108CBB3D6E3D671F3F6BB930558F81B3B24D334162',
+      name: 'Quicksilver Liquid Staked FLIX',
+      display: 'qflix',
+      symbol: 'qFLIX',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'omniflixhub',
+            baseDenom: 'uflix'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'quicksilver',
+            baseDenom: 'uqflix',
+            channelId: 'channel-2'
+          },
+          chain: {
+            channelId: 'channel-522',
+            path: 'transfer/channel-522/uqflix'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'quicksilver',
+            baseDenom: 'uqflix'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked LUNA',
+      denomUnits: [{
+          denom: 'ibc/C3FD0795C73D0D61C09374F99D3F23E746194D22A64B6A44FF0530BCF2419053',
+          exponent: 0,
+          aliases: ['uqluna']
+        }, {
+          denom: 'qluna',
+          exponent: 6,
+          aliases: []
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/C3FD0795C73D0D61C09374F99D3F23E746194D22A64B6A44FF0530BCF2419053',
+      name: 'Quicksilver Liquid Staked LUNA',
+      display: 'qluna',
+      symbol: 'qLUNA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'terra2',
+            baseDenom: 'uluna'
+          },
+          provider: 'Quicksilver'
+        }, {
+          type: 'ibc',
+          counterparty: {
+            chainName: 'quicksilver',
+            baseDenom: 'uqluna',
+            channelId: 'channel-2'
+          },
+          chain: {
+            channelId: 'channel-522',
+            path: 'transfer/channel-522/uqluna'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'quicksilver',
+            baseDenom: 'uqluna'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }]
+    },
+    {
+      description: 'Cosmos Bitcoin',
+      extendedDescription: 'Cosmos Bitcoin',
+      denomUnits: [{
+          denom: 'ibc/648260E4FF8AEDD310F2A72930F25DD7F43DD82F45F66E53B4A70A0C216FA53B',
+          exponent: 0,
+          aliases: ['factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BITCOIN']
+        }, {
+          denom: 'BITCOIN',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/648260E4FF8AEDD310F2A72930F25DD7F43DD82F45F66E53B4A70A0C216FA53B',
+      name: 'Cosmos Bitcoin',
+      display: 'BITCOIN',
+      symbol: 'BITCOIN',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BITCOIN',
+            channelId: 'channel-8'
+          },
+          chain: {
+            channelId: 'channel-122',
+            path: 'transfer/channel-122/factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BITCOIN'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/bitcoin.png'
+      },
+      socials: {
+        website: 'https://getbitcoinmeme.com',
+        twitter: 'https://x.com/getbitcoinmeme'
+      },
+      keywords: ['meme']
+    },
+    {
+      description: 'Crypto',
+      extendedDescription: 'Crypto',
+      denomUnits: [{
+          denom: 'ibc/1B23B6F7DAC37267F04E82466AB798CC59F941BD4AE5653C497730F174F14849',
+          exponent: 0,
+          aliases: ['factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/CRYPTO']
+        }, {
+          denom: 'CRYPTO',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/1B23B6F7DAC37267F04E82466AB798CC59F941BD4AE5653C497730F174F14849',
+      name: 'Crypto',
+      display: 'CRYPTO',
+      symbol: 'CRYPTO',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/CRYPTO',
+            channelId: 'channel-8'
+          },
+          chain: {
+            channelId: 'channel-122',
+            path: 'transfer/channel-122/factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/CRYPTO'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/crypto.png'
+      },
+      socials: {
+        website: 'https://getcryptomeme.com',
+        twitter: 'https://x.com/getcryptomeme'
+      },
+      keywords: ['meme']
+    },
+    {
+      description: 'Bricscoin',
+      extendedDescription: 'BRICS coin',
+      denomUnits: [{
+          denom: 'ibc/54C7B977B96DFC56D877A7F74D22BD26B5E42CA6171F120F5A36AC82BFD4711A',
+          exponent: 0,
+          aliases: ['factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BRICS']
+        }, {
+          denom: 'BRICS',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/54C7B977B96DFC56D877A7F74D22BD26B5E42CA6171F120F5A36AC82BFD4711A',
+      name: 'Brics coin',
+      display: 'BRICS',
+      symbol: 'BRICS',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BRICS',
+            channelId: 'channel-8'
+          },
+          chain: {
+            channelId: 'channel-122',
+            path: 'transfer/channel-122/factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/BRICS'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/brics.png'
+      },
+      socials: {
+        website: 'https://bricscoin.cash',
+        twitter: 'https://x.com/bricscoincash'
+      },
+      keywords: ['meme']
+    },
+    {
+      description: 'Instant Noodles Coin',
+      extendedDescription: 'Instant Noodles Coin',
+      denomUnits: [{
+          denom: 'ibc/A436BC9498153DC580B56BD27043BBFE08A1754696C05FFF00B2A41EC796D180',
+          exponent: 0,
+          aliases: ['factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/INC']
+        }, {
+          denom: 'INC',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/A436BC9498153DC580B56BD27043BBFE08A1754696C05FFF00B2A41EC796D180',
+      name: 'Instant Noodles Coin',
+      display: 'INC',
+      symbol: 'INC',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/INC',
+            channelId: 'channel-8'
+          },
+          chain: {
+            channelId: 'channel-122',
+            path: 'transfer/channel-122/factory/inj1s9hr5zfz3xrkzchde94hd2d0edjs4q5mrqrz6x/INC'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inc.png'
+      },
+      socials: {
+        website: 'https://instantnoodles.xyz',
+        twitter: 'https://x.com/instantnoodlesinc'
       },
       keywords: ['meme']
     }

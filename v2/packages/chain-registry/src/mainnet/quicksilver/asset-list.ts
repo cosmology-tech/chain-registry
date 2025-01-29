@@ -65,7 +65,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qstars.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -101,7 +101,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qatom.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -137,7 +137,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qregen.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -173,7 +173,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qosmo.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -209,7 +209,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qsomm.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -245,7 +245,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qjuno.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -281,7 +281,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qdydx.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -353,7 +353,7 @@ const info: AssetList = {
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qbld.svg',
           theme: {
-            primaryColorHex: '#fc944c'
+            primaryColorHex: '#ff914d'
           }
         }],
       typeAsset: 'sdk.coin'
@@ -397,6 +397,222 @@ const info: AssetList = {
             primaryColorHex: '#2775CA'
           }
         }]
+    },
+    {
+      description: 'Quicksilver Liquid Staked ARCH',
+      denomUnits: [{
+          denom: 'aqarch',
+          exponent: 0,
+          aliases: []
+        }, {
+          denom: 'qarch',
+          exponent: 18,
+          aliases: []
+        }],
+      base: 'aqarch',
+      name: 'Quicksilver Liquid Staked ARCH',
+      display: 'qarch',
+      symbol: 'qARCH',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'archway',
+            baseDenom: 'aarch'
+          },
+          provider: 'Quicksilver'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qarch.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Quicksilver Liquid Staked TIA',
+      denomUnits: [{
+          denom: 'uqtia',
+          exponent: 0,
+          aliases: []
+        }, {
+          denom: 'qtia',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'uqtia',
+      name: 'Quicksilver Liquid Staked TIA',
+      display: 'qtia',
+      symbol: 'qTIA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'celestia',
+            baseDenom: 'utia'
+          },
+          provider: 'Quicksilver'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qtia.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Quicksilver Liquid Staked PICA',
+      denomUnits: [{
+          denom: 'pqpica',
+          exponent: 0,
+          aliases: []
+        }, {
+          denom: 'qpica',
+          exponent: 12,
+          aliases: []
+        }],
+      base: 'pqpica',
+      name: 'Quicksilver Liquid Staked PICA',
+      display: 'qpica',
+      symbol: 'qPICA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'composable',
+            baseDenom: 'ppica'
+          },
+          provider: 'Quicksilver'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qpica.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Quicksilver Liquid Staked INJ',
+      denomUnits: [{
+          denom: 'qinj',
+          exponent: 0,
+          aliases: []
+        }, {
+          denom: 'qINJ',
+          exponent: 18,
+          aliases: []
+        }],
+      base: 'qinj',
+      name: 'Quicksilver Liquid Staked INJ',
+      display: 'qINJ',
+      symbol: 'qINJ',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'injective',
+            baseDenom: 'inj'
+          },
+          provider: 'Quicksilver'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qinj.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Quicksilver Liquid Staked LUNA',
+      denomUnits: [{
+          denom: 'uqluna',
+          exponent: 0,
+          aliases: []
+        }, {
+          denom: 'qluna',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'uqluna',
+      name: 'Quicksilver Liquid Staked LUNA',
+      display: 'qluna',
+      symbol: 'qLUNA',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'terra2',
+            baseDenom: 'uluna'
+          },
+          provider: 'Quicksilver'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qluna.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
+    },
+    {
+      description: 'Quicksilver Liquid Staked FLIX',
+      denomUnits: [{
+          denom: 'uqflix',
+          exponent: 0,
+          aliases: []
+        }, {
+          denom: 'qflix',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'uqflix',
+      name: 'Quicksilver Liquid Staked FLIX',
+      display: 'qflix',
+      symbol: 'qFLIX',
+      traces: [{
+          type: 'liquid-stake',
+          counterparty: {
+            chainName: 'omniflixhub',
+            baseDenom: 'uflix'
+          },
+          provider: 'Quicksilver'
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qflix.svg',
+          theme: {
+            primaryColorHex: '#ff914d'
+          }
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };

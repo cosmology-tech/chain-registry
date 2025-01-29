@@ -3,6 +3,35 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'agoric',
+      clientId: '07-tendermint-85',
+      connectionId: 'connection-85'
+    },
+    chain2: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-84',
+      connectionId: 'connection-60'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-68',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-125',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'archway',
       clientId: '07-tendermint-36',
       connectionId: 'connection-39'
@@ -24,7 +53,37 @@ const info: IBCData[] = [
         ordering: 'unordered',
         version: 'ics20-1',
         tags: {
-          status: 'live'
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'celestia',
+      clientId: '07-tendermint-92',
+      connectionId: 'connection-60'
+    },
+    chain2: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-97',
+      connectionId: 'connection-65'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-36',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-207',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
         }
       }]
   },
@@ -79,7 +138,69 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'dydx',
+      clientId: '07-tendermint-20',
+      connectionId: 'connection-25'
+    },
+    chain2: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-90',
+      connectionId: 'connection-62'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-32',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-164',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'injective',
+      clientId: '07-tendermint-282',
+      connectionId: 'connection-286'
+    },
+    chain2: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-105',
+      connectionId: 'connection-68'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-394',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-234',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
@@ -104,7 +225,40 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'omniflixhub',
+      clientId: '07-tendermint-76',
+      connectionId: 'connection-57'
+    },
+    chain2: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-101',
+      connectionId: 'connection-66'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-51',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-228',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
@@ -187,7 +341,40 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-91',
+      connectionId: 'connection-63'
+    },
+    chain2: {
+      chainName: 'saga',
+      clientId: '07-tendermint-8',
+      connectionId: 'connection-8'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-170',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-18',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
@@ -212,7 +399,40 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-79',
+      connectionId: 'connection-54'
+    },
+    chain2: {
+      chainName: 'sommelier',
+      clientId: '07-tendermint-57',
+      connectionId: 'connection-59'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-101',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-59',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
@@ -237,7 +457,40 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-108',
+      connectionId: 'connection-69'
+    },
+    chain2: {
+      chainName: 'terra2',
+      clientId: '07-tendermint-430',
+      connectionId: 'connection-442'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-244',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-604',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {
@@ -262,7 +515,40 @@ const info: IBCData[] = [
           portId: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
+      chainName: 'quicksilver',
+      clientId: '07-tendermint-102',
+      connectionId: 'connection-67'
+    },
+    chain2: {
+      chainName: 'xion',
+      clientId: '07-tendermint-6',
+      connectionId: 'connection-7'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-229',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-8',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   }
 ];
