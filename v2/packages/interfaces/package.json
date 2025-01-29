@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/interfaces",
-  "version": "0.52.54",
+  "version": "0.52.55",
   "description": "Chain Registry interfaces",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/hyperweb-io/chain-registry",
