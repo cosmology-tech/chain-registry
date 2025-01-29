@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/cosmostation",
-  "version": "1.72.107",
+  "version": "1.72.108",
   "description": "Chain Registry to Cosmostation",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "homepage": "https://github.com/hyperweb-io/chain-registry",
@@ -29,11 +29,11 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "chain-registry": "^1.69.107"
+    "chain-registry": "^1.69.108"
   },
   "dependencies": {
-    "@chain-registry/types": "^0.50.57",
-    "@chain-registry/utils": "^1.51.57",
+    "@chain-registry/types": "^0.50.58",
+    "@chain-registry/utils": "^1.51.58",
     "@cosmostation/extension-client": "0.1.15"
   },
   "keywords": [
