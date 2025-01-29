@@ -1151,6 +1151,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/BBEFCA0C55CF6FE326385725904DD817F7229B82332E8B947F0B15AE1CD66092',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/BBEFCA0C55CF6FE326385725904DD817F7229B82332E8B947F0B15AE1CD66092',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-125',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-68'
+          }
+        }]
+    },
+    {
       description: 'Secret Network is a privacy-focused blockchain that enables private and secure smart contracts, protecting sensitive data.',
       denom_units: [{
           denom: 'ibc/A358D7F19237777AF6D8AD0E0F53268F8B18AE8A53ED318095C14D6D7F3B2DB5',
@@ -2417,6 +2459,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-72'
+          }
+        }]
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/BBEFCA0C55CF6FE326385725904DD817F7229B82332E8B947F0B15AE1CD66092',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/BBEFCA0C55CF6FE326385725904DD817F7229B82332E8B947F0B15AE1CD66092',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-125',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-68'
           }
         }]
     },

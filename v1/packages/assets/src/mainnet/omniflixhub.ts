@@ -1091,6 +1091,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/9E5D60B1FEC95399662E00A7BA961E4CA44FE05B35BBDB2A9B36FAAF2632441B',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/9E5D60B1FEC95399662E00A7BA961E4CA44FE05B35BBDB2A9B36FAAF2632441B',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-228',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-51'
+          }
+        }]
+    },
+    {
       description: 'Stargaze is a decentralized blockchain platform designed specifically for non-fungible tokens (NFTs), enabling creators to mint, trade, and interact with NFTs in a fully decentralized environment.',
       denom_units: [{
           denom: 'ibc/A80A8B10804E70D5FE5DA300C43FBC39ED8CF4F0E5BC5CDC1EE894132CEEB844',
@@ -1218,6 +1260,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-1'
+          }
+        }]
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/9E5D60B1FEC95399662E00A7BA961E4CA44FE05B35BBDB2A9B36FAAF2632441B',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/9E5D60B1FEC95399662E00A7BA961E4CA44FE05B35BBDB2A9B36FAAF2632441B',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-228',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-51'
           }
         }]
     },

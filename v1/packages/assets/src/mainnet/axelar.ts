@@ -1841,14 +1841,14 @@ const assets: AssetList = {
     {
       description: 'Jackal Network is a decentralized storage platform that aims to provide secure, private, and efficient data storage solutions on the blockchain.',
       denom_units: [{
-          denom: 'ibc/2027EC8CD73EB3F0E7E46FFFD71F5A06F91067BE188ADC9D5F512CD8F2145226',
+          denom: 'ibc/A510E27678EF927ABF6781D9A96D3AE1FCA083ACE89EBFF3CC55D343C5192444',
           exponent: 0,
           aliases: ['ujkl']
         }, {
           denom: 'jkl',
           exponent: 6
         }],
-      base: 'ibc/2027EC8CD73EB3F0E7E46FFFD71F5A06F91067BE188ADC9D5F512CD8F2145226',
+      base: 'ibc/A510E27678EF927ABF6781D9A96D3AE1FCA083ACE89EBFF3CC55D343C5192444',
       name: 'Jackal',
       display: 'jkl',
       symbol: 'JKL',
@@ -1868,12 +1868,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-49',
+            channel_id: 'channel-153',
             base_denom: 'ujkl',
             chain_name: 'jackal'
           },
           chain: {
-            channel_id: 'channel-137'
+            channel_id: 'channel-168'
           }
         }]
     },
@@ -8523,14 +8523,14 @@ const assets: AssetList = {
     {
       description: 'Jackal Network is a decentralized storage platform that aims to provide secure, private, and efficient data storage solutions on the blockchain.',
       denom_units: [{
-          denom: 'ibc/2027EC8CD73EB3F0E7E46FFFD71F5A06F91067BE188ADC9D5F512CD8F2145226',
+          denom: 'ibc/A510E27678EF927ABF6781D9A96D3AE1FCA083ACE89EBFF3CC55D343C5192444',
           exponent: 0,
           aliases: ['ujkl']
         }, {
           denom: 'jkl',
           exponent: 6
         }],
-      base: 'ibc/2027EC8CD73EB3F0E7E46FFFD71F5A06F91067BE188ADC9D5F512CD8F2145226',
+      base: 'ibc/A510E27678EF927ABF6781D9A96D3AE1FCA083ACE89EBFF3CC55D343C5192444',
       name: 'Jackal',
       display: 'jkl',
       symbol: 'JKL',
@@ -8550,12 +8550,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-49',
+            channel_id: 'channel-153',
             base_denom: 'ujkl',
             chain_name: 'jackal'
           },
           chain: {
-            channel_id: 'channel-137'
+            channel_id: 'channel-168'
           }
         }]
     },

@@ -618,6 +618,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/82C994B74C1BEC1C0F3CA7FFCA1ED3039FBEA35B3D75846BAE0E873F20E4F485',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/82C994B74C1BEC1C0F3CA7FFCA1ED3039FBEA35B3D75846BAE0E873F20E4F485',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-229',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-8'
+          }
+        }]
+    },
+    {
       description: 'Axelar is a decentralized interoperability network connecting multiple blockchain ecosystems, enabling seamless cross-chain communication and value transfer.',
       denom_units: [{
           denom: 'ibc/9463E39D230614B313B487836D13A392BD1731928713D4C8427A083627048DB3',
@@ -1229,6 +1271,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-1'
+          }
+        }]
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/82C994B74C1BEC1C0F3CA7FFCA1ED3039FBEA35B3D75846BAE0E873F20E4F485',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/82C994B74C1BEC1C0F3CA7FFCA1ED3039FBEA35B3D75846BAE0E873F20E4F485',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-229',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-8'
           }
         }]
     }

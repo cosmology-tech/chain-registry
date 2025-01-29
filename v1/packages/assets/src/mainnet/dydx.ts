@@ -5146,6 +5146,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/67307289B5B1642758DDF16AE21928594B2C82B3B8BEA13B2F6C28F3F161353D',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/67307289B5B1642758DDF16AE21928594B2C82B3B8BEA13B2F6C28F3F161353D',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-164',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-32'
+          }
+        }]
+    },
+    {
       description: 'Stride is a liquid staking blockchain in the Cosmos ecosystem that allows users to stake any IBC-compatible tokens and receive stTokens in return, providing liquidity while earning staking rewards.',
       denom_units: [{
           denom: 'ibc/49D0858EB94005A4DB308330F2498999E03A23058AD08E27B0BD2917B2E0C7AC',
@@ -10040,6 +10082,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-71'
+          }
+        }]
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/67307289B5B1642758DDF16AE21928594B2C82B3B8BEA13B2F6C28F3F161353D',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/67307289B5B1642758DDF16AE21928594B2C82B3B8BEA13B2F6C28F3F161353D',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-164',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-32'
           }
         }]
     },

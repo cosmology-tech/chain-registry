@@ -1260,10 +1260,10 @@ const assets: AssetList = {
       display: 'ckUSD',
       symbol: 'CKUSD',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/ckusd.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/ckusd.svg'
         }],
       keywords: ['dex', 'mm'],
       socials: {
@@ -1298,10 +1298,10 @@ const assets: AssetList = {
       display: 'cUSDC',
       symbol: 'CUSDC',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdc.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -1330,12 +1330,12 @@ const assets: AssetList = {
       base: 'ibc/D37A49E1C6FC8FBE757B25D0031444E00EE327D3E5C2316B6D2B960594028E40',
       name: 'cUSDT.inj',
       display: 'cUSDT.inj',
-      symbol: 'CUSDT.inj',
+      symbol: 'cUSDT.inj',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdt.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdt.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -1364,12 +1364,12 @@ const assets: AssetList = {
       base: 'ibc/F6FD97475115A8A182D7672214D4CBA0F6B5BC47E3EC9957EC9F30B92C73ED66',
       name: 'asUSDT.inj',
       display: 'asusdtinj',
-      symbol: 'ASUSDT.inj',
+      symbol: 'asUSDT.inj',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdt.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdt.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -1400,10 +1400,10 @@ const assets: AssetList = {
       display: 'asUSDC',
       symbol: 'ASUSDC',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdc.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -6191,6 +6191,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/D123C3D5A0CF4B146D91A386ACBFF9658C82FC6131A64F8D4BA56BF785361E30',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/D123C3D5A0CF4B146D91A386ACBFF9658C82FC6131A64F8D4BA56BF785361E30',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-234',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-394'
           }
         }]
     },
@@ -6750,10 +6792,10 @@ const assets: AssetList = {
       display: 'ckUSD',
       symbol: 'CKUSD',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/ckusd.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/kusd.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/ckusd.svg'
         }],
       keywords: ['dex', 'mm'],
       socials: {
@@ -6788,10 +6830,10 @@ const assets: AssetList = {
       display: 'cUSDC',
       symbol: 'CUSDC',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdc.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -6820,12 +6862,12 @@ const assets: AssetList = {
       base: 'ibc/D37A49E1C6FC8FBE757B25D0031444E00EE327D3E5C2316B6D2B960594028E40',
       name: 'cUSDT.inj',
       display: 'cUSDT.inj',
-      symbol: 'CUSDT.inj',
+      symbol: 'cUSDT.inj',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdt.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/cusdt.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -6854,12 +6896,12 @@ const assets: AssetList = {
       base: 'ibc/F6FD97475115A8A182D7672214D4CBA0F6B5BC47E3EC9957EC9F30B92C73ED66',
       name: 'asUSDT.inj',
       display: 'asusdtinj',
-      symbol: 'ASUSDT.inj',
+      symbol: 'asUSDT.inj',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdt.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdt.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -6890,10 +6932,10 @@ const assets: AssetList = {
       display: 'asUSDC',
       symbol: 'ASUSDC',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdc.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kopi/images/asusdc.svg'
         }],
       keywords: ['dex', 'mm'],
       type_asset: 'sdk.coin',
@@ -11681,6 +11723,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-284'
+          }
+        }]
+    },
+    {
+      description: 'QCK - native token of Quicksilver',
+      denom_units: [{
+          denom: 'ibc/D123C3D5A0CF4B146D91A386ACBFF9658C82FC6131A64F8D4BA56BF785361E30',
+          exponent: 0,
+          aliases: ['uqck']
+        }, {
+          denom: 'qck',
+          exponent: 6,
+          aliases: []
+        }],
+      base: 'ibc/D123C3D5A0CF4B146D91A386ACBFF9658C82FC6131A64F8D4BA56BF785361E30',
+      name: 'Quicksilver',
+      display: 'qck',
+      symbol: 'QCK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png'
+      },
+      coingecko_id: 'quicksilver',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
+          theme: {
+            primary_color_hex: '#b2b2b2'
+          }
+        }],
+      socials: {
+        website: 'https://quicksilver.zone/',
+        twitter: 'https://twitter.com/quicksilverzone'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-234',
+            base_denom: 'uqck',
+            chain_name: 'quicksilver'
+          },
+          chain: {
+            channel_id: 'channel-394'
           }
         }]
     },

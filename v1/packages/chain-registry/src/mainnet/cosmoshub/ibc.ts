@@ -1478,7 +1478,11 @@ const info: IBCInfo[] = [
           port_id: 'transfer'
         },
         ordering: 'unordered',
-        version: 'ics20-1'
+        version: 'ics20-1',
+        tags: {
+          status: 'live',
+          preferred: true
+        }
       }]
   },
   {

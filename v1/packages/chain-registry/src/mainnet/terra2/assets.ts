@@ -1514,6 +1514,25 @@ const info: AssetList = {
       name: 'Eris Protocol bWHALE/WHALE ampLP',
       display: 'amplp',
       symbol: 'bWHALE-ampLP'
+    },
+    {
+      base: 'factory/terra1dvvduq0uegn9juch9v0fc97fff3c85nu9f9gveu83dldej07jxysyrrg7m/rise',
+      name: 'Rise',
+      symbol: 'RISE',
+      display: 'rise',
+      description: 'PhoenixRiseMeme',
+      type_asset: 'sdk.coin',
+      address: 'terra1dvvduq0uegn9juch9v0fc97fff3c85nu9f9gveu83dldej07jxysyrrg7m',
+      denom_units: [{
+          denom: 'factory/terra1dvvduq0uegn9juch9v0fc97fff3c85nu9f9gveu83dldej07jxysyrrg7m/rise',
+          exponent: 0
+        }, {
+          denom: 'rise',
+          exponent: 6
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/RISE.png'
+      }
     }
   ]
 };

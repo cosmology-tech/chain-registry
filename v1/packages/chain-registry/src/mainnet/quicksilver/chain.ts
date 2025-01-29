@@ -2,11 +2,11 @@ import { Chain } from '@chain-registry/types';
 const info: Chain = {
   $schema: '../chain.schema.json',
   chain_name: 'quicksilver',
+  chain_type: 'cosmos',
   status: 'live',
   network_type: 'mainnet',
   website: 'https://quicksilver.zone/',
   pretty_name: 'Quicksilver',
-  chain_type: 'cosmos',
   chain_id: 'quicksilver-2',
   daemon_name: 'quicksilverd',
   node_home: '$HOME/.quicksilverd',
@@ -24,29 +24,36 @@ const info: Chain = {
   staking: {
     staking_tokens: [{
         denom: 'uqck'
-      }]
+      }],
+    lock_duration: {
+      time: '1814400s'
+    }
   },
   codebase: {
-    git_repo: 'https://github.com/ingenuity-build/quicksilver',
-    recommended_version: 'v1.6.3',
-    compatible_versions: ['v1.6.3'],
+    git_repo: 'https://github.com/quicksilver-zone/quicksilver',
+    recommended_version: 'v1.7.5',
+    compatible_versions: ['v1.7.5'],
     binaries: {
-      "linux/amd64": 'https://github.com/ingenuity-build/quicksilver/releases/download/v1.6.3/quicksilverd-v1.6.3-amd64'
-    },
-    consensus: {
-      type: 'cometbft',
-      version: 'v0.34.33'
-    },
-    genesis: {
-      genesis_url: 'https://github.com/ingenuity-build/mainnet/raw/main/genesis.json'
+      "linux/amd64": 'https://github.com/quicksilver-zone/quicksilver/releases/download/v1.7.5/quicksilverd-v1.7.5-amd64'
     },
     sdk: {
       type: 'cosmos',
       version: 'v0.46.16'
     },
+    consensus: {
+      type: 'cometbft',
+      version: 'v0.34.33'
+    },
     ibc: {
       type: 'go',
       version: 'v6.3.1'
+    },
+    language: {
+      type: 'go',
+      version: '1.23.3'
+    },
+    genesis: {
+      genesis_url: 'https://raw.githubusercontent.com/quicksilver-zone/networks/refs/heads/main/mainnet/quicksilver-2/genesis.json'
     }
   },
   logo_URIs: {
@@ -57,24 +64,12 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-quicksilver.takeshi.team:443',
-        provider: 'TAKESHI'
-      },
-      {
         address: 'https://rpc.quicksilver.zone:443',
         provider: 'Quicksilver'
       },
       {
-        address: 'https://rpc-quicksilver-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
-      },
-      {
-        address: 'https://rpc.lavenderfive.com:443/quicksilver',
+        address: 'https://quicksilver-rpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
-        address: 'https://rpc-quicksilver.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
       },
       {
         address: 'https://m-quicksilver.rpc.utsa.tech',
@@ -83,10 +78,6 @@ const info: Chain = {
       {
         address: 'http://quick.rpc.m.stavr.tech:21027',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'https://quicksilver-mainnet-rpc.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://quicksilver-rpc.ibs.team:443',
@@ -101,24 +92,8 @@ const info: Chain = {
         provider: 'Architect Nodes'
       },
       {
-        address: 'https://rpc.quicksilver.indonode.net',
-        provider: 'Indonode'
-      },
-      {
         address: 'https://quicksilver-rpc.staketab.org:443',
         provider: 'Staketab'
-      },
-      {
-        address: 'https://quicksilver-rpc.theamsolutions.info',
-        provider: 'AM Solutions'
-      },
-      {
-        address: 'https://quicksilver-rpc.w3coins.io',
-        provider: 'w3coins'
-      },
-      {
-        address: 'https://rpc-quicksilver.mms.team/',
-        provider: 'MMS'
       },
       {
         address: 'https://quicksilver-rpc.publicnode.com:443',
@@ -147,24 +122,12 @@ const info: Chain = {
     ],
     rest: [
       {
-        address: 'https://api-quicksilver.takeshi.team:443',
-        provider: 'TAKESHI'
+        address: 'https://lcd.quicksilver.zone:443',
+        provider: 'Quicksilver'
       },
       {
-        address: 'https://api-quicksilver-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
-      },
-      {
-        address: 'https://rest.lavenderfive.com:443/quicksilver',
+        address: 'https://quicksilver-api.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
-        address: 'https://api-quicksilver.cosmos-spaces.cloud',
-        provider: 'Cosmos Spaces'
-      },
-      {
-        address: 'https://quicksilver-mainnet-lcd.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
         address: 'https://m-quicksilver.api.utsa.tech',
@@ -175,32 +138,12 @@ const info: Chain = {
         provider: '🔥STAVR🔥'
       },
       {
-        address: 'https://quicksilver.api.kjnodes.com',
-        provider: 'kjnodes'
-      },
-      {
         address: 'https://rest-quicksilver.architectnodes.com',
         provider: 'Architect Nodes'
       },
       {
-        address: 'https://api.quicksilver.indonode.net',
-        provider: 'Indonode'
-      },
-      {
         address: 'https://quicksilver-rest.staketab.org',
         provider: 'Staketab'
-      },
-      {
-        address: 'https://quicksilver-api.theamsolutions.info',
-        provider: 'AM Solutions'
-      },
-      {
-        address: 'https://quicksilver-api.w3coins.io',
-        provider: 'w3coins'
-      },
-      {
-        address: 'https://api-quicksilver.mms.team',
-        provider: 'MMS'
       },
       {
         address: 'https://quicksilver-rest.publicnode.com',
@@ -229,32 +172,8 @@ const info: Chain = {
     ],
     grpc: [
       {
-        address: 'grpc-quicksilver.takeshi.team:443',
-        provider: 'TAKESHI'
-      },
-      {
-        address: 'grpc-quicksilver-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
-      },
-      {
-        address: 'quicksilver.lavenderfive.com:443',
+        address: 'quicksilver-grpc.lavenderfive.com:443',
         provider: 'Lavender.Five Nodes 🐝'
-      },
-      {
-        address: 'quicksilver.grpc.nodersteam.com:9161',
-        provider: '[NODERS]TEAM'
-      },
-      {
-        address: 'grpc-quicksilver.cosmos-spaces.cloud:3300',
-        provider: 'Cosmos Spaces'
-      },
-      {
-        address: 'quicksilver-mainnet-grpc.autostake.com:443',
-        provider: 'AutoStake 🛡️ Slash Protected'
-      },
-      {
-        address: 'quicksilver.grpc.kjnodes.com:11190',
-        provider: 'kjnodes'
       },
       {
         address: 'quick.grpc.m.stavr.tech:9113',
@@ -263,30 +182,6 @@ const info: Chain = {
       {
         address: 'grpc-quicksilver.architectnodes.com:1443',
         provider: 'Architect Nodes'
-      },
-      {
-        address: 'archive-grpc-quicksilver.huginn.tech:9090',
-        provider: 'Huginn'
-      },
-      {
-        address: 'https://grpc.quicksilver.indonode.net:28090',
-        provider: 'Indonode'
-      },
-      {
-        address: 'services.staketab.com:9034',
-        provider: 'Staketab'
-      },
-      {
-        address: 'https://quicksilver-grpc.theamsolutions.info:9797',
-        provider: 'AM Solutions'
-      },
-      {
-        address: 'quicksilver-grpc.w3coins.io:11190',
-        provider: 'w3coins'
-      },
-      {
-        address: 'grpc-quicksilver.mms.team:443',
-        provider: 'MMS'
       },
       {
         address: 'quicksilver-grpc.publicnode.com:443',
@@ -301,37 +196,23 @@ const info: Chain = {
         provider: 'KonsorTech'
       },
       {
-        address: 'https://quicksilver.tdrsys.com:2083',
+        address: 'quicksilver.tdrsys.com:2083',
         provider: 'TdrSys'
-      },
-      {
-        address: 'grpc.quicksilver.validatus.com',
-        provider: 'Validatus'
-      },
-      {
-        address: 'quicksilver-grpc.noders.services:16090',
-        provider: '[NODERS]TEAM'
       }
     ]
   },
   explorers: [
     {
-      kind: 'mintscan',
-      url: 'https://www.mintscan.io/quicksilver',
-      tx_page: 'https://www.mintscan.io/quicksilver/transactions/${txHash}',
-      account_page: 'https://www.mintscan.io/quicksilver/accounts/${accountAddress}'
+      kind: 'stakeme',
+      url: 'https://explorer.quicksilver.zone',
+      tx_page: 'https://explorer.quicksilver.zone/transactions/${txHash}',
+      account_page: 'https://explorer.quicksilver.zone/account/${accountAddress}'
     },
     {
       kind: 'ezstaking',
       url: 'https://ezstaking.app/quicksilver',
       tx_page: 'https://ezstaking.app/quicksilver/txs/${txHash}',
       account_page: 'https://ezstaking.app/quicksilver/account/${accountAddress}'
-    },
-    {
-      kind: 'staking-explorer.com',
-      url: 'https://staking-explorer.com/explorer/quicksilver',
-      tx_page: 'https://staking-explorer.com/transaction.php?chain=quicksilver&tx=${txHash}',
-      account_page: 'https://staking-explorer.com/account.php?chain=quicksilver&addr=${accountAddress}'
     },
     {
       kind: '𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀 explorer',
@@ -344,16 +225,6 @@ const info: Chain = {
       tx_page: 'https://explorer.stavr.tech/quicksilver-mainnet/tx/${txHash}'
     },
     {
-      kind: 'Stake-Take',
-      url: 'https://explorer.stake-take.com/quicksilver',
-      tx_page: 'https://explorer.stake-take.com/quicksilver/tx/${txHash}'
-    },
-    {
-      kind: 'AM Solutions Explorers',
-      url: 'https://explorer.theamsolutions.info/quicksilver-main/staking',
-      tx_page: 'https://explorer.theamsolutions.info/quicksilver-main/tx/${txHash}'
-    },
-    {
       kind: 'KonsorTech',
       url: 'https://explorer.konsortech.xyz/quicksilver/staking',
       tx_page: 'https://explorer.konsortech.xyz/quicksilver/tx/${txHash}'
@@ -361,10 +232,7 @@ const info: Chain = {
   ],
   images: [{
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.png',
-      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg',
-      theme: {
-        primary_color_hex: '#b2b2b2'
-      }
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quicksilver/images/qck.svg'
     }]
 };
 export default info;
