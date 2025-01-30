@@ -10131,6 +10131,114 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'WESO is the first memetility token launched on the Luna Classic blockchain. WESO is a innovative CW20 token dedicated to revitalizing and stabilizing the Luna Classic ecosystem. By leveraging a robust economic model WESO aims to restore confidence and sustainability within the ecosystem.',
+      type_asset: 'cw20',
+      address: 'terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+      denom_units: [{
+          denom: 'ibc/53D1471D03064FD13D9D06950D8CE160CA737A07400D685A408965E788BC6992',
+          exponent: 0,
+          aliases: ['cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms']
+        }, {
+          denom: 'weso',
+          exponent: 6
+        }],
+      base: 'ibc/53D1471D03064FD13D9D06950D8CE160CA737A07400D685A408965E788BC6992',
+      name: 'WESO World',
+      display: 'weso',
+      symbol: 'WESO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'Classic\'s original Liquid Staking Token - circa 2022',
+      type_asset: 'cw20',
+      address: 'terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+      denom_units: [{
+          denom: 'ibc/74F5414840763DACEF044AF7CDED666CEEFF3E86CF8FA6A52090925DB82A3AEF',
+          exponent: 0,
+          aliases: ['cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m']
+        }, {
+          denom: 'base',
+          exponent: 6
+        }],
+      base: 'ibc/74F5414840763DACEF044AF7CDED666CEEFF3E86CF8FA6A52090925DB82A3AEF',
+      name: 'Burn and Stake Enterprise Token',
+      display: 'base',
+      symbol: 'BASE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'CW20 token hard-pegged 1:1 with Native LUNC. Reduces or eliminates the chain-tax so you keep more of your money.',
+      type_asset: 'cw20',
+      address: 'terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+      denom_units: [{
+          denom: 'ibc/C2F96F7CDAC5B5D1FCC59B0396E9F051738930F37E4494C7760D7B1DC4FB13E8',
+          exponent: 0,
+          aliases: ['cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6']
+        }, {
+          denom: 'cwlunc',
+          exponent: 6
+        }],
+      base: 'ibc/C2F96F7CDAC5B5D1FCC59B0396E9F051738930F37E4494C7760D7B1DC4FB13E8',
+      name: 'cwLUNC Token',
+      display: 'cwlunc',
+      symbol: 'cwLUNC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
       denom_units: [{
           denom: 'ibc/8935E9B60645CD61DC925E7C71956DC909D4548262103D1AB75E2A5306AC84C1',
@@ -18892,6 +19000,114 @@ const assets: AssetList = {
             port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
             channel_id: 'channel-87',
             base_denom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'WESO is the first memetility token launched on the Luna Classic blockchain. WESO is a innovative CW20 token dedicated to revitalizing and stabilizing the Luna Classic ecosystem. By leveraging a robust economic model WESO aims to restore confidence and sustainability within the ecosystem.',
+      type_asset: 'cw20',
+      address: 'terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+      denom_units: [{
+          denom: 'ibc/53D1471D03064FD13D9D06950D8CE160CA737A07400D685A408965E788BC6992',
+          exponent: 0,
+          aliases: ['cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms']
+        }, {
+          denom: 'weso',
+          exponent: 6
+        }],
+      base: 'ibc/53D1471D03064FD13D9D06950D8CE160CA737A07400D685A408965E788BC6992',
+      name: 'WESO World',
+      display: 'weso',
+      symbol: 'WESO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'Classic\'s original Liquid Staking Token - circa 2022',
+      type_asset: 'cw20',
+      address: 'terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+      denom_units: [{
+          denom: 'ibc/74F5414840763DACEF044AF7CDED666CEEFF3E86CF8FA6A52090925DB82A3AEF',
+          exponent: 0,
+          aliases: ['cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m']
+        }, {
+          denom: 'base',
+          exponent: 6
+        }],
+      base: 'ibc/74F5414840763DACEF044AF7CDED666CEEFF3E86CF8FA6A52090925DB82A3AEF',
+      name: 'Burn and Stake Enterprise Token',
+      display: 'base',
+      symbol: 'BASE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-114'
+          }
+        }]
+    },
+    {
+      description: 'CW20 token hard-pegged 1:1 with Native LUNC. Reduces or eliminates the chain-tax so you keep more of your money.',
+      type_asset: 'cw20',
+      address: 'terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+      denom_units: [{
+          denom: 'ibc/C2F96F7CDAC5B5D1FCC59B0396E9F051738930F37E4494C7760D7B1DC4FB13E8',
+          exponent: 0,
+          aliases: ['cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6']
+        }, {
+          denom: 'cwlunc',
+          exponent: 6
+        }],
+      base: 'ibc/C2F96F7CDAC5B5D1FCC59B0396E9F051738930F37E4494C7760D7B1DC4FB13E8',
+      name: 'cwLUNC Token',
+      display: 'cwlunc',
+      symbol: 'cwLUNC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-87',
+            base_denom: 'cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
             chain_name: 'terra'
           },
           chain: {
