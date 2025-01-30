@@ -1,6 +1,6 @@
 {
   "name": "@chain-registry/v2-keplr",
-  "version": "0.0.107",
+  "version": "0.0.108",
   "author": "Dan Lynch <pyramation@gmail.com>",
   "description": "Chain Registry to Keplr",
   "main": "index.js",
@@ -20,8 +20,8 @@
     "url": "https://github.com/chain-registry/v2-keplr/issues"
   },
   "dependencies": {
-    "@chain-registry/v2": "^1.71.106",
-    "@chain-registry/v2-types": "^0.53.55",
+    "@chain-registry/v2": "^1.71.107",
+    "@chain-registry/v2-types": "^0.53.56",
     "@keplr-wallet/cosmos": "0.12.28",
     "@keplr-wallet/crypto": "0.12.28",
     "@types/semver": "^7.5.8",
