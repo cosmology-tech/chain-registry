@@ -5242,6 +5242,80 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
       }
+    },
+    {
+      description: 'WESO is the first memetility token launched on the Luna Classic blockchain. WESO is a innovative CW20 token dedicated to revitalizing and stabilizing the Luna Classic ecosystem. By leveraging a robust economic model WESO aims to restore confidence and sustainability within the ecosystem.',
+      typeAsset: 'cw20',
+      address: 'terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+      denomUnits: [{
+          denom: 'cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+          exponent: 0
+        }, {
+          denom: 'weso',
+          exponent: 6
+        }],
+      base: 'cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+      name: 'WESO World',
+      display: 'weso',
+      symbol: 'WESO',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+        }]
+    },
+    {
+      description: 'Classic\'s original Liquid Staking Token - circa 2022',
+      typeAsset: 'cw20',
+      address: 'terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+      denomUnits: [{
+          denom: 'cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+          exponent: 0
+        }, {
+          denom: 'base',
+          exponent: 6
+        }],
+      base: 'cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+      name: 'Burn and Stake Enterprise Token',
+      display: 'base',
+      symbol: 'BASE',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+        }]
+    },
+    {
+      description: 'CW20 token hard-pegged 1:1 with Native LUNC. Reduces or eliminates the chain-tax so you keep more of your money.',
+      typeAsset: 'cw20',
+      address: 'terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+      denomUnits: [{
+          denom: 'cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+          exponent: 0
+        }, {
+          denom: 'cwlunc',
+          exponent: 6
+        }],
+      base: 'cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+      name: 'cwLUNC Token',
+      display: 'cwlunc',
+      symbol: 'cwLUNC',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+        }],
+      traces: [{
+          type: 'wrapped',
+          counterparty: {
+            chainName: 'terra',
+            baseDenom: 'uluna'
+          },
+          provider: 'Terra Classic'
+        }]
     }
   ]
 };
