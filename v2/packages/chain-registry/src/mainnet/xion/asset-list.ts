@@ -30,6 +30,49 @@ const info: AssetList = {
         website: 'https://xion.burnt.com/',
         twitter: 'https://twitter.com/burnt_xion'
       }
+    }, {
+      denomUnits: [{
+          denom: 'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
+          exponent: 0,
+          aliases: ['uusdc']
+        }, {
+          denom: 'usdc',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349',
+      name: 'Noble USDC Token',
+      display: 'usdc',
+      symbol: 'USDC',
+      coingeckoId: 'usd-coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'noble',
+            baseDenom: 'uusdc',
+            channelId: 'channel-113'
+          },
+          chain: {
+            channelId: 'channel-2',
+            path: 'transfer/channel-2/uusdc'
+          }
+        }],
+      images: [{
+          imageSync: {
+            chainName: 'noble',
+            baseDenom: 'uusdc'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+          theme: {
+            circle: true,
+            primaryColorHex: '#2775CA'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
+      }
     }]
 };
 export default info;

@@ -1533,6 +1533,21 @@ const info: AssetList = {
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/RISE.png'
       }
+    },
+    {
+      typeAsset: 'sdk.coin',
+      description: 'Eris Protocol LUNA/USDC ampLP',
+      denomUnits: [{
+          denom: 'factory/terra1zly98gvcec54m3caxlqexce7rus6rzgplz7eketsdz7nh750h2rqvu8uzx/1/stable/amplp',
+          exponent: 0
+        }, {
+          denom: 'amplp',
+          exponent: 6
+        }],
+      base: 'factory/terra1zly98gvcec54m3caxlqexce7rus6rzgplz7eketsdz7nh750h2rqvu8uzx/1/stable/amplp',
+      name: 'Eris Protocol LUNA/USDC ampLP',
+      display: 'amplp',
+      symbol: 'LUNA-USDC-ampLP'
     }
   ]
 };
