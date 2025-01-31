@@ -2319,14 +2319,14 @@ const assets: AssetList = {
     {
       description: 'Nomic\'s native token.',
       denom_units: [{
-          denom: 'ibc/AF0021A90E9C7A879CF8CCE81F519254CE8267E426EB2AC9492233F22435E8B9',
+          denom: 'ibc/4F479350CB86D5E3AFA7F355DDE74EB1F25C2A8F0B3021A1641193B9F6D0A3AD',
           exponent: 0,
           aliases: ['unom']
         }, {
           denom: 'nom',
           exponent: 6
         }],
-      base: 'ibc/AF0021A90E9C7A879CF8CCE81F519254CE8267E426EB2AC9492233F22435E8B9',
+      base: 'ibc/4F479350CB86D5E3AFA7F355DDE74EB1F25C2A8F0B3021A1641193B9F6D0A3AD',
       name: 'Nomic',
       display: 'nom',
       symbol: 'NOM',
@@ -2345,12 +2345,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-2',
+            channel_id: 'channel-4',
             base_denom: 'unom',
             chain_name: 'nomic'
           },
           chain: {
-            channel_id: 'channel-42'
+            channel_id: 'channel-6478'
           }
         }]
     },
@@ -6949,14 +6949,14 @@ const assets: AssetList = {
     {
       description: 'Nomic\'s native token.',
       denom_units: [{
-          denom: 'ibc/AF0021A90E9C7A879CF8CCE81F519254CE8267E426EB2AC9492233F22435E8B9',
+          denom: 'ibc/4F479350CB86D5E3AFA7F355DDE74EB1F25C2A8F0B3021A1641193B9F6D0A3AD',
           exponent: 0,
           aliases: ['unom']
         }, {
           denom: 'nom',
           exponent: 6
         }],
-      base: 'ibc/AF0021A90E9C7A879CF8CCE81F519254CE8267E426EB2AC9492233F22435E8B9',
+      base: 'ibc/4F479350CB86D5E3AFA7F355DDE74EB1F25C2A8F0B3021A1641193B9F6D0A3AD',
       name: 'Nomic',
       display: 'nom',
       symbol: 'NOM',
@@ -6975,12 +6975,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-2',
+            channel_id: 'channel-4',
             base_denom: 'unom',
             chain_name: 'nomic'
           },
           chain: {
-            channel_id: 'channel-42'
+            channel_id: 'channel-6478'
           }
         }]
     },
