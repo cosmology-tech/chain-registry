@@ -8,18 +8,18 @@ const info: AssetList = {
           denom: 'ubbn',
           exponent: 0
         }, {
-          denom: 'bbn',
+          denom: 'BABY',
           exponent: 6
         }],
       base: 'ubbn',
-      name: 'Babylon BBN',
-      display: 'bbn',
-      symbol: 'BBN',
+      name: 'Babylon Testnet',
+      display: 'BABY',
+      symbol: 'BABY',
       logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/babylon/images/logo.svg'
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
       },
       images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/babylon/images/logo.svg'
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/babylontestnet/images/logo.svg'
         }],
       type_asset: 'sdk.coin'
     }]

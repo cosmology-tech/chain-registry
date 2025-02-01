@@ -3,11 +3,11 @@ const info: Chain = {
   $schema: '../../chain.schema.json',
   chain_name: 'babylontestnet',
   status: 'live',
-  website: 'https://www.babylonchain.io',
+  website: 'https://babylonlabs.io/',
   network_type: 'testnet',
-  pretty_name: 'Babylon Testnet 3',
+  pretty_name: 'Babylon Testnet',
   chain_type: 'cosmos',
-  chain_id: 'bbn-test3',
+  chain_id: 'bbn-test-5',
   pre_fork_chain_name: 'babylontestnet1',
   bech32_prefix: 'bbn',
   slip44: 118,
@@ -25,11 +25,11 @@ const info: Chain = {
       }]
   },
   codebase: {
-    git_repo: 'https://github.com/babylonchain/babylon',
-    recommended_version: 'v0.8.4',
-    compatible_versions: ['v0.8.4'],
+    git_repo: 'https://github.com/babylonlabs-io/babylon',
+    recommended_version: 'v1.0.0-rc.4',
+    compatible_versions: ['v1.0.0-rc.4'],
     genesis: {
-      genesis_url: 'https://github.com/babylonchain/networks/raw/main/bbn-test3/genesis.tar.bz2'
+      genesis_url: 'https://github.com/babylonlabs-io/networks/raw/main/bbn-test-5/network-artifacts/genesis.json'
     }
   },
   logo_URIs: {
@@ -37,18 +37,19 @@ const info: Chain = {
   },
   apis: {
     rpc: [{
-        address: 'rpc.testnet3.babylonchain.io:443',
-        provider: 'Babylon foundation'
+        address: 'https://babylon-testnet-rpc.nodes.guru',
+        provider: 'NodesGuru'
       }],
     rest: [{
-        address: 'lcd.testnet3.babylonchain.io:443',
-        provider: 'Babylon foundation'
+        address: 'https://babylon-testnet-api.nodes.guru',
+        provider: 'NodesGuru'
       }],
     grpc: []
   },
   explorers: [{
       kind: 'babylonscan',
-      url: 'https://babylonscan.io'
+      url: 'https://babylon-testnet.l2scan.co',
+      tx_page: 'https://babylon-testnet.l2scan.co/tx/${txHash}'
     }, {
       kind: 'explorers.guru',
       url: 'https://testnet.babylon.explorers.guru',
