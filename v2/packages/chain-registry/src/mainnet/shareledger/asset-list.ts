@@ -19,7 +19,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.svg'
       },
-      coingeckoId: 'shareledger',
       keywords: ['id'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',

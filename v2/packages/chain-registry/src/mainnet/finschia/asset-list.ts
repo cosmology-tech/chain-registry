@@ -27,7 +27,6 @@ const info: AssetList = {
             primaryColorHex: '#040404'
           }
         }],
-      coingeckoId: 'link',
       keywords: ['staking']
     }]
 };

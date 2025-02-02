@@ -19,7 +19,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg'
       },
-      coingeckoId: 'point-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/point/images/point-logo.svg',
