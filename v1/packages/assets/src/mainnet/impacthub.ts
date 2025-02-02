@@ -392,7 +392,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/517C29263DC4D9BAAB20D69D396736DD7AD7E1706D1519635CE516CF4D74A36F',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
@@ -638,7 +638,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/517C29263DC4D9BAAB20D69D396736DD7AD7E1706D1519635CE516CF4D74A36F',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {

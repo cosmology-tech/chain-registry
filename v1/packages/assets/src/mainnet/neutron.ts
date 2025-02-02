@@ -347,7 +347,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
-      name: 'Dragon',
+      name: 'Dragon Coin',
       display: 'DGN',
       coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
@@ -1423,7 +1423,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/2ECB3D2ADFE9F1CA85258C6330FA666120549349BC526D56B098A2A782D75455',
-      name: 'Dragon',
+      name: 'Dragon Coin',
       display: 'DGN',
       coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
@@ -11490,8 +11490,7 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua'
+      }
     },
     {
       description: 'Puppy',
@@ -11569,8 +11568,7 @@ const assets: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua'
+      }
     },
     {
       description: 'The native token cw20 for SIENNA on Secret Network',
@@ -12405,7 +12403,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -12695,8 +12692,7 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
@@ -14114,7 +14110,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -14404,8 +14399,7 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',

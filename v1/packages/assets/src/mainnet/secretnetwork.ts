@@ -774,7 +774,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -2951,7 +2950,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -4410,7 +4408,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/901E9F1199A9EB947C83F2903B0B062888758D5853C6B762CD15B9FFD55FF1BC',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
@@ -5782,7 +5780,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/901E9F1199A9EB947C83F2903B0B062888758D5853C6B762CD15B9FFD55FF1BC',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
@@ -7890,7 +7888,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
       },
-      coingecko_id: 'loop',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png',
           theme: {
@@ -10378,7 +10375,6 @@ const assets: AssetList = {
       name: 'scATOM',
       display: 'scatom',
       symbol: 'scATOM',
-      coingecko_id: 'scatom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.svg'
@@ -11360,7 +11356,6 @@ const assets: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
       },
-      coingecko_id: 'loop',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png',
           theme: {
@@ -13848,7 +13843,6 @@ const assets: AssetList = {
       name: 'scATOM',
       display: 'scatom',
       symbol: 'scATOM',
-      coingecko_id: 'scatom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.svg'
@@ -14496,7 +14490,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -14786,8 +14779,7 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
@@ -15828,7 +15820,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -16118,8 +16109,7 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',

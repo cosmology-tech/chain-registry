@@ -144,7 +144,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -307,7 +306,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -799,7 +797,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/67E8B26BE190FB3F191DA72D6A390DB7DFA6E92C99CB37644DECBEBD2A075C41',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
@@ -1341,7 +1339,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/67E8B26BE190FB3F191DA72D6A390DB7DFA6E92C99CB37644DECBEBD2A075C41',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {

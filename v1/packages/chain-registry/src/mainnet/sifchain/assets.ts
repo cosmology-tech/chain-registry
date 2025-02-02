@@ -12,7 +12,7 @@ const info: AssetList = {
           exponent: 18
         }],
       base: 'rowan',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {

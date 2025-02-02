@@ -238,8 +238,7 @@ const info: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua'
+      }
     },
     {
       description: 'ashHUAHUA - Burned HUAHUA',

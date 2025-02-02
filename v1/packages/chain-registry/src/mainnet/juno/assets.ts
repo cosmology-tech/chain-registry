@@ -615,7 +615,6 @@ const info: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
       },
-      coingecko_id: 'loop',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png',
           theme: {

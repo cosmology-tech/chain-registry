@@ -224,7 +224,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -722,7 +721,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',

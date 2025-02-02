@@ -13,7 +13,7 @@ const info: AssetList = {
           exponent: 6
         }],
       base: 'udgn',
-      name: 'Dragon',
+      name: 'Dragon Coin',
       display: 'DGN',
       coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',

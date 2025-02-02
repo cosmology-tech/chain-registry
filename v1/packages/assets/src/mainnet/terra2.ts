@@ -392,7 +392,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -748,7 +747,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -819,7 +817,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/B2AA4C3CD19954859C3B537EC0705640AFC01075F52993D9AC5E73F07F0386CC',
-      name: 'Dragon',
+      name: 'Dragon Coin',
       display: 'DGN',
       coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
@@ -7759,7 +7757,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -8115,7 +8112,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -8186,7 +8182,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       base: 'ibc/B2AA4C3CD19954859C3B537EC0705640AFC01075F52993D9AC5E73F07F0386CC',
-      name: 'Dragon',
+      name: 'Dragon Coin',
       display: 'DGN',
       coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',

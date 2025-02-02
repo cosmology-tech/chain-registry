@@ -1122,7 +1122,6 @@ const info: AssetList = {
       name: 'Cosmos Bitcoin',
       display: 'BITCOIN',
       symbol: 'BITCOIN',
-      coingecko_id: ' ',
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/bitcoin.png'
       },

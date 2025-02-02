@@ -105,7 +105,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -263,7 +262,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -660,7 +658,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -818,7 +815,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -1381,7 +1377,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/D722F048B816E0E36F20D9CF82CF3C4707DCE37F47583A6DA7829A69EF5175F4',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
@@ -1793,7 +1789,7 @@ const assets: AssetList = {
           exponent: 18
         }],
       base: 'ibc/D722F048B816E0E36F20D9CF82CF3C4707DCE37F47583A6DA7829A69EF5175F4',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {

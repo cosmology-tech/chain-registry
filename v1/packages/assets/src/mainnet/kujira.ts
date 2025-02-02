@@ -517,7 +517,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -938,7 +937,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -2434,7 +2432,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -2855,7 +2852,6 @@ const assets: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -7197,7 +7193,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -7487,8 +7482,7 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
@@ -8906,7 +8900,6 @@ const assets: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -9196,8 +9189,7 @@ const assets: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',

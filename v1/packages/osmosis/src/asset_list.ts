@@ -1253,7 +1253,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -1921,7 +1920,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -2155,7 +2153,7 @@ const asset_list: AssetList = {
           exponent: 6
         }],
       base: 'ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995',
-      name: 'Dragon',
+      name: 'Dragon Coin',
       display: 'DGN',
       coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
@@ -7294,7 +7292,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg'
       },
-      coingecko_id: 'carbon-usd',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/carbon/images/usc.svg',
@@ -7962,7 +7959,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg'
       },
-      coingecko_id: 'liquid-staking-crescent',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/bcre.svg',
@@ -8196,7 +8192,7 @@ const asset_list: AssetList = {
           exponent: 6
         }],
       base: 'ibc/3B95D63B520C283BCA86F8CD426D57584039463FD684A5CBA31D2780B86A1995',
-      name: 'Dragon',
+      name: 'Dragon Coin',
       display: 'DGN',
       coingecko_id: 'dragon-coin-2',
       symbol: 'DGN',
@@ -17214,7 +17210,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.svg'
       },
-      coingecko_id: 'shareledger',
       keywords: ['id'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',
@@ -17329,7 +17324,7 @@ const asset_list: AssetList = {
           exponent: 18
         }],
       base: 'ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
@@ -24165,7 +24160,6 @@ const asset_list: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.svg'
       },
-      coingecko_id: 'shareledger',
       keywords: ['id'],
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/shareledger/images/token.png',
@@ -24280,7 +24274,7 @@ const asset_list: AssetList = {
           exponent: 18
         }],
       base: 'ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB',
-      name: 'Sifchain Rowan',
+      name: 'Sifchain',
       display: 'ROWAN',
       symbol: 'ROWAN',
       logo_URIs: {
@@ -26140,8 +26134,7 @@ const asset_list: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua'
+      }
     },
     {
       description: 'The native token cw20 for Neta on Juno Chain',
@@ -26933,7 +26926,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
       },
-      coingecko_id: 'loop',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png',
           theme: {
@@ -29037,8 +29029,7 @@ const asset_list: AssetList = {
         }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/bhuahua.png'
-      },
-      coingecko_id: 'backbone-labs-staked-huahua'
+      }
     },
     {
       description: 'The native token cw20 for Neta on Juno Chain',
@@ -29830,7 +29821,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png'
       },
-      coingecko_id: 'loop',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/loop.png',
           theme: {
@@ -39860,7 +39850,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -40150,8 +40139,7 @@ const asset_list: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
@@ -48738,7 +48726,6 @@ const asset_list: AssetList = {
       logo_URIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
       },
-      coingecko_id: 'eris-amplified-luna',
       images: [{
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
         }],
@@ -49028,8 +49015,7 @@ const asset_list: AssetList = {
           theme: {
             primary_color_hex: '#070707'
           }
-        }],
-      coingecko_id: 'backbone-labs-staked-luna'
+        }]
     },
     {
       description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',

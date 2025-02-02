@@ -82,7 +82,6 @@ const info: AssetList = {
             primary_color_hex: '#d8d8d8'
           }
         }],
-      coingecko_id: 'backbone-labs-staked-whale',
       type_asset: 'sdk.coin'
     },
     {

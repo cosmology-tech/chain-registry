@@ -456,7 +456,6 @@ const info: AssetList = {
       name: 'scATOM',
       display: 'scatom',
       symbol: 'scATOM',
-      coingecko_id: 'scatom',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/oraichain/images/scatom.svg'
