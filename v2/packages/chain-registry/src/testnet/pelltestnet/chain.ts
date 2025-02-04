@@ -39,6 +39,10 @@ const info: Chain = {
       {
         address: 'https://rpc-t.pell.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://pell-testnet-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -53,6 +57,10 @@ const info: Chain = {
       {
         address: 'https://api-t.pell.nodestake.org',
         provider: 'NodeStake'
+      },
+      {
+        address: 'https://pell-testnet-api.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [{

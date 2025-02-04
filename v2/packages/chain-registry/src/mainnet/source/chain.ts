@@ -188,10 +188,6 @@ const info: Chain = {
         provider: 'posthuman'
       },
       {
-        address: 'https://source.api.staking-explorer.com',
-        provider: 'staking-explorer.com | 3% Fee'
-      },
-      {
         address: 'https://source.declab.pro:443',
         provider: 'Decloud Nodes Lab'
       },

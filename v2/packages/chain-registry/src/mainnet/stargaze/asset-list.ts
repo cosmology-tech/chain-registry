@@ -762,6 +762,27 @@ const info: AssetList = {
           }
         }
       ]
+    },
+    {
+      description: 'HOOD',
+      denomUnits: [{
+          denom: 'factory/stars1rru5m2wh3fylpheqh8h5g968jwhe7rctkfm7u0gwk7ka4vx3q5tqukjl4z/hood',
+          exponent: 0
+        }, {
+          denom: 'HOOD',
+          exponent: 6
+        }],
+      base: 'factory/stars1rru5m2wh3fylpheqh8h5g968jwhe7rctkfm7u0gwk7ka4vx3q5tqukjl4z/hood',
+      name: 'HOOD',
+      display: 'HOOD',
+      symbol: 'HOOD',
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/hood.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/hood.png'
+        }],
+      typeAsset: 'sdk.coin'
     }
   ]
 };
