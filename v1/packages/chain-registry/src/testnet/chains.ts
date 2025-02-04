@@ -6,6 +6,7 @@ import * as _alloratestnet from './alloratestnet';
 import * as _archwaytestnet from './archwaytestnet';
 import * as _arkeonetworktestnet from './arkeonetworktestnet';
 import * as _artelatestnet from './artelatestnet';
+import * as _atomonetestnet from './atomonetestnet';
 import * as _auratestnet from './auratestnet';
 import * as _axelartestnet from './axelartestnet';
 import * as _babylontestnet from './babylontestnet';
@@ -128,6 +129,7 @@ const chains: Chain[] = [
   _archwaytestnet.chain,
   _arkeonetworktestnet.chain,
   _artelatestnet.chain,
+  _atomonetestnet.chain,
   _auratestnet.chain,
   _axelartestnet.chain,
   _babylontestnet.chain,

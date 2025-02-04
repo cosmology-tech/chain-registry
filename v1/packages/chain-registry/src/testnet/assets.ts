@@ -6,6 +6,7 @@ import * as _alloratestnet from './alloratestnet';
 import * as _archwaytestnet from './archwaytestnet';
 import * as _arkeonetworktestnet from './arkeonetworktestnet';
 import * as _artelatestnet from './artelatestnet';
+import * as _atomonetestnet from './atomonetestnet';
 import * as _auratestnet from './auratestnet';
 import * as _axelartestnet from './axelartestnet';
 import * as _babylontestnet from './babylontestnet';
@@ -128,6 +129,7 @@ const assets: AssetList[] = [
   _archwaytestnet.assets,
   _arkeonetworktestnet.assets,
   _artelatestnet.assets,
+  _atomonetestnet.assets,
   _auratestnet.assets,
   _axelartestnet.assets,
   _babylontestnet.assets,

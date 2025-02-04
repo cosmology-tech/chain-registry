@@ -4,6 +4,7 @@ export * as alloratestnet from './alloratestnet';
 export * as archwaytestnet from './archwaytestnet';
 export * as arkeonetworktestnet from './arkeonetworktestnet';
 export * as artelatestnet from './artelatestnet';
+export * as atomonetestnet from './atomonetestnet';
 export * as auratestnet from './auratestnet';
 export * as axelartestnet from './axelartestnet';
 export * as babylontestnet from './babylontestnet';

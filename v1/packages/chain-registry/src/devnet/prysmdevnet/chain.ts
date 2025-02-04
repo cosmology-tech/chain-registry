@@ -65,6 +65,10 @@ const info: Chain = {
       {
         address: 'wss://prysm-testnet-rpc.itrocket.net/websocket',
         provider: 'ITRocket'
+      },
+      {
+        address: 'wss://prysm-testnet-rpc.ibs.team/websocket',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rpc: [
@@ -115,6 +119,10 @@ const info: Chain = {
       {
         address: 'https://rpc-prysm.coha05.com/',
         provider: 'Coha05 | Spider Node'
+      },
+      {
+        address: 'https://prysm-testnet-rpc.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     rest: [
@@ -165,6 +173,10 @@ const info: Chain = {
       {
         address: 'https://api-prysm.coha05.com',
         provider: 'Coha05 | Spider Node'
+      },
+      {
+        address: 'https://prysm-testnet-api.ibs.team',
+        provider: 'Inter Blockchain Services'
       }
     ],
     grpc: [
