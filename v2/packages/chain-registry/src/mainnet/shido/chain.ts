@@ -151,6 +151,10 @@ const info: Chain = {
       {
         address: 'https://evm.kenseishido.com',
         provider: 'KENSEI'
+      },
+      {
+        address: 'https://shido-mainnet-archive-lb-nw5es9.zeeve.net/USjg7xqUmCZ4wCsqEOOE/rpc',
+        provider: 'Zeeve'
       }
     ]
   },

@@ -14,24 +14,25 @@ const info: Chain = {
   nodeHome: '$HOME/.bitsongd',
   codebase: {
     gitRepo: 'https://github.com/bitsongofficial/go-bitsong',
-    recommendedVersion: 'v0.15.0',
-    compatibleVersions: ['v0.15.0'],
+    recommendedVersion: 'v0.20.4',
+    compatibleVersions: ['v0.20.4'],
     binaries: {
-      "linux/amd64": 'https://github.com/bitsongofficial/go-bitsong/releases/download/v0.15.0/bitsongd'
+      "linux/amd64": 'https://github.com/bitsongofficial/go-bitsong/releases/download/v0.20.4/bitsongd-linux-amd64',
+      "linux/arm64": 'https://github.com/bitsongofficial/go-bitsong/releases/download/v0.20.4/bitsongd-linux-arm64'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-2b/genesis.json'
     },
     sdk: {
       type: 'cosmos',
-      version: '0.45.16'
+      version: '0.47.15'
     },
     ibc: {
       type: 'go',
-      version: 'v4.4.2'
+      version: 'v7.4.0'
     },
     cosmwasm: {
-      version: '0.33.0',
+      version: '0.45.0',
       enabled: true
     }
   },
@@ -57,16 +58,8 @@ const info: Chain = {
   apis: {
     rpc: [
       {
-        address: 'https://rpc-bitsong-ia.cosmosia.notional.ventures/',
-        provider: 'Notional'
-      },
-      {
         address: 'https://rpc.explorebitsong.com',
         provider: 'stake.systems'
-      },
-      {
-        address: 'https://bitsong-rpc.validatrium.club',
-        provider: 'Validatrium'
       },
       {
         address: 'https://rpc.bitsong.chaintools.tech/',
@@ -77,16 +70,8 @@ const info: Chain = {
         provider: '🐹 Quokka Stake'
       },
       {
-        address: 'https://rpc-bitsong.starsquid.io',
-        provider: 'Starsquid'
-      },
-      {
         address: 'https://rpc-bitsong.architectnodes.com',
         provider: 'Architect Nodes'
-      },
-      {
-        address: 'http://bitsong.statesync.nodersteam.com:11657',
-        provider: '[NODERS]TEAM'
       },
       {
         address: 'https://rpc.bitsong.safeblock.space',
@@ -115,32 +100,24 @@ const info: Chain = {
       {
         address: 'https://bitsong.rpc.m.stavr.tech:443',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'https://bitsong-rpc.polkachu.com:443',
+        provider: 'Polkachu'
+      },
+      {
+        address: 'https://bitsong-rpc.tothemars.network:443',
+        provider: 'ToTheMars'
       }
     ],
     rest: [
-      {
-        address: 'https://api-bitsong-ia.cosmosia.notional.ventures/',
-        provider: 'Notional'
-      },
       {
         address: 'https://lcd.explorebitsong.com/',
         provider: 'stake.systems'
       },
       {
-        address: 'https://bitsong-api.validatrium.club',
-        provider: 'Validatrium'
-      },
-      {
         address: 'https://api.bitsong.quokkastake.io',
         provider: '🐹 Quokka Stake'
-      },
-      {
-        address: 'http://bitsong.api.nodersteam.com:11017',
-        provider: '[NODERS]TEAM'
-      },
-      {
-        address: 'https://api-bitsong.starsquid.io',
-        provider: 'Starsquid'
       },
       {
         address: 'https://rest-bitsong.architectnodes.com',
@@ -173,28 +150,32 @@ const info: Chain = {
       {
         address: 'https://bitsong-api.bluestake.net',
         provider: 'BlueStake 🚀'
+      },
+      {
+        address: 'https://bitsong-api.polkachu.com',
+        provider: 'Polkachu'
+      },
+      {
+        address: 'https://bitsong-api.tothemars.network:443',
+        provider: 'ToTheMars'
       }
     ],
     grpc: [
       {
-        address: 'grpc-bitsong-ia.cosmosia.notional.ventures:443',
-        provider: 'Notional'
-      },
-      {
-        address: 'bitsong.grpc.nodersteam.com:9111/',
-        provider: '[NODERS]TEAM'
+        address: 'bitsong-grpc.polkachu.com:16090',
+        provider: 'Polkachu'
       },
       {
         address: 'grpc.bitsong.safeblock.space:9090',
         provider: 'Safe Block'
       },
       {
-        address: 'bitsong-grpc.panthea.eu:16750',
-        provider: 'Panthea EU'
-      },
-      {
         address: 'grpc.bitsong.mathnodes.com:9092',
         provider: 'MathNodes'
+      },
+      {
+        address: 'bitsong-grpc.panthea.eu:16750',
+        provider: 'Panthea EU'
       },
       {
         address: 'bitsong-grpc.noders.services:20090',
@@ -203,6 +184,10 @@ const info: Chain = {
       {
         address: 'bitsong.grpc.m.stavr.tech:9988',
         provider: '🔥STAVR🔥'
+      },
+      {
+        address: 'bitsong-grpc.tothemars.network:60290',
+        provider: 'ToTheMars'
       }
     ]
   },
