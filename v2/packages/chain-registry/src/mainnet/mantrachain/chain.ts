@@ -28,19 +28,32 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/MANTRA-Chain/mantrachain',
-    recommendedVersion: '1.0.0-rc3',
-    compatibleVersions: ['1.0.0-rc3'],
+    recommendedVersion: 'v1.0.3',
+    compatibleVersions: [
+      'v1.0.3',
+      'v1.0.1',
+      'v1.0.0',
+      'v1.0.0-rc3'
+    ],
     consensus: {
       type: 'cometbft',
-      version: '0.38'
+      version: 'v0.38.15'
     },
     sdk: {
       type: 'cosmos',
-      version: '0.50.10'
+      version: 'v0.50.8',
+      repo: 'https://github.com/MANTRA-Chain/cosmos-sdk'
     },
     cosmwasm: {
-      version: '0.53',
+      version: 'v0.53.0',
       enabled: true
+    },
+    ibc: {
+      type: 'go',
+      version: 'v8.5.1'
+    },
+    genesis: {
+      genesisUrl: 'https://raw.githubusercontent.com/MANTRA-Chain/mantrachain/refs/heads/main/networks/mantra-1/genesis.json'
     }
   },
   apis: {

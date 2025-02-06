@@ -81,10 +81,6 @@ const info: Chain = {
         provider: 'Pro-Nodes75'
       },
       {
-        address: 'https://umee-rpc.quantnode.tech',
-        provider: 'QuantNode'
-      },
-      {
         address: 'https://umee-rpc.tienthuattoan.com',
         provider: 'TTT 🇻🇳'
       },
@@ -159,10 +155,6 @@ const info: Chain = {
         provider: 'Polkachu'
       },
       {
-        address: 'https://umee-lcd.quantnode.tech',
-        provider: 'QuantNode'
-      },
-      {
         address: 'https://umee-api.tienthuattoan.ventures',
         provider: 'TienThuatToan'
       },
@@ -233,16 +225,8 @@ const info: Chain = {
         provider: 'AutoStake 🛡️ Slash Protected'
       },
       {
-        address: 'umee-grpc.quantnode.tech:9090',
-        provider: 'QuantNode gRPC'
-      },
-      {
         address: 'umee.grpc.m.stavr.tech:9090',
         provider: '🔥STAVR🔥'
-      },
-      {
-        address: 'umee-grpc.quantnode.tech:9091',
-        provider: 'QuantNode gRPCweb'
       },
       {
         address: 'umee-grpc.tienthuattoan.ventures:9090',

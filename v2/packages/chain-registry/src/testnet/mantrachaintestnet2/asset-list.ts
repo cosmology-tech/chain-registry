@@ -81,7 +81,7 @@ const info: AssetList = {
           counterparty: {
             chainName: 'nobletestnet',
             baseDenom: 'uusdc',
-            channelId: 'channel-209'
+            channelId: 'channel-237'
           },
           chain: {
             channelId: 'channel-2',
@@ -125,7 +125,7 @@ const info: AssetList = {
           counterparty: {
             chainName: 'nobletestnet',
             baseDenom: 'ausdy',
-            channelId: 'channel-209'
+            channelId: 'channel-237'
           },
           chain: {
             channelId: 'channel-2',
@@ -169,7 +169,7 @@ const info: AssetList = {
           counterparty: {
             chainName: 'osmosistestnet',
             baseDenom: 'uosmo',
-            channelId: 'channel-8734'
+            channelId: 'channel-9126'
           },
           chain: {
             channelId: 'channel-0',
@@ -210,7 +210,7 @@ const info: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            chainName: 'cosmoshubtestnet',
+            chainName: 'cosmosicsprovidertestnet',
             baseDenom: 'uatom',
             channelId: 'channel-241'
           },

@@ -233,6 +233,49 @@ const info: AssetList = {
             primaryColorHex: '#272d45'
           }
         }]
+    },
+    {
+      description: 'The native token of Stargaze',
+      denomUnits: [{
+          denom: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
+          exponent: 0,
+          aliases: ['ustars']
+        }, {
+          denom: 'stars',
+          exponent: 6
+        }],
+      typeAsset: 'ics20',
+      base: 'ibc/16E817E682AD1A73FD748BC989574B2702E109C4105550498086531FA3D6B050',
+      name: 'Stargaze',
+      display: 'stars',
+      symbol: 'STARS',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            chainName: 'stargaze',
+            baseDenom: 'ustars',
+            channelId: 'channel-406'
+          },
+          chain: {
+            channelId: 'channel-4',
+            path: 'transfer/channel-4/ustars'
+          }
+        }],
+      logoURIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg'
+      },
+      images: [{
+          imageSync: {
+            chainName: 'stargaze',
+            baseDenom: 'ustars'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stargaze/images/stars.svg',
+          theme: {
+            primaryColorHex: '#db2777'
+          }
+        }]
     }
   ]
 };
