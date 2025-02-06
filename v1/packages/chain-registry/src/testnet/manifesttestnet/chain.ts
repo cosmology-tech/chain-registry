@@ -55,6 +55,20 @@ const info: Chain = {
       kind: 'Default Explorer',
       url: 'https://testnet.manifest.explorers.guru/',
       tx_page: 'https://testnet.manifest.explorers.guru/transactions'
+    }],
+  logo_URIs: {
+    png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/manifest.png',
+    svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/manifest.svg'
+  },
+  images: [{
+      image_sync: {
+        chain_name: 'manifesttestnet'
+      },
+      png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/manifest.png',
+      svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/manifesttestnet/images/manifest.svg',
+      theme: {
+        primary_color_hex: '#A087FF'
+      }
     }]
 };
 export default info;
