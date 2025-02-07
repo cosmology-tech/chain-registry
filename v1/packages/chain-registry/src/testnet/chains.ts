@@ -8,6 +8,7 @@ import * as _arkeonetworktestnet from './arkeonetworktestnet';
 import * as _artelatestnet from './artelatestnet';
 import * as _atomonetestnet from './atomonetestnet';
 import * as _auratestnet from './auratestnet';
+import * as _autheotestnet from './autheotestnet';
 import * as _axelartestnet from './axelartestnet';
 import * as _babylontestnet from './babylontestnet';
 import * as _bitcannadevnet from './bitcannadevnet';
@@ -47,6 +48,7 @@ import * as _hypersigntestnet from './hypersigntestnet';
 import * as _impacthubtestnet from './impacthubtestnet';
 import * as _imversedtestnet from './imversedtestnet';
 import * as _injectivetestnet from './injectivetestnet';
+import * as _iopntestnet from './iopntestnet';
 import * as _jackaltestnet from './jackaltestnet';
 import * as _jackaltestnet2 from './jackaltestnet2';
 import * as _junotestnet from './junotestnet';
@@ -131,6 +133,7 @@ const chains: Chain[] = [
   _artelatestnet.chain,
   _atomonetestnet.chain,
   _auratestnet.chain,
+  _autheotestnet.chain,
   _axelartestnet.chain,
   _babylontestnet.chain,
   _bitcannadevnet.chain,
@@ -170,6 +173,7 @@ const chains: Chain[] = [
   _impacthubtestnet.chain,
   _imversedtestnet.chain,
   _injectivetestnet.chain,
+  _iopntestnet.chain,
   _jackaltestnet.chain,
   _jackaltestnet2.chain,
   _junotestnet.chain,

@@ -3668,6 +3668,146 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 31Mar2025',
+      denom_units: [{
+          denom: 'ibc/50ECDC99C294D9965F9F5B081A24F01A8392DFD29138B575B5DE204BDDF513BA',
+          exponent: 0,
+          aliases: ['p:ausdy:31Mar2025']
+        }, {
+          denom: 'pUSDY31Mar2025',
+          exponent: 18
+        }],
+      base: 'ibc/50ECDC99C294D9965F9F5B081A24F01A8392DFD29138B575B5DE204BDDF513BA',
+      name: 'pUsdy (31Mar2025)',
+      display: 'pUSDY31Mar2025',
+      symbol: 'pUSDY-31Mar2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:31Mar2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/E04456B3BAEB0398F85404EADFBE1A44155EAB41FE43295885B73770D0277836',
+          exponent: 0,
+          aliases: ['p:ausdy:30Jun2025']
+        }, {
+          denom: 'pUSDY30Jun2025',
+          exponent: 18
+        }],
+      base: 'ibc/E04456B3BAEB0398F85404EADFBE1A44155EAB41FE43295885B73770D0277836',
+      name: 'pUsdy (30Jun2025)',
+      display: 'pUSDY30Jun2025',
+      symbol: 'pUSDY-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 30Sep2025',
+      denom_units: [{
+          denom: 'ibc/E5F4162518EBEC60A2A29AE56DBF6A1BF4307E734E72663FC8554F360965D405',
+          exponent: 0,
+          aliases: ['p:ausdy:30Sep2025']
+        }, {
+          denom: 'pUSDY30Sep2025',
+          exponent: 18
+        }],
+      base: 'ibc/E5F4162518EBEC60A2A29AE56DBF6A1BF4307E734E72663FC8554F360965D405',
+      name: 'pUsdy (30Sep2025)',
+      display: 'pUSDY30Sep2025',
+      symbol: 'pUSDY-30Sep2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:30Sep2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/914A9D7D3DC511E0A8C781F442EF891F9808CED358CD09A2B967649AD59AABB7',
+          exponent: 0,
+          aliases: ['p:ausdy:31Dec2025']
+        }, {
+          denom: 'pUSDY31Dec2025',
+          exponent: 18
+        }],
+      base: 'ibc/914A9D7D3DC511E0A8C781F442EF891F9808CED358CD09A2B967649AD59AABB7',
+      name: 'pUsdy (31Dec2025)',
+      display: 'pUSDY31Dec2025',
+      symbol: 'pUSDY-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
       denom_units: [{
           denom: 'ibc/D5A593400F53D1BEE29963B3B3EAFEBE9532E016E01570B0016B29B4FA9F9177',
@@ -5173,6 +5313,146 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 31Mar2025',
+      denom_units: [{
+          denom: 'ibc/0ADEE7414CBEB58062FD80DCE7E7865C2CDB47B00A0B89669E633C6022E182F4',
+          exponent: 0,
+          aliases: ['y:ausdy:31Mar2025']
+        }, {
+          denom: 'yUSDY31Mar2025',
+          exponent: 18
+        }],
+      base: 'ibc/0ADEE7414CBEB58062FD80DCE7E7865C2CDB47B00A0B89669E633C6022E182F4',
+      name: 'yUsdy (31Mar2025)',
+      display: 'yUSDY31Mar2025',
+      symbol: 'yUSDY-31Mar2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:31Mar2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/EB4A2D50DA451FCD0070A2B976F70F1C9718B353ED255226B3026A68F49C8DB3',
+          exponent: 0,
+          aliases: ['y:ausdy:30Jun2025']
+        }, {
+          denom: 'yUSDY30Jun2025',
+          exponent: 18
+        }],
+      base: 'ibc/EB4A2D50DA451FCD0070A2B976F70F1C9718B353ED255226B3026A68F49C8DB3',
+      name: 'yUsdy (30Jun2025)',
+      display: 'yUSDY30Jun2025',
+      symbol: 'yUSDY-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 30Sep2025',
+      denom_units: [{
+          denom: 'ibc/381E09486751F7A1F41D24594891D8174C9575C7B512AA84389A4594C5819BBD',
+          exponent: 0,
+          aliases: ['y:ausdy:30Sep2025']
+        }, {
+          denom: 'yUSDY30Sep2025',
+          exponent: 18
+        }],
+      base: 'ibc/381E09486751F7A1F41D24594891D8174C9575C7B512AA84389A4594C5819BBD',
+      name: 'yUsdy (30Sep2025)',
+      display: 'yUSDY30Sep2025',
+      symbol: 'yUSDY-30Sep2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:30Sep2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/A6A6B04F112CFE7E6E568CF26B52CC854B8B2B95BF123D387BB123BD850AE86F',
+          exponent: 0,
+          aliases: ['y:ausdy:31Dec2025']
+        }, {
+          denom: 'yUSDY31Dec2025',
+          exponent: 18
+        }],
+      base: 'ibc/A6A6B04F112CFE7E6E568CF26B52CC854B8B2B95BF123D387BB123BD850AE86F',
+      name: 'yUsdy (31Dec2025)',
+      display: 'yUSDY31Dec2025',
+      symbol: 'yUSDY-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s LP token for USDC / USDC.axl pool',
       denom_units: [{
           denom: 'ibc/8D53F17F82BE9467FFFDBC8F227276F028D3B71A64F1A966072A85FC13AB8EEE',
@@ -6075,6 +6355,76 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-4',
             base_denom: 'lp:23:udatomypt-uatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for USDY Yield pool',
+      denom_units: [{
+          denom: 'ibc/E8ED66263A81378699BC8921309F6191AC4FD912D1C8D8B5FAA4B5CFC32735E4',
+          exponent: 0,
+          aliases: ['lp:31:ausdy']
+        }, {
+          denom: 'lp:31:usdy',
+          exponent: 18
+        }],
+      base: 'ibc/E8ED66263A81378699BC8921309F6191AC4FD912D1C8D8B5FAA4B5CFC32735E4',
+      name: 'USDY Yield LP',
+      display: 'lp:31:usdy',
+      symbol: 'USDY-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'lp:31:ausdy',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for USDY Boost pool',
+      denom_units: [{
+          denom: 'ibc/9282AD2C0B72F17A54BCF7F5D9BFAE57C3C6A2A88649ADEC0920CD227FD70FE6',
+          exponent: 0,
+          aliases: ['lp:32:ausdyypt-uusdc']
+        }, {
+          denom: 'lp:32:usdyypt-usdc',
+          exponent: 18
+        }],
+      base: 'ibc/9282AD2C0B72F17A54BCF7F5D9BFAE57C3C6A2A88649ADEC0920CD227FD70FE6',
+      name: 'USDY Boost LP',
+      display: 'lp:32:usdyypt-usdc',
+      symbol: 'USDY-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'lp:32:ausdyypt-uusdc',
             chain_name: 'pryzm'
           },
           chain: {
@@ -11033,6 +11383,146 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 31Mar2025',
+      denom_units: [{
+          denom: 'ibc/50ECDC99C294D9965F9F5B081A24F01A8392DFD29138B575B5DE204BDDF513BA',
+          exponent: 0,
+          aliases: ['p:ausdy:31Mar2025']
+        }, {
+          denom: 'pUSDY31Mar2025',
+          exponent: 18
+        }],
+      base: 'ibc/50ECDC99C294D9965F9F5B081A24F01A8392DFD29138B575B5DE204BDDF513BA',
+      name: 'pUsdy (31Mar2025)',
+      display: 'pUSDY31Mar2025',
+      symbol: 'pUSDY-31Mar2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:31Mar2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/E04456B3BAEB0398F85404EADFBE1A44155EAB41FE43295885B73770D0277836',
+          exponent: 0,
+          aliases: ['p:ausdy:30Jun2025']
+        }, {
+          denom: 'pUSDY30Jun2025',
+          exponent: 18
+        }],
+      base: 'ibc/E04456B3BAEB0398F85404EADFBE1A44155EAB41FE43295885B73770D0277836',
+      name: 'pUsdy (30Jun2025)',
+      display: 'pUSDY30Jun2025',
+      symbol: 'pUSDY-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 30Sep2025',
+      denom_units: [{
+          denom: 'ibc/E5F4162518EBEC60A2A29AE56DBF6A1BF4307E734E72663FC8554F360965D405',
+          exponent: 0,
+          aliases: ['p:ausdy:30Sep2025']
+        }, {
+          denom: 'pUSDY30Sep2025',
+          exponent: 18
+        }],
+      base: 'ibc/E5F4162518EBEC60A2A29AE56DBF6A1BF4307E734E72663FC8554F360965D405',
+      name: 'pUsdy (30Sep2025)',
+      display: 'pUSDY30Sep2025',
+      symbol: 'pUSDY-30Sep2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:30Sep2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted principal token for USDY with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/914A9D7D3DC511E0A8C781F442EF891F9808CED358CD09A2B967649AD59AABB7',
+          exponent: 0,
+          aliases: ['p:ausdy:31Dec2025']
+        }, {
+          denom: 'pUSDY31Dec2025',
+          exponent: 18
+        }],
+      base: 'ibc/914A9D7D3DC511E0A8C781F442EF891F9808CED358CD09A2B967649AD59AABB7',
+      name: 'pUsdy (31Dec2025)',
+      display: 'pUSDY31Dec2025',
+      symbol: 'pUSDY-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/pUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'p:ausdy:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s refracted yield token for ATOM with maturity of 30Sep2024',
       denom_units: [{
           denom: 'ibc/D5A593400F53D1BEE29963B3B3EAFEBE9532E016E01570B0016B29B4FA9F9177',
@@ -12538,6 +13028,146 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 31Mar2025',
+      denom_units: [{
+          denom: 'ibc/0ADEE7414CBEB58062FD80DCE7E7865C2CDB47B00A0B89669E633C6022E182F4',
+          exponent: 0,
+          aliases: ['y:ausdy:31Mar2025']
+        }, {
+          denom: 'yUSDY31Mar2025',
+          exponent: 18
+        }],
+      base: 'ibc/0ADEE7414CBEB58062FD80DCE7E7865C2CDB47B00A0B89669E633C6022E182F4',
+      name: 'yUsdy (31Mar2025)',
+      display: 'yUSDY31Mar2025',
+      symbol: 'yUSDY-31Mar2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:31Mar2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 30Jun2025',
+      denom_units: [{
+          denom: 'ibc/EB4A2D50DA451FCD0070A2B976F70F1C9718B353ED255226B3026A68F49C8DB3',
+          exponent: 0,
+          aliases: ['y:ausdy:30Jun2025']
+        }, {
+          denom: 'yUSDY30Jun2025',
+          exponent: 18
+        }],
+      base: 'ibc/EB4A2D50DA451FCD0070A2B976F70F1C9718B353ED255226B3026A68F49C8DB3',
+      name: 'yUsdy (30Jun2025)',
+      display: 'yUSDY30Jun2025',
+      symbol: 'yUSDY-30Jun2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:30Jun2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 30Sep2025',
+      denom_units: [{
+          denom: 'ibc/381E09486751F7A1F41D24594891D8174C9575C7B512AA84389A4594C5819BBD',
+          exponent: 0,
+          aliases: ['y:ausdy:30Sep2025']
+        }, {
+          denom: 'yUSDY30Sep2025',
+          exponent: 18
+        }],
+      base: 'ibc/381E09486751F7A1F41D24594891D8174C9575C7B512AA84389A4594C5819BBD',
+      name: 'yUsdy (30Sep2025)',
+      display: 'yUSDY30Sep2025',
+      symbol: 'yUSDY-30Sep2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:30Sep2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s refracted yield token for USDY with maturity of 31Dec2025',
+      denom_units: [{
+          denom: 'ibc/A6A6B04F112CFE7E6E568CF26B52CC854B8B2B95BF123D387BB123BD850AE86F',
+          exponent: 0,
+          aliases: ['y:ausdy:31Dec2025']
+        }, {
+          denom: 'yUSDY31Dec2025',
+          exponent: 18
+        }],
+      base: 'ibc/A6A6B04F112CFE7E6E568CF26B52CC854B8B2B95BF123D387BB123BD850AE86F',
+      name: 'yUsdy (31Dec2025)',
+      display: 'yUSDY31Dec2025',
+      symbol: 'yUSDY-31Dec2025',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/yUsdy.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'y:ausdy:31Dec2025',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
       description: 'Pryzm\'s LP token for USDC / USDC.axl pool',
       denom_units: [{
           denom: 'ibc/8D53F17F82BE9467FFFDBC8F227276F028D3B71A64F1A966072A85FC13AB8EEE',
@@ -13440,6 +14070,76 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-4',
             base_denom: 'lp:23:udatomypt-uatom',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for USDY Yield pool',
+      denom_units: [{
+          denom: 'ibc/E8ED66263A81378699BC8921309F6191AC4FD912D1C8D8B5FAA4B5CFC32735E4',
+          exponent: 0,
+          aliases: ['lp:31:ausdy']
+        }, {
+          denom: 'lp:31:usdy',
+          exponent: 18
+        }],
+      base: 'ibc/E8ED66263A81378699BC8921309F6191AC4FD912D1C8D8B5FAA4B5CFC32735E4',
+      name: 'USDY Yield LP',
+      display: 'lp:31:usdy',
+      symbol: 'USDY-YIELD-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'lp:31:ausdy',
+            chain_name: 'pryzm'
+          },
+          chain: {
+            channel_id: 'channel-473'
+          }
+        }]
+    },
+    {
+      description: 'Pryzm\'s LP token for USDY Boost pool',
+      denom_units: [{
+          denom: 'ibc/9282AD2C0B72F17A54BCF7F5D9BFAE57C3C6A2A88649ADEC0920CD227FD70FE6',
+          exponent: 0,
+          aliases: ['lp:32:ausdyypt-uusdc']
+        }, {
+          denom: 'lp:32:usdyypt-usdc',
+          exponent: 18
+        }],
+      base: 'ibc/9282AD2C0B72F17A54BCF7F5D9BFAE57C3C6A2A88649ADEC0920CD227FD70FE6',
+      name: 'USDY Boost LP',
+      display: 'lp:32:usdyypt-usdc',
+      symbol: 'USDY-BOOST-LP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/pryzm/images/lp.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-4',
+            base_denom: 'lp:32:ausdyypt-uusdc',
             chain_name: 'pryzm'
           },
           chain: {

@@ -15,6 +15,14 @@ const info: AssetList = {
       name: 'Desmos Testnet',
       display: 'daric',
       symbol: 'DARIC',
+      traces: [{
+          type: 'test-mintage',
+          counterparty: {
+            chain_name: 'desmos',
+            base_denom: 'udsm'
+          },
+          provider: 'Desmos'
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/desmos/images/dsm.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/desmos/images/dsm.svg'

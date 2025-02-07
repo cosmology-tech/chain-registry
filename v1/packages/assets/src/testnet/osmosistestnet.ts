@@ -357,42 +357,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of JUNO Chain',
-      denom_units: [{
-          denom: 'ibc/31D220286E6C224C0F72D890D0EB75A228D388089EF5C4D77212344F9EAF0183',
-          exponent: 0,
-          aliases: ['ujunox']
-        }, {
-          denom: 'junox',
-          exponent: 6
-        }],
-      base: 'ibc/31D220286E6C224C0F72D890D0EB75A228D388089EF5C4D77212344F9EAF0183',
-      name: 'Juno Testnet',
-      display: 'junox',
-      symbol: 'JUNOX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
-      },
-      coingecko_id: 'juno-network',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-889',
-            base_denom: 'ujunox',
-            chain_name: 'junotestnet'
-          },
-          chain: {
-            channel_id: 'channel-5498'
-          }
-        }]
-    },
-    {
       description: 'The native token of Lava',
       denom_units: [{
           denom: 'ibc/6E2853D2B0D521D6CD05CFD8597251AD5CC8E3B4141701311679944753A4A03F',
@@ -1076,42 +1040,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-4174'
-          }
-        }]
-    },
-    {
-      description: 'The native token of JUNO Chain',
-      denom_units: [{
-          denom: 'ibc/31D220286E6C224C0F72D890D0EB75A228D388089EF5C4D77212344F9EAF0183',
-          exponent: 0,
-          aliases: ['ujunox']
-        }, {
-          denom: 'junox',
-          exponent: 6
-        }],
-      base: 'ibc/31D220286E6C224C0F72D890D0EB75A228D388089EF5C4D77212344F9EAF0183',
-      name: 'Juno Testnet',
-      display: 'junox',
-      symbol: 'JUNOX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
-      },
-      coingecko_id: 'juno-network',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-889',
-            base_denom: 'ujunox',
-            chain_name: 'junotestnet'
-          },
-          chain: {
-            channel_id: 'channel-5498'
           }
         }]
     },

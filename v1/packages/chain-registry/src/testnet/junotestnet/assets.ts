@@ -16,6 +16,14 @@ const info: AssetList = {
       name: 'Juno Testnet',
       display: 'junox',
       symbol: 'JUNOX',
+      traces: [{
+          type: 'test-mintage',
+          counterparty: {
+            chain_name: 'juno',
+            base_denom: 'ujuno'
+          },
+          provider: 'Juno'
+        }],
       logo_URIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/junotestnet/images/juno.svg'
