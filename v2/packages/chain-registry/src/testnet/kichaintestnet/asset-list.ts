@@ -15,6 +15,14 @@ const info: AssetList = {
       name: 'Ki',
       display: 'tki',
       symbol: 'TKI',
+      traces: [{
+          type: 'test-mintage',
+          counterparty: {
+            chainName: 'kichain',
+            baseDenom: 'uxki'
+          },
+          provider: 'Ki Chain'
+        }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'

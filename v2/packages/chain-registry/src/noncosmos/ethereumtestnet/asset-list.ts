@@ -82,12 +82,12 @@ const info: AssetList = {
       display: 'ausdc',
       symbol: 'aUSDC',
       traces: [{
-          type: 'synthetic',
+          type: 'test-mintage',
           counterparty: {
-            chainName: 'forex',
-            baseDenom: 'USD'
+            chainName: 'ethereum',
+            baseDenom: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
           },
-          provider: 'Circle'
+          provider: 'Ethereum'
         }],
       logoURIs: {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'

@@ -188,6 +188,10 @@ const info: Chain = {
       {
         address: 'https://terraclassic-rpc-server-01.stakely.io',
         provider: 'Stakely'
+      },
+      {
+        address: 'https://api-lunc-rpc.binodes.com',
+        provider: 'BInodes'
       }
     ],
     rest: [
@@ -206,6 +210,10 @@ const info: Chain = {
       {
         address: 'https://terraclassic-lcd-server-01.stakely.io',
         provider: 'Stakely'
+      },
+      {
+        address: 'https://api-lunc-lcd.binodes.com',
+        provider: 'BInodes'
       }
     ],
     grpc: [
@@ -224,6 +232,10 @@ const info: Chain = {
       {
         address: 'terraclassic-mainnet-grpc.autostake.com:443',
         provider: 'AutoStake 🛡️ Slash Protected'
+      },
+      {
+        address: 'api-lunc-grpc.binodes.com:443',
+        provider: 'BInodes'
       }
     ]
   },
