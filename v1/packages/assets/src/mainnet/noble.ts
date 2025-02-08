@@ -15164,52 +15164,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'USDC issued on Oraichain.',
-      denom_units: [{
-          denom: 'ibc/E1616E7C19EA474C565737709A628D6F8A23FF9D3E9A7A6871306CF5E0A5341E',
-          exponent: 0,
-          aliases: ['cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd']
-        }, {
-          denom: 'usdc',
-          exponent: 6
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.orai195269awwnt5m6c843q6w7hp8rt0k7syfu9de4h0wz384slshuzps8y7ccm',
-            channel_id: 'channel-147',
-            base_denom: 'cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-            chain_name: 'oraichain'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-34'
-          }
-        }],
-      type_asset: 'cw20',
-      address: 'orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-      base: 'ibc/E1616E7C19EA474C565737709A628D6F8A23FF9D3E9A7A6871306CF5E0A5341E',
-      name: 'Usdc',
-      display: 'usdc',
-      symbol: 'USDC',
-      images: [{
-          image_sync: {
-            chain_name: 'noble',
-            base_denom: 'uusdc'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          theme: {
-            circle: true,
-            primary_color_hex: '#2775CA'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      }
-    },
-    {
       description: 'The KAWAII token is the cw20 token for the Oraichain.',
       denom_units: [{
           denom: 'ibc/AFC8DAAA06E75C0FF70913E1D1FFC2C919114F9CFDA5F7B32688301DBE1179CD',
@@ -15734,52 +15688,6 @@ const assets: AssetList = {
             channel_id: 'channel-34'
           }
         }]
-    },
-    {
-      description: 'USDC issued on Oraichain.',
-      denom_units: [{
-          denom: 'ibc/E1616E7C19EA474C565737709A628D6F8A23FF9D3E9A7A6871306CF5E0A5341E',
-          exponent: 0,
-          aliases: ['cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd']
-        }, {
-          denom: 'usdc',
-          exponent: 6
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.orai195269awwnt5m6c843q6w7hp8rt0k7syfu9de4h0wz384slshuzps8y7ccm',
-            channel_id: 'channel-147',
-            base_denom: 'cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-            chain_name: 'oraichain'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-34'
-          }
-        }],
-      type_asset: 'cw20',
-      address: 'orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-      base: 'ibc/E1616E7C19EA474C565737709A628D6F8A23FF9D3E9A7A6871306CF5E0A5341E',
-      name: 'Usdc',
-      display: 'usdc',
-      symbol: 'USDC',
-      images: [{
-          image_sync: {
-            chain_name: 'noble',
-            base_denom: 'uusdc'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          theme: {
-            circle: true,
-            primary_color_hex: '#2775CA'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      }
     },
     {
       description: 'The KAWAII token is the cw20 token for the Oraichain.',

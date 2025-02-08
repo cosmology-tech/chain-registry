@@ -10152,52 +10152,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'USDC issued on Oraichain.',
-      denom_units: [{
-          denom: 'ibc/CD9D1E0002518A1442F9086A32394CCC564C1D171690DB89CBC0B2817DC8E5FC',
-          exponent: 0,
-          aliases: ['cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd']
-        }, {
-          denom: 'usdc',
-          exponent: 6
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'transfer',
-            channel_id: 'channel-140',
-            base_denom: 'cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-            chain_name: 'oraichain'
-          },
-          chain: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-222'
-          }
-        }],
-      type_asset: 'cw20',
-      address: 'orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-      base: 'ibc/CD9D1E0002518A1442F9086A32394CCC564C1D171690DB89CBC0B2817DC8E5FC',
-      name: 'Usdc',
-      display: 'usdc',
-      symbol: 'USDC',
-      images: [{
-          image_sync: {
-            chain_name: 'noble',
-            base_denom: 'uusdc'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          theme: {
-            circle: true,
-            primary_color_hex: '#2775CA'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      }
-    },
-    {
       description: 'The KAWAII token is the cw20 token for the Oraichain.',
       denom_units: [{
           denom: 'ibc/E87B465C619D3D094C81FA71DBECE858BF95BA7ACD092CCBCC006D3AB0476171',
@@ -13618,52 +13572,6 @@ const assets: AssetList = {
             channel_id: 'channel-222'
           }
         }]
-    },
-    {
-      description: 'USDC issued on Oraichain.',
-      denom_units: [{
-          denom: 'ibc/CD9D1E0002518A1442F9086A32394CCC564C1D171690DB89CBC0B2817DC8E5FC',
-          exponent: 0,
-          aliases: ['cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd']
-        }, {
-          denom: 'usdc',
-          exponent: 6
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'transfer',
-            channel_id: 'channel-140',
-            base_denom: 'cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-            chain_name: 'oraichain'
-          },
-          chain: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-222'
-          }
-        }],
-      type_asset: 'cw20',
-      address: 'orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-      base: 'ibc/CD9D1E0002518A1442F9086A32394CCC564C1D171690DB89CBC0B2817DC8E5FC',
-      name: 'Usdc',
-      display: 'usdc',
-      symbol: 'USDC',
-      images: [{
-          image_sync: {
-            chain_name: 'noble',
-            base_denom: 'uusdc'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          theme: {
-            circle: true,
-            primary_color_hex: '#2775CA'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      }
     },
     {
       description: 'The KAWAII token is the cw20 token for the Oraichain.',

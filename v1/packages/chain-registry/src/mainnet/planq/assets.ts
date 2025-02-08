@@ -2,8 +2,7 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'planq',
-  assets: [
-    {
+  assets: [{
       description: 'The native EVM, governance and staking token of the Planq Network',
       extended_description: 'Planq is the very first cryptocurrency project to keep mobile platform usability at heart, taking a step away from dependency on desktop services. By focusing on easy accessibility and close integration of other blockchains via easy to use bridges, Planq will push Web 3 adoption in the mobile space to the next level.',
       denom_units: [{
@@ -34,8 +33,7 @@ const info: AssetList = {
         twitter: 'https://twitter.com/planqfoundation'
       },
       type_asset: 'sdk.coin'
-    },
-    {
+    }, {
       description: 'The token of Source Protocol bridged from BSC.',
       denom_units: [{
           denom: 'erc20/0x091F9A57A3F58d758b6572E9d41675918EAC7F09',
@@ -74,49 +72,6 @@ const info: AssetList = {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
       },
       type_asset: 'sdk.coin'
-    },
-    {
-      description: 'MEME Token (MEME) is the native staking token of the MEME Chain',
-      denom_units: [{
-          denom: 'ibc/747FF58D3F211497581252CEBE11D7E785FC1E53AC5C29497A361E3830F1AF4A',
-          exponent: 0
-        }, {
-          denom: 'meme',
-          exponent: 6
-        }],
-      base: 'ibc/747FF58D3F211497581252CEBE11D7E785FC1E53AC5C29497A361E3830F1AF4A',
-      name: 'MEME',
-      display: 'meme',
-      symbol: 'MEME',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg'
-      },
-      type_asset: 'ics20',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chain_name: 'meme',
-            base_denom: 'umeme',
-            channel_id: 'channel-11'
-          },
-          chain: {
-            channel_id: 'channel-64',
-            path: 'transfer/channel-64/umeme'
-          }
-        }],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/meme/images/meme.svg',
-          image_sync: {
-            chain_name: 'meme',
-            base_denom: 'umeme'
-          },
-          theme: {
-            primary_color_hex: '#b7dcd8'
-          }
-        }]
-    }
-  ]
+    }]
 };
 export default info;

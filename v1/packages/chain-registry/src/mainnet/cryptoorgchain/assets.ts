@@ -2,8 +2,7 @@ import { AssetList } from '@chain-registry/types';
 const info: AssetList = {
   $schema: '../assetlist.schema.json',
   chain_name: 'cryptoorgchain',
-  assets: [
-    {
+  assets: [{
       description: 'CRO is the native token of the Crypto.org Chain, referred to as Native CRO.',
       denom_units: [{
           denom: 'basecro',
@@ -33,8 +32,7 @@ const info: AssetList = {
         twitter: 'https://twitter.com/cronos_chain'
       },
       type_asset: 'sdk.coin'
-    },
-    {
+    }, {
       description: 'Synthetic XLM pegged 1:1 by Crypto.com',
       denom_units: [{
           denom: 'baseXLM',
@@ -72,50 +70,6 @@ const info: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/stellar/images/xlm.svg'
       },
       type_asset: 'sdk.coin'
-    },
-    {
-      description: 'The native token of Stellar network, transferred via Solo Machine.',
-      denom_units: [{
-          denom: 'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
-          exponent: 0,
-          aliases: ['stroop']
-        }, {
-          denom: 'lumen',
-          exponent: 7
-        }],
-      type_asset: 'ics20',
-      base: 'ibc/34A1D4BF5FFCDB912F64FE71D54426D56970F873F1279983B69C713B3A62D10D',
-      name: 'Lumen (Solo Machine)',
-      display: 'lumen',
-      symbol: 'XLM',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chain_name: 'cryptoorgchain',
-            base_denom: 'baseXLM',
-            channel_id: 'channel-JEnb'
-          },
-          chain: {
-            channel_id: 'channel-46',
-            path: 'transfer/channel-46/baseXLM'
-          }
-        }],
-      images: [{
-          image_sync: {
-            chain_name: 'stellar',
-            base_denom: 'stroop'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/stellar/images/xlm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/stellar/images/xlm.svg',
-          theme: {
-            primary_color_hex: '#040404'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/stellar/images/xlm.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/stellar/images/xlm.svg'
-      }
-    }
-  ]
+    }]
 };
 export default info;
