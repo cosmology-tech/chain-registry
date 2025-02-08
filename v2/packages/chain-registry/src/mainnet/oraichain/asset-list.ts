@@ -292,50 +292,6 @@ const info: AssetList = {
       }
     },
     {
-      description: 'USDC issued on Oraichain.',
-      denomUnits: [{
-          denom: 'cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-          exponent: 0
-        }, {
-          denom: 'usdc',
-          exponent: 6
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'noble',
-            baseDenom: 'uusdc',
-            channelId: 'channel-34'
-          },
-          chain: {
-            channelId: 'channel-301',
-            path: 'transfer/channel-301/uusdc'
-          }
-        }],
-      typeAsset: 'cw20',
-      address: 'orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-      base: 'cw20:orai15un8msx3n5zf9ahlxmfeqd2kwa5wm0nrpxer304m9nd5q6qq0g6sku5pdd',
-      name: 'Usdc',
-      display: 'usdc',
-      symbol: 'USDC',
-      images: [{
-          imageSync: {
-            chainName: 'noble',
-            baseDenom: 'uusdc'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          theme: {
-            circle: true,
-            primaryColorHex: '#2775CA'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      }
-    },
-    {
       description: 'The KAWAII token is the cw20 token for the Oraichain.',
       denomUnits: [{
           denom: 'cw20:orai1nd4r053e3kgedgld2ymen8l9yrw8xpjyaal7j5',

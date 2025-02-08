@@ -1225,46 +1225,6 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'Axelar Bridged wBTC',
-      denomUnits: [{
-          denom: 'ibc/301DAF9CB0A9E247CD478533EF0E21F48FF8118C4A51F77C8BC3EB70E5566DBC',
-          exponent: 0
-        }, {
-          denom: 'wbtc.axl',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/301DAF9CB0A9E247CD478533EF0E21F48FF8118C4A51F77C8BC3EB70E5566DBC',
-      name: 'Axelar Bridged wBTC',
-      display: 'wbtc.axl',
-      symbol: 'wBTC.axl',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'axelar',
-            baseDenom: 'wbtc-satoshi',
-            channelId: 'channel-14'
-          },
-          chain: {
-            channelId: 'channel-32',
-            path: 'transfer/channel-9/wbtc-satoshi'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png'
-      },
-      images: [{
-          imageSync: {
-            chainName: 'axelar',
-            baseDenom: 'wbtc-satoshi'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png',
-          theme: {
-            primaryColorHex: '#41394d'
-          }
-        }]
-    },
-    {
       description: 'Stride staked OSMO',
       denomUnits: [{
           denom: 'ibc/F97BDCE220CCB52139C73066E36C45EC7EDCEEF1DAFF891A34F4FBA195A2E6E8',

@@ -29,12 +29,19 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/axelarnetwork/axelar-core',
-    recommendedVersion: 'v1.0.2',
-    compatibleVersions: ['v1.0.2'],
+    recommendedVersion: 'v1.0.5',
+    compatibleVersions: [
+      'v1.0.0',
+      'v1.0.1',
+      'v1.0.2',
+      'v1.0.3',
+      'v1.0.4',
+      'v1.0.5'
+    ],
     binaries: {
-      "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-linux-amd64-v1.0.2',
-      "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-amd64-v1.0.2',
-      "darwin/arm64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.2/axelard-darwin-arm64-v1.0.2'
+      "linux/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.5/axelard-linux-amd64-v1.0.5',
+      "darwin/amd64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.5/axelard-darwin-amd64-v1.0.5',
+      "darwin/arm64": 'https://github.com/axelarnetwork/axelar-core/releases/download/v1.0.5/axelard-darwin-arm64-v1.0.5'
     },
     consensus: {
       type: 'cometbft',
@@ -47,7 +54,7 @@ const info: Chain = {
       type: 'cosmos',
       repo: 'https://github.com/axelarnetwork/cosmos-sdk',
       version: 'v0.45.17',
-      tag: 'v0.45.17-0.20240321205000-47c0c80e20ca'
+      tag: 'v0.45.17-0.20241127184440-bd1464cb7b4b'
     },
     ibc: {
       type: 'go',

@@ -224,49 +224,6 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'NBTC on Neutron',
-      denomUnits: [{
-          denom: 'ibc/DDC3C60EE82BF544F1A0C6A983FF500EF1C14DE20071A5E1E7C0FB470E36E920',
-          exponent: 0,
-          aliases: ['usat']
-        }, {
-          denom: 'sat',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/DDC3C60EE82BF544F1A0C6A983FF500EF1C14DE20071A5E1E7C0FB470E36E920',
-      name: 'Nomic NBTC',
-      display: 'sat',
-      symbol: 'SAT',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'nomic',
-            baseDenom: 'usat',
-            channelId: 'channel-2'
-          },
-          chain: {
-            channelId: 'channel-42',
-            path: 'transfer/channel-42/usat'
-          }
-        }],
-      images: [{
-          imageSync: {
-            chainName: 'nomic',
-            baseDenom: 'usat'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg',
-          theme: {
-            primaryColorHex: '#8436e6'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nbtc.svg'
-      }
-    },
-    {
       description: 'DYDX on Neutron',
       denomUnits: [{
           denom: 'ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130',

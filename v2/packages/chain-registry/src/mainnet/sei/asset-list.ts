@@ -130,46 +130,6 @@ const info: AssetList = {
       typeAsset: 'sdk.coin'
     },
     {
-      description: 'The first memecoin on osmosis.',
-      denomUnits: [{
-          denom: 'ibc/B023C57727A38A9CF87238F9008477C3761AD4774D528BFA458DD707D90B553A',
-          exponent: 0
-        }, {
-          denom: 'WOSMO',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/B023C57727A38A9CF87238F9008477C3761AD4774D528BFA458DD707D90B553A',
-      name: 'Wosmo',
-      display: 'WOSMO',
-      symbol: 'WOSMO',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'osmosis',
-            baseDenom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO',
-            channelId: 'channel-0'
-          },
-          chain: {
-            channelId: 'channel-782',
-            path: 'transfer/channel-782/factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
-          }
-        }],
-      images: [{
-          imageSync: {
-            chainName: 'osmosis',
-            baseDenom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png',
-          theme: {
-            primaryColorHex: '#edd5ee'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
-      }
-    },
-    {
       description: 'OOZARU is a meme token on SEI Network inspired by the iconic transformation in the Dragon Ball series',
       denomUnits: [{
           denom: 'sei1wlf9j5uv50rcg0u5j6xk00px5tflptzprj39keck27eg8g7qd7hqq6kvda',

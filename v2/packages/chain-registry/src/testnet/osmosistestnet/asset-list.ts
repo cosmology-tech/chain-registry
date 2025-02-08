@@ -485,44 +485,6 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'The native token of Chain4Energy',
-      denomUnits: [{
-          denom: 'ibc/E3D323CB6F427C49E56F913C853A416F6B71BAA9B0164625AD0203266F92B3ED',
-          exponent: 0,
-          aliases: ['uc4e']
-        }, {
-          denom: 'c4e',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/E3D323CB6F427C49E56F913C853A416F6B71BAA9B0164625AD0203266F92B3ED',
-      name: 'Chain4Energy Testnet',
-      display: 'c4e',
-      symbol: 'C4E',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'chain4energytestnet',
-            baseDenom: 'uc4e',
-            channelId: 'channel-0'
-          },
-          chain: {
-            channelId: 'channel-111',
-            path: 'transfer/channel-111/uc4e'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
-      },
-      images: [{
-          imageSync: {
-            chainName: 'chain4energytestnet',
-            baseDenom: 'uc4e'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/chain4energytestnet/images/c4e.png'
-        }]
-    },
-    {
       description: 'The XPRT token is primarily a governance token for the Persistence chain.',
       denomUnits: [{
           denom: 'ibc/754C8533F8A418B03AD5F2C6AA19D4703CF78BBAB9E2E4DDD6212AAC2E502CA6',
@@ -560,45 +522,6 @@ const info: AssetList = {
           },
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/xprt.svg'
-        }]
-    },
-    {
-      description: 'The native staking token of the Xion network.',
-      denomUnits: [{
-          denom: 'ibc/3642669AD14386D3E38F43F30CFCA859B3E8A05BF6BD6A23DEBD2115AD1325E9',
-          exponent: 0,
-          aliases: ['microxion', 'uxion']
-        }, {
-          denom: 'XION',
-          exponent: 6,
-          aliases: ['xion']
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/3642669AD14386D3E38F43F30CFCA859B3E8A05BF6BD6A23DEBD2115AD1325E9',
-      name: 'Xion Testnet',
-      display: 'XION',
-      symbol: 'XION',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'xiontestnet',
-            baseDenom: 'uxion',
-            channelId: 'channel-12'
-          },
-          chain: {
-            channelId: 'channel-4410',
-            path: 'transfer/channel-4410/uxion'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
-      },
-      images: [{
-          imageSync: {
-            chainName: 'xiontestnet',
-            baseDenom: 'uxion'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/xion/images/burnt-round.png'
         }]
     },
     {
@@ -714,92 +637,6 @@ const info: AssetList = {
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg'
         }],
       typeAsset: 'sdk.coin'
-    },
-    {
-      description: 'The yield token for ATOM denominated vaults on Amulet Protocol',
-      denomUnits: [{
-          denom: 'ibc/C86B92F7FCFC1993DAC4AB0D78D9BC080300354B823A57F12CD6E2FBB667214E',
-          exponent: 0
-        }, {
-          denom: 'amATOM',
-          exponent: 6
-        }],
-      base: 'ibc/C86B92F7FCFC1993DAC4AB0D78D9BC080300354B823A57F12CD6E2FBB667214E',
-      name: 'amATOM (Testnet)',
-      display: 'amATOM',
-      symbol: 'amATOM',
-      typeAsset: 'ics20',
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.svg'
-      },
-      images: [{
-          imageSync: {
-            chainName: 'neutrontestnet',
-            baseDenom: 'factory/neutron15lku24mqhvy4v4gryrqs4662n9v9q4ux9tayn89cmdzldjcgawushxvm76/amatom'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/amATOM.svg'
-        }],
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'neutrontestnet',
-            baseDenom: 'factory/neutron15lku24mqhvy4v4gryrqs4662n9v9q4ux9tayn89cmdzldjcgawushxvm76/amatom',
-            channelId: 'channel-787'
-          },
-          chain: {
-            channelId: 'channel-7884',
-            path: 'transfer/channel-7884/factory/neutron15lku24mqhvy4v4gryrqs4662n9v9q4ux9tayn89cmdzldjcgawushxvm76/amatom'
-          }
-        }]
-    },
-    {
-      description: 'The native EVM, governance and staking token of the Titan Chain',
-      denomUnits: [
-        {
-          denom: 'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6',
-          exponent: 0,
-          aliases: ['atkx']
-        },
-        {
-          denom: 'utkx',
-          exponent: 12,
-          aliases: ['microtkx']
-        },
-        {
-          denom: 'mtkx',
-          exponent: 15,
-          aliases: ['millitkx']
-        },
-        {
-          denom: 'tkx',
-          exponent: 18
-        }
-      ],
-      typeAsset: 'ics20',
-      base: 'ibc/28EEF762052DB8C3D27A7BF625E9F86A1B3B689CC8D80C818CEDF2EB6CBA02A6',
-      name: 'tkx',
-      display: 'tkx',
-      symbol: 'TKX',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'titan',
-            baseDenom: 'atkx',
-            channelId: 'channel-2'
-          },
-          chain: {
-            channelId: 'channel-5969',
-            path: 'transfer/channel-5969/atkx'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/titantestnet/images/tkx.png'
-        }]
     },
     {
       description: 'Manifest Testnet Token',

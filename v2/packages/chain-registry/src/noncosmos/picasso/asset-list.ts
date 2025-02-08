@@ -71,7 +71,7 @@ const info: AssetList = {
       display: 'dot',
       symbol: 'DOT',
       traces: [{
-          type: 'ibc',
+          type: 'ibc-bridge',
           counterparty: {
             chainName: 'composablepolkadot',
             baseDenom: '79228162514264337593543950342',
@@ -80,7 +80,8 @@ const info: AssetList = {
           chain: {
             channelId: 'channel-15',
             path: 'transfer/channel-15/79228162514264337593543950342'
-          }
+          },
+          provider: 'Picasso'
         }],
       images: [{
           imageSync: {

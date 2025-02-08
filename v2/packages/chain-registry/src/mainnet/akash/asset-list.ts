@@ -33,49 +33,6 @@ const info: AssetList = {
         twitter: 'https://twitter.com/akashnet_'
       },
       typeAsset: 'sdk.coin'
-    }, {
-      description: 'Tether USDt on Akash',
-      denomUnits: [{
-          denom: 'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5',
-          exponent: 0
-        }, {
-          denom: 'usdt',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/05DB6975261B805B6F6A157A4386C627F8A70BF8118D411655EFEDCA82BFABA5',
-      name: 'Tether USDt',
-      display: 'usdt',
-      symbol: 'USDt',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'kava',
-            baseDenom: 'erc20/tether/usdt',
-            channelId: 'channel-5'
-          },
-          chain: {
-            channelId: 'channel-37',
-            path: 'transfer/channel-37/erc20/tether/usdt'
-          }
-        }],
-      images: [{
-          imageSync: {
-            chainName: 'kava',
-            baseDenom: 'erc20/tether/usdt'
-          },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
-          theme: {
-            circle: true,
-            primaryColorHex: '#009393',
-            backgroundColorHex: '#009393'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
-      }
     }]
 };
 export default info;

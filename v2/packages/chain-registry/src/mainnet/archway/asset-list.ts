@@ -120,46 +120,6 @@ const info: AssetList = {
         }]
     },
     {
-      description: 'The first memecoin on osmosis.',
-      denomUnits: [{
-          denom: 'ibc/D2BCFE34F35AF2968C8E1F84557D8A2058BB56F739EB553206EFC2AD8C6EDAF0',
-          exponent: 0
-        }, {
-          denom: 'WOSMO',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/D2BCFE34F35AF2968C8E1F84557D8A2058BB56F739EB553206EFC2AD8C6EDAF0',
-      name: 'Wosmo',
-      display: 'WOSMO',
-      symbol: 'WOSMO',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'osmosis',
-            baseDenom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO',
-            channelId: 'channel-1'
-          },
-          chain: {
-            channelId: 'channel-1429',
-            path: 'transfer/channel-1429/factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
-          }
-        }],
-      images: [{
-          imageSync: {
-            chainName: 'osmosis',
-            baseDenom: 'factory/osmo1pfyxruwvtwk00y8z06dh2lqjdj82ldvy74wzm3/WOSMO'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png',
-          theme: {
-            primaryColorHex: '#edd5ee'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/wosmo.png'
-      }
-    },
-    {
       description: 'The native token of Vidulum',
       denomUnits: [{
           denom: 'ibc/1BCF1FCAFE3568E234787EDFDA12460BD8931B17FE6A729DCD60FAD845558DA1',

@@ -838,7 +838,7 @@ const info: AssetList = {
           counterparty: {
             chainName: 'terra2',
             baseDenom: 'factory/terra1zly98gvcec54m3caxlqexce7rus6rzgplz7eketsdz7nh750h2rqvu8uzx/1/stable/amplp',
-            channelId: 'channel-87'
+            channelId: 'channel-86'
           },
           chain: {
             channelId: 'channel-0',
@@ -865,7 +865,7 @@ const info: AssetList = {
           counterparty: {
             chainName: 'terra2',
             baseDenom: 'factory/terra1zly98gvcec54m3caxlqexce7rus6rzgplz7eketsdz7nh750h2rqvu8uzx/21/single/amplp',
-            channelId: 'channel-87'
+            channelId: 'channel-86'
           },
           chain: {
             channelId: 'channel-0',
@@ -892,7 +892,7 @@ const info: AssetList = {
           counterparty: {
             chainName: 'terra2',
             baseDenom: 'factory/terra1zly98gvcec54m3caxlqexce7rus6rzgplz7eketsdz7nh750h2rqvu8uzx/30/single/amplp',
-            channelId: 'channel-87'
+            channelId: 'channel-86'
           },
           chain: {
             channelId: 'channel-0',

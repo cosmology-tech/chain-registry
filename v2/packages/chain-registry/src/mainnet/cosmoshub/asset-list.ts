@@ -161,43 +161,6 @@ const info: AssetList = {
             primaryColorHex: '#04fbfb'
           }
         }]
-    },
-    {
-      description: 'The native token of Dungeon Chain',
-      denomUnits: [{
-          denom: 'ibc/7A64BFC809209157A1330CE199891B699A2C3B55C384EAFCCDD23ECDC735BA73',
-          exponent: 0,
-          aliases: ['udgn']
-        }, {
-          denom: 'dgn',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/7A64BFC809209157A1330CE199891B699A2C3B55C384EAFCCDD23ECDC735BA73',
-      name: 'Dungeon',
-      display: 'dgn',
-      symbol: 'DGN',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'dungeon',
-            baseDenom: 'udgn',
-            channelId: 'channel-1'
-          },
-          chain: {
-            channelId: 'channel-1200',
-            path: 'transfer/channel-1200/udgn'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dungeon/images/DGN.png',
-          theme: {
-            primaryColorHex: '#1c1c1c'
-          }
-        }]
     }
   ]
 };

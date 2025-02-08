@@ -2,8 +2,7 @@ import { AssetList } from '@chain-registry/v2-types';
 const info: AssetList = {
   $schema: '../../assetlist.schema.json',
   chainName: 'archwaytestnet',
-  assets: [
-    {
+  assets: [{
       description: 'The native token of Archway Test Network.',
       denomUnits: [
         {
@@ -51,8 +50,7 @@ const info: AssetList = {
         twitter: 'https://twitter.com/archwayHQ'
       },
       typeAsset: 'sdk.coin'
-    },
-    {
+    }, {
       description: 'Wrapped CONST (Archway Testnet token)',
       typeAsset: 'cw20',
       address: 'archway1dz6h2smr432gvzruklk3lps7ak2ca7cngdge4vym93wehkkypwpqgwr2q2',
@@ -90,90 +88,6 @@ const info: AssetList = {
             primaryColorHex: '#000000'
           }
         }]
-    },
-    {
-      description: 'Circle\'s USDC Noble Testnet (Grand) on Archway Testnet',
-      denomUnits: [{
-          denom: 'ibc/34F8D3402273FFA5278AE5757D81CE151ACFD4B19C494C0EE372A7229714824F',
-          exponent: 0,
-          aliases: ['uusdc']
-        }, {
-          denom: 'usdc',
-          exponent: 6
-        }],
-      typeAsset: 'ics20',
-      base: 'ibc/34F8D3402273FFA5278AE5757D81CE151ACFD4B19C494C0EE372A7229714824F',
-      name: 'USDC (Noble)',
-      display: 'usdc',
-      symbol: 'USDC',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            chainName: 'nobletestnet',
-            baseDenom: 'uusdc',
-            channelId: 'channel-215'
-          },
-          chain: {
-            channelId: 'channel-500',
-            path: 'transfer/channel-500/uusdc'
-          }
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg'
-      },
-      images: [{
-          imageSync: {
-            chainName: 'noble',
-            baseDenom: 'uusdc'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-          theme: {
-            circle: true,
-            primaryColorHex: '#2775CA'
-          }
-        }]
-    },
-    {
-      description: 'Wrapped USDC (Noble Testnet Grand)',
-      typeAsset: 'cw20',
-      address: 'archway172vetupqnkgdc7dp3gwqpvk5ljmgzyj2gs4ag2fdmp0s2rucxxsqh0nqeu',
-      denomUnits: [{
-          denom: 'cw20:archway172vetupqnkgdc7dp3gwqpvk5ljmgzyj2gs4ag2fdmp0s2rucxxsqh0nqeu',
-          exponent: 0
-        }, {
-          denom: 'wUSDC',
-          exponent: 6
-        }],
-      base: 'cw20:archway172vetupqnkgdc7dp3gwqpvk5ljmgzyj2gs4ag2fdmp0s2rucxxsqh0nqeu',
-      name: 'Wrapped USDC',
-      display: 'wUSDC',
-      symbol: 'wUSDC',
-      traces: [{
-          type: 'wrapped',
-          counterparty: {
-            chainName: 'archwaytestnet',
-            baseDenom: 'ibc/34F8D3402273FFA5278AE5757D81CE151ACFD4B19C494C0EE372A7229714824F'
-          },
-          provider: 'Archway'
-        }],
-      logoURIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/wUsdc-noble.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/wUsdc-noble.svg'
-      },
-      images: [{
-          imageSync: {
-            chainName: 'archway',
-            baseDenom: 'cw20:archway1gaf9nw7n8v5lpjz9caxjpps006kxfcrzcuc8y5qp4clslhven2ns2g0ule'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/wUsdc-noble.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/archway/images/wUsdc-noble.svg',
-          theme: {
-            primaryColorHex: '#000000'
-          }
-        }]
-    }
-  ]
+    }]
 };
 export default info;
