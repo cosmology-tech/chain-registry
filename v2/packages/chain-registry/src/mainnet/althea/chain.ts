@@ -39,10 +39,10 @@ const info: Chain = {
     }],
   codebase: {
     gitRepo: 'https://github.com/AltheaFoundation/althea-L1',
-    recommendedVersion: 'v1.3.0',
-    compatibleVersions: ['v1.3.0'],
+    recommendedVersion: 'v1.5.1',
+    compatibleVersions: ['v1.5.1'],
     binaries: {
-      "linux/amd64": 'https://github.com/AltheaFoundation/althea-L1/releases/download/v1.3.0/althea-linux-amd64'
+      "linux/amd64": 'https://github.com/AltheaFoundation/althea-L1/releases/download/v1.5.1/althea-linux-amd64'
     },
     genesis: {
       genesisUrl: 'https://github.com/AltheaFoundation/althea-L1-docs/blob/main/althea-l1-mainnet-genesis.json'
@@ -87,6 +87,11 @@ const info: Chain = {
       url: 'https://staking-explorer.com/explorer/althea',
       txPage: 'https://staking-explorer.com/transaction.php?chain=althea&tx=${txHash}',
       accountPage: 'https://staking-explorer.com/account.php?chain=althea&addr=${accountAddress}'
+    }, {
+      kind: 'mintscan',
+      url: 'https://www.mintscan.io/althea',
+      txPage: 'https://www.mintscan.io/althea/transactions/${txHash}',
+      accountPage: 'https://www.mintscan.io/althea/accounts/${accountAddress}'
     }]
 };
 export default info;

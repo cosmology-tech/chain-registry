@@ -88,7 +88,7 @@ const info: Chain = {
       },
       {
         address: 'https://elys.rpc.vnodesv.net:443',
-        provider: 'vNodes[V] > s[E]vices'
+        provider: 'vNodes[V] [S]er|V|ice[S]'
       },
       {
         address: 'https://elys-mainnet-rpc.itrocket.net:443',
@@ -158,7 +158,7 @@ const info: Chain = {
       },
       {
         address: 'https://elys.rest.vnodesv.net:443',
-        provider: 'vNodes[V] > s[E]vices'
+        provider: 'vNodes[V] [S]er|V|ice[S]'
       },
       {
         address: 'https://elys-mainnet-api.itrocket.net',
