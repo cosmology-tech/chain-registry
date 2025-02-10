@@ -3,22 +3,50 @@ const info: IBCData[] = [
   {
     $schema: '../../ibc_data.schema.json',
     chain1: {
-      chainName: 'cosmoshubtestnet',
-      clientId: '07-tendermint-160',
-      connectionId: 'connection-108'
+      chainName: 'archwaytestnet',
+      clientId: '07-tendermint-139',
+      connectionId: 'connection-144'
     },
     chain2: {
-      chainName: 'symphonytestnet',
-      clientId: '07-tendermint-1',
-      connectionId: 'connection-1'
+      chainName: 'symphonytestnet3',
+      clientId: '07-tendermint-25',
+      connectionId: 'connection-12'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-242',
+          channelId: 'channel-495',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-1',
+          channelId: 'channel-10',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
+        }
+      }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'cosmoshubtestnet',
+      clientId: '07-tendermint-3730',
+      connectionId: 'connection-3782'
+    },
+    chain2: {
+      chainName: 'symphonytestnet3',
+      clientId: '07-tendermint-10',
+      connectionId: 'connection-9'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-4300',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-7',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -32,21 +60,21 @@ const info: IBCData[] = [
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'junotestnet',
-      clientId: '07-tendermint-794',
-      connectionId: 'connection-872'
+      clientId: '07-tendermint-789',
+      connectionId: 'connection-868'
     },
     chain2: {
-      chainName: 'symphonytestnet',
-      clientId: '07-tendermint-3',
-      connectionId: 'connection-3'
+      chainName: 'symphonytestnet3',
+      clientId: '07-tendermint-28',
+      connectionId: 'connection-13'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-946',
+          channelId: 'channel-943',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-3',
+          channelId: 'channel-11',
           portId: 'transfer'
         },
         ordering: 'unordered',
@@ -60,17 +88,17 @@ const info: IBCData[] = [
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'osmosistestnet',
-      clientId: '07-tendermint-4155',
-      connectionId: 'connection-3614'
+      clientId: '07-tendermint-3946',
+      connectionId: 'connection-3419'
     },
     chain2: {
-      chainName: 'symphonytestnet',
+      chainName: 'symphonytestnet3',
       clientId: '07-tendermint-0',
       connectionId: 'connection-0'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-9540',
+          channelId: 'channel-8743',
           portId: 'transfer'
         },
         chain2: {
@@ -90,21 +118,21 @@ const info: IBCData[] = [
     $schema: '../../ibc_data.schema.json',
     chain1: {
       chainName: 'stargazetestnet',
-      clientId: '07-tendermint-962',
-      connectionId: 'connection-955'
+      clientId: '07-tendermint-952',
+      connectionId: 'connection-947'
     },
     chain2: {
-      chainName: 'symphonytestnet',
-      clientId: '07-tendermint-2',
-      connectionId: 'connection-2'
+      chainName: 'symphonytestnet3',
+      clientId: '07-tendermint-4',
+      connectionId: 'connection-4'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-1006',
+          channelId: 'channel-998',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-2',
+          channelId: 'channel-4',
           portId: 'transfer'
         },
         ordering: 'unordered',

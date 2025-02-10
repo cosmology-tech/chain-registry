@@ -176,7 +176,6 @@ const info: AssetList = {
       name: 'Source Token',
       display: 'srcx',
       symbol: 'SRCX',
-      coingeckoId: 'source-protocol',
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/binancesmartchain/images/srcx.png'
       },

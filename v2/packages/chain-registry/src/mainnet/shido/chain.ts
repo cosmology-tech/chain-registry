@@ -79,12 +79,20 @@ const info: Chain = {
         provider: 'Indonode'
       },
       {
-        address: 'https://rpc-maverick.mavnode.io',
+        address: 'https://rpc.mavnode.io',
         provider: 'MavNode'
       },
       {
         address: 'https://rpc.kenseishido.com',
         provider: 'KENSEI'
+      },
+      {
+        address: 'https://rpc.shidoscan.net',
+        provider: 'Shido'
+      },
+      {
+        address: 'https://shido-mainnet-archive-lb-nw5es9.zeeve.net/USjg7xqUmCZ4wCsqEOOE/',
+        provider: 'Zeeve'
       }
     ],
     rest: [
@@ -105,12 +113,20 @@ const info: Chain = {
         provider: 'Indonode'
       },
       {
-        address: 'https://api-maverick.mavnode.io',
+        address: 'https://rest.mavnode.io',
         provider: 'MavNode'
       },
       {
         address: 'https://api.kenseishido.com',
         provider: 'KENSEI'
+      },
+      {
+        address: 'https://api.shidoscan.net',
+        provider: 'Shido'
+      },
+      {
+        address: 'https://shido-mainnet-archive-lb-nw5es9.zeeve.net/USjg7xqUmCZ4wCsqEOOE/',
+        provider: 'Zeeve'
       }
     ],
     grpc: [
@@ -123,7 +139,7 @@ const info: Chain = {
         provider: 'shido.io'
       },
       {
-        address: 'https://grpc-maverick.mavnode.io',
+        address: 'https://grpc.mavnode.io',
         provider: 'MavNode'
       },
       {
@@ -145,7 +161,7 @@ const info: Chain = {
         provider: '🚀 WHEN MOON 🌕 WHEN LAMBO 🔥'
       },
       {
-        address: 'https://evm-maverick.mavnode.io',
+        address: 'https://evm.mavnode.io',
         provider: 'MavNode'
       },
       {
@@ -155,6 +171,10 @@ const info: Chain = {
       {
         address: 'https://shido-mainnet-archive-lb-nw5es9.zeeve.net/USjg7xqUmCZ4wCsqEOOE/rpc',
         provider: 'Zeeve'
+      },
+      {
+        address: 'https://evm.shidoscan.net',
+        provider: 'Shido'
       }
     ]
   },
@@ -188,6 +208,12 @@ const info: Chain = {
       url: 'https://explorer.indonode.net/shido',
       txPage: 'https://explorer.indonode.net/shido/tx/${txHash}',
       accountPage: 'https://explorer.indonode.net/shido/account/${accountAddress}'
+    },
+    {
+      kind: 'Shido',
+      url: 'https://native.shidoscan.net',
+      txPage: 'https://native.shidoscan.net/shido/tx/${txHash}',
+      accountPage: 'https://native.shidoscan.net/shido/account/${accountAddress}'
     }
   ],
   images: [{

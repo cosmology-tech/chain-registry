@@ -15,11 +15,19 @@ const info: AssetList = {
       name: 'Jackal',
       display: 'jkl',
       symbol: 'JKL',
+      traces: [{
+          type: 'test-mintage',
+          counterparty: {
+            chainName: 'jackal',
+            baseDenom: 'ujkl'
+          },
+          provider: 'Jackal'
+        }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png',
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg'
       },
-      coingeckoId: 'jackal',
+      coingeckoId: 'jackal-protocol',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.png',
           svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/jackaltestnet/images/jkl.svg'

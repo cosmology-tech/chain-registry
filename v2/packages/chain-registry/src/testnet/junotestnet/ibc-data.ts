@@ -131,6 +131,34 @@ const info: IBCData[] = [
           status: 'live'
         }
       }]
+  },
+  {
+    $schema: '../../ibc_data.schema.json',
+    chain1: {
+      chainName: 'junotestnet',
+      clientId: '07-tendermint-789',
+      connectionId: 'connection-868'
+    },
+    chain2: {
+      chainName: 'symphonytestnet3',
+      clientId: '07-tendermint-28',
+      connectionId: 'connection-13'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-943',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-11',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          status: 'live'
+        }
+      }]
   }
 ];
 export default info;

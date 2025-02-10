@@ -1,12 +1,12 @@
 import { Chain } from '@chain-registry/v2-types';
 const info: Chain = {
   $schema: '../../chain.schema.json',
-  chainName: 'symphonytestnet',
+  chainName: 'symphonytestnet3',
   status: 'live',
   networkType: 'testnet',
   prettyName: 'Symphony Testnet',
   chainType: 'cosmos',
-  chainId: 'symphony-testnet-4',
+  chainId: 'symphony-testnet-3',
   bech32Prefix: 'symphony',
   daemonName: 'symphonyd',
   nodeHome: '$HOME/.symphonyd',
@@ -28,21 +28,21 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/Orchestra-Labs/symphony',
-    recommendedVersion: 'v0.4.1',
-    compatibleVersions: ['v0.4.1'],
+    recommendedVersion: 'v23.0.5-rc1',
+    compatibleVersions: ['v23.0.5', 'v23.0.5-rc1'],
     consensus: {
-      type: 'cometbft',
-      version: '0.38.11'
+      type: 'tendermint',
+      version: '0.37.4'
     },
     genesis: {
-      genesisUrl: 'https://raw.githubusercontent.com/Orchestra-Labs/symphony/refs/heads/main/networks/symphony-testnet-4/genesis.json'
+      genesisUrl: 'https://rpc.testnet.symphonychain.org/genesis'
     },
     sdk: {
       type: 'cosmos',
-      version: '0.50.9'
+      version: '0.47.8'
     },
     cosmwasm: {
-      version: '0.53.0',
+      version: '0.29',
       enabled: true
     }
   },

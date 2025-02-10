@@ -152,7 +152,7 @@ const info: IBCData[] = [
       connectionId: 'connection-144'
     },
     chain2: {
-      chainName: 'symphonytestnet',
+      chainName: 'symphonytestnet3',
       clientId: '07-tendermint-25',
       connectionId: 'connection-12'
     },

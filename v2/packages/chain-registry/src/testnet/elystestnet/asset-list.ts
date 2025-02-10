@@ -25,10 +25,18 @@ const info: AssetList = {
       name: 'Elys Network',
       display: 'elys',
       symbol: 'ELYS',
+      traces: [{
+          type: 'test-mintage',
+          counterparty: {
+            chainName: 'elys',
+            baseDenom: 'uelys'
+          },
+          provider: 'Elys Network'
+        }],
       logoURIs: {
         png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
       },
-      coingeckoId: 'elys',
+      coingeckoId: 'elys-network',
       images: [{
           png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
         }],

@@ -113,6 +113,10 @@ const info: Chain = {
       {
         address: 'https://atomone-mainnet-rpc.itrocket.net:443',
         provider: 'ITRocket'
+      },
+      {
+        address: 'https://rpc-atone.vinjan.xyz',
+        provider: 'Vinjan.Inc'
       }
     ],
     rest: [
@@ -171,6 +175,10 @@ const info: Chain = {
       {
         address: 'https://atomone-mainnet-api.itrocket.net',
         provider: 'ITRocket'
+      },
+      {
+        address: 'https://api-atone.vinjan.xyz',
+        provider: 'Vinjan.Inc'
       }
     ],
     grpc: [
