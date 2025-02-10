@@ -143,49 +143,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token of Elys Network',
-      denom_units: [
-        {
-          denom: 'ibc/DBE9697AC1044255A305A2034AD360B4152632BFBFB5785234731F60196B9645',
-          exponent: 0,
-          aliases: ['uelys']
-        },
-        {
-          denom: 'melys',
-          exponent: 3,
-          aliases: ['millielys']
-        },
-        {
-          denom: 'elys',
-          exponent: 6,
-          aliases: []
-        }
-      ],
-      base: 'ibc/DBE9697AC1044255A305A2034AD360B4152632BFBFB5785234731F60196B9645',
-      name: 'Elys Network',
-      display: 'elys',
-      symbol: 'ELYS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-      },
-      coingecko_id: 'elys',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-52',
-            base_denom: 'uelys',
-            chain_name: 'elystestnet'
-          },
-          chain: {
-            channel_id: 'channel-9'
-          }
-        }]
-    },
-    {
       description: 'Eden token definition',
       denom_units: [
         {
@@ -522,49 +479,6 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-7'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Elys Network',
-      denom_units: [
-        {
-          denom: 'ibc/DBE9697AC1044255A305A2034AD360B4152632BFBFB5785234731F60196B9645',
-          exponent: 0,
-          aliases: ['uelys']
-        },
-        {
-          denom: 'melys',
-          exponent: 3,
-          aliases: ['millielys']
-        },
-        {
-          denom: 'elys',
-          exponent: 6,
-          aliases: []
-        }
-      ],
-      base: 'ibc/DBE9697AC1044255A305A2034AD360B4152632BFBFB5785234731F60196B9645',
-      name: 'Elys Network',
-      display: 'elys',
-      symbol: 'ELYS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-      },
-      coingecko_id: 'elys',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-52',
-            base_denom: 'uelys',
-            chain_name: 'elystestnet'
-          },
-          chain: {
-            channel_id: 'channel-9'
           }
         }]
     },

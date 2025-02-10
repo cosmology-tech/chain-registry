@@ -3,49 +3,6 @@ const assets: AssetList = {
   chain_name: 'nobletestnet',
   assets: [
     {
-      description: 'The native token of Elys Network',
-      denom_units: [
-        {
-          denom: 'ibc/AAA364B0A1B8482ED5415078451C58C907EDE7751F9C4A7F9D0C03181D97DE39',
-          exponent: 0,
-          aliases: ['uelys']
-        },
-        {
-          denom: 'melys',
-          exponent: 3,
-          aliases: ['millielys']
-        },
-        {
-          denom: 'elys',
-          exponent: 6,
-          aliases: []
-        }
-      ],
-      base: 'ibc/AAA364B0A1B8482ED5415078451C58C907EDE7751F9C4A7F9D0C03181D97DE39',
-      name: 'Elys Network',
-      display: 'elys',
-      symbol: 'ELYS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-      },
-      coingecko_id: 'elys',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-12',
-            base_denom: 'uelys',
-            chain_name: 'elystestnet'
-          },
-          chain: {
-            channel_id: 'channel-19'
-          }
-        }]
-    },
-    {
       description: 'Eden token definition',
       denom_units: [
         {
@@ -80,49 +37,6 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-12',
             base_denom: 'ueden',
-            chain_name: 'elystestnet'
-          },
-          chain: {
-            channel_id: 'channel-19'
-          }
-        }]
-    },
-    {
-      description: 'The native token of Elys Network',
-      denom_units: [
-        {
-          denom: 'ibc/AAA364B0A1B8482ED5415078451C58C907EDE7751F9C4A7F9D0C03181D97DE39',
-          exponent: 0,
-          aliases: ['uelys']
-        },
-        {
-          denom: 'melys',
-          exponent: 3,
-          aliases: ['millielys']
-        },
-        {
-          denom: 'elys',
-          exponent: 6,
-          aliases: []
-        }
-      ],
-      base: 'ibc/AAA364B0A1B8482ED5415078451C58C907EDE7751F9C4A7F9D0C03181D97DE39',
-      name: 'Elys Network',
-      display: 'elys',
-      symbol: 'ELYS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-      },
-      coingecko_id: 'elys',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-12',
-            base_denom: 'uelys',
             chain_name: 'elystestnet'
           },
           chain: {

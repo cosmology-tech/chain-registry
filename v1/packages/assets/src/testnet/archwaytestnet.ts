@@ -209,7 +209,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'note',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
@@ -243,7 +243,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'uusd',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
@@ -277,7 +277,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'ukhd',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
@@ -311,7 +311,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'uvnd',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
@@ -455,7 +455,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'note',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
@@ -489,7 +489,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'uusd',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
@@ -523,7 +523,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'ukhd',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
@@ -557,7 +557,7 @@ const assets: AssetList = {
           counterparty: {
             channel_id: 'channel-10',
             base_denom: 'uvnd',
-            chain_name: 'symphonytestnet'
+            chain_name: 'symphonytestnet3'
           },
           chain: {
             channel_id: 'channel-495'
