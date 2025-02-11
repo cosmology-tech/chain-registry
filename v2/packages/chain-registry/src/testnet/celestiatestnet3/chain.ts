@@ -23,12 +23,15 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/celestiaorg/celestia-app',
-    recommendedVersion: 'v2.1.2',
+    recommendedVersion: 'v3.3.1-mocha',
     compatibleVersions: [
-      'v2.0.0',
-      'v2.1.0',
-      'v2.1.1',
-      'v2.1.2'
+      'v3.0.0-mocha',
+      'v3.0.1-mocha',
+      'v3.0.2-mocha',
+      'v3.1.1-mocha',
+      'v3.2.0-mocha',
+      'v3.3.0-mocha',
+      'v3.3.1-mocha'
     ],
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/celestiaorg/networks/master/mocha-4/genesis.json'

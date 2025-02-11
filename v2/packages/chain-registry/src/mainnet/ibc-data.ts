@@ -129,6 +129,7 @@ import * as _sge from './sge';
 import * as _shareledger from './shareledger';
 import * as _shentu from './shentu';
 import * as _shido from './shido';
+import * as _sidechain from './sidechain';
 import * as _sifchain from './sifchain';
 import * as _sommelier from './sommelier';
 import * as _source from './source';
@@ -280,6 +281,7 @@ const ibcData: IBCData[] = [
   ..._shareledger.ibcData,
   ..._shentu.ibcData,
   ..._shido.ibcData,
+  ..._sidechain.ibcData,
   ..._sifchain.ibcData,
   ..._sommelier.ibcData,
   ..._source.ibcData,

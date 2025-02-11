@@ -29,18 +29,20 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/celestiaorg/celestia-app',
-    recommendedVersion: 'v2.1.2',
+    recommendedVersion: 'v3.3.1',
     compatibleVersions: [
-      'v2.0.0',
-      'v2.1.0',
-      'v2.1.1',
-      'v2.1.2'
+      'v3.3.1',
+      'v3.3.0',
+      'v3.2.0',
+      'v3.1.1',
+      'v3.0.2',
+      'v3.0.1'
     ],
     consensus: {
       type: 'tendermint',
-      version: 'v1.40.0',
+      version: 'v1.45.0',
       repo: 'https://github.com/celestiaorg/celestia-core',
-      tag: 'v1.40.0-tm-v0.34.29'
+      tag: 'v1.45.0-tm-v0.34.35'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json'
@@ -48,12 +50,12 @@ const info: Chain = {
     sdk: {
       type: 'cosmos',
       repo: 'https://github.com/celestiaorg/cosmos-sdk',
-      version: 'v1.24.1',
-      tag: 'v1.24.1-sdk-v0.46.16'
+      version: 'v1.27.0',
+      tag: 'v1.27.0-sdk-v0.46.16'
     },
     ibc: {
       type: 'go',
-      version: 'v6.2.1'
+      version: 'v6.2.2'
     }
   },
   logoURIs: {
