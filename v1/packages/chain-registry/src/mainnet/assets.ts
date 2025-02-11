@@ -164,6 +164,7 @@ import * as _sge from './sge';
 import * as _shareledger from './shareledger';
 import * as _shentu from './shentu';
 import * as _shido from './shido';
+import * as _sidechain from './sidechain';
 import * as _sifchain from './sifchain';
 import * as _six from './six';
 import * as _sommelier from './sommelier';
@@ -360,6 +361,7 @@ const assets: AssetList[] = [
   _shareledger.assets,
   _shentu.assets,
   _shido.assets,
+  _sidechain.assets,
   _sifchain.assets,
   _six.assets,
   _sommelier.assets,

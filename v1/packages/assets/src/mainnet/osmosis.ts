@@ -17664,6 +17664,48 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of Side Chain.',
+      denom_units: [{
+          denom: 'ibc/16B3CDBADC506456F3D71E22CE422BB990D7186D611B09744F39F47931B5C738',
+          exponent: 0,
+          aliases: ['uside']
+        }, {
+          denom: 'side',
+          exponent: 6
+        }],
+      base: 'ibc/16B3CDBADC506456F3D71E22CE422BB990D7186D611B09744F39F47931B5C738',
+      name: 'Side Chain native token',
+      display: 'side',
+      symbol: 'SIDE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.svg',
+          theme: {
+            primary_color_hex: '#f7771a'
+          }
+        }],
+      socials: {
+        website: 'https://side.one',
+        twitter: 'https://x.com/SideProtocol'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uside',
+            chain_name: 'sidechain'
+          },
+          chain: {
+            channel_id: 'channel-98081'
+          }
+        }]
+    },
+    {
       description: 'Rowan Token (ROWAN) is the Sifchain Network\'s native utility token, used as the primary means to govern, provide liquidity, secure the blockchain, incentivize participants, and provide a default mechanism to store and exchange value.',
       denom_units: [{
           denom: 'ibc/8318FD63C42203D16DDCAF49FE10E8590669B3219A3E87676AC9DA50722687FB',
@@ -24960,6 +25002,48 @@ const assets: AssetList = {
           },
           chain: {
             channel_id: 'channel-73755'
+          }
+        }]
+    },
+    {
+      description: 'The native token of Side Chain.',
+      denom_units: [{
+          denom: 'ibc/16B3CDBADC506456F3D71E22CE422BB990D7186D611B09744F39F47931B5C738',
+          exponent: 0,
+          aliases: ['uside']
+        }, {
+          denom: 'side',
+          exponent: 6
+        }],
+      base: 'ibc/16B3CDBADC506456F3D71E22CE422BB990D7186D611B09744F39F47931B5C738',
+      name: 'Side Chain native token',
+      display: 'side',
+      symbol: 'SIDE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/sidechain/images/side.svg',
+          theme: {
+            primary_color_hex: '#f7771a'
+          }
+        }],
+      socials: {
+        website: 'https://side.one',
+        twitter: 'https://x.com/SideProtocol'
+      },
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-0',
+            base_denom: 'uside',
+            chain_name: 'sidechain'
+          },
+          chain: {
+            channel_id: 'channel-98081'
           }
         }]
     },

@@ -162,6 +162,7 @@ export * as sge from './sge';
 export * as shareledger from './shareledger';
 export * as shentu from './shentu';
 export * as shido from './shido';
+export * as sidechain from './sidechain';
 export * as sifchain from './sifchain';
 export * as six from './six';
 export * as sommelier from './sommelier';

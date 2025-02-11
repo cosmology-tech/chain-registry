@@ -23,12 +23,15 @@ const info: Chain = {
   },
   codebase: {
     git_repo: 'https://github.com/celestiaorg/celestia-app',
-    recommended_version: 'v2.1.2',
+    recommended_version: 'v3.3.1-arabica',
     compatible_versions: [
-      'v2.0.0',
-      'v2.1.0',
-      'v2.1.1',
-      'v2.1.2'
+      'v3.0.0-arabica',
+      'v3.0.1-arabica',
+      'v3.0.2-arabica',
+      'v3.1.0-arabica',
+      'v3.2.0-arabica',
+      'v3.3.0-arabica',
+      'v3.3.1-arabica'
     ],
     genesis: {
       genesis_url: 'https://raw.githubusercontent.com/celestiaorg/networks/master/arabica-11/genesis.json'
