@@ -282,13 +282,13 @@ const info: AssetList = {
     {
       description: 'Osmosis from Osmosis Chain',
       denomUnits: [{
-          denom: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
+          denom: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
           exponent: 0
         }, {
           denom: 'osmo',
           exponent: 6
         }],
-      base: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
+      base: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
       name: 'OSMO',
       display: 'osmo',
       symbol: 'OSMO',
@@ -305,11 +305,11 @@ const info: AssetList = {
           counterparty: {
             chainName: 'osmosis',
             baseDenom: 'uosmo',
-            channelId: 'channel-88475'
+            channelId: 'channel-97998'
           },
           chain: {
-            channelId: 'channel-6',
-            path: 'transfer/channel-6/uosmo'
+            channelId: 'channel-10',
+            path: 'transfer/channel-10/uosmo'
           }
         }]
     },

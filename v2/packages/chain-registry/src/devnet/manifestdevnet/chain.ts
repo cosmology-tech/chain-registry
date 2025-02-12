@@ -17,7 +17,7 @@ const info: Chain = {
         denom: 'umfx',
         fixedMinGasPrice: 0.001,
         lowGasPrice: 0.01,
-        averageGasPrice: 0.007,
+        averageGasPrice: 0.02,
         highGasPrice: 0.1
       }]
   },

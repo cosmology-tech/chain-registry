@@ -91,21 +91,21 @@ const info: IBCData[] = [
     $schema: '../ibc_data.schema.json',
     chain1: {
       chainName: 'kopi',
-      clientId: '07-tendermint-3',
-      connectionId: 'connection-3'
+      clientId: '07-tendermint-12',
+      connectionId: 'connection-36'
     },
     chain2: {
       chainName: 'osmosis',
-      clientId: '07-tendermint-3359',
-      connectionId: 'connection-2816'
+      clientId: '07-tendermint-3422',
+      connectionId: 'connection-10584'
     },
     channels: [{
         chain1: {
-          channelId: 'channel-6',
+          channelId: 'channel-10',
           portId: 'transfer'
         },
         chain2: {
-          channelId: 'channel-88475',
+          channelId: 'channel-97998',
           portId: 'transfer'
         },
         ordering: 'unordered',

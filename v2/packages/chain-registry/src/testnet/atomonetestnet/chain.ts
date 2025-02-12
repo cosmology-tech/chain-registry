@@ -29,22 +29,22 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/atomone-hub/atomone',
-    recommendedVersion: 'v1.0.0',
-    compatibleVersions: ['v1.0.0'],
+    recommendedVersion: 'v1.0.1',
+    compatibleVersions: ['v1.0.0', 'v1.0.1'],
     binaries: {
-      "linux/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-linux-amd64',
-      "linux/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-linux-arm64',
-      "darwin/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-darwin-amd64',
-      "darwin/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-darwin-arm64',
-      "windows/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-windows-amd64.exe',
-      "windows/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.0/atomoned-v1.0.0-windows-arm64.exe'
+      "linux/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.1/atomoned-v1.0.1-linux-amd64',
+      "linux/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.1/atomoned-v1.0.1-linux-arm64',
+      "darwin/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.1/atomoned-v1.0.1-darwin-amd64',
+      "darwin/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.1/atomoned-v1.0.1-darwin-arm64',
+      "windows/amd64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.1/atomoned-v1.0.1-windows-amd64.exe',
+      "windows/arm64": 'https://github.com/atomone-hub/atomone/releases/download/v1.0.1/atomoned-v1.0.1-windows-arm64.exe'
     },
     genesis: {
       genesisUrl: 'https://atomone.fra1.digitaloceanspaces.com/atomone-testnet-1/genesis.json'
     },
     consensus: {
       type: 'cometbft',
-      version: 'v0.37.5'
+      version: 'v0.37.15'
     },
     sdk: {
       type: 'cosmos',
