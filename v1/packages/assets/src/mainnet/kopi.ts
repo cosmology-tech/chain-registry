@@ -770,7 +770,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
+          denom: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -778,7 +778,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
+      base: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -802,19 +802,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-88475',
+            channel_id: 'channel-97998',
             base_denom: 'uosmo',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-10'
           }
         }]
     },
     {
       description: 'ION is the second native token of Osmosis.',
       denom_units: [{
-          denom: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
+          denom: 'ibc/0433997003A2CFE10E483B93743BEC37F2F13B89854FD69599482E6DB8E6CE22',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -822,7 +822,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
+      base: 'ibc/0433997003A2CFE10E483B93743BEC37F2F13B89854FD69599482E6DB8E6CE22',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -846,12 +846,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-88475',
+            channel_id: 'channel-97998',
             base_denom: 'uion',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-10'
           }
         }]
     },
@@ -1020,7 +1020,7 @@ const assets: AssetList = {
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
+          denom: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -1028,7 +1028,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85',
+      base: 'ibc/376222D6D9DAE23092E29740E56B758580935A6D77C24C2ABD57A6A78A1F3955',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -1052,19 +1052,19 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-88475',
+            channel_id: 'channel-97998',
             base_denom: 'uosmo',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-10'
           }
         }]
     },
     {
       description: 'ION is the second native token of Osmosis.',
       denom_units: [{
-          denom: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
+          denom: 'ibc/0433997003A2CFE10E483B93743BEC37F2F13B89854FD69599482E6DB8E6CE22',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -1072,7 +1072,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/69B4810E989B56FC6CA41F395228236FA7E7F59B9A3B7AF3FB0A344361C38389',
+      base: 'ibc/0433997003A2CFE10E483B93743BEC37F2F13B89854FD69599482E6DB8E6CE22',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -1096,12 +1096,12 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-88475',
+            channel_id: 'channel-97998',
             base_denom: 'uion',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-6'
+            channel_id: 'channel-10'
           }
         }]
     },
