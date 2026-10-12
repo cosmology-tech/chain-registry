@@ -129,9 +129,9 @@ const info: Chain = {
       txPage: 'https://vota-explorer.dorafactory.org/doravota/tx/${txHash}'
     },
     {
-      kind: 'lesnik | UTSA Ping Pub',
-      url: 'https://exp.utsa.tech/dora/staking',
-      txPage: 'https://exp.utsa.tech/dora/tx/${txHash}'
+      kind: 'UTSA Explorer',
+      url: 'https://explorer.utsa.tech/networks/doravota-mainnet',
+      txPage: 'https://explorer.utsa.tech/networks/doravota-mainnet/blocks/${block}/transactions/0'
     },
     {
       kind: 'ITRocket Ping Pub',

@@ -437,6 +437,37 @@ const info: IBCData[] = [
   {
     $schema: '../ibc_data.schema.json',
     chain1: {
+      chainName: 'impacthub',
+      chainId: 'ixo-5',
+      clientId: '07-tendermint-65',
+      connectionId: 'connection-48'
+    },
+    chain2: {
+      chainName: 'injective',
+      chainId: 'injective-1',
+      clientId: '07-tendermint-361',
+      connectionId: 'connection-382'
+    },
+    channels: [{
+        chain1: {
+          channelId: 'channel-31',
+          portId: 'transfer'
+        },
+        chain2: {
+          channelId: 'channel-502',
+          portId: 'transfer'
+        },
+        ordering: 'unordered',
+        version: 'ics20-1',
+        tags: {
+          preferred: true,
+          status: 'ACTIVE'
+        }
+      }]
+  },
+  {
+    $schema: '../ibc_data.schema.json',
+    chain1: {
       chainName: 'initia',
       chainId: 'interwoven-1',
       clientId: '07-tendermint-65',

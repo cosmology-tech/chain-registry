@@ -66,6 +66,10 @@ const info: Chain = {
       {
         address: 'https://rpc.nodesafe-app.xyz/lumen/',
         provider: 'NodeSafe'
+      },
+      {
+        address: 'https://lumen-rpc.tintonode.win',
+        provider: 'TinTo'
       }
     ],
     rest: [
@@ -92,6 +96,10 @@ const info: Chain = {
       {
         address: 'https://api.nodesafe-app.xyz/lumen',
         provider: 'NodeSafe'
+      },
+      {
+        address: 'https://lumen-api.tintonode.win',
+        provider: 'TinTo'
       }
     ],
     grpc: [
@@ -110,6 +118,10 @@ const info: Chain = {
       {
         address: 'grpc-lumen.nodesafe-app.xyz:443',
         provider: 'NodeSafe'
+      },
+      {
+        address: 'lumen-grpc.tintonode.win:443',
+        provider: 'TinTo'
       }
     ]
   },
@@ -143,8 +155,8 @@ const info: Chain = {
       url: 'https://ov-explorer.onenov.xyz/network/lumen'
     },
     {
-      kind: 'UTSA',
-      url: 'https://exp.utsa.tech/lumen/staking'
+      kind: 'UTSA Explorer',
+      url: 'https://explorer.utsa.tech/networks/lumen-mainnet'
     },
     {
       kind: 'Stavr',

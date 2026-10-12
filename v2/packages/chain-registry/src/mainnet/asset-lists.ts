@@ -8,7 +8,6 @@ import * as _solana from './solana';
 import * as _ton from './ton';
 import * as _tron from './tron';
 import * as _aaronetwork from './aaronetwork';
-import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
@@ -36,7 +35,6 @@ import * as _blg24 from './blg24';
 import * as _blockx from './blockx';
 import * as _bluechip from './bluechip';
 import * as _bluzelle from './bluzelle';
-import * as _bostrom from './bostrom';
 import * as _bouachain from './bouachain';
 import * as _buycex from './buycex';
 import * as _canto from './canto';
@@ -48,7 +46,6 @@ import * as _chihuahua from './chihuahua';
 import * as _chimba from './chimba';
 import * as _cifer from './cifer';
 import * as _cnhostables from './cnhostables';
-import * as _comdex from './comdex';
 import * as _commercionetwork from './commercionetwork';
 import * as _composable from './composable';
 import * as _conscious from './conscious';
@@ -66,9 +63,7 @@ import * as _doravota from './doravota';
 import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
 import * as _dymension from './dymension';
-import * as _dyson from './dyson';
 import * as _echelon from './echelon';
-import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
 import * as _epix from './epix';
 import * as _ethos from './ethos';
@@ -99,14 +94,12 @@ import * as _impacthub from './impacthub';
 import * as _imversed from './imversed';
 import * as _initia from './initia';
 import * as _injective from './injective';
-import * as _int3face from './int3face';
 import * as _intento from './intento';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
 import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
-import * as _kichain from './kichain';
 import * as _kiichain from './kiichain';
 import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
@@ -151,7 +144,6 @@ import * as _nomic from './nomic';
 import * as _nvnmchain from './nvnmchain';
 import * as _nyx from './nyx';
 import * as _octa from './octa';
-import * as _odin from './odin';
 import * as _okexchain from './okexchain';
 import * as _opct from './opct';
 import * as _optio from './optio';
@@ -171,12 +163,10 @@ import * as _pylons from './pylons';
 import * as _qfs from './qfs';
 import * as _qie from './qie';
 import * as _qorechain from './qorechain';
-import * as _quasar from './quasar';
 import * as _qubetics from './qubetics';
 import * as _quicksilver from './quicksilver';
 import * as _qwoyn from './qwoyn';
 import * as _realio from './realio';
-import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _ritbit from './ritbit';
 import * as _rizon from './rizon';
@@ -198,7 +188,6 @@ import * as _six from './six';
 import * as _sommelier from './sommelier';
 import * as _source from './source';
 import * as _sovr from './sovr';
-import * as _stafihub from './stafihub';
 import * as _stoc from './stoc';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
@@ -244,7 +233,6 @@ const assetList: AssetList[] = [
   _ton.assetList,
   _tron.assetList,
   _aaronetwork.assetList,
-  _acrechain.assetList,
   _agoric.assetList,
   _aioz.assetList,
   _akash.assetList,
@@ -272,7 +260,6 @@ const assetList: AssetList[] = [
   _blockx.assetList,
   _bluechip.assetList,
   _bluzelle.assetList,
-  _bostrom.assetList,
   _bouachain.assetList,
   _buycex.assetList,
   _canto.assetList,
@@ -284,7 +271,6 @@ const assetList: AssetList[] = [
   _chimba.assetList,
   _cifer.assetList,
   _cnhostables.assetList,
-  _comdex.assetList,
   _commercionetwork.assetList,
   _composable.assetList,
   _conscious.assetList,
@@ -302,9 +288,7 @@ const assetList: AssetList[] = [
   _dungeon.assetList,
   _dydx.assetList,
   _dymension.assetList,
-  _dyson.assetList,
   _echelon.assetList,
-  _emoney.assetList,
   _empowerchain.assetList,
   _epix.assetList,
   _ethos.assetList,
@@ -335,14 +319,12 @@ const assetList: AssetList[] = [
   _imversed.assetList,
   _initia.assetList,
   _injective.assetList,
-  _int3face.assetList,
   _intento.assetList,
   _irisnet.assetList,
   _jackal.assetList,
   _joltify.assetList,
   _juno.assetList,
   _kava.assetList,
-  _kichain.assetList,
   _kiichain.assetList,
   _kimanetwork.assetList,
   _konstellation.assetList,
@@ -387,7 +369,6 @@ const assetList: AssetList[] = [
   _nvnmchain.assetList,
   _nyx.assetList,
   _octa.assetList,
-  _odin.assetList,
   _okexchain.assetList,
   _opct.assetList,
   _optio.assetList,
@@ -407,12 +388,10 @@ const assetList: AssetList[] = [
   _qfs.assetList,
   _qie.assetList,
   _qorechain.assetList,
-  _quasar.assetList,
   _qubetics.assetList,
   _quicksilver.assetList,
   _qwoyn.assetList,
   _realio.assetList,
-  _rebus.assetList,
   _regen.assetList,
   _ritbit.assetList,
   _rizon.assetList,
@@ -434,7 +413,6 @@ const assetList: AssetList[] = [
   _sommelier.assetList,
   _source.assetList,
   _sovr.assetList,
-  _stafihub.assetList,
   _stoc.assetList,
   _stratos.assetList,
   _stride.assetList,

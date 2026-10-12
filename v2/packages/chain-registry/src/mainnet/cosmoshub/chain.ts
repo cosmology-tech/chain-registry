@@ -197,6 +197,10 @@ const info: Chain = {
       {
         address: 'https://cosmos-rpc.polkachu.com:443',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://cosmos-mainnet-rpc.crouton.digital',
+        provider: 'Crouton Digital'
       }
     ],
     rest: [
@@ -320,6 +324,10 @@ const info: Chain = {
       {
         address: 'https://cosmoshub-rest.stakerhouse.com',
         provider: 'StakerHouse'
+      },
+      {
+        address: 'https://cosmos-mainnet-api.crouton.digital',
+        provider: 'Crouton Digital'
       }
     ],
     grpc: [
@@ -399,6 +407,10 @@ const info: Chain = {
       {
         address: 'https://grpc.cosmos.cumulo.com.es',
         provider: 'Cumulo'
+      },
+      {
+        address: 'cosmos-mainnet-grpc.crouton.digital:14990',
+        provider: 'Crouton Digital'
       }
     ],
     wss: [{
@@ -541,7 +553,8 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
       svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
     }],
-  snapshots: [{
+  snapshots: [
+    {
       provider: 'High Stakes 🇨🇭',
       url: 'https://tools.highstakes.ch/snapshots/cosmos',
       latestUrl: 'https://tools.highstakes.ch/files/cosmos.tar.gz',
@@ -550,12 +563,20 @@ const info: Chain = {
       frequency: 'every 3h',
       compression: 'tar',
       checksumAvailable: true
-    }, {
+    },
+    {
       url: 'https://polkachu.com/tendermint_snapshots/cosmos',
       type: 'pruned',
       compression: 'lz4',
       checksumAvailable: false,
       provider: 'Polkachu'
-    }]
+    },
+    {
+      provider: 'Crouton Digital',
+      url: 'https://storage.crouton.digital/mainnet/cosmos/snapshots/cosmos_latest.tar.lz4',
+      type: 'pruned',
+      compression: 'lz4'
+    }
+  ]
 };
 export default info;
