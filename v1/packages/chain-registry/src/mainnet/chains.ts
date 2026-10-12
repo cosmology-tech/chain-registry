@@ -8,7 +8,6 @@ import * as _solana from './solana';
 import * as _ton from './ton';
 import * as _tron from './tron';
 import * as _aaronetwork from './aaronetwork';
-import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
@@ -36,7 +35,6 @@ import * as _blg24 from './blg24';
 import * as _blockx from './blockx';
 import * as _bluechip from './bluechip';
 import * as _bluzelle from './bluzelle';
-import * as _bostrom from './bostrom';
 import * as _bouachain from './bouachain';
 import * as _buycex from './buycex';
 import * as _canto from './canto';
@@ -48,7 +46,6 @@ import * as _chihuahua from './chihuahua';
 import * as _chimba from './chimba';
 import * as _cifer from './cifer';
 import * as _cnhostables from './cnhostables';
-import * as _comdex from './comdex';
 import * as _commercionetwork from './commercionetwork';
 import * as _composable from './composable';
 import * as _conscious from './conscious';
@@ -66,9 +63,7 @@ import * as _doravota from './doravota';
 import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
 import * as _dymension from './dymension';
-import * as _dyson from './dyson';
 import * as _echelon from './echelon';
-import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
 import * as _epix from './epix';
 import * as _ethos from './ethos';
@@ -99,14 +94,12 @@ import * as _impacthub from './impacthub';
 import * as _imversed from './imversed';
 import * as _initia from './initia';
 import * as _injective from './injective';
-import * as _int3face from './int3face';
 import * as _intento from './intento';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
 import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
-import * as _kichain from './kichain';
 import * as _kiichain from './kiichain';
 import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
@@ -151,7 +144,6 @@ import * as _nomic from './nomic';
 import * as _nvnmchain from './nvnmchain';
 import * as _nyx from './nyx';
 import * as _octa from './octa';
-import * as _odin from './odin';
 import * as _okexchain from './okexchain';
 import * as _opct from './opct';
 import * as _optio from './optio';
@@ -171,12 +163,10 @@ import * as _pylons from './pylons';
 import * as _qfs from './qfs';
 import * as _qie from './qie';
 import * as _qorechain from './qorechain';
-import * as _quasar from './quasar';
 import * as _qubetics from './qubetics';
 import * as _quicksilver from './quicksilver';
 import * as _qwoyn from './qwoyn';
 import * as _realio from './realio';
-import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _ritbit from './ritbit';
 import * as _rizon from './rizon';
@@ -198,7 +188,6 @@ import * as _six from './six';
 import * as _sommelier from './sommelier';
 import * as _source from './source';
 import * as _sovr from './sovr';
-import * as _stafihub from './stafihub';
 import * as _stoc from './stoc';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
@@ -244,7 +233,6 @@ const chains: Chain[] = [
   _ton.chain,
   _tron.chain,
   _aaronetwork.chain,
-  _acrechain.chain,
   _agoric.chain,
   _aioz.chain,
   _akash.chain,
@@ -272,7 +260,6 @@ const chains: Chain[] = [
   _blockx.chain,
   _bluechip.chain,
   _bluzelle.chain,
-  _bostrom.chain,
   _bouachain.chain,
   _buycex.chain,
   _canto.chain,
@@ -284,7 +271,6 @@ const chains: Chain[] = [
   _chimba.chain,
   _cifer.chain,
   _cnhostables.chain,
-  _comdex.chain,
   _commercionetwork.chain,
   _composable.chain,
   _conscious.chain,
@@ -302,9 +288,7 @@ const chains: Chain[] = [
   _dungeon.chain,
   _dydx.chain,
   _dymension.chain,
-  _dyson.chain,
   _echelon.chain,
-  _emoney.chain,
   _empowerchain.chain,
   _epix.chain,
   _ethos.chain,
@@ -335,14 +319,12 @@ const chains: Chain[] = [
   _imversed.chain,
   _initia.chain,
   _injective.chain,
-  _int3face.chain,
   _intento.chain,
   _irisnet.chain,
   _jackal.chain,
   _joltify.chain,
   _juno.chain,
   _kava.chain,
-  _kichain.chain,
   _kiichain.chain,
   _kimanetwork.chain,
   _konstellation.chain,
@@ -387,7 +369,6 @@ const chains: Chain[] = [
   _nvnmchain.chain,
   _nyx.chain,
   _octa.chain,
-  _odin.chain,
   _okexchain.chain,
   _opct.chain,
   _optio.chain,
@@ -407,12 +388,10 @@ const chains: Chain[] = [
   _qfs.chain,
   _qie.chain,
   _qorechain.chain,
-  _quasar.chain,
   _qubetics.chain,
   _quicksilver.chain,
   _qwoyn.chain,
   _realio.chain,
-  _rebus.chain,
   _regen.chain,
   _ritbit.chain,
   _rizon.chain,
@@ -434,7 +413,6 @@ const chains: Chain[] = [
   _sommelier.chain,
   _source.chain,
   _sovr.chain,
-  _stafihub.chain,
   _stoc.chain,
   _stratos.chain,
   _stride.chain,

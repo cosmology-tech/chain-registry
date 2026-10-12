@@ -130,122 +130,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native EVM, governance and staking token of the Acrechain',
-      denom_units: [{
-          denom: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
-          exponent: 0,
-          aliases: ['aacre']
-        }, {
-          denom: 'acre',
-          exponent: 18
-        }],
-      base: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
-      name: 'Acre',
-      display: 'acre',
-      symbol: 'ACRE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'aacre',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-490',
-            path: 'transfer/channel-490/aacre'
-          }
-        }]
-    },
-    {
-      description: 'Overcollateralized stable coin for Arable derivatives v1',
-      denom_units: [{
-          denom: 'ibc/5D270A584B1078FBE07D14570ED5E88EC1FEDA8518B76C322606291E6FD8286F',
-          exponent: 0,
-          aliases: ['erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c']
-        }, {
-          denom: 'arusd',
-          exponent: 18
-        }],
-      base: 'ibc/5D270A584B1078FBE07D14570ED5E88EC1FEDA8518B76C322606291E6FD8286F',
-      name: 'Arable USD',
-      display: 'arusd',
-      symbol: 'arUSD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-490',
-            path: 'transfer/channel-490/erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c'
-          }
-        }]
-    },
-    {
-      description: 'Ciento Exchange Token',
-      denom_units: [{
-          denom: 'ibc/D38BB3DD46864694F009AF01DA5A815B3A875F8CC52FF5679BFFCC35DC7451D5',
-          exponent: 0,
-          aliases: ['erc20/0xAE6D3334989a22A65228732446731438672418F2']
-        }, {
-          denom: 'cnto',
-          exponent: 18
-        }],
-      base: 'ibc/D38BB3DD46864694F009AF01DA5A815B3A875F8CC52FF5679BFFCC35DC7451D5',
-      name: 'Ciento Token',
-      display: 'cnto',
-      symbol: 'CNTO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'erc20/0xAE6D3334989a22A65228732446731438672418F2',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-490',
-            path: 'transfer/channel-490/erc20/0xAE6D3334989a22A65228732446731438672418F2'
-          }
-        }]
-    },
-    {
       description: 'Agoric is a smart contract platform that uses JavaScript to enable developers to build secure and scalable decentralized applications (dApps) easily.',
       denom_units: [{
           denom: 'ibc/2DA9C149E9AD2BD27FEFA635458FB37093C256C1A940392634A16BEA45262604',
@@ -1135,6 +1019,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of BLG24, a sovereign Layer 1 blockchain built on Cosmos SDK.',
+      denom_units: [{
+          denom: 'ibc/26201350CB5096C2B8C0585A2871C519BFEBC73EEEC287396934B85F60E7AA5E',
+          exponent: 0,
+          aliases: ['ug24']
+        }, {
+          denom: 'g24',
+          exponent: 6
+        }],
+      base: 'ibc/26201350CB5096C2B8C0585A2871C519BFEBC73EEEC287396934B85F60E7AA5E',
+      name: 'Gold24Coin',
+      display: 'g24',
+      symbol: 'G24',
+      type_asset: 'sdk.coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/blg24/images/g24.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/blg24/images/g24.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ug24',
+            chain_name: 'blg24'
+          },
+          chain: {
+            channel_id: 'channel-111099',
+            path: 'transfer/channel-111099/ug24'
+          }
+        }]
+    },
+    {
       description: 'The native token of Bluzelle',
       denom_units: [{
           denom: 'ibc/63CDD51098FD99E04E5F5610A3882CBE7614C441607BA6FCD7F3A3C1CD5325F8',
@@ -1244,176 +1162,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-763',
             path: 'transfer/channel-763/ug4'
-          }
-        }]
-    },
-    {
-      description: 'The staking token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/FE2CD1E6828EC0FAB8AF39BAC45BC25B965BA67CCBC50C13A14BD610B0D1E2C4',
-          exponent: 0,
-          aliases: ['boot']
-        }],
-      base: 'ibc/FE2CD1E6828EC0FAB8AF39BAC45BC25B965BA67CCBC50C13A14BD610B0D1E2C4',
-      name: 'Bostrom',
-      display: 'boot',
-      symbol: 'BOOT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
-      },
-      coingecko_id: 'bostrom',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'boot',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/boot'
-          }
-        }]
-    },
-    {
-      description: 'The liquid staking token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/4F3B0EC2FE2D370D10C3671A1B7B06D2A964C721470C305CBB846ED60E6CAA20',
-          exponent: 0,
-          aliases: ['hydrogen']
-        }],
-      base: 'ibc/4F3B0EC2FE2D370D10C3671A1B7B06D2A964C721470C305CBB846ED60E6CAA20',
-      name: 'Bostrom Hydrogen',
-      display: 'hydrogen',
-      symbol: 'HYDROGEN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'hydrogen',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/hydrogen'
-          }
-        }]
-    },
-    {
-      description: 'The resource token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/020F5162B7BC40656FC5432622647091F00D53E82EE8D21757B43D3282F25424',
-          exponent: 0,
-          aliases: ['milliampere']
-        }, {
-          denom: 'ampere',
-          exponent: 3,
-          aliases: ['ampere']
-        }],
-      base: 'ibc/020F5162B7BC40656FC5432622647091F00D53E82EE8D21757B43D3282F25424',
-      name: 'Bostrom Ampere',
-      display: 'ampere',
-      symbol: 'A',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'milliampere',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/milliampere'
-          }
-        }]
-    },
-    {
-      description: 'The resource token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/D3A1900B2B520E45608B5671ADA461E1109628E89B4289099557C6D3996F7DAA',
-          exponent: 0,
-          aliases: ['millivolt']
-        }, {
-          denom: 'volt',
-          exponent: 3,
-          aliases: ['volt']
-        }],
-      base: 'ibc/D3A1900B2B520E45608B5671ADA461E1109628E89B4289099557C6D3996F7DAA',
-      name: 'Bostrom Volt',
-      display: 'volt',
-      symbol: 'V',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'millivolt',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/millivolt'
-          }
-        }]
-    },
-    {
-      description: 'The staking token of Cyber',
-      denom_units: [{
-          denom: 'ibc/BCDB35B7390806F35E716D275E1E017999F8281A81B6F128F087EF34D1DFA761',
-          exponent: 0,
-          aliases: ['tocyb']
-        }],
-      base: 'ibc/BCDB35B7390806F35E716D275E1E017999F8281A81B6F128F087EF34D1DFA761',
-      name: 'Bostrom Tocyb',
-      display: 'tocyb',
-      symbol: 'TOCYB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'tocyb',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/tocyb'
           }
         }]
     },
@@ -1762,115 +1510,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-39205',
             path: 'transfer/channel-39205/ucif'
-          }
-        }]
-    },
-    {
-      description: 'Native Token of Comdex Protocol',
-      denom_units: [{
-          denom: 'ibc/EA3E1640F9B1532AB129A571203A0B9F789A7F14BB66E350DCBFA18E1A1931F0',
-          exponent: 0,
-          aliases: ['ucmdx']
-        }, {
-          denom: 'cmdx',
-          exponent: 6
-        }],
-      base: 'ibc/EA3E1640F9B1532AB129A571203A0B9F789A7F14BB66E350DCBFA18E1A1931F0',
-      name: 'Comdex',
-      display: 'cmdx',
-      symbol: 'CMDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'ucmdx',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-87',
-            path: 'transfer/channel-87/ucmdx'
-          }
-        }]
-    },
-    {
-      description: 'Governance Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/AD4DEA52408EA07C0C9E19444EC8DA84A274A70AD2687A710EFDDEB28BB2986A',
-          exponent: 0,
-          aliases: ['uharbor']
-        }, {
-          denom: 'harbor',
-          exponent: 6
-        }],
-      base: 'ibc/AD4DEA52408EA07C0C9E19444EC8DA84A274A70AD2687A710EFDDEB28BB2986A',
-      name: 'Harbor',
-      display: 'harbor',
-      symbol: 'HARBOR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uharbor',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-87',
-            path: 'transfer/channel-87/uharbor'
-          }
-        }]
-    },
-    {
-      description: 'Stable Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/23CA6C8D1AB2145DD13EB1E089A2E3F960DC298B468CCE034E19E5A78B61136E',
-          exponent: 0,
-          aliases: ['ucmst']
-        }, {
-          denom: 'cmst',
-          exponent: 6
-        }],
-      base: 'ibc/23CA6C8D1AB2145DD13EB1E089A2E3F960DC298B468CCE034E19E5A78B61136E',
-      name: 'CMST',
-      display: 'cmst',
-      symbol: 'CMST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-      },
-      coingecko_id: 'composite',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'ucmst',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-87',
-            path: 'transfer/channel-87/ucmst'
           }
         }]
     },
@@ -2574,39 +2213,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Dyson Protocol',
-      denom_units: [{
-          denom: 'ibc/E27CD305D33F150369AB526AEB6646A76EC3FFB1A6CA58A663B5DE657A89D55D',
-          exponent: 0,
-          aliases: ['dys']
-        }],
-      base: 'ibc/E27CD305D33F150369AB526AEB6646A76EC3FFB1A6CA58A663B5DE657A89D55D',
-      name: 'Dys',
-      display: 'dys',
-      symbol: 'DYS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'dys',
-            chain_name: 'dyson'
-          },
-          chain: {
-            channel_id: 'channel-526',
-            path: 'transfer/channel-526/dys'
-          }
-        }]
-    },
-    {
       description: 'Echelon - a scalable EVM on Cosmos, built on Proof-of-Stake with fast-finality that prioritizes interoperability and novel economics',
       denom_units: [{
           denom: 'ibc/47EE224A9B33CF0ABEAC82106E52F0F6E8D8CEC5BA80B9D9A6F55172CBB0177D',
@@ -2639,212 +2245,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-403',
             path: 'transfer/channel-403/aechelon'
-          }
-        }]
-    },
-    {
-      description: 'e-Money NGM staking token. In addition to earning staking rewards the token is bought back and burned based on e-Money stablecoin inflation.',
-      denom_units: [{
-          denom: 'ibc/1DC495FCEFDA068A3820F903EDBD78B942FBD204D7E93D3BA2B432E9669D1A59',
-          exponent: 0,
-          aliases: ['ungm']
-        }, {
-          denom: 'ngm',
-          exponent: 6
-        }],
-      base: 'ibc/1DC495FCEFDA068A3820F903EDBD78B942FBD204D7E93D3BA2B432E9669D1A59',
-      name: 'e-Money',
-      display: 'ngm',
-      symbol: 'NGM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'ungm',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/ungm'
-          }
-        }]
-    },
-    {
-      description: 'e-Money EUR stablecoin. Audited and backed by fiat EUR deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/5973C068568365FFF40DEDCF1A1CB7582B6116B731CD31A12231AE25E20B871F',
-          exponent: 0,
-          aliases: ['eeur']
-        }, {
-          denom: 'eur',
-          exponent: 6
-        }],
-      base: 'ibc/5973C068568365FFF40DEDCF1A1CB7582B6116B731CD31A12231AE25E20B871F',
-      name: 'e-Money EUR',
-      display: 'eur',
-      symbol: 'EEUR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'eeur',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/eeur'
-          }
-        }]
-    },
-    {
-      description: 'e-Money CHF stablecoin. Audited and backed by fiat CHF deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
-          exponent: 0,
-          aliases: ['echf']
-        }, {
-          denom: 'chf',
-          exponent: 6
-        }],
-      base: 'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
-      name: 'e-Money CHF',
-      display: 'chf',
-      symbol: 'ECHF',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'echf',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/echf'
-          }
-        }]
-    },
-    {
-      description: 'e-Money NOK stablecoin. Audited and backed by fiat NOK deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
-          exponent: 0,
-          aliases: ['enok']
-        }, {
-          denom: 'nok',
-          exponent: 6
-        }],
-      base: 'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
-      name: 'e-Money NOK',
-      display: 'nok',
-      symbol: 'ENOK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'enok',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/enok'
-          }
-        }]
-    },
-    {
-      description: 'e-Money DKK stablecoin. Audited and backed by fiat DKK deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
-          exponent: 0,
-          aliases: ['edkk']
-        }, {
-          denom: 'dkk',
-          exponent: 6
-        }],
-      base: 'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
-      name: 'e-Money DKK',
-      display: 'dkk',
-      symbol: 'EDKK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'edkk',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/edkk'
-          }
-        }]
-    },
-    {
-      description: 'e-Money SEK stablecoin. Audited and backed by fiat SEK deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
-          exponent: 0,
-          aliases: ['esek']
-        }, {
-          denom: 'sek',
-          exponent: 6
-        }],
-      base: 'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
-      name: 'e-Money SEK',
-      display: 'sek',
-      symbol: 'ESEK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'esek',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/esek'
           }
         }]
     },
@@ -4089,44 +3489,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Int3face blockchain native token',
-      denom_units: [{
-          denom: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
-          exponent: 0,
-          aliases: ['uint3']
-        }, {
-          denom: 'int3',
-          exponent: 6
-        }],
-      base: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
-      name: 'Int3face Token',
-      display: 'int3',
-      symbol: 'INT3',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-        }],
-      socials: {
-        website: 'https://int3face.zone/',
-        x: 'https://x.com/_Bitfrost_'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uint3',
-            chain_name: 'int3face'
-          },
-          chain: {
-            channel_id: 'channel-82819',
-            path: 'transfer/channel-82819/uint3'
-          }
-        }]
-    },
-    {
       description: 'The native token of Intento',
       denom_units: [{
           denom: 'ibc/BE072C03DA544CF282499418E7BC64D38614879B3EE95F9AD91E6C37267D4836',
@@ -4473,42 +3835,6 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       },
       type_asset: 'sdk.coin'
-    },
-    {
-      description: 'The native token of Ki Chain',
-      denom_units: [{
-          denom: 'ibc/B547DC9B897E7C3AA5B824696110B8E3D2C31E3ED3F02FF363DCBAD82457E07E',
-          exponent: 0,
-          aliases: ['uxki']
-        }, {
-          denom: 'xki',
-          exponent: 6
-        }],
-      base: 'ibc/B547DC9B897E7C3AA5B824696110B8E3D2C31E3ED3F02FF363DCBAD82457E07E',
-      name: 'Ki',
-      display: 'xki',
-      symbol: 'XKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uxki',
-            chain_name: 'kichain'
-          },
-          chain: {
-            channel_id: 'channel-77',
-            path: 'transfer/channel-77/uxki'
-          }
-        }]
     },
     {
       description: 'Kima is an asset-agnostic interoperability infrastructure that connects blockchain networks and legacy financial systems, enabling secure, scalable cross-chain transactions and seamless communication across ecosystems.',
@@ -6155,195 +5481,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'ODIN is the Staking and governance token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/C360EF34A86D334F625E4CBB7DA3223AEA97174B61F35BB3758081A8160F7D9B',
-          exponent: 0,
-          aliases: ['loki']
-        }, {
-          denom: 'odin',
-          exponent: 6
-        }],
-      base: 'ibc/C360EF34A86D334F625E4CBB7DA3223AEA97174B61F35BB3758081A8160F7D9B',
-      name: 'ODIN',
-      display: 'odin',
-      symbol: 'ODIN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-        }],
-      socials: {
-        website: 'https://odinprotocol.io/',
-        x: 'https://x.com/odinprotocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'loki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/loki'
-          }
-        }]
-    },
-    {
-      description: 'GEO token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/9B6FBABA36BB4A3BF127AE5E96B572A5197FD9F3111D895D8919B07BC290764A',
-          exponent: 0,
-          aliases: ['mGeo']
-        }, {
-          denom: 'geo',
-          exponent: 6
-        }],
-      base: 'ibc/9B6FBABA36BB4A3BF127AE5E96B572A5197FD9F3111D895D8919B07BC290764A',
-      name: 'GEO',
-      display: 'geo',
-      symbol: 'GEO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'mGeo',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/mGeo'
-          }
-        }]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [{
-          denom: 'ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B',
-          exponent: 0,
-          aliases: ['udoki']
-        }, {
-          denom: 'doki',
-          exponent: 6
-        }],
-      base: 'ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }],
-      socials: {
-        website: 'https://dokicoin.io/',
-        x: 'https://x.com/doki_coin'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'udoki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/udoki'
-          }
-        }]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [{
-          denom: 'ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752',
-          exponent: 0,
-          aliases: ['umyrk']
-        }, {
-          denom: 'myrk',
-          exponent: 6
-        }],
-      base: 'ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-        }],
-      socials: {
-        x: 'https://x.com/myrkweilds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'umyrk',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/umyrk'
-          }
-        }]
-    },
-    {
-      description: 'O9W token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D',
-          exponent: 0,
-          aliases: ['mO9W']
-        }, {
-          denom: 'O9W',
-          exponent: 6
-        }],
-      base: 'ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D',
-      name: 'O9W',
-      display: 'O9W',
-      symbol: 'O9W',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }],
-      socials: {
-        website: 'https://www.odin9worlds.io/',
-        x: 'https://x.com/odin9worlds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'mO9W',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/mO9W'
-          }
-        }]
-    },
-    {
       description: 'The native token of Optio',
       denom_units: [{
           denom: 'ibc/6AA47B1A9F00CC9B127796717F4BE976C12EFC843387F22461152888E1365045',
@@ -6483,122 +5620,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-91942',
             path: 'transfer/channel-91942/uaaron'
-          }
-        }]
-    },
-    {
-      description: 'The native EVM, governance and staking token of the Acrechain',
-      denom_units: [{
-          denom: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
-          exponent: 0,
-          aliases: ['aacre']
-        }, {
-          denom: 'acre',
-          exponent: 18
-        }],
-      base: 'ibc/BB936517F7E5D77A63E0ADB05217A6608B0C4CF8FBA7EA2F4BAE4107A7238F06',
-      name: 'Acre',
-      display: 'acre',
-      symbol: 'ACRE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'aacre',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-490',
-            path: 'transfer/channel-490/aacre'
-          }
-        }]
-    },
-    {
-      description: 'Overcollateralized stable coin for Arable derivatives v1',
-      denom_units: [{
-          denom: 'ibc/5D270A584B1078FBE07D14570ED5E88EC1FEDA8518B76C322606291E6FD8286F',
-          exponent: 0,
-          aliases: ['erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c']
-        }, {
-          denom: 'arusd',
-          exponent: 18
-        }],
-      base: 'ibc/5D270A584B1078FBE07D14570ED5E88EC1FEDA8518B76C322606291E6FD8286F',
-      name: 'Arable USD',
-      display: 'arusd',
-      symbol: 'arUSD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-490',
-            path: 'transfer/channel-490/erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c'
-          }
-        }]
-    },
-    {
-      description: 'Ciento Exchange Token',
-      denom_units: [{
-          denom: 'ibc/D38BB3DD46864694F009AF01DA5A815B3A875F8CC52FF5679BFFCC35DC7451D5',
-          exponent: 0,
-          aliases: ['erc20/0xAE6D3334989a22A65228732446731438672418F2']
-        }, {
-          denom: 'cnto',
-          exponent: 18
-        }],
-      base: 'ibc/D38BB3DD46864694F009AF01DA5A815B3A875F8CC52FF5679BFFCC35DC7451D5',
-      name: 'Ciento Token',
-      display: 'cnto',
-      symbol: 'CNTO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'erc20/0xAE6D3334989a22A65228732446731438672418F2',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-490',
-            path: 'transfer/channel-490/erc20/0xAE6D3334989a22A65228732446731438672418F2'
           }
         }]
     },
@@ -7492,6 +6513,40 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of BLG24, a sovereign Layer 1 blockchain built on Cosmos SDK.',
+      denom_units: [{
+          denom: 'ibc/26201350CB5096C2B8C0585A2871C519BFEBC73EEEC287396934B85F60E7AA5E',
+          exponent: 0,
+          aliases: ['ug24']
+        }, {
+          denom: 'g24',
+          exponent: 6
+        }],
+      base: 'ibc/26201350CB5096C2B8C0585A2871C519BFEBC73EEEC287396934B85F60E7AA5E',
+      name: 'Gold24Coin',
+      display: 'g24',
+      symbol: 'G24',
+      type_asset: 'sdk.coin',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/blg24/images/g24.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/blg24/images/g24.png'
+        }],
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-1',
+            base_denom: 'ug24',
+            chain_name: 'blg24'
+          },
+          chain: {
+            channel_id: 'channel-111099',
+            path: 'transfer/channel-111099/ug24'
+          }
+        }]
+    },
+    {
       description: 'The native token of Bluzelle',
       denom_units: [{
           denom: 'ibc/63CDD51098FD99E04E5F5610A3882CBE7614C441607BA6FCD7F3A3C1CD5325F8',
@@ -7601,176 +6656,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-763',
             path: 'transfer/channel-763/ug4'
-          }
-        }]
-    },
-    {
-      description: 'The staking token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/FE2CD1E6828EC0FAB8AF39BAC45BC25B965BA67CCBC50C13A14BD610B0D1E2C4',
-          exponent: 0,
-          aliases: ['boot']
-        }],
-      base: 'ibc/FE2CD1E6828EC0FAB8AF39BAC45BC25B965BA67CCBC50C13A14BD610B0D1E2C4',
-      name: 'Bostrom',
-      display: 'boot',
-      symbol: 'BOOT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
-      },
-      coingecko_id: 'bostrom',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/boot.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'boot',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/boot'
-          }
-        }]
-    },
-    {
-      description: 'The liquid staking token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/4F3B0EC2FE2D370D10C3671A1B7B06D2A964C721470C305CBB846ED60E6CAA20',
-          exponent: 0,
-          aliases: ['hydrogen']
-        }],
-      base: 'ibc/4F3B0EC2FE2D370D10C3671A1B7B06D2A964C721470C305CBB846ED60E6CAA20',
-      name: 'Bostrom Hydrogen',
-      display: 'hydrogen',
-      symbol: 'HYDROGEN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/hydrogen.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'hydrogen',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/hydrogen'
-          }
-        }]
-    },
-    {
-      description: 'The resource token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/020F5162B7BC40656FC5432622647091F00D53E82EE8D21757B43D3282F25424',
-          exponent: 0,
-          aliases: ['milliampere']
-        }, {
-          denom: 'ampere',
-          exponent: 3,
-          aliases: ['ampere']
-        }],
-      base: 'ibc/020F5162B7BC40656FC5432622647091F00D53E82EE8D21757B43D3282F25424',
-      name: 'Bostrom Ampere',
-      display: 'ampere',
-      symbol: 'A',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/ampere.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'milliampere',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/milliampere'
-          }
-        }]
-    },
-    {
-      description: 'The resource token of Bostrom',
-      denom_units: [{
-          denom: 'ibc/D3A1900B2B520E45608B5671ADA461E1109628E89B4289099557C6D3996F7DAA',
-          exponent: 0,
-          aliases: ['millivolt']
-        }, {
-          denom: 'volt',
-          exponent: 3,
-          aliases: ['volt']
-        }],
-      base: 'ibc/D3A1900B2B520E45608B5671ADA461E1109628E89B4289099557C6D3996F7DAA',
-      name: 'Bostrom Volt',
-      display: 'volt',
-      symbol: 'V',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/volt.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'millivolt',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/millivolt'
-          }
-        }]
-    },
-    {
-      description: 'The staking token of Cyber',
-      denom_units: [{
-          denom: 'ibc/BCDB35B7390806F35E716D275E1E017999F8281A81B6F128F087EF34D1DFA761',
-          exponent: 0,
-          aliases: ['tocyb']
-        }],
-      base: 'ibc/BCDB35B7390806F35E716D275E1E017999F8281A81B6F128F087EF34D1DFA761',
-      name: 'Bostrom Tocyb',
-      display: 'tocyb',
-      symbol: 'TOCYB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bostrom/images/tocyb.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'tocyb',
-            chain_name: 'bostrom'
-          },
-          chain: {
-            channel_id: 'channel-95',
-            path: 'transfer/channel-95/tocyb'
           }
         }]
     },
@@ -8119,115 +7004,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-39205',
             path: 'transfer/channel-39205/ucif'
-          }
-        }]
-    },
-    {
-      description: 'Native Token of Comdex Protocol',
-      denom_units: [{
-          denom: 'ibc/EA3E1640F9B1532AB129A571203A0B9F789A7F14BB66E350DCBFA18E1A1931F0',
-          exponent: 0,
-          aliases: ['ucmdx']
-        }, {
-          denom: 'cmdx',
-          exponent: 6
-        }],
-      base: 'ibc/EA3E1640F9B1532AB129A571203A0B9F789A7F14BB66E350DCBFA18E1A1931F0',
-      name: 'Comdex',
-      display: 'cmdx',
-      symbol: 'CMDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'ucmdx',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-87',
-            path: 'transfer/channel-87/ucmdx'
-          }
-        }]
-    },
-    {
-      description: 'Governance Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/AD4DEA52408EA07C0C9E19444EC8DA84A274A70AD2687A710EFDDEB28BB2986A',
-          exponent: 0,
-          aliases: ['uharbor']
-        }, {
-          denom: 'harbor',
-          exponent: 6
-        }],
-      base: 'ibc/AD4DEA52408EA07C0C9E19444EC8DA84A274A70AD2687A710EFDDEB28BB2986A',
-      name: 'Harbor',
-      display: 'harbor',
-      symbol: 'HARBOR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uharbor',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-87',
-            path: 'transfer/channel-87/uharbor'
-          }
-        }]
-    },
-    {
-      description: 'Stable Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/23CA6C8D1AB2145DD13EB1E089A2E3F960DC298B468CCE034E19E5A78B61136E',
-          exponent: 0,
-          aliases: ['ucmst']
-        }, {
-          denom: 'cmst',
-          exponent: 6
-        }],
-      base: 'ibc/23CA6C8D1AB2145DD13EB1E089A2E3F960DC298B468CCE034E19E5A78B61136E',
-      name: 'CMST',
-      display: 'cmst',
-      symbol: 'CMST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-      },
-      coingecko_id: 'composite',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'ucmst',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-87',
-            path: 'transfer/channel-87/ucmst'
           }
         }]
     },
@@ -8931,39 +7707,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the Dyson Protocol',
-      denom_units: [{
-          denom: 'ibc/E27CD305D33F150369AB526AEB6646A76EC3FFB1A6CA58A663B5DE657A89D55D',
-          exponent: 0,
-          aliases: ['dys']
-        }],
-      base: 'ibc/E27CD305D33F150369AB526AEB6646A76EC3FFB1A6CA58A663B5DE657A89D55D',
-      name: 'Dys',
-      display: 'dys',
-      symbol: 'DYS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/dyson/images/dys.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-2',
-            base_denom: 'dys',
-            chain_name: 'dyson'
-          },
-          chain: {
-            channel_id: 'channel-526',
-            path: 'transfer/channel-526/dys'
-          }
-        }]
-    },
-    {
       description: 'Echelon - a scalable EVM on Cosmos, built on Proof-of-Stake with fast-finality that prioritizes interoperability and novel economics',
       denom_units: [{
           denom: 'ibc/47EE224A9B33CF0ABEAC82106E52F0F6E8D8CEC5BA80B9D9A6F55172CBB0177D',
@@ -8996,212 +7739,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-403',
             path: 'transfer/channel-403/aechelon'
-          }
-        }]
-    },
-    {
-      description: 'e-Money NGM staking token. In addition to earning staking rewards the token is bought back and burned based on e-Money stablecoin inflation.',
-      denom_units: [{
-          denom: 'ibc/1DC495FCEFDA068A3820F903EDBD78B942FBD204D7E93D3BA2B432E9669D1A59',
-          exponent: 0,
-          aliases: ['ungm']
-        }, {
-          denom: 'ngm',
-          exponent: 6
-        }],
-      base: 'ibc/1DC495FCEFDA068A3820F903EDBD78B942FBD204D7E93D3BA2B432E9669D1A59',
-      name: 'e-Money',
-      display: 'ngm',
-      symbol: 'NGM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/ngm.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'ungm',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/ungm'
-          }
-        }]
-    },
-    {
-      description: 'e-Money EUR stablecoin. Audited and backed by fiat EUR deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/5973C068568365FFF40DEDCF1A1CB7582B6116B731CD31A12231AE25E20B871F',
-          exponent: 0,
-          aliases: ['eeur']
-        }, {
-          denom: 'eur',
-          exponent: 6
-        }],
-      base: 'ibc/5973C068568365FFF40DEDCF1A1CB7582B6116B731CD31A12231AE25E20B871F',
-      name: 'e-Money EUR',
-      display: 'eur',
-      symbol: 'EEUR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/eeur.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'eeur',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/eeur'
-          }
-        }]
-    },
-    {
-      description: 'e-Money CHF stablecoin. Audited and backed by fiat CHF deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
-          exponent: 0,
-          aliases: ['echf']
-        }, {
-          denom: 'chf',
-          exponent: 6
-        }],
-      base: 'ibc/9BC783D73D46226BC948F34BC9136C081B89144E646DB5E4C1E8A6A4E777DC1B',
-      name: 'e-Money CHF',
-      display: 'chf',
-      symbol: 'ECHF',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/echf.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'echf',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/echf'
-          }
-        }]
-    },
-    {
-      description: 'e-Money NOK stablecoin. Audited and backed by fiat NOK deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
-          exponent: 0,
-          aliases: ['enok']
-        }, {
-          denom: 'nok',
-          exponent: 6
-        }],
-      base: 'ibc/1733402CBEA1D9D9D13DEA1EF1A76A116B51F5FF252A4DBBE6240DBFF8758EFC',
-      name: 'e-Money NOK',
-      display: 'nok',
-      symbol: 'ENOK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/enok.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'enok',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/enok'
-          }
-        }]
-    },
-    {
-      description: 'e-Money DKK stablecoin. Audited and backed by fiat DKK deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
-          exponent: 0,
-          aliases: ['edkk']
-        }, {
-          denom: 'dkk',
-          exponent: 6
-        }],
-      base: 'ibc/737BA149DE0967CA64C7A6FFCF5026EC7C6210F4BA1A3B1429E4FEBDEB4940F2',
-      name: 'e-Money DKK',
-      display: 'dkk',
-      symbol: 'EDKK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/edkk.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'edkk',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/edkk'
-          }
-        }]
-    },
-    {
-      description: 'e-Money SEK stablecoin. Audited and backed by fiat SEK deposits and government bonds.',
-      denom_units: [{
-          denom: 'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
-          exponent: 0,
-          aliases: ['esek']
-        }, {
-          denom: 'sek',
-          exponent: 6
-        }],
-      base: 'ibc/686B4FE801A81ED9B46CC2E24FF3A7EA2E6A1E1A2A4D73BD7F2BC2866007AB0A',
-      name: 'e-Money SEK',
-      display: 'sek',
-      symbol: 'ESEK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/emoney/images/esek.png'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'esek',
-            chain_name: 'emoney'
-          },
-          chain: {
-            channel_id: 'channel-37',
-            path: 'transfer/channel-37/esek'
           }
         }]
     },
@@ -10446,44 +8983,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Int3face blockchain native token',
-      denom_units: [{
-          denom: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
-          exponent: 0,
-          aliases: ['uint3']
-        }, {
-          denom: 'int3',
-          exponent: 6
-        }],
-      base: 'ibc/7D29C888219883C47C623578ACACFC89CC29AA70FBF09C895A1EED911BF90F32',
-      name: 'Int3face Token',
-      display: 'int3',
-      symbol: 'INT3',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-        }],
-      socials: {
-        website: 'https://int3face.zone/',
-        x: 'https://x.com/_Bitfrost_'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uint3',
-            chain_name: 'int3face'
-          },
-          chain: {
-            channel_id: 'channel-82819',
-            path: 'transfer/channel-82819/uint3'
-          }
-        }]
-    },
-    {
       description: 'The native token of Intento',
       denom_units: [{
           denom: 'ibc/BE072C03DA544CF282499418E7BC64D38614879B3EE95F9AD91E6C37267D4836',
@@ -10830,42 +9329,6 @@ const assets: AssetList = {
         svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg'
       },
       type_asset: 'sdk.coin'
-    },
-    {
-      description: 'The native token of Ki Chain',
-      denom_units: [{
-          denom: 'ibc/B547DC9B897E7C3AA5B824696110B8E3D2C31E3ED3F02FF363DCBAD82457E07E',
-          exponent: 0,
-          aliases: ['uxki']
-        }, {
-          denom: 'xki',
-          exponent: 6
-        }],
-      base: 'ibc/B547DC9B897E7C3AA5B824696110B8E3D2C31E3ED3F02FF363DCBAD82457E07E',
-      name: 'Ki',
-      display: 'xki',
-      symbol: 'XKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/xki.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'uxki',
-            chain_name: 'kichain'
-          },
-          chain: {
-            channel_id: 'channel-77',
-            path: 'transfer/channel-77/uxki'
-          }
-        }]
     },
     {
       description: 'Kima is an asset-agnostic interoperability infrastructure that connects blockchain networks and legacy financial systems, enabling secure, scalable cross-chain transactions and seamless communication across ecosystems.',
@@ -12551,195 +11014,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'ODIN is the Staking and governance token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/C360EF34A86D334F625E4CBB7DA3223AEA97174B61F35BB3758081A8160F7D9B',
-          exponent: 0,
-          aliases: ['loki']
-        }, {
-          denom: 'odin',
-          exponent: 6
-        }],
-      base: 'ibc/C360EF34A86D334F625E4CBB7DA3223AEA97174B61F35BB3758081A8160F7D9B',
-      name: 'ODIN',
-      display: 'odin',
-      symbol: 'ODIN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-        }],
-      socials: {
-        website: 'https://odinprotocol.io/',
-        x: 'https://x.com/odinprotocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'loki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/loki'
-          }
-        }]
-    },
-    {
-      description: 'GEO token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/9B6FBABA36BB4A3BF127AE5E96B572A5197FD9F3111D895D8919B07BC290764A',
-          exponent: 0,
-          aliases: ['mGeo']
-        }, {
-          denom: 'geo',
-          exponent: 6
-        }],
-      base: 'ibc/9B6FBABA36BB4A3BF127AE5E96B572A5197FD9F3111D895D8919B07BC290764A',
-      name: 'GEO',
-      display: 'geo',
-      symbol: 'GEO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'mGeo',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/mGeo'
-          }
-        }]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [{
-          denom: 'ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B',
-          exponent: 0,
-          aliases: ['udoki']
-        }, {
-          denom: 'doki',
-          exponent: 6
-        }],
-      base: 'ibc/C12C353A83CD1005FC38943410B894DBEC5F2ABC97FC12908F0FB03B970E8E1B',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }],
-      socials: {
-        website: 'https://dokicoin.io/',
-        x: 'https://x.com/doki_coin'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'udoki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/udoki'
-          }
-        }]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [{
-          denom: 'ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752',
-          exponent: 0,
-          aliases: ['umyrk']
-        }, {
-          denom: 'myrk',
-          exponent: 6
-        }],
-      base: 'ibc/B9CBF51BD026FDB9F6D0623130E5242512CCE6147978C90A3B00C57F797AF752',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-        }],
-      socials: {
-        x: 'https://x.com/myrkweilds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'umyrk',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/umyrk'
-          }
-        }]
-    },
-    {
-      description: 'O9W token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D',
-          exponent: 0,
-          aliases: ['mO9W']
-        }, {
-          denom: 'O9W',
-          exponent: 6
-        }],
-      base: 'ibc/0CD46223FEABD2AEAAAF1F057D01E63BCA79B7D4BD6B68F1EB973A987344695D',
-      name: 'O9W',
-      display: 'O9W',
-      symbol: 'O9W',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }],
-      socials: {
-        website: 'https://www.odin9worlds.io/',
-        x: 'https://x.com/odin9worlds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-3',
-            base_denom: 'mO9W',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-258',
-            path: 'transfer/channel-258/mO9W'
-          }
-        }]
-    },
-    {
       description: 'The native token of Optio',
       denom_units: [{
           denom: 'ibc/6AA47B1A9F00CC9B127796717F4BE976C12EFC843387F22461152888E1365045',
@@ -13455,45 +11729,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The QSR token has transitioned to a legacy token, with migration to the EVM ecosystem currently underway.',
-      denom_units: [{
-          denom: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
-          exponent: 0,
-          aliases: ['uqsr']
-        }, {
-          denom: 'qsr',
-          exponent: 6,
-          aliases: []
-        }],
-      type_asset: 'sdk.coin',
-      base: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
-      name: 'Quasar (legacy)',
-      display: 'qsr',
-      symbol: 'QSR.legacy',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
-        }],
-      socials: {
-        website: 'https://www.quasar.fi/',
-        x: 'https://x.com/QuasarFi'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uqsr',
-            chain_name: 'quasar'
-          },
-          chain: {
-            channel_id: 'channel-688',
-            path: 'transfer/channel-688/uqsr'
-          }
-        }]
-    },
-    {
       description: 'QCK - native token of Quicksilver',
       denom_units: [{
           denom: 'ibc/635CB83EF1DFE598B10A3E90485306FD0D47D34217A4BE5FD9977FA010A5367D',
@@ -13646,42 +11881,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-1424',
             path: 'transfer/channel-1424/arst'
-          }
-        }]
-    },
-    {
-      description: 'REBUS, the native coin of the Rebus chain.',
-      denom_units: [{
-          denom: 'ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9',
-          exponent: 0,
-          aliases: ['arebus']
-        }, {
-          denom: 'rebus',
-          exponent: 18
-        }],
-      base: 'ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9',
-      name: 'Rebus',
-      display: 'rebus',
-      symbol: 'REBUS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'arebus',
-            chain_name: 'rebus'
-          },
-          chain: {
-            channel_id: 'channel-355',
-            path: 'transfer/channel-355/arebus'
           }
         }]
     },
@@ -14555,41 +12754,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-110679',
             path: 'transfer/channel-110679/usovr'
-          }
-        }]
-    },
-    {
-      description: 'The native staking and governance token of the StaFi Hub.',
-      denom_units: [{
-          denom: 'ibc/01D2F0C4739C871BFBEE7E786709E6904A55559DC1483DD92ED392EF12247862',
-          exponent: 0,
-          aliases: ['ufis']
-        }, {
-          denom: 'fis',
-          exponent: 6
-        }],
-      base: 'ibc/01D2F0C4739C871BFBEE7E786709E6904A55559DC1483DD92ED392EF12247862',
-      name: 'FIS',
-      display: 'fis',
-      symbol: 'FIS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-      },
-      coingecko_id: 'stafi',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-10',
-            base_denom: 'ufis',
-            chain_name: 'stafihub'
-          },
-          chain: {
-            channel_id: 'channel-5413',
-            path: 'transfer/channel-5413/ufis'
           }
         }]
     },
@@ -16954,45 +15118,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The QSR token has transitioned to a legacy token, with migration to the EVM ecosystem currently underway.',
-      denom_units: [{
-          denom: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
-          exponent: 0,
-          aliases: ['uqsr']
-        }, {
-          denom: 'qsr',
-          exponent: 6,
-          aliases: []
-        }],
-      type_asset: 'sdk.coin',
-      base: 'ibc/1B708808D372E959CD4839C594960309283424C775F4A038AAEBE7F83A988477',
-      name: 'Quasar (legacy)',
-      display: 'qsr',
-      symbol: 'QSR.legacy',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png'
-        }],
-      socials: {
-        website: 'https://www.quasar.fi/',
-        x: 'https://x.com/QuasarFi'
-      },
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uqsr',
-            chain_name: 'quasar'
-          },
-          chain: {
-            channel_id: 'channel-688',
-            path: 'transfer/channel-688/uqsr'
-          }
-        }]
-    },
-    {
       description: 'QCK - native token of Quicksilver',
       denom_units: [{
           denom: 'ibc/635CB83EF1DFE598B10A3E90485306FD0D47D34217A4BE5FD9977FA010A5367D',
@@ -17145,42 +15270,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-1424',
             path: 'transfer/channel-1424/arst'
-          }
-        }]
-    },
-    {
-      description: 'REBUS, the native coin of the Rebus chain.',
-      denom_units: [{
-          denom: 'ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9',
-          exponent: 0,
-          aliases: ['arebus']
-        }, {
-          denom: 'rebus',
-          exponent: 18
-        }],
-      base: 'ibc/A1AC7F9EE2F643A68E3A35BCEB22040120BEA4059773BB56985C76BDFEBC71D9',
-      name: 'Rebus',
-      display: 'rebus',
-      symbol: 'REBUS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-0',
-            base_denom: 'arebus',
-            chain_name: 'rebus'
-          },
-          chain: {
-            channel_id: 'channel-355',
-            path: 'transfer/channel-355/arebus'
           }
         }]
     },
@@ -18054,41 +16143,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-110679',
             path: 'transfer/channel-110679/usovr'
-          }
-        }]
-    },
-    {
-      description: 'The native staking and governance token of the StaFi Hub.',
-      denom_units: [{
-          denom: 'ibc/01D2F0C4739C871BFBEE7E786709E6904A55559DC1483DD92ED392EF12247862',
-          exponent: 0,
-          aliases: ['ufis']
-        }, {
-          denom: 'fis',
-          exponent: 6
-        }],
-      base: 'ibc/01D2F0C4739C871BFBEE7E786709E6904A55559DC1483DD92ED392EF12247862',
-      name: 'FIS',
-      display: 'fis',
-      symbol: 'FIS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-      },
-      coingecko_id: 'stafi',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-10',
-            base_denom: 'ufis',
-            chain_name: 'stafihub'
-          },
-          chain: {
-            channel_id: 'channel-5413',
-            path: 'transfer/channel-5413/ufis'
           }
         }]
     },
@@ -23303,43 +21357,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'ELEVENPARIS loyalty token on KiChain',
-      type_asset: 'cw20',
-      address: 'ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
-      denom_units: [{
-          denom: 'ibc/AD185F62399F770CCCE8A36A180A77879FF6C26A0398BD3D2A74E087B0BFA121',
-          exponent: 0,
-          aliases: ['cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy']
-        }, {
-          denom: 'lvn',
-          exponent: 6
-        }],
-      base: 'ibc/AD185F62399F770CCCE8A36A180A77879FF6C26A0398BD3D2A74E087B0BFA121',
-      name: 'LVN',
-      display: 'lvn',
-      symbol: 'LVN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.ki1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsd9kgha',
-            channel_id: 'channel-18',
-            base_denom: 'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
-            chain_name: 'kichain'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-261',
-            path: 'transfer/channel-261/cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy'
-          }
-        }]
-    },
-    {
       description: 'Liquid staking token from Cube by SatLayer',
       denom_units: [{
           denom: 'ibc/C0B56CB79B3CC7759C4DB504C2577ED763E2B3A39A39AB0EC3AB1A76B556A800',
@@ -26772,39 +24789,8950 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'ELEVENPARIS loyalty token on KiChain',
-      type_asset: 'cw20',
-      address: 'ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
+      description: 'The native token cw20 for SIENNA on Secret Network',
       denom_units: [{
-          denom: 'ibc/AD185F62399F770CCCE8A36A180A77879FF6C26A0398BD3D2A74E087B0BFA121',
+          denom: 'ibc/9A8A93D04917A149C8AC7C16D3DA8F470D59E8D867499C4DA97450E1D7363213',
           exponent: 0,
-          aliases: ['cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy']
+          aliases: ['cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4']
         }, {
-          denom: 'lvn',
-          exponent: 6
+          denom: 'sienna',
+          exponent: 18
         }],
-      base: 'ibc/AD185F62399F770CCCE8A36A180A77879FF6C26A0398BD3D2A74E087B0BFA121',
-      name: 'LVN',
-      display: 'lvn',
-      symbol: 'LVN',
+      type_asset: 'snip20',
+      address: 'secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
+      base: 'ibc/9A8A93D04917A149C8AC7C16D3DA8F470D59E8D867499C4DA97450E1D7363213',
+      name: 'SIENNA',
+      display: 'sienna',
+      symbol: 'SIENNA',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kichain/images/lvn.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
         }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
-            port: 'wasm.ki1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsd9kgha',
-            channel_id: 'channel-18',
-            base_denom: 'cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy',
-            chain_name: 'kichain'
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
+            chain_name: 'secretnetwork'
           },
           chain: {
             port: 'transfer',
-            channel_id: 'channel-261',
-            path: 'transfer/channel-261/cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy'
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for Shade on Secret Network',
+      denom_units: [{
+          denom: 'ibc/71055835C7639739EAE03AACD1324FE162DBA41D09F197CB72D966D014225B1C',
+          exponent: 0,
+          aliases: ['cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d']
+        }, {
+          denom: 'shd',
+          exponent: 8
+        }],
+      type_asset: 'snip20',
+      address: 'secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
+      base: 'ibc/71055835C7639739EAE03AACD1324FE162DBA41D09F197CB72D966D014225B1C',
+      name: 'Shade (old)',
+      display: 'shd',
+      symbol: 'SHD.old',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for Shade on Secret Network',
+      denom_units: [{
+          denom: 'ibc/0B3D528E74E3DEAADF8A68F393887AC7E06028904D02173561B0D27F6E751D0A',
+          exponent: 0,
+          aliases: ['cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm']
+        }, {
+          denom: 'shd',
+          exponent: 8
+        }],
+      type_asset: 'snip25',
+      address: 'secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
+      base: 'ibc/0B3D528E74E3DEAADF8A68F393887AC7E06028904D02173561B0D27F6E751D0A',
+      name: 'Shade',
+      display: 'shd',
+      symbol: 'SHD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
+      },
+      coingecko_id: 'shade-protocol',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for Silk on Secret Network',
+      denom_units: [{
+          denom: 'ibc/8A025A1E70101E39DE0C0F153E582A30806D3DA16795F6D868A3AA247D2DEDF7',
+          exponent: 0,
+          aliases: ['cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd']
+        }, {
+          denom: 'silk',
+          exponent: 6
+        }],
+      type_asset: 'snip25',
+      address: 'secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
+      base: 'ibc/8A025A1E70101E39DE0C0F153E582A30806D3DA16795F6D868A3AA247D2DEDF7',
+      name: 'Silk',
+      display: 'silk',
+      symbol: 'SILK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for dSilk on Secret Network',
+      denom_units: [{
+          denom: 'ibc/6941C32DD57BB114753331CF5F899802D3A0C7E3E42B760A5AE2EC7432343EB5',
+          exponent: 0,
+          aliases: ['cw20:secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw']
+        }, {
+          denom: 'dsilk',
+          exponent: 6
+        }],
+      type_asset: 'snip25',
+      address: 'secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw',
+      base: 'ibc/6941C32DD57BB114753331CF5F899802D3A0C7E3E42B760A5AE2EC7432343EB5',
+      name: 'dSilk',
+      display: 'dsilk',
+      symbol: 'dSILK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for xSilk on Secret Network',
+      denom_units: [{
+          denom: 'ibc/F0FDAA2504C9850327D761000DACDB8DE1382BF68D1FE5C102F9DA8637BB7623',
+          exponent: 0,
+          aliases: ['cw20:secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82']
+        }, {
+          denom: 'xsilk',
+          exponent: 6
+        }],
+      type_asset: 'snip25',
+      address: 'secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82',
+      base: 'ibc/F0FDAA2504C9850327D761000DACDB8DE1382BF68D1FE5C102F9DA8637BB7623',
+      name: 'xSilk',
+      display: 'xsilk',
+      symbol: 'xSILK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for SCRT Staking Derivatives on Secret Network',
+      denom_units: [{
+          denom: 'ibc/D0E5BF2940FB58D9B283A339032DE88111407AAD7D94A7F1F3EB78874F8616D4',
+          exponent: 0,
+          aliases: ['cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4']
+        }, {
+          denom: 'stkd-scrt',
+          exponent: 6
+        }],
+      type_asset: 'snip20',
+      address: 'secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
+      base: 'ibc/D0E5BF2940FB58D9B283A339032DE88111407AAD7D94A7F1F3EB78874F8616D4',
+      name: 'SCRT Staking Derivatives',
+      display: 'stkd-scrt',
+      symbol: 'stkd-SCRT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for Button on Secret Network',
+      denom_units: [{
+          denom: 'ibc/1FBA9E763B8679BEF7BAAAF2D16BCA78C3B297D226C3F31312C769D7B8F992D8',
+          exponent: 0,
+          aliases: ['cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt']
+        }, {
+          denom: 'butt',
+          exponent: 6
+        }],
+      type_asset: 'snip20',
+      address: 'secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
+      base: 'ibc/1FBA9E763B8679BEF7BAAAF2D16BCA78C3B297D226C3F31312C769D7B8F992D8',
+      name: 'Button',
+      display: 'butt',
+      symbol: 'BUTT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for Alter on Secret Network',
+      denom_units: [{
+          denom: 'ibc/A6383B6CF5EA23E067666C06BC34E2A96869927BD9744DC0C1643E589C710AA3',
+          exponent: 0,
+          aliases: ['cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej']
+        }, {
+          denom: 'alter',
+          exponent: 6
+        }],
+      base: 'ibc/A6383B6CF5EA23E067666C06BC34E2A96869927BD9744DC0C1643E589C710AA3',
+      type_asset: 'snip20',
+      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
+      name: 'Alter',
+      display: 'alter',
+      symbol: 'ALTER',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
+        }],
+      socials: {
+        website: 'http://alter.network/',
+        x: 'https://x.com/AlterDapp'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for Amber on Secret Network',
+      denom_units: [{
+          denom: 'ibc/18A1B70E3205A48DE8590C0D11030E7146CDBF1048789261D53FFFD7527F8B55',
+          exponent: 0,
+          aliases: ['cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852']
+        }, {
+          denom: 'amber',
+          exponent: 6
+        }],
+      type_asset: 'snip20',
+      address: 'secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
+      base: 'ibc/18A1B70E3205A48DE8590C0D11030E7146CDBF1048789261D53FFFD7527F8B55',
+      name: 'Amber',
+      display: 'amber',
+      symbol: 'AMBER',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png'
+        }],
+      socials: {
+        website: 'http://amber.money/',
+        x: 'https://x.com/AmberDAO_'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852'
+          }
+        }]
+    },
+    {
+      description: 'The native token cw20 for Shill on Secret Network',
+      denom_units: [{
+          denom: 'ibc/77BEE176F08CCC5AFBDFCCB9C63EBDF95D773FE3A0D3A85AC667AD633CE030A7',
+          exponent: 0,
+          aliases: ['cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse']
+        }, {
+          denom: 'shill',
+          exponent: 6
+        }],
+      type_asset: 'snip25',
+      address: 'secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
+      base: 'ibc/77BEE176F08CCC5AFBDFCCB9C63EBDF95D773FE3A0D3A85AC667AD633CE030A7',
+      name: 'Shill',
+      display: 'shill',
+      symbol: 'SHILL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse'
+          }
+        }]
+    },
+    {
+      description: 'SNVR - Stealth Network for Vault Relay. Privacy token on Secret Network (SNIP-20).',
+      denom_units: [{
+          denom: 'ibc/C2543DF97BE8C586695DBEE56A4DE0FB82F16B37F57DC6818AA349C68D0C3927',
+          exponent: 0,
+          aliases: ['cw20:secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7']
+        }, {
+          denom: 'snvr',
+          exponent: 9
+        }],
+      type_asset: 'snip20',
+      address: 'secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7',
+      base: 'ibc/C2543DF97BE8C586695DBEE56A4DE0FB82F16B37F57DC6818AA349C68D0C3927',
+      name: 'SNVR',
+      display: 'snvr',
+      symbol: 'SNVR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/snvr.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/snvr.png'
+        }],
+      socials: {
+        website: 'https://snvr.org'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
+            channel_id: 'channel-44',
+            base_denom: 'cw20:secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7',
+            chain_name: 'secretnetwork'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-476',
+            path: 'transfer/channel-476/cw20:secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7'
+          }
+        }]
+    },
+    {
+      description: 'The governance token of the White Whale protocol on Terra.',
+      type_asset: 'cw20',
+      address: 'terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz',
+      denom_units: [{
+          denom: 'ibc/82AD9817B08DCB07821D243D702AF1B0D3D0EAFF66D65DBB41AD2BF1FF5A9AFF',
+          exponent: 0,
+          aliases: ['cw20:terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz']
+        }, {
+          denom: 'whale',
+          exponent: 6
+        }],
+      base: 'ibc/82AD9817B08DCB07821D243D702AF1B0D3D0EAFF66D65DBB41AD2BF1FF5A9AFF',
+      name: 'Whale Token',
+      display: 'whale',
+      symbol: 'WHALE',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png'
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/63EBD991773EE060A63ABBA7B322F9C843071C99F74833374ED7BAC8E776D71F',
+          exponent: 0,
+          aliases: ['cw20:terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp']
+        }, {
+          denom: 'bluna',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp',
+      base: 'ibc/63EBD991773EE060A63ABBA7B322F9C843071C99F74833374ED7BAC8E776D71F',
+      name: 'Bonded Luna',
+      display: 'bluna',
+      symbol: 'bLuna',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/32035A87EE8A052F28371E3E98D0ADDCA6890FE3967D5C07ABE55EFBD4AA7B51',
+          exponent: 0,
+          aliases: ['cw20:terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun']
+        }, {
+          denom: 'beth',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun',
+      base: 'ibc/32035A87EE8A052F28371E3E98D0ADDCA6890FE3967D5C07ABE55EFBD4AA7B51',
+      name: 'Bonded ETH',
+      display: 'beth',
+      symbol: 'bETH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/57662073AAFBE40B2B03382D493FB35C261E912659C9C627A72BFEC24C3635FD',
+          exponent: 0,
+          aliases: ['cw20:terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu']
+        }, {
+          denom: 'aust',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu',
+      base: 'ibc/57662073AAFBE40B2B03382D493FB35C261E912659C9C627A72BFEC24C3635FD',
+      name: 'Anchor Terra USD',
+      display: 'aust',
+      symbol: 'aUST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2EBD9F990C5888851CD78F96D22C020CA463391ED203ECDB43E77520530316B0',
+          exponent: 0,
+          aliases: ['cw20:terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76']
+        }, {
+          denom: 'anc',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76',
+      base: 'ibc/2EBD9F990C5888851CD78F96D22C020CA463391ED203ECDB43E77520530316B0',
+      name: 'Anchor Token',
+      display: 'anc',
+      symbol: 'ANC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/E17EB70205DD3BEA32B262CC38392897B68BFF905C99B53F094391AD134276C6',
+          exponent: 0,
+          aliases: ['cw20:terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6']
+        }, {
+          denom: 'mir',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6',
+      base: 'ibc/E17EB70205DD3BEA32B262CC38392897B68BFF905C99B53F094391AD134276C6',
+      name: 'Mirror',
+      display: 'mir',
+      symbol: 'MIR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2E15E8569CA318154C55842215FAA6578EE99766D2AB1908DAA96CFB85B1ED1F',
+          exponent: 0,
+          aliases: ['cw20:terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz']
+        }, {
+          denom: 'maapl',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz',
+      base: 'ibc/2E15E8569CA318154C55842215FAA6578EE99766D2AB1908DAA96CFB85B1ED1F',
+      name: 'Apple Inc.',
+      display: 'maapl',
+      symbol: 'mAAPL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/A2239172F91820B21E9AEB067E44C77DBAEF953F97F933E4A70FCFB40C2EF4E1',
+          exponent: 0,
+          aliases: ['cw20:terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n']
+        }, {
+          denom: 'mabnb',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n',
+      base: 'ibc/A2239172F91820B21E9AEB067E44C77DBAEF953F97F933E4A70FCFB40C2EF4E1',
+      name: 'Airbnb Inc.',
+      display: 'mabnb',
+      symbol: 'mABNB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/D615D4EF93F9048A54265F3835F56DCAC397EC4382EAF0F250E787AD732A3D28',
+          exponent: 0,
+          aliases: ['cw20:terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy']
+        }, {
+          denom: 'mamc',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy',
+      base: 'ibc/D615D4EF93F9048A54265F3835F56DCAC397EC4382EAF0F250E787AD732A3D28',
+      name: 'AMC Entertainment Holdings Inc.',
+      display: 'mamc',
+      symbol: 'mAMC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/FD42D9706399B180B1E21FCD3005B4C08C21663240385F3AD1FF7A87BB17C719',
+          exponent: 0,
+          aliases: ['cw20:terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z']
+        }, {
+          denom: 'mamd',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z',
+      base: 'ibc/FD42D9706399B180B1E21FCD3005B4C08C21663240385F3AD1FF7A87BB17C719',
+      name: 'Advanced Micro Devices, Inc.',
+      display: 'mamd',
+      symbol: 'mAMD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/65DDE46CFDD4BD6F6D764B0B3671D433EE1F085D98C611A75718B483D0CD074B',
+          exponent: 0,
+          aliases: ['cw20:terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2']
+        }, {
+          denom: 'mamzn',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2',
+      base: 'ibc/65DDE46CFDD4BD6F6D764B0B3671D433EE1F085D98C611A75718B483D0CD074B',
+      name: 'Amazon.com, Inc.',
+      display: 'mamzn',
+      symbol: 'mAMZN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/586F20211F8473B420AB43D2DC5CF4EF294E37A1403E28696F6EB38F486B2620',
+          exponent: 0,
+          aliases: ['cw20:terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6']
+        }, {
+          denom: 'markk',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6',
+      base: 'ibc/586F20211F8473B420AB43D2DC5CF4EF294E37A1403E28696F6EB38F486B2620',
+      name: 'ARK Innovation ETF',
+      display: 'markk',
+      symbol: 'mARKK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/1E3D600C43E479B21C622D4E34817F085085FBDC591D62CAB01AD5D3EB3D29E6',
+          exponent: 0,
+          aliases: ['cw20:terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa']
+        }, {
+          denom: 'mbaba',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa',
+      base: 'ibc/1E3D600C43E479B21C622D4E34817F085085FBDC591D62CAB01AD5D3EB3D29E6',
+      name: 'Alibaba Group Holding Limited',
+      display: 'mbaba',
+      symbol: 'mBABA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5705C83906FD9384B70779EB93E296CCAB4F990910D0474BAE4F90DA0BCE9109',
+          exponent: 0,
+          aliases: ['cw20:terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw']
+        }, {
+          denom: 'mbtc',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw',
+      base: 'ibc/5705C83906FD9384B70779EB93E296CCAB4F990910D0474BAE4F90DA0BCE9109',
+      name: 'Bitcoin',
+      display: 'mbtc',
+      symbol: 'mBTC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/3F4FFFB53C748CE3E064718DB5263ECEB0ECA4D5BBED69D0D978951A53DCAF75',
+          exponent: 0,
+          aliases: ['cw20:terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph']
+        }, {
+          denom: 'mcoin',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph',
+      base: 'ibc/3F4FFFB53C748CE3E064718DB5263ECEB0ECA4D5BBED69D0D978951A53DCAF75',
+      name: 'Coinbase Global, Inc.',
+      display: 'mcoin',
+      symbol: 'mCOIN',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/07F90B75153A12CC2E5A568595F48270F5773DD17621516270379648E08B89AC',
+          exponent: 0,
+          aliases: ['cw20:terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5']
+        }, {
+          denom: 'mdis',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5',
+      base: 'ibc/07F90B75153A12CC2E5A568595F48270F5773DD17621516270379648E08B89AC',
+      name: 'The Walt Disney Company',
+      display: 'mdis',
+      symbol: 'mDIS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/700E813EA9A2E59BDFDCA083655341B16C9737F62ADC03F96D0B23168AFCFEDF',
+          exponent: 0,
+          aliases: ['cw20:terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r']
+        }, {
+          denom: 'mdot',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r',
+      base: 'ibc/700E813EA9A2E59BDFDCA083655341B16C9737F62ADC03F96D0B23168AFCFEDF',
+      name: 'Polkadot',
+      display: 'mdot',
+      symbol: 'mDOT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8CD8ADDD0A97046D9DF16B7C29DB8ABB5AA70BD8122EA0B7AD7B02E6631C39FF',
+          exponent: 0,
+          aliases: ['cw20:terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx']
+        }, {
+          denom: 'meth',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx',
+      base: 'ibc/8CD8ADDD0A97046D9DF16B7C29DB8ABB5AA70BD8122EA0B7AD7B02E6631C39FF',
+      name: 'Ether',
+      display: 'meth',
+      symbol: 'mETH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8C505E640E1A4A88109256DC8FACC4395408A7A852485CD29B0BAD00B514AF8A',
+          exponent: 0,
+          aliases: ['cw20:terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7']
+        }, {
+          denom: 'mfb',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7',
+      base: 'ibc/8C505E640E1A4A88109256DC8FACC4395408A7A852485CD29B0BAD00B514AF8A',
+      name: 'Facebook Inc.',
+      display: 'mfb',
+      symbol: 'mFB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/63F3E02662A8FA5E21FB095E5103FBD207D9613E9B641CA94979520E5B95089A',
+          exponent: 0,
+          aliases: ['cw20:terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls']
+        }, {
+          denom: 'mglxy',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls',
+      base: 'ibc/63F3E02662A8FA5E21FB095E5103FBD207D9613E9B641CA94979520E5B95089A',
+      name: 'Galaxy Digital Holdings Ltd',
+      display: 'mglxy',
+      symbol: 'mGLXY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/FED18BFB62477AA5D7A2A0F19040199B0652FFC287549D602894DAC0A72E83DC',
+          exponent: 0,
+          aliases: ['cw20:terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p']
+        }, {
+          denom: 'mgme',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p',
+      base: 'ibc/FED18BFB62477AA5D7A2A0F19040199B0652FFC287549D602894DAC0A72E83DC',
+      name: 'GameStop Corp',
+      display: 'mgme',
+      symbol: 'mGME',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/FDC1A75744C19AB7CBBF84DA02DBF0D83943C78E0483FFFBEAA200658D8C07A9',
+          exponent: 0,
+          aliases: ['cw20:terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt']
+        }, {
+          denom: 'mgoogl',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt',
+      base: 'ibc/FDC1A75744C19AB7CBBF84DA02DBF0D83943C78E0483FFFBEAA200658D8C07A9',
+      name: 'Alphabet Inc.',
+      display: 'mgoogl',
+      symbol: 'mGOOGL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/54ECE801DA1016646C2A567C6F1C0B5BFA6546660D51EC02A3C21D4C46C471F9',
+          exponent: 0,
+          aliases: ['cw20:terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v']
+        }, {
+          denom: 'mgs',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v',
+      base: 'ibc/54ECE801DA1016646C2A567C6F1C0B5BFA6546660D51EC02A3C21D4C46C471F9',
+      name: 'Goldman Sachs Group Inc.',
+      display: 'mgs',
+      symbol: 'mGS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/F2864558ACE45E0C89192910CC808DF3725A6B2A0F2F13DDE8C83C4E9D33753B',
+          exponent: 0,
+          aliases: ['cw20:terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr']
+        }, {
+          denom: 'mhood',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr',
+      base: 'ibc/F2864558ACE45E0C89192910CC808DF3725A6B2A0F2F13DDE8C83C4E9D33753B',
+      name: 'Robinhood Markets, Inc.',
+      display: 'mhood',
+      symbol: 'mHOOD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/3E00EE6DBC74F0FE87592121948685BE9FD9FD9899D9BAD5FA573D0A6D257BCF',
+          exponent: 0,
+          aliases: ['cw20:terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq']
+        }, {
+          denom: 'miau',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq',
+      base: 'ibc/3E00EE6DBC74F0FE87592121948685BE9FD9FD9899D9BAD5FA573D0A6D257BCF',
+      name: 'iShares Gold Trust',
+      display: 'miau',
+      symbol: 'mIAU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/C0D0937641FD3FB2ACD1A880A79C750FF91C5A5A957A3B035A0C595CAC436C09',
+          exponent: 0,
+          aliases: ['cw20:terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec']
+        }, {
+          denom: 'miau',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec',
+      base: 'ibc/C0D0937641FD3FB2ACD1A880A79C750FF91C5A5A957A3B035A0C595CAC436C09',
+      name: 'iShares Gold Trust',
+      display: 'miau',
+      symbol: 'mIAU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/314A00892F00133BD6ABEC561636696248CAC6F3F6384D4E9FCD01B8248C40DA',
+          exponent: 0,
+          aliases: ['cw20:terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2']
+        }, {
+          denom: 'mjnj',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2',
+      base: 'ibc/314A00892F00133BD6ABEC561636696248CAC6F3F6384D4E9FCD01B8248C40DA',
+      name: 'Johnson & Johnson',
+      display: 'mjnj',
+      symbol: 'mJNJ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/D0A50A5E3D51CA8BB505F656018C28264E17A2C0115715861CA5070627C930C5',
+          exponent: 0,
+          aliases: ['cw20:terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm']
+        }, {
+          denom: 'mko',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm',
+      base: 'ibc/D0A50A5E3D51CA8BB505F656018C28264E17A2C0115715861CA5070627C930C5',
+      name: 'Coca-Cola',
+      display: 'mko',
+      symbol: 'mKO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/052D5C042E8DB771737745C7BD85C9B22B6C428064E3B4D611A2AB0EEE4085A8',
+          exponent: 0,
+          aliases: ['cw20:terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6']
+        }, {
+          denom: 'mmsft',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6',
+      base: 'ibc/052D5C042E8DB771737745C7BD85C9B22B6C428064E3B4D611A2AB0EEE4085A8',
+      name: 'Microsoft Corporation',
+      display: 'mmsft',
+      symbol: 'mMSFT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/310EEF709CF68CF647C53BE0ECBA4FDEDF54140B3ABD321610A6BFAA617C21E2',
+          exponent: 0,
+          aliases: ['cw20:terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k']
+        }, {
+          denom: 'mnflx',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k',
+      base: 'ibc/310EEF709CF68CF647C53BE0ECBA4FDEDF54140B3ABD321610A6BFAA617C21E2',
+      name: 'Netflix, Inc.',
+      display: 'mnflx',
+      symbol: 'mNFLX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/16B8FAFCB8AFC786548AAA7888668B52AEC19D24269746F68CD03A3042A1564A',
+          exponent: 0,
+          aliases: ['cw20:terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p']
+        }, {
+          denom: 'mnio',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p',
+      base: 'ibc/16B8FAFCB8AFC786548AAA7888668B52AEC19D24269746F68CD03A3042A1564A',
+      name: 'NIO Inc.',
+      display: 'mnio',
+      symbol: 'mNIO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/205BA69C51332FA29EC8CC08894E72C4FFB564F5379B6B11C1714053BB837467',
+          exponent: 0,
+          aliases: ['cw20:terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g']
+        }, {
+          denom: 'mnke',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g',
+      base: 'ibc/205BA69C51332FA29EC8CC08894E72C4FFB564F5379B6B11C1714053BB837467',
+      name: 'NIKE, Inc.',
+      display: 'mnke',
+      symbol: 'mNKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/F1936A625088A58722C509C9E7A6CE93321451EE0AB6B630E2F2E2EE97DFFCE5',
+          exponent: 0,
+          aliases: ['cw20:terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8']
+        }, {
+          denom: 'mnvda',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8',
+      base: 'ibc/F1936A625088A58722C509C9E7A6CE93321451EE0AB6B630E2F2E2EE97DFFCE5',
+      name: 'NVIDIA Corporation',
+      display: 'mnvda',
+      symbol: 'mNVDA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/0A0DA132A9707A2634D87E841D0852FCFB4C1100AFB120403AD91181150EFA9A',
+          exponent: 0,
+          aliases: ['cw20:terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx']
+        }, {
+          denom: 'mpypl',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx',
+      base: 'ibc/0A0DA132A9707A2634D87E841D0852FCFB4C1100AFB120403AD91181150EFA9A',
+      name: 'PayPal Holdings Inc',
+      display: 'mpypl',
+      symbol: 'mPYPL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/209BEE1619ADEF026F0CCBD8659A86995599A4821F8DCD15B94B5AAD700DA3E5',
+          exponent: 0,
+          aliases: ['cw20:terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp']
+        }, {
+          denom: 'mqqq',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp',
+      base: 'ibc/209BEE1619ADEF026F0CCBD8659A86995599A4821F8DCD15B94B5AAD700DA3E5',
+      name: 'Invesco QQQ Trust',
+      display: 'mqqq',
+      symbol: 'mQQQ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/6448EA728465A3C550A26022C62504392BCBE98071CF29A69E94A0162DDAA94A',
+          exponent: 0,
+          aliases: ['cw20:terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga']
+        }, {
+          denom: 'msbux',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga',
+      base: 'ibc/6448EA728465A3C550A26022C62504392BCBE98071CF29A69E94A0162DDAA94A',
+      name: 'Starbucks Corporation',
+      display: 'msbux',
+      symbol: 'mSBUX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8AA316F541446D8DDC7161B20636293A55F6B27F49401F458BF593951410142A',
+          exponent: 0,
+          aliases: ['cw20:terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp']
+        }, {
+          denom: 'mslv',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp',
+      base: 'ibc/8AA316F541446D8DDC7161B20636293A55F6B27F49401F458BF593951410142A',
+      name: 'iShares Silver Trust',
+      display: 'mslv',
+      symbol: 'mSLV',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/22760DDF1573ADD373C4058C6650F965C897F01BD1F25BD7B7ECD6843A7642F3',
+          exponent: 0,
+          aliases: ['cw20:terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc']
+        }, {
+          denom: 'mspy',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc',
+      base: 'ibc/22760DDF1573ADD373C4058C6650F965C897F01BD1F25BD7B7ECD6843A7642F3',
+      name: 'SPDR S&P 500',
+      display: 'mspy',
+      symbol: 'mSPY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B39EA23A27C9EA7DA18FADCEA26377794E6CC274FEA07D6C82C190067E13CC86',
+          exponent: 0,
+          aliases: ['cw20:terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh']
+        }, {
+          denom: 'msq',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh',
+      base: 'ibc/B39EA23A27C9EA7DA18FADCEA26377794E6CC274FEA07D6C82C190067E13CC86',
+      name: 'Square, Inc.',
+      display: 'msq',
+      symbol: 'mSQ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/9E09484606EF434530D614A47E3B80F68E3DFCF08AAD52AFF679CAF977041787',
+          exponent: 0,
+          aliases: ['cw20:terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh']
+        }, {
+          denom: 'mtsla',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh',
+      base: 'ibc/9E09484606EF434530D614A47E3B80F68E3DFCF08AAD52AFF679CAF977041787',
+      name: 'Tesla, Inc.',
+      display: 'mtsla',
+      symbol: 'mTSLA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2FF3AFB2BF8B29A2DAAB99D9CB67078E7ED852BF4F3034B2E4A452AD69E51C49',
+          exponent: 0,
+          aliases: ['cw20:terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg']
+        }, {
+          denom: 'mtwtr',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg',
+      base: 'ibc/2FF3AFB2BF8B29A2DAAB99D9CB67078E7ED852BF4F3034B2E4A452AD69E51C49',
+      name: 'Twitter, Inc.',
+      display: 'mtwtr',
+      symbol: 'mTWTR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5784472A6B6A2342DDF4C7F2BBF9C2A1264AE53A33AAA18E062A291A61423189',
+          exponent: 0,
+          aliases: ['cw20:terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf']
+        }, {
+          denom: 'muso',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf',
+      base: 'ibc/5784472A6B6A2342DDF4C7F2BBF9C2A1264AE53A33AAA18E062A291A61423189',
+      name: 'United States Oil Fund, LP',
+      display: 'muso',
+      symbol: 'mUSO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/355B3F771616845BC8E24615AE08EFA78321D6249B9985FDA0D5DB80461DC8E1',
+          exponent: 0,
+          aliases: ['cw20:terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx']
+        }, {
+          denom: 'mvixy',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx',
+      base: 'ibc/355B3F771616845BC8E24615AE08EFA78321D6249B9985FDA0D5DB80461DC8E1',
+      name: 'ProShares VIX Short-Term Futures ETF',
+      display: 'mvixy',
+      symbol: 'mVIXY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/DE8DE8BCF563A79ED781D6B0C4CA2A1FE2A5598F59C1E67F1AD99BBFB648FA6F',
+          exponent: 0,
+          aliases: ['cw20:terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45']
+        }, {
+          denom: 'mvixy',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45',
+      base: 'ibc/DE8DE8BCF563A79ED781D6B0C4CA2A1FE2A5598F59C1E67F1AD99BBFB648FA6F',
+      name: 'ProShares VIX Short-Term Futures ETF',
+      display: 'mvixy',
+      symbol: 'mVIXY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/A99D90FB213FD1502B9CD0AAD89DE497399D8F8AF8093BDA0DF62E2009D2CB0F',
+          exponent: 0,
+          aliases: ['cw20:terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr']
+        }, {
+          denom: 'lota',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr',
+      base: 'ibc/A99D90FB213FD1502B9CD0AAD89DE497399D8F8AF8093BDA0DF62E2009D2CB0F',
+      name: 'loterra',
+      display: 'lota',
+      symbol: 'LOTA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/EA3B97466553137D0957F618A67E59EBB27C3DF31A9061B4C10A354F87E99B03',
+          exponent: 0,
+          aliases: ['cw20:terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7']
+        }, {
+          denom: 'dph',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7',
+      base: 'ibc/EA3B97466553137D0957F618A67E59EBB27C3DF31A9061B4C10A354F87E99B03',
+      name: 'Digipharm',
+      display: 'dph',
+      symbol: 'DPH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/59B565048388714D6EF90859E8C8BC723DCF4A0406979F323CBBDFE2B7982F53',
+          exponent: 0,
+          aliases: ['cw20:terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy']
+        }, {
+          denom: 'mine',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy',
+      base: 'ibc/59B565048388714D6EF90859E8C8BC723DCF4A0406979F323CBBDFE2B7982F53',
+      name: 'Pylon MINE Token',
+      display: 'mine',
+      symbol: 'MINE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/AD2312C4875D0E1AEDC60A1132590C5DEC15F7F8B9922957EB42D2713AD409A9',
+          exponent: 0,
+          aliases: ['cw20:terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y']
+        }, {
+          denom: 'bpsidp-24m',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y',
+      base: 'ibc/AD2312C4875D0E1AEDC60A1132590C5DEC15F7F8B9922957EB42D2713AD409A9',
+      name: 'Pylon bDP Token for Gateway Psi 24m Pool',
+      display: 'bpsidp-24m',
+      symbol: 'bPsiDP-24m',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/36B0D5B42D86A4B0A7E1C4C91154613B6D3BF7724DCA84A6406E87B1D93C5008',
+          exponent: 0,
+          aliases: ['cw20:terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr']
+        }, {
+          denom: 'spec',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr',
+      base: 'ibc/36B0D5B42D86A4B0A7E1C4C91154613B6D3BF7724DCA84A6406E87B1D93C5008',
+      name: 'Spectrum Token',
+      display: 'spec',
+      symbol: 'SPEC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/BA8B72D4AA4E9D90A8253FEE60EDA5F1B70ACCE1281CF6ABFD4A2BDF77B32F3D',
+          exponent: 0,
+          aliases: ['cw20:terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4']
+        }, {
+          denom: 'loop',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4',
+      base: 'ibc/BA8B72D4AA4E9D90A8253FEE60EDA5F1B70ACCE1281CF6ABFD4A2BDF77B32F3D',
+      name: 'LOOP token',
+      display: 'loop',
+      symbol: 'LOOP',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/3E586FB08D0729CD1D444D3BE9F43CF32C183D87516FD975CF6D6D2050B62CF8',
+          exponent: 0,
+          aliases: ['cw20:terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q']
+        }, {
+          denom: 'loopr',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q',
+      base: 'ibc/3E586FB08D0729CD1D444D3BE9F43CF32C183D87516FD975CF6D6D2050B62CF8',
+      name: 'LOOPR token',
+      display: 'loopr',
+      symbol: 'LOOPR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/7753031C34255CE895DBE9ADA03D276BD6DDD902C7BD8700169107662DDAEA37',
+          exponent: 0,
+          aliases: ['cw20:terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n']
+        }, {
+          denom: 'stt',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n',
+      base: 'ibc/7753031C34255CE895DBE9ADA03D276BD6DDD902C7BD8700169107662DDAEA37',
+      name: 'StarTerra Token',
+      display: 'stt',
+      symbol: 'STT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/76D3DA00142D027CA885030E131EE04B8197345B0727ED48EFA9EBF687309797',
+          exponent: 0,
+          aliases: ['cw20:terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6']
+        }, {
+          denom: 'twd',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6',
+      base: 'ibc/76D3DA00142D027CA885030E131EE04B8197345B0727ED48EFA9EBF687309797',
+      name: 'TWD Token',
+      display: 'twd',
+      symbol: 'TWD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/0B6E4FA2F7290015EC21C0E208A0B969E186B7686329693AF5BAAEE16988E898',
+          exponent: 0,
+          aliases: ['cw20:terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc']
+        }, {
+          denom: 'xtra',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc',
+      base: 'ibc/0B6E4FA2F7290015EC21C0E208A0B969E186B7686329693AF5BAAEE16988E898',
+      name: 'xterra Token',
+      display: 'xtra',
+      symbol: 'XTRA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/4587C136065FD5AF4474736BC192F06B93DE0AA4BEACE0E3583C394C8FFB6387',
+          exponent: 0,
+          aliases: ['cw20:terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63']
+        }, {
+          denom: 'miaw',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63',
+      base: 'ibc/4587C136065FD5AF4474736BC192F06B93DE0AA4BEACE0E3583C394C8FFB6387',
+      name: 'MIAW Token',
+      display: 'miaw',
+      symbol: 'MIAW',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2F2EF4E0DC1CA896D71AD96CC6A7C3CF13074D17AFF8EACABC630F2BF757EAEB',
+          exponent: 0,
+          aliases: ['cw20:terra12897djskt9rge8dtmm86w654g7kzckkd698608']
+        }, {
+          denom: 'psi',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra12897djskt9rge8dtmm86w654g7kzckkd698608',
+      base: 'ibc/2F2EF4E0DC1CA896D71AD96CC6A7C3CF13074D17AFF8EACABC630F2BF757EAEB',
+      name: 'Nexus Governance Token',
+      display: 'psi',
+      symbol: 'Psi',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra12897djskt9rge8dtmm86w654g7kzckkd698608',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra12897djskt9rge8dtmm86w654g7kzckkd698608'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/FF74C3DBE1ED4BB540A5BF66D2CE6F868A9DC93F2A261BD132602DF8151DD88E',
+          exponent: 0,
+          aliases: ['cw20:terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j']
+        }, {
+          denom: 'nluna',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j',
+      base: 'ibc/FF74C3DBE1ED4BB540A5BF66D2CE6F868A9DC93F2A261BD132602DF8151DD88E',
+      name: 'Nexus nLuna Token',
+      display: 'nluna',
+      symbol: 'nLuna',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nluna.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nluna.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/1B86B792A7F1D691EF816C699943F4CFCB831E3F08DADDDAC9E140E4246B4CD0',
+          exponent: 0,
+          aliases: ['cw20:terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn']
+        }, {
+          denom: 'neth',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn',
+      base: 'ibc/1B86B792A7F1D691EF816C699943F4CFCB831E3F08DADDDAC9E140E4246B4CD0',
+      name: 'Nexus nETH Token',
+      display: 'neth',
+      symbol: 'nETH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neth.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neth.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/4A62028682EAEEE2A4DFF80B088E6B780FAE4486B8807347DB9F0517158113E4',
+          exponent: 0,
+          aliases: ['cw20:terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj']
+        }, {
+          denom: 'cnluna',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj',
+      base: 'ibc/4A62028682EAEEE2A4DFF80B088E6B780FAE4486B8807347DB9F0517158113E4',
+      name: 'nLuna autocompounder share representation',
+      display: 'cnluna',
+      symbol: 'cnLuna',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnluna.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnluna.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/88605701B1C05FD5F205E18D0CC8CCB9F94241B717F6AD3B36C776530246EF07',
+          exponent: 0,
+          aliases: ['cw20:terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756']
+        }, {
+          denom: 'cneth',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756',
+      base: 'ibc/88605701B1C05FD5F205E18D0CC8CCB9F94241B717F6AD3B36C776530246EF07',
+      name: 'nETH autocompounder share representation',
+      display: 'cneth',
+      symbol: 'cnETH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cneth.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cneth.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/DBECF33BD3F9BDAC64B3D1605958B2570B1635612718F83B5406727C152A3DE0',
+          exponent: 0,
+          aliases: ['cw20:terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636']
+        }, {
+          denom: 'navax',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636',
+      base: 'ibc/DBECF33BD3F9BDAC64B3D1605958B2570B1635612718F83B5406727C152A3DE0',
+      name: 'Nexus nAVAX Token',
+      display: 'navax',
+      symbol: 'nAVAX',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/navax.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/navax.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/0AFEF2D077D9A4773D896622734D5E6121E9C1F0910A0A65DED4619866882F8E',
+          exponent: 0,
+          aliases: ['cw20:terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade']
+        }, {
+          denom: 'natom',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade',
+      base: 'ibc/0AFEF2D077D9A4773D896622734D5E6121E9C1F0910A0A65DED4619866882F8E',
+      name: 'Nexus nATOM Token',
+      display: 'natom',
+      symbol: 'nATOM',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/natom.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/natom.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/75479C8920621ED597041590E1BE5D83A8C5BF1D33726D4EAC29F1E88FFA8C99',
+          exponent: 0,
+          aliases: ['cw20:terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5']
+        }, {
+          denom: 'vkr',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5',
+      base: 'ibc/75479C8920621ED597041590E1BE5D83A8C5BF1D33726D4EAC29F1E88FFA8C99',
+      name: 'VKR Token',
+      display: 'vkr',
+      symbol: 'VKR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/390F36020808C29888EAD5D4AE36CD2D3F307AFAAEB8FA74B828191D052804EB',
+          exponent: 0,
+          aliases: ['cw20:terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03']
+        }, {
+          denom: 'orion',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03',
+      base: 'ibc/390F36020808C29888EAD5D4AE36CD2D3F307AFAAEB8FA74B828191D052804EB',
+      name: 'Orion Money (Portal)',
+      display: 'orion',
+      symbol: 'ORION',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/21995AE18ECA6A7DB83228194127D977916CFBCC31BE6F2584417A693C456F70',
+          exponent: 0,
+          aliases: ['cw20:terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc']
+        }, {
+          denom: 'tland',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc',
+      base: 'ibc/21995AE18ECA6A7DB83228194127D977916CFBCC31BE6F2584417A693C456F70',
+      name: 'TerraLand Token',
+      display: 'tland',
+      symbol: 'TLAND',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/BC8E9372413C248E3EFC8768FA71C2A20910B5BF44BB9C9610F666BF232FB1FB',
+          exponent: 0,
+          aliases: ['cw20:terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg']
+        }, {
+          denom: 'vust',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg',
+      base: 'ibc/BC8E9372413C248E3EFC8768FA71C2A20910B5BF44BB9C9610F666BF232FB1FB',
+      name: 'Vault UST',
+      display: 'vust',
+      symbol: 'vUST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/46569432D6BA5BF23F80FA5EF0A8A9EEB732E7E2DE1827D455BBF8988D32DF9E',
+          exponent: 0,
+          aliases: ['cw20:terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r']
+        }, {
+          denom: 'eth',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r',
+      base: 'ibc/46569432D6BA5BF23F80FA5EF0A8A9EEB732E7E2DE1827D455BBF8988D32DF9E',
+      name: 'Ether (Portal)',
+      display: 'eth',
+      symbol: 'ETH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/D8B226C88F4A23BCB4DF39C97E57E6029183734670F1F14DEF2BDBD4EE3B1D9C',
+          exponent: 0,
+          aliases: ['cw20:terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55']
+        }, {
+          denom: 'wbtc',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55',
+      base: 'ibc/D8B226C88F4A23BCB4DF39C97E57E6029183734670F1F14DEF2BDBD4EE3B1D9C',
+      name: 'Wrapped BTC (Portal)',
+      display: 'wbtc',
+      symbol: 'WBTC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/137917083D44BCA95050AD2667DCF121C23FDF71B872AB3A1746E50385773924',
+          exponent: 0,
+          aliases: ['cw20:terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk']
+        }, {
+          denom: 'sol',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk',
+      base: 'ibc/137917083D44BCA95050AD2667DCF121C23FDF71B872AB3A1746E50385773924',
+      name: 'SOL (Portal)',
+      display: 'sol',
+      symbol: 'SOL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B546F30BEDAF79D90116FA84FA23AE3957701AC824EAB4E18BCE840581A6AC94',
+          exponent: 0,
+          aliases: ['cw20:terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq']
+        }, {
+          denom: 'maticet',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq',
+      base: 'ibc/B546F30BEDAF79D90116FA84FA23AE3957701AC824EAB4E18BCE840581A6AC94',
+      name: 'MATIC (Portal from Ethereum)',
+      display: 'maticet',
+      symbol: 'MATICet',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/4421B8FC15CFEF7E895F0547761AED86475A32C4919523851564A1790FDEBEEA',
+          exponent: 0,
+          aliases: ['cw20:terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8']
+        }, {
+          denom: 'bnb',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8',
+      base: 'ibc/4421B8FC15CFEF7E895F0547761AED86475A32C4919523851564A1790FDEBEEA',
+      name: 'Binance Coin (Portal)',
+      display: 'bnb',
+      symbol: 'BNB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/CDDE673D74F33B250D7B6F569F22A719A5A1707899C31C451F6E7BCB62D29335',
+          exponent: 0,
+          aliases: ['cw20:terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av']
+        }, {
+          denom: 'cake',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av',
+      base: 'ibc/CDDE673D74F33B250D7B6F569F22A719A5A1707899C31C451F6E7BCB62D29335',
+      name: 'PancakeSwap Token (Portal)',
+      display: 'cake',
+      symbol: 'CAKE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/1FF3A3AA13A80B8AF2FBBB9E40C1496D58B62D1748BA183B8D53A3152A25037D',
+          exponent: 0,
+          aliases: ['cw20:terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym']
+        }, {
+          denom: 'link',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym',
+      base: 'ibc/1FF3A3AA13A80B8AF2FBBB9E40C1496D58B62D1748BA183B8D53A3152A25037D',
+      name: 'Chainlink (Portal)',
+      display: 'link',
+      symbol: 'LINK',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/7FA1CABAF0AAA9209721334072216012E28740B25D9561F1F7443DC85570393A',
+          exponent: 0,
+          aliases: ['cw20:terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a']
+        }, {
+          denom: 'sushi',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a',
+      base: 'ibc/7FA1CABAF0AAA9209721334072216012E28740B25D9561F1F7443DC85570393A',
+      name: 'SushiToken (Portal)',
+      display: 'sushi',
+      symbol: 'SUSHI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5ED70788C6AE5AF9F7EF338BD4C20444124429CCB0DB6D6460083E206E4BB370',
+          exponent: 0,
+          aliases: ['cw20:terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf']
+        }, {
+          denom: 'uni',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf',
+      base: 'ibc/5ED70788C6AE5AF9F7EF338BD4C20444124429CCB0DB6D6460083E206E4BB370',
+      name: 'Uniswap (Portal)',
+      display: 'uni',
+      symbol: 'UNI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/46448D9F46A9D8C4BDFDFC56C1B254AB9994DD985DBF8CABA77716F2598099DB',
+          exponent: 0,
+          aliases: ['cw20:terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva']
+        }, {
+          denom: 'usdtet',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva',
+      base: 'ibc/46448D9F46A9D8C4BDFDFC56C1B254AB9994DD985DBF8CABA77716F2598099DB',
+      name: 'Tether USD (Portal from Ethereum)',
+      display: 'usdtet',
+      symbol: 'USDTet',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B6B60ACCF80821DE632BF2F55BD47045DE65B9A1D85309F3E133E74AD0B04AFA',
+          exponent: 0,
+          aliases: ['cw20:terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06']
+        }, {
+          denom: 'usdcet',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06',
+      base: 'ibc/B6B60ACCF80821DE632BF2F55BD47045DE65B9A1D85309F3E133E74AD0B04AFA',
+      name: 'USD Coin (Portal from Ethereum)',
+      display: 'usdcet',
+      symbol: 'USDCet',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/98297FAA77C01F0A78FB634F1AEC90A7DFFF0DD93F5EC0F824685EC8DABDEA4C',
+          exponent: 0,
+          aliases: ['cw20:terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn']
+        }, {
+          denom: 'kuji',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn',
+      base: 'ibc/98297FAA77C01F0A78FB634F1AEC90A7DFFF0DD93F5EC0F824685EC8DABDEA4C',
+      name: 'Kujira Token',
+      display: 'kuji',
+      symbol: 'KUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/68C3603CF336668B146284A3BE83BCE9E42181390512EC075EDB8F2263EDB057',
+          exponent: 0,
+          aliases: ['cw20:terra188w26t95tf4dz77raftme8p75rggatxjxfeknw']
+        }, {
+          denom: 'skuji',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra188w26t95tf4dz77raftme8p75rggatxjxfeknw',
+      base: 'ibc/68C3603CF336668B146284A3BE83BCE9E42181390512EC075EDB8F2263EDB057',
+      name: 'Staked KUJI',
+      display: 'skuji',
+      symbol: 'sKUJI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra188w26t95tf4dz77raftme8p75rggatxjxfeknw',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra188w26t95tf4dz77raftme8p75rggatxjxfeknw'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/78A0C7ED156BB1D2D04B6BE699B49C3B8CC9344B60B308A813EE53C447F2B3DB',
+          exponent: 0,
+          aliases: ['cw20:terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur']
+        }, {
+          denom: 'wsteth',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur',
+      base: 'ibc/78A0C7ED156BB1D2D04B6BE699B49C3B8CC9344B60B308A813EE53C447F2B3DB',
+      name: 'Lido wstETH (Portal)',
+      display: 'wsteth',
+      symbol: 'wstETH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/BD062DAD0104AB23625B7CCAF5B549CEADDBB7E4C8D5D39B865E0245CD46B122',
+          exponent: 0,
+          aliases: ['cw20:terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap']
+        }, {
+          denom: 'wstsol',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap',
+      base: 'ibc/BD062DAD0104AB23625B7CCAF5B549CEADDBB7E4C8D5D39B865E0245CD46B122',
+      name: 'Lido wstSOL (Portal)',
+      display: 'wstsol',
+      symbol: 'wstSOL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/3752606073CC26755B3CD92629291EAF2F9B2129A97FFBF362921118C66A7956',
+          exponent: 0,
+          aliases: ['cw20:terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj']
+        }, {
+          denom: 'wsbsol',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj',
+      base: 'ibc/3752606073CC26755B3CD92629291EAF2F9B2129A97FFBF362921118C66A7956',
+      name: 'Lido bonded SOL (Portal)',
+      display: 'wsbsol',
+      symbol: 'wsbSOL',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsbsol.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsbsol.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/998D8F3A3181EFCB3B5AC9CE74544EA601E16C7AE3D881FCD270C1899816411D',
+          exponent: 0,
+          aliases: ['cw20:terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z']
+        }, {
+          denom: 'ldo',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z',
+      base: 'ibc/998D8F3A3181EFCB3B5AC9CE74544EA601E16C7AE3D881FCD270C1899816411D',
+      name: 'Lido DAO (Portal)',
+      display: 'ldo',
+      symbol: 'LDO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/C4947806E9A5216EBECB393DF2036940732F29574C449DD0F72AD6BCC8972E52',
+          exponent: 0,
+          aliases: ['cw20:terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz']
+        }, {
+          denom: 'webeth',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz',
+      base: 'ibc/C4947806E9A5216EBECB393DF2036940732F29574C449DD0F72AD6BCC8972E52',
+      name: 'Lido Bonded ETH (Wormhole)',
+      display: 'webeth',
+      symbol: 'webETH',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webeth.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webeth.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/641DB39FDC4B68E95DC87D7CBF3F7A51C04CCA0B44D2ACFDDAD4EAED082FCEFC',
+          exponent: 0,
+          aliases: ['cw20:terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc']
+        }, {
+          denom: 'stluna',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc',
+      base: 'ibc/641DB39FDC4B68E95DC87D7CBF3F7A51C04CCA0B44D2ACFDDAD4EAED082FCEFC',
+      name: 'Lido staked Luna',
+      display: 'stluna',
+      symbol: 'stLuna',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/E59D4A57A79B504082F6964EF0975326F36B954C6279EE2F2AB15848ECF3AD5D',
+          exponent: 0,
+          aliases: ['cw20:terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh']
+        }, {
+          denom: 'xdefi',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh',
+      base: 'ibc/E59D4A57A79B504082F6964EF0975326F36B954C6279EE2F2AB15848ECF3AD5D',
+      name: 'XDEFI (Portal)',
+      display: 'xdefi',
+      symbol: 'XDEFI',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/03C738BDE098657666569B342052E5363A8F4186E23553D5B596561D72B83316',
+          exponent: 0,
+          aliases: ['cw20:terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl']
+        }, {
+          denom: 'btl',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl',
+      base: 'ibc/03C738BDE098657666569B342052E5363A8F4186E23553D5B596561D72B83316',
+      name: 'Bitlocus Token',
+      display: 'btl',
+      symbol: 'BTL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/150E32EB472683898B501D2C34BB96473C0E18E8D59ADB7958AB272FEEFB78AC',
+          exponent: 0,
+          aliases: ['cw20:terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup']
+        }, {
+          denom: 'lunax',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup',
+      base: 'ibc/150E32EB472683898B501D2C34BB96473C0E18E8D59ADB7958AB272FEEFB78AC',
+      name: 'LunaX Token',
+      display: 'lunax',
+      symbol: 'LunaX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/FB4E805B420DB437770D3F76338782BB7F09DB5A482A6A99EF261EC0E886C65A',
+          exponent: 0,
+          aliases: ['cw20:terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7']
+        }, {
+          denom: 'luni',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7',
+      base: 'ibc/FB4E805B420DB437770D3F76338782BB7F09DB5A482A6A99EF261EC0E886C65A',
+      name: 'LUNI',
+      display: 'luni',
+      symbol: 'LUNI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/CCD00C5351C078B78800A7D8A4B3B15ECD14DD9E66972CB23E63FDC63C506890',
+          exponent: 0,
+          aliases: ['cw20:terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu']
+        }, {
+          denom: 'ply',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu',
+      base: 'ibc/CCD00C5351C078B78800A7D8A4B3B15ECD14DD9E66972CB23E63FDC63C506890',
+      name: 'PlayNity Token',
+      display: 'ply',
+      symbol: 'PLY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/61CE1DBE740EFC2D046B3883BF2766796B34BF12003DB9A610A7B8EE5A11AD96',
+          exponent: 0,
+          aliases: ['cw20:terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj']
+        }, {
+          denom: 'tfloki',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj',
+      base: 'ibc/61CE1DBE740EFC2D046B3883BF2766796B34BF12003DB9A610A7B8EE5A11AD96',
+      name: 'TFLOKI',
+      display: 'tfloki',
+      symbol: 'TFLOKI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/A534CEE2E7616C2A36735764A221B2C6E578F5F1D368CA22E45D60F061C2763B',
+          exponent: 0,
+          aliases: ['cw20:terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u']
+        }, {
+          denom: 'tftic',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u',
+      base: 'ibc/A534CEE2E7616C2A36735764A221B2C6E578F5F1D368CA22E45D60F061C2763B',
+      name: 'TFLOKI Genesis Ticket',
+      display: 'tftic',
+      symbol: 'TFTIC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/EA2D157BEEE501DDF661630FF2340C0C6608992E84CA1D7732E4D5B37884939C',
+          exponent: 0,
+          aliases: ['cw20:terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86']
+        }, {
+          denom: 'tfticii',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86',
+      base: 'ibc/EA2D157BEEE501DDF661630FF2340C0C6608992E84CA1D7732E4D5B37884939C',
+      name: 'TFLOKI New World Ticket',
+      display: 'tfticii',
+      symbol: 'TFTICII',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/744CF85CF14FA9CF0E8DE49890926163F031D6384EC9E560582B4D0B7AF6383C',
+          exponent: 0,
+          aliases: ['cw20:terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28']
+        }, {
+          denom: 'tfticiii',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28',
+      base: 'ibc/744CF85CF14FA9CF0E8DE49890926163F031D6384EC9E560582B4D0B7AF6383C',
+      name: 'TFLOKI Aviator Ticket',
+      display: 'tfticiii',
+      symbol: 'TFTICIII',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2718CB4AECAB59681A38CB265CEC55BD1CBDBC6A72DCB11EE24BD7A21D56B345',
+          exponent: 0,
+          aliases: ['cw20:terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26']
+        }, {
+          denom: 'moon',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26',
+      base: 'ibc/2718CB4AECAB59681A38CB265CEC55BD1CBDBC6A72DCB11EE24BD7A21D56B345',
+      name: 'Moon Token',
+      display: 'moon',
+      symbol: 'MOON',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/FE1911A6E2DCC6A56793A6AE6B63D70C87A1B9DA856210E840906B9141034420',
+          exponent: 0,
+          aliases: ['cw20:terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3']
+        }, {
+          denom: 'astro',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3',
+      base: 'ibc/FE1911A6E2DCC6A56793A6AE6B63D70C87A1B9DA856210E840906B9141034420',
+      name: 'Astroport Token',
+      display: 'astro',
+      symbol: 'ASTRO',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3'
+          }
+        }],
+      images: [{
+          image_sync: {
+            chain_name: 'terra2',
+            base_denom: 'cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26'
+          },
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+      },
+      coingecko_id: 'astroport-fi'
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/DA135464AA0C8876246F5F4E37E646D7183E3C42311E70C9B11BB71C70AB6D40',
+          exponent: 0,
+          aliases: ['cw20:terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7']
+        }, {
+          denom: 'xastro.cw20',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7',
+      base: 'ibc/DA135464AA0C8876246F5F4E37E646D7183E3C42311E70C9B11BB71C70AB6D40',
+      name: 'Staked Astroport Token',
+      display: 'xastro.cw20',
+      symbol: 'xASTRO.cw20',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/E33D97B345694D0764C5D66E5D9A36D355EED86AEF7047B7432419B026DD045D',
+          exponent: 0,
+          aliases: ['cw20:terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq']
+        }, {
+          denom: 'halo',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq',
+      base: 'ibc/E33D97B345694D0764C5D66E5D9A36D355EED86AEF7047B7432419B026DD045D',
+      name: 'Angel Protocol Token',
+      display: 'halo',
+      symbol: 'HALO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/D439187DB47BF5BA6AFD038959A0E41D5072603D09A1B60FDB55EC34080E2310',
+          exponent: 0,
+          aliases: ['cw20:terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j']
+        }, {
+          denom: 'pug',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j',
+      base: 'ibc/D439187DB47BF5BA6AFD038959A0E41D5072603D09A1B60FDB55EC34080E2310',
+      name: 'AstroPug Token',
+      display: 'pug',
+      symbol: 'PUG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8D89C6379A67653F54B2738E63D56CCE83F434DFFEEAED16CD4C7BB0DAD1EFA0',
+          exponent: 0,
+          aliases: ['cw20:terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf']
+        }, {
+          denom: 'orne',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf',
+      base: 'ibc/8D89C6379A67653F54B2738E63D56CCE83F434DFFEEAED16CD4C7BB0DAD1EFA0',
+      name: 'Orne Token',
+      display: 'orne',
+      symbol: 'ORNE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/1163D7CDF5EDCF21044E15ED96BCB6CEDE79922C6894CF5886FBFFD749A1378F',
+          exponent: 0,
+          aliases: ['cw20:terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y']
+        }, {
+          denom: 'tns',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y',
+      base: 'ibc/1163D7CDF5EDCF21044E15ED96BCB6CEDE79922C6894CF5886FBFFD749A1378F',
+      name: 'Terra Name Service',
+      display: 'tns',
+      symbol: 'TNS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/7A25E06A90095C177A272FB9216BD64271523A0AA533D507ED11095E192C1333',
+          exponent: 0,
+          aliases: ['cw20:terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm']
+        }, {
+          denom: 'xrune',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm',
+      base: 'ibc/7A25E06A90095C177A272FB9216BD64271523A0AA533D507ED11095E192C1333',
+      name: 'Thorstarter',
+      display: 'xrune',
+      symbol: 'XRUNE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8A9D337B1DFCF107AC81723DB4E97FDA326EF172A66A4C71F3744FDE7C439739',
+          exponent: 0,
+          aliases: ['cw20:terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784']
+        }, {
+          denom: 'alot',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784',
+      base: 'ibc/8A9D337B1DFCF107AC81723DB4E97FDA326EF172A66A4C71F3744FDE7C439739',
+      name: 'Alpha Pack Token',
+      display: 'alot',
+      symbol: 'aLOT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/CCF59683E114E3621255DD9AAA971EE34B3403C276C1FEBDF4DEAB741F24DD6A',
+          exponent: 0,
+          aliases: ['cw20:terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe']
+        }, {
+          denom: 'sity',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe',
+      base: 'ibc/CCF59683E114E3621255DD9AAA971EE34B3403C276C1FEBDF4DEAB741F24DD6A',
+      name: 'CurioSITY play to earn token',
+      display: 'sity',
+      symbol: 'SITY',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sity.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sity.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/82386C8ED359B9F1C5BC566425A86BA95D1EEF19E1E8F171320BA8869255D651',
+          exponent: 0,
+          aliases: ['cw20:terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7']
+        }, {
+          denom: 'glow',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7',
+      base: 'ibc/82386C8ED359B9F1C5BC566425A86BA95D1EEF19E1E8F171320BA8869255D651',
+      name: 'Glow Token',
+      display: 'glow',
+      symbol: 'GLOW',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2EDE4BE521D5F06A5F5B9DE30DD04D285D9501E907ED513296D266250D7568AC',
+          exponent: 0,
+          aliases: ['cw20:terra100yeqvww74h4yaejj6h733thgcafdaukjtw397']
+        }, {
+          denom: 'apollo',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra100yeqvww74h4yaejj6h733thgcafdaukjtw397',
+      base: 'ibc/2EDE4BE521D5F06A5F5B9DE30DD04D285D9501E907ED513296D266250D7568AC',
+      name: 'Apollo DAO Token',
+      display: 'apollo',
+      symbol: 'APOLLO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra100yeqvww74h4yaejj6h733thgcafdaukjtw397',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra100yeqvww74h4yaejj6h733thgcafdaukjtw397'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/56A7A386329C455AA6C14A326F26C561A3B42E63307019F0CF1AE231467C77C6',
+          exponent: 0,
+          aliases: ['cw20:terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u']
+        }, {
+          denom: 'abr',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u',
+      base: 'ibc/56A7A386329C455AA6C14A326F26C561A3B42E63307019F0CF1AE231467C77C6',
+      name: 'Allbridge',
+      display: 'abr',
+      symbol: 'ABR',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/abr.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/abr.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/EB56414FD6B037F1877C88798786BCCCA11C8E9DE6A8DA46E4FC569E5D4C4647',
+          exponent: 0,
+          aliases: ['cw20:terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc']
+        }, {
+          denom: 'whgtps',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc',
+      base: 'ibc/EB56414FD6B037F1877C88798786BCCCA11C8E9DE6A8DA46E4FC569E5D4C4647',
+      name: 'Global Transaction Payment Solu',
+      display: 'whgtps',
+      symbol: 'whGTPS',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5E5A07CFE3B3E6C9DB8009C2EC01E55E102B9B570550F7001324792F8D7F28B0',
+          exponent: 0,
+          aliases: ['cw20:terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw']
+        }, {
+          denom: 'prism',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw',
+      base: 'ibc/5E5A07CFE3B3E6C9DB8009C2EC01E55E102B9B570550F7001324792F8D7F28B0',
+      name: 'Prism Protocol Token',
+      display: 'prism',
+      symbol: 'PRISM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/4EE9D89898FA05CD27D5F046C1E70D15D101C3CCBC46A5E111F284E8E6BE5323',
+          exponent: 0,
+          aliases: ['cw20:terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq']
+        }, {
+          denom: 'sdollar',
+          exponent: 2
+        }],
+      type_asset: 'cw20',
+      address: 'terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq',
+      base: 'ibc/4EE9D89898FA05CD27D5F046C1E70D15D101C3CCBC46A5E111F284E8E6BE5323',
+      name: 'Space Dollar',
+      display: 'sdollar',
+      symbol: 'SDOLLAR',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/FC83B97A8DBB08E1E654C0B605F4A7136F7F0A6902AB84BEE8209D077D5CC840',
+          exponent: 0,
+          aliases: ['cw20:terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k']
+        }, {
+          denom: 'whsail',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k',
+      base: 'ibc/FC83B97A8DBB08E1E654C0B605F4A7136F7F0A6902AB84BEE8209D077D5CC840',
+      name: 'SAIL',
+      display: 'whsail',
+      symbol: 'whSAIL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/0097615F4A21E4B0AFF54E3164C0415EB0EC2E880380A8B41F7E704F941CED03',
+          exponent: 0,
+          aliases: ['cw20:terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu']
+        }, {
+          denom: 'whgsail',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu',
+      base: 'ibc/0097615F4A21E4B0AFF54E3164C0415EB0EC2E880380A8B41F7E704F941CED03',
+      name: 'SolanaSail Governance Token V2',
+      display: 'whgsail',
+      symbol: 'whgSAIL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/60DD02DA793455942EB46D125E89B6BB5ABD39991F21D5A7984BD126F0B81986',
+          exponent: 0,
+          aliases: ['cw20:terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz']
+        }, {
+          denom: 'xprism',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz',
+      base: 'ibc/60DD02DA793455942EB46D125E89B6BB5ABD39991F21D5A7984BD126F0B81986',
+      name: 'Prism Governance Token',
+      display: 'xprism',
+      symbol: 'xPRISM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/098AAFF5AF8802B89886F991E07357354064A612DC8DF776B218824EBAD8AD4F',
+          exponent: 0,
+          aliases: ['cw20:terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5']
+        }, {
+          denom: 'cde',
+          exponent: 9
+        }],
+      type_asset: 'cw20',
+      address: 'terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5',
+      base: 'ibc/098AAFF5AF8802B89886F991E07357354064A612DC8DF776B218824EBAD8AD4F',
+      name: 'CAPITRADE TOKEN',
+      display: 'cde',
+      symbol: 'CDE',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5E27AB9A29891B1FD34A019DCD0CEC510ADB50F344A0396C954D15DAAC63C774',
+          exponent: 0,
+          aliases: ['cw20:terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8']
+        }, {
+          denom: 'ctx',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8',
+      base: 'ibc/5E27AB9A29891B1FD34A019DCD0CEC510ADB50F344A0396C954D15DAAC63C774',
+      name: 'C2X Token',
+      display: 'ctx',
+      symbol: 'CTX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/36A1E70684C02AF59DD3025B888CC5A45B87136C64CF9ACAEFB6E0B3F12E442A',
+          exponent: 0,
+          aliases: ['cw20:terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau']
+        }, {
+          denom: 'cluna',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau',
+      base: 'ibc/36A1E70684C02AF59DD3025B888CC5A45B87136C64CF9ACAEFB6E0B3F12E442A',
+      name: 'Prism cLuna Token',
+      display: 'cluna',
+      symbol: 'cLuna',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/274A322ACFA24574E99CA9DA03B75CE3F823E5539BBC946C75BC1F23EE9CDA89',
+          exponent: 0,
+          aliases: ['cw20:terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2']
+        }, {
+          denom: 'pluna',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2',
+      base: 'ibc/274A322ACFA24574E99CA9DA03B75CE3F823E5539BBC946C75BC1F23EE9CDA89',
+      name: 'Prism pLuna Token',
+      display: 'pluna',
+      symbol: 'pLuna',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/084529692493948AA0078265BE013E602B9BA77BB148DD6BF2BD764B38BC0A48',
+          exponent: 0,
+          aliases: ['cw20:terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz']
+        }, {
+          denom: 'yluna',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz',
+      base: 'ibc/084529692493948AA0078265BE013E602B9BA77BB148DD6BF2BD764B38BC0A48',
+      name: 'Prism yLuna Token',
+      display: 'yluna',
+      symbol: 'yLuna',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/DB8986F9B8CB8D9F85C8E0B5BFA6E28B9096EB9A17F6B8B668B01ABC6BE02049',
+          exponent: 0,
+          aliases: ['cw20:terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx']
+        }, {
+          denom: 'atlo',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx',
+      base: 'ibc/DB8986F9B8CB8D9F85C8E0B5BFA6E28B9096EB9A17F6B8B668B01ABC6BE02049',
+      name: 'Atlo Token',
+      display: 'atlo',
+      symbol: 'ATLO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/C3709B57D51FAB1E118C07C2C14C2671ABB22ACE4E8B7512A93CBF449B62BE0A',
+          exponent: 0,
+          aliases: ['cw20:terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp']
+        }, {
+          denom: 'local',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp',
+      base: 'ibc/C3709B57D51FAB1E118C07C2C14C2671ABB22ACE4E8B7512A93CBF449B62BE0A',
+      name: 'LOCAL Token',
+      display: 'local',
+      symbol: 'LOCAL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/947AC438CEC4A43B062F68C126B6D0B7BBE119E9D44B8294AED79A3FDF4CA036',
+          exponent: 0,
+          aliases: ['cw20:terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6']
+        }, {
+          denom: 'luv',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6',
+      base: 'ibc/947AC438CEC4A43B062F68C126B6D0B7BBE119E9D44B8294AED79A3FDF4CA036',
+      name: 'Lunaverse',
+      display: 'luv',
+      symbol: 'LUV',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5F3656AC7AE74EFC9A6419BFB0AF797E8AA3DA92E5F5E45658DB1976C7DD0568',
+          exponent: 0,
+          aliases: ['cw20:terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp']
+        }, {
+          denom: 'robo',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp',
+      base: 'ibc/5F3656AC7AE74EFC9A6419BFB0AF797E8AA3DA92E5F5E45658DB1976C7DD0568',
+      name: 'RoboHero',
+      display: 'robo',
+      symbol: 'ROBO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/C4CA2D966B393B7CDF5BD948E74617B795B24724C10AEABE7DD819EC4F82A8AA',
+          exponent: 0,
+          aliases: ['cw20:terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk']
+        }, {
+          denom: 'luart',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk',
+      base: 'ibc/C4CA2D966B393B7CDF5BD948E74617B795B24724C10AEABE7DD819EC4F82A8AA',
+      name: 'Luart Token',
+      display: 'luart',
+      symbol: 'LUART',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/C2BE0C2C54D15B7A8963502C94C472B969991B64CD41D7B21A137ACFF0DFB69D',
+          exponent: 0,
+          aliases: ['cw20:terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n']
+        }, {
+          denom: 'mars',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n',
+      base: 'ibc/C2BE0C2C54D15B7A8963502C94C472B969991B64CD41D7B21A137ACFF0DFB69D',
+      name: 'Mars Token',
+      display: 'mars',
+      symbol: 'MARS',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mars.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mars.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/CE1AD225DBCBD92176E771B28DBD7DC8D2216A9BA483ADF809236095F620B05D',
+          exponent: 0,
+          aliases: ['cw20:terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4']
+        }, {
+          denom: 'xmars',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4',
+      base: 'ibc/CE1AD225DBCBD92176E771B28DBD7DC8D2216A9BA483ADF809236095F620B05D',
+      name: 'xMars Token',
+      display: 'xmars',
+      symbol: 'XMARS',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xmars.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xmars.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5573EEA1EEDDABCF05AFF8CC4E8AE2C220F2DF57AA4591D2863613736ADB6A21',
+          exponent: 0,
+          aliases: ['cw20:terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4']
+        }, {
+          denom: 'dfiat',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4',
+      base: 'ibc/5573EEA1EEDDABCF05AFF8CC4E8AE2C220F2DF57AA4591D2863613736ADB6A21',
+      name: 'DeFiato',
+      display: 'dfiat',
+      symbol: 'DFIAT',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/9446CDD047DB30C65F5D378AFB488120B8EFF6DA4236F854F6829ED67B3FE21A',
+          exponent: 0,
+          aliases: ['cw20:terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d']
+        }, {
+          denom: 'ceres',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d',
+      base: 'ibc/9446CDD047DB30C65F5D378AFB488120B8EFF6DA4236F854F6829ED67B3FE21A',
+      name: 'Ceres Governance Token',
+      display: 'ceres',
+      symbol: 'CERES',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ceres.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ceres.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/6617AE3517F2EF41A6E96CF4800CD9798D515D49B5B1EA67BAE5FB5E4F06C087',
+          exponent: 0,
+          aliases: ['cw20:terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58']
+        }, {
+          denom: 'wasavax',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58',
+      base: 'ibc/6617AE3517F2EF41A6E96CF4800CD9798D515D49B5B1EA67BAE5FB5E4F06C087',
+      name: 'BENQI Staked AVAX (Portal)',
+      display: 'wasavax',
+      symbol: 'wasAVAX',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wasavax.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wasavax.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/A98E20CDFAA4F824DC1FB38DF734639D9B663B6B9CDE70679B147C19979463DB',
+          exponent: 0,
+          aliases: ['cw20:terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr']
+        }, {
+          denom: 'mint',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr',
+      base: 'ibc/A98E20CDFAA4F824DC1FB38DF734639D9B663B6B9CDE70679B147C19979463DB',
+      name: 'MintDAO',
+      display: 'mint',
+      symbol: 'MINT',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mint.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mint.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/9B6B25D108D3B29E8404D280E18C3CC7368D8C1BF585C9184B4345FD39C31E04',
+          exponent: 0,
+          aliases: ['cw20:terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02']
+        }, {
+          denom: 'sd',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02',
+      base: 'ibc/9B6B25D108D3B29E8404D280E18C3CC7368D8C1BF585C9184B4345FD39C31E04',
+      name: 'Stader SD (Portal)',
+      display: 'sd',
+      symbol: 'SD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2A3E0853497988E9D54FD6B91BCC5C72A87F1AF9CAA3C09B0073254D9B0EFE12',
+          exponent: 0,
+          aliases: ['cw20:terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep']
+        }, {
+          denom: 'xsd',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep',
+      base: 'ibc/2A3E0853497988E9D54FD6B91BCC5C72A87F1AF9CAA3C09B0073254D9B0EFE12',
+      name: 'Stader xSD',
+      display: 'xsd',
+      symbol: 'xSD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/E29BCFF5B139DCCB29E99DFC6953E11D16176D585B486CE0729B69A00134C7F1',
+          exponent: 0,
+          aliases: ['cw20:terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r']
+        }, {
+          denom: 'paxg',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r',
+      base: 'ibc/E29BCFF5B139DCCB29E99DFC6953E11D16176D585B486CE0729B69A00134C7F1',
+      name: 'Paxos Gold (Portal)',
+      display: 'paxg',
+      symbol: 'PAXG',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg'
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/0C950158CDD84042774B43896B55DC1A6596BC95BDF8ED61A7C038BDCF7DA7E8',
+          exponent: 0,
+          aliases: ['cw20:terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl']
+        }, {
+          denom: 'whdao',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl',
+      base: 'ibc/0C950158CDD84042774B43896B55DC1A6596BC95BDF8ED61A7C038BDCF7DA7E8',
+      name: 'DAO Maker',
+      display: 'whdao',
+      symbol: 'whDAO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B21400D3D89367F2C18811F581571DE2BAEF45F992DE9B625BDD6DBD5FBF7BF3',
+          exponent: 0,
+          aliases: ['cw20:terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt']
+        }, {
+          denom: 'link',
+          exponent: 18
+        }],
+      type_asset: 'cw20',
+      address: 'terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt',
+      base: 'ibc/B21400D3D89367F2C18811F581571DE2BAEF45F992DE9B625BDD6DBD5FBF7BF3',
+      name: 'ChainLink Token',
+      display: 'link',
+      symbol: 'LINK',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt'
+          }
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+      },
+      images: [{
+          image_sync: {
+            chain_name: 'ethereum',
+            base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/3B9ABA3279B929C3D9C59F6C8C1A1E661D4FC13DDF462DAB2265EC39CDCD1001',
+          exponent: 0,
+          aliases: ['cw20:terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr']
+        }, {
+          denom: 'sayve',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr',
+      base: 'ibc/3B9ABA3279B929C3D9C59F6C8C1A1E661D4FC13DDF462DAB2265EC39CDCD1001',
+      name: 'Sayve Token',
+      display: 'sayve',
+      symbol: 'SAYVE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/0EA073BA9C2F35003AF05F99D121C47EC603A978D7C42A50CD4FFEF8ECA525B0',
+          exponent: 0,
+          aliases: ['cw20:terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u']
+        }, {
+          denom: 'guides',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u',
+      base: 'ibc/0EA073BA9C2F35003AF05F99D121C47EC603A978D7C42A50CD4FFEF8ECA525B0',
+      name: 'Guides Token',
+      display: 'guides',
+      symbol: 'GUIDES',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/4B889178BAA176E102E33F4B7A421EF958C1C039799B4E036FA6A5AE3A7BF958',
+          exponent: 0,
+          aliases: ['cw20:terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2']
+        }, {
+          denom: 'bro',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2',
+      base: 'ibc/4B889178BAA176E102E33F4B7A421EF958C1C039799B4E036FA6A5AE3A7BF958',
+      name: 'BRO token',
+      display: 'bro',
+      symbol: 'BRO',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bro.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bro.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5A765EDE7C505881C21527256A05F552AF22578D23033E049989C72DDF5EE4C8',
+          exponent: 0,
+          aliases: ['cw20:terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds']
+        }, {
+          denom: 'bbro',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds',
+      base: 'ibc/5A765EDE7C505881C21527256A05F552AF22578D23033E049989C72DDF5EE4C8',
+      name: 'bBRO token',
+      display: 'bbro',
+      symbol: 'bBRO',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bbro.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bbro.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5209EB7BFF67D0F1CD7323BFDFCC87DFCEF039E78ECF8862E001D17397E7B8C2',
+          exponent: 0,
+          aliases: ['cw20:terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr']
+        }, {
+          denom: 'gtps',
+          exponent: 18
+        }],
+      type_asset: 'cw20',
+      address: 'terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr',
+      base: 'ibc/5209EB7BFF67D0F1CD7323BFDFCC87DFCEF039E78ECF8862E001D17397E7B8C2',
+      name: 'Global Transaction Payment Solut',
+      display: 'gtps',
+      symbol: 'GTPS',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/A27871670712E674D292568403A9B6FDD0B6507C78DAE0B0318F8BB14145A7AD',
+          exponent: 0,
+          aliases: ['cw20:terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se']
+        }, {
+          denom: 'gfi',
+          exponent: 18
+        }],
+      type_asset: 'cw20',
+      address: 'terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se',
+      base: 'ibc/A27871670712E674D292568403A9B6FDD0B6507C78DAE0B0318F8BB14145A7AD',
+      name: 'Gtps.Finance',
+      display: 'gfi',
+      symbol: 'GFI',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/BE1E260CC5C322EF415134FDF0B48C48D3F09956D89BAC92D1328A47BFFFC7AB',
+          exponent: 0,
+          aliases: ['cw20:terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa']
+        }, {
+          denom: 'ulc',
+          exponent: 18
+        }],
+      type_asset: 'cw20',
+      address: 'terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa',
+      base: 'ibc/BE1E260CC5C322EF415134FDF0B48C48D3F09956D89BAC92D1328A47BFFFC7AB',
+      name: 'Ultimatalioniscoin',
+      display: 'ulc',
+      symbol: 'ULC',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/1DD19A3A498B19E2A8E2CDC76AB6FBA350CA7AE95F53B0FF66B94FC7D1D64977',
+          exponent: 0,
+          aliases: ['cw20:terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl']
+        }, {
+          denom: 'sst',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl',
+      base: 'ibc/1DD19A3A498B19E2A8E2CDC76AB6FBA350CA7AE95F53B0FF66B94FC7D1D64977',
+      name: 'Sooah Studio Token',
+      display: 'sst',
+      symbol: 'SST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/954C8FA6685BE14447269E3207EC8331B037E1BBE268EEE0B199E53A00A35A33',
+          exponent: 0,
+          aliases: ['cw20:terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc']
+        }, {
+          denom: 'atlas',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc',
+      base: 'ibc/954C8FA6685BE14447269E3207EC8331B037E1BBE268EEE0B199E53A00A35A33',
+      name: 'Star Atlas (Portal)',
+      display: 'atlas',
+      symbol: 'ATLAS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/D73732BB4D8D95F1E85AA88300EA988EB30EEDBC0AC4B397FEC15EEF21BF6597',
+          exponent: 0,
+          aliases: ['cw20:terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp']
+        }, {
+          denom: 'audio',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp',
+      base: 'ibc/D73732BB4D8D95F1E85AA88300EA988EB30EEDBC0AC4B397FEC15EEF21BF6597',
+      name: 'Audius (Portal)',
+      display: 'audio',
+      symbol: 'AUDIO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/E421747451935D6FD8FD0232E1D68ABC167326F946FEAA12122621D9CED4ED6A',
+          exponent: 0,
+          aliases: ['cw20:terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m']
+        }, {
+          denom: 'avax',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m',
+      base: 'ibc/E421747451935D6FD8FD0232E1D68ABC167326F946FEAA12122621D9CED4ED6A',
+      name: 'AVAX (Portal)',
+      display: 'avax',
+      symbol: 'AVAX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/627D28C2DAB73D02EE4530AC14048A6308774C49E252DE610B4FC95C12306B15',
+          exponent: 0,
+          aliases: ['cw20:terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2']
+        }, {
+          denom: 'bat',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2',
+      base: 'ibc/627D28C2DAB73D02EE4530AC14048A6308774C49E252DE610B4FC95C12306B15',
+      name: 'Basic Attention Token (Portal)',
+      display: 'bat',
+      symbol: 'BAT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/61BAA2DB9CD9F853B6FC576A39C698139AA536E3DD299C59BF82524C7789429E',
+          exponent: 0,
+          aliases: ['cw20:terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd']
+        }, {
+          denom: 'busdbs',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd',
+      base: 'ibc/61BAA2DB9CD9F853B6FC576A39C698139AA536E3DD299C59BF82524C7789429E',
+      name: 'Binance USD (Portal from BSC)',
+      display: 'busdbs',
+      symbol: 'BUSDbs',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B2CB4EC52DA861F5AD4A89561A78556E8BA062EE017F7ECBF6C728C2CF30C78E',
+          exponent: 0,
+          aliases: ['cw20:terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95']
+        }, {
+          denom: 'dai',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95',
+      base: 'ibc/B2CB4EC52DA861F5AD4A89561A78556E8BA062EE017F7ECBF6C728C2CF30C78E',
+      name: 'DAI (Portal)',
+      display: 'dai',
+      symbol: 'DAI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/3A76F38BBFAE242858A44AED08700FB137D97B26594BF0F247A78A016C1C0C9C',
+          exponent: 0,
+          aliases: ['cw20:terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8']
+        }, {
+          denom: 'maticpo',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8',
+      base: 'ibc/3A76F38BBFAE242858A44AED08700FB137D97B26594BF0F247A78A016C1C0C9C',
+      name: 'MATIC (Portal from Polygon)',
+      display: 'maticpo',
+      symbol: 'MATICpo',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/C31212697D7E9C3A86844DD97E6A89B23FA1B4D19D44EB47871CCBB8DCEEE35A',
+          exponent: 0,
+          aliases: ['cw20:terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y']
+        }, {
+          denom: 'mimet',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y',
+      base: 'ibc/C31212697D7E9C3A86844DD97E6A89B23FA1B4D19D44EB47871CCBB8DCEEE35A',
+      name: 'Magic Internet Money',
+      display: 'mimet',
+      symbol: 'MIMet',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8CF8C3D5FA88A985DAC71BBFBBB6B5B83247ABA6EFF42049465F130578C21D00',
+          exponent: 0,
+          aliases: ['cw20:terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q']
+        }, {
+          denom: 'ray',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q',
+      base: 'ibc/8CF8C3D5FA88A985DAC71BBFBBB6B5B83247ABA6EFF42049465F130578C21D00',
+      name: 'Raydium (Portal)',
+      display: 'ray',
+      symbol: 'RAY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8B1205F77CC5A0403306FB525A5393796D0288337BBCE53636E75591AEFF2853',
+          exponent: 0,
+          aliases: ['cw20:terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc']
+        }, {
+          denom: 'sbr',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc',
+      base: 'ibc/8B1205F77CC5A0403306FB525A5393796D0288337BBCE53636E75591AEFF2853',
+      name: 'Saber (Portal)',
+      display: 'sbr',
+      symbol: 'SBR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5BF935F2D869C723DC3CBD341253E5E09385827FE8ED2D3E0FA08CB8AC694EE7',
+          exponent: 0,
+          aliases: ['cw20:terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd']
+        }, {
+          denom: 'shib',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd',
+      base: 'ibc/5BF935F2D869C723DC3CBD341253E5E09385827FE8ED2D3E0FA08CB8AC694EE7',
+      name: 'Shiba Inu (Portal)',
+      display: 'shib',
+      symbol: 'SHIB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B159A28CA4B293970765D07AD783904816A5197895798056A2153D8812267C08',
+          exponent: 0,
+          aliases: ['cw20:terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c']
+        }, {
+          denom: 'srmso',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c',
+      base: 'ibc/B159A28CA4B293970765D07AD783904816A5197895798056A2153D8812267C08',
+      name: 'Serum (Portal from Solana)',
+      display: 'srmso',
+      symbol: 'SRMso',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/0CF0C033EF499817C864D4C96C181ECB0A622C21B906ADDA8B9C078646EAE1B7',
+          exponent: 0,
+          aliases: ['cw20:terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w']
+        }, {
+          denom: 'usdcav',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w',
+      base: 'ibc/0CF0C033EF499817C864D4C96C181ECB0A622C21B906ADDA8B9C078646EAE1B7',
+      name: 'USD Coin (Portal from Avalanche)',
+      display: 'usdcav',
+      symbol: 'USDCav',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/8726BBFA5837A5E36E964E450652645752BE60134E52C6688D667A05454FC2E0',
+          exponent: 0,
+          aliases: ['cw20:terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu']
+        }, {
+          denom: 'usdcbs',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu',
+      base: 'ibc/8726BBFA5837A5E36E964E450652645752BE60134E52C6688D667A05454FC2E0',
+      name: 'USD Coin (Portal from BSC)',
+      display: 'usdcbs',
+      symbol: 'USDCbs',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/DF343D71EE8EB038F6E22493075271B6ECE0914F688FA7D03B471F722841B587',
+          exponent: 0,
+          aliases: ['cw20:terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x']
+        }, {
+          denom: 'usdcpo',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x',
+      base: 'ibc/DF343D71EE8EB038F6E22493075271B6ECE0914F688FA7D03B471F722841B587',
+      name: 'USD Coin (Portal from Polygon)',
+      display: 'usdcpo',
+      symbol: 'USDCpo',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/193EAA38602E756888FE002143657385CA1B71B1731C87E88F73BF1F9C1E86F0',
+          exponent: 0,
+          aliases: ['cw20:terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4']
+        }, {
+          denom: 'usdcso',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4',
+      base: 'ibc/193EAA38602E756888FE002143657385CA1B71B1731C87E88F73BF1F9C1E86F0',
+      name: 'USD Coin (Portal from Solana)',
+      display: 'usdcso',
+      symbol: 'USDCso',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/F03DFB5FCCBD29E45CF175C24182A58C79A0A446612EA20DAB8BDB70DC1FF83A',
+          exponent: 0,
+          aliases: ['cw20:terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx']
+        }, {
+          denom: 'usdtav',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx',
+      base: 'ibc/F03DFB5FCCBD29E45CF175C24182A58C79A0A446612EA20DAB8BDB70DC1FF83A',
+      name: 'Tether USD (Portal from Avalanche)',
+      display: 'usdtav',
+      symbol: 'USDTav',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/F8EDC4511E7ACE342FEF05FC48702EA02FD0A9339AE293C221EB5688398B5DB6',
+          exponent: 0,
+          aliases: ['cw20:terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd']
+        }, {
+          denom: 'usdtbs',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd',
+      base: 'ibc/F8EDC4511E7ACE342FEF05FC48702EA02FD0A9339AE293C221EB5688398B5DB6',
+      name: 'Tether USD (Portal from BSC)',
+      display: 'usdtbs',
+      symbol: 'USDTbs',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/107A3AD8E6328408744B7D9FBA619D8371805184F46B829DEA372CC2DC790489',
+          exponent: 0,
+          aliases: ['cw20:terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5']
+        }, {
+          denom: 'usdtso',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5',
+      base: 'ibc/107A3AD8E6328408744B7D9FBA619D8371805184F46B829DEA372CC2DC790489',
+      name: 'Tether USD (Portal from Solana)',
+      display: 'usdtso',
+      symbol: 'USDTso',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/5F9702D20754980C1CB7AA848CF097BAB61D4236F10D18F7E431FE2C2C6659BA',
+          exponent: 0,
+          aliases: ['cw20:terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3']
+        }, {
+          denom: 'gohm',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3',
+      base: 'ibc/5F9702D20754980C1CB7AA848CF097BAB61D4236F10D18F7E431FE2C2C6659BA',
+      name: 'Governance OHM (Portal)',
+      display: 'gohm',
+      symbol: 'gOHM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/05352AE3BCE316C1F137A05F6B18268DE6D5AE67CC0045F5DFE05823C17CABEE',
+          exponent: 0,
+          aliases: ['cw20:terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y']
+        }, {
+          denom: 'msol',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y',
+      base: 'ibc/05352AE3BCE316C1F137A05F6B18268DE6D5AE67CC0045F5DFE05823C17CABEE',
+      name: 'Marinade staked SOL (Portal)',
+      display: 'msol',
+      symbol: 'mSOL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/6F5998D94C801508B8B7262048CFD398540FE31427B35D553661042D44423DF3',
+          exponent: 0,
+          aliases: ['cw20:terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d']
+        }, {
+          denom: 'steth',
+          exponent: 8
+        }],
+      type_asset: 'cw20',
+      address: 'terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d',
+      base: 'ibc/6F5998D94C801508B8B7262048CFD398540FE31427B35D553661042D44423DF3',
+      name: 'Lido Staked Ether (Portal)',
+      display: 'steth',
+      symbol: 'stETH',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/44325A118DA8B8D873D1BF3404B09A1AC02EBBF440FEAC4186FB677C92788D17',
+          exponent: 0,
+          aliases: ['cw20:terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc']
+        }, {
+          denom: 'lct',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc',
+      base: 'ibc/44325A118DA8B8D873D1BF3404B09A1AC02EBBF440FEAC4186FB677C92788D17',
+      name: 'LCT Token',
+      display: 'lct',
+      symbol: 'LCT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/9040BE69B33F6F8CAF8FC2404B384647CBCB2363B7AEB21F8325C2C2BA70100C',
+          exponent: 0,
+          aliases: ['cw20:terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a']
+        }, {
+          denom: 'batom',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a',
+      base: 'ibc/9040BE69B33F6F8CAF8FC2404B384647CBCB2363B7AEB21F8325C2C2BA70100C',
+      name: 'Bonded ATOM',
+      display: 'batom',
+      symbol: 'bATOM',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/batom.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/batom.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B86D0EC0B5333229BCFF55F48DBE19E940AC6C342A17C9F75B7FE23F0C620339',
+          exponent: 0,
+          aliases: ['cw20:terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn']
+        }, {
+          denom: 'webatom',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn',
+      base: 'ibc/B86D0EC0B5333229BCFF55F48DBE19E940AC6C342A17C9F75B7FE23F0C620339',
+      name: 'pStake Bonded ATOM (Wormhole)',
+      display: 'webatom',
+      symbol: 'webATOM',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webatom.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webatom.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2D6714236503E557BD02C6ED9E70B03CDFBB19D4F0CD2EAA5D780D4C493A8787',
+          exponent: 0,
+          aliases: ['cw20:terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn']
+        }, {
+          denom: 'wcoin',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn',
+      base: 'ibc/2D6714236503E557BD02C6ED9E70B03CDFBB19D4F0CD2EAA5D780D4C493A8787',
+      name: 'Willisch Coin',
+      display: 'wcoin',
+      symbol: 'WCOIN',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wcoin.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wcoin.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/7DCBF780E8CD72397AB4CE0F482285A2C29601E4BE4480A115CA0905FDB3EC9F',
+          exponent: 0,
+          aliases: ['cw20:terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy']
+        }, {
+          denom: 'lctfancard',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy',
+      base: 'ibc/7DCBF780E8CD72397AB4CE0F482285A2C29601E4BE4480A115CA0905FDB3EC9F',
+      name: 'LCT Fancard Token',
+      display: 'lctfancard',
+      symbol: 'LCTfancard',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/F37EF82C7F64ADEC81365EDA2A426D2422E6A28800F10448629AACDDAE92F3D3',
+          exponent: 0,
+          aliases: ['cw20:terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang']
+        }, {
+          denom: 'kntc',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang',
+      base: 'ibc/F37EF82C7F64ADEC81365EDA2A426D2422E6A28800F10448629AACDDAE92F3D3',
+      name: 'Kinetic Token',
+      display: 'kntc',
+      symbol: 'KNTC',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kntc.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kntc.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/E1DDEDB674BC6D6884A468D4865CD05C5205DCBA3ECFA76EC1031F9A58F3A35A',
+          exponent: 0,
+          aliases: ['cw20:terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex']
+        }, {
+          denom: 'kust',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex',
+      base: 'ibc/E1DDEDB674BC6D6884A468D4865CD05C5205DCBA3ECFA76EC1031F9A58F3A35A',
+      name: 'Kinetic kUST Token',
+      display: 'kust',
+      symbol: 'kUST',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kust.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kust.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/ECCCB63C2E36660DBD7F701B12EF20597D42088799FF8E81CE54BFD55A7AC16E',
+          exponent: 0,
+          aliases: ['cw20:terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv']
+        }, {
+          denom: 'steak',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv',
+      base: 'ibc/ECCCB63C2E36660DBD7F701B12EF20597D42088799FF8E81CE54BFD55A7AC16E',
+      name: 'Steak Token',
+      display: 'steak',
+      symbol: 'STEAK',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steak.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steak.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/AA01F69B068E1722721183DBF3876E5BE2803C61EC0EF450FA850F6AA0C3025D',
+          exponent: 0,
+          aliases: ['cw20:terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m']
+        }, {
+          denom: 'cst',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m',
+      base: 'ibc/AA01F69B068E1722721183DBF3876E5BE2803C61EC0EF450FA850F6AA0C3025D',
+      name: 'CST Token',
+      display: 'cst',
+      symbol: 'CST',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/52EA1A9E068E1BD5EA74AB23CFC310C9A475982DBEF0B332D060987EE3836C1B',
+          exponent: 0,
+          aliases: ['cw20:terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam']
+        }, {
+          denom: 'cstfancard',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam',
+      base: 'ibc/52EA1A9E068E1BD5EA74AB23CFC310C9A475982DBEF0B332D060987EE3836C1B',
+      name: 'CST Fancard Token',
+      display: 'cstfancard',
+      symbol: 'CSTfancard',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/F84CD975385ED193D6ED2A8AF0CBACA7304399426F92E19A55615A57A091C1CD',
+          exponent: 0,
+          aliases: ['cw20:terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj']
+        }, {
+          denom: 'nwld',
+          exponent: 9
+        }],
+      type_asset: 'cw20',
+      address: 'terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj',
+      base: 'ibc/F84CD975385ED193D6ED2A8AF0CBACA7304399426F92E19A55615A57A091C1CD',
+      name: 'Neworld Labs Develpper Token',
+      display: 'nwld',
+      symbol: 'NWLD',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/2CE3FB37B459658FEC5DDDDFF7EFC561AB81AAA317FAECF07D9D8F934F977A9D',
+          exponent: 0,
+          aliases: ['cw20:terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k']
+        }, {
+          denom: 'fury',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k',
+      base: 'ibc/2CE3FB37B459658FEC5DDDDFF7EFC561AB81AAA317FAECF07D9D8F934F977A9D',
+      name: 'FURY',
+      display: 'fury',
+      symbol: 'FURY',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/7A0E6CF16DD239E89BCFF814A9013697734703E9E12F6605B4D07454D726571B',
+          exponent: 0,
+          aliases: ['cw20:terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93']
+        }, {
+          denom: 'rct',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93',
+      base: 'ibc/7A0E6CF16DD239E89BCFF814A9013697734703E9E12F6605B4D07454D726571B',
+      name: 'Reactor Token',
+      display: 'rct',
+      symbol: 'RCT',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rct.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rct.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/125F2B412926A70AF29619F0807FF0F3188718BB4C548496F018F902847583AB',
+          exponent: 0,
+          aliases: ['cw20:terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu']
+        }, {
+          denom: 'vitc',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu',
+      base: 'ibc/125F2B412926A70AF29619F0807FF0F3188718BB4C548496F018F902847583AB',
+      name: 'Vitamin Coin',
+      display: 'vitc',
+      symbol: 'VITC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/AD1F63BA20D4D7405091BAFA81686681AC1CB033DB15EE614CBD4B359D8D8BB5',
+          exponent: 0,
+          aliases: ['cw20:terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g']
+        }, {
+          denom: 'sb',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g',
+      base: 'ibc/AD1F63BA20D4D7405091BAFA81686681AC1CB033DB15EE614CBD4B359D8D8BB5',
+      name: 'DragonSB',
+      display: 'sb',
+      symbol: 'SB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/12D57045A1B0CD82F3924B62FB44EBCA67948D759747A8AE9D83EF7AF0762757',
+          exponent: 0,
+          aliases: ['cw20:terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh']
+        }, {
+          denom: 'toad',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh',
+      base: 'ibc/12D57045A1B0CD82F3924B62FB44EBCA67948D759747A8AE9D83EF7AF0762757',
+      name: 'RESToad Token',
+      display: 'toad',
+      symbol: 'TOAD',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/toad.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/toad.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/169449C31A5B18D8A93BDE18B1201D815B5FAAECBA0DE09D862BE3240B9A29EB',
+          exponent: 0,
+          aliases: ['cw20:terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd']
+        }, {
+          denom: 'orionastro',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd',
+      base: 'ibc/169449C31A5B18D8A93BDE18B1201D815B5FAAECBA0DE09D862BE3240B9A29EB',
+      name: 'Orion Money xASTRO Derivative Token',
+      display: 'orionastro',
+      symbol: 'orionASTRO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/73CBE52098D640F5826E3DD8CEE9E77A2C3C1F8442147323E5E141D7DEE0F513',
+          exponent: 0,
+          aliases: ['cw20:terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp']
+        }, {
+          denom: 'retro',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp',
+      base: 'ibc/73CBE52098D640F5826E3DD8CEE9E77A2C3C1F8442147323E5E141D7DEE0F513',
+      name: 'Retrograde',
+      display: 'retro',
+      symbol: 'RETRO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/A4ED6C6F4564061734649338DD60865F154A80B2C26A711E3EA3D73B07F3A4BC',
+          exponent: 0,
+          aliases: ['cw20:terra16wggm67a34msdxasg2vergm2pt289y7930wv7d']
+        }, {
+          denom: 'tnd',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra16wggm67a34msdxasg2vergm2pt289y7930wv7d',
+      base: 'ibc/A4ED6C6F4564061734649338DD60865F154A80B2C26A711E3EA3D73B07F3A4BC',
+      name: 'TerrnadoCash',
+      display: 'tnd',
+      symbol: 'TND',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra16wggm67a34msdxasg2vergm2pt289y7930wv7d',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra16wggm67a34msdxasg2vergm2pt289y7930wv7d'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/6A561C4F7EEC8356E971CD9F86A29F88C2FF1DCA9778F59CACA6DF5D4CD890D4',
+          exponent: 0,
+          aliases: ['cw20:terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g']
+        }, {
+          denom: 'stnd',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g',
+      base: 'ibc/6A561C4F7EEC8356E971CD9F86A29F88C2FF1DCA9778F59CACA6DF5D4CD890D4',
+      name: 'TerrnadoCash',
+      display: 'stnd',
+      symbol: 'sTND',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stnd.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stnd.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/B1A27A6C18687491FEE0B237441C2056600DD9EEA3A252DE87DDE9EF96DBE16F',
+          exponent: 0,
+          aliases: ['cw20:terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe']
+        }, {
+          denom: 'nwt',
+          exponent: 9
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe',
+      base: 'ibc/B1A27A6C18687491FEE0B237441C2056600DD9EEA3A252DE87DDE9EF96DBE16F',
+      name: 'Neworld Token',
+      display: 'nwt',
+      symbol: 'NWT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/05D5AD21F3722CB4F070D2B2293344EDAB655C80C4A80CCAC1C3675F7CFD5304',
+          exponent: 0,
+          aliases: ['cw20:terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn']
+        }, {
+          denom: 'neb',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn',
+      base: 'ibc/05D5AD21F3722CB4F070D2B2293344EDAB655C80C4A80CCAC1C3675F7CFD5304',
+      name: 'Nebula Token',
+      display: 'neb',
+      symbol: 'NEB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn'
+          }
+        }]
+    },
+    {
+      denom_units: [{
+          denom: 'ibc/F5440320D31620C7F09B02AB8C70AE47521B9E555E0BA7F07B784163D9BFF8DC',
+          exponent: 0,
+          aliases: ['cw20:terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00']
+        }, {
+          denom: 'trit',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00',
+      base: 'ibc/F5440320D31620C7F09B02AB8C70AE47521B9E555E0BA7F07B784163D9BFF8DC',
+      name: 'Terra Tritium Token',
+      display: 'trit',
+      symbol: 'TRIT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/trit.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/trit.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00'
+          }
+        }]
+    },
+    {
+      description: 'Juris Protocol is the premier lending platform for the Terra Ecosystem, delivering decentralized lending and borrowing markets to enhance financial accessibility and utility.',
+      socials: {
+        website: 'https://jurisprotocol.com/',
+        x: 'https://x.com/jurisprotocol'
+      },
+      coingecko_id: 'juris-protocol',
+      type_asset: 'cw20',
+      address: 'terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2',
+      denom_units: [{
+          denom: 'ibc/46579C587A0B8CF8B0A1FF6B0EFA2082F11876578E47FC81A9CAAD31F424AF98',
+          exponent: 0,
+          aliases: ['cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2']
+        }, {
+          denom: 'juris',
+          exponent: 6
+        }],
+      base: 'ibc/46579C587A0B8CF8B0A1FF6B0EFA2082F11876578E47FC81A9CAAD31F424AF98',
+      name: 'Juris Protocol',
+      display: 'juris',
+      symbol: 'JURIS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
+          }
+        }]
+    },
+    {
+      description: 'Tadpole Frogztrik Token meme',
+      type_asset: 'cw20',
+      address: 'terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
+      display: 'tadf',
+      denom_units: [{
+          denom: 'ibc/B5457A60AD0FEF33E2831059518659D132E514CEE3EC4E9B45AD708EF6D5F234',
+          exponent: 0,
+          aliases: ['cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c']
+        }, {
+          denom: 'tadf',
+          exponent: 6
+        }],
+      base: 'ibc/B5457A60AD0FEF33E2831059518659D132E514CEE3EC4E9B45AD708EF6D5F234',
+      name: 'Tadpole Frogztrik Token',
+      symbol: 'TADF',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c'
+          }
+        }]
+    },
+    {
+      description: 'Frogztrik NFT Token',
+      type_asset: 'cw20',
+      address: 'terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
+      display: 'frog',
+      denom_units: [{
+          denom: 'ibc/4249A9BAE70BB8FFCED21E2928CA2D980431E74D172FA7CCC5A78A8064837C94',
+          exponent: 0,
+          aliases: ['cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9']
+        }, {
+          denom: 'frog',
+          exponent: 6
+        }],
+      base: 'ibc/4249A9BAE70BB8FFCED21E2928CA2D980431E74D172FA7CCC5A78A8064837C94',
+      name: 'Frogztrik NFT Token',
+      symbol: 'FROG',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+        }],
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9'
+          }
+        }]
+    },
+    {
+      description: 'WESO is the first memetility token launched on the Luna Classic blockchain. WESO is a innovative CW20 token dedicated to revitalizing and stabilizing the Luna Classic ecosystem. By leveraging a robust economic model WESO aims to restore confidence and sustainability within the ecosystem.',
+      type_asset: 'cw20',
+      address: 'terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+      denom_units: [{
+          denom: 'ibc/3058EF25FE6CF6D58086A452C5C06612093F0C0C3F955464505D5CD7C78169F6',
+          exponent: 0,
+          aliases: ['cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms']
+        }, {
+          denom: 'weso',
+          exponent: 6
+        }],
+      base: 'ibc/3058EF25FE6CF6D58086A452C5C06612093F0C0C3F955464505D5CD7C78169F6',
+      name: 'WESO World',
+      display: 'weso',
+      symbol: 'WESO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms'
+          }
+        }]
+    },
+    {
+      description: 'Classic\'s original Liquid Staking Token - circa 2022',
+      type_asset: 'cw20',
+      address: 'terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+      denom_units: [{
+          denom: 'ibc/DDE4A44DDBFF7A0831A077D6E88B2323D8DD480C8AE3AA08C7AC6FB416212063',
+          exponent: 0,
+          aliases: ['cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m']
+        }, {
+          denom: 'base',
+          exponent: 6
+        }],
+      base: 'ibc/DDE4A44DDBFF7A0831A077D6E88B2323D8DD480C8AE3AA08C7AC6FB416212063',
+      name: 'Burn and Stake Enterprise Token',
+      display: 'base',
+      symbol: 'BASE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m'
+          }
+        }]
+    },
+    {
+      description: 'CW20 token hard-pegged 1:1 with Native LUNC. Reduces or eliminates the chain-tax so you keep more of your money.',
+      type_asset: 'cw20',
+      address: 'terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+      denom_units: [{
+          denom: 'ibc/EF2F1992EA1AFB348FF390FC9FE544D5C4A04DCE94B4ED12FCC9D25251D5AD05',
+          exponent: 0,
+          aliases: ['cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6']
+        }, {
+          denom: 'cwlunc',
+          exponent: 6
+        }],
+      base: 'ibc/EF2F1992EA1AFB348FF390FC9FE544D5C4A04DCE94B4ED12FCC9D25251D5AD05',
+      name: 'cwLUNC Token',
+      display: 'cwlunc',
+      symbol: 'cwLUNC',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6'
+          }
+        }]
+    },
+    {
+      description: 'An eco-friendly token for sustainable projects and green initiatives on Terra Luna Classic',
+      socials: {
+        website: 'https://www.greenfriendlylabs.com/',
+        x: 'https://x.com/GreenFrndLabs'
+      },
+      type_asset: 'cw20',
+      address: 'terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5',
+      denom_units: [{
+          denom: 'ibc/B6D6A3C473F8937F323F4CE2F22CECBBBA401B8BA2BA6321E76A7B3623912395',
+          exponent: 0,
+          aliases: ['cw20:terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5']
+        }, {
+          denom: 'gft',
+          exponent: 6
+        }],
+      base: 'ibc/B6D6A3C473F8937F323F4CE2F22CECBBBA401B8BA2BA6321E76A7B3623912395',
+      name: 'Greenfriendly Token',
+      display: 'gft',
+      symbol: 'GFT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/greenfriendlylabs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/greenfriendlylabs.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5'
+          }
+        }]
+    },
+    {
+      description: 'LuncToken ($LTK) is the community token of Lunctoken.org, designed to reward engagement, provide access to Web3 educational content, and strengthen the Terra Classic ecosystem.',
+      socials: {
+        website: 'https://www.lunctoken.org',
+        x: 'https://x.com/Lunctoken_org'
+      },
+      type_asset: 'cw20',
+      address: 'terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a',
+      denom_units: [{
+          denom: 'ibc/D72101404AB3B93A9F956B09D32175955BD098A09A3D3EB5C1E4B4FB6CE76366',
+          exponent: 0,
+          aliases: ['cw20:terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a']
+        }, {
+          denom: 'ltk',
+          exponent: 6
+        }],
+      base: 'ibc/D72101404AB3B93A9F956B09D32175955BD098A09A3D3EB5C1E4B4FB6CE76366',
+      name: 'Lunctoken',
+      display: 'ltk',
+      symbol: 'LTK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunctoken.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunctoken.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a'
+          }
+        }]
+    },
+    {
+      description: 'GRDX is the native utility token powering the DeFi, marketplace, and gaming ecosystem on the Terra Classic blockchain.',
+      socials: {
+        website: 'https://garuda-defi.org/',
+        x: 'https://x.com/garuda_defi'
+      },
+      type_asset: 'cw20',
+      address: 'terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw',
+      denom_units: [{
+          denom: 'ibc/A91095096C44646CB885509AEF56842DD37CB7897E602D7200A1CCF6414AA0D2',
+          exponent: 0,
+          aliases: ['cw20:terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw']
+        }, {
+          denom: 'GRDX',
+          exponent: 6
+        }],
+      base: 'ibc/A91095096C44646CB885509AEF56842DD37CB7897E602D7200A1CCF6414AA0D2',
+      name: 'GRDX',
+      display: 'GRDX',
+      symbol: 'GRDX',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/GRDX.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/GRDX.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw'
+          }
+        }]
+    },
+    {
+      description: 'Cookie DO is a next-gen memecoin powering a full gaming + metaverse ecosystem. It fuels DO Gaming (play-to-earn tournaments), DO DAO governance, deep on-chain trading pools, and real-asset tokens like GG (DO Gold) and SG (DO Silver). Backed by Artemis staking, the Food Token humanitarian project, and multi-chain Cookie on LUNC, Solana, and BSC, Cookie DO creates nonstop cross-chain arbitrage frenzy — fun, utility, and yield in one token.',
+      socials: {
+        website: 'https://cookie-verse.io/',
+        x: 'https://x.com/LUNC_Cookies'
+      },
+      type_asset: 'cw20',
+      address: 'terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt',
+      denom_units: [{
+          denom: 'ibc/3B16647EEE058DA677ED944A6798125F4E69E9D24328404C7E213BA0A365D668',
+          exponent: 0,
+          aliases: ['cw20:terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt']
+        }, {
+          denom: 'cookie',
+          exponent: 6
+        }],
+      base: 'ibc/3B16647EEE058DA677ED944A6798125F4E69E9D24328404C7E213BA0A365D668',
+      name: 'cookie',
+      display: 'cookie',
+      symbol: 'cookie',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/do.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/do.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
+            channel_id: 'channel-108',
+            base_denom: 'cw20:terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt',
+            chain_name: 'terra'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-78488',
+            path: 'transfer/channel-78488/cw20:terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt'
+          }
+        }]
+    },
+    {
+      description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
+      denom_units: [{
+          denom: 'ibc/8410580A4F5421DFDBD888212624591E92A9E3B5C87D3C58913CE16ABD98B9B4',
+          exponent: 0,
+          aliases: ['cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26']
+        }, {
+          denom: 'astro.cw20',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26',
+      base: 'ibc/8410580A4F5421DFDBD888212624591E92A9E3B5C87D3C58913CE16ABD98B9B4',
+      name: 'Astroport CW20 Token',
+      display: 'astro.cw20',
+      symbol: 'ASTRO.cw20',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26'
+          }
+        }],
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
+        }, {
+          image_sync: {
+            chain_name: 'neutron',
+            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
+          },
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png'
+        }],
+      socials: {
+        website: 'https://astroport.fi/',
+        x: 'https://x.com/astroport_fi'
+      },
+      coingecko_id: 'astroport-fi'
+    },
+    {
+      description: 'Dinheiros is the reserve currency of dioalma.protocol, an undivisible and rare token.',
+      denom_units: [{
+          denom: 'ibc/47D772D7B46D7E19EAC59726BDEB1DE66D19DC1A2734EC02F10C38727A80818C',
+          exponent: 0,
+          aliases: ['cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k']
+        }],
+      type_asset: 'cw20',
+      address: 'terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
+      base: 'ibc/47D772D7B46D7E19EAC59726BDEB1DE66D19DC1A2734EC02F10C38727A80818C',
+      name: 'dinheiro',
+      display: 'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
+      symbol: 'DINHEIROS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k'
+          }
+        }]
+    },
+    {
+      description: 'Reis is the king of trading, high volume high liquidity, sibling of Dinheiros, Reis and Alem, a token of dioalma.protocol.',
+      denom_units: [{
+          denom: 'ibc/B19E942BC9E6FA56A66B5D3601D724CE6E2D61689D9E2BC8A0E9C6B0DEBF3D4E',
+          exponent: 0,
+          aliases: ['cw20:terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8']
+        }, {
+          denom: 'Reis',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8',
+      base: 'ibc/B19E942BC9E6FA56A66B5D3601D724CE6E2D61689D9E2BC8A0E9C6B0DEBF3D4E',
+      name: 'real',
+      display: 'Reis',
+      symbol: 'REIS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Reis.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Reis.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8'
+          }
+        }]
+    },
+    {
+      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and forward.',
+      denom_units: [{
+          denom: 'ibc/AAE2A5A0EB3A97DAC1CBFCD318B1402946E266D47E9DC29EB22A7A6784848E5A',
+          exponent: 0,
+          aliases: ['cw20:terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg']
+        }, {
+          denom: 'Escudos',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg',
+      base: 'ibc/AAE2A5A0EB3A97DAC1CBFCD318B1402946E266D47E9DC29EB22A7A6784848E5A',
+      name: 'escudo',
+      display: 'Escudos',
+      symbol: 'ESCUDOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Escudos.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Escudos.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg'
+          }
+        }]
+    },
+    {
+      description: 'Alem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/ED11A4C3C7090F571BA5918A7DC828CD4D84C62BB65819D2012FF528914070DF',
+          exponent: 0,
+          aliases: ['cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q']
+        }, {
+          denom: 'Alem',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q',
+      base: 'ibc/ED11A4C3C7090F571BA5918A7DC828CD4D84C62BB65819D2012FF528914070DF',
+      name: 'alentejo.money',
+      display: 'Alem',
+      symbol: 'ALEM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Alem.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Alem.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q'
+          }
+        }]
+    },
+    {
+      description: 'almagem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
+          exponent: 0,
+          aliases: ['cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40']
+        }, {
+          denom: 'AMG',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+      base: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
+      name: 'almagem',
+      display: 'AMG',
+      symbol: 'AMG',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40'
+          }
+        }]
+    },
+    {
+      description: 'arika is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
+          exponent: 0,
+          aliases: ['cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y']
+        }, {
+          denom: 'ARK',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+      base: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
+      name: 'arika',
+      display: 'ARK',
+      symbol: 'ARK',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y'
+          }
+        }]
+    },
+    {
+      description: 'danu is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
+          exponent: 0,
+          aliases: ['cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr']
+        }, {
+          denom: 'DANU',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+      base: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
+      name: 'danu',
+      display: 'DANU',
+      symbol: 'DANU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr'
+          }
+        }]
+    },
+    {
+      description: 'torus is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
+          exponent: 0,
+          aliases: ['cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7']
+        }, {
+          denom: 'TRS',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+      base: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
+      name: 'torus',
+      display: 'TRS',
+      symbol: 'TRS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7'
+          }
+        }]
+    },
+    {
+      description: 'plasma is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
+          exponent: 0,
+          aliases: ['cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp']
+        }, {
+          denom: 'PLASMA',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+      base: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
+      name: 'plasma',
+      display: 'PLASMA',
+      symbol: 'PLASMA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp'
+          }
+        }]
+    },
+    {
+      description: 'dmt is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
+      denom_units: [{
+          denom: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
+          exponent: 0,
+          aliases: ['cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf']
+        }, {
+          denom: 'DMT',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
+      base: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
+      name: 'dmt',
+      display: 'DMT',
+      symbol: 'DMT',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf'
+          }
+        }]
+    },
+    {
+      description: 'ERIS liquid staked LUNA.',
+      type_asset: 'cw20',
+      address: 'terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct',
+      denom_units: [{
+          denom: 'ibc/0A37D33F8899D8A0AACC15AFF08172D9C0F7293DBCC059FF1CF914167BA31AB1',
+          exponent: 0,
+          aliases: ['cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct']
+        }, {
+          denom: 'ampluna',
+          exponent: 6
+        }],
+      base: 'ibc/0A37D33F8899D8A0AACC15AFF08172D9C0F7293DBCC059FF1CF914167BA31AB1',
+      name: 'ERIS Amplified LUNA',
+      display: 'ampluna',
+      symbol: 'ampLUNA',
+      coingecko_id: 'eris-amplified-luna',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct'
+          }
+        }]
+    },
+    {
+      description: 'Lion DAO is a community DAO that lives on the Terra blockchain with the mission to reactivate the LUNAtic community and showcase Terra protocols & tooling',
+      type_asset: 'cw20',
+      address: 'terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv',
+      denom_units: [{
+          denom: 'ibc/A5E2D0103694807198DEABB950B5C35862B2C37D2878B010023048472C6E1B3E',
+          exponent: 0,
+          aliases: ['cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv']
+        }, {
+          denom: 'roar',
+          exponent: 6
+        }],
+      base: 'ibc/A5E2D0103694807198DEABB950B5C35862B2C37D2878B010023048472C6E1B3E',
+      name: 'Lion DAO',
+      display: 'roar',
+      symbol: 'ROAR',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/roar.png'
+      },
+      coingecko_id: 'lion-dao',
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/roar.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv'
+          }
+        }]
+    },
+    {
+      description: 'GEM DAO, building a decentralized, community-owned, low-supply store of value',
+      type_asset: 'cw20',
+      address: 'terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv',
+      denom_units: [{
+          denom: 'ibc/F6D1588C844E2B17D64904F57940E46FF2316D25DAD4CAD882075FEDF570E5B0',
+          exponent: 0,
+          aliases: ['cw20:terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv']
+        }, {
+          denom: 'gem',
+          exponent: 6
+        }],
+      base: 'ibc/F6D1588C844E2B17D64904F57940E46FF2316D25DAD4CAD882075FEDF570E5B0',
+      name: 'GEM DAO',
+      display: 'gem',
+      symbol: 'GEM',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gem.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gem.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv'
+          }
+        }]
+    },
+    {
+      description: 'Lion Cub DAO is a useless meme community DAO on Terra',
+      type_asset: 'cw20',
+      address: 'terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t',
+      denom_units: [{
+          denom: 'ibc/92D104452291E203A20D098E3413904DA113CED1F70392E68ADDFD28AF88A614',
+          exponent: 0,
+          aliases: ['cw20:terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t']
+        }, {
+          denom: 'cub',
+          exponent: 6
+        }],
+      base: 'ibc/92D104452291E203A20D098E3413904DA113CED1F70392E68ADDFD28AF88A614',
+      name: 'Lion Cub DAO',
+      display: 'cub',
+      symbol: 'CUB',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/cub.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/cub.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t'
+          }
+        }]
+    },
+    {
+      description: 'BLUE CUB DAO is a community DAO on Terra',
+      type_asset: 'cw20',
+      address: 'terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584',
+      denom_units: [{
+          denom: 'ibc/22AE94FAFE985FE3F550CB44895981AF3BF143615CC2B0D31E871358C4EC9FB7',
+          exponent: 0,
+          aliases: ['cw20:terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584']
+        }, {
+          denom: 'blue',
+          exponent: 6
+        }],
+      base: 'ibc/22AE94FAFE985FE3F550CB44895981AF3BF143615CC2B0D31E871358C4EC9FB7',
+      name: 'BLUE CUB DAO',
+      display: 'blue',
+      symbol: 'BLUE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/blue.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/blue.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584'
+          }
+        }]
+    },
+    {
+      description: 'Liquidity token, NFT, HARVEST FOR VALUE',
+      type_asset: 'cw20',
+      address: 'terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn',
+      denom_units: [{
+          denom: 'ibc/AE0997DCCDA4F1E8104C8FE7F0FC9E3CF8D00FEE079582A8D9DB86B2EAA0B13C',
+          exponent: 0,
+          aliases: ['cw20:terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn']
+        }, {
+          denom: 'xxx',
+          exponent: 10
+        }],
+      base: 'ibc/AE0997DCCDA4F1E8104C8FE7F0FC9E3CF8D00FEE079582A8D9DB86B2EAA0B13C',
+      name: 'TheOnlyOne',
+      display: 'xxx',
+      symbol: 'xxx',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xxx3.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xxx3.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn'
+          }
+        }]
+    },
+    {
+      description: 'Just a meme coin on Terra',
+      type_asset: 'cw20',
+      address: 'terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces',
+      denom_units: [{
+          denom: 'ibc/43D49D784D779F548C14E9FBB3D2AA786AF1D92BC2B1ADDF8F66C1B339F6999B',
+          exponent: 0,
+          aliases: ['cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces']
+        }, {
+          denom: 'GUGU',
+          exponent: 6
+        }],
+      base: 'ibc/43D49D784D779F548C14E9FBB3D2AA786AF1D92BC2B1ADDF8F66C1B339F6999B',
+      name: 'GUGU',
+      display: 'GUGU',
+      symbol: 'GUGU',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces'
+          }
+        }]
+    },
+    {
+      description: 'BackBone Labs Liquid Staked LUNA',
+      type_asset: 'cw20',
+      address: 'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
+      denom_units: [{
+          denom: 'ibc/14B25BDFFBE4A0584A82BF439C9FB93DE74054F931E162264B530EB994B590EF',
+          exponent: 0,
+          aliases: ['cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml']
+        }, {
+          denom: 'bLUNA',
+          exponent: 6
+        }],
+      base: 'ibc/14B25BDFFBE4A0584A82BF439C9FB93DE74054F931E162264B530EB994B590EF',
+      name: 'BackBone Labs Liquid Staked LUNA',
+      display: 'bLUNA',
+      symbol: 'bLUNA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
+      },
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml'
+          }
+        }],
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
+        }]
+    },
+    {
+      description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
+      type_asset: 'cw20',
+      address: 'terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3',
+      denom_units: [{
+          denom: 'ibc/C21B8AC361B2D52F4D49FBC87FAE8711B15A5779B7A07FF0DB8ABFBAF176E032',
+          exponent: 0,
+          aliases: ['cw20:terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3']
+        }, {
+          denom: 'sayve',
+          exponent: 6
+        }],
+      base: 'ibc/C21B8AC361B2D52F4D49FBC87FAE8711B15A5779B7A07FF0DB8ABFBAF176E032',
+      name: 'sayve',
+      display: 'sayve',
+      symbol: 'SAYVE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3'
+          }
+        }]
+    },
+    {
+      description: 'Nico Dao Money',
+      type_asset: 'cw20',
+      address: 'terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3',
+      denom_units: [{
+          denom: 'ibc/629BE9A0661493CBE5003E7C947DCCFC5580DC7DC5EE7D8137F33DE59F91C16D',
+          exponent: 0,
+          aliases: ['cw20:terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3']
+        }, {
+          denom: 'nico',
+          exponent: 18
+        }],
+      base: 'ibc/629BE9A0661493CBE5003E7C947DCCFC5580DC7DC5EE7D8137F33DE59F91C16D',
+      name: 'nico',
+      display: 'nico',
+      symbol: 'NICO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/nicodao.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/nicodao.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3'
+          }
+        }]
+    },
+    {
+      description: 'Sailing the Seas DAO is a community DAO built on Enterprise on Terra',
+      type_asset: 'cw20',
+      address: 'terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala',
+      denom_units: [{
+          denom: 'ibc/D6BD04B471AA8646B2FC04C2AFFB81CBB842D7981D79E6660A19366F0E6FDBD2',
+          exponent: 0,
+          aliases: ['cw20:terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala']
+        }, {
+          denom: 'seas',
+          exponent: 6
+        }],
+      base: 'ibc/D6BD04B471AA8646B2FC04C2AFFB81CBB842D7981D79E6660A19366F0E6FDBD2',
+      name: 'Sailing The SeaS DAO',
+      display: 'seas',
+      symbol: 'SEAS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/SEAS.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/SEAS.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala'
+          }
+        }]
+    },
+    {
+      description: 'A community DAO built on Enterprise',
+      type_asset: 'cw20',
+      address: 'terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v',
+      denom_units: [{
+          denom: 'ibc/05396CC34336345E4808487A2D46A068286AB8C183D916D76B9F934CFF4BCD1F',
+          exponent: 0,
+          aliases: ['cw20:terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v']
+        }, {
+          denom: 'bitz',
+          exponent: 6
+        }],
+      base: 'ibc/05396CC34336345E4808487A2D46A068286AB8C183D916D76B9F934CFF4BCD1F',
+      name: 'BitzDAO',
+      display: 'bitz',
+      symbol: 'BITZ',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/BITZ.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/BITZ.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v'
+          }
+        }]
+    },
+    {
+      description: 'SEUL DAO',
+      type_asset: 'cw20',
+      address: 'terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l',
+      denom_units: [{
+          denom: 'ibc/79ECA328D8F12F9CD15ED7C4897230CF09580FBEC87F5759DBA384A69F9FE0DD',
+          exponent: 0,
+          aliases: ['cw20:terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l']
+        }, {
+          denom: 'seul',
+          exponent: 6
+        }],
+      base: 'ibc/79ECA328D8F12F9CD15ED7C4897230CF09580FBEC87F5759DBA384A69F9FE0DD',
+      name: 'seul',
+      display: 'seul',
+      symbol: 'SEUL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/seul.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/seul.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l'
+          }
+        }]
+    },
+    {
+      description: 'SEUL DAO',
+      type_asset: 'cw20',
+      address: 'terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5',
+      denom_units: [{
+          denom: 'ibc/DE801496DE32B83400D67378F4BA797A544EB3EE4290D123460784B30175D6D2',
+          exponent: 0,
+          aliases: ['cw20:terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5']
+        }, {
+          denom: 'xseul',
+          exponent: 6
+        }],
+      base: 'ibc/DE801496DE32B83400D67378F4BA797A544EB3EE4290D123460784B30175D6D2',
+      name: 'xseul',
+      display: 'xseul',
+      symbol: 'xSEUL',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xseul.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xseul.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5'
+          }
+        }]
+    },
+    {
+      description: 'ITO DAO',
+      type_asset: 'cw20',
+      address: 'terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s',
+      denom_units: [{
+          denom: 'ibc/D470DA9DE1DFDB4BA83AD494D691C949255F5D690F361F90BD9650FEA1ECE03F',
+          exponent: 0,
+          aliases: ['cw20:terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s']
+        }, {
+          denom: 'ito',
+          exponent: 6
+        }],
+      base: 'ibc/D470DA9DE1DFDB4BA83AD494D691C949255F5D690F361F90BD9650FEA1ECE03F',
+      name: 'ito',
+      display: 'ito',
+      symbol: 'ITO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/I.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/I.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s'
+          }
+        }]
+    },
+    {
+      description: 'Chris Armani Token',
+      type_asset: 'cw20',
+      address: 'terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8',
+      denom_units: [{
+          denom: 'ibc/7D15BE6B6EFAFE8BA7714399BCD7B0C9E4738446F3A2274F57B98CAAF0244945',
+          exponent: 0,
+          aliases: ['cw20:terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8']
+        }, {
+          denom: 'ARMANI',
+          exponent: 6
+        }],
+      base: 'ibc/7D15BE6B6EFAFE8BA7714399BCD7B0C9E4738446F3A2274F57B98CAAF0244945',
+      name: 'ARMANI',
+      display: 'ARMANI',
+      symbol: 'ARMANI',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/armani.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/armani.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8'
+          }
+        }]
+    },
+    {
+      description: 'useless meme coin',
+      type_asset: 'cw20',
+      address: 'terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun',
+      denom_units: [{
+          denom: 'ibc/6998D3A13400D9D816517F3809BE63DE2F947339B83D110842C6CCECCA1C6200',
+          exponent: 0,
+          aliases: ['cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun']
+        }, {
+          denom: 'DROGO',
+          exponent: 6
+        }],
+      base: 'ibc/6998D3A13400D9D816517F3809BE63DE2F947339B83D110842C6CCECCA1C6200',
+      name: 'DROGO',
+      display: 'DROGO',
+      symbol: 'DROGO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/drogo.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/drogo.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun'
+          }
+        }]
+    },
+    {
+      description: 'ado the flower of night',
+      type_asset: 'cw20',
+      address: 'terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu',
+      denom_units: [{
+          denom: 'ibc/DF5B633763109623079D70726116A7EEBDE02C40AB3616A23666DA02F7A5744A',
+          exponent: 0,
+          aliases: ['cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu']
+        }, {
+          denom: 'ADO',
+          exponent: 6
+        }],
+      base: 'ibc/DF5B633763109623079D70726116A7EEBDE02C40AB3616A23666DA02F7A5744A',
+      name: 'ADO',
+      display: 'ADO',
+      symbol: 'ADO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu'
+          }
+        }]
+    },
+    {
+      description: 'DNA DAO',
+      type_asset: 'cw20',
+      address: 'terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h',
+      denom_units: [{
+          denom: 'ibc/B6EE099850A8CAB9FCB8F993BCDA4C7D42810F2C001D90324056588216D93DAB',
+          exponent: 0,
+          aliases: ['cw20:terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h']
+        }, {
+          denom: 'DNA',
+          exponent: 6
+        }],
+      base: 'ibc/B6EE099850A8CAB9FCB8F993BCDA4C7D42810F2C001D90324056588216D93DAB',
+      name: 'DNA',
+      display: 'DNA',
+      symbol: 'DNA',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/DNA.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/DNA.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h'
+          }
+        }]
+    },
+    {
+      description: 'Bitmos opens doors for BRC20 tokens to thrive alongside established players in the Cosmos Network, revolutionizing decentralized finance (DeFi) for all.',
+      type_asset: 'cw20',
+      address: 'terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq',
+      denom_units: [{
+          denom: 'ibc/1EF209B460FB285206D740F35B0B499B5FC4FB19CF92DEFC2574B29869EE7DEE',
+          exponent: 0,
+          aliases: ['cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq']
+        }, {
+          denom: 'bitmos',
+          exponent: 6
+        }],
+      base: 'ibc/1EF209B460FB285206D740F35B0B499B5FC4FB19CF92DEFC2574B29869EE7DEE',
+      name: 'Bitmos',
+      display: 'bitmos',
+      symbol: 'BMOS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq'
+          }
+        }]
+    },
+    {
+      type_asset: 'cw20',
+      address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
+      denom_units: [{
+          denom: 'ibc/B8078FAE3418D6E03945D35461C592261479193BB918FC5F278AA7EEC6A629BC',
+          exponent: 0,
+          aliases: ['cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj']
+        }, {
+          denom: 'lads',
+          exponent: 6
+        }],
+      base: 'ibc/B8078FAE3418D6E03945D35461C592261479193BB918FC5F278AA7EEC6A629BC',
+      name: 'LADS',
+      display: 'lads',
+      symbol: 'LADS',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj'
+          }
+        }]
+    },
+    {
+      description: 'ClonEliteFund invests in Cosmos ecosystem projects, focusing on scalability, security, and interoperability to maximize returns.',
+      type_asset: 'cw20',
+      address: 'terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
+      denom_units: [{
+          denom: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
+          exponent: 0,
+          aliases: ['cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2']
+        }, {
+          denom: 'CLON',
+          exponent: 6
+        }],
+      base: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
+      name: 'CLON',
+      display: 'CLON',
+      symbol: 'CLON',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2'
+          }
+        }]
+    },
+    {
+      description: 'ERIS Arbitrage LUNA',
+      type_asset: 'cw20',
+      address: 'terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+      denom_units: [{
+          denom: 'ibc/45F81F8C67A457FE02E8C6E50CA15EE46C915274EFF13E7FEEB248617718F6A0',
+          exponent: 0,
+          aliases: ['cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490']
+        }, {
+          denom: 'arbLUNA',
+          exponent: 6
+        }],
+      base: 'ibc/45F81F8C67A457FE02E8C6E50CA15EE46C915274EFF13E7FEEB248617718F6A0',
+      name: 'ERIS Arb LUNA',
+      display: 'arbLUNA',
+      symbol: 'arbLUNA',
+      logo_URIs: {
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+      },
+      images: [{
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
+        }],
+      coingecko_id: 'eris-arbitrage-luna',
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490'
+          }
+        }]
+    },
+    {
+      description: 'SOLID is the Terra native overcollateralized USD stablecoin, powered by SOLID',
+      denom_units: [{
+          denom: 'ibc/87FAB4A0CE17C2B57830EDCF01C43C806B91AD7D0DCF2282D077C783FEA33C18',
+          exponent: 0,
+          aliases: ['cw20:terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst']
+        }, {
+          denom: 'solid',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst',
+      base: 'ibc/87FAB4A0CE17C2B57830EDCF01C43C806B91AD7D0DCF2282D077C783FEA33C18',
+      name: 'Solid',
+      display: 'solid',
+      symbol: 'SOLID',
+      coingecko_id: 'solid-2',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst'
+          }
+        }]
+    },
+    {
+      description: 'CAPA is the governance token of SOLID ecosystem, powered by SOLID',
+      denom_units: [{
+          denom: 'ibc/395A4E2FC7CD9CB28FEBF5B746269275D01D64DFF9E1919D1498C99EBF74073B',
+          exponent: 0,
+          aliases: ['cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar']
+        }, {
+          denom: 'capa',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar',
+      base: 'ibc/395A4E2FC7CD9CB28FEBF5B746269275D01D64DFF9E1919D1498C99EBF74073B',
+      name: 'Capa',
+      display: 'capa',
+      symbol: 'CAPA',
+      coingecko_id: 'capapult',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.svg'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar'
+          }
+        }]
+    },
+    {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/A197DEBB4F8FFCE0B565620CE3ADF2121AF45FE4A334398C44B40B022D5B93A6',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/A197DEBB4F8FFCE0B565620CE3ADF2121AF45FE4A334398C44B40B022D5B93A6',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
+            channel_id: 'channel-85',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-559',
+            path: 'transfer/channel-559/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
           }
         }]
     },
@@ -35720,8913 +42648,39 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native token cw20 for SIENNA on Secret Network',
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
       denom_units: [{
-          denom: 'ibc/9A8A93D04917A149C8AC7C16D3DA8F470D59E8D867499C4DA97450E1D7363213',
+          denom: 'ibc/A197DEBB4F8FFCE0B565620CE3ADF2121AF45FE4A334398C44B40B022D5B93A6',
           exponent: 0,
-          aliases: ['cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4']
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
         }, {
-          denom: 'sienna',
-          exponent: 18
-        }],
-      type_asset: 'snip20',
-      address: 'secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
-      base: 'ibc/9A8A93D04917A149C8AC7C16D3DA8F470D59E8D867499C4DA97450E1D7363213',
-      name: 'SIENNA',
-      display: 'sienna',
-      symbol: 'SIENNA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/sienna.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for Shade on Secret Network',
-      denom_units: [{
-          denom: 'ibc/71055835C7639739EAE03AACD1324FE162DBA41D09F197CB72D966D014225B1C',
-          exponent: 0,
-          aliases: ['cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d']
-        }, {
-          denom: 'shd',
-          exponent: 8
-        }],
-      type_asset: 'snip20',
-      address: 'secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
-      base: 'ibc/71055835C7639739EAE03AACD1324FE162DBA41D09F197CB72D966D014225B1C',
-      name: 'Shade (old)',
-      display: 'shd',
-      symbol: 'SHD.old',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shdold.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1qfql357amn448duf5gvp9gr48sxx9tsnhupu3d'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for Shade on Secret Network',
-      denom_units: [{
-          denom: 'ibc/0B3D528E74E3DEAADF8A68F393887AC7E06028904D02173561B0D27F6E751D0A',
-          exponent: 0,
-          aliases: ['cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm']
-        }, {
-          denom: 'shd',
-          exponent: 8
-        }],
-      type_asset: 'snip25',
-      address: 'secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
-      base: 'ibc/0B3D528E74E3DEAADF8A68F393887AC7E06028904D02173561B0D27F6E751D0A',
-      name: 'Shade',
-      display: 'shd',
-      symbol: 'SHD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
-      },
-      coingecko_id: 'shade-protocol',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shd.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret153wu605vvp934xhd4k9dtd640zsep5jkesstdm'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for Silk on Secret Network',
-      denom_units: [{
-          denom: 'ibc/8A025A1E70101E39DE0C0F153E582A30806D3DA16795F6D868A3AA247D2DEDF7',
-          exponent: 0,
-          aliases: ['cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd']
-        }, {
-          denom: 'silk',
-          exponent: 6
-        }],
-      type_asset: 'snip25',
-      address: 'secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
-      base: 'ibc/8A025A1E70101E39DE0C0F153E582A30806D3DA16795F6D868A3AA247D2DEDF7',
-      name: 'Silk',
-      display: 'silk',
-      symbol: 'SILK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for dSilk on Secret Network',
-      denom_units: [{
-          denom: 'ibc/6941C32DD57BB114753331CF5F899802D3A0C7E3E42B760A5AE2EC7432343EB5',
-          exponent: 0,
-          aliases: ['cw20:secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw']
-        }, {
-          denom: 'dsilk',
-          exponent: 6
-        }],
-      type_asset: 'snip25',
-      address: 'secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw',
-      base: 'ibc/6941C32DD57BB114753331CF5F899802D3A0C7E3E42B760A5AE2EC7432343EB5',
-      name: 'dSilk',
-      display: 'dsilk',
-      symbol: 'dSILK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/dsilk.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1apxywjp2h8vet54xzyfc96htlt9qqgrh7gawhw'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for xSilk on Secret Network',
-      denom_units: [{
-          denom: 'ibc/F0FDAA2504C9850327D761000DACDB8DE1382BF68D1FE5C102F9DA8637BB7623',
-          exponent: 0,
-          aliases: ['cw20:secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82']
-        }, {
-          denom: 'xsilk',
-          exponent: 6
-        }],
-      type_asset: 'snip25',
-      address: 'secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82',
-      base: 'ibc/F0FDAA2504C9850327D761000DACDB8DE1382BF68D1FE5C102F9DA8637BB7623',
-      name: 'xSilk',
-      display: 'xsilk',
-      symbol: 'xSILK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/silk.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1lqt2u3ntzrkjev8z5m6ennu4n3zl3trx67ck82'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for SCRT Staking Derivatives on Secret Network',
-      denom_units: [{
-          denom: 'ibc/D0E5BF2940FB58D9B283A339032DE88111407AAD7D94A7F1F3EB78874F8616D4',
-          exponent: 0,
-          aliases: ['cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4']
-        }, {
-          denom: 'stkd-scrt',
-          exponent: 6
-        }],
-      type_asset: 'snip20',
-      address: 'secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
-      base: 'ibc/D0E5BF2940FB58D9B283A339032DE88111407AAD7D94A7F1F3EB78874F8616D4',
-      name: 'SCRT Staking Derivatives',
-      display: 'stkd-scrt',
-      symbol: 'stkd-SCRT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/stkd-scrt.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for Button on Secret Network',
-      denom_units: [{
-          denom: 'ibc/1FBA9E763B8679BEF7BAAAF2D16BCA78C3B297D226C3F31312C769D7B8F992D8',
-          exponent: 0,
-          aliases: ['cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt']
-        }, {
-          denom: 'butt',
-          exponent: 6
-        }],
-      type_asset: 'snip20',
-      address: 'secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
-      base: 'ibc/1FBA9E763B8679BEF7BAAAF2D16BCA78C3B297D226C3F31312C769D7B8F992D8',
-      name: 'Button',
-      display: 'butt',
-      symbol: 'BUTT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/butt.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for Alter on Secret Network',
-      denom_units: [{
-          denom: 'ibc/A6383B6CF5EA23E067666C06BC34E2A96869927BD9744DC0C1643E589C710AA3',
-          exponent: 0,
-          aliases: ['cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej']
-        }, {
-          denom: 'alter',
-          exponent: 6
-        }],
-      base: 'ibc/A6383B6CF5EA23E067666C06BC34E2A96869927BD9744DC0C1643E589C710AA3',
-      type_asset: 'snip20',
-      address: 'secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
-      name: 'Alter',
-      display: 'alter',
-      symbol: 'ALTER',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/alter.svg'
-        }],
-      socials: {
-        website: 'http://alter.network/',
-        x: 'https://x.com/AlterDapp'
-      },
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret12rcvz0umvk875kd6a803txhtlu7y0pnd73kcej'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for Amber on Secret Network',
-      denom_units: [{
-          denom: 'ibc/18A1B70E3205A48DE8590C0D11030E7146CDBF1048789261D53FFFD7527F8B55',
-          exponent: 0,
-          aliases: ['cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852']
-        }, {
-          denom: 'amber',
-          exponent: 6
-        }],
-      type_asset: 'snip20',
-      address: 'secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
-      base: 'ibc/18A1B70E3205A48DE8590C0D11030E7146CDBF1048789261D53FFFD7527F8B55',
-      name: 'Amber',
-      display: 'amber',
-      symbol: 'AMBER',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/amber.png'
-        }],
-      socials: {
-        website: 'http://amber.money/',
-        x: 'https://x.com/AmberDAO_'
-      },
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852'
-          }
-        }]
-    },
-    {
-      description: 'The native token cw20 for Shill on Secret Network',
-      denom_units: [{
-          denom: 'ibc/77BEE176F08CCC5AFBDFCCB9C63EBDF95D773FE3A0D3A85AC667AD633CE030A7',
-          exponent: 0,
-          aliases: ['cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse']
-        }, {
-          denom: 'shill',
-          exponent: 6
-        }],
-      type_asset: 'snip25',
-      address: 'secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
-      base: 'ibc/77BEE176F08CCC5AFBDFCCB9C63EBDF95D773FE3A0D3A85AC667AD633CE030A7',
-      name: 'Shill',
-      display: 'shill',
-      symbol: 'SHILL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/shill.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret197dvnt9yjxwn8sjdlx05f7zuk27lsdxtfnwxse'
-          }
-        }]
-    },
-    {
-      description: 'SNVR - Stealth Network for Vault Relay. Privacy token on Secret Network (SNIP-20).',
-      denom_units: [{
-          denom: 'ibc/C2543DF97BE8C586695DBEE56A4DE0FB82F16B37F57DC6818AA349C68D0C3927',
-          exponent: 0,
-          aliases: ['cw20:secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7']
-        }, {
-          denom: 'snvr',
-          exponent: 9
-        }],
-      type_asset: 'snip20',
-      address: 'secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7',
-      base: 'ibc/C2543DF97BE8C586695DBEE56A4DE0FB82F16B37F57DC6818AA349C68D0C3927',
-      name: 'SNVR',
-      display: 'snvr',
-      symbol: 'SNVR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/snvr.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/secretnetwork/images/snvr.png'
-        }],
-      socials: {
-        website: 'https://snvr.org'
-      },
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.secret1tqmms5awftpuhalcv5h5mg76fa0tkdz4jv9ex4',
-            channel_id: 'channel-44',
-            base_denom: 'cw20:secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7',
-            chain_name: 'secretnetwork'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-476',
-            path: 'transfer/channel-476/cw20:secret1d6qvapy96q94etwlnc7j33dlzmenz4j70w3ew7'
-          }
-        }]
-    },
-    {
-      description: 'The governance token of the White Whale protocol on Terra.',
-      type_asset: 'cw20',
-      address: 'terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz',
-      denom_units: [{
-          denom: 'ibc/82AD9817B08DCB07821D243D702AF1B0D3D0EAFF66D65DBB41AD2BF1FF5A9AFF',
-          exponent: 0,
-          aliases: ['cw20:terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz']
-        }, {
-          denom: 'whale',
-          exponent: 6
-        }],
-      base: 'ibc/82AD9817B08DCB07821D243D702AF1B0D3D0EAFF66D65DBB41AD2BF1FF5A9AFF',
-      name: 'Whale Token',
-      display: 'whale',
-      symbol: 'WHALE',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1php5m8a6qd68z02t3zpw4jv2pj4vgw4wz0t8mz'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whale.png'
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/63EBD991773EE060A63ABBA7B322F9C843071C99F74833374ED7BAC8E776D71F',
-          exponent: 0,
-          aliases: ['cw20:terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp']
-        }, {
-          denom: 'bluna',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp',
-      base: 'ibc/63EBD991773EE060A63ABBA7B322F9C843071C99F74833374ED7BAC8E776D71F',
-      name: 'Bonded Luna',
-      display: 'bluna',
-      symbol: 'bLuna',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bluna.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1kc87mu460fwkqte29rquh4hc20m54fxwtsx7gp'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/32035A87EE8A052F28371E3E98D0ADDCA6890FE3967D5C07ABE55EFBD4AA7B51',
-          exponent: 0,
-          aliases: ['cw20:terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun']
-        }, {
-          denom: 'beth',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun',
-      base: 'ibc/32035A87EE8A052F28371E3E98D0ADDCA6890FE3967D5C07ABE55EFBD4AA7B51',
-      name: 'Bonded ETH',
-      display: 'beth',
-      symbol: 'bETH',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/beth.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dzhzukyezv0etz22ud940z7adyv7xgcjkahuun'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/57662073AAFBE40B2B03382D493FB35C261E912659C9C627A72BFEC24C3635FD',
-          exponent: 0,
-          aliases: ['cw20:terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu']
-        }, {
-          denom: 'aust',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu',
-      base: 'ibc/57662073AAFBE40B2B03382D493FB35C261E912659C9C627A72BFEC24C3635FD',
-      name: 'Anchor Terra USD',
-      display: 'aust',
-      symbol: 'aUST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/aust.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1hzh9vpxhsk8253se0vv5jj6etdvxu3nv8z07zu'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2EBD9F990C5888851CD78F96D22C020CA463391ED203ECDB43E77520530316B0',
-          exponent: 0,
-          aliases: ['cw20:terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76']
-        }, {
-          denom: 'anc',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76',
-      base: 'ibc/2EBD9F990C5888851CD78F96D22C020CA463391ED203ECDB43E77520530316B0',
-      name: 'Anchor Token',
-      display: 'anc',
-      symbol: 'ANC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/anc.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/E17EB70205DD3BEA32B262CC38392897B68BFF905C99B53F094391AD134276C6',
-          exponent: 0,
-          aliases: ['cw20:terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6']
-        }, {
-          denom: 'mir',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6',
-      base: 'ibc/E17EB70205DD3BEA32B262CC38392897B68BFF905C99B53F094391AD134276C6',
-      name: 'Mirror',
-      display: 'mir',
-      symbol: 'MIR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mir.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2E15E8569CA318154C55842215FAA6578EE99766D2AB1908DAA96CFB85B1ED1F',
-          exponent: 0,
-          aliases: ['cw20:terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz']
-        }, {
-          denom: 'maapl',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz',
-      base: 'ibc/2E15E8569CA318154C55842215FAA6578EE99766D2AB1908DAA96CFB85B1ED1F',
-      name: 'Apple Inc.',
-      display: 'maapl',
-      symbol: 'mAAPL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maapl.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vxtwu4ehgzz77mnfwrntyrmgl64qjs75mpwqaz'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/A2239172F91820B21E9AEB067E44C77DBAEF953F97F933E4A70FCFB40C2EF4E1',
-          exponent: 0,
-          aliases: ['cw20:terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n']
-        }, {
-          denom: 'mabnb',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n',
-      base: 'ibc/A2239172F91820B21E9AEB067E44C77DBAEF953F97F933E4A70FCFB40C2EF4E1',
-      name: 'Airbnb Inc.',
-      display: 'mabnb',
-      symbol: 'mABNB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mabnb.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1g4x2pzmkc9z3mseewxf758rllg08z3797xly0n'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/D615D4EF93F9048A54265F3835F56DCAC397EC4382EAF0F250E787AD732A3D28',
-          exponent: 0,
-          aliases: ['cw20:terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy']
-        }, {
-          denom: 'mamc',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy',
-      base: 'ibc/D615D4EF93F9048A54265F3835F56DCAC397EC4382EAF0F250E787AD732A3D28',
-      name: 'AMC Entertainment Holdings Inc.',
-      display: 'mamc',
-      symbol: 'mAMC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamc.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1qelfthdanju7wavc5tq0k5r0rhsyzyyrsn09qy'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/FD42D9706399B180B1E21FCD3005B4C08C21663240385F3AD1FF7A87BB17C719',
-          exponent: 0,
-          aliases: ['cw20:terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z']
-        }, {
-          denom: 'mamd',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z',
-      base: 'ibc/FD42D9706399B180B1E21FCD3005B4C08C21663240385F3AD1FF7A87BB17C719',
-      name: 'Advanced Micro Devices, Inc.',
-      display: 'mamd',
-      symbol: 'mAMD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamd.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra18ej5nsuu867fkx4tuy2aglpvqjrkcrjjslap3z'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/65DDE46CFDD4BD6F6D764B0B3671D433EE1F085D98C611A75718B483D0CD074B',
-          exponent: 0,
-          aliases: ['cw20:terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2']
-        }, {
-          denom: 'mamzn',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2',
-      base: 'ibc/65DDE46CFDD4BD6F6D764B0B3671D433EE1F085D98C611A75718B483D0CD074B',
-      name: 'Amazon.com, Inc.',
-      display: 'mamzn',
-      symbol: 'mAMZN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mamzn.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra165nd2qmrtszehcfrntlplzern7zl4ahtlhd5t2'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/586F20211F8473B420AB43D2DC5CF4EF294E37A1403E28696F6EB38F486B2620',
-          exponent: 0,
-          aliases: ['cw20:terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6']
-        }, {
-          denom: 'markk',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6',
-      base: 'ibc/586F20211F8473B420AB43D2DC5CF4EF294E37A1403E28696F6EB38F486B2620',
-      name: 'ARK Innovation ETF',
-      display: 'markk',
-      symbol: 'mARKK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/markk.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1qqfx5jph0rsmkur2zgzyqnfucra45rtjae5vh6'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/1E3D600C43E479B21C622D4E34817F085085FBDC591D62CAB01AD5D3EB3D29E6',
-          exponent: 0,
-          aliases: ['cw20:terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa']
-        }, {
-          denom: 'mbaba',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa',
-      base: 'ibc/1E3D600C43E479B21C622D4E34817F085085FBDC591D62CAB01AD5D3EB3D29E6',
-      name: 'Alibaba Group Holding Limited',
-      display: 'mbaba',
-      symbol: 'mBABA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbaba.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1w7zgkcyt7y4zpct9dw8mw362ywvdlydnum2awa'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5705C83906FD9384B70779EB93E296CCAB4F990910D0474BAE4F90DA0BCE9109',
-          exponent: 0,
-          aliases: ['cw20:terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw']
-        }, {
-          denom: 'mbtc',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw',
-      base: 'ibc/5705C83906FD9384B70779EB93E296CCAB4F990910D0474BAE4F90DA0BCE9109',
-      name: 'Bitcoin',
-      display: 'mbtc',
-      symbol: 'mBTC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mbtc.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1rhhvx8nzfrx5fufkuft06q5marfkucdqwq5sjw'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/3F4FFFB53C748CE3E064718DB5263ECEB0ECA4D5BBED69D0D978951A53DCAF75',
-          exponent: 0,
-          aliases: ['cw20:terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph']
-        }, {
-          denom: 'mcoin',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph',
-      base: 'ibc/3F4FFFB53C748CE3E064718DB5263ECEB0ECA4D5BBED69D0D978951A53DCAF75',
-      name: 'Coinbase Global, Inc.',
-      display: 'mcoin',
-      symbol: 'mCOIN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mcoin.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra18wayjpyq28gd970qzgjfmsjj7dmgdk039duhph'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/07F90B75153A12CC2E5A568595F48270F5773DD17621516270379648E08B89AC',
-          exponent: 0,
-          aliases: ['cw20:terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5']
-        }, {
-          denom: 'mdis',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5',
-      base: 'ibc/07F90B75153A12CC2E5A568595F48270F5773DD17621516270379648E08B89AC',
-      name: 'The Walt Disney Company',
-      display: 'mdis',
-      symbol: 'mDIS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdis.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra149755r3y0rve30e209awkhn5cxgkn5c8ju9pm5'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/700E813EA9A2E59BDFDCA083655341B16C9737F62ADC03F96D0B23168AFCFEDF',
-          exponent: 0,
-          aliases: ['cw20:terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r']
-        }, {
-          denom: 'mdot',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r',
-      base: 'ibc/700E813EA9A2E59BDFDCA083655341B16C9737F62ADC03F96D0B23168AFCFEDF',
-      name: 'Polkadot',
-      display: 'mdot',
-      symbol: 'mDOT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mdot.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra19ya4jpvjvvtggepvmmj6ftmwly3p7way0tt08r'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8CD8ADDD0A97046D9DF16B7C29DB8ABB5AA70BD8122EA0B7AD7B02E6631C39FF',
-          exponent: 0,
-          aliases: ['cw20:terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx']
-        }, {
-          denom: 'meth',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx',
-      base: 'ibc/8CD8ADDD0A97046D9DF16B7C29DB8ABB5AA70BD8122EA0B7AD7B02E6631C39FF',
-      name: 'Ether',
-      display: 'meth',
-      symbol: 'mETH',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/meth.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dk3g53js3034x4v5c3vavhj2738une880yu6kx'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8C505E640E1A4A88109256DC8FACC4395408A7A852485CD29B0BAD00B514AF8A',
-          exponent: 0,
-          aliases: ['cw20:terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7']
-        }, {
-          denom: 'mfb',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7',
-      base: 'ibc/8C505E640E1A4A88109256DC8FACC4395408A7A852485CD29B0BAD00B514AF8A',
-      name: 'Facebook Inc.',
-      display: 'mfb',
-      symbol: 'mFB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mfb.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1mqsjugsugfprn3cvgxsrr8akkvdxv2pzc74us7'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/63F3E02662A8FA5E21FB095E5103FBD207D9613E9B641CA94979520E5B95089A',
-          exponent: 0,
-          aliases: ['cw20:terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls']
-        }, {
-          denom: 'mglxy',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls',
-      base: 'ibc/63F3E02662A8FA5E21FB095E5103FBD207D9613E9B641CA94979520E5B95089A',
-      name: 'Galaxy Digital Holdings Ltd',
-      display: 'mglxy',
-      symbol: 'mGLXY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mglxy.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1l5lrxtwd98ylfy09fn866au6dp76gu8ywnudls'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/FED18BFB62477AA5D7A2A0F19040199B0652FFC287549D602894DAC0A72E83DC',
-          exponent: 0,
-          aliases: ['cw20:terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p']
-        }, {
-          denom: 'mgme',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p',
-      base: 'ibc/FED18BFB62477AA5D7A2A0F19040199B0652FFC287549D602894DAC0A72E83DC',
-      name: 'GameStop Corp',
-      display: 'mgme',
-      symbol: 'mGME',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgme.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1m6j6j9gw728n82k78s0j9kq8l5p6ne0xcc820p'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/FDC1A75744C19AB7CBBF84DA02DBF0D83943C78E0483FFFBEAA200658D8C07A9',
-          exponent: 0,
-          aliases: ['cw20:terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt']
-        }, {
-          denom: 'mgoogl',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt',
-      base: 'ibc/FDC1A75744C19AB7CBBF84DA02DBF0D83943C78E0483FFFBEAA200658D8C07A9',
-      name: 'Alphabet Inc.',
-      display: 'mgoogl',
-      symbol: 'mGOOGL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgoogl.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1h8arz2k547uvmpxctuwush3jzc8fun4s96qgwt'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/54ECE801DA1016646C2A567C6F1C0B5BFA6546660D51EC02A3C21D4C46C471F9',
-          exponent: 0,
-          aliases: ['cw20:terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v']
-        }, {
-          denom: 'mgs',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v',
-      base: 'ibc/54ECE801DA1016646C2A567C6F1C0B5BFA6546660D51EC02A3C21D4C46C471F9',
-      name: 'Goldman Sachs Group Inc.',
-      display: 'mgs',
-      symbol: 'mGS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mgs.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra137drsu8gce5thf6jr5mxlfghw36rpljt3zj73v'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/F2864558ACE45E0C89192910CC808DF3725A6B2A0F2F13DDE8C83C4E9D33753B',
-          exponent: 0,
-          aliases: ['cw20:terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr']
-        }, {
-          denom: 'mhood',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr',
-      base: 'ibc/F2864558ACE45E0C89192910CC808DF3725A6B2A0F2F13DDE8C83C4E9D33753B',
-      name: 'Robinhood Markets, Inc.',
-      display: 'mhood',
-      symbol: 'mHOOD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mhood.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra18yqdfzfhnguerz9du5mnvxsh5kxlknqhcxzjfr'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/3E00EE6DBC74F0FE87592121948685BE9FD9FD9899D9BAD5FA573D0A6D257BCF',
-          exponent: 0,
-          aliases: ['cw20:terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq']
-        }, {
-          denom: 'miau',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq',
-      base: 'ibc/3E00EE6DBC74F0FE87592121948685BE9FD9FD9899D9BAD5FA573D0A6D257BCF',
-      name: 'iShares Gold Trust',
-      display: 'miau',
-      symbol: 'mIAU',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra10h7ry7apm55h4ez502dqdv9gr53juu85nkd4aq'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/C0D0937641FD3FB2ACD1A880A79C750FF91C5A5A957A3B035A0C595CAC436C09',
-          exponent: 0,
-          aliases: ['cw20:terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec']
-        }, {
-          denom: 'miau',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec',
-      base: 'ibc/C0D0937641FD3FB2ACD1A880A79C750FF91C5A5A957A3B035A0C595CAC436C09',
-      name: 'iShares Gold Trust',
-      display: 'miau',
-      symbol: 'mIAU',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miau.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra15hp9pr8y4qsvqvxf3m4xeptlk7l8h60634gqec'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/314A00892F00133BD6ABEC561636696248CAC6F3F6384D4E9FCD01B8248C40DA',
-          exponent: 0,
-          aliases: ['cw20:terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2']
-        }, {
-          denom: 'mjnj',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2',
-      base: 'ibc/314A00892F00133BD6ABEC561636696248CAC6F3F6384D4E9FCD01B8248C40DA',
-      name: 'Johnson & Johnson',
-      display: 'mjnj',
-      symbol: 'mJNJ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mjnj.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ptdxmj3xmmljzx02nr4auwfuelmj0cnkh8egs2'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/D0A50A5E3D51CA8BB505F656018C28264E17A2C0115715861CA5070627C930C5',
-          exponent: 0,
-          aliases: ['cw20:terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm']
-        }, {
-          denom: 'mko',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm',
-      base: 'ibc/D0A50A5E3D51CA8BB505F656018C28264E17A2C0115715861CA5070627C930C5',
-      name: 'Coca-Cola',
-      display: 'mko',
-      symbol: 'mKO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mko.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1qsnj5gvq8rgs7yws8x5u02gwd5wvtu4tks0hjm'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/052D5C042E8DB771737745C7BD85C9B22B6C428064E3B4D611A2AB0EEE4085A8',
-          exponent: 0,
-          aliases: ['cw20:terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6']
-        }, {
-          denom: 'mmsft',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6',
-      base: 'ibc/052D5C042E8DB771737745C7BD85C9B22B6C428064E3B4D611A2AB0EEE4085A8',
-      name: 'Microsoft Corporation',
-      display: 'mmsft',
-      symbol: 'mMSFT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mmsft.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1227ppwxxj3jxz8cfgq00jgnxqcny7ryenvkwj6'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/310EEF709CF68CF647C53BE0ECBA4FDEDF54140B3ABD321610A6BFAA617C21E2',
-          exponent: 0,
-          aliases: ['cw20:terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k']
-        }, {
-          denom: 'mnflx',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k',
-      base: 'ibc/310EEF709CF68CF647C53BE0ECBA4FDEDF54140B3ABD321610A6BFAA617C21E2',
-      name: 'Netflix, Inc.',
-      display: 'mnflx',
-      symbol: 'mNFLX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnflx.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/16B8FAFCB8AFC786548AAA7888668B52AEC19D24269746F68CD03A3042A1564A',
-          exponent: 0,
-          aliases: ['cw20:terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p']
-        }, {
-          denom: 'mnio',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p',
-      base: 'ibc/16B8FAFCB8AFC786548AAA7888668B52AEC19D24269746F68CD03A3042A1564A',
-      name: 'NIO Inc.',
-      display: 'mnio',
-      symbol: 'mNIO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnio.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dj2cj02zak0nvwy3uj9r9dhhxhdwxnw6psse6p'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/205BA69C51332FA29EC8CC08894E72C4FFB564F5379B6B11C1714053BB837467',
-          exponent: 0,
-          aliases: ['cw20:terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g']
-        }, {
-          denom: 'mnke',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g',
-      base: 'ibc/205BA69C51332FA29EC8CC08894E72C4FFB564F5379B6B11C1714053BB837467',
-      name: 'NIKE, Inc.',
-      display: 'mnke',
-      symbol: 'mNKE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnke.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra17ana8hvzea0q7w367dm0dw48sxwql39qekpt7g'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/F1936A625088A58722C509C9E7A6CE93321451EE0AB6B630E2F2E2EE97DFFCE5',
-          exponent: 0,
-          aliases: ['cw20:terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8']
-        }, {
-          denom: 'mnvda',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8',
-      base: 'ibc/F1936A625088A58722C509C9E7A6CE93321451EE0AB6B630E2F2E2EE97DFFCE5',
-      name: 'NVIDIA Corporation',
-      display: 'mnvda',
-      symbol: 'mNVDA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mnvda.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1drsjzvzej4h4qlehcfwclxg4w5l3h5tuvd3jd8'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/0A0DA132A9707A2634D87E841D0852FCFB4C1100AFB120403AD91181150EFA9A',
-          exponent: 0,
-          aliases: ['cw20:terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx']
-        }, {
-          denom: 'mpypl',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx',
-      base: 'ibc/0A0DA132A9707A2634D87E841D0852FCFB4C1100AFB120403AD91181150EFA9A',
-      name: 'PayPal Holdings Inc',
-      display: 'mpypl',
-      symbol: 'mPYPL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mpypl.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1rh2907984nudl7vh56qjdtvv7947z4dujj92sx'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/209BEE1619ADEF026F0CCBD8659A86995599A4821F8DCD15B94B5AAD700DA3E5',
-          exponent: 0,
-          aliases: ['cw20:terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp']
-        }, {
-          denom: 'mqqq',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp',
-      base: 'ibc/209BEE1619ADEF026F0CCBD8659A86995599A4821F8DCD15B94B5AAD700DA3E5',
-      name: 'Invesco QQQ Trust',
-      display: 'mqqq',
-      symbol: 'mQQQ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mqqq.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1csk6tc7pdmpr782w527hwhez6gfv632tyf72cp'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/6448EA728465A3C550A26022C62504392BCBE98071CF29A69E94A0162DDAA94A',
-          exponent: 0,
-          aliases: ['cw20:terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga']
-        }, {
-          denom: 'msbux',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga',
-      base: 'ibc/6448EA728465A3C550A26022C62504392BCBE98071CF29A69E94A0162DDAA94A',
-      name: 'Starbucks Corporation',
-      display: 'msbux',
-      symbol: 'mSBUX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msbux.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1246zy658dfgtausf0c4a6ly8sc2e285q4kxqga'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8AA316F541446D8DDC7161B20636293A55F6B27F49401F458BF593951410142A',
-          exponent: 0,
-          aliases: ['cw20:terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp']
-        }, {
-          denom: 'mslv',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp',
-      base: 'ibc/8AA316F541446D8DDC7161B20636293A55F6B27F49401F458BF593951410142A',
-      name: 'iShares Silver Trust',
-      display: 'mslv',
-      symbol: 'mSLV',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mslv.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1kscs6uhrqwy6rx5kuw5lwpuqvm3t6j2d6uf2lp'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/22760DDF1573ADD373C4058C6650F965C897F01BD1F25BD7B7ECD6843A7642F3',
-          exponent: 0,
-          aliases: ['cw20:terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc']
-        }, {
-          denom: 'mspy',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc',
-      base: 'ibc/22760DDF1573ADD373C4058C6650F965C897F01BD1F25BD7B7ECD6843A7642F3',
-      name: 'SPDR S&P 500',
-      display: 'mspy',
-      symbol: 'mSPY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mspy.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1aa00lpfexyycedfg5k2p60l9djcmw0ue5l8fhc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B39EA23A27C9EA7DA18FADCEA26377794E6CC274FEA07D6C82C190067E13CC86',
-          exponent: 0,
-          aliases: ['cw20:terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh']
-        }, {
-          denom: 'msq',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh',
-      base: 'ibc/B39EA23A27C9EA7DA18FADCEA26377794E6CC274FEA07D6C82C190067E13CC86',
-      name: 'Square, Inc.',
-      display: 'msq',
-      symbol: 'mSQ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msq.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1u43zu5amjlsgty5j64445fr9yglhm53m576ugh'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/9E09484606EF434530D614A47E3B80F68E3DFCF08AAD52AFF679CAF977041787',
-          exponent: 0,
-          aliases: ['cw20:terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh']
-        }, {
-          denom: 'mtsla',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh',
-      base: 'ibc/9E09484606EF434530D614A47E3B80F68E3DFCF08AAD52AFF679CAF977041787',
-      name: 'Tesla, Inc.',
-      display: 'mtsla',
-      symbol: 'mTSLA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtsla.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra14y5affaarufk3uscy2vr6pe6w6zqf2wpjzn5sh'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2FF3AFB2BF8B29A2DAAB99D9CB67078E7ED852BF4F3034B2E4A452AD69E51C49',
-          exponent: 0,
-          aliases: ['cw20:terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg']
-        }, {
-          denom: 'mtwtr',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg',
-      base: 'ibc/2FF3AFB2BF8B29A2DAAB99D9CB67078E7ED852BF4F3034B2E4A452AD69E51C49',
-      name: 'Twitter, Inc.',
-      display: 'mtwtr',
-      symbol: 'mTWTR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mtwtr.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1cc3enj9qgchlrj34cnzhwuclc4vl2z3jl7tkqg'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5784472A6B6A2342DDF4C7F2BBF9C2A1264AE53A33AAA18E062A291A61423189',
-          exponent: 0,
-          aliases: ['cw20:terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf']
-        }, {
-          denom: 'muso',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf',
-      base: 'ibc/5784472A6B6A2342DDF4C7F2BBF9C2A1264AE53A33AAA18E062A291A61423189',
-      name: 'United States Oil Fund, LP',
-      display: 'muso',
-      symbol: 'mUSO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/muso.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1lvmx8fsagy70tv0fhmfzdw9h6s3sy4prz38ugf'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/355B3F771616845BC8E24615AE08EFA78321D6249B9985FDA0D5DB80461DC8E1',
-          exponent: 0,
-          aliases: ['cw20:terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx']
-        }, {
-          denom: 'mvixy',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx',
-      base: 'ibc/355B3F771616845BC8E24615AE08EFA78321D6249B9985FDA0D5DB80461DC8E1',
-      name: 'ProShares VIX Short-Term Futures ETF',
-      display: 'mvixy',
-      symbol: 'mVIXY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra19cmt6vzvhnnnfsmccaaxzy2uaj06zjktu6yzjx'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/DE8DE8BCF563A79ED781D6B0C4CA2A1FE2A5598F59C1E67F1AD99BBFB648FA6F',
-          exponent: 0,
-          aliases: ['cw20:terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45']
-        }, {
-          denom: 'mvixy',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45',
-      base: 'ibc/DE8DE8BCF563A79ED781D6B0C4CA2A1FE2A5598F59C1E67F1AD99BBFB648FA6F',
-      name: 'ProShares VIX Short-Term Futures ETF',
-      display: 'mvixy',
-      symbol: 'mVIXY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mvixy.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1zp3a6q6q4953cz376906g5qfmxnlg77hx3te45'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/A99D90FB213FD1502B9CD0AAD89DE497399D8F8AF8093BDA0DF62E2009D2CB0F',
-          exponent: 0,
-          aliases: ['cw20:terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr']
-        }, {
-          denom: 'lota',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr',
-      base: 'ibc/A99D90FB213FD1502B9CD0AAD89DE497399D8F8AF8093BDA0DF62E2009D2CB0F',
-      name: 'loterra',
-      display: 'lota',
-      symbol: 'LOTA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lota.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ez46kxtulsdv07538fh5ra5xj8l68mu8eg24vr'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/EA3B97466553137D0957F618A67E59EBB27C3DF31A9061B4C10A354F87E99B03',
-          exponent: 0,
-          aliases: ['cw20:terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7']
-        }, {
-          denom: 'dph',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7',
-      base: 'ibc/EA3B97466553137D0957F618A67E59EBB27C3DF31A9061B4C10A354F87E99B03',
-      name: 'Digipharm',
-      display: 'dph',
-      symbol: 'DPH',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dph.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra17jnhankdfl8vyzj6vejt7ag8uz0cjc9crkl2h7'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/59B565048388714D6EF90859E8C8BC723DCF4A0406979F323CBBDFE2B7982F53',
-          exponent: 0,
-          aliases: ['cw20:terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy']
-        }, {
-          denom: 'mine',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy',
-      base: 'ibc/59B565048388714D6EF90859E8C8BC723DCF4A0406979F323CBBDFE2B7982F53',
-      name: 'Pylon MINE Token',
-      display: 'mine',
-      symbol: 'MINE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mine.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1kcthelkax4j9x8d3ny6sdag0qmxxynl3qtcrpy'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/AD2312C4875D0E1AEDC60A1132590C5DEC15F7F8B9922957EB42D2713AD409A9',
-          exponent: 0,
-          aliases: ['cw20:terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y']
-        }, {
-          denom: 'bpsidp-24m',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y',
-      base: 'ibc/AD2312C4875D0E1AEDC60A1132590C5DEC15F7F8B9922957EB42D2713AD409A9',
-      name: 'Pylon bDP Token for Gateway Psi 24m Pool',
-      display: 'bpsidp-24m',
-      symbol: 'bPsiDP-24m',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bpsidp-24m.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1zsaswh926ey8qa5x4vj93kzzlfnef0pstuca0y'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/36B0D5B42D86A4B0A7E1C4C91154613B6D3BF7724DCA84A6406E87B1D93C5008',
-          exponent: 0,
-          aliases: ['cw20:terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr']
-        }, {
-          denom: 'spec',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr',
-      base: 'ibc/36B0D5B42D86A4B0A7E1C4C91154613B6D3BF7724DCA84A6406E87B1D93C5008',
-      name: 'Spectrum Token',
-      display: 'spec',
-      symbol: 'SPEC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/spec.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/BA8B72D4AA4E9D90A8253FEE60EDA5F1B70ACCE1281CF6ABFD4A2BDF77B32F3D',
-          exponent: 0,
-          aliases: ['cw20:terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4']
-        }, {
-          denom: 'loop',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4',
-      base: 'ibc/BA8B72D4AA4E9D90A8253FEE60EDA5F1B70ACCE1281CF6ABFD4A2BDF77B32F3D',
-      name: 'LOOP token',
-      display: 'loop',
-      symbol: 'LOOP',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loop.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1nef5jf6c7js9x6gkntlehgywvjlpytm7pcgkn4'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/3E586FB08D0729CD1D444D3BE9F43CF32C183D87516FD975CF6D6D2050B62CF8',
-          exponent: 0,
-          aliases: ['cw20:terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q']
-        }, {
-          denom: 'loopr',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q',
-      base: 'ibc/3E586FB08D0729CD1D444D3BE9F43CF32C183D87516FD975CF6D6D2050B62CF8',
-      name: 'LOOPR token',
-      display: 'loopr',
-      symbol: 'LOOPR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/loopr.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1jx4lmmke2srcvpjeereetc9hgegp4g5j0p9r2q'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/7753031C34255CE895DBE9ADA03D276BD6DDD902C7BD8700169107662DDAEA37',
-          exponent: 0,
-          aliases: ['cw20:terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n']
-        }, {
-          denom: 'stt',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n',
-      base: 'ibc/7753031C34255CE895DBE9ADA03D276BD6DDD902C7BD8700169107662DDAEA37',
-      name: 'StarTerra Token',
-      display: 'stt',
-      symbol: 'STT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stt.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra13xujxcrc9dqft4p9a8ls0w3j0xnzm6y2uvve8n'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/76D3DA00142D027CA885030E131EE04B8197345B0727ED48EFA9EBF687309797',
-          exponent: 0,
-          aliases: ['cw20:terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6']
-        }, {
-          denom: 'twd',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6',
-      base: 'ibc/76D3DA00142D027CA885030E131EE04B8197345B0727ED48EFA9EBF687309797',
-      name: 'TWD Token',
-      display: 'twd',
-      symbol: 'TWD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/twd.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra19djkaepjjswucys4npd5ltaxgsntl7jf0xz7w6'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/0B6E4FA2F7290015EC21C0E208A0B969E186B7686329693AF5BAAEE16988E898',
-          exponent: 0,
-          aliases: ['cw20:terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc']
-        }, {
-          denom: 'xtra',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc',
-      base: 'ibc/0B6E4FA2F7290015EC21C0E208A0B969E186B7686329693AF5BAAEE16988E898',
-      name: 'xterra Token',
-      display: 'xtra',
-      symbol: 'XTRA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xtra.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1kvjscdgwuvwc6uzm4rqfjl6nlmuhj28tequlnc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/4587C136065FD5AF4474736BC192F06B93DE0AA4BEACE0E3583C394C8FFB6387',
-          exponent: 0,
-          aliases: ['cw20:terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63']
-        }, {
-          denom: 'miaw',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63',
-      base: 'ibc/4587C136065FD5AF4474736BC192F06B93DE0AA4BEACE0E3583C394C8FFB6387',
-      name: 'MIAW Token',
-      display: 'miaw',
-      symbol: 'MIAW',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/miaw.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vtr50tw0pgqpes34zqu60n554p9x4950wk8f63'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2F2EF4E0DC1CA896D71AD96CC6A7C3CF13074D17AFF8EACABC630F2BF757EAEB',
-          exponent: 0,
-          aliases: ['cw20:terra12897djskt9rge8dtmm86w654g7kzckkd698608']
-        }, {
-          denom: 'psi',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra12897djskt9rge8dtmm86w654g7kzckkd698608',
-      base: 'ibc/2F2EF4E0DC1CA896D71AD96CC6A7C3CF13074D17AFF8EACABC630F2BF757EAEB',
-      name: 'Nexus Governance Token',
-      display: 'psi',
-      symbol: 'Psi',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/psi.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra12897djskt9rge8dtmm86w654g7kzckkd698608',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra12897djskt9rge8dtmm86w654g7kzckkd698608'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/FF74C3DBE1ED4BB540A5BF66D2CE6F868A9DC93F2A261BD132602DF8151DD88E',
-          exponent: 0,
-          aliases: ['cw20:terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j']
-        }, {
-          denom: 'nluna',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j',
-      base: 'ibc/FF74C3DBE1ED4BB540A5BF66D2CE6F868A9DC93F2A261BD132602DF8151DD88E',
-      name: 'Nexus nLuna Token',
-      display: 'nluna',
-      symbol: 'nLuna',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nluna.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nluna.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra10f2mt82kjnkxqj2gepgwl637u2w4ue2z5nhz5j'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/1B86B792A7F1D691EF816C699943F4CFCB831E3F08DADDDAC9E140E4246B4CD0',
-          exponent: 0,
-          aliases: ['cw20:terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn']
-        }, {
-          denom: 'neth',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn',
-      base: 'ibc/1B86B792A7F1D691EF816C699943F4CFCB831E3F08DADDDAC9E140E4246B4CD0',
-      name: 'Nexus nETH Token',
-      display: 'neth',
-      symbol: 'nETH',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neth.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neth.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra178v546c407pdnx5rer3hu8s2c0fc924k74ymnn'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/4A62028682EAEEE2A4DFF80B088E6B780FAE4486B8807347DB9F0517158113E4',
-          exponent: 0,
-          aliases: ['cw20:terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj']
-        }, {
-          denom: 'cnluna',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj',
-      base: 'ibc/4A62028682EAEEE2A4DFF80B088E6B780FAE4486B8807347DB9F0517158113E4',
-      name: 'nLuna autocompounder share representation',
-      display: 'cnluna',
-      symbol: 'cnLuna',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnluna.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cnluna.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1u553zk43jd4rwzc53qrdrq4jc2p8rextyq09dj'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/88605701B1C05FD5F205E18D0CC8CCB9F94241B717F6AD3B36C776530246EF07',
-          exponent: 0,
-          aliases: ['cw20:terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756']
-        }, {
-          denom: 'cneth',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756',
-      base: 'ibc/88605701B1C05FD5F205E18D0CC8CCB9F94241B717F6AD3B36C776530246EF07',
-      name: 'nETH autocompounder share representation',
-      display: 'cneth',
-      symbol: 'cnETH',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cneth.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cneth.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1nagqpmyw55yjphea4rhntlfv87ugmeaj8ym756'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/DBECF33BD3F9BDAC64B3D1605958B2570B1635612718F83B5406727C152A3DE0',
-          exponent: 0,
-          aliases: ['cw20:terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636']
-        }, {
-          denom: 'navax',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636',
-      base: 'ibc/DBECF33BD3F9BDAC64B3D1605958B2570B1635612718F83B5406727C152A3DE0',
-      name: 'Nexus nAVAX Token',
-      display: 'navax',
-      symbol: 'nAVAX',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/navax.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/navax.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra13k62n0285wj8ug0ngcgpf7dgnkzqeu279tz636'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/0AFEF2D077D9A4773D896622734D5E6121E9C1F0910A0A65DED4619866882F8E',
-          exponent: 0,
-          aliases: ['cw20:terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade']
-        }, {
-          denom: 'natom',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade',
-      base: 'ibc/0AFEF2D077D9A4773D896622734D5E6121E9C1F0910A0A65DED4619866882F8E',
-      name: 'Nexus nATOM Token',
-      display: 'natom',
-      symbol: 'nATOM',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/natom.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/natom.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1jtdc6zpf95tvh9peuaxwp3v0yqszcnwl8j5ade'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/75479C8920621ED597041590E1BE5D83A8C5BF1D33726D4EAC29F1E88FFA8C99',
-          exponent: 0,
-          aliases: ['cw20:terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5']
-        }, {
-          denom: 'vkr',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5',
-      base: 'ibc/75479C8920621ED597041590E1BE5D83A8C5BF1D33726D4EAC29F1E88FFA8C99',
-      name: 'VKR Token',
-      display: 'vkr',
-      symbol: 'VKR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vkr.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dy9kmlm4anr92e42mrkjwzyvfqwz66un00rwr5'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/390F36020808C29888EAD5D4AE36CD2D3F307AFAAEB8FA74B828191D052804EB',
-          exponent: 0,
-          aliases: ['cw20:terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03']
-        }, {
-          denom: 'orion',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03',
-      base: 'ibc/390F36020808C29888EAD5D4AE36CD2D3F307AFAAEB8FA74B828191D052804EB',
-      name: 'Orion Money (Portal)',
-      display: 'orion',
-      symbol: 'ORION',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orion.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1mddcdx0ujx89f38gu7zspk2r2ffdl5enyz2u03'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/21995AE18ECA6A7DB83228194127D977916CFBCC31BE6F2584417A693C456F70',
-          exponent: 0,
-          aliases: ['cw20:terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc']
-        }, {
-          denom: 'tland',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc',
-      base: 'ibc/21995AE18ECA6A7DB83228194127D977916CFBCC31BE6F2584417A693C456F70',
-      name: 'TerraLand Token',
-      display: 'tland',
-      symbol: 'TLAND',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tland.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1r5506ckw5tfr3z52jwlek8vg9sn3yflrqrzfsc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/BC8E9372413C248E3EFC8768FA71C2A20910B5BF44BB9C9610F666BF232FB1FB',
-          exponent: 0,
-          aliases: ['cw20:terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg']
-        }, {
-          denom: 'vust',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg',
-      base: 'ibc/BC8E9372413C248E3EFC8768FA71C2A20910B5BF44BB9C9610F666BF232FB1FB',
-      name: 'Vault UST',
-      display: 'vust',
-      symbol: 'vUST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vust.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1w0p5zre38ecdy3ez8efd5h9fvgum5s206xknrg'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/46569432D6BA5BF23F80FA5EF0A8A9EEB732E7E2DE1827D455BBF8988D32DF9E',
-          exponent: 0,
-          aliases: ['cw20:terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r']
-        }, {
-          denom: 'eth',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r',
-      base: 'ibc/46569432D6BA5BF23F80FA5EF0A8A9EEB732E7E2DE1827D455BBF8988D32DF9E',
-      name: 'Ether (Portal)',
-      display: 'eth',
-      symbol: 'ETH',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/eth.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/D8B226C88F4A23BCB4DF39C97E57E6029183734670F1F14DEF2BDBD4EE3B1D9C',
-          exponent: 0,
-          aliases: ['cw20:terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55']
-        }, {
-          denom: 'wbtc',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55',
-      base: 'ibc/D8B226C88F4A23BCB4DF39C97E57E6029183734670F1F14DEF2BDBD4EE3B1D9C',
-      name: 'Wrapped BTC (Portal)',
-      display: 'wbtc',
-      symbol: 'WBTC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wbtc.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/137917083D44BCA95050AD2667DCF121C23FDF71B872AB3A1746E50385773924',
-          exponent: 0,
-          aliases: ['cw20:terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk']
-        }, {
-          denom: 'sol',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk',
-      base: 'ibc/137917083D44BCA95050AD2667DCF121C23FDF71B872AB3A1746E50385773924',
-      name: 'SOL (Portal)',
-      display: 'sol',
-      symbol: 'SOL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sol.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra190tqwgqx7s8qrknz6kckct7v607cu068gfujpk'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B546F30BEDAF79D90116FA84FA23AE3957701AC824EAB4E18BCE840581A6AC94',
-          exponent: 0,
-          aliases: ['cw20:terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq']
-        }, {
-          denom: 'maticet',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq',
-      base: 'ibc/B546F30BEDAF79D90116FA84FA23AE3957701AC824EAB4E18BCE840581A6AC94',
-      name: 'MATIC (Portal from Ethereum)',
-      display: 'maticet',
-      symbol: 'MATICet',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticet.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dfasranqm4uyaz72r960umxy0w8t6zewqlnkuq'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/4421B8FC15CFEF7E895F0547761AED86475A32C4919523851564A1790FDEBEEA',
-          exponent: 0,
-          aliases: ['cw20:terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8']
-        }, {
-          denom: 'bnb',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8',
-      base: 'ibc/4421B8FC15CFEF7E895F0547761AED86475A32C4919523851564A1790FDEBEEA',
-      name: 'Binance Coin (Portal)',
-      display: 'bnb',
-      symbol: 'BNB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bnb.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/CDDE673D74F33B250D7B6F569F22A719A5A1707899C31C451F6E7BCB62D29335',
-          exponent: 0,
-          aliases: ['cw20:terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av']
-        }, {
-          denom: 'cake',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av',
-      base: 'ibc/CDDE673D74F33B250D7B6F569F22A719A5A1707899C31C451F6E7BCB62D29335',
-      name: 'PancakeSwap Token (Portal)',
-      display: 'cake',
-      symbol: 'CAKE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cake.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1xvqlpjl2dxyel9qrp6qvtrg04xe3jh9cyxc6av'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/1FF3A3AA13A80B8AF2FBBB9E40C1496D58B62D1748BA183B8D53A3152A25037D',
-          exponent: 0,
-          aliases: ['cw20:terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym']
-        }, {
-          denom: 'link',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym',
-      base: 'ibc/1FF3A3AA13A80B8AF2FBBB9E40C1496D58B62D1748BA183B8D53A3152A25037D',
-      name: 'Chainlink (Portal)',
-      display: 'link',
-      symbol: 'LINK',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
-      },
-      images: [{
-          image_sync: {
-            chain_name: 'ethereum',
-            base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/7FA1CABAF0AAA9209721334072216012E28740B25D9561F1F7443DC85570393A',
-          exponent: 0,
-          aliases: ['cw20:terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a']
-        }, {
-          denom: 'sushi',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a',
-      base: 'ibc/7FA1CABAF0AAA9209721334072216012E28740B25D9561F1F7443DC85570393A',
-      name: 'SushiToken (Portal)',
-      display: 'sushi',
-      symbol: 'SUSHI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sushi.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5ED70788C6AE5AF9F7EF338BD4C20444124429CCB0DB6D6460083E206E4BB370',
-          exponent: 0,
-          aliases: ['cw20:terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf']
-        }, {
-          denom: 'uni',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf',
-      base: 'ibc/5ED70788C6AE5AF9F7EF338BD4C20444124429CCB0DB6D6460083E206E4BB370',
-      name: 'Uniswap (Portal)',
-      display: 'uni',
-      symbol: 'UNI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/uni.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/46448D9F46A9D8C4BDFDFC56C1B254AB9994DD985DBF8CABA77716F2598099DB',
-          exponent: 0,
-          aliases: ['cw20:terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva']
-        }, {
-          denom: 'usdtet',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva',
-      base: 'ibc/46448D9F46A9D8C4BDFDFC56C1B254AB9994DD985DBF8CABA77716F2598099DB',
-      name: 'Tether USD (Portal from Ethereum)',
-      display: 'usdtet',
-      symbol: 'USDTet',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtet.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B6B60ACCF80821DE632BF2F55BD47045DE65B9A1D85309F3E133E74AD0B04AFA',
-          exponent: 0,
-          aliases: ['cw20:terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06']
-        }, {
-          denom: 'usdcet',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06',
-      base: 'ibc/B6B60ACCF80821DE632BF2F55BD47045DE65B9A1D85309F3E133E74AD0B04AFA',
-      name: 'USD Coin (Portal from Ethereum)',
-      display: 'usdcet',
-      symbol: 'USDCet',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcet.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1pepwcav40nvj3kh60qqgrk8k07ydmc00xyat06'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/98297FAA77C01F0A78FB634F1AEC90A7DFFF0DD93F5EC0F824685EC8DABDEA4C',
-          exponent: 0,
-          aliases: ['cw20:terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn']
-        }, {
-          denom: 'kuji',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn',
-      base: 'ibc/98297FAA77C01F0A78FB634F1AEC90A7DFFF0DD93F5EC0F824685EC8DABDEA4C',
-      name: 'Kujira Token',
-      display: 'kuji',
-      symbol: 'KUJI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kuji.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1xfsdgcemqwxp4hhnyk4rle6wr22sseq7j07dnn'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/68C3603CF336668B146284A3BE83BCE9E42181390512EC075EDB8F2263EDB057',
-          exponent: 0,
-          aliases: ['cw20:terra188w26t95tf4dz77raftme8p75rggatxjxfeknw']
-        }, {
-          denom: 'skuji',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra188w26t95tf4dz77raftme8p75rggatxjxfeknw',
-      base: 'ibc/68C3603CF336668B146284A3BE83BCE9E42181390512EC075EDB8F2263EDB057',
-      name: 'Staked KUJI',
-      display: 'skuji',
-      symbol: 'sKUJI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/skuji.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra188w26t95tf4dz77raftme8p75rggatxjxfeknw',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra188w26t95tf4dz77raftme8p75rggatxjxfeknw'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/78A0C7ED156BB1D2D04B6BE699B49C3B8CC9344B60B308A813EE53C447F2B3DB',
-          exponent: 0,
-          aliases: ['cw20:terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur']
-        }, {
-          denom: 'wsteth',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur',
-      base: 'ibc/78A0C7ED156BB1D2D04B6BE699B49C3B8CC9344B60B308A813EE53C447F2B3DB',
-      name: 'Lido wstETH (Portal)',
-      display: 'wsteth',
-      symbol: 'wstETH',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsteth.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra133chr09wu8sakfte5v7vd8qzq9vghtkv4tn0ur'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/BD062DAD0104AB23625B7CCAF5B549CEADDBB7E4C8D5D39B865E0245CD46B122',
-          exponent: 0,
-          aliases: ['cw20:terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap']
-        }, {
-          denom: 'wstsol',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap',
-      base: 'ibc/BD062DAD0104AB23625B7CCAF5B549CEADDBB7E4C8D5D39B865E0245CD46B122',
-      name: 'Lido wstSOL (Portal)',
-      display: 'wstsol',
-      symbol: 'wstSOL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wstsol.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1t9ul45l7m6jw6sxgvnp8e5hj8xzkjsg82g84ap'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/3752606073CC26755B3CD92629291EAF2F9B2129A97FFBF362921118C66A7956',
-          exponent: 0,
-          aliases: ['cw20:terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj']
-        }, {
-          denom: 'wsbsol',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj',
-      base: 'ibc/3752606073CC26755B3CD92629291EAF2F9B2129A97FFBF362921118C66A7956',
-      name: 'Lido bonded SOL (Portal)',
-      display: 'wsbsol',
-      symbol: 'wsbSOL',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsbsol.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wsbsol.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1c3xd5s2j3ejx2d94tvcjfkrdeu6rmz48ghzznj'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/998D8F3A3181EFCB3B5AC9CE74544EA601E16C7AE3D881FCD270C1899816411D',
-          exponent: 0,
-          aliases: ['cw20:terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z']
-        }, {
-          denom: 'ldo',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z',
-      base: 'ibc/998D8F3A3181EFCB3B5AC9CE74544EA601E16C7AE3D881FCD270C1899816411D',
-      name: 'Lido DAO (Portal)',
-      display: 'ldo',
-      symbol: 'LDO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ldo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/C4947806E9A5216EBECB393DF2036940732F29574C449DD0F72AD6BCC8972E52',
-          exponent: 0,
-          aliases: ['cw20:terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz']
-        }, {
-          denom: 'webeth',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz',
-      base: 'ibc/C4947806E9A5216EBECB393DF2036940732F29574C449DD0F72AD6BCC8972E52',
-      name: 'Lido Bonded ETH (Wormhole)',
-      display: 'webeth',
-      symbol: 'webETH',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webeth.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webeth.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1u5szg038ur9kzuular3cae8hq6q5rk5u27tuvz'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/641DB39FDC4B68E95DC87D7CBF3F7A51C04CCA0B44D2ACFDDAD4EAED082FCEFC',
-          exponent: 0,
-          aliases: ['cw20:terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc']
-        }, {
-          denom: 'stluna',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc',
-      base: 'ibc/641DB39FDC4B68E95DC87D7CBF3F7A51C04CCA0B44D2ACFDDAD4EAED082FCEFC',
-      name: 'Lido staked Luna',
-      display: 'stluna',
-      symbol: 'stLuna',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stluna.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/E59D4A57A79B504082F6964EF0975326F36B954C6279EE2F2AB15848ECF3AD5D',
-          exponent: 0,
-          aliases: ['cw20:terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh']
-        }, {
-          denom: 'xdefi',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh',
-      base: 'ibc/E59D4A57A79B504082F6964EF0975326F36B954C6279EE2F2AB15848ECF3AD5D',
-      name: 'XDEFI (Portal)',
-      display: 'xdefi',
-      symbol: 'XDEFI',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra169edevav3pdrtjcx35j6pvzuv54aevewar4nlh'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/03C738BDE098657666569B342052E5363A8F4186E23553D5B596561D72B83316',
-          exponent: 0,
-          aliases: ['cw20:terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl']
-        }, {
-          denom: 'btl',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl',
-      base: 'ibc/03C738BDE098657666569B342052E5363A8F4186E23553D5B596561D72B83316',
-      name: 'Bitlocus Token',
-      display: 'btl',
-      symbol: 'BTL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/btl.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra193c42lfwmlkasvcw22l9qqzc5q2dx208tkd7wl'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/150E32EB472683898B501D2C34BB96473C0E18E8D59ADB7958AB272FEEFB78AC',
-          exponent: 0,
-          aliases: ['cw20:terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup']
-        }, {
-          denom: 'lunax',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup',
-      base: 'ibc/150E32EB472683898B501D2C34BB96473C0E18E8D59ADB7958AB272FEEFB78AC',
-      name: 'LunaX Token',
-      display: 'lunax',
-      symbol: 'LunaX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunax.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra17y9qkl8dfkeg4py7n0g5407emqnemc3yqk5rup'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/FB4E805B420DB437770D3F76338782BB7F09DB5A482A6A99EF261EC0E886C65A',
-          exponent: 0,
-          aliases: ['cw20:terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7']
-        }, {
-          denom: 'luni',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7',
-      base: 'ibc/FB4E805B420DB437770D3F76338782BB7F09DB5A482A6A99EF261EC0E886C65A',
-      name: 'LUNI',
-      display: 'luni',
-      symbol: 'LUNI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luni.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1m3tdguf59xq3pa2twk5fjte5g6szj5y9x5npy7'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/CCD00C5351C078B78800A7D8A4B3B15ECD14DD9E66972CB23E63FDC63C506890',
-          exponent: 0,
-          aliases: ['cw20:terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu']
-        }, {
-          denom: 'ply',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu',
-      base: 'ibc/CCD00C5351C078B78800A7D8A4B3B15ECD14DD9E66972CB23E63FDC63C506890',
-      name: 'PlayNity Token',
-      display: 'ply',
-      symbol: 'PLY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ply.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra13awdgcx40tz5uygkgm79dytez3x87rpg4uhnvu'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/61CE1DBE740EFC2D046B3883BF2766796B34BF12003DB9A610A7B8EE5A11AD96',
-          exponent: 0,
-          aliases: ['cw20:terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj']
-        }, {
-          denom: 'tfloki',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj',
-      base: 'ibc/61CE1DBE740EFC2D046B3883BF2766796B34BF12003DB9A610A7B8EE5A11AD96',
-      name: 'TFLOKI',
-      display: 'tfloki',
-      symbol: 'TFLOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfloki.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1u2k0nkenw0p25ljsr4ksh7rxm65y466vkdewwj'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/A534CEE2E7616C2A36735764A221B2C6E578F5F1D368CA22E45D60F061C2763B',
-          exponent: 0,
-          aliases: ['cw20:terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u']
-        }, {
-          denom: 'tftic',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u',
-      base: 'ibc/A534CEE2E7616C2A36735764A221B2C6E578F5F1D368CA22E45D60F061C2763B',
-      name: 'TFLOKI Genesis Ticket',
-      display: 'tftic',
-      symbol: 'TFTIC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tftic.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1a8k3jyv3wf6k3zngza5h6srrxcckdf7zv90p6u'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/EA2D157BEEE501DDF661630FF2340C0C6608992E84CA1D7732E4D5B37884939C',
-          exponent: 0,
-          aliases: ['cw20:terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86']
-        }, {
-          denom: 'tfticii',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86',
-      base: 'ibc/EA2D157BEEE501DDF661630FF2340C0C6608992E84CA1D7732E4D5B37884939C',
-      name: 'TFLOKI New World Ticket',
-      display: 'tfticii',
-      symbol: 'TFTICII',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticii.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1xt9fgu7965kgvunnjts9zkprd8986kcc444q86'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/744CF85CF14FA9CF0E8DE49890926163F031D6384EC9E560582B4D0B7AF6383C',
-          exponent: 0,
-          aliases: ['cw20:terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28']
-        }, {
-          denom: 'tfticiii',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28',
-      base: 'ibc/744CF85CF14FA9CF0E8DE49890926163F031D6384EC9E560582B4D0B7AF6383C',
-      name: 'TFLOKI Aviator Ticket',
-      display: 'tfticiii',
-      symbol: 'TFTICIII',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tfticiii.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vte2xv7dr8sfnrnwdf9arcyprqgr0hty5ads28'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2718CB4AECAB59681A38CB265CEC55BD1CBDBC6A72DCB11EE24BD7A21D56B345',
-          exponent: 0,
-          aliases: ['cw20:terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26']
-        }, {
-          denom: 'moon',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26',
-      base: 'ibc/2718CB4AECAB59681A38CB265CEC55BD1CBDBC6A72DCB11EE24BD7A21D56B345',
-      name: 'Moon Token',
-      display: 'moon',
-      symbol: 'MOON',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/moon.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1hmxxq0y8h79f3228vs0czc4uz5jdgjt0appp26'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/FE1911A6E2DCC6A56793A6AE6B63D70C87A1B9DA856210E840906B9141034420',
-          exponent: 0,
-          aliases: ['cw20:terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3']
-        }, {
-          denom: 'astro',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3',
-      base: 'ibc/FE1911A6E2DCC6A56793A6AE6B63D70C87A1B9DA856210E840906B9141034420',
-      name: 'Astroport Token',
-      display: 'astro',
-      symbol: 'ASTRO',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1xj49zyqrwpv5k928jwfpfy2ha668nwdgkwlrg3'
-          }
-        }],
-      images: [{
-          image_sync: {
-            chain_name: 'terra2',
-            base_denom: 'cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26'
-          },
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-        }],
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-      },
-      coingecko_id: 'astroport-fi'
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/DA135464AA0C8876246F5F4E37E646D7183E3C42311E70C9B11BB71C70AB6D40',
-          exponent: 0,
-          aliases: ['cw20:terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7']
-        }, {
-          denom: 'xastro.cw20',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7',
-      base: 'ibc/DA135464AA0C8876246F5F4E37E646D7183E3C42311E70C9B11BB71C70AB6D40',
-      name: 'Staked Astroport Token',
-      display: 'xastro.cw20',
-      symbol: 'xASTRO.cw20',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra14lpnyzc9z4g3ugr4lhm8s4nle0tq8vcltkhzh7'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/E33D97B345694D0764C5D66E5D9A36D355EED86AEF7047B7432419B026DD045D',
-          exponent: 0,
-          aliases: ['cw20:terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq']
-        }, {
-          denom: 'halo',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq',
-      base: 'ibc/E33D97B345694D0764C5D66E5D9A36D355EED86AEF7047B7432419B026DD045D',
-      name: 'Angel Protocol Token',
-      display: 'halo',
-      symbol: 'HALO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/halo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1w8kvd6cqpsthupsk4l0clwnmek4l3zr7c84kwq'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/D439187DB47BF5BA6AFD038959A0E41D5072603D09A1B60FDB55EC34080E2310',
-          exponent: 0,
-          aliases: ['cw20:terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j']
-        }, {
-          denom: 'pug',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j',
-      base: 'ibc/D439187DB47BF5BA6AFD038959A0E41D5072603D09A1B60FDB55EC34080E2310',
-      name: 'AstroPug Token',
-      display: 'pug',
-      symbol: 'PUG',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pug.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1kdfsdm3c4reun9j3m4mk3nmyw4a4ns7mj24q3j'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8D89C6379A67653F54B2738E63D56CCE83F434DFFEEAED16CD4C7BB0DAD1EFA0',
-          exponent: 0,
-          aliases: ['cw20:terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf']
-        }, {
-          denom: 'orne',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf',
-      base: 'ibc/8D89C6379A67653F54B2738E63D56CCE83F434DFFEEAED16CD4C7BB0DAD1EFA0',
-      name: 'Orne Token',
-      display: 'orne',
-      symbol: 'ORNE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orne.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1hnezwjqlhzawcrfysczcxs6xqxu2jawn729kkf'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/1163D7CDF5EDCF21044E15ED96BCB6CEDE79922C6894CF5886FBFFD749A1378F',
-          exponent: 0,
-          aliases: ['cw20:terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y']
-        }, {
-          denom: 'tns',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y',
-      base: 'ibc/1163D7CDF5EDCF21044E15ED96BCB6CEDE79922C6894CF5886FBFFD749A1378F',
-      name: 'Terra Name Service',
-      display: 'tns',
-      symbol: 'TNS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tns.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra14vz4v8adanzph278xyeggll4tfww7teh0xtw2y'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/7A25E06A90095C177A272FB9216BD64271523A0AA533D507ED11095E192C1333',
-          exponent: 0,
-          aliases: ['cw20:terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm']
-        }, {
-          denom: 'xrune',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm',
-      base: 'ibc/7A25E06A90095C177A272FB9216BD64271523A0AA533D507ED11095E192C1333',
-      name: 'Thorstarter',
-      display: 'xrune',
-      symbol: 'XRUNE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xrune.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1td743l5k5cmfy7tqq202g7vkmdvq35q48u2jfm'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8A9D337B1DFCF107AC81723DB4E97FDA326EF172A66A4C71F3744FDE7C439739',
-          exponent: 0,
-          aliases: ['cw20:terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784']
-        }, {
-          denom: 'alot',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784',
-      base: 'ibc/8A9D337B1DFCF107AC81723DB4E97FDA326EF172A66A4C71F3744FDE7C439739',
-      name: 'Alpha Pack Token',
-      display: 'alot',
-      symbol: 'aLOT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/alot.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1366wmr8t8rrkh6mag8fagqxntmf2qe4kyte784'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/CCF59683E114E3621255DD9AAA971EE34B3403C276C1FEBDF4DEAB741F24DD6A',
-          exponent: 0,
-          aliases: ['cw20:terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe']
-        }, {
-          denom: 'sity',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe',
-      base: 'ibc/CCF59683E114E3621255DD9AAA971EE34B3403C276C1FEBDF4DEAB741F24DD6A',
-      name: 'CurioSITY play to earn token',
-      display: 'sity',
-      symbol: 'SITY',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sity.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sity.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1z09gnzufuflz6ckd9k0u456l9dnpgsynu0yyhe'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/82386C8ED359B9F1C5BC566425A86BA95D1EEF19E1E8F171320BA8869255D651',
-          exponent: 0,
-          aliases: ['cw20:terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7']
-        }, {
-          denom: 'glow',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7',
-      base: 'ibc/82386C8ED359B9F1C5BC566425A86BA95D1EEF19E1E8F171320BA8869255D651',
-      name: 'Glow Token',
-      display: 'glow',
-      symbol: 'GLOW',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/glow.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra13zx49nk8wjavedjzu8xkk95r3t0ta43c9ptul7'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2EDE4BE521D5F06A5F5B9DE30DD04D285D9501E907ED513296D266250D7568AC',
-          exponent: 0,
-          aliases: ['cw20:terra100yeqvww74h4yaejj6h733thgcafdaukjtw397']
-        }, {
-          denom: 'apollo',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra100yeqvww74h4yaejj6h733thgcafdaukjtw397',
-      base: 'ibc/2EDE4BE521D5F06A5F5B9DE30DD04D285D9501E907ED513296D266250D7568AC',
-      name: 'Apollo DAO Token',
-      display: 'apollo',
-      symbol: 'APOLLO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/apollo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra100yeqvww74h4yaejj6h733thgcafdaukjtw397',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra100yeqvww74h4yaejj6h733thgcafdaukjtw397'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/56A7A386329C455AA6C14A326F26C561A3B42E63307019F0CF1AE231467C77C6',
-          exponent: 0,
-          aliases: ['cw20:terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u']
-        }, {
-          denom: 'abr',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u',
-      base: 'ibc/56A7A386329C455AA6C14A326F26C561A3B42E63307019F0CF1AE231467C77C6',
-      name: 'Allbridge',
-      display: 'abr',
-      symbol: 'ABR',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/abr.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/abr.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1a7ye2splpfzyenu0yrdu8t83uzgusx2malkc7u'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/EB56414FD6B037F1877C88798786BCCCA11C8E9DE6A8DA46E4FC569E5D4C4647',
-          exponent: 0,
-          aliases: ['cw20:terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc']
-        }, {
-          denom: 'whgtps',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc',
-      base: 'ibc/EB56414FD6B037F1877C88798786BCCCA11C8E9DE6A8DA46E4FC569E5D4C4647',
-      name: 'Global Transaction Payment Solu',
-      display: 'whgtps',
-      symbol: 'whGTPS',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1y3d5qexmyac0fg53pfglh2pjk0664ymfvcq9mc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5E5A07CFE3B3E6C9DB8009C2EC01E55E102B9B570550F7001324792F8D7F28B0',
-          exponent: 0,
-          aliases: ['cw20:terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw']
-        }, {
-          denom: 'prism',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw',
-      base: 'ibc/5E5A07CFE3B3E6C9DB8009C2EC01E55E102B9B570550F7001324792F8D7F28B0',
-      name: 'Prism Protocol Token',
-      display: 'prism',
-      symbol: 'PRISM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/prism.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dh9478k2qvqhqeajhn75a2a7dsnf74y5ukregw'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/4EE9D89898FA05CD27D5F046C1E70D15D101C3CCBC46A5E111F284E8E6BE5323',
-          exponent: 0,
-          aliases: ['cw20:terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq']
-        }, {
-          denom: 'sdollar',
-          exponent: 2
-        }],
-      type_asset: 'cw20',
-      address: 'terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq',
-      base: 'ibc/4EE9D89898FA05CD27D5F046C1E70D15D101C3CCBC46A5E111F284E8E6BE5323',
-      name: 'Space Dollar',
-      display: 'sdollar',
-      symbol: 'SDOLLAR',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1l0y8yg0s86x299nqw0p6fhh7ngex3r4phtjeuq'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/FC83B97A8DBB08E1E654C0B605F4A7136F7F0A6902AB84BEE8209D077D5CC840',
-          exponent: 0,
-          aliases: ['cw20:terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k']
-        }, {
-          denom: 'whsail',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k',
-      base: 'ibc/FC83B97A8DBB08E1E654C0B605F4A7136F7F0A6902AB84BEE8209D077D5CC840',
-      name: 'SAIL',
-      display: 'whsail',
-      symbol: 'whSAIL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whsail.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ku5e0dhutxhuxudsmsn5647wwcz6ndr3rsh90k'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/0097615F4A21E4B0AFF54E3164C0415EB0EC2E880380A8B41F7E704F941CED03',
-          exponent: 0,
-          aliases: ['cw20:terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu']
-        }, {
-          denom: 'whgsail',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu',
-      base: 'ibc/0097615F4A21E4B0AFF54E3164C0415EB0EC2E880380A8B41F7E704F941CED03',
-      name: 'SolanaSail Governance Token V2',
-      display: 'whgsail',
-      symbol: 'whgSAIL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whgsail.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1rl0cpwgtwl4utnaynugevdje37fnmsea7rv4uu'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/60DD02DA793455942EB46D125E89B6BB5ABD39991F21D5A7984BD126F0B81986',
-          exponent: 0,
-          aliases: ['cw20:terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz']
-        }, {
-          denom: 'xprism',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz',
-      base: 'ibc/60DD02DA793455942EB46D125E89B6BB5ABD39991F21D5A7984BD126F0B81986',
-      name: 'Prism Governance Token',
-      display: 'xprism',
-      symbol: 'xPRISM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xprism.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1042wzrwg2uk6jqxjm34ysqquyr9esdgm5qyswz'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/098AAFF5AF8802B89886F991E07357354064A612DC8DF776B218824EBAD8AD4F',
-          exponent: 0,
-          aliases: ['cw20:terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5']
-        }, {
-          denom: 'cde',
-          exponent: 9
-        }],
-      type_asset: 'cw20',
-      address: 'terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5',
-      base: 'ibc/098AAFF5AF8802B89886F991E07357354064A612DC8DF776B218824EBAD8AD4F',
-      name: 'CAPITRADE TOKEN',
-      display: 'cde',
-      symbol: 'CDE',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra13fs83g5atgjwuh7c5ydzh6n7gecel6xyhhy2t5'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5E27AB9A29891B1FD34A019DCD0CEC510ADB50F344A0396C954D15DAAC63C774',
-          exponent: 0,
-          aliases: ['cw20:terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8']
-        }, {
-          denom: 'ctx',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8',
-      base: 'ibc/5E27AB9A29891B1FD34A019DCD0CEC510ADB50F344A0396C954D15DAAC63C774',
-      name: 'C2X Token',
-      display: 'ctx',
-      symbol: 'CTX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ctx.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/36A1E70684C02AF59DD3025B888CC5A45B87136C64CF9ACAEFB6E0B3F12E442A',
-          exponent: 0,
-          aliases: ['cw20:terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau']
-        }, {
-          denom: 'cluna',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau',
-      base: 'ibc/36A1E70684C02AF59DD3025B888CC5A45B87136C64CF9ACAEFB6E0B3F12E442A',
-      name: 'Prism cLuna Token',
-      display: 'cluna',
-      symbol: 'cLuna',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cluna.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra13zaagrrrxj47qjwczsczujlvnnntde7fdt0mau'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/274A322ACFA24574E99CA9DA03B75CE3F823E5539BBC946C75BC1F23EE9CDA89',
-          exponent: 0,
-          aliases: ['cw20:terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2']
-        }, {
-          denom: 'pluna',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2',
-      base: 'ibc/274A322ACFA24574E99CA9DA03B75CE3F823E5539BBC946C75BC1F23EE9CDA89',
-      name: 'Prism pLuna Token',
-      display: 'pluna',
-      symbol: 'pLuna',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/pluna.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1tlgelulz9pdkhls6uglfn5lmxarx7f2gxtdzh2'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/084529692493948AA0078265BE013E602B9BA77BB148DD6BF2BD764B38BC0A48',
-          exponent: 0,
-          aliases: ['cw20:terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz']
-        }, {
-          denom: 'yluna',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz',
-      base: 'ibc/084529692493948AA0078265BE013E602B9BA77BB148DD6BF2BD764B38BC0A48',
-      name: 'Prism yLuna Token',
-      display: 'yluna',
-      symbol: 'yLuna',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/yluna.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra17wkadg0tah554r35x6wvff0y5s7ve8npcjfuhz'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/DB8986F9B8CB8D9F85C8E0B5BFA6E28B9096EB9A17F6B8B668B01ABC6BE02049',
-          exponent: 0,
-          aliases: ['cw20:terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx']
-        }, {
-          denom: 'atlo',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx',
-      base: 'ibc/DB8986F9B8CB8D9F85C8E0B5BFA6E28B9096EB9A17F6B8B668B01ABC6BE02049',
-      name: 'Atlo Token',
-      display: 'atlo',
-      symbol: 'ATLO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1cl7whtrqmz5ldr553q69qahck8xvk80fm33qjx'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/C3709B57D51FAB1E118C07C2C14C2671ABB22ACE4E8B7512A93CBF449B62BE0A',
-          exponent: 0,
-          aliases: ['cw20:terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp']
-        }, {
-          denom: 'local',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp',
-      base: 'ibc/C3709B57D51FAB1E118C07C2C14C2671ABB22ACE4E8B7512A93CBF449B62BE0A',
-      name: 'LOCAL Token',
-      display: 'local',
-      symbol: 'LOCAL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/local.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vchw83qt25j89zqwdpmdzj722sqxthnckqzxxp'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/947AC438CEC4A43B062F68C126B6D0B7BBE119E9D44B8294AED79A3FDF4CA036',
-          exponent: 0,
-          aliases: ['cw20:terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6']
-        }, {
-          denom: 'luv',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6',
-      base: 'ibc/947AC438CEC4A43B062F68C126B6D0B7BBE119E9D44B8294AED79A3FDF4CA036',
-      name: 'Lunaverse',
-      display: 'luv',
-      symbol: 'LUV',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luv.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra15k5r9r8dl8r7xlr29pry8a9w7sghehcnv5mgp6'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5F3656AC7AE74EFC9A6419BFB0AF797E8AA3DA92E5F5E45658DB1976C7DD0568',
-          exponent: 0,
-          aliases: ['cw20:terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp']
-        }, {
-          denom: 'robo',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp',
-      base: 'ibc/5F3656AC7AE74EFC9A6419BFB0AF797E8AA3DA92E5F5E45658DB1976C7DD0568',
-      name: 'RoboHero',
-      display: 'robo',
-      symbol: 'ROBO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/robo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1f62tqesptvmhtzr8sudru00gsdtdz24srgm7wp'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/C4CA2D966B393B7CDF5BD948E74617B795B24724C10AEABE7DD819EC4F82A8AA',
-          exponent: 0,
-          aliases: ['cw20:terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk']
-        }, {
-          denom: 'luart',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk',
-      base: 'ibc/C4CA2D966B393B7CDF5BD948E74617B795B24724C10AEABE7DD819EC4F82A8AA',
-      name: 'Luart Token',
-      display: 'luart',
-      symbol: 'LUART',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/luart.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vwz7t30q76s7xx6qgtxdqnu6vpr3ak3vw62ygk'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/C2BE0C2C54D15B7A8963502C94C472B969991B64CD41D7B21A137ACFF0DFB69D',
-          exponent: 0,
-          aliases: ['cw20:terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n']
-        }, {
-          denom: 'mars',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n',
-      base: 'ibc/C2BE0C2C54D15B7A8963502C94C472B969991B64CD41D7B21A137ACFF0DFB69D',
-      name: 'Mars Token',
-      display: 'mars',
-      symbol: 'MARS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mars.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mars.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra12hgwnpupflfpuual532wgrxu2gjp0tcagzgx4n'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/CE1AD225DBCBD92176E771B28DBD7DC8D2216A9BA483ADF809236095F620B05D',
-          exponent: 0,
-          aliases: ['cw20:terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4']
-        }, {
-          denom: 'xmars',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4',
-      base: 'ibc/CE1AD225DBCBD92176E771B28DBD7DC8D2216A9BA483ADF809236095F620B05D',
-      name: 'xMars Token',
-      display: 'xmars',
-      symbol: 'XMARS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xmars.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xmars.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1a04v570f9cxp49mk06vjsm8axsswndpwwt67k4'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5573EEA1EEDDABCF05AFF8CC4E8AE2C220F2DF57AA4591D2863613736ADB6A21',
-          exponent: 0,
-          aliases: ['cw20:terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4']
-        }, {
-          denom: 'dfiat',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4',
-      base: 'ibc/5573EEA1EEDDABCF05AFF8CC4E8AE2C220F2DF57AA4591D2863613736ADB6A21',
-      name: 'DeFiato',
-      display: 'dfiat',
-      symbol: 'DFIAT',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vpws4hmpmpsqwnz3gljn8zj42rv7rkpc5atgt4'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/9446CDD047DB30C65F5D378AFB488120B8EFF6DA4236F854F6829ED67B3FE21A',
-          exponent: 0,
-          aliases: ['cw20:terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d']
-        }, {
-          denom: 'ceres',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d',
-      base: 'ibc/9446CDD047DB30C65F5D378AFB488120B8EFF6DA4236F854F6829ED67B3FE21A',
-      name: 'Ceres Governance Token',
-      display: 'ceres',
-      symbol: 'CERES',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ceres.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ceres.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1hppnw4jppmrzzga4yvd8s87y3dwkhe27xwwl5d'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/6617AE3517F2EF41A6E96CF4800CD9798D515D49B5B1EA67BAE5FB5E4F06C087',
-          exponent: 0,
-          aliases: ['cw20:terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58']
-        }, {
-          denom: 'wasavax',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58',
-      base: 'ibc/6617AE3517F2EF41A6E96CF4800CD9798D515D49B5B1EA67BAE5FB5E4F06C087',
-      name: 'BENQI Staked AVAX (Portal)',
-      display: 'wasavax',
-      symbol: 'wasAVAX',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wasavax.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wasavax.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1z3e2e4jpk4n0xzzwlkgcfvc95pc5ldq0xcny58'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/A98E20CDFAA4F824DC1FB38DF734639D9B663B6B9CDE70679B147C19979463DB',
-          exponent: 0,
-          aliases: ['cw20:terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr']
-        }, {
-          denom: 'mint',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr',
-      base: 'ibc/A98E20CDFAA4F824DC1FB38DF734639D9B663B6B9CDE70679B147C19979463DB',
-      name: 'MintDAO',
-      display: 'mint',
-      symbol: 'MINT',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mint.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mint.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1zd6let0zg0xjn2sestagxv4ax24a4ml6j40qdr'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/9B6B25D108D3B29E8404D280E18C3CC7368D8C1BF585C9184B4345FD39C31E04',
-          exponent: 0,
-          aliases: ['cw20:terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02']
-        }, {
-          denom: 'sd',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02',
-      base: 'ibc/9B6B25D108D3B29E8404D280E18C3CC7368D8C1BF585C9184B4345FD39C31E04',
-      name: 'Stader SD (Portal)',
-      display: 'sd',
-      symbol: 'SD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sd.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ustvnmngueq0p4jd7gfnutgvdc6ujpsjhsjd02'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2A3E0853497988E9D54FD6B91BCC5C72A87F1AF9CAA3C09B0073254D9B0EFE12',
-          exponent: 0,
-          aliases: ['cw20:terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep']
-        }, {
-          denom: 'xsd',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep',
-      base: 'ibc/2A3E0853497988E9D54FD6B91BCC5C72A87F1AF9CAA3C09B0073254D9B0EFE12',
-      name: 'Stader xSD',
-      display: 'xsd',
-      symbol: 'xSD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/xsd.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ln2z938phz0nc2wepxpzfkwp6ezn9yrz9zv9ep'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/E29BCFF5B139DCCB29E99DFC6953E11D16176D585B486CE0729B69A00134C7F1',
-          exponent: 0,
-          aliases: ['cw20:terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r']
-        }, {
-          denom: 'paxg',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r',
-      base: 'ibc/E29BCFF5B139DCCB29E99DFC6953E11D16176D585B486CE0729B69A00134C7F1',
-      name: 'Paxos Gold (Portal)',
-      display: 'paxg',
-      symbol: 'PAXG',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1uux6gwd6pzr0gfzrru5kne55cxex9d0700c72r'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg'
-      },
-      images: [{
-          image_sync: {
-            chain_name: 'ethereum',
-            base_denom: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/paxg.svg'
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/0C950158CDD84042774B43896B55DC1A6596BC95BDF8ED61A7C038BDCF7DA7E8',
-          exponent: 0,
-          aliases: ['cw20:terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl']
-        }, {
-          denom: 'whdao',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl',
-      base: 'ibc/0C950158CDD84042774B43896B55DC1A6596BC95BDF8ED61A7C038BDCF7DA7E8',
-      name: 'DAO Maker',
-      display: 'whdao',
-      symbol: 'whDAO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/whdao.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1efjugpjc50d8sha7lr8s48cr7wmsthz94eevcl'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B21400D3D89367F2C18811F581571DE2BAEF45F992DE9B625BDD6DBD5FBF7BF3',
-          exponent: 0,
-          aliases: ['cw20:terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt']
-        }, {
-          denom: 'link',
-          exponent: 18
-        }],
-      type_asset: 'cw20',
-      address: 'terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt',
-      base: 'ibc/B21400D3D89367F2C18811F581571DE2BAEF45F992DE9B625BDD6DBD5FBF7BF3',
-      name: 'ChainLink Token',
-      display: 'link',
-      symbol: 'LINK',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1su6g4t4vwx7y0uh3ksancyaurj4l6w9pfs40qt'
-          }
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
-      },
-      images: [{
-          image_sync: {
-            chain_name: 'ethereum',
-            base_denom: '0x514910771af9ca656af840dff83e8264ecf986ca'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/link.svg'
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/3B9ABA3279B929C3D9C59F6C8C1A1E661D4FC13DDF462DAB2265EC39CDCD1001',
-          exponent: 0,
-          aliases: ['cw20:terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr']
-        }, {
-          denom: 'sayve',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr',
-      base: 'ibc/3B9ABA3279B929C3D9C59F6C8C1A1E661D4FC13DDF462DAB2265EC39CDCD1001',
-      name: 'Sayve Token',
-      display: 'sayve',
-      symbol: 'SAYVE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sayve.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra14v9wrjs55qsn9lkvylsqela3w2ytwxzkycqzcr'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/0EA073BA9C2F35003AF05F99D121C47EC603A978D7C42A50CD4FFEF8ECA525B0',
-          exponent: 0,
-          aliases: ['cw20:terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u']
-        }, {
-          denom: 'guides',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u',
-      base: 'ibc/0EA073BA9C2F35003AF05F99D121C47EC603A978D7C42A50CD4FFEF8ECA525B0',
-      name: 'Guides Token',
-      display: 'guides',
-      symbol: 'GUIDES',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1z55rhw0ut70jxdmpvge98mvj0rkwcz74q77z0u'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/4B889178BAA176E102E33F4B7A421EF958C1C039799B4E036FA6A5AE3A7BF958',
-          exponent: 0,
-          aliases: ['cw20:terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2']
-        }, {
-          denom: 'bro',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2',
-      base: 'ibc/4B889178BAA176E102E33F4B7A421EF958C1C039799B4E036FA6A5AE3A7BF958',
-      name: 'BRO token',
-      display: 'bro',
-      symbol: 'BRO',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bro.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bro.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1mt2ytlrxhvd5c4d4fshxxs3zcus3fkdmuv4mk2'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5A765EDE7C505881C21527256A05F552AF22578D23033E049989C72DDF5EE4C8',
-          exponent: 0,
-          aliases: ['cw20:terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds']
-        }, {
-          denom: 'bbro',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds',
-      base: 'ibc/5A765EDE7C505881C21527256A05F552AF22578D23033E049989C72DDF5EE4C8',
-      name: 'bBRO token',
-      display: 'bbro',
-      symbol: 'bBRO',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bbro.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bbro.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1qryq5wreecx2wd3cdtzz94syr4z0a92l60asds'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5209EB7BFF67D0F1CD7323BFDFCC87DFCEF039E78ECF8862E001D17397E7B8C2',
-          exponent: 0,
-          aliases: ['cw20:terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr']
-        }, {
-          denom: 'gtps',
-          exponent: 18
-        }],
-      type_asset: 'cw20',
-      address: 'terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr',
-      base: 'ibc/5209EB7BFF67D0F1CD7323BFDFCC87DFCEF039E78ECF8862E001D17397E7B8C2',
-      name: 'Global Transaction Payment Solut',
-      display: 'gtps',
-      symbol: 'GTPS',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra15zvyhmv6gwddht7kt4q6w5nasn4tcpgzcdfmgr'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/A27871670712E674D292568403A9B6FDD0B6507C78DAE0B0318F8BB14145A7AD',
-          exponent: 0,
-          aliases: ['cw20:terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se']
-        }, {
-          denom: 'gfi',
-          exponent: 18
-        }],
-      type_asset: 'cw20',
-      address: 'terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se',
-      base: 'ibc/A27871670712E674D292568403A9B6FDD0B6507C78DAE0B0318F8BB14145A7AD',
-      name: 'Gtps.Finance',
-      display: 'gfi',
-      symbol: 'GFI',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra15pkdjxv2ewjzn9x665y26pfz2h6ymak4d4e8se'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/BE1E260CC5C322EF415134FDF0B48C48D3F09956D89BAC92D1328A47BFFFC7AB',
-          exponent: 0,
-          aliases: ['cw20:terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa']
-        }, {
-          denom: 'ulc',
-          exponent: 18
-        }],
-      type_asset: 'cw20',
-      address: 'terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa',
-      base: 'ibc/BE1E260CC5C322EF415134FDF0B48C48D3F09956D89BAC92D1328A47BFFFC7AB',
-      name: 'Ultimatalioniscoin',
-      display: 'ulc',
-      symbol: 'ULC',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1fyjsxx73jrufw8ufgtuswa773dvdkny92k70wa'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/1DD19A3A498B19E2A8E2CDC76AB6FBA350CA7AE95F53B0FF66B94FC7D1D64977',
-          exponent: 0,
-          aliases: ['cw20:terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl']
-        }, {
-          denom: 'sst',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl',
-      base: 'ibc/1DD19A3A498B19E2A8E2CDC76AB6FBA350CA7AE95F53B0FF66B94FC7D1D64977',
-      name: 'Sooah Studio Token',
-      display: 'sst',
-      symbol: 'SST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sst.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1689ys6p6gfu0q6xrjqkzfn80sdyhurjqn0jfdl'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/954C8FA6685BE14447269E3207EC8331B037E1BBE268EEE0B199E53A00A35A33',
-          exponent: 0,
-          aliases: ['cw20:terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc']
-        }, {
-          denom: 'atlas',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc',
-      base: 'ibc/954C8FA6685BE14447269E3207EC8331B037E1BBE268EEE0B199E53A00A35A33',
-      name: 'Star Atlas (Portal)',
-      display: 'atlas',
-      symbol: 'ATLAS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/atlas.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1rg8f993m9834afwazersesgx7jjxv4p87q9wvc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/D73732BB4D8D95F1E85AA88300EA988EB30EEDBC0AC4B397FEC15EEF21BF6597',
-          exponent: 0,
-          aliases: ['cw20:terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp']
-        }, {
-          denom: 'audio',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp',
-      base: 'ibc/D73732BB4D8D95F1E85AA88300EA988EB30EEDBC0AC4B397FEC15EEF21BF6597',
-      name: 'Audius (Portal)',
-      display: 'audio',
-      symbol: 'AUDIO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/audio.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1nc6flp57m5hsr6y5y8aexzszy43ksr0drdr8rp'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/E421747451935D6FD8FD0232E1D68ABC167326F946FEAA12122621D9CED4ED6A',
-          exponent: 0,
-          aliases: ['cw20:terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m']
-        }, {
-          denom: 'avax',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m',
-      base: 'ibc/E421747451935D6FD8FD0232E1D68ABC167326F946FEAA12122621D9CED4ED6A',
-      name: 'AVAX (Portal)',
-      display: 'avax',
-      symbol: 'AVAX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/avax.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1hj8de24c3yqvcsv9r8chr03fzwsak3hgd8gv3m'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/627D28C2DAB73D02EE4530AC14048A6308774C49E252DE610B4FC95C12306B15',
-          exponent: 0,
-          aliases: ['cw20:terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2']
-        }, {
-          denom: 'bat',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2',
-      base: 'ibc/627D28C2DAB73D02EE4530AC14048A6308774C49E252DE610B4FC95C12306B15',
-      name: 'Basic Attention Token (Portal)',
-      display: 'bat',
-      symbol: 'BAT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/bat.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1apxgj5agkkfdm2tprwvykug0qtahxvfmugnhx2'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/61BAA2DB9CD9F853B6FC576A39C698139AA536E3DD299C59BF82524C7789429E',
-          exponent: 0,
-          aliases: ['cw20:terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd']
-        }, {
-          denom: 'busdbs',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd',
-      base: 'ibc/61BAA2DB9CD9F853B6FC576A39C698139AA536E3DD299C59BF82524C7789429E',
-      name: 'Binance USD (Portal from BSC)',
-      display: 'busdbs',
-      symbol: 'BUSDbs',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/busdbs.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1skjr69exm6v8zellgjpaa2emhwutrk5a6dz7dd'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B2CB4EC52DA861F5AD4A89561A78556E8BA062EE017F7ECBF6C728C2CF30C78E',
-          exponent: 0,
-          aliases: ['cw20:terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95']
-        }, {
-          denom: 'dai',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95',
-      base: 'ibc/B2CB4EC52DA861F5AD4A89561A78556E8BA062EE017F7ECBF6C728C2CF30C78E',
-      name: 'DAI (Portal)',
-      display: 'dai',
-      symbol: 'DAI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/dai.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/3A76F38BBFAE242858A44AED08700FB137D97B26594BF0F247A78A016C1C0C9C',
-          exponent: 0,
-          aliases: ['cw20:terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8']
-        }, {
-          denom: 'maticpo',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8',
-      base: 'ibc/3A76F38BBFAE242858A44AED08700FB137D97B26594BF0F247A78A016C1C0C9C',
-      name: 'MATIC (Portal from Polygon)',
-      display: 'maticpo',
-      symbol: 'MATICpo',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/maticpo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/C31212697D7E9C3A86844DD97E6A89B23FA1B4D19D44EB47871CCBB8DCEEE35A',
-          exponent: 0,
-          aliases: ['cw20:terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y']
-        }, {
-          denom: 'mimet',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y',
-      base: 'ibc/C31212697D7E9C3A86844DD97E6A89B23FA1B4D19D44EB47871CCBB8DCEEE35A',
-      name: 'Magic Internet Money',
-      display: 'mimet',
-      symbol: 'MIMet',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/mimet.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra15a9dr3a2a2lj5fclrw35xxg9yuxg0d908wpf2y'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8CF8C3D5FA88A985DAC71BBFBBB6B5B83247ABA6EFF42049465F130578C21D00',
-          exponent: 0,
-          aliases: ['cw20:terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q']
-        }, {
-          denom: 'ray',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q',
-      base: 'ibc/8CF8C3D5FA88A985DAC71BBFBBB6B5B83247ABA6EFF42049465F130578C21D00',
-      name: 'Raydium (Portal)',
-      display: 'ray',
-      symbol: 'RAY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/ray.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ht5sepn28z999jx33sdduuxm9acthad507jg9q'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8B1205F77CC5A0403306FB525A5393796D0288337BBCE53636E75591AEFF2853',
-          exponent: 0,
-          aliases: ['cw20:terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc']
-        }, {
-          denom: 'sbr',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc',
-      base: 'ibc/8B1205F77CC5A0403306FB525A5393796D0288337BBCE53636E75591AEFF2853',
-      name: 'Saber (Portal)',
-      display: 'sbr',
-      symbol: 'SBR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sbr.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra17h82zsq6q8x5tsgm5ugcx4gytw3axguvzt4pkc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5BF935F2D869C723DC3CBD341253E5E09385827FE8ED2D3E0FA08CB8AC694EE7',
-          exponent: 0,
-          aliases: ['cw20:terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd']
-        }, {
-          denom: 'shib',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd',
-      base: 'ibc/5BF935F2D869C723DC3CBD341253E5E09385827FE8ED2D3E0FA08CB8AC694EE7',
-      name: 'Shiba Inu (Portal)',
-      display: 'shib',
-      symbol: 'SHIB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/shib.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1huku2lecfjhq9d00k5a8dh73gw7dwe6vvuf2dd'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B159A28CA4B293970765D07AD783904816A5197895798056A2153D8812267C08',
-          exponent: 0,
-          aliases: ['cw20:terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c']
-        }, {
-          denom: 'srmso',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c',
-      base: 'ibc/B159A28CA4B293970765D07AD783904816A5197895798056A2153D8812267C08',
-      name: 'Serum (Portal from Solana)',
-      display: 'srmso',
-      symbol: 'SRMso',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/srmso.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1dkam9wd5yvaswv4yq3n2aqd4wm5j8n82qc0c7c'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/0CF0C033EF499817C864D4C96C181ECB0A622C21B906ADDA8B9C078646EAE1B7',
-          exponent: 0,
-          aliases: ['cw20:terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w']
-        }, {
-          denom: 'usdcav',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w',
-      base: 'ibc/0CF0C033EF499817C864D4C96C181ECB0A622C21B906ADDA8B9C078646EAE1B7',
-      name: 'USD Coin (Portal from Avalanche)',
-      display: 'usdcav',
-      symbol: 'USDCav',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcav.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/8726BBFA5837A5E36E964E450652645752BE60134E52C6688D667A05454FC2E0',
-          exponent: 0,
-          aliases: ['cw20:terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu']
-        }, {
-          denom: 'usdcbs',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu',
-      base: 'ibc/8726BBFA5837A5E36E964E450652645752BE60134E52C6688D667A05454FC2E0',
-      name: 'USD Coin (Portal from BSC)',
-      display: 'usdcbs',
-      symbol: 'USDCbs',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcbs.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1yljlrxvkar0c6ujpvf8g57m5rpcwl7r032zyvu'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/DF343D71EE8EB038F6E22493075271B6ECE0914F688FA7D03B471F722841B587',
-          exponent: 0,
-          aliases: ['cw20:terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x']
-        }, {
-          denom: 'usdcpo',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x',
-      base: 'ibc/DF343D71EE8EB038F6E22493075271B6ECE0914F688FA7D03B471F722841B587',
-      name: 'USD Coin (Portal from Polygon)',
-      display: 'usdcpo',
-      symbol: 'USDCpo',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcpo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1kkyyh7vganlpkj0gkc2rfmhy858ma4rtwywe3x'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/193EAA38602E756888FE002143657385CA1B71B1731C87E88F73BF1F9C1E86F0',
-          exponent: 0,
-          aliases: ['cw20:terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4']
-        }, {
-          denom: 'usdcso',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4',
-      base: 'ibc/193EAA38602E756888FE002143657385CA1B71B1731C87E88F73BF1F9C1E86F0',
-      name: 'USD Coin (Portal from Solana)',
-      display: 'usdcso',
-      symbol: 'USDCso',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdcso.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1e6mq63y64zcxz8xyu5van4tgkhemj3r86yvgu4'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/F03DFB5FCCBD29E45CF175C24182A58C79A0A446612EA20DAB8BDB70DC1FF83A',
-          exponent: 0,
-          aliases: ['cw20:terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx']
-        }, {
-          denom: 'usdtav',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx',
-      base: 'ibc/F03DFB5FCCBD29E45CF175C24182A58C79A0A446612EA20DAB8BDB70DC1FF83A',
-      name: 'Tether USD (Portal from Avalanche)',
-      display: 'usdtav',
-      symbol: 'USDTav',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtav.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1eqvq3thjhye7anv6f6mhxpjhyvww8zjvqcdgjx'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/F8EDC4511E7ACE342FEF05FC48702EA02FD0A9339AE293C221EB5688398B5DB6',
-          exponent: 0,
-          aliases: ['cw20:terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd']
-        }, {
-          denom: 'usdtbs',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd',
-      base: 'ibc/F8EDC4511E7ACE342FEF05FC48702EA02FD0A9339AE293C221EB5688398B5DB6',
-      name: 'Tether USD (Portal from BSC)',
-      display: 'usdtbs',
-      symbol: 'USDTbs',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtbs.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vlqeghv5mt5udh96kt5zxlh2wkh8q4kewkr0dd'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/107A3AD8E6328408744B7D9FBA619D8371805184F46B829DEA372CC2DC790489',
-          exponent: 0,
-          aliases: ['cw20:terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5']
-        }, {
-          denom: 'usdtso',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5',
-      base: 'ibc/107A3AD8E6328408744B7D9FBA619D8371805184F46B829DEA372CC2DC790489',
-      name: 'Tether USD (Portal from Solana)',
-      display: 'usdtso',
-      symbol: 'USDTso',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/usdtso.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1hd9n65snaluvf7en0p4hqzse9eqecejz2k8rl5'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/5F9702D20754980C1CB7AA848CF097BAB61D4236F10D18F7E431FE2C2C6659BA',
-          exponent: 0,
-          aliases: ['cw20:terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3']
-        }, {
-          denom: 'gohm',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3',
-      base: 'ibc/5F9702D20754980C1CB7AA848CF097BAB61D4236F10D18F7E431FE2C2C6659BA',
-      name: 'Governance OHM (Portal)',
-      display: 'gohm',
-      symbol: 'gOHM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/gohm.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1fpfn2kkr8mv390wx4dtpfk3vkjx9ch3thvykl3'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/05352AE3BCE316C1F137A05F6B18268DE6D5AE67CC0045F5DFE05823C17CABEE',
-          exponent: 0,
-          aliases: ['cw20:terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y']
-        }, {
-          denom: 'msol',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y',
-      base: 'ibc/05352AE3BCE316C1F137A05F6B18268DE6D5AE67CC0045F5DFE05823C17CABEE',
-      name: 'Marinade staked SOL (Portal)',
-      display: 'msol',
-      symbol: 'mSOL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/msol.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1qvlpf2v0zmru3gtex40sqq02wxp39x3cjh359y'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/6F5998D94C801508B8B7262048CFD398540FE31427B35D553661042D44423DF3',
-          exponent: 0,
-          aliases: ['cw20:terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d']
-        }, {
-          denom: 'steth',
-          exponent: 8
-        }],
-      type_asset: 'cw20',
-      address: 'terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d',
-      base: 'ibc/6F5998D94C801508B8B7262048CFD398540FE31427B35D553661042D44423DF3',
-      name: 'Lido Staked Ether (Portal)',
-      display: 'steth',
-      symbol: 'stETH',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steth.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/44325A118DA8B8D873D1BF3404B09A1AC02EBBF440FEAC4186FB677C92788D17',
-          exponent: 0,
-          aliases: ['cw20:terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc']
-        }, {
-          denom: 'lct',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc',
-      base: 'ibc/44325A118DA8B8D873D1BF3404B09A1AC02EBBF440FEAC4186FB677C92788D17',
-      name: 'LCT Token',
-      display: 'lct',
-      symbol: 'LCT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lct.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1srp2u95kxps35nvan88gn96nfqhukqya2d0ffc'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/9040BE69B33F6F8CAF8FC2404B384647CBCB2363B7AEB21F8325C2C2BA70100C',
-          exponent: 0,
-          aliases: ['cw20:terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a']
-        }, {
-          denom: 'batom',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a',
-      base: 'ibc/9040BE69B33F6F8CAF8FC2404B384647CBCB2363B7AEB21F8325C2C2BA70100C',
-      name: 'Bonded ATOM',
-      display: 'batom',
-      symbol: 'bATOM',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/batom.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/batom.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra18zqcnl83z98tf6lly37gghm7238k7lh79u4z9a'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B86D0EC0B5333229BCFF55F48DBE19E940AC6C342A17C9F75B7FE23F0C620339',
-          exponent: 0,
-          aliases: ['cw20:terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn']
-        }, {
-          denom: 'webatom',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn',
-      base: 'ibc/B86D0EC0B5333229BCFF55F48DBE19E940AC6C342A17C9F75B7FE23F0C620339',
-      name: 'pStake Bonded ATOM (Wormhole)',
-      display: 'webatom',
-      symbol: 'webATOM',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webatom.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/webatom.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra128pe5jpempxu0nws5lw28se9zknhsr78626cpn'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2D6714236503E557BD02C6ED9E70B03CDFBB19D4F0CD2EAA5D780D4C493A8787',
-          exponent: 0,
-          aliases: ['cw20:terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn']
-        }, {
-          denom: 'wcoin',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn',
-      base: 'ibc/2D6714236503E557BD02C6ED9E70B03CDFBB19D4F0CD2EAA5D780D4C493A8787',
-      name: 'Willisch Coin',
-      display: 'wcoin',
-      symbol: 'WCOIN',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wcoin.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/wcoin.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1laczhlpxlgmrwr9un9ds74qxd2fj4754nf82dn'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/7DCBF780E8CD72397AB4CE0F482285A2C29601E4BE4480A115CA0905FDB3EC9F',
-          exponent: 0,
-          aliases: ['cw20:terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy']
-        }, {
-          denom: 'lctfancard',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy',
-      base: 'ibc/7DCBF780E8CD72397AB4CE0F482285A2C29601E4BE4480A115CA0905FDB3EC9F',
-      name: 'LCT Fancard Token',
-      display: 'lctfancard',
-      symbol: 'LCTfancard',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lctfancard.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1thhm2u93m2stytzynhsxh5h3jrtg540x4punqy'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/F37EF82C7F64ADEC81365EDA2A426D2422E6A28800F10448629AACDDAE92F3D3',
-          exponent: 0,
-          aliases: ['cw20:terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang']
-        }, {
-          denom: 'kntc',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang',
-      base: 'ibc/F37EF82C7F64ADEC81365EDA2A426D2422E6A28800F10448629AACDDAE92F3D3',
-      name: 'Kinetic Token',
-      display: 'kntc',
-      symbol: 'KNTC',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kntc.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kntc.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1yeyr6taynkwdl85ppaggr3zr8txhf66cny2ang'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/E1DDEDB674BC6D6884A468D4865CD05C5205DCBA3ECFA76EC1031F9A58F3A35A',
-          exponent: 0,
-          aliases: ['cw20:terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex']
-        }, {
-          denom: 'kust',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex',
-      base: 'ibc/E1DDEDB674BC6D6884A468D4865CD05C5205DCBA3ECFA76EC1031F9A58F3A35A',
-      name: 'Kinetic kUST Token',
-      display: 'kust',
-      symbol: 'kUST',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kust.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/kust.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1g53pyke8jtmt4lwvk4yl0xaqc4u0qlsl8dz3ex'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/ECCCB63C2E36660DBD7F701B12EF20597D42088799FF8E81CE54BFD55A7AC16E',
-          exponent: 0,
-          aliases: ['cw20:terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv']
-        }, {
-          denom: 'steak',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv',
-      base: 'ibc/ECCCB63C2E36660DBD7F701B12EF20597D42088799FF8E81CE54BFD55A7AC16E',
-      name: 'Steak Token',
-      display: 'steak',
-      symbol: 'STEAK',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steak.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/steak.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1rl4zyexjphwgx6v3ytyljkkc4mrje2pyznaclv'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/AA01F69B068E1722721183DBF3876E5BE2803C61EC0EF450FA850F6AA0C3025D',
-          exponent: 0,
-          aliases: ['cw20:terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m']
-        }, {
-          denom: 'cst',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m',
-      base: 'ibc/AA01F69B068E1722721183DBF3876E5BE2803C61EC0EF450FA850F6AA0C3025D',
-      name: 'CST Token',
-      display: 'cst',
-      symbol: 'CST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cst.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1jkkt5638cd5pur0u5jnr2juw0v6hz5d6z8xu8m'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/52EA1A9E068E1BD5EA74AB23CFC310C9A475982DBEF0B332D060987EE3836C1B',
-          exponent: 0,
-          aliases: ['cw20:terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam']
-        }, {
-          denom: 'cstfancard',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam',
-      base: 'ibc/52EA1A9E068E1BD5EA74AB23CFC310C9A475982DBEF0B332D060987EE3836C1B',
-      name: 'CST Fancard Token',
-      display: 'cstfancard',
-      symbol: 'CSTfancard',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cstfancard.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1kz7qszu7p4dg9lts7m9m7lpuarsnan47jh3fam'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/F84CD975385ED193D6ED2A8AF0CBACA7304399426F92E19A55615A57A091C1CD',
-          exponent: 0,
-          aliases: ['cw20:terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj']
-        }, {
-          denom: 'nwld',
-          exponent: 9
-        }],
-      type_asset: 'cw20',
-      address: 'terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj',
-      base: 'ibc/F84CD975385ED193D6ED2A8AF0CBACA7304399426F92E19A55615A57A091C1CD',
-      name: 'Neworld Labs Develpper Token',
-      display: 'nwld',
-      symbol: 'NWLD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwld.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1amz5c45l34n7w8m5a3z7rd7u0k037x4nnsemwj'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/2CE3FB37B459658FEC5DDDDFF7EFC561AB81AAA317FAECF07D9D8F934F977A9D',
-          exponent: 0,
-          aliases: ['cw20:terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k']
-        }, {
-          denom: 'fury',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k',
-      base: 'ibc/2CE3FB37B459658FEC5DDDDFF7EFC561AB81AAA317FAECF07D9D8F934F977A9D',
-      name: 'FURY',
-      display: 'fury',
-      symbol: 'FURY',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/fury.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1cdc6nlsx0l6jmt3nnx7gxjggf902wge3n2z76k'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/7A0E6CF16DD239E89BCFF814A9013697734703E9E12F6605B4D07454D726571B',
-          exponent: 0,
-          aliases: ['cw20:terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93']
-        }, {
-          denom: 'rct',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93',
-      base: 'ibc/7A0E6CF16DD239E89BCFF814A9013697734703E9E12F6605B4D07454D726571B',
-      name: 'Reactor Token',
-      display: 'rct',
-      symbol: 'RCT',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rct.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/rct.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra17n223dxpkypc5c48la7aqjvverczg82ga3cr93'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/125F2B412926A70AF29619F0807FF0F3188718BB4C548496F018F902847583AB',
-          exponent: 0,
-          aliases: ['cw20:terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu']
-        }, {
-          denom: 'vitc',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu',
-      base: 'ibc/125F2B412926A70AF29619F0807FF0F3188718BB4C548496F018F902847583AB',
-      name: 'Vitamin Coin',
-      display: 'vitc',
-      symbol: 'VITC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/vitc.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra14vw4sfqwe7jw8ppcc7u44vq7hy9qa2nlstnxmu'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/AD1F63BA20D4D7405091BAFA81686681AC1CB033DB15EE614CBD4B359D8D8BB5',
-          exponent: 0,
-          aliases: ['cw20:terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g']
-        }, {
-          denom: 'sb',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g',
-      base: 'ibc/AD1F63BA20D4D7405091BAFA81686681AC1CB033DB15EE614CBD4B359D8D8BB5',
-      name: 'DragonSB',
-      display: 'sb',
-      symbol: 'SB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/sb.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1948uvsah8aw40dhsa9mhl3htq8lraj0smlh77g'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/12D57045A1B0CD82F3924B62FB44EBCA67948D759747A8AE9D83EF7AF0762757',
-          exponent: 0,
-          aliases: ['cw20:terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh']
-        }, {
-          denom: 'toad',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh',
-      base: 'ibc/12D57045A1B0CD82F3924B62FB44EBCA67948D759747A8AE9D83EF7AF0762757',
-      name: 'RESToad Token',
-      display: 'toad',
-      symbol: 'TOAD',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/toad.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/toad.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1rz964297kvt86rteajhtp4hsffhcum0ye8eljh'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/169449C31A5B18D8A93BDE18B1201D815B5FAAECBA0DE09D862BE3240B9A29EB',
-          exponent: 0,
-          aliases: ['cw20:terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd']
-        }, {
-          denom: 'orionastro',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd',
-      base: 'ibc/169449C31A5B18D8A93BDE18B1201D815B5FAAECBA0DE09D862BE3240B9A29EB',
-      name: 'Orion Money xASTRO Derivative Token',
-      display: 'orionastro',
-      symbol: 'orionASTRO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/orionastro.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1yhlhrea3rgyx2xdnsswsfakn28qa8z7yp5gmhd'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/73CBE52098D640F5826E3DD8CEE9E77A2C3C1F8442147323E5E141D7DEE0F513',
-          exponent: 0,
-          aliases: ['cw20:terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp']
-        }, {
-          denom: 'retro',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp',
-      base: 'ibc/73CBE52098D640F5826E3DD8CEE9E77A2C3C1F8442147323E5E141D7DEE0F513',
-      name: 'Retrograde',
-      display: 'retro',
-      symbol: 'RETRO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/retro.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1j4hwavavmtsafa6zr0npalfz3tk9gf3p4787mp'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/A4ED6C6F4564061734649338DD60865F154A80B2C26A711E3EA3D73B07F3A4BC',
-          exponent: 0,
-          aliases: ['cw20:terra16wggm67a34msdxasg2vergm2pt289y7930wv7d']
-        }, {
-          denom: 'tnd',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra16wggm67a34msdxasg2vergm2pt289y7930wv7d',
-      base: 'ibc/A4ED6C6F4564061734649338DD60865F154A80B2C26A711E3EA3D73B07F3A4BC',
-      name: 'TerrnadoCash',
-      display: 'tnd',
-      symbol: 'TND',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tnd.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra16wggm67a34msdxasg2vergm2pt289y7930wv7d',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra16wggm67a34msdxasg2vergm2pt289y7930wv7d'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/6A561C4F7EEC8356E971CD9F86A29F88C2FF1DCA9778F59CACA6DF5D4CD890D4',
-          exponent: 0,
-          aliases: ['cw20:terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g']
-        }, {
-          denom: 'stnd',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g',
-      base: 'ibc/6A561C4F7EEC8356E971CD9F86A29F88C2FF1DCA9778F59CACA6DF5D4CD890D4',
-      name: 'TerrnadoCash',
-      display: 'stnd',
-      symbol: 'sTND',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stnd.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/stnd.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1n9k2he20h5vpyn4mgv7pg4pzvw2n3wc4a86v3g'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/B1A27A6C18687491FEE0B237441C2056600DD9EEA3A252DE87DDE9EF96DBE16F',
-          exponent: 0,
-          aliases: ['cw20:terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe']
-        }, {
-          denom: 'nwt',
-          exponent: 9
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe',
-      base: 'ibc/B1A27A6C18687491FEE0B237441C2056600DD9EEA3A252DE87DDE9EF96DBE16F',
-      name: 'Neworld Token',
-      display: 'nwt',
-      symbol: 'NWT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/nwt.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1ezz5xply2v3xdyv32gy5tcd7zq4k235q4xtzwe'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/05D5AD21F3722CB4F070D2B2293344EDAB655C80C4A80CCAC1C3675F7CFD5304',
-          exponent: 0,
-          aliases: ['cw20:terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn']
-        }, {
-          denom: 'neb',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn',
-      base: 'ibc/05D5AD21F3722CB4F070D2B2293344EDAB655C80C4A80CCAC1C3675F7CFD5304',
-      name: 'Nebula Token',
-      display: 'neb',
-      symbol: 'NEB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/neb.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1mpq5zkkm39nmjrjg9raknpfrfmcfwv0nh0whvn'
-          }
-        }]
-    },
-    {
-      denom_units: [{
-          denom: 'ibc/F5440320D31620C7F09B02AB8C70AE47521B9E555E0BA7F07B784163D9BFF8DC',
-          exponent: 0,
-          aliases: ['cw20:terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00']
-        }, {
-          denom: 'trit',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00',
-      base: 'ibc/F5440320D31620C7F09B02AB8C70AE47521B9E555E0BA7F07B784163D9BFF8DC',
-      name: 'Terra Tritium Token',
-      display: 'trit',
-      symbol: 'TRIT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/trit.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/trit.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00'
-          }
-        }]
-    },
-    {
-      description: 'Juris Protocol is the premier lending platform for the Terra Ecosystem, delivering decentralized lending and borrowing markets to enhance financial accessibility and utility.',
-      socials: {
-        website: 'https://jurisprotocol.com/',
-        x: 'https://x.com/jurisprotocol'
-      },
-      coingecko_id: 'juris-protocol',
-      type_asset: 'cw20',
-      address: 'terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2',
-      denom_units: [{
-          denom: 'ibc/46579C587A0B8CF8B0A1FF6B0EFA2082F11876578E47FC81A9CAAD31F424AF98',
-          exponent: 0,
-          aliases: ['cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2']
-        }, {
-          denom: 'juris',
-          exponent: 6
-        }],
-      base: 'ibc/46579C587A0B8CF8B0A1FF6B0EFA2082F11876578E47FC81A9CAAD31F424AF98',
-      name: 'Juris Protocol',
-      display: 'juris',
-      symbol: 'JURIS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/juris.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2'
-          }
-        }]
-    },
-    {
-      description: 'Tadpole Frogztrik Token meme',
-      type_asset: 'cw20',
-      address: 'terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
-      display: 'tadf',
-      denom_units: [{
-          denom: 'ibc/B5457A60AD0FEF33E2831059518659D132E514CEE3EC4E9B45AD708EF6D5F234',
-          exponent: 0,
-          aliases: ['cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c']
-        }, {
-          denom: 'tadf',
-          exponent: 6
-        }],
-      base: 'ibc/B5457A60AD0FEF33E2831059518659D132E514CEE3EC4E9B45AD708EF6D5F234',
-      name: 'Tadpole Frogztrik Token',
-      symbol: 'TADF',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/tadf.png'
-      },
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra19gzvkw5hft3ulp8n6ws3p9yradhc802axqal59lzxau6rqxktj9q0dwf9c'
-          }
-        }]
-    },
-    {
-      description: 'Frogztrik NFT Token',
-      type_asset: 'cw20',
-      address: 'terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
-      display: 'frog',
-      denom_units: [{
-          denom: 'ibc/4249A9BAE70BB8FFCED21E2928CA2D980431E74D172FA7CCC5A78A8064837C94',
-          exponent: 0,
-          aliases: ['cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9']
-        }, {
-          denom: 'frog',
-          exponent: 6
-        }],
-      base: 'ibc/4249A9BAE70BB8FFCED21E2928CA2D980431E74D172FA7CCC5A78A8064837C94',
-      name: 'Frogztrik NFT Token',
-      symbol: 'FROG',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
-        }],
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/FROG.png'
-      },
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1wez9puj43v4s25vrex7cv3ut3w75w4h6j5e537sujyuxj0r5ne2qp9uwl9'
-          }
-        }]
-    },
-    {
-      description: 'WESO is the first memetility token launched on the Luna Classic blockchain. WESO is a innovative CW20 token dedicated to revitalizing and stabilizing the Luna Classic ecosystem. By leveraging a robust economic model WESO aims to restore confidence and sustainability within the ecosystem.',
-      type_asset: 'cw20',
-      address: 'terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
-      denom_units: [{
-          denom: 'ibc/3058EF25FE6CF6D58086A452C5C06612093F0C0C3F955464505D5CD7C78169F6',
-          exponent: 0,
-          aliases: ['cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms']
-        }, {
-          denom: 'weso',
-          exponent: 6
-        }],
-      base: 'ibc/3058EF25FE6CF6D58086A452C5C06612093F0C0C3F955464505D5CD7C78169F6',
-      name: 'WESO World',
-      display: 'weso',
-      symbol: 'WESO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/weso.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra13ryrrlcskwa05cd94h54c8rnztff9l82pp0zqnfvlwt77za8wjjsld36ms'
-          }
-        }]
-    },
-    {
-      description: 'Classic\'s original Liquid Staking Token - circa 2022',
-      type_asset: 'cw20',
-      address: 'terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
-      denom_units: [{
-          denom: 'ibc/DDE4A44DDBFF7A0831A077D6E88B2323D8DD480C8AE3AA08C7AC6FB416212063',
-          exponent: 0,
-          aliases: ['cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m']
-        }, {
-          denom: 'base',
-          exponent: 6
-        }],
-      base: 'ibc/DDE4A44DDBFF7A0831A077D6E88B2323D8DD480C8AE3AA08C7AC6FB416212063',
-      name: 'Burn and Stake Enterprise Token',
-      display: 'base',
-      symbol: 'BASE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/base.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m'
-          }
-        }]
-    },
-    {
-      description: 'CW20 token hard-pegged 1:1 with Native LUNC. Reduces or eliminates the chain-tax so you keep more of your money.',
-      type_asset: 'cw20',
-      address: 'terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
-      denom_units: [{
-          denom: 'ibc/EF2F1992EA1AFB348FF390FC9FE544D5C4A04DCE94B4ED12FCC9D25251D5AD05',
-          exponent: 0,
-          aliases: ['cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6']
-        }, {
-          denom: 'cwlunc',
-          exponent: 6
-        }],
-      base: 'ibc/EF2F1992EA1AFB348FF390FC9FE544D5C4A04DCE94B4ED12FCC9D25251D5AD05',
-      name: 'cwLUNC Token',
-      display: 'cwlunc',
-      symbol: 'cwLUNC',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/cwlunc.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra10fusc7487y4ju2v5uavkauf3jdpxx9h8sc7wsqdqg4rne8t4qyrq8385q6'
-          }
-        }]
-    },
-    {
-      description: 'An eco-friendly token for sustainable projects and green initiatives on Terra Luna Classic',
-      socials: {
-        website: 'https://www.greenfriendlylabs.com/',
-        x: 'https://x.com/GreenFrndLabs'
-      },
-      type_asset: 'cw20',
-      address: 'terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5',
-      denom_units: [{
-          denom: 'ibc/B6D6A3C473F8937F323F4CE2F22CECBBBA401B8BA2BA6321E76A7B3623912395',
-          exponent: 0,
-          aliases: ['cw20:terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5']
-        }, {
-          denom: 'gft',
-          exponent: 6
-        }],
-      base: 'ibc/B6D6A3C473F8937F323F4CE2F22CECBBBA401B8BA2BA6321E76A7B3623912395',
-      name: 'Greenfriendly Token',
-      display: 'gft',
-      symbol: 'GFT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/greenfriendlylabs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/greenfriendlylabs.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra17hnu4prwa3varxrws0sy9hffkmqv8tfmfpldg4e9fq58flrmuz2qlhymr5'
-          }
-        }]
-    },
-    {
-      description: 'LuncToken ($LTK) is the community token of Lunctoken.org, designed to reward engagement, provide access to Web3 educational content, and strengthen the Terra Classic ecosystem.',
-      socials: {
-        website: 'https://www.lunctoken.org',
-        x: 'https://x.com/Lunctoken_org'
-      },
-      type_asset: 'cw20',
-      address: 'terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a',
-      denom_units: [{
-          denom: 'ibc/D72101404AB3B93A9F956B09D32175955BD098A09A3D3EB5C1E4B4FB6CE76366',
-          exponent: 0,
-          aliases: ['cw20:terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a']
-        }, {
-          denom: 'ltk',
-          exponent: 6
-        }],
-      base: 'ibc/D72101404AB3B93A9F956B09D32175955BD098A09A3D3EB5C1E4B4FB6CE76366',
-      name: 'Lunctoken',
-      display: 'ltk',
-      symbol: 'LTK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunctoken.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/lunctoken.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a'
-          }
-        }]
-    },
-    {
-      description: 'GRDX is the native utility token powering the DeFi, marketplace, and gaming ecosystem on the Terra Classic blockchain.',
-      socials: {
-        website: 'https://garuda-defi.org/',
-        x: 'https://x.com/garuda_defi'
-      },
-      type_asset: 'cw20',
-      address: 'terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw',
-      denom_units: [{
-          denom: 'ibc/A91095096C44646CB885509AEF56842DD37CB7897E602D7200A1CCF6414AA0D2',
-          exponent: 0,
-          aliases: ['cw20:terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw']
-        }, {
-          denom: 'GRDX',
-          exponent: 6
-        }],
-      base: 'ibc/A91095096C44646CB885509AEF56842DD37CB7897E602D7200A1CCF6414AA0D2',
-      name: 'GRDX',
-      display: 'GRDX',
-      symbol: 'GRDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/GRDX.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/GRDX.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw'
-          }
-        }]
-    },
-    {
-      description: 'Cookie DO is a next-gen memecoin powering a full gaming + metaverse ecosystem. It fuels DO Gaming (play-to-earn tournaments), DO DAO governance, deep on-chain trading pools, and real-asset tokens like GG (DO Gold) and SG (DO Silver). Backed by Artemis staking, the Food Token humanitarian project, and multi-chain Cookie on LUNC, Solana, and BSC, Cookie DO creates nonstop cross-chain arbitrage frenzy — fun, utility, and yield in one token.',
-      socials: {
-        website: 'https://cookie-verse.io/',
-        x: 'https://x.com/LUNC_Cookies'
-      },
-      type_asset: 'cw20',
-      address: 'terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt',
-      denom_units: [{
-          denom: 'ibc/3B16647EEE058DA677ED944A6798125F4E69E9D24328404C7E213BA0A365D668',
-          exponent: 0,
-          aliases: ['cw20:terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt']
-        }, {
-          denom: 'cookie',
-          exponent: 6
-        }],
-      base: 'ibc/3B16647EEE058DA677ED944A6798125F4E69E9D24328404C7E213BA0A365D668',
-      name: 'cookie',
-      display: 'cookie',
-      symbol: 'cookie',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/do.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra/images/do.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra19pfxzj9580h7rjd6z6sn5x2se76vgrc0etltr79g9z3t82jzp4hq63qguc',
-            channel_id: 'channel-108',
-            base_denom: 'cw20:terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt',
-            chain_name: 'terra'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-78488',
-            path: 'transfer/channel-78488/cw20:terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt'
-          }
-        }]
-    },
-    {
-      description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
-      denom_units: [{
-          denom: 'ibc/8410580A4F5421DFDBD888212624591E92A9E3B5C87D3C58913CE16ABD98B9B4',
-          exponent: 0,
-          aliases: ['cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26']
-        }, {
-          denom: 'astro.cw20',
+          denom: 'deepstate',
           exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26',
-      base: 'ibc/8410580A4F5421DFDBD888212624591E92A9E3B5C87D3C58913CE16ABD98B9B4',
-      name: 'Astroport CW20 Token',
-      display: 'astro.cw20',
-      symbol: 'ASTRO.cw20',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq3exn26'
-          }
-        }],
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/astro-cw20.svg'
-        }, {
-          image_sync: {
-            chain_name: 'neutron',
-            base_denom: 'factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro'
-          },
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/astro.png'
-        }],
-      socials: {
-        website: 'https://astroport.fi/',
-        x: 'https://x.com/astroport_fi'
-      },
-      coingecko_id: 'astroport-fi'
-    },
-    {
-      description: 'Dinheiros is the reserve currency of dioalma.protocol, an undivisible and rare token.',
-      denom_units: [{
-          denom: 'ibc/47D772D7B46D7E19EAC59726BDEB1DE66D19DC1A2734EC02F10C38727A80818C',
-          exponent: 0,
-          aliases: ['cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k']
         }],
       type_asset: 'cw20',
-      address: 'terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
-      base: 'ibc/47D772D7B46D7E19EAC59726BDEB1DE66D19DC1A2734EC02F10C38727A80818C',
-      name: 'dinheiro',
-      display: 'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
-      symbol: 'DINHEIROS',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/A197DEBB4F8FFCE0B565620CE3ADF2121AF45FE4A334398C44B40B022D5B93A6',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
       logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
       },
       images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Dinheiros.png'
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
         }],
       traces: [{
           type: 'ibc-cw20',
           counterparty: {
             port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
             channel_id: 'channel-85',
-            base_denom: 'cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
             chain_name: 'terra2'
           },
           chain: {
             port: 'transfer',
             channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1spkm49wd9dqkranhrks4cupecl3rtgeqqljq3qrvrrts2ev2gw6sy5vz3k'
-          }
-        }]
-    },
-    {
-      description: 'Reis is the king of trading, high volume high liquidity, sibling of Dinheiros, Reis and Alem, a token of dioalma.protocol.',
-      denom_units: [{
-          denom: 'ibc/B19E942BC9E6FA56A66B5D3601D724CE6E2D61689D9E2BC8A0E9C6B0DEBF3D4E',
-          exponent: 0,
-          aliases: ['cw20:terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8']
-        }, {
-          denom: 'Reis',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8',
-      base: 'ibc/B19E942BC9E6FA56A66B5D3601D724CE6E2D61689D9E2BC8A0E9C6B0DEBF3D4E',
-      name: 'real',
-      display: 'Reis',
-      symbol: 'REIS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Reis.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Reis.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1sdglum2dt4f3fmq7jrt2phf2tegmnudc7qqqqujkpqcm9ujuxxkqakv5u8'
-          }
-        }]
-    },
-    {
-      description: 'Escudos is the everyday currency of dioalma.protocol, good to send money back and forward.',
-      denom_units: [{
-          denom: 'ibc/AAE2A5A0EB3A97DAC1CBFCD318B1402946E266D47E9DC29EB22A7A6784848E5A',
-          exponent: 0,
-          aliases: ['cw20:terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg']
-        }, {
-          denom: 'Escudos',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg',
-      base: 'ibc/AAE2A5A0EB3A97DAC1CBFCD318B1402946E266D47E9DC29EB22A7A6784848E5A',
-      name: 'escudo',
-      display: 'Escudos',
-      symbol: 'ESCUDOS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Escudos.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Escudos.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1qj5hs3e86qn4vm9dvtgtlkdp550r0rayk9wpay44mfw3gn3tr8nq5jw3dg'
-          }
-        }]
-    },
-    {
-      description: 'Alem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
-      denom_units: [{
-          denom: 'ibc/ED11A4C3C7090F571BA5918A7DC828CD4D84C62BB65819D2012FF528914070DF',
-          exponent: 0,
-          aliases: ['cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q']
-        }, {
-          denom: 'Alem',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q',
-      base: 'ibc/ED11A4C3C7090F571BA5918A7DC828CD4D84C62BB65819D2012FF528914070DF',
-      name: 'alentejo.money',
-      display: 'Alem',
-      symbol: 'ALEM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Alem.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Alem.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1cmf8ytutcwrjrv08zskj9phuh46a3w3nkjax7en4hxezsrdr58lqvzy05q'
-          }
-        }]
-    },
-    {
-      description: 'almagem is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
-      denom_units: [{
-          denom: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
-          exponent: 0,
-          aliases: ['cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40']
-        }, {
-          denom: 'AMG',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
-      base: 'ibc/48181F07E2926C34B576975F41A763C2DD8FAB72DDF767DB3E5C74D481702458',
-      name: 'almagem',
-      display: 'AMG',
-      symbol: 'AMG',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/almagem.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1en42e2vsvtdsvrcqg5s5e5e4djejjaed6fxmvtpweg3tu33h6k5qkg9c40'
-          }
-        }]
-    },
-    {
-      description: 'arika is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
-      denom_units: [{
-          denom: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
-          exponent: 0,
-          aliases: ['cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y']
-        }, {
-          denom: 'ARK',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
-      base: 'ibc/F2336F11762C81459BEE128F1E02D50451C9E323CFDD13A8EA0E16210B3DB21C',
-      name: 'arika',
-      display: 'ARK',
-      symbol: 'ARK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arika.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1ysd87nayjuelxj4wvp4wnp9as0mwszzkje6a9z6f3xx2903ghnsq4hm50y'
-          }
-        }]
-    },
-    {
-      description: 'danu is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
-      denom_units: [{
-          denom: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
-          exponent: 0,
-          aliases: ['cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr']
-        }, {
-          denom: 'DANU',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
-      base: 'ibc/78CAE7506E28750D3F4116B74531000B9D2535B6DF07FAD25179BB3ECCE4153E',
-      name: 'danu',
-      display: 'DANU',
-      symbol: 'DANU',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/danu.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1vj68f2ntauaj5dfvy5z4tq4we3hsyg363k63js5sae2t7th9aacqan89sr'
-          }
-        }]
-    },
-    {
-      description: 'torus is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
-      denom_units: [{
-          denom: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
-          exponent: 0,
-          aliases: ['cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7']
-        }, {
-          denom: 'TRS',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
-      base: 'ibc/129335060D0EA13A2712524AC6A8790549FC5CED7FEDF29643E54F9E92FDA121',
-      name: 'torus',
-      display: 'TRS',
-      symbol: 'TRS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/trs.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1swzpenwh39f8aa7qht34r05f8ew6k2vehvqt2aw4fjy0fgghhheqs9l6h7'
-          }
-        }]
-    },
-    {
-      description: 'plasma is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
-      denom_units: [{
-          denom: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
-          exponent: 0,
-          aliases: ['cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp']
-        }, {
-          denom: 'PLASMA',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
-      base: 'ibc/8E49ABB7B070F65D1F379BA521D873B29B65864F0791FCAFCA241EE23F854E30',
-      name: 'plasma',
-      display: 'PLASMA',
-      symbol: 'PLASMA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/plasma.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1mqs6mdx0ak7qvjzs6efhg65g4j5pzwpdkcgdsv5tpekln3qhggrq3qzvdp'
-          }
-        }]
-    },
-    {
-      description: 'dmt is one of the tokens of the seven families of dioalmaprotocol, alem almagem arika danu torus dmt plasma, all seven families use dinheiros reis and escudos, dioalma.protcol the currency of the seven seas.',
-      denom_units: [{
-          denom: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
-          exponent: 0,
-          aliases: ['cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf']
-        }, {
-          denom: 'DMT',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
-      base: 'ibc/12FC7AE39C50C1C8E394014E643845D64AA179EDEC34886D0447F86BE2997730',
-      name: 'dmt',
-      display: 'DMT',
-      symbol: 'DMT',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/dmt.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1xfkkgwxychgrnq0vcp82u32mecrzj8s64s03cxtmf46k6j2n2wssc7rzjf'
-          }
-        }]
-    },
-    {
-      description: 'ERIS liquid staked LUNA.',
-      type_asset: 'cw20',
-      address: 'terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct',
-      denom_units: [{
-          denom: 'ibc/0A37D33F8899D8A0AACC15AFF08172D9C0F7293DBCC059FF1CF914167BA31AB1',
-          exponent: 0,
-          aliases: ['cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct']
-        }, {
-          denom: 'ampluna',
-          exponent: 6
-        }],
-      base: 'ibc/0A37D33F8899D8A0AACC15AFF08172D9C0F7293DBCC059FF1CF914167BA31AB1',
-      name: 'ERIS Amplified LUNA',
-      display: 'ampluna',
-      symbol: 'ampLUNA',
-      coingecko_id: 'eris-amplified-luna',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ampluna.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct'
-          }
-        }]
-    },
-    {
-      description: 'Lion DAO is a community DAO that lives on the Terra blockchain with the mission to reactivate the LUNAtic community and showcase Terra protocols & tooling',
-      type_asset: 'cw20',
-      address: 'terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv',
-      denom_units: [{
-          denom: 'ibc/A5E2D0103694807198DEABB950B5C35862B2C37D2878B010023048472C6E1B3E',
-          exponent: 0,
-          aliases: ['cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv']
-        }, {
-          denom: 'roar',
-          exponent: 6
-        }],
-      base: 'ibc/A5E2D0103694807198DEABB950B5C35862B2C37D2878B010023048472C6E1B3E',
-      name: 'Lion DAO',
-      display: 'roar',
-      symbol: 'ROAR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/roar.png'
-      },
-      coingecko_id: 'lion-dao',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/roar.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv'
-          }
-        }]
-    },
-    {
-      description: 'GEM DAO, building a decentralized, community-owned, low-supply store of value',
-      type_asset: 'cw20',
-      address: 'terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv',
-      denom_units: [{
-          denom: 'ibc/F6D1588C844E2B17D64904F57940E46FF2316D25DAD4CAD882075FEDF570E5B0',
-          exponent: 0,
-          aliases: ['cw20:terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv']
-        }, {
-          denom: 'gem',
-          exponent: 6
-        }],
-      base: 'ibc/F6D1588C844E2B17D64904F57940E46FF2316D25DAD4CAD882075FEDF570E5B0',
-      name: 'GEM DAO',
-      display: 'gem',
-      symbol: 'GEM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gem.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gem.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1ynvsz80w9xmhdxucv96gkwpxlwvjgsq75xh2f3pf825c4wfmkfxskq6pqv'
-          }
-        }]
-    },
-    {
-      description: 'Lion Cub DAO is a useless meme community DAO on Terra',
-      type_asset: 'cw20',
-      address: 'terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t',
-      denom_units: [{
-          denom: 'ibc/92D104452291E203A20D098E3413904DA113CED1F70392E68ADDFD28AF88A614',
-          exponent: 0,
-          aliases: ['cw20:terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t']
-        }, {
-          denom: 'cub',
-          exponent: 6
-        }],
-      base: 'ibc/92D104452291E203A20D098E3413904DA113CED1F70392E68ADDFD28AF88A614',
-      name: 'Lion Cub DAO',
-      display: 'cub',
-      symbol: 'CUB',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/cub.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/cub.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1lalvk0r6nhruel7fvzdppk3tup3mh5j4d4eadrqzfhle4zrf52as58hh9t'
-          }
-        }]
-    },
-    {
-      description: 'BLUE CUB DAO is a community DAO on Terra',
-      type_asset: 'cw20',
-      address: 'terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584',
-      denom_units: [{
-          denom: 'ibc/22AE94FAFE985FE3F550CB44895981AF3BF143615CC2B0D31E871358C4EC9FB7',
-          exponent: 0,
-          aliases: ['cw20:terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584']
-        }, {
-          denom: 'blue',
-          exponent: 6
-        }],
-      base: 'ibc/22AE94FAFE985FE3F550CB44895981AF3BF143615CC2B0D31E871358C4EC9FB7',
-      name: 'BLUE CUB DAO',
-      display: 'blue',
-      symbol: 'BLUE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/blue.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/blue.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1gwrz9xzhqsygyr5asrgyq3pu0ewpn00mv2zenu86yvx2nlwpe8lqppv584'
-          }
-        }]
-    },
-    {
-      description: 'Liquidity token, NFT, HARVEST FOR VALUE',
-      type_asset: 'cw20',
-      address: 'terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn',
-      denom_units: [{
-          denom: 'ibc/AE0997DCCDA4F1E8104C8FE7F0FC9E3CF8D00FEE079582A8D9DB86B2EAA0B13C',
-          exponent: 0,
-          aliases: ['cw20:terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn']
-        }, {
-          denom: 'xxx',
-          exponent: 10
-        }],
-      base: 'ibc/AE0997DCCDA4F1E8104C8FE7F0FC9E3CF8D00FEE079582A8D9DB86B2EAA0B13C',
-      name: 'TheOnlyOne',
-      display: 'xxx',
-      symbol: 'xxx',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xxx3.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xxx3.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn'
-          }
-        }]
-    },
-    {
-      description: 'Just a meme coin on Terra',
-      type_asset: 'cw20',
-      address: 'terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces',
-      denom_units: [{
-          denom: 'ibc/43D49D784D779F548C14E9FBB3D2AA786AF1D92BC2B1ADDF8F66C1B339F6999B',
-          exponent: 0,
-          aliases: ['cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces']
-        }, {
-          denom: 'GUGU',
-          exponent: 6
-        }],
-      base: 'ibc/43D49D784D779F548C14E9FBB3D2AA786AF1D92BC2B1ADDF8F66C1B339F6999B',
-      name: 'GUGU',
-      display: 'GUGU',
-      symbol: 'GUGU',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/gugu.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra19nu4q2y0xe3vza6ve5ymup33uzm049pnrqq5ddeuulmrg279t57qstcces'
-          }
-        }]
-    },
-    {
-      description: 'BackBone Labs Liquid Staked LUNA',
-      type_asset: 'cw20',
-      address: 'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
-      denom_units: [{
-          denom: 'ibc/14B25BDFFBE4A0584A82BF439C9FB93DE74054F931E162264B530EB994B590EF',
-          exponent: 0,
-          aliases: ['cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml']
-        }, {
-          denom: 'bLUNA',
-          exponent: 6
-        }],
-      base: 'ibc/14B25BDFFBE4A0584A82BF439C9FB93DE74054F931E162264B530EB994B590EF',
-      name: 'BackBone Labs Liquid Staked LUNA',
-      display: 'bLUNA',
-      symbol: 'bLUNA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
-      },
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml'
-          }
-        }],
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bLUNA.png'
-        }]
-    },
-    {
-      description: 'Sayve is a revolutionary language learning app in the Web3 era that combines gamification, blockchain technology, and a Metaverse experience to motivate users to learn languages while earning rewards.',
-      type_asset: 'cw20',
-      address: 'terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3',
-      denom_units: [{
-          denom: 'ibc/C21B8AC361B2D52F4D49FBC87FAE8711B15A5779B7A07FF0DB8ABFBAF176E032',
-          exponent: 0,
-          aliases: ['cw20:terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3']
-        }, {
-          denom: 'sayve',
-          exponent: 6
-        }],
-      base: 'ibc/C21B8AC361B2D52F4D49FBC87FAE8711B15A5779B7A07FF0DB8ABFBAF176E032',
-      name: 'sayve',
-      display: 'sayve',
-      symbol: 'SAYVE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/sayve.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3'
-          }
-        }]
-    },
-    {
-      description: 'Nico Dao Money',
-      type_asset: 'cw20',
-      address: 'terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3',
-      denom_units: [{
-          denom: 'ibc/629BE9A0661493CBE5003E7C947DCCFC5580DC7DC5EE7D8137F33DE59F91C16D',
-          exponent: 0,
-          aliases: ['cw20:terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3']
-        }, {
-          denom: 'nico',
-          exponent: 18
-        }],
-      base: 'ibc/629BE9A0661493CBE5003E7C947DCCFC5580DC7DC5EE7D8137F33DE59F91C16D',
-      name: 'nico',
-      display: 'nico',
-      symbol: 'NICO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/nicodao.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/nicodao.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1e0efrrrj8d55pflme3dmtyuj7klzcef5cfmz6r2jyqz77kk2jz3qa6drg3'
-          }
-        }]
-    },
-    {
-      description: 'Sailing the Seas DAO is a community DAO built on Enterprise on Terra',
-      type_asset: 'cw20',
-      address: 'terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala',
-      denom_units: [{
-          denom: 'ibc/D6BD04B471AA8646B2FC04C2AFFB81CBB842D7981D79E6660A19366F0E6FDBD2',
-          exponent: 0,
-          aliases: ['cw20:terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala']
-        }, {
-          denom: 'seas',
-          exponent: 6
-        }],
-      base: 'ibc/D6BD04B471AA8646B2FC04C2AFFB81CBB842D7981D79E6660A19366F0E6FDBD2',
-      name: 'Sailing The SeaS DAO',
-      display: 'seas',
-      symbol: 'SEAS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/SEAS.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/SEAS.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1rc6ssp5rym7a0hg29xpj4cc9e67tl56kg5jyzgl9qrhfxxc2ugvsnrkala'
-          }
-        }]
-    },
-    {
-      description: 'A community DAO built on Enterprise',
-      type_asset: 'cw20',
-      address: 'terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v',
-      denom_units: [{
-          denom: 'ibc/05396CC34336345E4808487A2D46A068286AB8C183D916D76B9F934CFF4BCD1F',
-          exponent: 0,
-          aliases: ['cw20:terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v']
-        }, {
-          denom: 'bitz',
-          exponent: 6
-        }],
-      base: 'ibc/05396CC34336345E4808487A2D46A068286AB8C183D916D76B9F934CFF4BCD1F',
-      name: 'BitzDAO',
-      display: 'bitz',
-      symbol: 'BITZ',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/BITZ.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/BITZ.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra18vp5s0r7keezm35hdxsgw8zgfnyn8wejdkk893ag2kqncgpqxhjqwjpc0v'
-          }
-        }]
-    },
-    {
-      description: 'SEUL DAO',
-      type_asset: 'cw20',
-      address: 'terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l',
-      denom_units: [{
-          denom: 'ibc/79ECA328D8F12F9CD15ED7C4897230CF09580FBEC87F5759DBA384A69F9FE0DD',
-          exponent: 0,
-          aliases: ['cw20:terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l']
-        }, {
-          denom: 'seul',
-          exponent: 6
-        }],
-      base: 'ibc/79ECA328D8F12F9CD15ED7C4897230CF09580FBEC87F5759DBA384A69F9FE0DD',
-      name: 'seul',
-      display: 'seul',
-      symbol: 'SEUL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/seul.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/seul.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra13s5pxw5j2p4ssvzwvxd8l7h30vke8vjgtng75vqgv6p9vddfk3hskfka0l'
-          }
-        }]
-    },
-    {
-      description: 'SEUL DAO',
-      type_asset: 'cw20',
-      address: 'terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5',
-      denom_units: [{
-          denom: 'ibc/DE801496DE32B83400D67378F4BA797A544EB3EE4290D123460784B30175D6D2',
-          exponent: 0,
-          aliases: ['cw20:terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5']
-        }, {
-          denom: 'xseul',
-          exponent: 6
-        }],
-      base: 'ibc/DE801496DE32B83400D67378F4BA797A544EB3EE4290D123460784B30175D6D2',
-      name: 'xseul',
-      display: 'xseul',
-      symbol: 'xSEUL',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xseul.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/xseul.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1q328gl40az3cf9x67cgudn8e8w2az9vsmhtkwsgdu7a43rhy5caqc82yr5'
-          }
-        }]
-    },
-    {
-      description: 'ITO DAO',
-      type_asset: 'cw20',
-      address: 'terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s',
-      denom_units: [{
-          denom: 'ibc/D470DA9DE1DFDB4BA83AD494D691C949255F5D690F361F90BD9650FEA1ECE03F',
-          exponent: 0,
-          aliases: ['cw20:terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s']
-        }, {
-          denom: 'ito',
-          exponent: 6
-        }],
-      base: 'ibc/D470DA9DE1DFDB4BA83AD494D691C949255F5D690F361F90BD9650FEA1ECE03F',
-      name: 'ito',
-      display: 'ito',
-      symbol: 'ITO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/I.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/I.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1c77xqv746m7ghxayrge79dxr4kcezev8g6cnrfled4f3n4ufj0vs5gz28s'
-          }
-        }]
-    },
-    {
-      description: 'Chris Armani Token',
-      type_asset: 'cw20',
-      address: 'terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8',
-      denom_units: [{
-          denom: 'ibc/7D15BE6B6EFAFE8BA7714399BCD7B0C9E4738446F3A2274F57B98CAAF0244945',
-          exponent: 0,
-          aliases: ['cw20:terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8']
-        }, {
-          denom: 'ARMANI',
-          exponent: 6
-        }],
-      base: 'ibc/7D15BE6B6EFAFE8BA7714399BCD7B0C9E4738446F3A2274F57B98CAAF0244945',
-      name: 'ARMANI',
-      display: 'ARMANI',
-      symbol: 'ARMANI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/armani.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/armani.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1aa7stl3fytvave9xtcexgv0kne4k7ks068dcljkrfj37hy8q270sjadav8'
-          }
-        }]
-    },
-    {
-      description: 'useless meme coin',
-      type_asset: 'cw20',
-      address: 'terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun',
-      denom_units: [{
-          denom: 'ibc/6998D3A13400D9D816517F3809BE63DE2F947339B83D110842C6CCECCA1C6200',
-          exponent: 0,
-          aliases: ['cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun']
-        }, {
-          denom: 'DROGO',
-          exponent: 6
-        }],
-      base: 'ibc/6998D3A13400D9D816517F3809BE63DE2F947339B83D110842C6CCECCA1C6200',
-      name: 'DROGO',
-      display: 'DROGO',
-      symbol: 'DROGO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/drogo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/drogo.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun'
-          }
-        }]
-    },
-    {
-      description: 'ado the flower of night',
-      type_asset: 'cw20',
-      address: 'terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu',
-      denom_units: [{
-          denom: 'ibc/DF5B633763109623079D70726116A7EEBDE02C40AB3616A23666DA02F7A5744A',
-          exponent: 0,
-          aliases: ['cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu']
-        }, {
-          denom: 'ADO',
-          exponent: 6
-        }],
-      base: 'ibc/DF5B633763109623079D70726116A7EEBDE02C40AB3616A23666DA02F7A5744A',
-      name: 'ADO',
-      display: 'ADO',
-      symbol: 'ADO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/ADO.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1w8xk6rtu40st6lvl3yv7ynw5urm2n686u9cchvrzltmnktzwdesqcwy0nu'
-          }
-        }]
-    },
-    {
-      description: 'DNA DAO',
-      type_asset: 'cw20',
-      address: 'terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h',
-      denom_units: [{
-          denom: 'ibc/B6EE099850A8CAB9FCB8F993BCDA4C7D42810F2C001D90324056588216D93DAB',
-          exponent: 0,
-          aliases: ['cw20:terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h']
-        }, {
-          denom: 'DNA',
-          exponent: 6
-        }],
-      base: 'ibc/B6EE099850A8CAB9FCB8F993BCDA4C7D42810F2C001D90324056588216D93DAB',
-      name: 'DNA',
-      display: 'DNA',
-      symbol: 'DNA',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/DNA.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/DNA.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1epka8wevu90rxlvt6g5x9veevd800a760vtuftc5kqdfmrh47qds9f0m8h'
-          }
-        }]
-    },
-    {
-      description: 'Bitmos opens doors for BRC20 tokens to thrive alongside established players in the Cosmos Network, revolutionizing decentralized finance (DeFi) for all.',
-      type_asset: 'cw20',
-      address: 'terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq',
-      denom_units: [{
-          denom: 'ibc/1EF209B460FB285206D740F35B0B499B5FC4FB19CF92DEFC2574B29869EE7DEE',
-          exponent: 0,
-          aliases: ['cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq']
-        }, {
-          denom: 'bitmos',
-          exponent: 6
-        }],
-      base: 'ibc/1EF209B460FB285206D740F35B0B499B5FC4FB19CF92DEFC2574B29869EE7DEE',
-      name: 'Bitmos',
-      display: 'bitmos',
-      symbol: 'BMOS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/bitmos.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1sxe8u2hjczlekwfkcq0rs28egt38pg3wqzfx4zcrese4fnvzzupsk9gjkq'
-          }
-        }]
-    },
-    {
-      type_asset: 'cw20',
-      address: 'terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
-      denom_units: [{
-          denom: 'ibc/B8078FAE3418D6E03945D35461C592261479193BB918FC5F278AA7EEC6A629BC',
-          exponent: 0,
-          aliases: ['cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj']
-        }, {
-          denom: 'lads',
-          exponent: 6
-        }],
-      base: 'ibc/B8078FAE3418D6E03945D35461C592261479193BB918FC5F278AA7EEC6A629BC',
-      name: 'LADS',
-      display: 'lads',
-      symbol: 'LADS',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/LADS.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1eh8eq60cjy997w5dc3a6exfzanlaurupav8klx7m9u9ddfgh25mqjwl5vj'
-          }
-        }]
-    },
-    {
-      description: 'ClonEliteFund invests in Cosmos ecosystem projects, focusing on scalability, security, and interoperability to maximize returns.',
-      type_asset: 'cw20',
-      address: 'terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
-      denom_units: [{
-          denom: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
-          exponent: 0,
-          aliases: ['cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2']
-        }, {
-          denom: 'CLON',
-          exponent: 6
-        }],
-      base: 'ibc/CBD4AB7EA218D56F69E3440359392D2EFA0F46C9DD5BE145C36CA36D699A8827',
-      name: 'CLON',
-      display: 'CLON',
-      symbol: 'CLON',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/clon1.png'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2'
-          }
-        }]
-    },
-    {
-      description: 'ERIS Arbitrage LUNA',
-      type_asset: 'cw20',
-      address: 'terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
-      denom_units: [{
-          denom: 'ibc/45F81F8C67A457FE02E8C6E50CA15EE46C915274EFF13E7FEEB248617718F6A0',
-          exponent: 0,
-          aliases: ['cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490']
-        }, {
-          denom: 'arbLUNA',
-          exponent: 6
-        }],
-      base: 'ibc/45F81F8C67A457FE02E8C6E50CA15EE46C915274EFF13E7FEEB248617718F6A0',
-      name: 'ERIS Arb LUNA',
-      display: 'arbLUNA',
-      symbol: 'arbLUNA',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
-      },
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/arbluna.svg'
-        }],
-      coingecko_id: 'eris-arbitrage-luna',
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490'
-          }
-        }]
-    },
-    {
-      description: 'SOLID is the Terra native overcollateralized USD stablecoin, powered by SOLID',
-      denom_units: [{
-          denom: 'ibc/87FAB4A0CE17C2B57830EDCF01C43C806B91AD7D0DCF2282D077C783FEA33C18',
-          exponent: 0,
-          aliases: ['cw20:terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst']
-        }, {
-          denom: 'solid',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst',
-      base: 'ibc/87FAB4A0CE17C2B57830EDCF01C43C806B91AD7D0DCF2282D077C783FEA33C18',
-      name: 'Solid',
-      display: 'solid',
-      symbol: 'SOLID',
-      coingecko_id: 'solid-2',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/solid.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst'
-          }
-        }]
-    },
-    {
-      description: 'CAPA is the governance token of SOLID ecosystem, powered by SOLID',
-      denom_units: [{
-          denom: 'ibc/395A4E2FC7CD9CB28FEBF5B746269275D01D64DFF9E1919D1498C99EBF74073B',
-          exponent: 0,
-          aliases: ['cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar']
-        }, {
-          denom: 'capa',
-          exponent: 6
-        }],
-      type_asset: 'cw20',
-      address: 'terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar',
-      base: 'ibc/395A4E2FC7CD9CB28FEBF5B746269275D01D64DFF9E1919D1498C99EBF74073B',
-      name: 'Capa',
-      display: 'capa',
-      symbol: 'CAPA',
-      coingecko_id: 'capapult',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/Capapult.svg'
-        }],
-      traces: [{
-          type: 'ibc-cw20',
-          counterparty: {
-            port: 'wasm.terra1d90p5lacfxnqgjxjupu234lxnxyeu8fdeef4d0e0nqy3p30r7gss4myn9x',
-            channel_id: 'channel-85',
-            base_denom: 'cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar',
-            chain_name: 'terra2'
-          },
-          chain: {
-            port: 'transfer',
-            channel_id: 'channel-559',
-            path: 'transfer/channel-559/cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar'
+            path: 'transfer/channel-559/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
           }
         }]
     }

@@ -921,44 +921,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Int3face blockchain native token',
-      denom_units: [{
-          denom: 'ibc/BEA8D1B409C69D97E20D4BAFBB7EE72580746EA068127C0B43C3B7991759D1B6',
-          exponent: 0,
-          aliases: ['uint3']
-        }, {
-          denom: 'int3',
-          exponent: 6
-        }],
-      base: 'ibc/BEA8D1B409C69D97E20D4BAFBB7EE72580746EA068127C0B43C3B7991759D1B6',
-      name: 'Int3face Token',
-      display: 'int3',
-      symbol: 'INT3',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-        }],
-      socials: {
-        website: 'https://int3face.zone/',
-        x: 'https://x.com/_Bitfrost_'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uint3',
-            chain_name: 'int3face'
-          },
-          chain: {
-            channel_id: 'channel-6455',
-            path: 'transfer/channel-6455/uint3'
-          }
-        }]
-    },
-    {
       description: 'The native token of JUNO Chain',
       denom_units: [{
           denom: 'ibc/AB73A0D964FCE74EA9D7695553A1EA4B3D8E332571B049E8CC0ADEBFB4931503',
@@ -2172,44 +2134,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-60',
             path: 'transfer/channel-60/inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv'
-          }
-        }]
-    },
-    {
-      description: 'Int3face blockchain native token',
-      denom_units: [{
-          denom: 'ibc/BEA8D1B409C69D97E20D4BAFBB7EE72580746EA068127C0B43C3B7991759D1B6',
-          exponent: 0,
-          aliases: ['uint3']
-        }, {
-          denom: 'int3',
-          exponent: 6
-        }],
-      base: 'ibc/BEA8D1B409C69D97E20D4BAFBB7EE72580746EA068127C0B43C3B7991759D1B6',
-      name: 'Int3face Token',
-      display: 'int3',
-      symbol: 'INT3',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/int3face/images/int3.png'
-        }],
-      socials: {
-        website: 'https://int3face.zone/',
-        x: 'https://x.com/_Bitfrost_'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-1',
-            base_denom: 'uint3',
-            chain_name: 'int3face'
-          },
-          chain: {
-            channel_id: 'channel-6455',
-            path: 'transfer/channel-6455/uint3'
           }
         }]
     },
@@ -5919,6 +5843,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/441B23DFF6A7AC7A412F41B77E647F1C57C1969CCFAA49363D5F605ED7509E48',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/441B23DFF6A7AC7A412F41B77E647F1C57C1969CCFAA49363D5F605ED7509E48',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1jhfjnm39y3nn9l4520mdn4k5mw23nz0674c4gsvyrcr90z9tqcvst22fce',
+            channel_id: 'channel-167',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-5',
+            path: 'transfer/channel-5/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
+          }
+        }]
+    },
+    {
       description: 'The native token cw20 for SIENNA on Secret Network',
       denom_units: [{
           denom: 'ibc/F34BB6D8DC5B8EB308690D47C1E139A2B832B089575B145AC0030454528F9D04',
@@ -7739,6 +7700,43 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-5',
             path: 'transfer/channel-5/cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar'
+          }
+        }]
+    },
+    {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/441B23DFF6A7AC7A412F41B77E647F1C57C1969CCFAA49363D5F605ED7509E48',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/441B23DFF6A7AC7A412F41B77E647F1C57C1969CCFAA49363D5F605ED7509E48',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1jhfjnm39y3nn9l4520mdn4k5mw23nz0674c4gsvyrcr90z9tqcvst22fce',
+            channel_id: 'channel-167',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-5',
+            path: 'transfer/channel-5/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
           }
         }]
     }

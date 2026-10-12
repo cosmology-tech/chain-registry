@@ -67,20 +67,34 @@ const info: Chain = {
       png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mucoin/images/mucoin.png'
     }],
   apis: {
-    rpc: [{
+    rpc: [
+      {
         address: 'https://rpc.mucoin.org',
         provider: 'MuCoin'
-      }, {
+      },
+      {
         address: 'https://rpc.nodesafe-app.xyz/mucoin/',
         provider: 'NodeSafe'
-      }],
-    rest: [{
+      },
+      {
+        address: 'https://rpc-mucoin.onenov.xyz',
+        provider: 'OneNov'
+      }
+    ],
+    rest: [
+      {
         address: 'https://rest.mucoin.org',
         provider: 'MuCoin'
-      }, {
+      },
+      {
         address: 'https://api.nodesafe-app.xyz/mucoin',
         provider: 'NodeSafe'
-      }],
+      },
+      {
+        address: 'https://api-mucoin.onenov.xyz',
+        provider: 'OneNov'
+      }
+    ],
     grpc: [{
         address: 'grpc-mucoin.nodesafe-app.xyz:443',
         provider: 'NodeSafe'
@@ -89,6 +103,9 @@ const info: Chain = {
   explorers: [{
       kind: 'NodeSafe',
       url: 'https://explorer.nodesafe-app.xyz/mucoin/staking'
+    }, {
+      kind: 'UTSA Explorer',
+      url: 'https://explorer.utsa.tech/networks/mucoin-mainnet'
     }]
 };
 export default info;

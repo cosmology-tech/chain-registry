@@ -2009,6 +2009,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/69592468CB144DC4E4756B51335A581104845E37895CB88DCEA49585865A026C',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/69592468CB144DC4E4756B51335A581104845E37895CB88DCEA49585865A026C',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-41',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-16',
+            path: 'transfer/channel-16/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
+          }
+        }]
+    },
+    {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
       denom_units: [{
           denom: 'ibc/768903789BCBE018F25174371F0EC4F2173DD0B098E731D7344B00FB98EDE307',
@@ -3355,6 +3392,43 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-16',
             path: 'transfer/channel-16/cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar'
+          }
+        }]
+    },
+    {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/69592468CB144DC4E4756B51335A581104845E37895CB88DCEA49585865A026C',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/69592468CB144DC4E4756B51335A581104845E37895CB88DCEA49585865A026C',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-41',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-16',
+            path: 'transfer/channel-16/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
           }
         }]
     }

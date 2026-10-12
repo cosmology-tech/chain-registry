@@ -5,7 +5,6 @@ import * as _namada from './namada';
 import * as _penumbra from './penumbra';
 import * as _solana from './solana';
 import * as _aaronetwork from './aaronetwork';
-import * as _acrechain from './acrechain';
 import * as _agoric from './agoric';
 import * as _aioz from './aioz';
 import * as _akash from './akash';
@@ -26,8 +25,8 @@ import * as _bitbadges from './bitbadges';
 import * as _bitcanna from './bitcanna';
 import * as _bitsong from './bitsong';
 import * as _bitway from './bitway';
+import * as _blg24 from './blg24';
 import * as _bluzelle from './bluzelle';
-import * as _bostrom from './bostrom';
 import * as _canto from './canto';
 import * as _carbon from './carbon';
 import * as _celestia from './celestia';
@@ -35,7 +34,6 @@ import * as _chain4energy from './chain4energy';
 import * as _cheqd from './cheqd';
 import * as _chihuahua from './chihuahua';
 import * as _cifer from './cifer';
-import * as _comdex from './comdex';
 import * as _composable from './composable';
 import * as _conscious from './conscious';
 import * as _coreum from './coreum';
@@ -50,9 +48,7 @@ import * as _doravota from './doravota';
 import * as _dungeon from './dungeon';
 import * as _dydx from './dydx';
 import * as _dymension from './dymension';
-import * as _dyson from './dyson';
 import * as _echelon from './echelon';
-import * as _emoney from './emoney';
 import * as _empowerchain from './empowerchain';
 import * as _epix from './epix';
 import * as _fandomchain from './fandomchain';
@@ -75,14 +71,12 @@ import * as _impacthub from './impacthub';
 import * as _imversed from './imversed';
 import * as _initia from './initia';
 import * as _injective from './injective';
-import * as _int3face from './int3face';
 import * as _intento from './intento';
 import * as _irisnet from './irisnet';
 import * as _jackal from './jackal';
 import * as _joltify from './joltify';
 import * as _juno from './juno';
 import * as _kava from './kava';
-import * as _kichain from './kichain';
 import * as _kimanetwork from './kimanetwork';
 import * as _konstellation from './konstellation';
 import * as _kopi from './kopi';
@@ -113,7 +107,6 @@ import * as _nolus from './nolus';
 import * as _nomic from './nomic';
 import * as _nvnmchain from './nvnmchain';
 import * as _nyx from './nyx';
-import * as _odin from './odin';
 import * as _okexchain from './okexchain';
 import * as _optio from './optio';
 import * as _oraichain from './oraichain';
@@ -129,11 +122,9 @@ import * as _pundix from './pundix';
 import * as _pylons from './pylons';
 import * as _qfs from './qfs';
 import * as _qie from './qie';
-import * as _quasar from './quasar';
 import * as _quicksilver from './quicksilver';
 import * as _qwoyn from './qwoyn';
 import * as _realio from './realio';
-import * as _rebus from './rebus';
 import * as _regen from './regen';
 import * as _ritbit from './ritbit';
 import * as _rizon from './rizon';
@@ -154,7 +145,6 @@ import * as _sifchain from './sifchain';
 import * as _sommelier from './sommelier';
 import * as _source from './source';
 import * as _sovr from './sovr';
-import * as _stafihub from './stafihub';
 import * as _stratos from './stratos';
 import * as _stride from './stride';
 import * as _sunrise from './sunrise';
@@ -183,7 +173,6 @@ const ibc: IBCInfo[] = [
   ..._penumbra.ibc,
   ..._solana.ibc,
   ..._aaronetwork.ibc,
-  ..._acrechain.ibc,
   ..._agoric.ibc,
   ..._aioz.ibc,
   ..._akash.ibc,
@@ -204,8 +193,8 @@ const ibc: IBCInfo[] = [
   ..._bitcanna.ibc,
   ..._bitsong.ibc,
   ..._bitway.ibc,
+  ..._blg24.ibc,
   ..._bluzelle.ibc,
-  ..._bostrom.ibc,
   ..._canto.ibc,
   ..._carbon.ibc,
   ..._celestia.ibc,
@@ -213,7 +202,6 @@ const ibc: IBCInfo[] = [
   ..._cheqd.ibc,
   ..._chihuahua.ibc,
   ..._cifer.ibc,
-  ..._comdex.ibc,
   ..._composable.ibc,
   ..._conscious.ibc,
   ..._coreum.ibc,
@@ -228,9 +216,7 @@ const ibc: IBCInfo[] = [
   ..._dungeon.ibc,
   ..._dydx.ibc,
   ..._dymension.ibc,
-  ..._dyson.ibc,
   ..._echelon.ibc,
-  ..._emoney.ibc,
   ..._empowerchain.ibc,
   ..._epix.ibc,
   ..._fandomchain.ibc,
@@ -253,14 +239,12 @@ const ibc: IBCInfo[] = [
   ..._imversed.ibc,
   ..._initia.ibc,
   ..._injective.ibc,
-  ..._int3face.ibc,
   ..._intento.ibc,
   ..._irisnet.ibc,
   ..._jackal.ibc,
   ..._joltify.ibc,
   ..._juno.ibc,
   ..._kava.ibc,
-  ..._kichain.ibc,
   ..._kimanetwork.ibc,
   ..._konstellation.ibc,
   ..._kopi.ibc,
@@ -291,7 +275,6 @@ const ibc: IBCInfo[] = [
   ..._nomic.ibc,
   ..._nvnmchain.ibc,
   ..._nyx.ibc,
-  ..._odin.ibc,
   ..._okexchain.ibc,
   ..._optio.ibc,
   ..._oraichain.ibc,
@@ -307,11 +290,9 @@ const ibc: IBCInfo[] = [
   ..._pylons.ibc,
   ..._qfs.ibc,
   ..._qie.ibc,
-  ..._quasar.ibc,
   ..._quicksilver.ibc,
   ..._qwoyn.ibc,
   ..._realio.ibc,
-  ..._rebus.ibc,
   ..._regen.ibc,
   ..._ritbit.ibc,
   ..._rizon.ibc,
@@ -332,7 +313,6 @@ const ibc: IBCInfo[] = [
   ..._sommelier.ibc,
   ..._source.ibc,
   ..._sovr.ibc,
-  ..._stafihub.ibc,
   ..._stratos.ibc,
   ..._stride.ibc,
   ..._sunrise.ibc,

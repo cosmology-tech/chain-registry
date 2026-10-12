@@ -614,6 +614,42 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The native token of the Internet of Impacts of inter-connected networks, powered by IXO Protocol blockchains.',
+      denom_units: [{
+          denom: 'ibc/1F95679892CA5401ACBEAB34837D7A5CA5C1F674AE5EF22E085D2AE995A18D5E',
+          exponent: 0,
+          aliases: ['uixo']
+        }, {
+          denom: 'ixo',
+          exponent: 6
+        }],
+      base: 'ibc/1F95679892CA5401ACBEAB34837D7A5CA5C1F674AE5EF22E085D2AE995A18D5E',
+      name: 'IXO',
+      display: 'ixo',
+      symbol: 'IXO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-31',
+            base_denom: 'uixo',
+            chain_name: 'impacthub'
+          },
+          chain: {
+            channel_id: 'channel-502',
+            path: 'transfer/channel-502/uixo'
+          }
+        }]
+    },
+    {
       description: 'The native token of Initia',
       denom_units: [{
           denom: 'ibc/340FC25880AE8ADFB8062D3D177704C49EEEAC1AF908C902DF7A14E6FE996DE4',
@@ -1222,6 +1258,42 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-183',
             path: 'transfer/channel-183/uworm'
+          }
+        }]
+    },
+    {
+      description: 'The native token of the Internet of Impacts of inter-connected networks, powered by IXO Protocol blockchains.',
+      denom_units: [{
+          denom: 'ibc/1F95679892CA5401ACBEAB34837D7A5CA5C1F674AE5EF22E085D2AE995A18D5E',
+          exponent: 0,
+          aliases: ['uixo']
+        }, {
+          denom: 'ixo',
+          exponent: 6
+        }],
+      base: 'ibc/1F95679892CA5401ACBEAB34837D7A5CA5C1F674AE5EF22E085D2AE995A18D5E',
+      name: 'IXO',
+      display: 'ixo',
+      symbol: 'IXO',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
+        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.png',
+          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/impacthub/images/ixo.svg'
+        }],
+      type_asset: 'sdk.coin',
+      traces: [{
+          type: 'ibc',
+          counterparty: {
+            channel_id: 'channel-31',
+            base_denom: 'uixo',
+            chain_name: 'impacthub'
+          },
+          chain: {
+            channel_id: 'channel-502',
+            path: 'transfer/channel-502/uixo'
           }
         }]
     },
@@ -2191,195 +2263,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-148',
             path: 'transfer/channel-148/uusdn'
-          }
-        }]
-    },
-    {
-      description: 'ODIN is the Staking and governance token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/6ED95AEFA5D9A6F9EF9CDD05FED7D7C9D7F42D9892E7236EB9B251CE9E999701',
-          exponent: 0,
-          aliases: ['loki']
-        }, {
-          denom: 'odin',
-          exponent: 6
-        }],
-      base: 'ibc/6ED95AEFA5D9A6F9EF9CDD05FED7D7C9D7F42D9892E7236EB9B251CE9E999701',
-      name: 'ODIN',
-      display: 'odin',
-      symbol: 'ODIN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-        }],
-      socials: {
-        website: 'https://odinprotocol.io/',
-        x: 'https://x.com/odinprotocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'loki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/loki'
-          }
-        }]
-    },
-    {
-      description: 'GEO token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/8E4953E506CF135A3ACDF6D6556ED1DB4F6A749F3910D2B4A77E2E851C4B2638',
-          exponent: 0,
-          aliases: ['mGeo']
-        }, {
-          denom: 'geo',
-          exponent: 6
-        }],
-      base: 'ibc/8E4953E506CF135A3ACDF6D6556ED1DB4F6A749F3910D2B4A77E2E851C4B2638',
-      name: 'GEO',
-      display: 'geo',
-      symbol: 'GEO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'mGeo',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/mGeo'
-          }
-        }]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [{
-          denom: 'ibc/EA7CE127E1CFD7822AD169019CAFDD63D0F5A278DCE974F438099BF16C99FB8B',
-          exponent: 0,
-          aliases: ['udoki']
-        }, {
-          denom: 'doki',
-          exponent: 6
-        }],
-      base: 'ibc/EA7CE127E1CFD7822AD169019CAFDD63D0F5A278DCE974F438099BF16C99FB8B',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }],
-      socials: {
-        website: 'https://dokicoin.io/',
-        x: 'https://x.com/doki_coin'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'udoki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/udoki'
-          }
-        }]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [{
-          denom: 'ibc/48D1DA9AA68C949E27BAB39B409681292035ABF63EAB663017C7BEF98A3D118E',
-          exponent: 0,
-          aliases: ['umyrk']
-        }, {
-          denom: 'myrk',
-          exponent: 6
-        }],
-      base: 'ibc/48D1DA9AA68C949E27BAB39B409681292035ABF63EAB663017C7BEF98A3D118E',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-        }],
-      socials: {
-        x: 'https://x.com/myrkweilds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'umyrk',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/umyrk'
-          }
-        }]
-    },
-    {
-      description: 'O9W token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/AA206C13A2AD46401BD1E8E65F96EC9BF86051A8156A92DD08BEF70381D39CE2',
-          exponent: 0,
-          aliases: ['mO9W']
-        }, {
-          denom: 'O9W',
-          exponent: 6
-        }],
-      base: 'ibc/AA206C13A2AD46401BD1E8E65F96EC9BF86051A8156A92DD08BEF70381D39CE2',
-      name: 'O9W',
-      display: 'O9W',
-      symbol: 'O9W',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }],
-      socials: {
-        website: 'https://www.odin9worlds.io/',
-        x: 'https://x.com/odin9worlds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'mO9W',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/mO9W'
           }
         }]
     },
@@ -5019,195 +4902,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-148',
             path: 'transfer/channel-148/uusdn'
-          }
-        }]
-    },
-    {
-      description: 'ODIN is the Staking and governance token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/6ED95AEFA5D9A6F9EF9CDD05FED7D7C9D7F42D9892E7236EB9B251CE9E999701',
-          exponent: 0,
-          aliases: ['loki']
-        }, {
-          denom: 'odin',
-          exponent: 6
-        }],
-      base: 'ibc/6ED95AEFA5D9A6F9EF9CDD05FED7D7C9D7F42D9892E7236EB9B251CE9E999701',
-      name: 'ODIN',
-      display: 'odin',
-      symbol: 'ODIN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-        }],
-      socials: {
-        website: 'https://odinprotocol.io/',
-        x: 'https://x.com/odinprotocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'loki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/loki'
-          }
-        }]
-    },
-    {
-      description: 'GEO token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/8E4953E506CF135A3ACDF6D6556ED1DB4F6A749F3910D2B4A77E2E851C4B2638',
-          exponent: 0,
-          aliases: ['mGeo']
-        }, {
-          denom: 'geo',
-          exponent: 6
-        }],
-      base: 'ibc/8E4953E506CF135A3ACDF6D6556ED1DB4F6A749F3910D2B4A77E2E851C4B2638',
-      name: 'GEO',
-      display: 'geo',
-      symbol: 'GEO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'mGeo',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/mGeo'
-          }
-        }]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [{
-          denom: 'ibc/EA7CE127E1CFD7822AD169019CAFDD63D0F5A278DCE974F438099BF16C99FB8B',
-          exponent: 0,
-          aliases: ['udoki']
-        }, {
-          denom: 'doki',
-          exponent: 6
-        }],
-      base: 'ibc/EA7CE127E1CFD7822AD169019CAFDD63D0F5A278DCE974F438099BF16C99FB8B',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }],
-      socials: {
-        website: 'https://dokicoin.io/',
-        x: 'https://x.com/doki_coin'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'udoki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/udoki'
-          }
-        }]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [{
-          denom: 'ibc/48D1DA9AA68C949E27BAB39B409681292035ABF63EAB663017C7BEF98A3D118E',
-          exponent: 0,
-          aliases: ['umyrk']
-        }, {
-          denom: 'myrk',
-          exponent: 6
-        }],
-      base: 'ibc/48D1DA9AA68C949E27BAB39B409681292035ABF63EAB663017C7BEF98A3D118E',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-        }],
-      socials: {
-        x: 'https://x.com/myrkweilds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'umyrk',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/umyrk'
-          }
-        }]
-    },
-    {
-      description: 'O9W token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/AA206C13A2AD46401BD1E8E65F96EC9BF86051A8156A92DD08BEF70381D39CE2',
-          exponent: 0,
-          aliases: ['mO9W']
-        }, {
-          denom: 'O9W',
-          exponent: 6
-        }],
-      base: 'ibc/AA206C13A2AD46401BD1E8E65F96EC9BF86051A8156A92DD08BEF70381D39CE2',
-      name: 'O9W',
-      display: 'O9W',
-      symbol: 'O9W',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }],
-      socials: {
-        website: 'https://www.odin9worlds.io/',
-        x: 'https://x.com/odin9worlds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'mO9W',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-214',
-            path: 'transfer/channel-214/mO9W'
           }
         }]
     },

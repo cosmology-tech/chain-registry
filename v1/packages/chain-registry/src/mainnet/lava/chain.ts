@@ -156,6 +156,10 @@ const info: Chain = {
       {
         address: 'https://lava-rpc.polkachu.com:443',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://lava-mainnet-rpc.crouton.digital',
+        provider: 'Crouton Digital'
       }
     ],
     rest: [
@@ -238,6 +242,10 @@ const info: Chain = {
       {
         address: 'https://lava-api.polkachu.com',
         provider: 'Polkachu'
+      },
+      {
+        address: 'https://lava-mainnet-api.crouton.digital',
+        provider: 'Crouton Digital'
       }
     ],
     grpc: [
@@ -300,6 +308,10 @@ const info: Chain = {
       {
         address: 'lava-grpc.polkachu.com:19990',
         provider: 'Polkachu'
+      },
+      {
+        address: 'lava-mainnet-grpc.crouton.digital:29190',
+        provider: 'Crouton Digital'
       }
     ]
   },
@@ -369,6 +381,12 @@ const info: Chain = {
       url: 'https://moon-runners.net/lava/mainnet',
       tx_page: 'https://moon-runners.net/lava/mainnet/finder?search=${txHash}',
       account_page: 'https://moon-runners.net/lava/mainnet/finder?search=${accountAddress}'
+    },
+    {
+      kind: 'Crouton Digital',
+      url: 'https://explorer.crouton.digital/mainnets/lava/overview',
+      tx_page: 'https://explorer.crouton.digital/mainnets/lava/transactions/${txHash}',
+      account_page: 'https://explorer.crouton.digital/mainnets/lava/account/${accountAddress}'
     }
   ],
   keywords: [
@@ -387,6 +405,11 @@ const info: Chain = {
       compression: 'lz4',
       checksum_available: false,
       provider: 'Polkachu'
+    }, {
+      provider: 'Crouton Digital',
+      url: 'https://storage.crouton.digital/mainnet/lava/snapshots/lava_latest.tar.lz4',
+      type: 'pruned',
+      compression: 'lz4'
     }]
 };
 export default info;

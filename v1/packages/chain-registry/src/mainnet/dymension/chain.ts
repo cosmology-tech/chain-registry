@@ -161,6 +161,10 @@ const info: Chain = {
       {
         address: 'https://rollapp.rpc.cumulo.com.es',
         provider: 'Cumulo'
+      },
+      {
+        address: 'https://dymension-mainnet-rpc.crouton.digital',
+        provider: 'Crouton Digital'
       }
     ],
     rest: [
@@ -275,6 +279,10 @@ const info: Chain = {
       {
         address: 'https://rollapp.rest.cumulo.com.es',
         provider: 'Cumulo'
+      },
+      {
+        address: 'https://dymension-mainnet-api.crouton.digital',
+        provider: 'Crouton Digital'
       }
     ],
     grpc: [
@@ -369,6 +377,10 @@ const info: Chain = {
       {
         address: 'https://rollapp.grpc.cumulo.com.es',
         provider: 'Cumulo'
+      },
+      {
+        address: 'dymension-mainnet-grpc.crouton.digital:20590',
+        provider: 'Crouton Digital'
       }
     ],
     "evm-http-jsonrpc": [
@@ -490,6 +502,12 @@ const info: Chain = {
       url: 'https://moon-runners.net/dymension/mainnet',
       tx_page: 'https://moon-runners.net/dymension/mainnet/finder?search=${txHash}',
       account_page: 'https://moon-runners.net/dymension/mainnet/finder?search=${accountAddress}'
+    },
+    {
+      kind: 'Crouton Digital',
+      url: 'https://explorer.crouton.digital/mainnets/dymension/overview',
+      tx_page: 'https://explorer.crouton.digital/mainnets/dymension/transactions/${txHash}',
+      account_page: 'https://explorer.crouton.digital/mainnets/dymension/account/${accountAddress}'
     }
   ],
   snapshots: [{
@@ -498,6 +516,11 @@ const info: Chain = {
       compression: 'lz4',
       checksum_available: false,
       provider: 'Polkachu'
+    }, {
+      provider: 'Crouton Digital',
+      url: 'https://storage.crouton.digital/mainnet/dymension/snapshots/dymension_latest.tar.lz4',
+      type: 'pruned',
+      compression: 'lz4'
     }]
 };
 export default info;

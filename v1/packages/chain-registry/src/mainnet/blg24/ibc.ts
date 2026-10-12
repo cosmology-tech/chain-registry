@@ -2,24 +2,24 @@ import { IBCInfo } from '@chain-registry/types';
 const info: IBCInfo[] = [{
     $schema: '../ibc_data.schema.json',
     chain_1: {
-      chain_name: 'dyson',
-      chain_id: 'dyson-mainnet-01',
-      client_id: '07-tendermint-2',
-      connection_id: 'connection-5'
+      chain_name: 'blg24',
+      chain_id: 'BLG24',
+      client_id: '07-tendermint-12',
+      connection_id: 'connection-3'
     },
     chain_2: {
       chain_name: 'osmosis',
       chain_id: 'osmosis-1',
-      client_id: '07-tendermint-2407',
-      connection_id: 'connection-1895'
+      client_id: '07-tendermint-3758',
+      connection_id: 'connection-11098'
     },
     channels: [{
         chain_1: {
-          channel_id: 'channel-2',
+          channel_id: 'channel-1',
           port_id: 'transfer'
         },
         chain_2: {
-          channel_id: 'channel-526',
+          channel_id: 'channel-111099',
           port_id: 'transfer'
         },
         ordering: 'unordered',

@@ -443,115 +443,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Native Token of Comdex Protocol',
-      denom_units: [{
-          denom: 'ibc/DFBDE185EC916F4933DF02D3A282FA801BC9EE77FE0B768FB517407730105491',
-          exponent: 0,
-          aliases: ['ucmdx']
-        }, {
-          denom: 'cmdx',
-          exponent: 6
-        }],
-      base: 'ibc/DFBDE185EC916F4933DF02D3A282FA801BC9EE77FE0B768FB517407730105491',
-      name: 'Comdex',
-      display: 'cmdx',
-      symbol: 'CMDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'ucmdx',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/ucmdx'
-          }
-        }]
-    },
-    {
-      description: 'Governance Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/33E509EAF84ED39E60F746CCAF89130B386A11FDD3B76A77377FB3946BC9D829',
-          exponent: 0,
-          aliases: ['uharbor']
-        }, {
-          denom: 'harbor',
-          exponent: 6
-        }],
-      base: 'ibc/33E509EAF84ED39E60F746CCAF89130B386A11FDD3B76A77377FB3946BC9D829',
-      name: 'Harbor',
-      display: 'harbor',
-      symbol: 'HARBOR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'uharbor',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/uharbor'
-          }
-        }]
-    },
-    {
-      description: 'Stable Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/B8CA0EBE2C9D8800390CE4256DF6C194CF6740CB0AEE140EEE60C1CE288CDB86',
-          exponent: 0,
-          aliases: ['ucmst']
-        }, {
-          denom: 'cmst',
-          exponent: 6
-        }],
-      base: 'ibc/B8CA0EBE2C9D8800390CE4256DF6C194CF6740CB0AEE140EEE60C1CE288CDB86',
-      name: 'CMST',
-      display: 'cmst',
-      symbol: 'CMST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-      },
-      coingecko_id: 'composite',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'ucmst',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/ucmst'
-          }
-        }]
-    },
-    {
       description: 'The native token of TX',
       denom_units: [{
           denom: 'ibc/3EA9790C386BD0FE422C9F9DB4BE162C130B9200D6D8245472F66E27AA82789C',
@@ -2523,115 +2414,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'Native Token of Comdex Protocol',
-      denom_units: [{
-          denom: 'ibc/DFBDE185EC916F4933DF02D3A282FA801BC9EE77FE0B768FB517407730105491',
-          exponent: 0,
-          aliases: ['ucmdx']
-        }, {
-          denom: 'cmdx',
-          exponent: 6
-        }],
-      base: 'ibc/DFBDE185EC916F4933DF02D3A282FA801BC9EE77FE0B768FB517407730105491',
-      name: 'Comdex',
-      display: 'cmdx',
-      symbol: 'CMDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'ucmdx',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/ucmdx'
-          }
-        }]
-    },
-    {
-      description: 'Governance Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/33E509EAF84ED39E60F746CCAF89130B386A11FDD3B76A77377FB3946BC9D829',
-          exponent: 0,
-          aliases: ['uharbor']
-        }, {
-          denom: 'harbor',
-          exponent: 6
-        }],
-      base: 'ibc/33E509EAF84ED39E60F746CCAF89130B386A11FDD3B76A77377FB3946BC9D829',
-      name: 'Harbor',
-      display: 'harbor',
-      symbol: 'HARBOR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'uharbor',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/uharbor'
-          }
-        }]
-    },
-    {
-      description: 'Stable Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/B8CA0EBE2C9D8800390CE4256DF6C194CF6740CB0AEE140EEE60C1CE288CDB86',
-          exponent: 0,
-          aliases: ['ucmst']
-        }, {
-          denom: 'cmst',
-          exponent: 6
-        }],
-      base: 'ibc/B8CA0EBE2C9D8800390CE4256DF6C194CF6740CB0AEE140EEE60C1CE288CDB86',
-      name: 'CMST',
-      display: 'cmst',
-      symbol: 'CMST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-      },
-      coingecko_id: 'composite',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-65',
-            base_denom: 'ucmst',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/ucmst'
-          }
-        }]
-    },
-    {
       description: 'The native token of TX',
       denom_units: [{
           denom: 'ibc/3EA9790C386BD0FE422C9F9DB4BE162C130B9200D6D8245472F66E27AA82789C',
@@ -14591,6 +14373,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/B40F38AA1D23F874BF63BBA5632355A71F4B210F09E422AB67B62F6B5FF1C136',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/B40F38AA1D23F874BF63BBA5632355A71F4B210F09E422AB67B62F6B5FF1C136',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-382',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-127',
+            path: 'transfer/channel-127/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
+          }
+        }]
+    },
+    {
       description: 'Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.',
       denom_units: [{
           denom: 'ibc/8E402953590C8E96E6386B8E4D886F2C32C4FCBC9DF62A3192166A1B1758FAFB',
@@ -15937,6 +15756,43 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-127',
             path: 'transfer/channel-127/cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar'
+          }
+        }]
+    },
+    {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/B40F38AA1D23F874BF63BBA5632355A71F4B210F09E422AB67B62F6B5FF1C136',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/B40F38AA1D23F874BF63BBA5632355A71F4B210F09E422AB67B62F6B5FF1C136',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-382',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-127',
+            path: 'transfer/channel-127/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
           }
         }]
     }

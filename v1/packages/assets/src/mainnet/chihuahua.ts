@@ -468,41 +468,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'The native staking and governance token of the StaFi Hub.',
-      denom_units: [{
-          denom: 'ibc/C6BF622B73A9FD6E1A27EBC432AAA2B7089D0F47DB2EFEF4D9ABA938DDB8E4F7',
-          exponent: 0,
-          aliases: ['ufis']
-        }, {
-          denom: 'fis',
-          exponent: 6
-        }],
-      base: 'ibc/C6BF622B73A9FD6E1A27EBC432AAA2B7089D0F47DB2EFEF4D9ABA938DDB8E4F7',
-      name: 'FIS',
-      display: 'fis',
-      symbol: 'FIS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-      },
-      coingecko_id: 'stafi',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-4',
-            base_denom: 'ufis',
-            chain_name: 'stafihub'
-          },
-          chain: {
-            channel_id: 'channel-25',
-            path: 'transfer/channel-25/ufis'
-          }
-        }]
-    },
-    {
       description: 'The native governance and staking token of the Dymension Hub',
       denom_units: [{
           denom: 'ibc/BFAA5FC8AAC1A59A7577865BA6FC22E8FCC375A4DFD1EEF53D7640F64DCFA682',
@@ -964,41 +929,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-16',
             path: 'transfer/channel-16/uscrt'
-          }
-        }]
-    },
-    {
-      description: 'The native staking and governance token of the StaFi Hub.',
-      denom_units: [{
-          denom: 'ibc/C6BF622B73A9FD6E1A27EBC432AAA2B7089D0F47DB2EFEF4D9ABA938DDB8E4F7',
-          exponent: 0,
-          aliases: ['ufis']
-        }, {
-          denom: 'fis',
-          exponent: 6
-        }],
-      base: 'ibc/C6BF622B73A9FD6E1A27EBC432AAA2B7089D0F47DB2EFEF4D9ABA938DDB8E4F7',
-      name: 'FIS',
-      display: 'fis',
-      symbol: 'FIS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-      },
-      coingecko_id: 'stafi',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-4',
-            base_denom: 'ufis',
-            chain_name: 'stafihub'
-          },
-          chain: {
-            channel_id: 'channel-25',
-            path: 'transfer/channel-25/ufis'
           }
         }]
     },

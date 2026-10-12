@@ -85,6 +85,10 @@ const info: Chain = {
         address: 'https://rpc2.safrochain.network',
         provider: 'Safrochain Foundation',
         archive: true
+      },
+      {
+        address: 'https://rpc.nodesafe-app.xyz/safro/',
+        provider: 'NodeSafe'
       }
     ],
     rest: [
@@ -100,6 +104,10 @@ const info: Chain = {
         address: 'https://api2.safrochain.network',
         provider: 'Safrochain Foundation',
         archive: true
+      },
+      {
+        address: 'https://api.nodesafe-app.xyz/safro',
+        provider: 'NodeSafe'
       }
     ],
     grpc: [
@@ -115,6 +123,10 @@ const info: Chain = {
         address: 'https://grpc2.safrochain.network:443',
         provider: 'Safrochain Foundation',
         archive: true
+      },
+      {
+        address: 'https://grpc-safro.nodesafe-app.xyz:443',
+        provider: 'NodeSafe'
       }
     ],
     "grpc-web": [{
@@ -140,6 +152,12 @@ const info: Chain = {
       tx_page: 'https://explorer.safrochain.com/tx/${txHash}',
       account_page: 'https://explorer.safrochain.com/address/${accountAddress}',
       validator_page: 'https://explorer.safrochain.com/validator/${validatorAddress}'
+    }, {
+      kind: 'NodeSafe',
+      url: 'https://explorer.nodesafe-app.xyz/safrochain/staking',
+      tx_page: 'https://explorer.nodesafe-app.xyz/safrochain/tx/${txHash}',
+      account_page: 'https://explorer.nodesafe-app.xyz/safrochain/account/${accountAddress}',
+      validator_page: 'https://explorer.nodesafe-app.xyz/safrochain/staking/${validatorAddress}'
     }],
   keywords: [
     'safrochain',

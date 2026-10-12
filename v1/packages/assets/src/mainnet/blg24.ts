@@ -1,55 +1,11 @@
 import { AssetList } from '@chain-registry/types';
 const assets: AssetList = {
-  chain_name: 'bostrom',
+  chain_name: 'blg24',
   assets: [
     {
-      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
-      denom_units: [{
-          denom: 'ibc/15E9C5CF5969080539DB395FA7D9C0868265217EFC528433671AAF9B1912D159',
-          exponent: 0,
-          aliases: ['uatom']
-        }, {
-          denom: 'atom',
-          exponent: 6
-        }],
-      base: 'ibc/15E9C5CF5969080539DB395FA7D9C0868265217EFC528433671AAF9B1912D159',
-      name: 'Cosmos Hub Atom',
-      display: 'atom',
-      symbol: 'ATOM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
-      },
-      coingecko_id: 'cosmos',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
-        }],
-      socials: {
-        website: 'https://cosmos.network',
-        x: 'https://x.com/cosmoshub',
-        telegram: 'https://t.me/CosmosOG',
-        discord: 'https://discord.com/invite/interchain',
-        reddit: 'https://www.reddit.com/r/cosmosnetwork/'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-341',
-            base_denom: 'uatom',
-            chain_name: 'cosmoshub'
-          },
-          chain: {
-            channel_id: 'channel-8',
-            path: 'transfer/channel-8/uatom'
-          }
-        }]
-    },
-    {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
+          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -57,7 +13,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
+      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -78,20 +34,20 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-95',
+            channel_id: 'channel-111099',
             base_denom: 'uosmo',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-2',
-            path: 'transfer/channel-2/uosmo'
+            channel_id: 'channel-1',
+            path: 'transfer/channel-1/uosmo'
           }
         }]
     },
     {
       description: 'ION is the second native token of Osmosis.',
       denom_units: [{
-          denom: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
+          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -99,7 +55,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
+      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -120,64 +76,20 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-95',
+            channel_id: 'channel-111099',
             base_denom: 'uion',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-2',
-            path: 'transfer/channel-2/uion'
-          }
-        }]
-    },
-    {
-      description: 'ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.',
-      denom_units: [{
-          denom: 'ibc/15E9C5CF5969080539DB395FA7D9C0868265217EFC528433671AAF9B1912D159',
-          exponent: 0,
-          aliases: ['uatom']
-        }, {
-          denom: 'atom',
-          exponent: 6
-        }],
-      base: 'ibc/15E9C5CF5969080539DB395FA7D9C0868265217EFC528433671AAF9B1912D159',
-      name: 'Cosmos Hub Atom',
-      display: 'atom',
-      symbol: 'ATOM',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
-      },
-      coingecko_id: 'cosmos',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg'
-        }],
-      socials: {
-        website: 'https://cosmos.network',
-        x: 'https://x.com/cosmoshub',
-        telegram: 'https://t.me/CosmosOG',
-        discord: 'https://discord.com/invite/interchain',
-        reddit: 'https://www.reddit.com/r/cosmosnetwork/'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-341',
-            base_denom: 'uatom',
-            chain_name: 'cosmoshub'
-          },
-          chain: {
-            channel_id: 'channel-8',
-            path: 'transfer/channel-8/uatom'
+            channel_id: 'channel-1',
+            path: 'transfer/channel-1/uion'
           }
         }]
     },
     {
       description: 'The native token of Osmosis',
       denom_units: [{
-          denom: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
+          denom: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
           exponent: 0,
           aliases: ['uosmo']
         }, {
@@ -185,7 +97,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/13B2C536BB057AC79D5616B8EA1B9540EC1F2170718CAFF6F0083C966FFFED0B',
+      base: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B',
       name: 'Osmosis',
       display: 'osmo',
       symbol: 'OSMO',
@@ -206,20 +118,20 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-95',
+            channel_id: 'channel-111099',
             base_denom: 'uosmo',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-2',
-            path: 'transfer/channel-2/uosmo'
+            channel_id: 'channel-1',
+            path: 'transfer/channel-1/uosmo'
           }
         }]
     },
     {
       description: 'ION is the second native token of Osmosis.',
       denom_units: [{
-          denom: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
+          denom: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
           exponent: 0,
           aliases: ['uion']
         }, {
@@ -227,7 +139,7 @@ const assets: AssetList = {
           exponent: 6
         }],
       type_asset: 'sdk.coin',
-      base: 'ibc/6FA7B62692FBCA2E51F567947035DE3C5D7333D49D13B85A25F358E80DF4E991',
+      base: 'ibc/EA7DF7F779C7F14E07172E5713E07356B55F01496CA649DDE46CF8FBF1A8466D',
       name: 'Ion DAO',
       display: 'ion',
       symbol: 'ION',
@@ -248,13 +160,13 @@ const assets: AssetList = {
       traces: [{
           type: 'ibc',
           counterparty: {
-            channel_id: 'channel-95',
+            channel_id: 'channel-111099',
             base_denom: 'uion',
             chain_name: 'osmosis'
           },
           chain: {
-            channel_id: 'channel-2',
-            path: 'transfer/channel-2/uion'
+            channel_id: 'channel-1',
+            path: 'transfer/channel-1/uion'
           }
         }]
     }

@@ -3,122 +3,6 @@ const assets: AssetList = {
   chain_name: 'kujira',
   assets: [
     {
-      description: 'The native EVM, governance and staking token of the Acrechain',
-      denom_units: [{
-          denom: 'ibc/FD021051CD0A21590CAC7907B22749B19CC8CCB6A22DE48C21FE7D9EF1EE80B7',
-          exponent: 0,
-          aliases: ['aacre']
-        }, {
-          denom: 'acre',
-          exponent: 18
-        }],
-      base: 'ibc/FD021051CD0A21590CAC7907B22749B19CC8CCB6A22DE48C21FE7D9EF1EE80B7',
-      name: 'Acre',
-      display: 'acre',
-      symbol: 'ACRE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-7',
-            base_denom: 'aacre',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-47',
-            path: 'transfer/channel-47/aacre'
-          }
-        }]
-    },
-    {
-      description: 'Overcollateralized stable coin for Arable derivatives v1',
-      denom_units: [{
-          denom: 'ibc/5F46DC002154B34EF0E2FA269A128B70946B8A45B2544433479F74594715495E',
-          exponent: 0,
-          aliases: ['erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c']
-        }, {
-          denom: 'arusd',
-          exponent: 18
-        }],
-      base: 'ibc/5F46DC002154B34EF0E2FA269A128B70946B8A45B2544433479F74594715495E',
-      name: 'Arable USD',
-      display: 'arusd',
-      symbol: 'arUSD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-7',
-            base_denom: 'erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-47',
-            path: 'transfer/channel-47/erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c'
-          }
-        }]
-    },
-    {
-      description: 'Ciento Exchange Token',
-      denom_units: [{
-          denom: 'ibc/BF603AD88AA4C36FC8CA99F6D703CA1D7D437A1EA97023A73A8BA4437A05ABDF',
-          exponent: 0,
-          aliases: ['erc20/0xAE6D3334989a22A65228732446731438672418F2']
-        }, {
-          denom: 'cnto',
-          exponent: 18
-        }],
-      base: 'ibc/BF603AD88AA4C36FC8CA99F6D703CA1D7D437A1EA97023A73A8BA4437A05ABDF',
-      name: 'Ciento Token',
-      display: 'cnto',
-      symbol: 'CNTO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-7',
-            base_denom: 'erc20/0xAE6D3334989a22A65228732446731438672418F2',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-47',
-            path: 'transfer/channel-47/erc20/0xAE6D3334989a22A65228732446731438672418F2'
-          }
-        }]
-    },
-    {
       description: 'Agoric is a smart contract platform that uses JavaScript to enable developers to build secure and scalable decentralized applications (dApps) easily.',
       denom_units: [{
           denom: 'ibc/AA74EA0A76E85DF5254D2E92B3E656C4CB8B1213AEA7EB45D1F22FC26C754946',
@@ -592,115 +476,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-46',
             path: 'transfer/channel-46/cgt/1'
-          }
-        }]
-    },
-    {
-      description: 'Native Token of Comdex Protocol',
-      denom_units: [{
-          denom: 'ibc/3607EB5B5E64DD1C0E12E07F077FF470D5BC4706AFCBC98FE1BA960E5AE4CE07',
-          exponent: 0,
-          aliases: ['ucmdx']
-        }, {
-          denom: 'cmdx',
-          exponent: 6
-        }],
-      base: 'ibc/3607EB5B5E64DD1C0E12E07F077FF470D5BC4706AFCBC98FE1BA960E5AE4CE07',
-      name: 'Comdex',
-      display: 'cmdx',
-      symbol: 'CMDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-31',
-            base_denom: 'ucmdx',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-18',
-            path: 'transfer/channel-18/ucmdx'
-          }
-        }]
-    },
-    {
-      description: 'Governance Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/46B7745F093B6185D871EBE8EA3B3EDE54E7CBFDF9B8DB6EE0F8DF3446B388A5',
-          exponent: 0,
-          aliases: ['uharbor']
-        }, {
-          denom: 'harbor',
-          exponent: 6
-        }],
-      base: 'ibc/46B7745F093B6185D871EBE8EA3B3EDE54E7CBFDF9B8DB6EE0F8DF3446B388A5',
-      name: 'Harbor',
-      display: 'harbor',
-      symbol: 'HARBOR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-31',
-            base_denom: 'uharbor',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-18',
-            path: 'transfer/channel-18/uharbor'
-          }
-        }]
-    },
-    {
-      description: 'Stable Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/1603E8643A49AD47F536F645A4BF0E4C1E06C76F0A98CBE8054B177F1EE7C39A',
-          exponent: 0,
-          aliases: ['ucmst']
-        }, {
-          denom: 'cmst',
-          exponent: 6
-        }],
-      base: 'ibc/1603E8643A49AD47F536F645A4BF0E4C1E06C76F0A98CBE8054B177F1EE7C39A',
-      name: 'CMST',
-      display: 'cmst',
-      symbol: 'CMST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-      },
-      coingecko_id: 'composite',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-31',
-            base_denom: 'ucmst',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-18',
-            path: 'transfer/channel-18/ucmst'
           }
         }]
     },
@@ -1800,122 +1575,6 @@ const assets: AssetList = {
       type_asset: 'sdk.coin'
     },
     {
-      description: 'The native EVM, governance and staking token of the Acrechain',
-      denom_units: [{
-          denom: 'ibc/FD021051CD0A21590CAC7907B22749B19CC8CCB6A22DE48C21FE7D9EF1EE80B7',
-          exponent: 0,
-          aliases: ['aacre']
-        }, {
-          denom: 'acre',
-          exponent: 18
-        }],
-      base: 'ibc/FD021051CD0A21590CAC7907B22749B19CC8CCB6A22DE48C21FE7D9EF1EE80B7',
-      name: 'Acre',
-      display: 'acre',
-      symbol: 'ACRE',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-7',
-            base_denom: 'aacre',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-47',
-            path: 'transfer/channel-47/aacre'
-          }
-        }]
-    },
-    {
-      description: 'Overcollateralized stable coin for Arable derivatives v1',
-      denom_units: [{
-          denom: 'ibc/5F46DC002154B34EF0E2FA269A128B70946B8A45B2544433479F74594715495E',
-          exponent: 0,
-          aliases: ['erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c']
-        }, {
-          denom: 'arusd',
-          exponent: 18
-        }],
-      base: 'ibc/5F46DC002154B34EF0E2FA269A128B70946B8A45B2544433479F74594715495E',
-      name: 'Arable USD',
-      display: 'arusd',
-      symbol: 'arUSD',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/arusd.svg'
-        }],
-      socials: {
-        website: 'https://arable.finance/',
-        x: 'https://x.com/ArableProtocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-7',
-            base_denom: 'erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-47',
-            path: 'transfer/channel-47/erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c'
-          }
-        }]
-    },
-    {
-      description: 'Ciento Exchange Token',
-      denom_units: [{
-          denom: 'ibc/BF603AD88AA4C36FC8CA99F6D703CA1D7D437A1EA97023A73A8BA4437A05ABDF',
-          exponent: 0,
-          aliases: ['erc20/0xAE6D3334989a22A65228732446731438672418F2']
-        }, {
-          denom: 'cnto',
-          exponent: 18
-        }],
-      base: 'ibc/BF603AD88AA4C36FC8CA99F6D703CA1D7D437A1EA97023A73A8BA4437A05ABDF',
-      name: 'Ciento Token',
-      display: 'cnto',
-      symbol: 'CNTO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/cnto.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-7',
-            base_denom: 'erc20/0xAE6D3334989a22A65228732446731438672418F2',
-            chain_name: 'acrechain'
-          },
-          chain: {
-            channel_id: 'channel-47',
-            path: 'transfer/channel-47/erc20/0xAE6D3334989a22A65228732446731438672418F2'
-          }
-        }]
-    },
-    {
       description: 'Agoric is a smart contract platform that uses JavaScript to enable developers to build secure and scalable decentralized applications (dApps) easily.',
       denom_units: [{
           denom: 'ibc/AA74EA0A76E85DF5254D2E92B3E656C4CB8B1213AEA7EB45D1F22FC26C754946',
@@ -2389,115 +2048,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-46',
             path: 'transfer/channel-46/cgt/1'
-          }
-        }]
-    },
-    {
-      description: 'Native Token of Comdex Protocol',
-      denom_units: [{
-          denom: 'ibc/3607EB5B5E64DD1C0E12E07F077FF470D5BC4706AFCBC98FE1BA960E5AE4CE07',
-          exponent: 0,
-          aliases: ['ucmdx']
-        }, {
-          denom: 'cmdx',
-          exponent: 6
-        }],
-      base: 'ibc/3607EB5B5E64DD1C0E12E07F077FF470D5BC4706AFCBC98FE1BA960E5AE4CE07',
-      name: 'Comdex',
-      display: 'cmdx',
-      symbol: 'CMDX',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmdx.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-31',
-            base_denom: 'ucmdx',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-18',
-            path: 'transfer/channel-18/ucmdx'
-          }
-        }]
-    },
-    {
-      description: 'Governance Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/46B7745F093B6185D871EBE8EA3B3EDE54E7CBFDF9B8DB6EE0F8DF3446B388A5',
-          exponent: 0,
-          aliases: ['uharbor']
-        }, {
-          denom: 'harbor',
-          exponent: 6
-        }],
-      base: 'ibc/46B7745F093B6185D871EBE8EA3B3EDE54E7CBFDF9B8DB6EE0F8DF3446B388A5',
-      name: 'Harbor',
-      display: 'harbor',
-      symbol: 'HARBOR',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/harbor.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-31',
-            base_denom: 'uharbor',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-18',
-            path: 'transfer/channel-18/uharbor'
-          }
-        }]
-    },
-    {
-      description: 'Stable Token of Harbor protocol on Comdex network',
-      denom_units: [{
-          denom: 'ibc/1603E8643A49AD47F536F645A4BF0E4C1E06C76F0A98CBE8054B177F1EE7C39A',
-          exponent: 0,
-          aliases: ['ucmst']
-        }, {
-          denom: 'cmst',
-          exponent: 6
-        }],
-      base: 'ibc/1603E8643A49AD47F536F645A4BF0E4C1E06C76F0A98CBE8054B177F1EE7C39A',
-      name: 'CMST',
-      display: 'cmst',
-      symbol: 'CMST',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-      },
-      coingecko_id: 'composite',
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/comdex/images/cmst.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-31',
-            base_denom: 'ucmst',
-            chain_name: 'comdex'
-          },
-          chain: {
-            channel_id: 'channel-18',
-            path: 'transfer/channel-18/ucmst'
           }
         }]
     },
@@ -3962,195 +3512,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'ODIN is the Staking and governance token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/4EFD563C64F84F60AFB4BB7A8473AAA632CF5817FDF2CF51E68E4E3EDAE66430',
-          exponent: 0,
-          aliases: ['loki']
-        }, {
-          denom: 'odin',
-          exponent: 6
-        }],
-      base: 'ibc/4EFD563C64F84F60AFB4BB7A8473AAA632CF5817FDF2CF51E68E4E3EDAE66430',
-      name: 'ODIN',
-      display: 'odin',
-      symbol: 'ODIN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-        }],
-      socials: {
-        website: 'https://odinprotocol.io/',
-        x: 'https://x.com/odinprotocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'loki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/loki'
-          }
-        }]
-    },
-    {
-      description: 'GEO token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/06AB154D88A95D7165682A56B69561CA5078EA2D6C9620EC4F34DB6C48346A59',
-          exponent: 0,
-          aliases: ['mGeo']
-        }, {
-          denom: 'geo',
-          exponent: 6
-        }],
-      base: 'ibc/06AB154D88A95D7165682A56B69561CA5078EA2D6C9620EC4F34DB6C48346A59',
-      name: 'GEO',
-      display: 'geo',
-      symbol: 'GEO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'mGeo',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/mGeo'
-          }
-        }]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [{
-          denom: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
-          exponent: 0,
-          aliases: ['udoki']
-        }, {
-          denom: 'doki',
-          exponent: 6
-        }],
-      base: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }],
-      socials: {
-        website: 'https://dokicoin.io/',
-        x: 'https://x.com/doki_coin'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'udoki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/udoki'
-          }
-        }]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [{
-          denom: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
-          exponent: 0,
-          aliases: ['umyrk']
-        }, {
-          denom: 'myrk',
-          exponent: 6
-        }],
-      base: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-        }],
-      socials: {
-        x: 'https://x.com/myrkweilds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'umyrk',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/umyrk'
-          }
-        }]
-    },
-    {
-      description: 'O9W token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/C5DE50A49887816DC270CC303302B1725A9ABF35697F3A882A6E363C39F56F10',
-          exponent: 0,
-          aliases: ['mO9W']
-        }, {
-          denom: 'O9W',
-          exponent: 6
-        }],
-      base: 'ibc/C5DE50A49887816DC270CC303302B1725A9ABF35697F3A882A6E363C39F56F10',
-      name: 'O9W',
-      display: 'O9W',
-      symbol: 'O9W',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }],
-      socials: {
-        website: 'https://www.odin9worlds.io/',
-        x: 'https://x.com/odin9worlds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'mO9W',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/mO9W'
-          }
-        }]
-    },
-    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23',
@@ -4786,41 +4147,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-69',
             path: 'transfer/channel-69/usomm'
-          }
-        }]
-    },
-    {
-      description: 'The native staking and governance token of the StaFi Hub.',
-      denom_units: [{
-          denom: 'ibc/057296871B218BA6917759FDB7DF7B9948DC6676C8C085CCC1CF002FE54D8ADE',
-          exponent: 0,
-          aliases: ['ufis']
-        }, {
-          denom: 'fis',
-          exponent: 6
-        }],
-      base: 'ibc/057296871B218BA6917759FDB7DF7B9948DC6676C8C085CCC1CF002FE54D8ADE',
-      name: 'FIS',
-      display: 'fis',
-      symbol: 'FIS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-      },
-      coingecko_id: 'stafi',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-6',
-            base_denom: 'ufis',
-            chain_name: 'stafihub'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/ufis'
           }
         }]
     },
@@ -5308,195 +4634,6 @@ const assets: AssetList = {
         }]
     },
     {
-      description: 'ODIN is the Staking and governance token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/4EFD563C64F84F60AFB4BB7A8473AAA632CF5817FDF2CF51E68E4E3EDAE66430',
-          exponent: 0,
-          aliases: ['loki']
-        }, {
-          denom: 'odin',
-          exponent: 6
-        }],
-      base: 'ibc/4EFD563C64F84F60AFB4BB7A8473AAA632CF5817FDF2CF51E68E4E3EDAE66430',
-      name: 'ODIN',
-      display: 'odin',
-      symbol: 'ODIN',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/odin.png'
-        }],
-      socials: {
-        website: 'https://odinprotocol.io/',
-        x: 'https://x.com/odinprotocol'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'loki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/loki'
-          }
-        }]
-    },
-    {
-      description: 'GEO token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/06AB154D88A95D7165682A56B69561CA5078EA2D6C9620EC4F34DB6C48346A59',
-          exponent: 0,
-          aliases: ['mGeo']
-        }, {
-          denom: 'geo',
-          exponent: 6
-        }],
-      base: 'ibc/06AB154D88A95D7165682A56B69561CA5078EA2D6C9620EC4F34DB6C48346A59',
-      name: 'GEO',
-      display: 'geo',
-      symbol: 'GEO',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/geo.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'mGeo',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/mGeo'
-          }
-        }]
-    },
-    {
-      description: 'DOKI the last Dragon',
-      denom_units: [{
-          denom: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
-          exponent: 0,
-          aliases: ['udoki']
-        }, {
-          denom: 'doki',
-          exponent: 6
-        }],
-      base: 'ibc/DBE837E151E982B03AD5C311C7EF617FE69A435CE36DA3E93CC7BA5F5BC428B0',
-      name: 'DOKI',
-      display: 'doki',
-      symbol: 'DOKI',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/doki_Logo.png'
-        }],
-      socials: {
-        website: 'https://dokicoin.io/',
-        x: 'https://x.com/doki_coin'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'udoki',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/udoki'
-          }
-        }]
-    },
-    {
-      description: 'Myrkur the leader of OLD Order',
-      denom_units: [{
-          denom: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
-          exponent: 0,
-          aliases: ['umyrk']
-        }, {
-          denom: 'myrk',
-          exponent: 6
-        }],
-      base: 'ibc/BF843A6CD41D816EEFDEFEDBDFABE40743F6CD6AAD698FCF315D24D8D9EFB6E9',
-      name: 'MYRK',
-      display: 'myrk',
-      symbol: 'MYRK',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/MYRK_Logo.png'
-        }],
-      socials: {
-        x: 'https://x.com/myrkweilds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'umyrk',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/umyrk'
-          }
-        }]
-    },
-    {
-      description: 'O9W token for ODIN Protocol',
-      denom_units: [{
-          denom: 'ibc/C5DE50A49887816DC270CC303302B1725A9ABF35697F3A882A6E363C39F56F10',
-          exponent: 0,
-          aliases: ['mO9W']
-        }, {
-          denom: 'O9W',
-          exponent: 6
-        }],
-      base: 'ibc/C5DE50A49887816DC270CC303302B1725A9ABF35697F3A882A6E363C39F56F10',
-      name: 'O9W',
-      display: 'O9W',
-      symbol: 'O9W',
-      logo_URIs: {
-        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-      },
-      images: [{
-          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.png',
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/odin/images/o9w.svg'
-        }],
-      socials: {
-        website: 'https://www.odin9worlds.io/',
-        x: 'https://x.com/odin9worlds'
-      },
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-63',
-            base_denom: 'mO9W',
-            chain_name: 'odin'
-          },
-          chain: {
-            channel_id: 'channel-157',
-            path: 'transfer/channel-157/mO9W'
-          }
-        }]
-    },
-    {
       description: 'The native token of Osmosis',
       denom_units: [{
           denom: 'ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23',
@@ -6132,41 +5269,6 @@ const assets: AssetList = {
           chain: {
             channel_id: 'channel-69',
             path: 'transfer/channel-69/usomm'
-          }
-        }]
-    },
-    {
-      description: 'The native staking and governance token of the StaFi Hub.',
-      denom_units: [{
-          denom: 'ibc/057296871B218BA6917759FDB7DF7B9948DC6676C8C085CCC1CF002FE54D8ADE',
-          exponent: 0,
-          aliases: ['ufis']
-        }, {
-          denom: 'fis',
-          exponent: 6
-        }],
-      base: 'ibc/057296871B218BA6917759FDB7DF7B9948DC6676C8C085CCC1CF002FE54D8ADE',
-      name: 'FIS',
-      display: 'fis',
-      symbol: 'FIS',
-      logo_URIs: {
-        svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-      },
-      coingecko_id: 'stafi',
-      images: [{
-          svg: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stafihub/images/fis.svg'
-        }],
-      type_asset: 'sdk.coin',
-      traces: [{
-          type: 'ibc',
-          counterparty: {
-            channel_id: 'channel-6',
-            base_denom: 'ufis',
-            chain_name: 'stafihub'
-          },
-          chain: {
-            channel_id: 'channel-63',
-            path: 'transfer/channel-63/ufis'
           }
         }]
     },
@@ -8113,6 +7215,43 @@ const assets: AssetList = {
         }]
     },
     {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/7226A3CC1E53BF2D7C622CA66E3B65B710F88F922C3C51823AC13DFBC85BB8E1',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/7226A3CC1E53BF2D7C622CA66E3B65B710F88F922C3C51823AC13DFBC85BB8E1',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-28',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-36',
+            path: 'transfer/channel-36/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
+          }
+        }]
+    },
+    {
       description: 'The native token cw20 for SIENNA on Secret Network',
       denom_units: [{
           denom: 'ibc/ED487C9513A933BECB5ABA64CAE441C15E5AF66C3383061FB5A8BC0F671B933F',
@@ -9933,6 +9072,43 @@ const assets: AssetList = {
             port: 'transfer',
             channel_id: 'channel-36',
             path: 'transfer/channel-36/cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar'
+          }
+        }]
+    },
+    {
+      description: 'The token of Deep State Luna, a community-run validator on Terra helmed by an artist and a Commander. We Cometh.',
+      denom_units: [{
+          denom: 'ibc/7226A3CC1E53BF2D7C622CA66E3B65B710F88F922C3C51823AC13DFBC85BB8E1',
+          exponent: 0,
+          aliases: ['cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg']
+        }, {
+          denom: 'deepstate',
+          exponent: 6
+        }],
+      type_asset: 'cw20',
+      address: 'terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+      base: 'ibc/7226A3CC1E53BF2D7C622CA66E3B65B710F88F922C3C51823AC13DFBC85BB8E1',
+      name: 'DEEPSTATE',
+      display: 'deepstate',
+      symbol: 'DEEPSTATE',
+      logo_URIs: {
+        png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+      },
+      images: [{
+          png: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/terra2/images/deepstate.png'
+        }],
+      traces: [{
+          type: 'ibc-cw20',
+          counterparty: {
+            port: 'wasm.terra1e0mrzy8077druuu42vs0hu7ugguade0cj65dgtauyaw4gsl4kv0qtdf2au',
+            channel_id: 'channel-28',
+            base_denom: 'cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg',
+            chain_name: 'terra2'
+          },
+          chain: {
+            port: 'transfer',
+            channel_id: 'channel-36',
+            path: 'transfer/channel-36/cw20:terra13lc4xzfmzfgds5zux5pp3zuqf665akrdzwlumnjykrt850n96lvsz5y0wg'
           }
         }]
     }
