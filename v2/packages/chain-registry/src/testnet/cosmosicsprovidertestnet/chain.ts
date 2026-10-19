@@ -4,7 +4,7 @@ const info: Chain = {
   chainName: 'cosmosicsprovidertestnet',
   chainType: 'cosmos',
   chainId: 'provider',
-  prettyName: 'Cosmos ICS Provider Testnet',
+  prettyName: 'Cosmos Hub Testnet',
   status: 'live',
   networkType: 'testnet',
   bech32Prefix: 'cosmos',
@@ -28,34 +28,34 @@ const info: Chain = {
   },
   codebase: {
     gitRepo: 'https://github.com/cosmos/gaia',
-    recommendedVersion: 'v28.0.0-rc0',
-    compatibleVersions: ['v28.0.0-rc0'],
+    recommendedVersion: 'v29.0.0-rc0',
+    compatibleVersions: ['v29.0.0-rc0'],
     consensus: {
       type: 'cometbft',
-      version: 'v0.38.23'
+      version: 'v0.38.25'
     },
     binaries: {
-      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v28.0.0-rc0/gaiad-v28.0.0-rc0-darwin-amd64',
-      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v28.0.0-rc0/gaiad-v28.0.0-rc0-linux-amd64'
+      "darwin/amd64": 'https://github.com/cosmos/gaia/releases/download/v29.0.0-rc0/gaiad-v29.0.0-rc0-darwin-amd64',
+      "linux/amd64": 'https://github.com/cosmos/gaia/releases/download/v29.0.0-rc0/gaiad-v29.0.0-rc0-linux-amd64'
     },
     genesis: {
       genesisUrl: 'https://raw.githubusercontent.com/cosmos/testnets/master/provider/provider-genesis.json'
     },
     sdk: {
       type: 'cosmos',
-      version: 'v0.53.4',
-      tag: 'v0.53.4'
+      version: 'v0.53.8',
+      tag: 'v0.53.8'
     },
     ibc: {
       type: 'go',
       version: 'v10.7.0'
     },
     cosmwasm: {
-      version: 'v0.60.8',
+      version: 'v0.60.9',
       repo: 'https://github.com/CosmWasm/wasmd',
-      tag: 'v0.60.8'
+      tag: 'v0.60.9'
     },
-    tag: 'v28.0.0-rc0'
+    tag: 'v29.0.0-rc0'
   },
   apis: {
     rpc: [
